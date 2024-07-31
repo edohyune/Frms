@@ -1,0 +1,8 @@
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\CheckCtrls\obj\Debug\net8.0-windows\CheckCtrls.csproj.AssemblyReference.cache
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\CheckCtrls\obj\Debug\net8.0-windows\EpicV004.Frms.CheckCtrls.resources
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\CheckCtrls\obj\Debug\net8.0-windows\CheckCtrls.csproj.GenerateResource.cache
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\CheckCtrls\obj\Debug\net8.0-windows\CheckCtrls.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\CheckCtrls\obj\Debug\net8.0-windows\CheckCtrls.AssemblyInfoInputs.cache
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\CheckCtrls\obj\Debug\net8.0-windows\CheckCtrls.AssemblyInfo.cs
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\CheckCtrls\obj\Debug\net8.0-windows\CheckCtrls.csproj.CoreCompileInputs.cache
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\CheckCtrls\obj\Debug\net8.0-windows\CheckCtrls.sourcelink.json

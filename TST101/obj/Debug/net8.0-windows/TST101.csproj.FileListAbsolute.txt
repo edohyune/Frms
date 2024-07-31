@@ -1,0 +1,8 @@
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\TST101\obj\Debug\net8.0-windows\TST101.csproj.AssemblyReference.cache
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\TST101\obj\Debug\net8.0-windows\EpicV004.Frms.TST101.resources
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\TST101\obj\Debug\net8.0-windows\TST101.csproj.GenerateResource.cache
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\TST101\obj\Debug\net8.0-windows\TST101.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\TST101\obj\Debug\net8.0-windows\TST101.AssemblyInfoInputs.cache
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\TST101\obj\Debug\net8.0-windows\TST101.AssemblyInfo.cs
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\TST101\obj\Debug\net8.0-windows\TST101.csproj.CoreCompileInputs.cache
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\TST101\obj\Debug\net8.0-windows\TST101.sourcelink.json

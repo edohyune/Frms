@@ -1,0 +1,8 @@
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\FRWCDE\obj\Debug\net8.0-windows\FRWCDE.csproj.AssemblyReference.cache
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\FRWCDE\obj\Debug\net8.0-windows\EpicV004.Frms.FRWCDE.resources
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\FRWCDE\obj\Debug\net8.0-windows\FRWCDE.csproj.GenerateResource.cache
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\FRWCDE\obj\Debug\net8.0-windows\FRWCDE.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\FRWCDE\obj\Debug\net8.0-windows\FRWCDE.AssemblyInfoInputs.cache
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\FRWCDE\obj\Debug\net8.0-windows\FRWCDE.AssemblyInfo.cs
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\FRWCDE\obj\Debug\net8.0-windows\FRWCDE.csproj.CoreCompileInputs.cache
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\FRWCDE\obj\Debug\net8.0-windows\FRWCDE.sourcelink.json

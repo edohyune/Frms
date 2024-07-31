@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImportedNamespaces>EpicV004=False,EpicV004.Ctrls=False,EpicV004.Libs=False,EpicV004.Libs.Repo=False,EpicV004.Libs.Syntax=False,System.Data=False,System.Drawing=False,System.Windows.Forms=False,Microsoft.VisualBasic=True,System=True,System.Collections=True,System.Collections.Generic=True,System.Diagnostics=True,System.Linq=True,System.Xml.Linq=True,System.Threading.Tasks=True,VBWinForm=True</ImportedNamespaces>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Import Include="EpicV004" />
+    <Import Include="EpicV004.Ctrls" />
+    <Import Include="EpicV004.Libs" />
+    <Import Include="EpicV004.Libs.Repo" />
+    <Import Include="EpicV004.Libs.Syntax" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.1.35" />
+    <PackageReference Include="DevExpress.Win.Design" Version="23.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\FormMain\FormMain.csproj" />
+  </ItemGroup>
+
+</Project>

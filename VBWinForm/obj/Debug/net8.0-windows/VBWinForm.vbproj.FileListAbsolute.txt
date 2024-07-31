@@ -1,0 +1,8 @@
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\VBWinForm\obj\Debug\net8.0-windows\VBWinForm.vbproj.AssemblyReference.cache
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\VBWinForm\obj\Debug\net8.0-windows\VBWinForm.EpicV004.VBWinForm.resources
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\VBWinForm\obj\Debug\net8.0-windows\VBWinForm.vbproj.GenerateResource.cache
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\VBWinForm\obj\Debug\net8.0-windows\VBWinForm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\VBWinForm\obj\Debug\net8.0-windows\VBWinForm.AssemblyInfoInputs.cache
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\VBWinForm\obj\Debug\net8.0-windows\VBWinForm.AssemblyInfo.vb
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\VBWinForm\obj\Debug\net8.0-windows\VBWinForm.vbproj.CoreCompileInputs.cache
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\VBWinForm\obj\Debug\net8.0-windows\VBWinForm.sourcelink.json

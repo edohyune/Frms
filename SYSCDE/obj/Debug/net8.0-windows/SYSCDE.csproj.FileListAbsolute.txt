@@ -1,0 +1,8 @@
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\SYSCDE\obj\Debug\net8.0-windows\SYSCDE.csproj.AssemblyReference.cache
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\SYSCDE\obj\Debug\net8.0-windows\EpicV004.Frms.SYSCDE.resources
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\SYSCDE\obj\Debug\net8.0-windows\SYSCDE.csproj.GenerateResource.cache
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\SYSCDE\obj\Debug\net8.0-windows\SYSCDE.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\SYSCDE\obj\Debug\net8.0-windows\SYSCDE.AssemblyInfoInputs.cache
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\SYSCDE\obj\Debug\net8.0-windows\SYSCDE.AssemblyInfo.cs
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\SYSCDE\obj\Debug\net8.0-windows\SYSCDE.csproj.CoreCompileInputs.cache
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\SYSCDE\obj\Debug\net8.0-windows\SYSCDE.sourcelink.json

@@ -1,0 +1,8 @@
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\DesignerV041\obj\Debug\net8.0-windows\DesignerV041.csproj.AssemblyReference.cache
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\DesignerV041\obj\Debug\net8.0-windows\EpicV004.Frms.DesignerV041.resources
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\DesignerV041\obj\Debug\net8.0-windows\DesignerV041.csproj.GenerateResource.cache
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\DesignerV041\obj\Debug\net8.0-windows\DesignerV041.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\DesignerV041\obj\Debug\net8.0-windows\DesignerV041.AssemblyInfoInputs.cache
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\DesignerV041\obj\Debug\net8.0-windows\DesignerV041.AssemblyInfo.cs
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\DesignerV041\obj\Debug\net8.0-windows\DesignerV041.csproj.CoreCompileInputs.cache
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\DesignerV041\obj\Debug\net8.0-windows\DesignerV041.sourcelink.json

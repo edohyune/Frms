@@ -1,0 +1,8 @@
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\QueryEditor\obj\Debug\net8.0-windows\QueryEditor.csproj.AssemblyReference.cache
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\QueryEditor\obj\Debug\net8.0-windows\EpicV004.Frms.QueryEditor.resources
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\QueryEditor\obj\Debug\net8.0-windows\QueryEditor.csproj.GenerateResource.cache
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\QueryEditor\obj\Debug\net8.0-windows\QueryEditor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\QueryEditor\obj\Debug\net8.0-windows\QueryEditor.AssemblyInfoInputs.cache
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\QueryEditor\obj\Debug\net8.0-windows\QueryEditor.AssemblyInfo.cs
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\QueryEditor\obj\Debug\net8.0-windows\QueryEditor.csproj.CoreCompileInputs.cache
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\QueryEditor\obj\Debug\net8.0-windows\QueryEditor.sourcelink.json

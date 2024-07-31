@@ -1,0 +1,8 @@
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\GridSetColumn\obj\Debug\net8.0-windows\GridSetColumn.csproj.AssemblyReference.cache
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\GridSetColumn\obj\Debug\net8.0-windows\EpicV004.Frms.GridSetColumn.resources
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\GridSetColumn\obj\Debug\net8.0-windows\GridSetColumn.csproj.GenerateResource.cache
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\GridSetColumn\obj\Debug\net8.0-windows\GridSetColumn.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\GridSetColumn\obj\Debug\net8.0-windows\GridSetColumn.AssemblyInfoInputs.cache
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\GridSetColumn\obj\Debug\net8.0-windows\GridSetColumn.AssemblyInfo.cs
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\GridSetColumn\obj\Debug\net8.0-windows\GridSetColumn.csproj.CoreCompileInputs.cache
+C:\Users\mupai\OneDrive\Documents\EpicV004\Frms\GridSetColumn\obj\Debug\net8.0-windows\GridSetColumn.sourcelink.json
