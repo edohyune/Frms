@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WorkSetGet")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f62f5c420a7d8294a98f2383aecf811c670391a7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8c3682173c9efa7f0ce27c26495e5a227bfb9aaf")]
 [assembly: System.Reflection.AssemblyProductAttribute("WorkSetGet")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WorkSetGet")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

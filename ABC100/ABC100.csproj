@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DevExpress.Win.Design" Version="23.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Ctrls">
+      <HintPath>..\..\DLL\Ctrls.dll</HintPath>
+    </Reference>
+    <Reference Include="GAIADesignerV004">
+      <HintPath>..\..\DLL\GAIADesignerV004.dll</HintPath>
+    </Reference>
+    <Reference Include="Libs">
+      <HintPath>..\..\DLL\Libs.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

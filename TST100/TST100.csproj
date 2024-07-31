@@ -8,9 +8,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Ctrls\Ctrls.csproj" />
-    <ProjectReference Include="..\..\FormMain\FormMain.csproj" />
-    <ProjectReference Include="..\..\Libs\Libs.csproj" />
+    <Reference Include="Ctrls">
+      <HintPath>..\..\..\EpicV004\Ctrls\bin\Debug\net8.0-windows\Ctrls.dll</HintPath>
+    </Reference>
+    <Reference Include="Libs">
+      <HintPath>..\..\..\EpicV004\Ctrls\bin\Debug\net8.0-windows\Libs.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

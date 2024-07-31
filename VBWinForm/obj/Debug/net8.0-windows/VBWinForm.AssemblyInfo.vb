@@ -16,7 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("VBWinForm"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f62f5c420a7d8294a98f2383aecf811c670391a7"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8c3682173c9efa7f0ce27c26495e5a227bfb9aaf"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("VBWinForm"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("VBWinForm"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _
