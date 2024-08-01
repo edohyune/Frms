@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("ABC100")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("DPM100")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f1a1d69c6e9c2b3fc04dc376e51c0b0c40dc73be")]
-[assembly: System.Reflection.AssemblyProductAttribute("ABC100")]
-[assembly: System.Reflection.AssemblyTitleAttribute("ABC100")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9eea5e2d2b4f55da04f401a2c26c5583c09ad739")]
+[assembly: System.Reflection.AssemblyProductAttribute("DPM100")]
+[assembly: System.Reflection.AssemblyTitleAttribute("DPM100")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]
