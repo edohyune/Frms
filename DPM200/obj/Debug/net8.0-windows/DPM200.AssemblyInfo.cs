@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DPM200")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f454c840c70cf04d79911f5efca05b44104dc251")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2893aba6a2b5c3bacf151f50d326f4eb4dc2082e")]
 [assembly: System.Reflection.AssemblyProductAttribute("DPM200")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DPM200")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
