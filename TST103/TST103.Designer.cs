@@ -1,6 +1,6 @@
-﻿namespace EPIC01
+﻿namespace EpicV004.Frms
 {
-    partial class EPIC01
+    partial class TST103
     {
         /// <summary>
         /// Required designer variable.
@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            ucSplit1 = new EpicV004.Ctrls.UCSplit();
-            ucPanel1 = new EpicV004.Ctrls.UCPanel();
-            ucTextBox1 = new EpicV004.Ctrls.UCTextBox();
-            ucPanel2 = new EpicV004.Ctrls.UCPanel();
-            ucGridSet1 = new EpicV004.Ctrls.UCGridSet();
+            ucSplit1 = new Ctrls.UCSplit();
+            ucPanel1 = new Ctrls.UCPanel();
+            s_txt = new Ctrls.UCTextBox();
+            ucPanel2 = new Ctrls.UCPanel();
+            g10 = new Ctrls.UCGridSet();
             ((System.ComponentModel.ISupportInitialize)ucSplit1).BeginInit();
             ucSplit1.Panel1.SuspendLayout();
             ucSplit1.Panel2.SuspendLayout();
@@ -57,65 +57,64 @@
             // ucSplit1.Panel2
             // 
             ucSplit1.Panel2.Controls.Add(ucPanel2);
-            ucSplit1.Size = new Size(800, 450);
-            ucSplit1.SplitterDistance = 79;
+            ucSplit1.Size = new Size(800, 608);
+            ucSplit1.SplitterDistance = 113;
             ucSplit1.TabIndex = 0;
             ucSplit1.TitleWidth = 121;
             // 
             // ucPanel1
             // 
-            ucPanel1.Controls.Add(ucTextBox1);
+            ucPanel1.Controls.Add(s_txt);
             ucPanel1.Dock = DockStyle.Fill;
             ucPanel1.Location = new Point(0, 0);
             ucPanel1.Name = "ucPanel1";
-            ucPanel1.Size = new Size(800, 79);
+            ucPanel1.Size = new Size(800, 113);
             ucPanel1.TabIndex = 0;
-            ucPanel1.Text = "ucPanel1";
+            ucPanel1.Text = "Search";
             // 
-            // ucTextBox1
+            // s_txt
             // 
-            ucTextBox1.ButtonVisiable = false;
-            ucTextBox1.ControlHeight = 21;
-            ucTextBox1.ControlWidth = 200;
-            ucTextBox1.FontColor = Color.Black;
-            ucTextBox1.FontFace = "Tahoma";
-            ucTextBox1.FontSize = 9F;
-            ucTextBox1.FormatStr = "";
-            ucTextBox1.Location = new Point(3, 35);
-            ucTextBox1.Name = "ucTextBox1";
-            ucTextBox1.Size = new Size(200, 21);
-            ucTextBox1.TabIndex = 0;
-            ucTextBox1.Text = "ucTextBox1";
-            ucTextBox1.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox1.Title = "UCTextBox";
-            ucTextBox1.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox1.TitleWidth = 100;
+            s_txt.ButtonVisiable = false;
+            s_txt.ControlHeight = 21;
+            s_txt.ControlWidth = 297;
+            s_txt.FontColor = Color.Black;
+            s_txt.FontFace = "Tahoma";
+            s_txt.FontSize = 9F;
+            s_txt.FormatStr = "";
+            s_txt.Location = new Point(3, 38);
+            s_txt.Name = "s_txt";
+            s_txt.Size = new Size(297, 21);
+            s_txt.TabIndex = 0;
+            s_txt.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            s_txt.Title = "Search";
+            s_txt.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            s_txt.TitleWidth = 100;
             // 
             // ucPanel2
             // 
-            ucPanel2.Controls.Add(ucGridSet1);
+            ucPanel2.Controls.Add(g10);
             ucPanel2.Dock = DockStyle.Fill;
             ucPanel2.Location = new Point(0, 0);
             ucPanel2.Name = "ucPanel2";
-            ucPanel2.Size = new Size(800, 367);
+            ucPanel2.Size = new Size(800, 491);
             ucPanel2.TabIndex = 0;
-            ucPanel2.Text = "ucPanel2";
+            ucPanel2.Text = "Infomation";
             // 
-            // ucGridSet1
+            // g10
             // 
-            ucGridSet1.Dock = DockStyle.Fill;
-            ucGridSet1.Location = new Point(2, 23);
-            ucGridSet1.Name = "ucGridSet1";
-            ucGridSet1.Size = new Size(796, 342);
-            ucGridSet1.TabIndex = 0;
+            g10.Dock = DockStyle.Fill;
+            g10.Location = new Point(2, 23);
+            g10.Name = "g10";
+            g10.Size = new Size(796, 466);
+            g10.TabIndex = 0;
             // 
-            // EPIC01
+            // TST103
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(ucSplit1);
-            Name = "EPIC01";
-            Size = new Size(800, 450);
+            Name = "TST103";
+            Size = new Size(800, 608);
             ucSplit1.Panel1.ResumeLayout(false);
             ucSplit1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ucSplit1).EndInit();
@@ -131,8 +130,8 @@
 
         private EpicV004.Ctrls.UCSplit ucSplit1;
         private EpicV004.Ctrls.UCPanel ucPanel1;
-        private EpicV004.Ctrls.UCTextBox ucTextBox1;
+        private EpicV004.Ctrls.UCTextBox s_txt;
         private EpicV004.Ctrls.UCPanel ucPanel2;
-        private EpicV004.Ctrls.UCGridSet ucGridSet1;
+        private EpicV004.Ctrls.UCGridSet g10;
     }
 }
