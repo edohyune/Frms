@@ -2020,6 +2020,39 @@
             "rid": "win"
           }
         }
+      },
+      "EpicPrologue/1.0.5": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Dapper": "2.1.35",
+          "DevExpress.Win.Design": "23.2.3"
+        },
+        "compile": {
+          "bin/placeholder/EpicPrologue.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EpicPrologue.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App"
+        ]
+      },
+      "GAIADesignerV004/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "EpicPrologue": "1.0.5"
+        },
+        "compile": {
+          "bin/placeholder/GAIADesignerV004.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GAIADesignerV004.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
       }
     }
   },
@@ -4311,15 +4344,23 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "EpicPrologue/1.0.5": {
+      "type": "project",
+      "path": "../../../EpicPrologue/EpicPrologue.csproj",
+      "msbuildProject": "../../../EpicPrologue/EpicPrologue.csproj"
+    },
+    "GAIADesignerV004/1.0.0": {
+      "type": "project",
+      "path": "../../../../25_BackUp/0061_Frm준비/FormMain/FormMain.csproj",
+      "msbuildProject": "../../../../25_BackUp/0061_Frm준비/FormMain/FormMain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
-      "D:\\25_EpicV004\\EpicV004\\Ctrls\\Ctrls.csproj",
-      "D:\\25_EpicV004\\EpicV004\\FormMain\\FormMain.csproj",
-      "D:\\25_EpicV004\\EpicV004\\Libs\\Libs.csproj",
-      "Dapper >= 2.1.35",
-      "DevExpress.Win.Design >= 23.2.3"
+      "DevExpress.Win.Design >= 23.2.3",
+      "EpicPrologue >= 1.0.5",
+      "GAIADesignerV004 >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -4329,11 +4370,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\25_EpicV004\\EpicV004\\Frms\\DesignerV004\\DesignerV004.csproj",
-      "projectName": "DesignerV004",
-      "projectPath": "D:\\25_EpicV004\\EpicV004\\Frms\\DesignerV004\\DesignerV004.csproj",
+      "projectUniqueName": "D:\\25_EpicV004\\EpicV004\\Frms\\LOOKUP\\LOOKUP.csproj",
+      "projectName": "LOOKUP",
+      "projectPath": "D:\\25_EpicV004\\EpicV004\\Frms\\LOOKUP\\LOOKUP.csproj",
       "packagesPath": "C:\\Users\\mupai\\.nuget\\packages\\",
-      "outputPath": "D:\\25_EpicV004\\EpicV004\\Frms\\DesignerV004\\obj\\",
+      "outputPath": "D:\\25_EpicV004\\EpicV004\\Frms\\LOOKUP\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages"
@@ -4358,14 +4399,11 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "D:\\25_EpicV004\\EpicV004\\Ctrls\\Ctrls.csproj": {
-              "projectPath": "D:\\25_EpicV004\\EpicV004\\Ctrls\\Ctrls.csproj"
+            "D:\\25_BackUp\\0061_Frm준비\\FormMain\\FormMain.csproj": {
+              "projectPath": "D:\\25_BackUp\\0061_Frm준비\\FormMain\\FormMain.csproj"
             },
-            "D:\\25_EpicV004\\EpicV004\\FormMain\\FormMain.csproj": {
-              "projectPath": "D:\\25_EpicV004\\EpicV004\\FormMain\\FormMain.csproj"
-            },
-            "D:\\25_EpicV004\\EpicV004\\Libs\\Libs.csproj": {
-              "projectPath": "D:\\25_EpicV004\\EpicV004\\Libs\\Libs.csproj"
+            "D:\\25_EpicV004\\EpicPrologue\\EpicPrologue.csproj": {
+              "projectPath": "D:\\25_EpicV004\\EpicPrologue\\EpicPrologue.csproj"
             }
           }
         }
@@ -4385,10 +4423,6 @@
       "net8.0-windows7.0": {
         "targetAlias": "net8.0-windows",
         "dependencies": {
-          "Dapper": {
-            "target": "Package",
-            "version": "[2.1.35, )"
-          },
           "DevExpress.Win.Design": {
             "target": "Package",
             "version": "[23.2.3, )"
@@ -4416,34 +4450,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'D:\\25_EpicV004\\EpicV004\\Libs\\Libs.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "D:\\25_EpicV004\\EpicV004\\Libs\\Libs.csproj",
-      "targetGraphs": [
-        "net8.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'D:\\25_EpicV004\\EpicV004\\FormMain\\FormMain.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "D:\\25_EpicV004\\EpicV004\\FormMain\\FormMain.csproj",
-      "targetGraphs": [
-        "net8.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'D:\\25_EpicV004\\EpicV004\\Ctrls\\Ctrls.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "D:\\25_EpicV004\\EpicV004\\Ctrls\\Ctrls.csproj",
-      "targetGraphs": [
-        "net8.0-windows7.0"
-      ]
-    }
-  ]
+  }
 }
