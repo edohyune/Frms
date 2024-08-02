@@ -35,17 +35,7 @@
         "frameworks": {
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
-            "projectReferences": {
-              "D:\\25_EpicV004\\EpicV004\\Ctrls\\Ctrls.csproj": {
-                "projectPath": "D:\\25_EpicV004\\EpicV004\\Ctrls\\Ctrls.csproj"
-              },
-              "D:\\25_EpicV004\\EpicV004\\FormMain\\FormMain.csproj": {
-                "projectPath": "D:\\25_EpicV004\\EpicV004\\FormMain\\FormMain.csproj"
-              },
-              "D:\\25_EpicV004\\EpicV004\\Libs\\Libs.csproj": {
-                "projectPath": "D:\\25_EpicV004\\EpicV004\\Libs\\Libs.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -63,13 +53,9 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "dependencies": {
-            "Dapper": {
+            "EpicPrologue": {
               "target": "Package",
-              "version": "[2.1.35, )"
-            },
-            "DevExpress.Win.Design": {
-              "target": "Package",
-              "version": "[23.2.3, )"
+              "version": "[1.0.5, )"
             }
           },
           "imports": [
@@ -87,7 +73,7 @@
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             },
-            "Microsoft.WindowsDesktop.App": {
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
               "privateAssets": "none"
             }
           },

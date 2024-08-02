@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TESTFRMS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+65b51290bbc7d045a518fc41df3c8e18a3470a38")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3e3990775baf8b2be8a26c27e59d788aebde1992")]
 [assembly: System.Reflection.AssemblyProductAttribute("TESTFRMS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TESTFRMS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "iBsP0GoAb2s=",
-  "success": false,
+  "dgSpecHash": "6T6dbuxMO7s=",
+  "success": true,
   "projectFilePath": "D:\\25_EpicV004\\EpicV004\\Frms\\DesignerV004\\DesignerV004.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mupai\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",
@@ -61,6 +61,7 @@
     "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.win.treemap\\23.2.3\\devexpress.win.treemap.23.2.3.nupkg.sha512",
     "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.win.verticalgrid\\23.2.3\\devexpress.win.verticalgrid.23.2.3.nupkg.sha512",
     "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.xpo\\23.2.3\\devexpress.xpo.23.2.3.nupkg.sha512",
+    "C:\\Users\\mupai\\.nuget\\packages\\epicprologue\\1.0.5\\epicprologue.1.0.5.nupkg.sha512",
     "C:\\Users\\mupai\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
     "C:\\Users\\mupai\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\2.0.0\\microsoft.extensions.dependencyinjection.2.0.0.nupkg.sha512",
     "C:\\Users\\mupai\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.0.0\\microsoft.extensions.dependencyinjection.abstractions.2.0.0.nupkg.sha512",
@@ -102,33 +103,5 @@
     "C:\\Users\\mupai\\.nuget\\packages\\system.threading.accesscontrol\\4.5.0\\system.threading.accesscontrol.4.5.0.nupkg.sha512",
     "C:\\Users\\mupai\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'D:\\25_EpicV004\\EpicV004\\Libs\\Libs.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "D:\\25_EpicV004\\EpicV004\\Libs\\Libs.csproj",
-      "targetGraphs": [
-        "net8.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'D:\\25_EpicV004\\EpicV004\\FormMain\\FormMain.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "D:\\25_EpicV004\\EpicV004\\FormMain\\FormMain.csproj",
-      "targetGraphs": [
-        "net8.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'D:\\25_EpicV004\\EpicV004\\Ctrls\\Ctrls.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "D:\\25_EpicV004\\EpicV004\\Ctrls\\Ctrls.csproj",
-      "targetGraphs": [
-        "net8.0-windows7.0"
-      ]
-    }
-  ]
+  "logs": []
 }
