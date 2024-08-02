@@ -98,7 +98,7 @@
           }
         },
         "build": {
-          "build/netcoreapp3.0/DevExpress.Data.Desktop.props": {}
+          "build/netcoreapp3.0/_._": {}
         }
       },
       "DevExpress.DataAccess/23.2.3": {
@@ -1290,7 +1290,7 @@
           }
         }
       },
-      "EpicPrologue/1.0.4": {
+      "EpicPrologue/1.0.5": {
         "type": "package",
         "dependencies": {
           "Dapper": "2.1.35",
@@ -3043,15 +3043,15 @@
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "EpicPrologue/1.0.4": {
-      "sha512": "0FXBiOBz0fDPKSHNCxx23KmqxVBEMf5ZHbfuoWft++0Qt3AZXgopSQO2lMrUhuCJwEZnA9cuFxFhqHwZUTfWPg==",
+    "EpicPrologue/1.0.5": {
+      "sha512": "bpch9H1F/jbFRfitBQat2KaFR/WhOaIgNPuD8VZ5VBdfUJSmqcMQ616YaFbbSx5XgmwaIiicIwayZuN7E0uPCA==",
       "type": "package",
-      "path": "epicprologue/1.0.4",
+      "path": "epicprologue/1.0.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
-        "epicprologue.1.0.4.nupkg.sha512",
+        "epicprologue.1.0.5.nupkg.sha512",
         "epicprologue.nuspec",
         "lib/net8.0-windows7.0/EpicPrologue.dll"
       ]
@@ -4344,34 +4344,29 @@
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
-      "Dapper >= 2.1.35",
-      "DevExpress.Win.Design >= 23.2.3",
-      "EpicPrologue >= 1.0.4"
+      "EpicPrologue >= 1.0.5"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Satha\\.nuget\\packages\\": {},
-    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\mupai\\.nuget\\packages\\": {},
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Framework9\\Frms\\SYSCDE\\SYSCDE.csproj",
+      "projectUniqueName": "D:\\25_EpicV004\\EpicV004\\Frms\\SYSCDE\\SYSCDE.csproj",
       "projectName": "SYSCDE",
-      "projectPath": "C:\\Framework9\\Frms\\SYSCDE\\SYSCDE.csproj",
-      "packagesPath": "C:\\Users\\Satha\\.nuget\\packages\\",
-      "outputPath": "C:\\Framework9\\Frms\\SYSCDE\\obj\\",
+      "projectPath": "D:\\25_EpicV004\\EpicV004\\Frms\\SYSCDE\\SYSCDE.csproj",
+      "packagesPath": "C:\\Users\\mupai\\.nuget\\packages\\",
+      "outputPath": "D:\\25_EpicV004\\EpicV004\\Frms\\SYSCDE\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages",
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Satha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mupai\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.2.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4381,6 +4376,7 @@
         "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\DevExpress 23.2\\Components\\System\\Components\\Packages": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4404,17 +4400,9 @@
       "net8.0-windows7.0": {
         "targetAlias": "net8.0-windows",
         "dependencies": {
-          "Dapper": {
-            "target": "Package",
-            "version": "[2.1.35, )"
-          },
-          "DevExpress.Win.Design": {
-            "target": "Package",
-            "version": "[23.2.3, )"
-          },
           "EpicPrologue": {
             "target": "Package",
-            "version": "[1.0.4, )"
+            "version": "[1.0.5, )"
           }
         },
         "imports": [
@@ -4432,7 +4420,7 @@
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           },
-          "Microsoft.WindowsDesktop.App": {
+          "Microsoft.WindowsDesktop.App.WindowsForms": {
             "privateAssets": "none"
           }
         },

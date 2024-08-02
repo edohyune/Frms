@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "t35NgMjIFQo=",
+  "dgSpecHash": "6T6dbuxMO7s=",
   "success": true,
-  "projectFilePath": "C:\\Users\\mupai\\OneDrive\\Documents\\EpicV004\\Frms\\DesignerV004\\DesignerV004.csproj",
+  "projectFilePath": "D:\\25_EpicV004\\EpicV004\\Frms\\DesignerV004\\DesignerV004.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mupai\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",
     "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.charts\\23.2.3\\devexpress.charts.23.2.3.nupkg.sha512",
@@ -61,6 +61,7 @@
     "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.win.treemap\\23.2.3\\devexpress.win.treemap.23.2.3.nupkg.sha512",
     "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.win.verticalgrid\\23.2.3\\devexpress.win.verticalgrid.23.2.3.nupkg.sha512",
     "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.xpo\\23.2.3\\devexpress.xpo.23.2.3.nupkg.sha512",
+    "C:\\Users\\mupai\\.nuget\\packages\\epicprologue\\1.0.5\\epicprologue.1.0.5.nupkg.sha512",
     "C:\\Users\\mupai\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
     "C:\\Users\\mupai\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\2.0.0\\microsoft.extensions.dependencyinjection.2.0.0.nupkg.sha512",
     "C:\\Users\\mupai\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.0.0\\microsoft.extensions.dependencyinjection.abstractions.2.0.0.nupkg.sha512",
@@ -78,7 +79,7 @@
     "C:\\Users\\mupai\\.nuget\\packages\\system.configuration.configurationmanager\\4.7.0\\system.configuration.configurationmanager.4.7.0.nupkg.sha512",
     "C:\\Users\\mupai\\.nuget\\packages\\system.data.odbc\\4.5.0\\system.data.odbc.4.5.0.nupkg.sha512",
     "C:\\Users\\mupai\\.nuget\\packages\\system.data.oledb\\4.7.0\\system.data.oledb.4.7.0.nupkg.sha512",
-    "C:\\Users\\mupai\\.nuget\\packages\\system.data.sqlclient\\4.8.6\\system.data.sqlclient.4.8.6.nupkg.sha512",
+    "C:\\Users\\mupai\\.nuget\\packages\\system.data.sqlclient\\4.8.5\\system.data.sqlclient.4.8.5.nupkg.sha512",
     "C:\\Users\\mupai\\.nuget\\packages\\system.diagnostics.eventlog\\4.5.0\\system.diagnostics.eventlog.4.5.0.nupkg.sha512",
     "C:\\Users\\mupai\\.nuget\\packages\\system.diagnostics.performancecounter\\4.7.0\\system.diagnostics.performancecounter.4.7.0.nupkg.sha512",
     "C:\\Users\\mupai\\.nuget\\packages\\system.drawing.common\\4.7.2\\system.drawing.common.4.7.2.nupkg.sha512",
