@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("TST104")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("TESTFRMS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+031bda714738651ae682eec2d6ba6e4eda49519b")]
-[assembly: System.Reflection.AssemblyProductAttribute("TST104")]
-[assembly: System.Reflection.AssemblyTitleAttribute("TST104")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d049f80756d433fa489ead1bd524abbb0f814fd5")]
+[assembly: System.Reflection.AssemblyProductAttribute("TESTFRMS")]
+[assembly: System.Reflection.AssemblyTitleAttribute("TESTFRMS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]
