@@ -14,7 +14,7 @@
 
         private void g10_UCAfterFocusedRow(object sender, int preIndex, int rowIndex, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
         {
-            MessageBox.Show(g10.GetText("first_name"));
+            //MessageBox.Show(g10.GetText("first_name"));
 
             //g10.SetText("first_name",[Value])
             //g10.SetText("first_name",[rowIndex],[Value])
