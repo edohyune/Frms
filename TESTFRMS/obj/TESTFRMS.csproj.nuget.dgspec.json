@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\25_EpicV004\\EpicV004\\Frms\\SYSCDE\\SYSCDE.csproj": {}
+    "D:\\25_EpicV004\\EpicV004\\Frms\\TESTFRMS\\TESTFRMS.csproj": {}
   },
   "projects": {
-    "D:\\25_EpicV004\\EpicV004\\Frms\\SYSCDE\\SYSCDE.csproj": {
+    "D:\\25_EpicV004\\EpicV004\\Frms\\TESTFRMS\\TESTFRMS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\25_EpicV004\\EpicV004\\Frms\\SYSCDE\\SYSCDE.csproj",
-        "projectName": "SYSCDE",
-        "projectPath": "D:\\25_EpicV004\\EpicV004\\Frms\\SYSCDE\\SYSCDE.csproj",
+        "projectUniqueName": "D:\\25_EpicV004\\EpicV004\\Frms\\TESTFRMS\\TESTFRMS.csproj",
+        "projectName": "TESTFRMS",
+        "projectPath": "D:\\25_EpicV004\\EpicV004\\Frms\\TESTFRMS\\TESTFRMS.csproj",
         "packagesPath": "C:\\Users\\mupai\\.nuget\\packages\\",
-        "outputPath": "D:\\25_EpicV004\\EpicV004\\Frms\\SYSCDE\\obj\\",
+        "outputPath": "D:\\25_EpicV004\\EpicV004\\Frms\\TESTFRMS\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages"
