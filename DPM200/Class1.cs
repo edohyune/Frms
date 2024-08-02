@@ -8,25 +8,25 @@ namespace EpicV004.Frms
 {
     public class DPM200_G10 : EpicV004.Libs.MdlBase
     {
-        private int _id;
-        public int id
+        private int _department_id;
+        public int department_id
         {
-            get => _id;
-            set => Set(ref _id, value);
+            get => _department_id;
+            set => Set(ref _department_id, value);
         }
 
-        private string _name;
-        public string name
+        private string _department_name;
+        public string department_name
         {
-            get => _name;
-            set => Set(ref _name, value);
+            get => _department_name;
+            set => Set(ref _department_name, value);
         }
 
-        private string _description;
-        public string description
+        private string _dept_dec;
+        public string dept_dec
         {
-            get => _description;
-            set => Set(ref _description, value);
+            get => _dept_dec;
+            set => Set(ref _dept_dec, value);
         }
 
     }

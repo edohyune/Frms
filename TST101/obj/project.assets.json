@@ -6,31 +6,31 @@
   "libraries": {},
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
-      "C:\\Users\\mupai\\OneDrive\\Documents\\EPICV004 Main\\Ctrls\\Ctrls.csproj",
-      "C:\\Users\\mupai\\OneDrive\\Documents\\EPICV004 Main\\FormMain\\FormMain.csproj",
-      "C:\\Users\\mupai\\OneDrive\\Documents\\EPICV004 Main\\Libs\\Libs.csproj"
+      "C:\\Framework9\\Ctrls\\Ctrls.csproj",
+      "C:\\Framework9\\FormMain\\FormMain.csproj",
+      "C:\\Framework9\\Libs\\Libs.csproj"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mupai\\.nuget\\packages\\": {},
+    "C:\\Users\\Satha\\.nuget\\packages\\": {},
     "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mupai\\OneDrive\\Documents\\EPICV004 Main\\Frms\\TST101\\TST101.csproj",
+      "projectUniqueName": "C:\\Framework9\\Frms\\TST101\\TST101.csproj",
       "projectName": "TST101",
-      "projectPath": "C:\\Users\\mupai\\OneDrive\\Documents\\EPICV004 Main\\Frms\\TST101\\TST101.csproj",
-      "packagesPath": "C:\\Users\\mupai\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mupai\\OneDrive\\Documents\\EPICV004 Main\\Frms\\TST101\\obj\\",
+      "projectPath": "C:\\Framework9\\Frms\\TST101\\TST101.csproj",
+      "packagesPath": "C:\\Users\\Satha\\.nuget\\packages\\",
+      "outputPath": "C:\\Framework9\\Frms\\TST101\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages",
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\mupai\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Satha\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.2.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
@@ -43,21 +43,20 @@
         "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\DevExpress 23.2\\Components\\System\\Components\\Packages": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "C:\\Users\\mupai\\OneDrive\\Documents\\EPICV004 Main\\Ctrls\\Ctrls.csproj": {
-              "projectPath": "C:\\Users\\mupai\\OneDrive\\Documents\\EPICV004 Main\\Ctrls\\Ctrls.csproj"
+            "C:\\Framework9\\Ctrls\\Ctrls.csproj": {
+              "projectPath": "C:\\Framework9\\Ctrls\\Ctrls.csproj"
             },
-            "C:\\Users\\mupai\\OneDrive\\Documents\\EPICV004 Main\\FormMain\\FormMain.csproj": {
-              "projectPath": "C:\\Users\\mupai\\OneDrive\\Documents\\EPICV004 Main\\FormMain\\FormMain.csproj"
+            "C:\\Framework9\\FormMain\\FormMain.csproj": {
+              "projectPath": "C:\\Framework9\\FormMain\\FormMain.csproj"
             },
-            "C:\\Users\\mupai\\OneDrive\\Documents\\EPICV004 Main\\Libs\\Libs.csproj": {
-              "projectPath": "C:\\Users\\mupai\\OneDrive\\Documents\\EPICV004 Main\\Libs\\Libs.csproj"
+            "C:\\Framework9\\Libs\\Libs.csproj": {
+              "projectPath": "C:\\Framework9\\Libs\\Libs.csproj"
             }
           }
         }
@@ -103,8 +102,8 @@
     {
       "code": "NU1104",
       "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\mupai\\OneDrive\\Documents\\EPICV004 Main\\Libs\\Libs.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Users\\mupai\\OneDrive\\Documents\\EPICV004 Main\\Libs\\Libs.csproj",
+      "message": "Unable to find project 'C:\\Framework9\\Libs\\Libs.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Framework9\\Libs\\Libs.csproj",
       "targetGraphs": [
         "net8.0-windows7.0"
       ]
@@ -112,8 +111,8 @@
     {
       "code": "NU1104",
       "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\mupai\\OneDrive\\Documents\\EPICV004 Main\\FormMain\\FormMain.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Users\\mupai\\OneDrive\\Documents\\EPICV004 Main\\FormMain\\FormMain.csproj",
+      "message": "Unable to find project 'C:\\Framework9\\FormMain\\FormMain.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Framework9\\FormMain\\FormMain.csproj",
       "targetGraphs": [
         "net8.0-windows7.0"
       ]
@@ -121,8 +120,8 @@
     {
       "code": "NU1104",
       "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\mupai\\OneDrive\\Documents\\EPICV004 Main\\Ctrls\\Ctrls.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Users\\mupai\\OneDrive\\Documents\\EPICV004 Main\\Ctrls\\Ctrls.csproj",
+      "message": "Unable to find project 'C:\\Framework9\\Ctrls\\Ctrls.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Framework9\\Ctrls\\Ctrls.csproj",
       "targetGraphs": [
         "net8.0-windows7.0"
       ]

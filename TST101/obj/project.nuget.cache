@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "iW/i7UOBkLw=",
+  "dgSpecHash": "yAbQ1Y+VXcQ=",
   "success": false,
-  "projectFilePath": "C:\\Users\\mupai\\OneDrive\\Documents\\EPICV004 Main\\Frms\\TST101\\TST101.csproj",
+  "projectFilePath": "C:\\Framework9\\Frms\\TST101\\TST101.csproj",
   "expectedPackageFiles": [],
   "logs": [
     {
       "code": "NU1104",
       "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\mupai\\OneDrive\\Documents\\EPICV004 Main\\Libs\\Libs.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Users\\mupai\\OneDrive\\Documents\\EPICV004 Main\\Libs\\Libs.csproj",
+      "message": "Unable to find project 'C:\\Framework9\\Libs\\Libs.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Framework9\\Libs\\Libs.csproj",
       "targetGraphs": [
         "net8.0-windows7.0"
       ]
@@ -17,8 +17,8 @@
     {
       "code": "NU1104",
       "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\mupai\\OneDrive\\Documents\\EPICV004 Main\\FormMain\\FormMain.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Users\\mupai\\OneDrive\\Documents\\EPICV004 Main\\FormMain\\FormMain.csproj",
+      "message": "Unable to find project 'C:\\Framework9\\FormMain\\FormMain.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Framework9\\FormMain\\FormMain.csproj",
       "targetGraphs": [
         "net8.0-windows7.0"
       ]
@@ -26,8 +26,8 @@
     {
       "code": "NU1104",
       "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\mupai\\OneDrive\\Documents\\EPICV004 Main\\Ctrls\\Ctrls.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Users\\mupai\\OneDrive\\Documents\\EPICV004 Main\\Ctrls\\Ctrls.csproj",
+      "message": "Unable to find project 'C:\\Framework9\\Ctrls\\Ctrls.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Framework9\\Ctrls\\Ctrls.csproj",
       "targetGraphs": [
         "net8.0-windows7.0"
       ]
