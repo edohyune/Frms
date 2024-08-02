@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EPIC01")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f1a1d69c6e9c2b3fc04dc376e51c0b0c40dc73be")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2893aba6a2b5c3bacf151f50d326f4eb4dc2082e")]
 [assembly: System.Reflection.AssemblyProductAttribute("EPIC01")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EPIC01")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

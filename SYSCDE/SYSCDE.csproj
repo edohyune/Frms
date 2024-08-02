@@ -10,12 +10,13 @@
   <ItemGroup>
     <PackageReference Include="Dapper" Version="2.1.35" />
     <PackageReference Include="DevExpress.Win.Design" Version="23.2.3" />
+    <PackageReference Include="EpicPrologue" Version="1.0.4" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Ctrls\Ctrls.csproj" />
-    <ProjectReference Include="..\..\FormMain\FormMain.csproj" />
-    <ProjectReference Include="..\..\Libs\Libs.csproj" />
+    <Reference Include="GAIADesignerV004">
+      <HintPath>..\..\DLL\GAIADesignerV004.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
