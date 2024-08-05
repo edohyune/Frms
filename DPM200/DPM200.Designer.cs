@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            ucSplit1 = new EpicV004.Ctrls.UCSplit();
-            ucPanel1 = new EpicV004.Ctrls.UCPanel();
-            ucPanel2 = new EpicV004.Ctrls.UCPanel();
-            g10 = new EpicV004.Ctrls.UCGridSet();
-            s_txt = new EpicV004.Ctrls.UCTextBox();
+            ucSplit1 = new Ctrls.UCSplit();
+            ucPanel1 = new Ctrls.UCPanel();
+            s_txt = new Ctrls.UCTextBox();
+            ucPanel2 = new Ctrls.UCPanel();
+            g10 = new Ctrls.UCGridSet();
             ((System.ComponentModel.ISupportInitialize)ucSplit1).BeginInit();
             ucSplit1.Panel1.SuspendLayout();
             ucSplit1.Panel2.SuspendLayout();
@@ -72,25 +72,6 @@
             ucPanel1.TabIndex = 0;
             ucPanel1.Text = "ucPanel1";
             // 
-            // ucPanel2
-            // 
-            ucPanel2.Controls.Add(g10);
-            ucPanel2.Dock = DockStyle.Fill;
-            ucPanel2.Location = new Point(0, 0);
-            ucPanel2.Name = "ucPanel2";
-            ucPanel2.Size = new Size(800, 358);
-            ucPanel2.TabIndex = 1;
-            ucPanel2.Text = "ucPanel2";
-            // 
-            // g10
-            // 
-            g10.Dock = DockStyle.Fill;
-            g10.Location = new Point(2, 28);
-            g10.Margin = new Padding(3, 4, 3, 4);
-            g10.Name = "g10";
-            g10.Size = new Size(796, 328);
-            g10.TabIndex = 0;
-            // 
             // s_txt
             // 
             s_txt.ButtonVisiable = false;
@@ -109,6 +90,26 @@
             s_txt.Title = "Search";
             s_txt.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
             s_txt.TitleWidth = 100;
+            // 
+            // ucPanel2
+            // 
+            ucPanel2.Controls.Add(g10);
+            ucPanel2.Dock = DockStyle.Fill;
+            ucPanel2.Location = new Point(0, 0);
+            ucPanel2.Name = "ucPanel2";
+            ucPanel2.Size = new Size(800, 358);
+            ucPanel2.TabIndex = 1;
+            ucPanel2.Text = "ucPanel2";
+            // 
+            // g10
+            // 
+            g10.Dock = DockStyle.Fill;
+            g10.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            g10.Location = new Point(2, 28);
+            g10.Margin = new Padding(3, 4, 3, 4);
+            g10.Name = "g10";
+            g10.Size = new Size(796, 328);
+            g10.TabIndex = 0;
             // 
             // DPM200
             // 

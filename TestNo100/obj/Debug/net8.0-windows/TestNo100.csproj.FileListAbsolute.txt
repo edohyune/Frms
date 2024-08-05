@@ -1,0 +1,15 @@
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\TestNo100\bin\Debug\net8.0-windows\TestNo100.deps.json
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\TestNo100\bin\Debug\net8.0-windows\TestNo100.dll
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\TestNo100\bin\Debug\net8.0-windows\TestNo100.pdb
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\TestNo100\obj\Debug\net8.0-windows\TestNo100.csproj.AssemblyReference.cache
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\TestNo100\obj\Debug\net8.0-windows\TestNo100.UserControl1.resources
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\TestNo100\obj\Debug\net8.0-windows\TestNo100.csproj.GenerateResource.cache
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\TestNo100\obj\Debug\net8.0-windows\TestNo100.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\TestNo100\obj\Debug\net8.0-windows\TestNo100.AssemblyInfoInputs.cache
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\TestNo100\obj\Debug\net8.0-windows\TestNo100.AssemblyInfo.cs
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\TestNo100\obj\Debug\net8.0-windows\TestNo100.csproj.CoreCompileInputs.cache
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\TestNo100\obj\Debug\net8.0-windows\TestNo100.sourcelink.json
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\TestNo100\obj\Debug\net8.0-windows\TestNo100.dll
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\TestNo100\obj\Debug\net8.0-windows\refint\TestNo100.dll
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\TestNo100\obj\Debug\net8.0-windows\TestNo100.pdb
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\TestNo100\obj\Debug\net8.0-windows\ref\TestNo100.dll
