@@ -57,6 +57,5 @@ namespace EpicV004.Frms
             set => Set(ref _memo, value);
         }
 
-
     }
 }
