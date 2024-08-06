@@ -4,95 +4,14 @@
     "D:\\25_EpicV004\\EpicV004\\Frms\\LOOKUP\\LOOKUP.csproj": {}
   },
   "projects": {
-    "D:\\25_BackUp\\0061_Frm준비\\FormMain\\FormMain.csproj": {
+    "D:\\25_EpicV004\\EpicV004\\Frms\\LOOKUP\\LOOKUP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\25_BackUp\\0061_Frm준비\\FormMain\\FormMain.csproj",
-        "projectName": "GAIADesignerV004",
-        "projectPath": "D:\\25_BackUp\\0061_Frm준비\\FormMain\\FormMain.csproj",
+        "projectUniqueName": "D:\\25_EpicV004\\EpicV004\\Frms\\LOOKUP\\LOOKUP.csproj",
+        "projectName": "LOOKUP",
+        "projectPath": "D:\\25_EpicV004\\EpicV004\\Frms\\LOOKUP\\LOOKUP.csproj",
         "packagesPath": "C:\\Users\\mupai\\.nuget\\packages\\",
-        "outputPath": "D:\\25_BackUp\\0061_Frm준비\\FormMain\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\mupai\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.2.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net8.0-windows"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\DevExpress 23.2\\Components\\System\\Components\\Packages": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net8.0-windows7.0": {
-            "targetAlias": "net8.0-windows",
-            "projectReferences": {
-              "D:\\25_EpicV004\\EpicPrologue\\EpicPrologue.csproj": {
-                "projectPath": "D:\\25_EpicV004\\EpicPrologue\\EpicPrologue.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        }
-      },
-      "frameworks": {
-        "net8.0-windows7.0": {
-          "targetAlias": "net8.0-windows",
-          "dependencies": {
-            "DevExpress.Win.Design": {
-              "target": "Package",
-              "version": "[23.2.3, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            },
-            "Microsoft.WindowsDesktop.App": {
-              "privateAssets": "none"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "D:\\25_EpicV004\\EpicPrologue\\EpicPrologue.csproj": {
-      "version": "1.0.7",
-      "restore": {
-        "projectUniqueName": "D:\\25_EpicV004\\EpicPrologue\\EpicPrologue.csproj",
-        "projectName": "EpicPrologue",
-        "projectPath": "D:\\25_EpicV004\\EpicPrologue\\EpicPrologue.csproj",
-        "packagesPath": "C:\\Users\\mupai\\.nuget\\packages\\",
-        "outputPath": "D:\\25_EpicV004\\EpicPrologue\\obj\\",
+        "outputPath": "D:\\25_EpicV004\\EpicV004\\Frms\\LOOKUP\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages"
@@ -134,97 +53,13 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "dependencies": {
-            "Dapper": {
-              "target": "Package",
-              "version": "[2.1.35, )"
-            },
             "DevExpress.Win.Design": {
               "target": "Package",
               "version": "[23.2.3, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
             },
-            "Microsoft.WindowsDesktop.App": {
-              "privateAssets": "none"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "D:\\25_EpicV004\\EpicV004\\Frms\\LOOKUP\\LOOKUP.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\25_EpicV004\\EpicV004\\Frms\\LOOKUP\\LOOKUP.csproj",
-        "projectName": "LOOKUP",
-        "projectPath": "D:\\25_EpicV004\\EpicV004\\Frms\\LOOKUP\\LOOKUP.csproj",
-        "packagesPath": "C:\\Users\\mupai\\.nuget\\packages\\",
-        "outputPath": "D:\\25_EpicV004\\EpicV004\\Frms\\LOOKUP\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\mupai\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.2.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net8.0-windows"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\DevExpress 23.2\\Components\\System\\Components\\Packages": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net8.0-windows7.0": {
-            "targetAlias": "net8.0-windows",
-            "projectReferences": {
-              "D:\\25_BackUp\\0061_Frm준비\\FormMain\\FormMain.csproj": {
-                "projectPath": "D:\\25_BackUp\\0061_Frm준비\\FormMain\\FormMain.csproj"
-              },
-              "D:\\25_EpicV004\\EpicPrologue\\EpicPrologue.csproj": {
-                "projectPath": "D:\\25_EpicV004\\EpicPrologue\\EpicPrologue.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        }
-      },
-      "frameworks": {
-        "net8.0-windows7.0": {
-          "targetAlias": "net8.0-windows",
-          "dependencies": {
-            "DevExpress.Win.Design": {
+            "EpicPrologue": {
               "target": "Package",
-              "version": "[23.2.3, )"
+              "version": "[1.0.7, )"
             }
           },
           "imports": [

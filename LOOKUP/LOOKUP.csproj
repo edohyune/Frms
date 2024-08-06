@@ -9,11 +9,12 @@
 
   <ItemGroup>
     <PackageReference Include="DevExpress.Win.Design" Version="23.2.3" />
+    <PackageReference Include="EpicPrologue" Version="1.0.7" />
   </ItemGroup>
-
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\25_BackUp\0061_Frm준비\FormMain\FormMain.csproj" />
-    <ProjectReference Include="..\..\..\EpicPrologue\EpicPrologue.csproj" />
+    <Reference Include="GAIADesignerV004">
+      <HintPath>..\..\..\GAIADesigner\FormMain\bin\Debug\net8.0-windows\GAIADesignerV004.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

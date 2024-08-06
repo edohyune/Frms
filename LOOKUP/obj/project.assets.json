@@ -1290,6 +1290,22 @@
           }
         }
       },
+      "EpicPrologue/1.0.7": {
+        "type": "package",
+        "dependencies": {
+          "Dapper": "2.1.35",
+          "DevExpress.Win.Design": "23.2.3"
+        },
+        "compile": {
+          "lib/net8.0-windows7.0/EpicPrologue.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-windows7.0/EpicPrologue.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App"
+        ]
+      },
       "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
         "type": "package",
         "compile": {
@@ -2020,40 +2036,6 @@
             "rid": "win"
           }
         }
-      },
-      "EpicPrologue/1.0.7": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "Dapper": "2.1.35",
-          "DevExpress.Win.Design": "23.2.3"
-        },
-        "compile": {
-          "bin/placeholder/EpicPrologue.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/EpicPrologue.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.WindowsDesktop.App"
-        ]
-      },
-      "GAIADesignerV004/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "DevExpress.Win.Design": "23.2.3",
-          "EpicPrologue": "1.0.7"
-        },
-        "compile": {
-          "bin/placeholder/GAIADesignerV004.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/GAIADesignerV004.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.WindowsDesktop.App"
-        ]
       }
     }
   },
@@ -3059,6 +3041,19 @@
         "lib/net6.0/DevExpress.Xpo.v23.2.xml",
         "readme.txt",
         "tools/VisualStudioToolsManifest.xml"
+      ]
+    },
+    "EpicPrologue/1.0.7": {
+      "sha512": "KUcY33VUic+C/OYTQkcoQk3vJW4sTFiebWLsCNgOoDzEnqMrMMQtvwycC1IElJp8+1D7d6tcam04RjT40moggQ==",
+      "type": "package",
+      "path": "epicprologue/1.0.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "epicprologue.1.0.7.nupkg.sha512",
+        "epicprologue.nuspec",
+        "lib/net8.0-windows7.0/EpicPrologue.dll"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
@@ -4345,23 +4340,12 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
-    },
-    "EpicPrologue/1.0.7": {
-      "type": "project",
-      "path": "../../../EpicPrologue/EpicPrologue.csproj",
-      "msbuildProject": "../../../EpicPrologue/EpicPrologue.csproj"
-    },
-    "GAIADesignerV004/1.0.0": {
-      "type": "project",
-      "path": "../../../../25_BackUp/0061_Frm준비/FormMain/FormMain.csproj",
-      "msbuildProject": "../../../../25_BackUp/0061_Frm준비/FormMain/FormMain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
       "DevExpress.Win.Design >= 23.2.3",
-      "EpicPrologue >= 1.0.7",
-      "GAIADesignerV004 >= 1.0.0"
+      "EpicPrologue >= 1.0.7"
     ]
   },
   "packageFolders": {
@@ -4399,14 +4383,7 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
-          "projectReferences": {
-            "D:\\25_BackUp\\0061_Frm준비\\FormMain\\FormMain.csproj": {
-              "projectPath": "D:\\25_BackUp\\0061_Frm준비\\FormMain\\FormMain.csproj"
-            },
-            "D:\\25_EpicV004\\EpicPrologue\\EpicPrologue.csproj": {
-              "projectPath": "D:\\25_EpicV004\\EpicPrologue\\EpicPrologue.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -4427,6 +4404,10 @@
           "DevExpress.Win.Design": {
             "target": "Package",
             "version": "[23.2.3, )"
+          },
+          "EpicPrologue": {
+            "target": "Package",
+            "version": "[1.0.7, )"
           }
         },
         "imports": [
@@ -4451,13 +4432,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file D:\\25_EpicV004\\EpicV004\\Frms\\LOOKUP\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

@@ -499,8 +499,8 @@ namespace EpicV004.Frms
             //    return ucCtrl.Text;
             //else if (ctrl is Ctrls.UCGridSet ucGridSet)
             //    return ucGridSet.TextAlignment.ToString();
-            else if (ctrl is Ctrls.UCLookUp ucLookUp)
-                return ucLookUp.TextAlignment.ToString();
+            //else if (ctrl is Ctrls.UCLookUp ucLookUp)
+            //    return ucLookUp.TextAlignment.ToString();
             else if (ctrl is Ctrls.UCMemo ucMemo)
                 return ucMemo.TextAlignment.ToString();
             //else if (ctrl is Ctrls.UCPanel ucPanel)
@@ -535,8 +535,8 @@ namespace EpicV004.Frms
             //    return ucCtrl.Text;
             //else if (ctrl is Ctrls.UCGridSet ucCtrl)
             //    return ucCtrl.Text;
-            else if (ctrl is Ctrls.UCLookUp ucLookUp)
-                return ucLookUp.Text;
+            //else if (ctrl is Ctrls.UCLookUp ucLookUp)
+            //    return ucLookUp.Text;
             else if (ctrl is Ctrls.UCMemo ucMemo)
                 return ucMemo.Text;
             //else if (ctrl is Ctrls.UCPanel ucCtrl)
@@ -571,8 +571,8 @@ namespace EpicV004.Frms
             //    return ucCtrl.Text;
             //else if (ctrl is Ctrls.UCGridSet ucCtrl)
             //    return ucCtrl.Text;
-            else if (ctrl is Ctrls.UCLookUp ucLookUp)
-                return ucLookUp.TitleWidth;
+            //else if (ctrl is Ctrls.UCLookUp ucLookUp)
+            //    return ucLookUp.TitleWidth;
             else if (ctrl is Ctrls.UCMemo ucMemo)
                 return ucMemo.TitleWidth;
             //else if (ctrl is Ctrls.UCPanel ucCtrl)
@@ -607,8 +607,8 @@ namespace EpicV004.Frms
             //    return ucCtrl.Text;
             else if (ctrl is Ctrls.UCGridSet ucGridSet)
                 return ucGridSet.Width;
-            else if (ctrl is Ctrls.UCLookUp ucLookUp)
-                return ucLookUp.Width;
+            //else if (ctrl is Ctrls.UCLookUp ucLookUp)
+            //    return ucLookUp.Width;
             else if (ctrl is Ctrls.UCMemo ucMemo)
                 return ucMemo.Width;
             else if (ctrl is Ctrls.UCPanel ucPanel)
@@ -645,8 +645,8 @@ namespace EpicV004.Frms
             //    return ucCtrl.Text;
             else if (ctrl is Ctrls.UCGridSet ucGridSet)
                 return ucGridSet.Height;
-            else if (ctrl is Ctrls.UCLookUp ucLookUp)
-                return ucLookUp.Height;
+            //else if (ctrl is Ctrls.UCLookUp ucLookUp)
+            //    return ucLookUp.Height;
             else if (ctrl is Ctrls.UCMemo ucMemo)
                 return ucMemo.Height;
             else if (ctrl is Ctrls.UCPanel ucPanel)
@@ -681,8 +681,8 @@ namespace EpicV004.Frms
             //    return ucCtrl.Text;
             //else if (ctrl is Ctrls.UCGridSet ucGridSet)
             //    return ucGridSet.Title;
-            else if (ctrl is Ctrls.UCLookUp ucLookUp)
-                return ucLookUp.Title;
+            //else if (ctrl is Ctrls.UCLookUp ucLookUp)
+            //    return ucLookUp.Title;
             else if (ctrl is Ctrls.UCMemo ucMemo)
                 return ucMemo.Title;
             else if (ctrl is Ctrls.UCPanel ucPanel)
@@ -718,8 +718,8 @@ namespace EpicV004.Frms
             //    return ucCtrl.Text;
             //else if (ctrl is Ctrls.UCGridSet ucGridSet)
             //    return ucGridSet.TitleAlignment.ToString();
-            else if (ctrl is Ctrls.UCLookUp ucLookUp)
-                return ucLookUp.TitleAlignment.ToString();
+            //else if (ctrl is Ctrls.UCLookUp ucLookUp)
+            //    return ucLookUp.TitleAlignment.ToString();
             else if (ctrl is Ctrls.UCMemo ucMemo)
                 return ucMemo.TitleAlignment.ToString();
             //else if (ctrl is Ctrls.UCPanel ucPanel)
@@ -754,8 +754,8 @@ namespace EpicV004.Frms
             //    return ucCtrl.Text;
             //else if (ctrl is Ctrls.UCGridSet ucGridSet)
             //    return ucGridSet.EditYn;
-            else if (ctrl is Ctrls.UCLookUp ucLookUp)
-                return ucLookUp.EditYn;
+            //else if (ctrl is Ctrls.UCLookUp ucLookUp)
+            //    return ucLookUp.EditYn;
             else if (ctrl is Ctrls.UCMemo ucMemo)
                 return ucMemo.EditYn;
             else if (ctrl is Ctrls.UCPanel ucPanel)
@@ -789,8 +789,8 @@ namespace EpicV004.Frms
             //    return ucCtrl.Text;
             else if (ctrl is Ctrls.UCGridSet ucGridSet)
                 return ucGridSet.Visible;
-            else if (ctrl is Ctrls.UCLookUp ucLookUp)
-                return ucLookUp.ShowYn;
+            //else if (ctrl is Ctrls.UCLookUp ucLookUp)
+            //    return ucLookUp.ShowYn;
             else if (ctrl is Ctrls.UCMemo ucMemo)
                 return ucMemo.ShowYn;
             else if (ctrl is Ctrls.UCPanel ucPanel)

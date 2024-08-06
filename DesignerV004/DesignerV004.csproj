@@ -8,12 +8,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="EpicPrologue" Version="1.0.5" />
+    <PackageReference Include="EpicPrologue" Version="1.0.7" />
   </ItemGroup>
 
   <ItemGroup>
     <Reference Include="GAIADesignerV004">
-      <HintPath>..\..\DLL\GAIADesignerV004.dll</HintPath>
+      <HintPath>..\..\..\GAIADesigner\FormMain\bin\Debug\net8.0-windows\GAIADesignerV004.dll</HintPath>
     </Reference>
   </ItemGroup>
 
