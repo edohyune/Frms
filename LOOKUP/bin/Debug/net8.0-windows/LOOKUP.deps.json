@@ -9,7 +9,7 @@
       "LOOKUP/1.0.0": {
         "dependencies": {
           "DevExpress.Win.Design": "23.2.3",
-          "EpicPrologue": "1.0.6",
+          "EpicPrologue": "1.0.5",
           "GAIADesignerV004": "1.0.0",
           "GAIADesignerV004.Reference": "1.0.0.0"
         },
@@ -1417,7 +1417,7 @@
           "System.Drawing.Common": "4.7.2"
         }
       },
-      "EpicPrologue/1.0.6": {
+      "EpicPrologue/1.0.5": {
         "dependencies": {
           "Dapper": "2.1.35",
           "DevExpress.Win.Design": "23.2.3"
@@ -1428,8 +1428,7 @@
       },
       "GAIADesignerV004/1.0.0": {
         "dependencies": {
-          "DevExpress.Win.Design": "23.2.3",
-          "EpicPrologue": "1.0.6"
+          "EpicPrologue": "1.0.5"
         },
         "runtime": {
           "GAIADesignerV004.dll": {}
@@ -2130,7 +2129,7 @@
       "path": "system.windows.extensions/4.7.0",
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
     },
-    "EpicPrologue/1.0.6": {
+    "EpicPrologue/1.0.5": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

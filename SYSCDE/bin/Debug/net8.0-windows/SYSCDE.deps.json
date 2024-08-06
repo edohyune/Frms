@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v8.0": {
       "SYSCDE/1.0.0": {
         "dependencies": {
-          "EpicPrologue": "1.0.6",
+          "EpicPrologue": "1.0.7",
           "GAIADesignerV004": "1.0.0",
           "GAIADesignerV004.Reference": "1.0.0.0"
         },

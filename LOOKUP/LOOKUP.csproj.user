@@ -4,8 +4,5 @@
     <Compile Update="LOOKUP.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="RtpSample.cs">
-      <SubType>XtraReport</SubType>
-    </Compile>
   </ItemGroup>
 </Project>
