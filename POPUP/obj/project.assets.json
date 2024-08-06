@@ -4354,11 +4354,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\25_EpicV004\\EpicV004\\Frms\\DesignerV004\\DesignerV004.csproj",
-      "projectName": "DesignerV004",
-      "projectPath": "D:\\25_EpicV004\\EpicV004\\Frms\\DesignerV004\\DesignerV004.csproj",
+      "projectUniqueName": "D:\\25_EpicV004\\EpicV004\\Frms\\POPUP\\POPUP.csproj",
+      "projectName": "POPUP",
+      "projectPath": "D:\\25_EpicV004\\EpicV004\\Frms\\POPUP\\POPUP.csproj",
       "packagesPath": "C:\\Users\\mupai\\.nuget\\packages\\",
-      "outputPath": "D:\\25_EpicV004\\EpicV004\\Frms\\DesignerV004\\obj\\",
+      "outputPath": "D:\\25_EpicV004\\EpicV004\\Frms\\POPUP\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages"

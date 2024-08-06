@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SYSCDE")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4b5a7f58ad1eaf16514827e6ec02a7518f356658")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4d5213c39560d4304dca97a632ca00aceb6d4046")]
 [assembly: System.Reflection.AssemblyProductAttribute("SYSCDE")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SYSCDE")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

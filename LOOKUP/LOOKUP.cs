@@ -1,7 +1,10 @@
-﻿using DevExpress.XtraTreeList;
+﻿using Dapper;
+using DevExpress.XtraTreeList;
 using DevExpress.XtraTreeList.Data;
 using EpicV004.Libs.Repo;
+using LOOKUP;
 using System.ComponentModel;
+using System.Data;
 using System.Windows.Forms;
 
 namespace EpicV004.Frms
@@ -77,6 +80,23 @@ namespace EpicV004.Frms
         private void searchLookUpEdit2_Properties_Popup(object sender, EventArgs e)
         {
             searchLookUpEdit2.Properties.PopupFormWidth = 500; // 예시로 팝업 폼 너비 설정
+        }
+
+        private void ucButton1_Click(object sender, EventArgs e)
+        {
+            DynamicParameters p = new DynamicParameters();
+            p.Add("@FrwId", "");   // Edit
+            p.Add("@FrmId", ""); // Edit
+            DataSet dSet = OpenDataSet("mm100_printPr", p);
+
+            if (dSet == null || dSet.Tables.Count == 0 || dSet.Tables[0].Rows.Count == 0)
+            {
+                return;
+            }
+
+            RtpSample Rpt = new RtpSample();    // Edit
+            DevExpress.XtraReports.UI.ReportPrintTool ReportPrintTool = new DevExpress.XtraReports.UI.ReportPrintTool(Rpt);
+            ReportPrintTool.ShowPreviewDialog();
         }
     }
 }

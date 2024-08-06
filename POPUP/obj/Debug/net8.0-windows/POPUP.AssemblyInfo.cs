@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("TESTFRMS")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("POPUP")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4d5213c39560d4304dca97a632ca00aceb6d4046")]
-[assembly: System.Reflection.AssemblyProductAttribute("TESTFRMS")]
-[assembly: System.Reflection.AssemblyTitleAttribute("TESTFRMS")]
+[assembly: System.Reflection.AssemblyProductAttribute("POPUP")]
+[assembly: System.Reflection.AssemblyTitleAttribute("POPUP")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]

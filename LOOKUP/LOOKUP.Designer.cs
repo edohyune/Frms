@@ -41,6 +41,7 @@
             searchLookUpEdit2View = new DevExpress.XtraGrid.Views.Grid.GridView();
             groupBox4 = new GroupBox();
             ucSplit1 = new Ctrls.UCSplit();
+            ucButton1 = new Ctrls.UCButton();
             ucTextBox4 = new Ctrls.UCTextBox();
             FrmId = new Ctrls.UCTextBox();
             ucTextBox3 = new Ctrls.UCTextBox();
@@ -190,6 +191,7 @@
             // 
             // ucSplit1.Panel1
             // 
+            ucSplit1.Panel1.Controls.Add(ucButton1);
             ucSplit1.Panel1.Controls.Add(ucTextBox4);
             ucSplit1.Panel1.Controls.Add(FrmId);
             ucSplit1.Panel1.Controls.Add(ucTextBox3);
@@ -209,6 +211,23 @@
             ucSplit1.SplitterDistance = 553;
             ucSplit1.TabIndex = 7;
             ucSplit1.TitleWidth = 121;
+            // 
+            // ucButton1
+            // 
+            ucButton1.Appearance.Options.UseFont = true;
+            ucButton1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            ucButton1.ControlHeight = 21;
+            ucButton1.ControlWidth = 100;
+            ucButton1.FontBold = FontStyle.Regular;
+            ucButton1.FontFace = "Tahoma";
+            ucButton1.FontSize = 9F;
+            ucButton1.Location = new Point(370, 508);
+            ucButton1.Name = "ucButton1";
+            ucButton1.Size = new Size(100, 21);
+            ucButton1.TabIndex = 14;
+            ucButton1.Title = "Print";
+            ucButton1.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            ucButton1.Click += ucButton1_Click;
             // 
             // ucTextBox4
             // 
@@ -433,5 +452,6 @@
         private Ctrls.UCTextBox ucTextBox2;
         private Ctrls.UCTextBox ucTextBox4;
         private Ctrls.UCTextBox FrmId;
+        private Ctrls.UCButton ucButton1;
     }
 }
