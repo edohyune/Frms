@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Framework9\\Frms\\TESTFRMS\\TESTFRMS.csproj": {}
+    "C:\\Framework9\\Frms\\TST107\\TST107.csproj": {}
   },
   "projects": {
-    "C:\\Framework9\\Frms\\TESTFRMS\\TESTFRMS.csproj": {
+    "C:\\Framework9\\Frms\\TST107\\TST107.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Framework9\\Frms\\TESTFRMS\\TESTFRMS.csproj",
-        "projectName": "TESTFRMS",
-        "projectPath": "C:\\Framework9\\Frms\\TESTFRMS\\TESTFRMS.csproj",
+        "projectUniqueName": "C:\\Framework9\\Frms\\TST107\\TST107.csproj",
+        "projectName": "TST107",
+        "projectPath": "C:\\Framework9\\Frms\\TST107\\TST107.csproj",
         "packagesPath": "C:\\Users\\Satha\\.nuget\\packages\\",
-        "outputPath": "C:\\Framework9\\Frms\\TESTFRMS\\obj\\",
+        "outputPath": "C:\\Framework9\\Frms\\TST107\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages",

@@ -1,17 +1,15 @@
-﻿using EpicV004.Ctrls;
+﻿using DevExpress.Utils.Extensions;
+using EpicV004;
+using EpicV004.Ctrls;
+using System.Data;
 
 namespace EpicV004.Frms
 {
-    public partial class TESTFRMS : FrmBase
+    public partial class TST107 : FrmBase
     {
-        public TESTFRMS()
+        public TST107()
         {
             InitializeComponent();
-        }
-
-        private void UserControl1_Load(object sender, EventArgs e)
-        {
-
         }
         protected override void BarButtonAction(string frm, string action)
         {
@@ -20,7 +18,13 @@ namespace EpicV004.Frms
                 switch (action)
                 {
                     case "Save":
-                        this.Save();
+                        if (this.Save())
+                        {
+                            this.Open();
+                            
+                        }
+                        //this.Save();
+                        
                         break;
                     case "Open":
                         this.Open();
@@ -33,7 +37,7 @@ namespace EpicV004.Frms
                             uCFieldSet.New();
                         }
 
-                        UCGridSet uCGridSet = gridSets.FirstOrDefault((UCGridSet gs) => gs.wrkId == "g10"); /*-----------------------------Edit WorkSet ID*/
+                        UCGridSet uCGridSet = gridSets.FirstOrDefault((UCGridSet gs) => gs.wrkId == ""); /*-----------------------------Edit WorkSet ID*/
                         if (uCGridSet != null)
                         {
                             uCGridSet.New();
@@ -45,5 +49,6 @@ namespace EpicV004.Frms
                 }
             }
         }
+
     }
 }
