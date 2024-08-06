@@ -64,12 +64,13 @@ namespace EpicV004.Frms
             set => Set(ref _dept, value);
         }
 
-        private string _type;
-        public string type
+        private DateTime _date;
+        public DateTime date
         {
-            get => _type;
-            set => Set(ref _type, value);
+            get => _date;
+            set => Set(ref _date, value);
         }
+
 
     }
 }
