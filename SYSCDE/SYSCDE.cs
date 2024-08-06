@@ -1,4 +1,5 @@
 ﻿using Dapper;
+using DevExpress.CodeParser;
 
 namespace EpicV004.Frms
 {
@@ -7,6 +8,27 @@ namespace EpicV004.Frms
         public SYSCDE()
         {
             InitializeComponent();
+        }
+        protected override void BarButtonAction(string frm, string action)
+        {
+            string searchStr = grdCde.GetText("PCd").ToString();
+
+            if (this.Name == frm)
+            {
+                switch (action)
+                {
+                    case "Save":
+                        if (this.Save()) 
+                        {
+                            grdCde.Open();
+                            grdCde.FocuseByFindedValue("PCd", searchStr);
+                        }
+                        break;
+                    default:
+                        base.BarButtonAction(frm, action);
+                        break;
+                }
+            }
         }
 
         private void grdCde_UCAfterFocusedRow(object sender, int preIndex, int rowIndex, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)

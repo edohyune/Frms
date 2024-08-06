@@ -8,11 +8,8 @@
     ".NETCoreApp,Version=v8.0": {
       "GAIADesignerV004/1.0.0": {
         "dependencies": {
-          "Ctrls": "1.0.0",
-          "Dapper": "2.1.35",
           "DevExpress.Win.Design": "23.2.3",
-          "Libs": "1.0.0",
-          "System.Data.SqlClient": "4.8.6"
+          "EpicPrologue": "1.0.6"
         },
         "runtime": {
           "GAIADesignerV004.dll": {}
@@ -97,7 +94,7 @@
           "DevExpress.RichEdit.Core": "23.2.3",
           "DevExpress.Xpo": "23.2.3",
           "System.Configuration.ConfigurationManager": "4.7.0",
-          "System.Data.SqlClient": "4.8.6"
+          "System.Data.SqlClient": "4.8.5"
         },
         "runtime": {
           "lib/net6.0/DevExpress.DataAccess.v23.2.dll": {
@@ -124,7 +121,7 @@
           "DevExpress.Win.RichEdit": "23.2.3",
           "DevExpress.Win.TreeList": "23.2.3",
           "DevExpress.Xpo": "23.2.3",
-          "System.Data.SqlClient": "4.8.6"
+          "System.Data.SqlClient": "4.8.5"
         },
         "runtime": {
           "lib/net6.0-windows/DevExpress.DataAccess.v23.2.UI.dll": {
@@ -568,7 +565,7 @@
           "System.Configuration.ConfigurationManager": "4.7.0",
           "System.Data.Odbc": "4.5.0",
           "System.Data.OleDb": "4.7.0",
-          "System.Data.SqlClient": "4.8.6",
+          "System.Data.SqlClient": "4.8.5",
           "System.IO.Ports": "4.5.0",
           "System.ServiceModel.Http": "4.10.2",
           "System.ServiceModel.NetTcp": "4.4.4",
@@ -694,7 +691,7 @@
           "DevExpress.Utils": "23.2.3",
           "DevExpress.Win.Navigation": "23.2.3",
           "DevExpress.Win.Printing": "23.2.3",
-          "System.Data.SqlClient": "4.8.6"
+          "System.Data.SqlClient": "4.8.5"
         },
         "runtime": {
           "lib/net6.0-windows/DevExpress.XtraMap.v23.2.dll": {
@@ -1012,7 +1009,7 @@
         "dependencies": {
           "DevExpress.Data": "23.2.3",
           "Microsoft.Extensions.DependencyInjection": "2.0.0",
-          "System.Data.SqlClient": "4.8.6",
+          "System.Data.SqlClient": "4.8.5",
           "System.Drawing.Common": "4.7.2",
           "System.Security.Cryptography.Pkcs": "6.0.3",
           "System.ServiceModel.Http": "4.10.2",
@@ -1180,7 +1177,7 @@
           }
         }
       },
-      "System.Data.SqlClient/4.8.6": {
+      "System.Data.SqlClient/4.8.5": {
         "dependencies": {
           "Microsoft.Win32.Registry": "4.7.0",
           "System.Security.Principal.Windows": "5.0.0",
@@ -1188,22 +1185,22 @@
         },
         "runtime": {
           "lib/netcoreapp2.1/System.Data.SqlClient.dll": {
-            "assemblyVersion": "4.6.1.6",
-            "fileVersion": "4.700.23.52603"
+            "assemblyVersion": "4.6.1.5",
+            "fileVersion": "4.700.22.51706"
           }
         },
         "runtimeTargets": {
           "runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll": {
             "rid": "unix",
             "assetType": "runtime",
-            "assemblyVersion": "4.6.1.6",
-            "fileVersion": "4.700.23.52603"
+            "assemblyVersion": "4.6.1.5",
+            "fileVersion": "4.700.22.51706"
           },
           "runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll": {
             "rid": "win",
             "assetType": "runtime",
-            "assemblyVersion": "4.6.1.6",
-            "fileVersion": "4.700.23.52603"
+            "assemblyVersion": "4.6.1.5",
+            "fileVersion": "4.700.22.51706"
           }
         }
       },
@@ -1418,24 +1415,13 @@
           "System.Drawing.Common": "4.7.2"
         }
       },
-      "Ctrls/1.0.0": {
+      "EpicPrologue/1.0.6": {
         "dependencies": {
           "Dapper": "2.1.35",
-          "DevExpress.Win.Design": "23.2.3",
-          "Libs": "1.0.0",
-          "System.Data.SqlClient": "4.8.6"
+          "DevExpress.Win.Design": "23.2.3"
         },
         "runtime": {
-          "Ctrls.dll": {}
-        }
-      },
-      "Libs/1.0.0": {
-        "dependencies": {
-          "Dapper": "2.1.35",
-          "System.Data.SqlClient": "4.8.6"
-        },
-        "runtime": {
-          "Libs.dll": {}
+          "EpicPrologue.dll": {}
         }
       }
     }
@@ -1964,12 +1950,12 @@
       "path": "system.data.oledb/4.7.0",
       "hashPath": "system.data.oledb.4.7.0.nupkg.sha512"
     },
-    "System.Data.SqlClient/4.8.6": {
+    "System.Data.SqlClient/4.8.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-2Ij/LCaTQRyAi5lAv7UUTV9R2FobC8xN9mE0fXBZohum/xLl8IZVmE98Rq5ugQHjCgTBRKqpXRb4ORulRdA6Ig==",
-      "path": "system.data.sqlclient/4.8.6",
-      "hashPath": "system.data.sqlclient.4.8.6.nupkg.sha512"
+      "sha512": "sha512-fRqxut4lrndPHrXD+ht1XRmCL3obuKldm4XjCRYS9p5f7FSR7shBxAwTkDrpFMsHC9BhNgjjmUtiIjvehn5zkg==",
+      "path": "system.data.sqlclient/4.8.5",
+      "hashPath": "system.data.sqlclient.4.8.5.nupkg.sha512"
     },
     "System.Diagnostics.EventLog/4.5.0": {
       "type": "package",
@@ -2125,12 +2111,7 @@
       "path": "system.windows.extensions/4.7.0",
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
     },
-    "Ctrls/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Libs/1.0.0": {
+    "EpicPrologue/1.0.6": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

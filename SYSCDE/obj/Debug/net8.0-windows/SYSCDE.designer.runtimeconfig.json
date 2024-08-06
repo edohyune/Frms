@@ -12,9 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\Satha\\.nuget\\packages",
-      "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages",
-      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      "C:\\Users\\mupai\\.nuget\\packages",
+      "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages"
     ],
     "configProperties": {
       "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": true,
