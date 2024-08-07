@@ -26,12 +26,24 @@ namespace EpicV004.Frms
 
         protected override void BarButtonAction(string frm, string action)
         {
+            string searchStr = g10.GetText("id").ToString();
             if (this.Name == frm)
             {
                 switch (action)
                 {
                     case "Save":
-                        this.Save();
+                        if (this.Save())
+                        {
+                            //this.Open();
+                            g10.Open();
+                            g10.FocuseByFindedValue("id", searchStr);
+                        }
+                        //if (this.Save())
+                        //{
+                        //    this.Open();
+
+                        //}
+                        ////this.Save();
                         break;
                     case "Open":
                         this.Open();

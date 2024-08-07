@@ -1,7 +1,9 @@
 ﻿using DevExpress.Utils.Extensions;
 using EpicV004;
 using EpicV004.Ctrls;
+using EpicV004.Libs.Repo;
 using System.Data;
+
 
 namespace EpicV004.Frms
 {
@@ -13,6 +15,7 @@ namespace EpicV004.Frms
         }
         protected override void BarButtonAction(string frm, string action)
         {
+            string searchStr = g10.GetText("id").ToString();
             if (this.Name == frm)
             {
                 switch (action)
@@ -20,11 +23,16 @@ namespace EpicV004.Frms
                     case "Save":
                         if (this.Save())
                         {
-                            this.Open();
-                            
+                            g10.Open();
+                            //g10.FocuseByFindedValue("id", searchStr);
                         }
-                        //this.Save();
-                        
+                        //if (this.Save())
+                        //{
+                        //    this.Open();
+
+                        //}
+                        ////this.Save();
+
                         break;
                     case "Open":
                         this.Open();
@@ -37,7 +45,7 @@ namespace EpicV004.Frms
                             uCFieldSet.New();
                         }
 
-                        UCGridSet uCGridSet = gridSets.FirstOrDefault((UCGridSet gs) => gs.wrkId == ""); /*-----------------------------Edit WorkSet ID*/
+                        UCGridSet uCGridSet = gridSets.FirstOrDefault((UCGridSet gs) => gs.wrkId == "g10"); /*-----------------------------Edit WorkSet ID*/
                         if (uCGridSet != null)
                         {
                             uCGridSet.New();
