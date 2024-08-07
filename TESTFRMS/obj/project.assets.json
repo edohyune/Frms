@@ -1290,7 +1290,7 @@
           }
         }
       },
-      "EpicPrologue/1.0.6": {
+      "EpicPrologue/1.0.7": {
         "type": "package",
         "dependencies": {
           "Dapper": "2.1.35",
@@ -3043,15 +3043,15 @@
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "EpicPrologue/1.0.6": {
-      "sha512": "GnihXyHy6BxvB2xEe+iNt5fuQtsviKnUjG3SZvf/bev5VZz0RL12dsJt2ETsWaLdpPmHvWWeA4lDuXksTBNHeQ==",
+    "EpicPrologue/1.0.7": {
+      "sha512": "KUcY33VUic+C/OYTQkcoQk3vJW4sTFiebWLsCNgOoDzEnqMrMMQtvwycC1IElJp8+1D7d6tcam04RjT40moggQ==",
       "type": "package",
-      "path": "epicprologue/1.0.6",
+      "path": "epicprologue/1.0.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
-        "epicprologue.1.0.6.nupkg.sha512",
+        "epicprologue.1.0.7.nupkg.sha512",
         "epicprologue.nuspec",
         "lib/net8.0-windows7.0/EpicPrologue.dll"
       ]
@@ -4344,32 +4344,29 @@
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
-      "EpicPrologue >= 1.0.6"
+      "EpicPrologue >= 1.0.7"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Satha\\.nuget\\packages\\": {},
-    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\mupai\\.nuget\\packages\\": {},
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Framework9\\Frms\\TESTFRMS\\TESTFRMS.csproj",
+      "projectUniqueName": "D:\\25_EpicV004\\EpicV004\\Frms\\TESTFRMS\\TESTFRMS.csproj",
       "projectName": "TESTFRMS",
-      "projectPath": "C:\\Framework9\\Frms\\TESTFRMS\\TESTFRMS.csproj",
-      "packagesPath": "C:\\Users\\Satha\\.nuget\\packages\\",
-      "outputPath": "C:\\Framework9\\Frms\\TESTFRMS\\obj\\",
+      "projectPath": "D:\\25_EpicV004\\EpicV004\\Frms\\TESTFRMS\\TESTFRMS.csproj",
+      "packagesPath": "C:\\Users\\mupai\\.nuget\\packages\\",
+      "outputPath": "D:\\25_EpicV004\\EpicV004\\Frms\\TESTFRMS\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages",
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Satha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mupai\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.2.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4379,6 +4376,7 @@
         "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\DevExpress 23.2\\Components\\System\\Components\\Packages": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4404,7 +4402,7 @@
         "dependencies": {
           "EpicPrologue": {
             "target": "Package",
-            "version": "[1.0.6, )"
+            "version": "[1.0.7, )"
           }
         },
         "imports": [

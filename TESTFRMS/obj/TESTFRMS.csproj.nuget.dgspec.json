@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Framework9\\Frms\\TESTFRMS\\TESTFRMS.csproj": {}
+    "D:\\25_EpicV004\\EpicV004\\Frms\\TESTFRMS\\TESTFRMS.csproj": {}
   },
   "projects": {
-    "C:\\Framework9\\Frms\\TESTFRMS\\TESTFRMS.csproj": {
+    "D:\\25_EpicV004\\EpicV004\\Frms\\TESTFRMS\\TESTFRMS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Framework9\\Frms\\TESTFRMS\\TESTFRMS.csproj",
+        "projectUniqueName": "D:\\25_EpicV004\\EpicV004\\Frms\\TESTFRMS\\TESTFRMS.csproj",
         "projectName": "TESTFRMS",
-        "projectPath": "C:\\Framework9\\Frms\\TESTFRMS\\TESTFRMS.csproj",
-        "packagesPath": "C:\\Users\\Satha\\.nuget\\packages\\",
-        "outputPath": "C:\\Framework9\\Frms\\TESTFRMS\\obj\\",
+        "projectPath": "D:\\25_EpicV004\\EpicV004\\Frms\\TESTFRMS\\TESTFRMS.csproj",
+        "packagesPath": "C:\\Users\\mupai\\.nuget\\packages\\",
+        "outputPath": "D:\\25_EpicV004\\EpicV004\\Frms\\TESTFRMS\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages",
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Satha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mupai\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.2.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -31,6 +29,7 @@
           "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\DevExpress 23.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -56,7 +55,7 @@
           "dependencies": {
             "EpicPrologue": {
               "target": "Package",
-              "version": "[1.0.6, )"
+              "version": "[1.0.7, )"
             }
           },
           "imports": [

@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="DevExpress.Win.Design" Version="23.2.3" />
     <PackageReference Include="EpicPrologue" Version="1.0.7" />
   </ItemGroup>
 

@@ -1,0 +1,17 @@
+D:\25_EpicV004\EpicV004\Frms\TESTFRMS\bin\Debug\net8.0-windows\TESTFRMS.deps.json
+D:\25_EpicV004\EpicV004\Frms\TESTFRMS\bin\Debug\net8.0-windows\TESTFRMS.dll
+D:\25_EpicV004\EpicV004\Frms\TESTFRMS\bin\Debug\net8.0-windows\TESTFRMS.pdb
+D:\25_EpicV004\EpicV004\Frms\TESTFRMS\bin\Debug\net8.0-windows\GAIADesignerV004.dll
+D:\25_EpicV004\EpicV004\Frms\TESTFRMS\obj\Debug\net8.0-windows\TESTFRMS.csproj.AssemblyReference.cache
+D:\25_EpicV004\EpicV004\Frms\TESTFRMS\obj\Debug\net8.0-windows\EpicV004.Frms.TESTFRMS.resources
+D:\25_EpicV004\EpicV004\Frms\TESTFRMS\obj\Debug\net8.0-windows\TESTFRMS.csproj.GenerateResource.cache
+D:\25_EpicV004\EpicV004\Frms\TESTFRMS\obj\Debug\net8.0-windows\TESTFRMS.GeneratedMSBuildEditorConfig.editorconfig
+D:\25_EpicV004\EpicV004\Frms\TESTFRMS\obj\Debug\net8.0-windows\TESTFRMS.AssemblyInfoInputs.cache
+D:\25_EpicV004\EpicV004\Frms\TESTFRMS\obj\Debug\net8.0-windows\TESTFRMS.AssemblyInfo.cs
+D:\25_EpicV004\EpicV004\Frms\TESTFRMS\obj\Debug\net8.0-windows\TESTFRMS.csproj.CoreCompileInputs.cache
+D:\25_EpicV004\EpicV004\Frms\TESTFRMS\obj\Debug\net8.0-windows\TESTFRMS.sourcelink.json
+D:\25_EpicV004\EpicV004\Frms\TESTFRMS\obj\Debug\net8.0-windows\TESTFRMS.csproj.Up2Date
+D:\25_EpicV004\EpicV004\Frms\TESTFRMS\obj\Debug\net8.0-windows\TESTFRMS.dll
+D:\25_EpicV004\EpicV004\Frms\TESTFRMS\obj\Debug\net8.0-windows\refint\TESTFRMS.dll
+D:\25_EpicV004\EpicV004\Frms\TESTFRMS\obj\Debug\net8.0-windows\TESTFRMS.pdb
+D:\25_EpicV004\EpicV004\Frms\TESTFRMS\obj\Debug\net8.0-windows\ref\TESTFRMS.dll
