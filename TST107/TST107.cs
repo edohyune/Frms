@@ -73,24 +73,13 @@ namespace EpicV004.Frms
                         {
                             g10.Open(); // Reload the grid data
                             g10.FocuseByFindedValue("id", searchStr); // Focus the row with the saved ID
-
                         }
                         break;
                     case "Open":
                         this.Open();
                         break;
                     case "New":
-                        UCFieldSet uCFieldSet = fieldSets.FirstOrDefault((UCFieldSet fs) => fs.wrkId == "f10");
-                        if (uCFieldSet != null)
-                        {
-                            uCFieldSet.New();
-                        }
-
-                        UCGridSet uCGridSet = gridSets.FirstOrDefault((UCGridSet gs) => gs.wrkId == "g10");
-                        if (uCGridSet != null)
-                        {
-                            uCGridSet.New();
-                        }
+                        NewWorkSet("f10");
                         break;
                     default:
                         base.BarButtonAction(frm, action);
