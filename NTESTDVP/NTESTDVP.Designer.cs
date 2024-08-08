@@ -43,6 +43,7 @@
             // ucSplit1
             // 
             ucSplit1.Dock = DockStyle.Fill;
+            ucSplit1.FixedPanel = FixedPanel.Panel1;
             ucSplit1.Location = new Point(0, 0);
             ucSplit1.Name = "ucSplit1";
             ucSplit1.Orientation = Orientation.Horizontal;
@@ -55,7 +56,7 @@
             // 
             ucSplit1.Panel2.Controls.Add(G_10);
             ucSplit1.Size = new Size(1251, 635);
-            ucSplit1.SplitterDistance = 105;
+            ucSplit1.SplitterDistance = 74;
             ucSplit1.TabIndex = 0;
             ucSplit1.TitleWidth = 121;
             // 
@@ -65,7 +66,7 @@
             ucPanel1.Dock = DockStyle.Fill;
             ucPanel1.Location = new Point(0, 0);
             ucPanel1.Name = "ucPanel1";
-            ucPanel1.Size = new Size(1251, 105);
+            ucPanel1.Size = new Size(1251, 74);
             ucPanel1.TabIndex = 0;
             ucPanel1.Text = "ucPanel1";
             // 
@@ -73,12 +74,13 @@
             // 
             S1.Appearance.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             S1.Appearance.Options.UseFont = true;
-            S1.ControlHeight = 21;
-            S1.ControlWidth = 25;
+            S1.ControlHeight = 20;
+            S1.ControlWidth = 238;
+            S1.FldTy = null;
             S1.FontColor = Color.FromArgb(40, 40, 40);
             S1.FontFace = "Tahoma";
             S1.FontSize = 9F;
-            S1.Location = new Point(6, 53);
+            S1.Location = new Point(0, 36);
             S1.Margin = new Padding(4, 3, 4, 3);
             S1.Name = "S1";
             S1.Size = new Size(238, 20);
@@ -93,7 +95,7 @@
             G_10.Dock = DockStyle.Fill;
             G_10.Location = new Point(0, 0);
             G_10.Name = "G_10";
-            G_10.Size = new Size(1251, 526);
+            G_10.Size = new Size(1251, 557);
             G_10.TabIndex = 0;
             // 
             // NTESTDVP
