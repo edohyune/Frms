@@ -60,7 +60,7 @@
             this.xrTable4 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow4 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell7 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.tel = new DevExpress.XtraReports.UI.XRTableCell();
+            this.tell = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTable5 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow5 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell9 = new DevExpress.XtraReports.UI.XRTableCell();
@@ -374,7 +374,7 @@
             // 
             this.xrTableRow4.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
             this.xrTableCell7,
-            this.tel});
+            this.tell});
             this.xrTableRow4.Name = "xrTableRow4";
             this.xrTableRow4.Weight = 1D;
             // 
@@ -387,14 +387,14 @@
             this.xrTableCell7.Text = "Telephone:";
             this.xrTableCell7.Weight = 1.2062478637695313D;
             // 
-            // tel
+            // tell
             // 
-            this.tel.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            this.tell.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right)));
-            this.tel.Multiline = true;
-            this.tel.Name = "tel";
-            this.tel.StylePriority.UseBorders = false;
-            this.tel.Weight = 1.9166668701171874D;
+            this.tell.Multiline = true;
+            this.tell.Name = "tell";
+            this.tell.StylePriority.UseBorders = false;
+            this.tell.Weight = 1.9166668701171874D;
             // 
             // xrTable5
             // 
@@ -649,7 +649,7 @@
         private DevExpress.XtraReports.UI.XRTable xrTable4;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow4;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell7;
-        private DevExpress.XtraReports.UI.XRTableCell tel;
+        private DevExpress.XtraReports.UI.XRTableCell tell;
         private DevExpress.XtraReports.UI.XRTable xrTable5;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow5;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell9;

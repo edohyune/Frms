@@ -33,7 +33,7 @@ namespace TST104
             id.DataBindings.Add("Text", dSet.Tables[0], "id");
             first_name.DataBindings.Add("Text", dSet.Tables[0], "first_name");
             last_name.DataBindings.Add("Text", dSet.Tables[0], "last_name");
-            tel.DataBindings.Add("Text", dSet.Tables[0], "tel");
+            tell.DataBindings.Add("Text", dSet.Tables[0], "tell");
             dept.DataBindings.Add("Text", dSet.Tables[0], "dept");
             eng_name.DataBindings.Add("Text", dSet.Tables[0], "eng_name");
             addr.DataBindings.Add("Text", dSet.Tables[0], "addr");
