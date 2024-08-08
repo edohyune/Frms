@@ -15,5 +15,3 @@ C:\Users\Mupai03\Documents\Mupai Dev\Frms\NTESTDVP\obj\Debug\net8.0-windows\NTES
 C:\Users\Mupai03\Documents\Mupai Dev\Frms\NTESTDVP\obj\Debug\net8.0-windows\refint\NTESTDVP.dll
 C:\Users\Mupai03\Documents\Mupai Dev\Frms\NTESTDVP\obj\Debug\net8.0-windows\NTESTDVP.pdb
 C:\Users\Mupai03\Documents\Mupai Dev\Frms\NTESTDVP\obj\Debug\net8.0-windows\ref\NTESTDVP.dll
-C:\Users\Mupai03\Documents\Mupai Dev\Frms\NTESTDVP\bin\Debug\net8.0-windows\Libs.dll
-C:\Users\Mupai03\Documents\Mupai Dev\Frms\NTESTDVP\bin\Debug\net8.0-windows\Ctrls.dll
