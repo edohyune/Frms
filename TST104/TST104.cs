@@ -46,27 +46,14 @@ namespace EpicV004.Frms
                         //if (this.Save())
                         //{
                         //    this.Open();
-
                         //}
                         ////this.Save();
                         break;
-                    case "Open":
-                        this.Open();
-                        break;
+
                     case "New":
-
-                        UCFieldSet uCFieldSet = fieldSets.FirstOrDefault((UCFieldSet fs) => fs.wrkId == "f10"); /*-----------------------------Edit WorkSet ID*/
-                        if (uCFieldSet != null)
-                        {
-                            uCFieldSet.New();
-                        }
-
-                        UCGridSet uCGridSet = gridSets.FirstOrDefault((UCGridSet gs) => gs.wrkId == "g10"); /*-----------------------------Edit WorkSet ID*/
-                        if (uCGridSet != null)
-                        {
-                            uCGridSet.New();
-                        }
+                        NewWorkSet("f10");
                         break;
+                      
                     default:
                         base.BarButtonAction(frm, action);
                         break;
@@ -77,9 +64,9 @@ namespace EpicV004.Frms
         private void ucButton2_Click(object sender, EventArgs e)
         {
             DynamicParameters p = new DynamicParameters();
-            //p.Add("@id", id.Text); // Add parameter
+            p.Add("@id", id.Text); // Add parameter
             //DataSet dSet = OpenDataSet("tst104_print",p);
-            DataSet dSet = OpenDataSet("tst104_print");
+            DataSet dSet = OpenDataSet("tst104_print",p);
             if (Libs.GenFunc.IsEmpty(dSet))
             {
                 return;
@@ -89,21 +76,6 @@ namespace EpicV004.Frms
             DevExpress.XtraReports.UI.ReportPrintTool ReportPrintTool = new DevExpress.XtraReports.UI.ReportPrintTool(Rpt);
             ReportPrintTool.ShowPreviewDialog();
 
-
-
-            //DynamicParameters p = new DynamicParameters();
-            //p.Add("id",id);
-
-
-            //DataSet dSet = OpenDataSet("TST104", p);
-
-            //if (Libs.GenFunc.IsEmpty(dSet))
-            //    { 
-            //    return; 
-
-            //    }
-            //Report1 Rpt = new Report1(dSet);
-            //ReportPrintTool
         }
     }
 }
