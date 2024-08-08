@@ -30,12 +30,14 @@
         {
             ucSplit1 = new Ctrls.UCSplit();
             ucPanel1 = new Ctrls.UCPanel();
+            ucButton2 = new Ctrls.UCButton();
             s_txt = new Ctrls.UCTextBox();
             ucSplit2 = new Ctrls.UCSplit();
             ucPanel2 = new Ctrls.UCPanel();
             g10 = new Ctrls.UCGridSet();
             ucSplit3 = new Ctrls.UCSplit();
             ucPanel3 = new Ctrls.UCPanel();
+            gend = new Ctrls.UCTextBox();
             dept = new Ctrls.UCTextBox();
             tell = new Ctrls.UCTextBox();
             addr = new Ctrls.UCTextBox();
@@ -45,8 +47,6 @@
             id = new Ctrls.UCTextBox();
             ucPanel4 = new Ctrls.UCPanel();
             g20 = new Ctrls.UCGridSet();
-            gend = new Ctrls.UCTextBox();
-            ucButton2 = new Ctrls.UCButton();
             ((System.ComponentModel.ISupportInitialize)ucSplit1).BeginInit();
             ucSplit1.Panel1.SuspendLayout();
             ucSplit1.Panel2.SuspendLayout();
@@ -100,9 +100,30 @@
             ucPanel1.TabIndex = 0;
             ucPanel1.Text = "Search";
             // 
+            // ucButton2
+            // 
+            ucButton2.Appearance.BackColor = Color.Gray;
+            ucButton2.Appearance.Font = new Font("Tahoma", 9F);
+            ucButton2.Appearance.Options.UseBackColor = true;
+            ucButton2.Appearance.Options.UseFont = true;
+            ucButton2.AppearancePressed.BackColor = Color.DodgerBlue;
+            ucButton2.AppearancePressed.Options.UseBackColor = true;
+            ucButton2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            ucButton2.ControlHeight = 35;
+            ucButton2.ControlWidth = 100;
+            ucButton2.FontBold = FontStyle.Regular;
+            ucButton2.FontFace = "Tahoma";
+            ucButton2.FontSize = 9F;
+            ucButton2.Location = new Point(989, 32);
+            ucButton2.Name = "ucButton2";
+            ucButton2.Size = new Size(100, 35);
+            ucButton2.TabIndex = 1;
+            ucButton2.Title = "Print";
+            ucButton2.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            ucButton2.Click += ucButton2_Click;
+            // 
             // s_txt
             // 
-            s_txt.ButtonVisiable = false;
             s_txt.ControlHeight = 21;
             s_txt.ControlWidth = 305;
             s_txt.FontColor = Color.Black;
@@ -192,9 +213,25 @@
             ucPanel3.TabIndex = 0;
             ucPanel3.Text = "Master Data";
             // 
+            // gend
+            // 
+            gend.ControlHeight = 21;
+            gend.ControlWidth = 327;
+            gend.FontColor = Color.Black;
+            gend.FontFace = "Tahoma";
+            gend.FontSize = 9F;
+            gend.FormatStr = "";
+            gend.Location = new Point(356, 38);
+            gend.Name = "gend";
+            gend.Size = new Size(327, 21);
+            gend.TabIndex = 15;
+            gend.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            gend.Title = "Gender";
+            gend.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            gend.TitleWidth = 100;
+            // 
             // dept
             // 
-            dept.ButtonVisiable = false;
             dept.ControlHeight = 21;
             dept.ControlWidth = 327;
             dept.FontColor = Color.Black;
@@ -212,7 +249,6 @@
             // 
             // tell
             // 
-            tell.ButtonVisiable = false;
             tell.ControlHeight = 21;
             tell.ControlWidth = 327;
             tell.FontColor = Color.Black;
@@ -230,7 +266,6 @@
             // 
             // addr
             // 
-            addr.ButtonVisiable = false;
             addr.ControlHeight = 21;
             addr.ControlWidth = 678;
             addr.FontColor = Color.Black;
@@ -248,7 +283,6 @@
             // 
             // eng_name
             // 
-            eng_name.ButtonVisiable = false;
             eng_name.ControlHeight = 21;
             eng_name.ControlWidth = 321;
             eng_name.FontColor = Color.Black;
@@ -266,7 +300,6 @@
             // 
             // last_name
             // 
-            last_name.ButtonVisiable = false;
             last_name.ControlHeight = 21;
             last_name.ControlWidth = 321;
             last_name.FontColor = Color.Black;
@@ -284,7 +317,6 @@
             // 
             // first_name
             // 
-            first_name.ButtonVisiable = false;
             first_name.ControlHeight = 21;
             first_name.ControlWidth = 321;
             first_name.FontColor = Color.Black;
@@ -302,7 +334,6 @@
             // 
             // id
             // 
-            id.ButtonVisiable = false;
             id.ControlHeight = 21;
             id.ControlWidth = 321;
             id.FontColor = Color.Black;
@@ -335,45 +366,6 @@
             g20.Name = "g20";
             g20.Size = new Size(770, 315);
             g20.TabIndex = 0;
-            // 
-            // gend
-            // 
-            gend.ButtonVisiable = false;
-            gend.ControlHeight = 21;
-            gend.ControlWidth = 327;
-            gend.FontColor = Color.Black;
-            gend.FontFace = "Tahoma";
-            gend.FontSize = 9F;
-            gend.FormatStr = "";
-            gend.Location = new Point(356, 38);
-            gend.Name = "gend";
-            gend.Size = new Size(327, 21);
-            gend.TabIndex = 15;
-            gend.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            gend.Title = "Gender";
-            gend.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            gend.TitleWidth = 100;
-            // 
-            // ucButton2
-            // 
-            ucButton2.Appearance.BackColor = Color.Gray;
-            ucButton2.Appearance.Font = new Font("Tahoma", 9F);
-            ucButton2.Appearance.Options.UseBackColor = true;
-            ucButton2.Appearance.Options.UseFont = true;
-            ucButton2.AppearancePressed.BackColor = Color.DodgerBlue;
-            ucButton2.AppearancePressed.Options.UseBackColor = true;
-            ucButton2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            ucButton2.ControlHeight = 35;
-            ucButton2.ControlWidth = 100;
-            ucButton2.FontBold = FontStyle.Regular;
-            ucButton2.FontFace = "Tahoma";
-            ucButton2.FontSize = 9F;
-            ucButton2.Location = new Point(989, 32);
-            ucButton2.Name = "ucButton2";
-            ucButton2.Size = new Size(100, 35);
-            ucButton2.TabIndex = 1;
-            ucButton2.Title = "Print";
-            ucButton2.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
             // 
             // TST104
             // 

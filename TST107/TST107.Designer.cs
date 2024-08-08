@@ -30,18 +30,18 @@
         {
             ucSplit1 = new Ctrls.UCSplit();
             ucPanel3 = new Ctrls.UCPanel();
+            s_txt = new Ctrls.UCTextBox();
             ucSplit2 = new Ctrls.UCSplit();
             ucPanel1 = new Ctrls.UCPanel();
             g10 = new Ctrls.UCGridSet();
             ucSplit3 = new Ctrls.UCSplit();
             ucPanel2 = new Ctrls.UCPanel();
+            id = new Ctrls.UCTextBox();
             addr = new Ctrls.UCTextBox();
             last_name = new Ctrls.UCTextBox();
             first_name = new Ctrls.UCTextBox();
-            id = new Ctrls.UCTextBox();
             ucPanel4 = new Ctrls.UCPanel();
             g20 = new Ctrls.UCGridSet();
-            s_txt = new Ctrls.UCTextBox();
             ((System.ComponentModel.ISupportInitialize)ucSplit1).BeginInit();
             ucSplit1.Panel1.SuspendLayout();
             ucSplit1.Panel2.SuspendLayout();
@@ -94,6 +94,23 @@
             ucPanel3.TabIndex = 0;
             ucPanel3.Text = "ucPanel1";
             // 
+            // s_txt
+            // 
+            s_txt.ControlHeight = 21;
+            s_txt.ControlWidth = 296;
+            s_txt.FontColor = Color.Black;
+            s_txt.FontFace = "Tahoma";
+            s_txt.FontSize = 9F;
+            s_txt.FormatStr = "";
+            s_txt.Location = new Point(5, 46);
+            s_txt.Name = "s_txt";
+            s_txt.Size = new Size(296, 21);
+            s_txt.TabIndex = 1;
+            s_txt.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            s_txt.Title = "Search";
+            s_txt.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            s_txt.TitleWidth = 100;
+            // 
             // ucSplit2
             // 
             ucSplit2.Dock = DockStyle.Fill;
@@ -129,6 +146,7 @@
             g10.Name = "g10";
             g10.Size = new Size(337, 436);
             g10.TabIndex = 0;
+            
             // 
             // ucSplit3
             // 
@@ -152,10 +170,10 @@
             // 
             // ucPanel2
             // 
+            ucPanel2.Controls.Add(id);
             ucPanel2.Controls.Add(addr);
             ucPanel2.Controls.Add(last_name);
             ucPanel2.Controls.Add(first_name);
-            ucPanel2.Controls.Add(id);
             ucPanel2.Dock = DockStyle.Fill;
             ucPanel2.Location = new Point(0, 0);
             ucPanel2.Name = "ucPanel2";
@@ -163,19 +181,35 @@
             ucPanel2.TabIndex = 0;
             ucPanel2.Text = "ucPanel1";
             // 
+            // id
+            // 
+            id.ControlHeight = 21;
+            id.ControlWidth = 385;
+            id.FontColor = Color.Black;
+            id.FontFace = "Tahoma";
+            id.FontSize = 9F;
+            id.FormatStr = "";
+            id.Location = new Point(18, 46);
+            id.Name = "id";
+            id.Size = new Size(385, 21);
+            id.TabIndex = 12;
+            id.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            id.Title = "ID";
+            id.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            id.TitleWidth = 100;
+            // 
             // addr
             // 
-            addr.ButtonVisiable = false;
             addr.ControlHeight = 21;
             addr.ControlWidth = 385;
             addr.FontColor = Color.Black;
             addr.FontFace = "Tahoma";
             addr.FontSize = 9F;
             addr.FormatStr = "";
-            addr.Location = new Point(18, 117);
+            addr.Location = new Point(18, 133);
             addr.Name = "addr";
             addr.Size = new Size(385, 21);
-            addr.TabIndex = 7;
+            addr.TabIndex = 11;
             addr.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
             addr.Title = "Address";
             addr.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
@@ -183,17 +217,16 @@
             // 
             // last_name
             // 
-            last_name.ButtonVisiable = false;
             last_name.ControlHeight = 21;
             last_name.ControlWidth = 385;
             last_name.FontColor = Color.Black;
             last_name.FontFace = "Tahoma";
             last_name.FontSize = 9F;
             last_name.FormatStr = "";
-            last_name.Location = new Point(18, 90);
+            last_name.Location = new Point(18, 106);
             last_name.Name = "last_name";
             last_name.Size = new Size(385, 21);
-            last_name.TabIndex = 6;
+            last_name.TabIndex = 10;
             last_name.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
             last_name.Title = "Last Name";
             last_name.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
@@ -201,39 +234,20 @@
             // 
             // first_name
             // 
-            first_name.ButtonVisiable = false;
             first_name.ControlHeight = 21;
             first_name.ControlWidth = 385;
             first_name.FontColor = Color.Black;
             first_name.FontFace = "Tahoma";
             first_name.FontSize = 9F;
             first_name.FormatStr = "";
-            first_name.Location = new Point(18, 63);
+            first_name.Location = new Point(18, 79);
             first_name.Name = "first_name";
             first_name.Size = new Size(385, 21);
-            first_name.TabIndex = 5;
+            first_name.TabIndex = 9;
             first_name.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
             first_name.Title = "First Name";
             first_name.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
             first_name.TitleWidth = 100;
-            // 
-            // id
-            // 
-            id.ButtonVisiable = false;
-            id.ControlHeight = 21;
-            id.ControlWidth = 385;
-            id.FontColor = Color.Black;
-            id.FontFace = "Tahoma";
-            id.FontSize = 9F;
-            id.FormatStr = "";
-            id.Location = new Point(18, 36);
-            id.Name = "id";
-            id.Size = new Size(385, 21);
-            id.TabIndex = 4;
-            id.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            id.Title = "ID";
-            id.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            id.TitleWidth = 100;
             // 
             // ucPanel4
             // 
@@ -252,24 +266,6 @@
             g20.Name = "g20";
             g20.Size = new Size(675, 265);
             g20.TabIndex = 0;
-            // 
-            // s_txt
-            // 
-            s_txt.ButtonVisiable = false;
-            s_txt.ControlHeight = 21;
-            s_txt.ControlWidth = 296;
-            s_txt.FontColor = Color.Black;
-            s_txt.FontFace = "Tahoma";
-            s_txt.FontSize = 9F;
-            s_txt.FormatStr = "";
-            s_txt.Location = new Point(5, 46);
-            s_txt.Name = "s_txt";
-            s_txt.Size = new Size(296, 21);
-            s_txt.TabIndex = 1;
-            s_txt.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            s_txt.Title = "Search";
-            s_txt.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            s_txt.TitleWidth = 100;
             // 
             // TST107
             // 
@@ -310,12 +306,12 @@
         private EpicV004.Ctrls.UCSplit ucSplit3;
         private EpicV004.Ctrls.UCPanel ucPanel2;
         private EpicV004.Ctrls.UCPanel ucPanel4;
-        private EpicV004.Ctrls.UCTextBox addr;
-        private EpicV004.Ctrls.UCTextBox last_name;
-        private EpicV004.Ctrls.UCTextBox first_name;
-        private EpicV004.Ctrls.UCTextBox id;
         private Ctrls.UCGridSet g10;
         private Ctrls.UCGridSet g20;
         private Ctrls.UCTextBox s_txt;
+        private Ctrls.UCTextBox addr;
+        private Ctrls.UCTextBox last_name;
+        private Ctrls.UCTextBox first_name;
+        private Ctrls.UCTextBox id;
     }
 }

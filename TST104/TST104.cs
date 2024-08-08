@@ -1,6 +1,11 @@
-﻿using DevExpress.CodeParser;
+﻿using Dapper;
+using DevExpress.CodeParser;
+using DevExpress.XtraCharts.Designer.Native;
+using DevExpress.XtraReports.UI;
 using EpicV004.Ctrls;
 using EpicV004.Libs.Repo;
+using System.Data;
+using TST104;
 
 namespace EpicV004.Frms
 {
@@ -69,6 +74,36 @@ namespace EpicV004.Frms
             }
         }
 
+        private void ucButton2_Click(object sender, EventArgs e)
+        {
+            DynamicParameters p = new DynamicParameters();
+            //p.Add("@id", id.Text); // Add parameter
+            //DataSet dSet = OpenDataSet("tst104_print",p);
+            DataSet dSet = OpenDataSet("tst104_print");
+            if (Libs.GenFunc.IsEmpty(dSet))
+            {
+                return;
+            }
 
+            Report2 Rpt = new Report2(dSet); // Create the report with the dataset
+            DevExpress.XtraReports.UI.ReportPrintTool ReportPrintTool = new DevExpress.XtraReports.UI.ReportPrintTool(Rpt);
+            ReportPrintTool.ShowPreviewDialog();
+
+
+
+            //DynamicParameters p = new DynamicParameters();
+            //p.Add("id",id);
+
+
+            //DataSet dSet = OpenDataSet("TST104", p);
+
+            //if (Libs.GenFunc.IsEmpty(dSet))
+            //    { 
+            //    return; 
+
+            //    }
+            //Report1 Rpt = new Report1(dSet);
+            //ReportPrintTool
+        }
     }
 }
