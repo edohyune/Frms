@@ -10,6 +10,12 @@ namespace EpicV004.Frms
         {
             InitializeComponent();
         }
+        private void TASKS_Load(object sender, EventArgs e)
+        {
+            // Your code here
+            //this.Open();
+            g10.Open();
+        }
         protected override void BarButtonAction(string frm, string action)
         {
 
@@ -38,6 +44,9 @@ namespace EpicV004.Frms
             }
         }
 
+        private void ucSplit1_Panel1_Paint(object sender, PaintEventArgs e)
+        {
 
+        }
     }
 }
