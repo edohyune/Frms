@@ -83,6 +83,7 @@
             // ucSplit1.Panel1
             // 
             ucSplit1.Panel1.Controls.Add(ucPanel1);
+            ucSplit1.Panel1.Paint += ucSplit1_Panel1_Paint;
             // 
             // ucSplit1.Panel2
             // 
@@ -226,7 +227,10 @@
             // 
             TskDes.Appearance.Font = new Font("Tahoma", 9F);
             TskDes.Appearance.Options.UseFont = true;
-            TskDes.ControlHeight = 19;
+            TskDes.AutoScroll = true;
+            TskDes.AutoScrollMargin = new Size(100, 200);
+            TskDes.AutoSize = true;
+            TskDes.ControlHeight = 31;
             TskDes.ControlWidth = 663;
             TskDes.FontColor = Color.Black;
             TskDes.FontFace = "Tahoma";
@@ -235,8 +239,8 @@
             TskDes.Location = new Point(7, 202);
             TskDes.Margin = new Padding(4, 3, 4, 3);
             TskDes.Name = "TskDes";
-            TskDes.Size = new Size(663, 19);
-            TskDes.TabIndex = 2;
+            TskDes.Size = new Size(663, 31);
+            TskDes.TabIndex = 5;
             TskDes.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
             TskDes.Title = "Task Desc";
             TskDes.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
@@ -434,6 +438,7 @@
             Controls.Add(ucSplit1);
             Name = "TASKS";
             Size = new Size(1261, 663);
+            Load += TASKS_Load;
             ucSplit1.Panel1.ResumeLayout(false);
             ucSplit1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ucSplit1).EndInit();
@@ -450,6 +455,7 @@
             ucSplit3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ucPanel2).EndInit();
             ucPanel2.ResumeLayout(false);
+            ucPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)ucTab1).EndInit();
             ucTab1.ResumeLayout(false);
             xtraTabPage1.ResumeLayout(false);
