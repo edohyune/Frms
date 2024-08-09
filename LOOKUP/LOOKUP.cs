@@ -71,5 +71,10 @@ namespace EpicV004.Frms
                 //e.Graphics.DrawImage(_imageList.Images[imageIndex], e.Bounds.X - 16, e.Bounds.Y);
             }
         }
+
+        private void LOOKUP_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

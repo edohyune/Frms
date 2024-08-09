@@ -40,14 +40,14 @@
             groupBox3 = new GroupBox();
             groupBox4 = new GroupBox();
             ucSplit1 = new Ctrls.UCSplit();
+            ucTextBox3 = new Ctrls.UCTextBox();
+            ucTextBox2 = new Ctrls.UCTextBox();
+            ucDateBox1 = new Ctrls.UCDateBox();
             ucTextBox1 = new Ctrls.UCTextBox();
-            ucCodeBox1 = new Ctrls.UCCodeBox();
             ucSplit2 = new Ctrls.UCSplit();
             treeList1 = new DevExpress.XtraTreeList.TreeList();
             listBox1 = new ListBox();
-            ucDateBox1 = new Ctrls.UCDateBox();
-            ucTextBox2 = new Ctrls.UCTextBox();
-            ucTextBox3 = new Ctrls.UCTextBox();
+            ucCodeBox1 = new Ctrls.UCCodeBox();
             ((System.ComponentModel.ISupportInitialize)gridLookUpEdit1.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)gridLookUpEdit1View).BeginInit();
             ((System.ComponentModel.ISupportInitialize)lookUpEdit1.Properties).BeginInit();
@@ -176,11 +176,11 @@
             // 
             // ucSplit1.Panel1
             // 
+            ucSplit1.Panel1.Controls.Add(ucCodeBox1);
             ucSplit1.Panel1.Controls.Add(ucTextBox3);
             ucSplit1.Panel1.Controls.Add(ucTextBox2);
             ucSplit1.Panel1.Controls.Add(ucDateBox1);
             ucSplit1.Panel1.Controls.Add(ucTextBox1);
-            ucSplit1.Panel1.Controls.Add(ucCodeBox1);
             ucSplit1.Panel1.Controls.Add(groupBox1);
             ucSplit1.Panel1.Controls.Add(groupBox4);
             ucSplit1.Panel1.Controls.Add(groupBox3);
@@ -194,6 +194,61 @@
             ucSplit1.TabIndex = 7;
             ucSplit1.TitleWidth = 121;
             // 
+            // ucTextBox3
+            // 
+            ucTextBox3.ControlHeight = 21;
+            ucTextBox3.ControlWidth = 200;
+            ucTextBox3.FontColor = Color.Black;
+            ucTextBox3.FontFace = "Tahoma";
+            ucTextBox3.FontSize = 9F;
+            ucTextBox3.FormatStr = "";
+            ucTextBox3.Location = new Point(39, 440);
+            ucTextBox3.Margin = new Padding(4, 3, 4, 3);
+            ucTextBox3.Name = "ucTextBox3";
+            ucTextBox3.Size = new Size(200, 21);
+            ucTextBox3.TabIndex = 12;
+            ucTextBox3.Text = "ucTextBox3";
+            ucTextBox3.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox3.Title = "UCTextBox";
+            ucTextBox3.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox3.TitleWidth = 100;
+            // 
+            // ucTextBox2
+            // 
+            ucTextBox2.ControlHeight = 21;
+            ucTextBox2.ControlWidth = 200;
+            ucTextBox2.FontColor = Color.Black;
+            ucTextBox2.FontFace = "Tahoma";
+            ucTextBox2.FontSize = 9F;
+            ucTextBox2.FormatStr = "";
+            ucTextBox2.Location = new Point(39, 413);
+            ucTextBox2.Margin = new Padding(4, 3, 4, 3);
+            ucTextBox2.Name = "ucTextBox2";
+            ucTextBox2.Size = new Size(200, 21);
+            ucTextBox2.TabIndex = 11;
+            ucTextBox2.Text = "ucTextBox2";
+            ucTextBox2.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox2.Title = "UCTextBox";
+            ucTextBox2.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox2.TitleWidth = 100;
+            // 
+            // ucDateBox1
+            // 
+            ucDateBox1.ControlHeight = 21;
+            ucDateBox1.ControlWidth = 200;
+            ucDateBox1.FontColor = Color.Black;
+            ucDateBox1.FontFace = "Tahoma";
+            ucDateBox1.FontSize = 9F;
+            ucDateBox1.FormatStr = "";
+            ucDateBox1.Location = new Point(39, 330);
+            ucDateBox1.Name = "ucDateBox1";
+            ucDateBox1.Size = new Size(200, 21);
+            ucDateBox1.TabIndex = 10;
+            ucDateBox1.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucDateBox1.Title = "UCDateBox";
+            ucDateBox1.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucDateBox1.TitleWidth = 100;
+            // 
             // ucTextBox1
             // 
             ucTextBox1.ControlHeight = 21;
@@ -202,7 +257,7 @@
             ucTextBox1.FontFace = "Tahoma";
             ucTextBox1.FontSize = 9F;
             ucTextBox1.FormatStr = "";
-            ucTextBox1.Location = new Point(110, 466);
+            ucTextBox1.Location = new Point(39, 386);
             ucTextBox1.Margin = new Padding(4, 3, 4, 3);
             ucTextBox1.Name = "ucTextBox1";
             ucTextBox1.Size = new Size(200, 21);
@@ -212,25 +267,6 @@
             ucTextBox1.Title = "UCTextBox";
             ucTextBox1.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
             ucTextBox1.TitleWidth = 100;
-            // 
-            // ucCodeBox1
-            // 
-            ucCodeBox1.ControlHeight = 23;
-            ucCodeBox1.ControlWidth = 210;
-            ucCodeBox1.FldTy = null;
-            ucCodeBox1.FontColor = Color.Black;
-            ucCodeBox1.FontFace = "Tahoma";
-            ucCodeBox1.FontSize = 9F;
-            ucCodeBox1.Location = new Point(110, 437);
-            ucCodeBox1.Margin = new Padding(4, 3, 4, 3);
-            ucCodeBox1.Name = "ucCodeBox1";
-            ucCodeBox1.Size = new Size(210, 23);
-            ucCodeBox1.TabIndex = 8;
-            ucCodeBox1.Text = "ucCodeBox1";
-            ucCodeBox1.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucCodeBox1.Title = "Code";
-            ucCodeBox1.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucCodeBox1.TitleWidth = 100;
             // 
             // ucSplit2
             // 
@@ -270,60 +306,24 @@
             listBox1.Size = new Size(488, 423);
             listBox1.TabIndex = 0;
             // 
-            // ucDateBox1
+            // ucCodeBox1
             // 
-            ucDateBox1.ControlHeight = 21;
-            ucDateBox1.ControlWidth = 200;
-            ucDateBox1.FontColor = Color.Black;
-            ucDateBox1.FontFace = "Tahoma";
-            ucDateBox1.FontSize = 9F;
-            ucDateBox1.FormatStr = "";
-            ucDateBox1.Location = new Point(110, 371);
-            ucDateBox1.Name = "ucDateBox1";
-            ucDateBox1.Size = new Size(200, 21);
-            ucDateBox1.TabIndex = 10;
-            ucDateBox1.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucDateBox1.Title = "UCDateBox";
-            ucDateBox1.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucDateBox1.TitleWidth = 100;
-            // 
-            // ucTextBox2
-            // 
-            ucTextBox2.ControlHeight = 21;
-            ucTextBox2.ControlWidth = 200;
-            ucTextBox2.FontColor = Color.Black;
-            ucTextBox2.FontFace = "Tahoma";
-            ucTextBox2.FontSize = 9F;
-            ucTextBox2.FormatStr = "";
-            ucTextBox2.Location = new Point(110, 525);
-            ucTextBox2.Margin = new Padding(4, 3, 4, 3);
-            ucTextBox2.Name = "ucTextBox2";
-            ucTextBox2.Size = new Size(200, 21);
-            ucTextBox2.TabIndex = 11;
-            ucTextBox2.Text = "ucTextBox2";
-            ucTextBox2.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox2.Title = "UCTextBox";
-            ucTextBox2.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox2.TitleWidth = 100;
-            // 
-            // ucTextBox3
-            // 
-            ucTextBox3.ControlHeight = 21;
-            ucTextBox3.ControlWidth = 200;
-            ucTextBox3.FontColor = Color.Black;
-            ucTextBox3.FontFace = "Tahoma";
-            ucTextBox3.FontSize = 9F;
-            ucTextBox3.FormatStr = "";
-            ucTextBox3.Location = new Point(110, 552);
-            ucTextBox3.Margin = new Padding(4, 3, 4, 3);
-            ucTextBox3.Name = "ucTextBox3";
-            ucTextBox3.Size = new Size(200, 21);
-            ucTextBox3.TabIndex = 12;
-            ucTextBox3.Text = "ucTextBox3";
-            ucTextBox3.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox3.Title = "UCTextBox";
-            ucTextBox3.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox3.TitleWidth = 100;
+            ucCodeBox1.ControlHeight = 21;
+            ucCodeBox1.ControlWidth = 200;
+            ucCodeBox1.FldTy = null;
+            ucCodeBox1.FontColor = Color.Black;
+            ucCodeBox1.FontFace = "Tahoma";
+            ucCodeBox1.FontSize = 9F;
+            ucCodeBox1.Location = new Point(39, 357);
+            ucCodeBox1.Margin = new Padding(4, 3, 4, 3);
+            ucCodeBox1.Name = "ucCodeBox1";
+            ucCodeBox1.Size = new Size(200, 21);
+            ucCodeBox1.TabIndex = 13;
+            ucCodeBox1.Text = "ucCodeBox1";
+            ucCodeBox1.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucCodeBox1.Title = "Code";
+            ucCodeBox1.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucCodeBox1.TitleWidth = 100;
             // 
             // LOOKUP
             // 
@@ -332,6 +332,7 @@
             Controls.Add(ucSplit1);
             Name = "LOOKUP";
             Size = new Size(1045, 819);
+            Load += LOOKUP_Load;
             ((System.ComponentModel.ISupportInitialize)gridLookUpEdit1.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)gridLookUpEdit1View).EndInit();
             ((System.ComponentModel.ISupportInitialize)lookUpEdit1.Properties).EndInit();
@@ -373,9 +374,9 @@
         private DevExpress.XtraTreeList.TreeList treeList1;
         private ListBox listBox1;
         private Ctrls.UCTextBox ucTextBox1;
-        private Ctrls.UCCodeBox ucCodeBox1;
         private Ctrls.UCTextBox ucTextBox3;
         private Ctrls.UCTextBox ucTextBox2;
         private Ctrls.UCDateBox ucDateBox1;
+        private Ctrls.UCCodeBox ucCodeBox1;
     }
 }
