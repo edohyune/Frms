@@ -12,8 +12,8 @@ namespace EpicV004.Frms
         }
         protected override void BarButtonAction(string frm, string action)
         {
-            string searchStr = g10.GetText("PCd").ToString();
 
+            string searchStr = g10.GetText("TskId").ToString(); // Get the ID of the current row
             if (this.Name == frm)
             {
                 switch (action)
@@ -21,25 +21,16 @@ namespace EpicV004.Frms
                     case "Save":
                         if (this.Save())
                         {
-                            g10.Open();
-                            g10.FocuseByFindedValue("PCd", searchStr);
+                            g10.Open(); // Reload the grid data
+                            g10.FocuseByFindedValue("TskId", searchStr); // Focus the row with the saved ID
                         }
+                        break;
+                    case "Open":
+                        this.Open();
                         break;
                     case "New":
-
-                        UCFieldSet uCFieldSet = fieldSets.FirstOrDefault((UCFieldSet fs) => fs.wrkId == "f10"); // -----------------------------Edit WorkSet ID/
-                  if (uCFieldSet != null)
-                        {
-                            uCFieldSet.New();
-                        }
-
-                        UCGridSet uCGridSet = gridSets.FirstOrDefault((UCGridSet gs) => gs.wrkId == ""); // -----------------------------Edit WorkSet ID/
-                  if (uCGridSet != null)
-                        {
-                            uCGridSet.New();
-                        }
+                        NewWorkSet("f10");
                         break;
-
                     default:
                         base.BarButtonAction(frm, action);
                         break;

@@ -8,6 +8,12 @@ namespace EpicV004.Frms
 {
     public class TASKS_G20 : EpicV004.Libs.MdlBase
     {
+        private int _Sq;
+        public int Sq
+        {
+            get => _Sq;
+            set => Set(ref _Sq, value);
+        }
 
         private int _TskId;
         public int TskId

@@ -22,6 +22,15 @@ namespace EpicV004.Frms
             set => Set(ref _TskNm, value);
         }
 
+        //Culum in Table USRMST
+
+        private string _UserNames;
+        public string UserNames
+        {
+            get => _UserNames;
+            set => Set(ref _UserNames, value);
+        }
+
         private string _TskDes;
         public string TskDes
         {
@@ -77,6 +86,8 @@ namespace EpicV004.Frms
             get => _PrjId;
             set => Set(ref _PrjId, value);
         }
+
+
     }
 
     public class TASKS_F10 : TASKS_G10

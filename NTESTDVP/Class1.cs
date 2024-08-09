@@ -8,32 +8,39 @@ namespace EpicV004.Frms
 {
     public class NTESTDVP_G_10 : EpicV004.Libs.MdlBase
     {
-        private int _ID;
-        public int ID
+        private int _UsrRegId;
+        public int UsrRegId
         {
-            get => _ID;
-            set => Set(ref _ID, value);
+            get => _UsrRegId;
+            set => Set(ref _UsrRegId, value);
         }
 
-        private string _Name;
-        public string Name
+        private string _UsrId;
+        public string UsrId
         {
-            get => _Name;
-            set => Set(ref _Name, value);
+            get => _UsrId;
+            set => Set(ref _UsrId, value);
         }
 
-        private int _Age;
-        public int Age
+        private string _UsrNm;
+        public string UsrNm
         {
-            get => _Age;
-            set => Set(ref _Age, value);
+            get => _UsrNm;
+            set => Set(ref _UsrNm, value);
         }
 
-        private int _PID;
-        public int PID
+        private string _Pwd;
+        public string Pwd
         {
-            get => _PID;
-            set => Set(ref _PID, value);
+            get => _Pwd;
+            set => Set(ref _Pwd, value);
+        }
+
+        private string _Cls;
+        public string Cls
+        {
+            get => _Cls;
+            set => Set(ref _Cls, value);
         }
 
     }

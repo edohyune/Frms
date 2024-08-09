@@ -1,0 +1,6 @@
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\TF001\obj\Debug\net8.0-windows\USRMNU.csproj.AssemblyReference.cache
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\TF001\obj\Debug\net8.0-windows\USRMNU.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\TF001\obj\Debug\net8.0-windows\USRMNU.AssemblyInfoInputs.cache
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\TF001\obj\Debug\net8.0-windows\USRMNU.AssemblyInfo.cs
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\TF001\obj\Debug\net8.0-windows\USRMNU.csproj.CoreCompileInputs.cache
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\TF001\obj\Debug\net8.0-windows\USRMNU.sourcelink.json

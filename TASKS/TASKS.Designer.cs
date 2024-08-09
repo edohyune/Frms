@@ -35,8 +35,8 @@
             g10 = new Ctrls.UCGridSet();
             ucSplit3 = new Ctrls.UCSplit();
             ucPanel2 = new Ctrls.UCPanel();
-            TskDtDue = new Ctrls.UCDateBox();
-            CDt = new Ctrls.UCDateBox();
+            tdd = new Ctrls.UCDateBox();
+            cdt = new Ctrls.UCDateBox();
             TskDes = new Ctrls.UCTextBox();
             TskLoc = new Ctrls.UCTextBox();
             TskStatus = new Ctrls.UCTextBox();
@@ -87,7 +87,7 @@
             // ucSplit1.Panel2
             // 
             ucSplit1.Panel2.Controls.Add(ucSplit2);
-            ucSplit1.Size = new Size(1055, 627);
+            ucSplit1.Size = new Size(1261, 663);
             ucSplit1.SplitterDistance = 64;
             ucSplit1.TabIndex = 0;
             ucSplit1.TitleWidth = 121;
@@ -98,7 +98,7 @@
             ucPanel1.Dock = DockStyle.Fill;
             ucPanel1.Location = new Point(0, 0);
             ucPanel1.Name = "ucPanel1";
-            ucPanel1.Size = new Size(1055, 64);
+            ucPanel1.Size = new Size(1261, 64);
             ucPanel1.TabIndex = 0;
             ucPanel1.Text = "Search";
             // 
@@ -124,6 +124,7 @@
             // ucSplit2
             // 
             ucSplit2.Dock = DockStyle.Fill;
+            ucSplit2.FixedPanel = FixedPanel.Panel1;
             ucSplit2.Location = new Point(0, 0);
             ucSplit2.Name = "ucSplit2";
             // 
@@ -134,8 +135,8 @@
             // ucSplit2.Panel2
             // 
             ucSplit2.Panel2.Controls.Add(ucSplit3);
-            ucSplit2.Size = new Size(1055, 559);
-            ucSplit2.SplitterDistance = 351;
+            ucSplit2.Size = new Size(1261, 595);
+            ucSplit2.SplitterDistance = 556;
             ucSplit2.TabIndex = 0;
             ucSplit2.TitleWidth = 121;
             // 
@@ -145,7 +146,7 @@
             g10.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             g10.Location = new Point(0, 0);
             g10.Name = "g10";
-            g10.Size = new Size(351, 559);
+            g10.Size = new Size(556, 595);
             g10.TabIndex = 0;
             // 
             // ucSplit3
@@ -163,15 +164,15 @@
             // ucSplit3.Panel2
             // 
             ucSplit3.Panel2.Controls.Add(ucTab1);
-            ucSplit3.Size = new Size(700, 559);
+            ucSplit3.Size = new Size(701, 595);
             ucSplit3.SplitterDistance = 238;
             ucSplit3.TabIndex = 0;
             ucSplit3.TitleWidth = 121;
             // 
             // ucPanel2
             // 
-            ucPanel2.Controls.Add(TskDtDue);
-            ucPanel2.Controls.Add(CDt);
+            ucPanel2.Controls.Add(tdd);
+            ucPanel2.Controls.Add(cdt);
             ucPanel2.Controls.Add(TskDes);
             ucPanel2.Controls.Add(TskLoc);
             ucPanel2.Controls.Add(TskStatus);
@@ -183,43 +184,43 @@
             ucPanel2.Dock = DockStyle.Fill;
             ucPanel2.Location = new Point(0, 0);
             ucPanel2.Name = "ucPanel2";
-            ucPanel2.Size = new Size(700, 238);
+            ucPanel2.Size = new Size(701, 238);
             ucPanel2.TabIndex = 0;
             ucPanel2.Text = "Information";
             // 
-            // TskDtDue
+            // tdd
             // 
-            TskDtDue.ControlHeight = 21;
-            TskDtDue.ControlWidth = 329;
-            TskDtDue.FontColor = Color.Black;
-            TskDtDue.FontFace = "Tahoma";
-            TskDtDue.FontSize = 9F;
-            TskDtDue.FormatStr = "";
-            TskDtDue.Location = new Point(5, 113);
-            TskDtDue.Name = "TskDtDue";
-            TskDtDue.Size = new Size(329, 21);
-            TskDtDue.TabIndex = 3;
-            TskDtDue.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            TskDtDue.Title = "Task Dur Date";
-            TskDtDue.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            TskDtDue.TitleWidth = 117;
+            tdd.ControlHeight = 21;
+            tdd.ControlWidth = 329;
+            tdd.FontColor = Color.Black;
+            tdd.FontFace = "Tahoma";
+            tdd.FontSize = 9F;
+            tdd.FormatStr = "";
+            tdd.Location = new Point(5, 113);
+            tdd.Name = "tdd";
+            tdd.Size = new Size(329, 21);
+            tdd.TabIndex = 3;
+            tdd.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            tdd.Title = "Task Dur Date";
+            tdd.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            tdd.TitleWidth = 117;
             // 
-            // CDt
+            // cdt
             // 
-            CDt.ControlHeight = 21;
-            CDt.ControlWidth = 329;
-            CDt.FontColor = Color.Black;
-            CDt.FontFace = "Tahoma";
-            CDt.FontSize = 9F;
-            CDt.FormatStr = "";
-            CDt.Location = new Point(5, 86);
-            CDt.Name = "CDt";
-            CDt.Size = new Size(329, 21);
-            CDt.TabIndex = 3;
-            CDt.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            CDt.Title = "Task Star Date";
-            CDt.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            CDt.TitleWidth = 117;
+            cdt.ControlHeight = 21;
+            cdt.ControlWidth = 329;
+            cdt.FontColor = Color.Black;
+            cdt.FontFace = "Tahoma";
+            cdt.FontSize = 9F;
+            cdt.FormatStr = "";
+            cdt.Location = new Point(5, 86);
+            cdt.Name = "cdt";
+            cdt.Size = new Size(329, 21);
+            cdt.TabIndex = 3;
+            cdt.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            cdt.Title = "Task Star Date";
+            cdt.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            cdt.TitleWidth = 117;
             // 
             // TskDes
             // 
@@ -387,7 +388,7 @@
             ucTab1.Location = new Point(0, 0);
             ucTab1.Name = "ucTab1";
             ucTab1.SelectedTabPage = xtraTabPage1;
-            ucTab1.Size = new Size(700, 317);
+            ucTab1.Size = new Size(701, 353);
             ucTab1.TabIndex = 0;
             ucTab1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] { xtraTabPage1, xtraTabPage2 });
             // 
@@ -396,7 +397,7 @@
             xtraTabPage1.Controls.Add(g20);
             xtraTabPage1.MaxTabPageWidth = 100;
             xtraTabPage1.Name = "xtraTabPage1";
-            xtraTabPage1.Size = new Size(698, 292);
+            xtraTabPage1.Size = new Size(699, 328);
             xtraTabPage1.TabPageWidth = 100;
             xtraTabPage1.Text = "Assign To";
             // 
@@ -406,14 +407,14 @@
             g20.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             g20.Location = new Point(0, 0);
             g20.Name = "g20";
-            g20.Size = new Size(698, 292);
+            g20.Size = new Size(699, 328);
             g20.TabIndex = 0;
             // 
             // xtraTabPage2
             // 
             xtraTabPage2.Controls.Add(g30);
             xtraTabPage2.Name = "xtraTabPage2";
-            xtraTabPage2.Size = new Size(698, 292);
+            xtraTabPage2.Size = new Size(699, 328);
             xtraTabPage2.TabPageWidth = 100;
             xtraTabPage2.Text = "Form Insert";
             // 
@@ -423,7 +424,7 @@
             g30.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             g30.Location = new Point(0, 0);
             g30.Name = "g30";
-            g30.Size = new Size(698, 292);
+            g30.Size = new Size(699, 328);
             g30.TabIndex = 0;
             // 
             // TASKS
@@ -432,7 +433,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(ucSplit1);
             Name = "TASKS";
-            Size = new Size(1055, 627);
+            Size = new Size(1261, 663);
             ucSplit1.Panel1.ResumeLayout(false);
             ucSplit1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ucSplit1).EndInit();
@@ -477,8 +478,8 @@
         private DevExpress.XtraTab.XtraTabPage xtraTabPage2;
         private Ctrls.UCGridSet g30;
         private Ctrls.UCTextBox TskDes;
-        private Ctrls.UCDateBox TskDtDue;
-        private Ctrls.UCDateBox CDt;
+        private Ctrls.UCDateBox tdd;
+        private Ctrls.UCDateBox cdt;
         private Ctrls.UCTextBox PrjId;
     }
 }
