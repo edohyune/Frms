@@ -374,6 +374,7 @@
             Controls.Add(ucSplit1);
             Name = "TST104";
             Size = new Size(1165, 641);
+            Load += TST104_Load;
             ucSplit1.Panel1.ResumeLayout(false);
             ucSplit1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ucSplit1).EndInit();

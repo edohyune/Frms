@@ -13,11 +13,5 @@ C:\Framework9\Frms\TST103\obj\Debug\net8.0-windows\refint\TST103.dll
 C:\Framework9\Frms\TST103\obj\Debug\net8.0-windows\TST103.pdb
 C:\Framework9\Frms\TST103\obj\Debug\net8.0-windows\ref\TST103.dll
 C:\Framework9\Frms\TST103\bin\Debug\net8.0-windows\GAIADesignerV004.dll
-C:\Framework9\Frms\TST103\bin\Debug\net8.0-windows\Libs.dll
-C:\Framework9\Frms\TST103\bin\Debug\net8.0-windows\Ctrls.dll
-C:\Framework9\Frms\TST103\bin\Debug\net8.0-windows\GAIADesignerV004.pdb
-C:\Framework9\Frms\TST103\bin\Debug\net8.0-windows\GAIADesignerV004.dll.config
-C:\Framework9\Frms\TST103\bin\Debug\net8.0-windows\Libs.pdb
-C:\Framework9\Frms\TST103\bin\Debug\net8.0-windows\Ctrls.pdb
 C:\Framework9\Frms\TST103\obj\Debug\net8.0-windows\EpicV004.Frms.TST103.resources
 C:\Framework9\Frms\TST103\obj\Debug\net8.0-windows\TST103.csproj.Up2Date
