@@ -28,144 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            gridLookUpEdit1 = new DevExpress.XtraEditors.GridLookUpEdit();
-            gridLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
-            lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
-            searchLookUpEdit1 = new DevExpress.XtraEditors.SearchLookUpEdit();
-            searchLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
-            treeListLookUpEdit1 = new DevExpress.XtraEditors.TreeListLookUpEdit();
-            treeListLookUpEdit1TreeList = new DevExpress.XtraTreeList.TreeList();
-            groupBox1 = new GroupBox();
-            groupBox2 = new GroupBox();
-            groupBox3 = new GroupBox();
-            groupBox4 = new GroupBox();
             ucSplit1 = new Ctrls.UCSplit();
+            splitContainer1 = new SplitContainer();
             ucTextBox3 = new Ctrls.UCTextBox();
-            ucTextBox2 = new Ctrls.UCTextBox();
-            ucDateBox1 = new Ctrls.UCDateBox();
+            ucCodeBox1 = new Ctrls.UCCodeBox();
             ucTextBox1 = new Ctrls.UCTextBox();
+            ucDateBox1 = new Ctrls.UCDateBox();
+            ucTextBox2 = new Ctrls.UCTextBox();
             ucSplit2 = new Ctrls.UCSplit();
             treeList1 = new DevExpress.XtraTreeList.TreeList();
             listBox1 = new ListBox();
-            ucCodeBox1 = new Ctrls.UCCodeBox();
-            ((System.ComponentModel.ISupportInitialize)gridLookUpEdit1.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)gridLookUpEdit1View).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)lookUpEdit1.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)searchLookUpEdit1.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)searchLookUpEdit1View).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)treeListLookUpEdit1.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)treeListLookUpEdit1TreeList).BeginInit();
-            groupBox1.SuspendLayout();
-            groupBox2.SuspendLayout();
-            groupBox3.SuspendLayout();
-            groupBox4.SuspendLayout();
+            ucGridSet1 = new Ctrls.UCGridSet();
             ((System.ComponentModel.ISupportInitialize)ucSplit1).BeginInit();
             ucSplit1.Panel1.SuspendLayout();
             ucSplit1.Panel2.SuspendLayout();
             ucSplit1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
+            splitContainer1.Panel1.SuspendLayout();
+            splitContainer1.Panel2.SuspendLayout();
+            splitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ucSplit2).BeginInit();
             ucSplit2.Panel1.SuspendLayout();
             ucSplit2.Panel2.SuspendLayout();
             ucSplit2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)treeList1).BeginInit();
             SuspendLayout();
-            // 
-            // gridLookUpEdit1
-            // 
-            gridLookUpEdit1.Location = new Point(25, 25);
-            gridLookUpEdit1.Name = "gridLookUpEdit1";
-            gridLookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] { new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo) });
-            gridLookUpEdit1.Properties.PopupView = gridLookUpEdit1View;
-            gridLookUpEdit1.Size = new Size(423, 20);
-            gridLookUpEdit1.TabIndex = 0;
-            // 
-            // gridLookUpEdit1View
-            // 
-            gridLookUpEdit1View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
-            gridLookUpEdit1View.Name = "gridLookUpEdit1View";
-            gridLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
-            gridLookUpEdit1View.OptionsView.ShowGroupPanel = false;
-            // 
-            // lookUpEdit1
-            // 
-            lookUpEdit1.Location = new Point(25, 25);
-            lookUpEdit1.Name = "lookUpEdit1";
-            lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] { new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo) });
-            lookUpEdit1.Size = new Size(423, 20);
-            lookUpEdit1.TabIndex = 1;
-            // 
-            // searchLookUpEdit1
-            // 
-            searchLookUpEdit1.Location = new Point(25, 25);
-            searchLookUpEdit1.Name = "searchLookUpEdit1";
-            searchLookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] { new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo) });
-            searchLookUpEdit1.Properties.PopupView = searchLookUpEdit1View;
-            searchLookUpEdit1.Size = new Size(422, 20);
-            searchLookUpEdit1.TabIndex = 2;
-            // 
-            // searchLookUpEdit1View
-            // 
-            searchLookUpEdit1View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
-            searchLookUpEdit1View.Name = "searchLookUpEdit1View";
-            searchLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
-            searchLookUpEdit1View.OptionsView.ShowGroupPanel = false;
-            // 
-            // treeListLookUpEdit1
-            // 
-            treeListLookUpEdit1.Location = new Point(25, 25);
-            treeListLookUpEdit1.Name = "treeListLookUpEdit1";
-            treeListLookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] { new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo) });
-            treeListLookUpEdit1.Properties.TreeList = treeListLookUpEdit1TreeList;
-            treeListLookUpEdit1.Size = new Size(423, 20);
-            treeListLookUpEdit1.TabIndex = 3;
-            // 
-            // treeListLookUpEdit1TreeList
-            // 
-            treeListLookUpEdit1TreeList.Location = new Point(0, 0);
-            treeListLookUpEdit1TreeList.Name = "treeListLookUpEdit1TreeList";
-            treeListLookUpEdit1TreeList.OptionsView.ShowIndentAsRowStyle = true;
-            treeListLookUpEdit1TreeList.Size = new Size(400, 200);
-            treeListLookUpEdit1TreeList.TabIndex = 0;
-            // 
-            // groupBox1
-            // 
-            groupBox1.Controls.Add(gridLookUpEdit1);
-            groupBox1.Location = new Point(39, 40);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(481, 54);
-            groupBox1.TabIndex = 4;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "gridLookUpEdit1";
-            // 
-            // groupBox2
-            // 
-            groupBox2.Controls.Add(treeListLookUpEdit1);
-            groupBox2.Location = new Point(39, 116);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(481, 54);
-            groupBox2.TabIndex = 5;
-            groupBox2.TabStop = false;
-            groupBox2.Text = "treeListLookUpEdit1";
-            // 
-            // groupBox3
-            // 
-            groupBox3.Controls.Add(lookUpEdit1);
-            groupBox3.Location = new Point(39, 192);
-            groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(481, 54);
-            groupBox3.TabIndex = 6;
-            groupBox3.TabStop = false;
-            groupBox3.Text = "lookUpEdit1";
-            // 
-            // groupBox4
-            // 
-            groupBox4.Controls.Add(searchLookUpEdit1);
-            groupBox4.Location = new Point(39, 268);
-            groupBox4.Name = "groupBox4";
-            groupBox4.Size = new Size(481, 54);
-            groupBox4.TabIndex = 6;
-            groupBox4.TabStop = false;
-            groupBox4.Text = "searchLookUpEdit1";
             // 
             // ucSplit1
             // 
@@ -176,15 +63,7 @@
             // 
             // ucSplit1.Panel1
             // 
-            ucSplit1.Panel1.Controls.Add(ucCodeBox1);
-            ucSplit1.Panel1.Controls.Add(ucTextBox3);
-            ucSplit1.Panel1.Controls.Add(ucTextBox2);
-            ucSplit1.Panel1.Controls.Add(ucDateBox1);
-            ucSplit1.Panel1.Controls.Add(ucTextBox1);
-            ucSplit1.Panel1.Controls.Add(groupBox1);
-            ucSplit1.Panel1.Controls.Add(groupBox4);
-            ucSplit1.Panel1.Controls.Add(groupBox3);
-            ucSplit1.Panel1.Controls.Add(groupBox2);
+            ucSplit1.Panel1.Controls.Add(splitContainer1);
             // 
             // ucSplit1.Panel2
             // 
@@ -194,6 +73,28 @@
             ucSplit1.TabIndex = 7;
             ucSplit1.TitleWidth = 121;
             // 
+            // splitContainer1
+            // 
+            splitContainer1.Dock = DockStyle.Fill;
+            splitContainer1.Location = new Point(0, 0);
+            splitContainer1.Name = "splitContainer1";
+            splitContainer1.Orientation = Orientation.Horizontal;
+            // 
+            // splitContainer1.Panel1
+            // 
+            splitContainer1.Panel1.Controls.Add(ucTextBox3);
+            splitContainer1.Panel1.Controls.Add(ucCodeBox1);
+            splitContainer1.Panel1.Controls.Add(ucTextBox1);
+            splitContainer1.Panel1.Controls.Add(ucDateBox1);
+            splitContainer1.Panel1.Controls.Add(ucTextBox2);
+            // 
+            // splitContainer1.Panel2
+            // 
+            splitContainer1.Panel2.Controls.Add(ucGridSet1);
+            splitContainer1.Size = new Size(553, 819);
+            splitContainer1.SplitterDistance = 219;
+            splitContainer1.TabIndex = 14;
+            // 
             // ucTextBox3
             // 
             ucTextBox3.ControlHeight = 21;
@@ -202,7 +103,7 @@
             ucTextBox3.FontFace = "Tahoma";
             ucTextBox3.FontSize = 9F;
             ucTextBox3.FormatStr = "";
-            ucTextBox3.Location = new Point(39, 440);
+            ucTextBox3.Location = new Point(36, 134);
             ucTextBox3.Margin = new Padding(4, 3, 4, 3);
             ucTextBox3.Name = "ucTextBox3";
             ucTextBox3.Size = new Size(200, 21);
@@ -213,41 +114,24 @@
             ucTextBox3.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
             ucTextBox3.TitleWidth = 100;
             // 
-            // ucTextBox2
+            // ucCodeBox1
             // 
-            ucTextBox2.ControlHeight = 21;
-            ucTextBox2.ControlWidth = 200;
-            ucTextBox2.FontColor = Color.Black;
-            ucTextBox2.FontFace = "Tahoma";
-            ucTextBox2.FontSize = 9F;
-            ucTextBox2.FormatStr = "";
-            ucTextBox2.Location = new Point(39, 413);
-            ucTextBox2.Margin = new Padding(4, 3, 4, 3);
-            ucTextBox2.Name = "ucTextBox2";
-            ucTextBox2.Size = new Size(200, 21);
-            ucTextBox2.TabIndex = 11;
-            ucTextBox2.Text = "ucTextBox2";
-            ucTextBox2.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox2.Title = "UCTextBox";
-            ucTextBox2.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox2.TitleWidth = 100;
-            // 
-            // ucDateBox1
-            // 
-            ucDateBox1.ControlHeight = 21;
-            ucDateBox1.ControlWidth = 200;
-            ucDateBox1.FontColor = Color.Black;
-            ucDateBox1.FontFace = "Tahoma";
-            ucDateBox1.FontSize = 9F;
-            ucDateBox1.FormatStr = "";
-            ucDateBox1.Location = new Point(39, 330);
-            ucDateBox1.Name = "ucDateBox1";
-            ucDateBox1.Size = new Size(200, 21);
-            ucDateBox1.TabIndex = 10;
-            ucDateBox1.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucDateBox1.Title = "UCDateBox";
-            ucDateBox1.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucDateBox1.TitleWidth = 100;
+            ucCodeBox1.ControlHeight = 21;
+            ucCodeBox1.ControlWidth = 200;
+            ucCodeBox1.FldTy = null;
+            ucCodeBox1.FontColor = Color.Black;
+            ucCodeBox1.FontFace = "Tahoma";
+            ucCodeBox1.FontSize = 9F;
+            ucCodeBox1.Location = new Point(36, 51);
+            ucCodeBox1.Margin = new Padding(4, 3, 4, 3);
+            ucCodeBox1.Name = "ucCodeBox1";
+            ucCodeBox1.Size = new Size(200, 21);
+            ucCodeBox1.TabIndex = 13;
+            ucCodeBox1.Text = "ucCodeBox1";
+            ucCodeBox1.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucCodeBox1.Title = "Code";
+            ucCodeBox1.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucCodeBox1.TitleWidth = 100;
             // 
             // ucTextBox1
             // 
@@ -257,7 +141,7 @@
             ucTextBox1.FontFace = "Tahoma";
             ucTextBox1.FontSize = 9F;
             ucTextBox1.FormatStr = "";
-            ucTextBox1.Location = new Point(39, 386);
+            ucTextBox1.Location = new Point(36, 80);
             ucTextBox1.Margin = new Padding(4, 3, 4, 3);
             ucTextBox1.Name = "ucTextBox1";
             ucTextBox1.Size = new Size(200, 21);
@@ -267,6 +151,42 @@
             ucTextBox1.Title = "UCTextBox";
             ucTextBox1.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
             ucTextBox1.TitleWidth = 100;
+            // 
+            // ucDateBox1
+            // 
+            ucDateBox1.ControlHeight = 21;
+            ucDateBox1.ControlWidth = 200;
+            ucDateBox1.FontColor = Color.Black;
+            ucDateBox1.FontFace = "Tahoma";
+            ucDateBox1.FontSize = 9F;
+            ucDateBox1.FormatStr = "";
+            ucDateBox1.Location = new Point(36, 24);
+            ucDateBox1.Name = "ucDateBox1";
+            ucDateBox1.Size = new Size(200, 21);
+            ucDateBox1.TabIndex = 10;
+            ucDateBox1.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucDateBox1.Title = "UCDateBox";
+            ucDateBox1.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucDateBox1.TitleWidth = 100;
+            // 
+            // ucTextBox2
+            // 
+            ucTextBox2.ControlHeight = 21;
+            ucTextBox2.ControlWidth = 200;
+            ucTextBox2.FontColor = Color.Black;
+            ucTextBox2.FontFace = "Tahoma";
+            ucTextBox2.FontSize = 9F;
+            ucTextBox2.FormatStr = "";
+            ucTextBox2.Location = new Point(36, 107);
+            ucTextBox2.Margin = new Padding(4, 3, 4, 3);
+            ucTextBox2.Name = "ucTextBox2";
+            ucTextBox2.Size = new Size(200, 21);
+            ucTextBox2.TabIndex = 11;
+            ucTextBox2.Text = "ucTextBox2";
+            ucTextBox2.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox2.Title = "UCTextBox";
+            ucTextBox2.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox2.TitleWidth = 100;
             // 
             // ucSplit2
             // 
@@ -306,24 +226,13 @@
             listBox1.Size = new Size(488, 423);
             listBox1.TabIndex = 0;
             // 
-            // ucCodeBox1
+            // ucGridSet1
             // 
-            ucCodeBox1.ControlHeight = 21;
-            ucCodeBox1.ControlWidth = 200;
-            ucCodeBox1.FldTy = null;
-            ucCodeBox1.FontColor = Color.Black;
-            ucCodeBox1.FontFace = "Tahoma";
-            ucCodeBox1.FontSize = 9F;
-            ucCodeBox1.Location = new Point(39, 357);
-            ucCodeBox1.Margin = new Padding(4, 3, 4, 3);
-            ucCodeBox1.Name = "ucCodeBox1";
-            ucCodeBox1.Size = new Size(200, 21);
-            ucCodeBox1.TabIndex = 13;
-            ucCodeBox1.Text = "ucCodeBox1";
-            ucCodeBox1.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucCodeBox1.Title = "Code";
-            ucCodeBox1.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucCodeBox1.TitleWidth = 100;
+            ucGridSet1.Dock = DockStyle.Fill;
+            ucGridSet1.Location = new Point(0, 0);
+            ucGridSet1.Name = "ucGridSet1";
+            ucGridSet1.Size = new Size(553, 596);
+            ucGridSet1.TabIndex = 0;
             // 
             // LOOKUP
             // 
@@ -333,21 +242,14 @@
             Name = "LOOKUP";
             Size = new Size(1045, 819);
             Load += LOOKUP_Load;
-            ((System.ComponentModel.ISupportInitialize)gridLookUpEdit1.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)gridLookUpEdit1View).EndInit();
-            ((System.ComponentModel.ISupportInitialize)lookUpEdit1.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)searchLookUpEdit1.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)searchLookUpEdit1View).EndInit();
-            ((System.ComponentModel.ISupportInitialize)treeListLookUpEdit1.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)treeListLookUpEdit1TreeList).EndInit();
-            groupBox1.ResumeLayout(false);
-            groupBox2.ResumeLayout(false);
-            groupBox3.ResumeLayout(false);
-            groupBox4.ResumeLayout(false);
             ucSplit1.Panel1.ResumeLayout(false);
             ucSplit1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ucSplit1).EndInit();
             ucSplit1.ResumeLayout(false);
+            splitContainer1.Panel1.ResumeLayout(false);
+            splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
+            splitContainer1.ResumeLayout(false);
             ucSplit2.Panel1.ResumeLayout(false);
             ucSplit2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ucSplit2).EndInit();
@@ -357,18 +259,6 @@
         }
 
         #endregion
-
-        private DevExpress.XtraEditors.GridLookUpEdit gridLookUpEdit1;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridLookUpEdit1View;
-        private DevExpress.XtraEditors.LookUpEdit lookUpEdit1;
-        private DevExpress.XtraEditors.SearchLookUpEdit searchLookUpEdit1;
-        private DevExpress.XtraGrid.Views.Grid.GridView searchLookUpEdit1View;
-        private DevExpress.XtraEditors.TreeListLookUpEdit treeListLookUpEdit1;
-        private DevExpress.XtraTreeList.TreeList treeListLookUpEdit1TreeList;
-        private GroupBox groupBox1;
-        private GroupBox groupBox2;
-        private GroupBox groupBox3;
-        private GroupBox groupBox4;
         private Ctrls.UCSplit ucSplit1;
         private Ctrls.UCSplit ucSplit2;
         private DevExpress.XtraTreeList.TreeList treeList1;
@@ -378,5 +268,7 @@
         private Ctrls.UCTextBox ucTextBox2;
         private Ctrls.UCDateBox ucDateBox1;
         private Ctrls.UCCodeBox ucCodeBox1;
+        private SplitContainer splitContainer1;
+        private Ctrls.UCGridSet ucGridSet1;
     }
 }

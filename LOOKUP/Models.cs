@@ -67,6 +67,7 @@ namespace EpicV004.Libs.Repo
             get { return pid; }
             set => Set(ref pid, value);
         }
+        public string Tag { get; set; }
     }
 
     public class SMPDATRepo
@@ -74,11 +75,11 @@ namespace EpicV004.Libs.Repo
         public List<SMPDAT> GetSampleData()
         {
             string sql = @"
-select ID=cd, NM, PID=null
+select ID=cd, NM, PID=null, Tag='tagText'
   from syscde
  where isnull(subcd,'*')='*'
  union all
-select id=cd, nm, pid=pcd
+select id=cd, nm, pid=pcd, Tag='tagText'
   from syscde
  where isnull(subcd,'*')<>'*'
 ";

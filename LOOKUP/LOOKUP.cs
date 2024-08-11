@@ -19,31 +19,6 @@ namespace EpicV004.Frms
             List<SMPDAT> smpDats = new SMPDATRepo().GetSampleData();
             BindingList<SMPDAT> smpDatbs = new BindingList<SMPDAT>(smpDats);
 
-            //// GridLookUpEdit - GRDPOP
-            gridLookUpEdit1.Properties.DataSource = smpDatbs;
-            gridLookUpEdit1.Properties.DisplayMember = "Name";
-            gridLookUpEdit1.Properties.ValueMember = "ID";
-            gridLookUpEdit1.Properties.View.BestFitColumns();
-
-            //// LookUpEdit - POPEDT
-            lookUpEdit1.Properties.DataSource = smpDatbs;
-            lookUpEdit1.Properties.DisplayMember = "Name";
-            lookUpEdit1.Properties.ValueMember = "ID";
-
-            //// SearchLookUpEdit - SRCHPOP
-            searchLookUpEdit1.Properties.DataSource = smpDatbs;
-            searchLookUpEdit1.Properties.DisplayMember = "Name";
-            searchLookUpEdit1.Properties.ValueMember = "ID";
-            searchLookUpEdit1.Properties.View.BestFitColumns();
-
-            //// TreeListLookUpEdit - TREPOP
-            treeListLookUpEdit1.Properties.DataSource = smpDatbs;
-            treeListLookUpEdit1.Properties.DisplayMember = "Name";
-            treeListLookUpEdit1.Properties.ValueMember = "ID";
-            treeListLookUpEdit1.Properties.TreeList.KeyFieldName = "ID";
-            treeListLookUpEdit1.Properties.TreeList.ParentFieldName = "PID";
-            treeListLookUpEdit1.Properties.TreeList.PopulateColumns();
-
             //// TreeList - GRDTRE
             treeList1.DataSource = smpDatbs;
             treeList1.KeyFieldName = "ID";
