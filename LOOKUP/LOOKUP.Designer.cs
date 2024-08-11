@@ -35,10 +35,10 @@
             ucTextBox1 = new Ctrls.UCTextBox();
             ucDateBox1 = new Ctrls.UCDateBox();
             ucTextBox2 = new Ctrls.UCTextBox();
+            grdFrwFrm = new Ctrls.UCGridSet();
             ucSplit2 = new Ctrls.UCSplit();
             treeList1 = new DevExpress.XtraTreeList.TreeList();
             listBox1 = new ListBox();
-            ucGridSet1 = new Ctrls.UCGridSet();
             ((System.ComponentModel.ISupportInitialize)ucSplit1).BeginInit();
             ucSplit1.Panel1.SuspendLayout();
             ucSplit1.Panel2.SuspendLayout();
@@ -90,7 +90,7 @@
             // 
             // splitContainer1.Panel2
             // 
-            splitContainer1.Panel2.Controls.Add(ucGridSet1);
+            splitContainer1.Panel2.Controls.Add(grdFrwFrm);
             splitContainer1.Size = new Size(553, 819);
             splitContainer1.SplitterDistance = 219;
             splitContainer1.TabIndex = 14;
@@ -188,6 +188,17 @@
             ucTextBox2.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
             ucTextBox2.TitleWidth = 100;
             // 
+            // grdFrwFrm
+            // 
+            grdFrwFrm.AllowDrop = true;
+            grdFrwFrm.Dock = DockStyle.Fill;
+            grdFrwFrm.Location = new Point(0, 0);
+            grdFrwFrm.Name = "grdFrwFrm";
+            grdFrwFrm.Size = new Size(553, 596);
+            grdFrwFrm.TabIndex = 0;
+            grdFrwFrm.DragDrop += grdFrwFrm_DragDrop;
+            grdFrwFrm.DragOver += grdFrwFrm_DragOver;
+            // 
             // ucSplit2
             // 
             ucSplit2.Dock = DockStyle.Fill;
@@ -215,6 +226,7 @@
             treeList1.Size = new Size(488, 392);
             treeList1.TabIndex = 0;
             treeList1.FocusedNodeChanged += treeList1_FocusedNodeChanged;
+            treeList1.MouseDown += treeList1_MouseDown;
             // 
             // listBox1
             // 
@@ -225,14 +237,6 @@
             listBox1.Name = "listBox1";
             listBox1.Size = new Size(488, 423);
             listBox1.TabIndex = 0;
-            // 
-            // ucGridSet1
-            // 
-            ucGridSet1.Dock = DockStyle.Fill;
-            ucGridSet1.Location = new Point(0, 0);
-            ucGridSet1.Name = "ucGridSet1";
-            ucGridSet1.Size = new Size(553, 596);
-            ucGridSet1.TabIndex = 0;
             // 
             // LOOKUP
             // 
@@ -269,6 +273,6 @@
         private Ctrls.UCDateBox ucDateBox1;
         private Ctrls.UCCodeBox ucCodeBox1;
         private SplitContainer splitContainer1;
-        private Ctrls.UCGridSet ucGridSet1;
+        private Ctrls.UCGridSet grdFrwFrm;
     }
 }
