@@ -37,7 +37,7 @@
             g10 = new Ctrls.UCGridSet();
             ucSplit3 = new Ctrls.UCSplit();
             ucPanel3 = new Ctrls.UCPanel();
-            gend = new Ctrls.UCTextBox();
+            gend = new Ctrls.UCCodeBox();
             dept = new Ctrls.UCTextBox();
             tell = new Ctrls.UCTextBox();
             addr = new Ctrls.UCTextBox();
@@ -47,6 +47,7 @@
             id = new Ctrls.UCTextBox();
             ucPanel4 = new Ctrls.UCPanel();
             g20 = new Ctrls.UCGridSet();
+            dept_name = new Ctrls.UCTextBox();
             ((System.ComponentModel.ISupportInitialize)ucSplit1).BeginInit();
             ucSplit1.Panel1.SuspendLayout();
             ucSplit1.Panel2.SuspendLayout();
@@ -199,6 +200,7 @@
             // ucPanel3
             // 
             ucPanel3.Controls.Add(gend);
+            ucPanel3.Controls.Add(dept_name);
             ucPanel3.Controls.Add(dept);
             ucPanel3.Controls.Add(tell);
             ucPanel3.Controls.Add(addr);
@@ -217,10 +219,10 @@
             // 
             gend.ControlHeight = 21;
             gend.ControlWidth = 327;
+            gend.FldTy = null;
             gend.FontColor = Color.Black;
             gend.FontFace = "Tahoma";
             gend.FontSize = 9F;
-            gend.FormatStr = "";
             gend.Location = new Point(356, 38);
             gend.Name = "gend";
             gend.Size = new Size(327, 21);
@@ -243,7 +245,7 @@
             dept.Size = new Size(327, 21);
             dept.TabIndex = 14;
             dept.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            dept.Title = "Department";
+            dept.Title = "Dept";
             dept.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
             dept.TitleWidth = 100;
             // 
@@ -367,6 +369,23 @@
             g20.Size = new Size(770, 315);
             g20.TabIndex = 0;
             // 
+            // dept_name
+            // 
+            dept_name.ControlHeight = 21;
+            dept_name.ControlWidth = 327;
+            dept_name.FontColor = Color.Black;
+            dept_name.FontFace = "Tahoma";
+            dept_name.FontSize = 9F;
+            dept_name.FormatStr = "";
+            dept_name.Location = new Point(356, 119);
+            dept_name.Name = "dept_name";
+            dept_name.Size = new Size(327, 21);
+            dept_name.TabIndex = 14;
+            dept_name.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            dept_name.Title = "Dept Name";
+            dept_name.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            dept_name.TitleWidth = 100;
+            // 
             // TST104
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -423,6 +442,7 @@
         private Ctrls.UCButton ucButton1;
         private Ctrls.UCTextBox s_txt;
         private Ctrls.UCButton ucButton2;
-        private Ctrls.UCTextBox gend;
+        private Ctrls.UCCodeBox gend;
+        private Ctrls.UCTextBox dept_name;
     }
 }

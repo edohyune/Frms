@@ -17,9 +17,9 @@ namespace EpicV004.Frms
         }
         private void TST104_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("2");
-            //g10.Open();
-            this.Open();
+            //MessageBox.Show("2");
+            g10.Open();
+            //this.Open();
         }
         private void ucButton1_Click(object sender, EventArgs e)
         {
