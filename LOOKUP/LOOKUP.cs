@@ -48,8 +48,8 @@ namespace EpicV004.Frms
 
         private void LoadSampleData()
         {
-            List<UsrDir> smpDats = new UsrDirRepo().GetByUsrRegId(Common.GetValue("gFrameWorkId"), Common.GetValue("gRegId").ToInt());
-            BindingList<UsrDir> smpDatbs = new BindingList<UsrDir>(smpDats);
+            List<UsrFrmDir> smpDats = new UsrFrmDirRepo().GetByUsrRegId(Common.GetValue("gFrameWorkId"), Common.GetValue("gRegId").ToInt());
+            BindingList<UsrFrmDir> smpDatbs = new BindingList<UsrFrmDir>(smpDats);
 
             //// TreeList - GRDTRE
             treeList1.DataSource = smpDatbs;
@@ -63,7 +63,7 @@ namespace EpicV004.Frms
         {
             if (e.Node != null)
             {
-                var selectedData = (UsrDir)treeList1.GetDataRecordByNode(e.Node);
+                var selectedData = (UsrFrmDir)treeList1.GetDataRecordByNode(e.Node);
                 if (selectedData != null)
                 {
                     listBox1.Items.Add(selectedData.DirId + " - " + selectedData.DirNm);
@@ -94,7 +94,7 @@ namespace EpicV004.Frms
             TreeListNode draggedNode = e.Data.GetData(typeof(TreeListNode)) as TreeListNode;
             if (draggedNode != null)
             {
-                UsrDir data = treeList1.GetDataRecordByNode(draggedNode) as UsrDir;
+                UsrFrmDir data = treeList1.GetDataRecordByNode(draggedNode) as UsrFrmDir;
                 GridHitInfo hitInfo = grdFrwFrm.gvBand.CalcHitInfo(grdFrwFrm.PointToClient(new Point(e.X, e.Y)));
 
                 if (hitInfo.InRow && data != null)
