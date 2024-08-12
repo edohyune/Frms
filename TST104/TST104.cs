@@ -58,7 +58,7 @@ namespace EpicV004.Frms
                     case "New":
                         NewWorkSet("f10");
                         break;
-                      
+
                     default:
                         base.BarButtonAction(frm, action);
                         break;
@@ -144,7 +144,7 @@ namespace EpicV004.Frms
             //p.Add("@id", id.Text); // Add parameter
             //DataSet dSet = OpenDataSet("tst104_print",p);
             DataSet dSet = OpenDataSet("tst104_print");
-            //MessageBox.Show(dSet.Tables.Count.ToString());
+            MessageBox.Show(dSet.Tables.Count.ToString());
             if (Libs.GenFunc.IsEmpty(dSet))
             {
                 return;
@@ -154,6 +154,16 @@ namespace EpicV004.Frms
             DevExpress.XtraReports.UI.ReportPrintTool ReportPrintTool = new DevExpress.XtraReports.UI.ReportPrintTool(Rpt);
             ReportPrintTool.ShowPreviewDialog();
 
+        }
+
+        private void ucButton1_Click_1(object sender, EventArgs e)
+        {
+            gend.Code = "01";
+        }
+
+        private void ucButton4_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(gend.Code);
         }
     }
 }

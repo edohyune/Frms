@@ -8,9 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Ctrls\Ctrls.csproj" />
-    <ProjectReference Include="..\..\FormMain\FormMain.csproj" />
-    <ProjectReference Include="..\..\Libs\Libs.csproj" />
+    <PackageReference Include="EpicPrologue" Version="1.0.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="GAIADesignerV004">
+      <HintPath>..\..\..\GAIADesigner\FormMain\bin\Debug\net8.0-windows\GAIADesignerV004.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
