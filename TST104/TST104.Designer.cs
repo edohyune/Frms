@@ -30,6 +30,7 @@
         {
             ucSplit1 = new Ctrls.UCSplit();
             ucPanel1 = new Ctrls.UCPanel();
+            ucButton1 = new Ctrls.UCButton();
             ucButton2 = new Ctrls.UCButton();
             s_txt = new Ctrls.UCTextBox();
             ucSplit2 = new Ctrls.UCSplit();
@@ -37,7 +38,9 @@
             g10 = new Ctrls.UCGridSet();
             ucSplit3 = new Ctrls.UCSplit();
             ucPanel3 = new Ctrls.UCPanel();
+            txtChangedFlag = new Ctrls.UCTextBox();
             gend = new Ctrls.UCCodeBox();
+            dept_name = new Ctrls.UCTextBox();
             dept = new Ctrls.UCTextBox();
             tell = new Ctrls.UCTextBox();
             addr = new Ctrls.UCTextBox();
@@ -47,7 +50,7 @@
             id = new Ctrls.UCTextBox();
             ucPanel4 = new Ctrls.UCPanel();
             g20 = new Ctrls.UCGridSet();
-            dept_name = new Ctrls.UCTextBox();
+            ucButton4 = new Ctrls.UCButton();
             ((System.ComponentModel.ISupportInitialize)ucSplit1).BeginInit();
             ucSplit1.Panel1.SuspendLayout();
             ucSplit1.Panel2.SuspendLayout();
@@ -92,6 +95,8 @@
             // 
             // ucPanel1
             // 
+            ucPanel1.Controls.Add(ucButton4);
+            ucPanel1.Controls.Add(ucButton1);
             ucPanel1.Controls.Add(ucButton2);
             ucPanel1.Controls.Add(s_txt);
             ucPanel1.Dock = DockStyle.Fill;
@@ -101,10 +106,30 @@
             ucPanel1.TabIndex = 0;
             ucPanel1.Text = "Search";
             // 
+            // ucButton1
+            // 
+            ucButton1.Appearance.BackColor = Color.Gray;
+            ucButton1.Appearance.Options.UseBackColor = true;
+            ucButton1.Appearance.Options.UseFont = true;
+            ucButton1.AppearancePressed.BackColor = Color.DodgerBlue;
+            ucButton1.AppearancePressed.Options.UseBackColor = true;
+            ucButton1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            ucButton1.ControlHeight = 35;
+            ucButton1.ControlWidth = 100;
+            ucButton1.FontBold = FontStyle.Regular;
+            ucButton1.FontFace = "Tahoma";
+            ucButton1.FontSize = 9F;
+            ucButton1.Location = new Point(883, 32);
+            ucButton1.Name = "ucButton1";
+            ucButton1.Size = new Size(100, 35);
+            ucButton1.TabIndex = 2;
+            ucButton1.Title = "TEST";
+            ucButton1.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            ucButton1.Click += ucButton1_Click_1;
+            // 
             // ucButton2
             // 
             ucButton2.Appearance.BackColor = Color.Gray;
-            ucButton2.Appearance.Font = new Font("Tahoma", 9F);
             ucButton2.Appearance.Options.UseBackColor = true;
             ucButton2.Appearance.Options.UseFont = true;
             ucButton2.AppearancePressed.BackColor = Color.DodgerBlue;
@@ -132,6 +157,7 @@
             s_txt.FontSize = 9F;
             s_txt.FormatStr = "";
             s_txt.Location = new Point(5, 46);
+            s_txt.Margin = new Padding(4, 3, 4, 3);
             s_txt.Name = "s_txt";
             s_txt.Size = new Size(305, 21);
             s_txt.TabIndex = 0;
@@ -199,6 +225,7 @@
             // 
             // ucPanel3
             // 
+            ucPanel3.Controls.Add(txtChangedFlag);
             ucPanel3.Controls.Add(gend);
             ucPanel3.Controls.Add(dept_name);
             ucPanel3.Controls.Add(dept);
@@ -215,6 +242,24 @@
             ucPanel3.TabIndex = 0;
             ucPanel3.Text = "Master Data";
             // 
+            // txtChangedFlag
+            // 
+            txtChangedFlag.ControlHeight = 21;
+            txtChangedFlag.ControlWidth = 110;
+            txtChangedFlag.FontColor = Color.Black;
+            txtChangedFlag.FontFace = "Tahoma";
+            txtChangedFlag.FontSize = 9F;
+            txtChangedFlag.FormatStr = "";
+            txtChangedFlag.Location = new Point(573, 174);
+            txtChangedFlag.Margin = new Padding(4, 3, 4, 3);
+            txtChangedFlag.Name = "txtChangedFlag";
+            txtChangedFlag.Size = new Size(110, 21);
+            txtChangedFlag.TabIndex = 16;
+            txtChangedFlag.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            txtChangedFlag.Title = "";
+            txtChangedFlag.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            txtChangedFlag.TitleWidth = 0;
+            // 
             // gend
             // 
             gend.ControlHeight = 21;
@@ -224,6 +269,7 @@
             gend.FontFace = "Tahoma";
             gend.FontSize = 9F;
             gend.Location = new Point(356, 38);
+            gend.Margin = new Padding(4, 3, 4, 3);
             gend.Name = "gend";
             gend.Size = new Size(327, 21);
             gend.TabIndex = 15;
@@ -231,6 +277,24 @@
             gend.Title = "Gender";
             gend.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
             gend.TitleWidth = 100;
+            // 
+            // dept_name
+            // 
+            dept_name.ControlHeight = 21;
+            dept_name.ControlWidth = 327;
+            dept_name.FontColor = Color.Black;
+            dept_name.FontFace = "Tahoma";
+            dept_name.FontSize = 9F;
+            dept_name.FormatStr = "";
+            dept_name.Location = new Point(356, 119);
+            dept_name.Margin = new Padding(4, 3, 4, 3);
+            dept_name.Name = "dept_name";
+            dept_name.Size = new Size(327, 21);
+            dept_name.TabIndex = 14;
+            dept_name.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            dept_name.Title = "Dept Name";
+            dept_name.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            dept_name.TitleWidth = 100;
             // 
             // dept
             // 
@@ -241,6 +305,7 @@
             dept.FontSize = 9F;
             dept.FormatStr = "";
             dept.Location = new Point(356, 92);
+            dept.Margin = new Padding(4, 3, 4, 3);
             dept.Name = "dept";
             dept.Size = new Size(327, 21);
             dept.TabIndex = 14;
@@ -258,6 +323,7 @@
             tell.FontSize = 9F;
             tell.FormatStr = "";
             tell.Location = new Point(356, 65);
+            tell.Margin = new Padding(4, 3, 4, 3);
             tell.Name = "tell";
             tell.Size = new Size(327, 21);
             tell.TabIndex = 12;
@@ -275,6 +341,7 @@
             addr.FontSize = 9F;
             addr.FormatStr = "";
             addr.Location = new Point(5, 147);
+            addr.Margin = new Padding(4, 3, 4, 3);
             addr.Name = "addr";
             addr.Size = new Size(678, 21);
             addr.TabIndex = 11;
@@ -292,6 +359,7 @@
             eng_name.FontSize = 9F;
             eng_name.FormatStr = "";
             eng_name.Location = new Point(5, 119);
+            eng_name.Margin = new Padding(4, 3, 4, 3);
             eng_name.Name = "eng_name";
             eng_name.Size = new Size(321, 21);
             eng_name.TabIndex = 10;
@@ -309,6 +377,7 @@
             last_name.FontSize = 9F;
             last_name.FormatStr = "";
             last_name.Location = new Point(5, 92);
+            last_name.Margin = new Padding(4, 3, 4, 3);
             last_name.Name = "last_name";
             last_name.Size = new Size(321, 21);
             last_name.TabIndex = 9;
@@ -326,6 +395,7 @@
             first_name.FontSize = 9F;
             first_name.FormatStr = "";
             first_name.Location = new Point(5, 65);
+            first_name.Margin = new Padding(4, 3, 4, 3);
             first_name.Name = "first_name";
             first_name.Size = new Size(321, 21);
             first_name.TabIndex = 8;
@@ -343,6 +413,7 @@
             id.FontSize = 9F;
             id.FormatStr = "";
             id.Location = new Point(5, 38);
+            id.Margin = new Padding(4, 3, 4, 3);
             id.Name = "id";
             id.Size = new Size(321, 21);
             id.TabIndex = 7;
@@ -369,22 +440,26 @@
             g20.Size = new Size(770, 315);
             g20.TabIndex = 0;
             // 
-            // dept_name
+            // ucButton4
             // 
-            dept_name.ControlHeight = 21;
-            dept_name.ControlWidth = 327;
-            dept_name.FontColor = Color.Black;
-            dept_name.FontFace = "Tahoma";
-            dept_name.FontSize = 9F;
-            dept_name.FormatStr = "";
-            dept_name.Location = new Point(356, 119);
-            dept_name.Name = "dept_name";
-            dept_name.Size = new Size(327, 21);
-            dept_name.TabIndex = 14;
-            dept_name.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            dept_name.Title = "Dept Name";
-            dept_name.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            dept_name.TitleWidth = 100;
+            ucButton4.Appearance.BackColor = Color.Gray;
+            ucButton4.Appearance.Options.UseBackColor = true;
+            ucButton4.Appearance.Options.UseFont = true;
+            ucButton4.AppearancePressed.BackColor = Color.DodgerBlue;
+            ucButton4.AppearancePressed.Options.UseBackColor = true;
+            ucButton4.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            ucButton4.ControlHeight = 35;
+            ucButton4.ControlWidth = 100;
+            ucButton4.FontBold = FontStyle.Regular;
+            ucButton4.FontFace = "Tahoma";
+            ucButton4.FontSize = 9F;
+            ucButton4.Location = new Point(777, 32);
+            ucButton4.Name = "ucButton4";
+            ucButton4.Size = new Size(100, 35);
+            ucButton4.TabIndex = 3;
+            ucButton4.Title = "TEST";
+            ucButton4.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            ucButton4.Click += ucButton4_Click;
             // 
             // TST104
             // 
@@ -444,5 +519,8 @@
         private Ctrls.UCButton ucButton2;
         private Ctrls.UCCodeBox gend;
         private Ctrls.UCTextBox dept_name;
+        private Ctrls.UCTextBox txtChangedFlag;
+        private Ctrls.UCButton ucButton3;
+        private Ctrls.UCButton ucButton4;
     }
 }
