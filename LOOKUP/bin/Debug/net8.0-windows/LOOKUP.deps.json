@@ -9,7 +9,7 @@
       "LOOKUP/1.0.0": {
         "dependencies": {
           "DevExpress.Win.Design": "23.2.3",
-          "EpicPrologue": "1.0.10",
+          "EpicPrologue": "1.0.13",
           "GAIADesignerV004": "1.0.0.0"
         },
         "runtime": {
@@ -1024,15 +1024,15 @@
           }
         }
       },
-      "EpicPrologue/1.0.10": {
+      "EpicPrologue/1.0.13": {
         "dependencies": {
           "Dapper": "2.1.35",
           "DevExpress.Win.Design": "23.2.3"
         },
         "runtime": {
           "lib/net8.0-windows7.0/EpicPrologue.dll": {
-            "assemblyVersion": "1.0.10.0",
-            "fileVersion": "1.0.10.0"
+            "assemblyVersion": "1.0.13.0",
+            "fileVersion": "1.0.13.0"
           }
         }
       },
@@ -1843,12 +1843,12 @@
       "path": "devexpress.xpo/23.2.3",
       "hashPath": "devexpress.xpo.23.2.3.nupkg.sha512"
     },
-    "EpicPrologue/1.0.10": {
+    "EpicPrologue/1.0.13": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-8NrxdBZwDcToBq8ksCbm2OlHama4i7EVZeHkznJWtP5P9FD/iLib2ns/07BOnRVfhgLlcFOhryNz4w4mztsSpw==",
-      "path": "epicprologue/1.0.10",
-      "hashPath": "epicprologue.1.0.10.nupkg.sha512"
+      "sha512": "sha512-EUVaWIWHW2601zfLXmRlq+WUY7F8fUQgh/7VQPR8qIOqiUNP9pOk5FMMCagp1OcWBYIAsxqHqB4t55+GB4EAbQ==",
+      "path": "epicprologue/1.0.13",
+      "hashPath": "epicprologue.1.0.13.nupkg.sha512"
     },
     "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
       "type": "package",
