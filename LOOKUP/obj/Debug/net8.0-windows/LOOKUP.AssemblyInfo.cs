@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LOOKUP")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+87b88794609b319176d4ee9748d63df3373fcf8d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8aeab1115c387225b6e172a149eeacd705150aaa")]
 [assembly: System.Reflection.AssemblyProductAttribute("LOOKUP")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LOOKUP")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
