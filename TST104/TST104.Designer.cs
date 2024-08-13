@@ -30,6 +30,7 @@
         {
             ucSplit1 = new Ctrls.UCSplit();
             ucPanel1 = new Ctrls.UCPanel();
+            ucButton4 = new Ctrls.UCButton();
             ucButton1 = new Ctrls.UCButton();
             ucButton2 = new Ctrls.UCButton();
             s_txt = new Ctrls.UCTextBox();
@@ -50,7 +51,6 @@
             id = new Ctrls.UCTextBox();
             ucPanel4 = new Ctrls.UCPanel();
             g20 = new Ctrls.UCGridSet();
-            ucButton4 = new Ctrls.UCButton();
             ((System.ComponentModel.ISupportInitialize)ucSplit1).BeginInit();
             ucSplit1.Panel1.SuspendLayout();
             ucSplit1.Panel2.SuspendLayout();
@@ -89,7 +89,7 @@
             // 
             ucSplit1.Panel2.Controls.Add(ucSplit2);
             ucSplit1.Size = new Size(1165, 641);
-            ucSplit1.SplitterDistance = 93;
+            ucSplit1.SplitterDistance = 74;
             ucSplit1.TabIndex = 0;
             ucSplit1.TitleWidth = 121;
             // 
@@ -102,13 +102,36 @@
             ucPanel1.Dock = DockStyle.Fill;
             ucPanel1.Location = new Point(0, 0);
             ucPanel1.Name = "ucPanel1";
-            ucPanel1.Size = new Size(1165, 93);
+            ucPanel1.Size = new Size(1165, 74);
             ucPanel1.TabIndex = 0;
             ucPanel1.Text = "Search";
+            // 
+            // ucButton4
+            // 
+            ucButton4.Appearance.BackColor = Color.Gray;
+            ucButton4.Appearance.Font = new Font("Tahoma", 9F);
+            ucButton4.Appearance.Options.UseBackColor = true;
+            ucButton4.Appearance.Options.UseFont = true;
+            ucButton4.AppearancePressed.BackColor = Color.DodgerBlue;
+            ucButton4.AppearancePressed.Options.UseBackColor = true;
+            ucButton4.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            ucButton4.ControlHeight = 35;
+            ucButton4.ControlWidth = 100;
+            ucButton4.FontBold = FontStyle.Regular;
+            ucButton4.FontFace = "Tahoma";
+            ucButton4.FontSize = 9F;
+            ucButton4.Location = new Point(777, 32);
+            ucButton4.Name = "ucButton4";
+            ucButton4.Size = new Size(100, 35);
+            ucButton4.TabIndex = 3;
+            ucButton4.Title = "TEST";
+            ucButton4.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            ucButton4.Click += ucButton4_Click;
             // 
             // ucButton1
             // 
             ucButton1.Appearance.BackColor = Color.Gray;
+            ucButton1.Appearance.Font = new Font("Tahoma", 9F);
             ucButton1.Appearance.Options.UseBackColor = true;
             ucButton1.Appearance.Options.UseFont = true;
             ucButton1.AppearancePressed.BackColor = Color.DodgerBlue;
@@ -130,6 +153,7 @@
             // ucButton2
             // 
             ucButton2.Appearance.BackColor = Color.Gray;
+            ucButton2.Appearance.Font = new Font("Tahoma", 9F);
             ucButton2.Appearance.Options.UseBackColor = true;
             ucButton2.Appearance.Options.UseFont = true;
             ucButton2.AppearancePressed.BackColor = Color.DodgerBlue;
@@ -156,7 +180,7 @@
             s_txt.FontFace = "Tahoma";
             s_txt.FontSize = 9F;
             s_txt.FormatStr = "";
-            s_txt.Location = new Point(5, 46);
+            s_txt.Location = new Point(6, 32);
             s_txt.Margin = new Padding(4, 3, 4, 3);
             s_txt.Name = "s_txt";
             s_txt.Size = new Size(305, 21);
@@ -165,6 +189,7 @@
             s_txt.Title = "Search";
             s_txt.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
             s_txt.TitleWidth = 100;
+            s_txt.UCEditValueChanged += s_txt_UCEditValueChanged;
             // 
             // ucSplit2
             // 
@@ -179,7 +204,7 @@
             // ucSplit2.Panel2
             // 
             ucSplit2.Panel2.Controls.Add(ucSplit3);
-            ucSplit2.Size = new Size(1165, 544);
+            ucSplit2.Size = new Size(1165, 563);
             ucSplit2.SplitterDistance = 387;
             ucSplit2.TabIndex = 0;
             ucSplit2.TitleWidth = 121;
@@ -190,7 +215,7 @@
             ucPanel2.Dock = DockStyle.Fill;
             ucPanel2.Location = new Point(0, 0);
             ucPanel2.Name = "ucPanel2";
-            ucPanel2.Size = new Size(387, 544);
+            ucPanel2.Size = new Size(387, 563);
             ucPanel2.TabIndex = 0;
             ucPanel2.Text = "List Data";
             // 
@@ -199,7 +224,7 @@
             g10.Dock = DockStyle.Fill;
             g10.Location = new Point(2, 23);
             g10.Name = "g10";
-            g10.Size = new Size(383, 519);
+            g10.Size = new Size(383, 538);
             g10.TabIndex = 0;
             g10.UCAfterFocusedRow += g10_UCAfterFocusedRow;
             // 
@@ -218,7 +243,7 @@
             // ucSplit3.Panel2
             // 
             ucSplit3.Panel2.Controls.Add(ucPanel4);
-            ucSplit3.Size = new Size(774, 544);
+            ucSplit3.Size = new Size(774, 563);
             ucSplit3.SplitterDistance = 200;
             ucSplit3.TabIndex = 0;
             ucSplit3.TitleWidth = 121;
@@ -428,7 +453,7 @@
             ucPanel4.Dock = DockStyle.Fill;
             ucPanel4.Location = new Point(0, 0);
             ucPanel4.Name = "ucPanel4";
-            ucPanel4.Size = new Size(774, 340);
+            ucPanel4.Size = new Size(774, 359);
             ucPanel4.TabIndex = 0;
             ucPanel4.Text = "Detail Data";
             // 
@@ -437,29 +462,8 @@
             g20.Dock = DockStyle.Fill;
             g20.Location = new Point(2, 23);
             g20.Name = "g20";
-            g20.Size = new Size(770, 315);
+            g20.Size = new Size(770, 334);
             g20.TabIndex = 0;
-            // 
-            // ucButton4
-            // 
-            ucButton4.Appearance.BackColor = Color.Gray;
-            ucButton4.Appearance.Options.UseBackColor = true;
-            ucButton4.Appearance.Options.UseFont = true;
-            ucButton4.AppearancePressed.BackColor = Color.DodgerBlue;
-            ucButton4.AppearancePressed.Options.UseBackColor = true;
-            ucButton4.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            ucButton4.ControlHeight = 35;
-            ucButton4.ControlWidth = 100;
-            ucButton4.FontBold = FontStyle.Regular;
-            ucButton4.FontFace = "Tahoma";
-            ucButton4.FontSize = 9F;
-            ucButton4.Location = new Point(777, 32);
-            ucButton4.Name = "ucButton4";
-            ucButton4.Size = new Size(100, 35);
-            ucButton4.TabIndex = 3;
-            ucButton4.Title = "TEST";
-            ucButton4.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            ucButton4.Click += ucButton4_Click;
             // 
             // TST104
             // 

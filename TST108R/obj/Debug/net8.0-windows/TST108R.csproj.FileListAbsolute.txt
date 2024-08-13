@@ -1,0 +1,15 @@
+C:\Framework9\Frms\TST108R\bin\Debug\net8.0-windows\TST108R.deps.json
+C:\Framework9\Frms\TST108R\bin\Debug\net8.0-windows\TST108R.dll
+C:\Framework9\Frms\TST108R\bin\Debug\net8.0-windows\TST108R.pdb
+C:\Framework9\Frms\TST108R\obj\Debug\net8.0-windows\TST108R.csproj.AssemblyReference.cache
+C:\Framework9\Frms\TST108R\obj\Debug\net8.0-windows\EpicV004.Frms.TST108R.resources
+C:\Framework9\Frms\TST108R\obj\Debug\net8.0-windows\TST108R.csproj.GenerateResource.cache
+C:\Framework9\Frms\TST108R\obj\Debug\net8.0-windows\TST108R.GeneratedMSBuildEditorConfig.editorconfig
+C:\Framework9\Frms\TST108R\obj\Debug\net8.0-windows\TST108R.AssemblyInfoInputs.cache
+C:\Framework9\Frms\TST108R\obj\Debug\net8.0-windows\TST108R.AssemblyInfo.cs
+C:\Framework9\Frms\TST108R\obj\Debug\net8.0-windows\TST108R.csproj.CoreCompileInputs.cache
+C:\Framework9\Frms\TST108R\obj\Debug\net8.0-windows\TST108R.sourcelink.json
+C:\Framework9\Frms\TST108R\obj\Debug\net8.0-windows\TST108R.dll
+C:\Framework9\Frms\TST108R\obj\Debug\net8.0-windows\refint\TST108R.dll
+C:\Framework9\Frms\TST108R\obj\Debug\net8.0-windows\TST108R.pdb
+C:\Framework9\Frms\TST108R\obj\Debug\net8.0-windows\ref\TST108R.dll

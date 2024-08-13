@@ -24,13 +24,14 @@ namespace TST104
 
         private void SetDateSet(DataSet dSet)
         {
-            if (dSet.Tables.Count < 1)
-            {
-                throw new ArgumentException("DataSet must contain at least one table.");
-            }
+            //if (dSet.Tables.Count < 1)
+            //{
+            //    throw new ArgumentException("DataSet must contain at least one table.");
+            //}
 
             // Master data from FieldSet
-            DetailReport.DataSource = dSet.Tables[0];
+            //DetailReport.DataSource = dSet.Tables[0];
+            DetailReport.DataSource = dSet.Tables[1];
             id.DataBindings.Add("Text", dSet.Tables[0], "id");
             first_name.DataBindings.Add("Text", dSet.Tables[0], "first_name");
             last_name.DataBindings.Add("Text", dSet.Tables[0], "last_name");
@@ -40,11 +41,12 @@ namespace TST104
             addr.DataBindings.Add("Text", dSet.Tables[0], "addr");
 
             // Detail data from the same table
-            sq.DataBindings.Add("Text", dSet.Tables[0], "sq");
-            person.DataBindings.Add("Text", dSet.Tables[0], "person");
-            phone.DataBindings.Add("Text", dSet.Tables[0], "phone");
-            position.DataBindings.Add("Text", dSet.Tables[0], "position");
-            memo.DataBindings.Add("Text", dSet.Tables[0], "memo");
+            
+            sq.DataBindings.Add("Text", dSet.Tables[1], "sq");
+            person.DataBindings.Add("Text", dSet.Tables[1], "person");
+            phone.DataBindings.Add("Text", dSet.Tables[1], "phone");
+            position.DataBindings.Add("Text", dSet.Tables[1], "position");
+            memo.DataBindings.Add("Text", dSet.Tables[1], "memo");
             //--test1
             //if (dSet.Tables.Count < 1)
             //{

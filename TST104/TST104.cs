@@ -144,7 +144,7 @@ namespace EpicV004.Frms
             //p.Add("@id", id.Text); // Add parameter
             //DataSet dSet = OpenDataSet("tst104_print",p);
             DataSet dSet = OpenDataSet("tst104_print");
-            MessageBox.Show(dSet.Tables.Count.ToString());
+            // MessageBox.Show(dSet.Tables.Count.ToString());
             if (Libs.GenFunc.IsEmpty(dSet))
             {
                 return;
@@ -164,6 +164,11 @@ namespace EpicV004.Frms
         private void ucButton4_Click(object sender, EventArgs e)
         {
             MessageBox.Show(gend.Code);
+        }
+
+        private void s_txt_UCEditValueChanged(object Sender, Control control)
+        {
+
         }
     }
 }
