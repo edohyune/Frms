@@ -18,6 +18,7 @@ namespace EpicV004.Frms
             InitializeComponent();
             LoadSampleData();
         }
+
         protected override void BarButtonAction(string frm, string action)
         {
             if (this.Name == frm)
@@ -25,7 +26,7 @@ namespace EpicV004.Frms
                 switch (action)
                 {
                     case "Save":
-                        if (this.Save()) 
+                        if (this.Save())
                         {
                             MessageBox.Show("저장되었습니다.");
                         }
@@ -79,11 +80,6 @@ namespace EpicV004.Frms
             }
         }
 
-        private void LOOKUP_Load(object sender, EventArgs e)
-        {
-            base.Open();
-        }
-
         private void grdFrwFrm_DragOver(object sender, DragEventArgs e)
         {
             e.Effect = DragDropEffects.Move;
@@ -111,6 +107,21 @@ namespace EpicV004.Frms
             {
                 treeList1.DoDragDrop(hitInfo.Node, DragDropEffects.Move);
             }
+        }
+
+        private void grdFrwFrm_Load(object sender, EventArgs e)
+        {
+            MessageBox.Show("grdFrwFrm_Load");
+            thisopen();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            grdFrwFrm.Open();
+        }
+        private void thisopen()
+        {
+            grdFrwFrm.Open();
         }
     }
 }

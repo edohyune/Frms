@@ -39,6 +39,7 @@
             ucSplit2 = new Ctrls.UCSplit();
             treeList1 = new DevExpress.XtraTreeList.TreeList();
             listBox1 = new ListBox();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)ucSplit1).BeginInit();
             ucSplit1.Panel1.SuspendLayout();
             ucSplit1.Panel2.SuspendLayout();
@@ -82,6 +83,7 @@
             // 
             // splitContainer1.Panel1
             // 
+            splitContainer1.Panel1.Controls.Add(button1);
             splitContainer1.Panel1.Controls.Add(ucTextBox3);
             splitContainer1.Panel1.Controls.Add(ucCodeBox1);
             splitContainer1.Panel1.Controls.Add(ucTextBox1);
@@ -196,6 +198,7 @@
             grdFrwFrm.Name = "grdFrwFrm";
             grdFrwFrm.Size = new Size(553, 596);
             grdFrwFrm.TabIndex = 0;
+            grdFrwFrm.Load += grdFrwFrm_Load;
             grdFrwFrm.DragDrop += grdFrwFrm_DragDrop;
             grdFrwFrm.DragOver += grdFrwFrm_DragOver;
             // 
@@ -238,6 +241,16 @@
             listBox1.Size = new Size(488, 423);
             listBox1.TabIndex = 0;
             // 
+            // button1
+            // 
+            button1.Location = new Point(351, 93);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 14;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // LOOKUP
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -245,7 +258,6 @@
             Controls.Add(ucSplit1);
             Name = "LOOKUP";
             Size = new Size(1045, 819);
-            Load += LOOKUP_Load;
             ucSplit1.Panel1.ResumeLayout(false);
             ucSplit1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ucSplit1).EndInit();
@@ -274,5 +286,6 @@
         private Ctrls.UCCodeBox ucCodeBox1;
         private SplitContainer splitContainer1;
         private Ctrls.UCGridSet grdFrwFrm;
+        private Button button1;
     }
 }
