@@ -1,0 +1,15 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/DesignerV004/bin/Debug/net8.0-windows
+/ABC100/bin/Debug/net8.0-windows
+/ABC100/obj/Debug/net8.0-windows/ref/ABC100.dll
+/ABC100/obj/Debug/net8.0-windows/refint/ABC100.dll
+/ABC100/obj/Debug/net8.0-windows
+/ABC101/obj
+/ABC200/obj
+/ABC500/obj
+/DMP101
+/TST100
+/TST101
