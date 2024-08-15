@@ -1290,7 +1290,7 @@
           }
         }
       },
-      "EpicPrologue/1.0.12": {
+      "EpicPrologue/1.0.13": {
         "type": "package",
         "dependencies": {
           "Dapper": "2.1.35",
@@ -2036,6 +2036,23 @@
             "rid": "win"
           }
         }
+      },
+      "TST108R/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "DevExpress.Reporting.Core": "23.2.3",
+          "EpicPrologue": "1.0.13"
+        },
+        "compile": {
+          "bin/placeholder/TST108R.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TST108R.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
       }
     }
   },
@@ -3043,15 +3060,15 @@
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "EpicPrologue/1.0.12": {
-      "sha512": "JWyq58Vj3hQdSAUXjXTDw2fVnFJfHfprsOBRmFkTe7BQJXexgX04ZLyVYZFqzMDQ8iwkQ3YKs/iPlaqvf2tfBQ==",
+    "EpicPrologue/1.0.13": {
+      "sha512": "EUVaWIWHW2601zfLXmRlq+WUY7F8fUQgh/7VQPR8qIOqiUNP9pOk5FMMCagp1OcWBYIAsxqHqB4t55+GB4EAbQ==",
       "type": "package",
-      "path": "epicprologue/1.0.12",
+      "path": "epicprologue/1.0.13",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
-        "epicprologue.1.0.12.nupkg.sha512",
+        "epicprologue.1.0.13.nupkg.sha512",
         "epicprologue.nuspec",
         "lib/net8.0-windows7.0/EpicPrologue.dll"
       ]
@@ -4340,11 +4357,17 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "TST108R/1.0.0": {
+      "type": "project",
+      "path": "../TST108R/TST108R.csproj",
+      "msbuildProject": "../TST108R/TST108R.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
-      "EpicPrologue >= 1.0.12"
+      "EpicPrologue >= 1.0.13",
+      "TST108R >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -4384,7 +4407,11 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Framework9\\Frms\\TST108R\\TST108R.csproj": {
+              "projectPath": "C:\\Framework9\\Frms\\TST108R\\TST108R.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -4404,7 +4431,7 @@
         "dependencies": {
           "EpicPrologue": {
             "target": "Package",
-            "version": "[1.0.12, )"
+            "version": "[1.0.13, )"
           }
         },
         "imports": [
@@ -4426,7 +4453,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

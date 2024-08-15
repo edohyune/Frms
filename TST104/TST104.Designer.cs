@@ -30,8 +30,6 @@
         {
             ucSplit1 = new Ctrls.UCSplit();
             ucPanel1 = new Ctrls.UCPanel();
-            ucButton4 = new Ctrls.UCButton();
-            ucButton1 = new Ctrls.UCButton();
             ucButton2 = new Ctrls.UCButton();
             s_txt = new Ctrls.UCTextBox();
             ucSplit2 = new Ctrls.UCSplit();
@@ -51,6 +49,8 @@
             id = new Ctrls.UCTextBox();
             ucPanel4 = new Ctrls.UCPanel();
             g20 = new Ctrls.UCGridSet();
+            s_dept = new Ctrls.UCTextBox();
+            s_dept_name = new Ctrls.UCTextBox();
             ((System.ComponentModel.ISupportInitialize)ucSplit1).BeginInit();
             ucSplit1.Panel1.SuspendLayout();
             ucSplit1.Panel2.SuspendLayout();
@@ -95,8 +95,8 @@
             // 
             // ucPanel1
             // 
-            ucPanel1.Controls.Add(ucButton4);
-            ucPanel1.Controls.Add(ucButton1);
+            ucPanel1.Controls.Add(s_dept_name);
+            ucPanel1.Controls.Add(s_dept);
             ucPanel1.Controls.Add(ucButton2);
             ucPanel1.Controls.Add(s_txt);
             ucPanel1.Dock = DockStyle.Fill;
@@ -105,50 +105,6 @@
             ucPanel1.Size = new Size(1165, 74);
             ucPanel1.TabIndex = 0;
             ucPanel1.Text = "Search";
-            // 
-            // ucButton4
-            // 
-            ucButton4.Appearance.BackColor = Color.Gray;
-            ucButton4.Appearance.Font = new Font("Tahoma", 9F);
-            ucButton4.Appearance.Options.UseBackColor = true;
-            ucButton4.Appearance.Options.UseFont = true;
-            ucButton4.AppearancePressed.BackColor = Color.DodgerBlue;
-            ucButton4.AppearancePressed.Options.UseBackColor = true;
-            ucButton4.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            ucButton4.ControlHeight = 35;
-            ucButton4.ControlWidth = 100;
-            ucButton4.FontBold = FontStyle.Regular;
-            ucButton4.FontFace = "Tahoma";
-            ucButton4.FontSize = 9F;
-            ucButton4.Location = new Point(777, 32);
-            ucButton4.Name = "ucButton4";
-            ucButton4.Size = new Size(100, 35);
-            ucButton4.TabIndex = 3;
-            ucButton4.Title = "TEST";
-            ucButton4.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            ucButton4.Click += ucButton4_Click;
-            // 
-            // ucButton1
-            // 
-            ucButton1.Appearance.BackColor = Color.Gray;
-            ucButton1.Appearance.Font = new Font("Tahoma", 9F);
-            ucButton1.Appearance.Options.UseBackColor = true;
-            ucButton1.Appearance.Options.UseFont = true;
-            ucButton1.AppearancePressed.BackColor = Color.DodgerBlue;
-            ucButton1.AppearancePressed.Options.UseBackColor = true;
-            ucButton1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            ucButton1.ControlHeight = 35;
-            ucButton1.ControlWidth = 100;
-            ucButton1.FontBold = FontStyle.Regular;
-            ucButton1.FontFace = "Tahoma";
-            ucButton1.FontSize = 9F;
-            ucButton1.Location = new Point(883, 32);
-            ucButton1.Name = "ucButton1";
-            ucButton1.Size = new Size(100, 35);
-            ucButton1.TabIndex = 2;
-            ucButton1.Title = "TEST";
-            ucButton1.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            ucButton1.Click += ucButton1_Click_1;
             // 
             // ucButton2
             // 
@@ -164,7 +120,7 @@
             ucButton2.FontBold = FontStyle.Regular;
             ucButton2.FontFace = "Tahoma";
             ucButton2.FontSize = 9F;
-            ucButton2.Location = new Point(989, 32);
+            ucButton2.Location = new Point(860, 26);
             ucButton2.Name = "ucButton2";
             ucButton2.Size = new Size(100, 35);
             ucButton2.TabIndex = 1;
@@ -465,6 +421,40 @@
             g20.Size = new Size(770, 334);
             g20.TabIndex = 0;
             // 
+            // s_dept
+            // 
+            s_dept.ControlHeight = 21;
+            s_dept.ControlWidth = 244;
+            s_dept.FontColor = Color.Black;
+            s_dept.FontFace = "Tahoma";
+            s_dept.FontSize = 9F;
+            s_dept.FormatStr = "";
+            s_dept.Location = new Point(318, 32);
+            s_dept.Name = "s_dept";
+            s_dept.Size = new Size(244, 21);
+            s_dept.TabIndex = 4;
+            s_dept.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            s_dept.Title = "Dept";
+            s_dept.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            s_dept.TitleWidth = 100;
+            // 
+            // s_dept_name
+            // 
+            s_dept_name.ControlHeight = 21;
+            s_dept_name.ControlWidth = 246;
+            s_dept_name.FontColor = Color.Black;
+            s_dept_name.FontFace = "Tahoma";
+            s_dept_name.FontSize = 9F;
+            s_dept_name.FormatStr = "";
+            s_dept_name.Location = new Point(568, 32);
+            s_dept_name.Name = "s_dept_name";
+            s_dept_name.Size = new Size(246, 21);
+            s_dept_name.TabIndex = 5;
+            s_dept_name.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            s_dept_name.Title = "Name";
+            s_dept_name.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            s_dept_name.TitleWidth = 100;
+            // 
             // TST104
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -517,14 +507,13 @@
         private Ctrls.UCTextBox tell;
         private Ctrls.UCGridSet g20;
         private Ctrls.UCTextBox dept;
-       
-        private Ctrls.UCButton ucButton1;
         private Ctrls.UCTextBox s_txt;
         private Ctrls.UCButton ucButton2;
         private Ctrls.UCCodeBox gend;
         private Ctrls.UCTextBox dept_name;
         private Ctrls.UCTextBox txtChangedFlag;
         private Ctrls.UCButton ucButton3;
-        private Ctrls.UCButton ucButton4;
+        private Ctrls.UCTextBox s_dept_name;
+        private Ctrls.UCTextBox s_dept;
     }
 }

@@ -57,6 +57,10 @@
             "DevExpress.Reporting.Core": {
               "target": "Package",
               "version": "[23.2.3, )"
+            },
+            "EpicPrologue": {
+              "target": "Package",
+              "version": "[1.0.13, )"
             }
           },
           "imports": [
@@ -78,7 +82,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
