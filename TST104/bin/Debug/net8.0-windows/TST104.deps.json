@@ -1434,7 +1434,10 @@
           "EpicPrologue": "1.0.13"
         },
         "runtime": {
-          "TST108R.dll": {}
+          "TST108R.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "GAIADesignerV004/1.0.0.0": {

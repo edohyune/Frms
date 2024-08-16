@@ -50,6 +50,13 @@ namespace EpicV004.Frms
             set => Set(ref _position, value);
         }
 
+        private string _position_name;
+        public string position_name
+        {
+            get => _position_name;
+            set => Set(ref _position_name, value);
+        }
+
         private string _memo;
         public string memo
         {
