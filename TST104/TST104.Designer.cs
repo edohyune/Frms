@@ -145,7 +145,7 @@
             s_txt.Title = "Search";
             s_txt.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
             s_txt.TitleWidth = 100;
-            s_txt.UCEditValueChanged += s_txt_UCEditValueChanged;
+           
             // 
             // ucSplit2
             // 

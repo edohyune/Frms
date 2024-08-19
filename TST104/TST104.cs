@@ -1,5 +1,6 @@
 ﻿using Dapper;
 using DevExpress.CodeParser;
+using DevExpress.Utils.Extensions;
 using DevExpress.XtraCharts.Designer.Native;
 using DevExpress.XtraReports.UI;
 using EpicV004.Ctrls;
@@ -15,16 +16,19 @@ namespace EpicV004.Frms
         {
             InitializeComponent(); //this.Open();
         }
+        public TST104(DataSet dts)
+        {
+            InitializeComponent();
+            DataValue(dts);
+            //_Save();
+        }
         private void TST104_Load(object sender, EventArgs e)
         {
             //MessageBox.Show("2");
             g10.Open();
             //this.Open();
         }
-        private void ucButton1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Welcome to Mupai Coding Studio!.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
+      
 
         private void g10_UCAfterFocusedRow(object sender, int preIndex, int rowIndex, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
         {
@@ -42,17 +46,29 @@ namespace EpicV004.Frms
                 switch (action)
                 {
                     case "Save":
-                        if (this.Save())
+
+                        if (string.IsNullOrEmpty(id.Text) || id.Text == "0")
                         {
+                            DataSet dts = OpenDataSet("tst104_getnumber");
+                            id.Text = DataValue(dts);
+                        }
+                        //_Save
+                        MessageBox.Show("Okay1");
+                        if (this.Save())
+                        { 
+                            
                             //this.Open();
                             g10.Open();
                             g10.FocuseByFindedValue("id", searchStr);
+                    
                         }
                         break;
 
                     case "New":
+                        //id.Text = "";
+                        //first_name.Text = "";
                         NewWorkSet("f10");
-                        NewWorkSet("g10");
+                        //NewWorkSet("g10");
                         break;
 
                     default:
@@ -80,19 +96,41 @@ namespace EpicV004.Frms
 
         }
 
-        private void ucButton1_Click_1(object sender, EventArgs e)
+       
+        private bool _Save()
         {
-            gend.Code = "01";
+            //MessageBox.Show("1");
+            if (string.IsNullOrEmpty(id.Text) || id.Text == "0")
+            {
+                DataSet dts = OpenDataSet("tst104_getnumber");
+                id.Text = DataValue(dts);
+            }
+           else {
+                if (this.Save())
+                {
+                    string searchStr = g10.GetText("id").ToString();
+                    //   // MessageBox.Show("Save successfully");
+                    g10.Open();
+                    g10.FocuseByFindedValue("id", searchStr);
+                    return true;
+                }
+            }
+
+            return false;
         }
 
-        private void ucButton4_Click(object sender, EventArgs e)
+        private string DataValue(DataSet dts)
         {
-            MessageBox.Show(gend.Code);
-        }
+            //throw new NotImplementedException();
 
-        private void s_txt_UCEditValueChanged(object Sender, Control control)
-        {
+            if(dts.Tables.Count > 0 && dts.Tables[0].Rows.Count > 0)
+            {
+                return dts.Tables[0].Rows[0][0].ToString();
+            }
+            return string.Empty;
+        } 
 
-        }
+
     }
+    
 }

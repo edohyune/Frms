@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TST108R")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+16dc9d0774a9a70816a127bb14d3947c2bf3e50f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3d28fe2420697d9a99ec58d9e73925c985dc5e36")]
 [assembly: System.Reflection.AssemblyProductAttribute("TST108R")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TST108R")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
