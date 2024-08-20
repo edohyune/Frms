@@ -1,4 +1,7 @@
-﻿namespace EpicV004.Frms
+﻿using EpicV004.Ctrls;
+using EpicV004.Libs.Repo;
+
+namespace EpicV004.Frms
 
 {
     public partial class AppRegister : FrmBase
@@ -18,25 +21,50 @@
                 {
                     case "Save":
                         if (this.Save())
+
                         {
                             g10.Open(); // Reload the grid data
                             g10.FocuseByFindedValue("applicant_id", searchStr); // Focus the row with the saved ID
 
-                            g20.Open();
-                            g20.FocuseByFindedValue("applicant_id", searchStr);
+                        //    g20.Open();
+                        //    g20.FocuseByFindedValue("applicant_id", searchStr);
 
-                            g30.Open();
-                            g30.FocuseByFindedValue("applicant_id", searchStr);
+                        //    g30.Open();
+                        //    g30.FocuseByFindedValue("applicant_id", searchStr);
 
-                            g40.Open();
-                            g40.FocuseByFindedValue("applicant_id", searchStr);
+                        //    g40.Open();
+                        //    g40.FocuseByFindedValue("applicant_id", searchStr);
 
-                            g50.Open();
-                            g50.FocuseByFindedValue("applicant_id", searchStr);
+                        //    g50.Open();
+                        //    g50.FocuseByFindedValue("applicant_id", searchStr);
                         }
                         break;
                     case "Open":
-                        this.Open();
+                        switch (teb.SelectedTabPage.Name)
+                        {
+                            case "xtraTabPage1":
+                            case "xtraTabPage2":
+                                g20.Open();
+                                break;
+                            case "xtraTabPage3":
+                                g30.Open();
+                                break;
+                            case "xtraTabPage4":
+                                g40.Open();
+                                break;
+                            case "xtraTabPage5":
+                                g50.Open();
+                                break;
+                            case "xtraTabPage6":
+                                g60.Open();
+                                break;
+
+                            default:
+
+                                break;
+                        }
+
+                       this.Open();
                         break;
                     case "New":
                         NewWorkSet("f10");

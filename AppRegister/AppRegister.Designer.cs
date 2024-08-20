@@ -158,15 +158,15 @@
             // 
             // f_appno
             // 
-            f_appno.ControlHeight = 21;
+            f_appno.ControlHeight = 20;
             f_appno.ControlWidth = 219;
             f_appno.FontColor = Color.Black;
             f_appno.FontFace = "Tahoma";
             f_appno.FontSize = 9F;
             f_appno.FormatStr = "";
-            f_appno.Location = new Point(375, 26);
+            f_appno.Location = new Point(325, 29);
             f_appno.Name = "f_appno";
-            f_appno.Size = new Size(219, 21);
+            f_appno.Size = new Size(219, 20);
             f_appno.TabIndex = 1;
             f_appno.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
             f_appno.Title = "Applicant No";
@@ -181,7 +181,7 @@
             f_enddate.FontFace = "Tahoma";
             f_enddate.FontSize = 9F;
             f_enddate.FormatStr = "";
-            f_enddate.Location = new Point(179, 23);
+            f_enddate.Location = new Point(182, 29);
             f_enddate.Name = "f_enddate";
             f_enddate.Size = new Size(137, 18);
             f_enddate.TabIndex = 0;
@@ -198,7 +198,7 @@
             f_stardate.FontFace = "Tahoma";
             f_stardate.FontSize = 9F;
             f_stardate.FormatStr = "";
-            f_stardate.Location = new Point(3, 23);
+            f_stardate.Location = new Point(5, 29);
             f_stardate.Name = "f_stardate";
             f_stardate.Size = new Size(171, 18);
             f_stardate.TabIndex = 0;
@@ -210,6 +210,7 @@
             // ucSplit2
             // 
             ucSplit2.Dock = DockStyle.Fill;
+            ucSplit2.FixedPanel = FixedPanel.Panel1;
             ucSplit2.Location = new Point(0, 0);
             ucSplit2.Name = "ucSplit2";
             // 
@@ -221,7 +222,7 @@
             // 
             ucSplit2.Panel2.Controls.Add(ucSplit3);
             ucSplit2.Size = new Size(1276, 670);
-            ucSplit2.SplitterDistance = 267;
+            ucSplit2.SplitterDistance = 328;
             ucSplit2.TabIndex = 0;
             ucSplit2.TitleWidth = 121;
             // 
@@ -231,7 +232,7 @@
             g10.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             g10.Location = new Point(0, 0);
             g10.Name = "g10";
-            g10.Size = new Size(267, 670);
+            g10.Size = new Size(328, 670);
             g10.TabIndex = 0;
             // 
             // ucSplit3
@@ -249,7 +250,7 @@
             // ucSplit3.Panel2
             // 
             ucSplit3.Panel2.Controls.Add(teb);
-            ucSplit3.Size = new Size(1005, 670);
+            ucSplit3.Size = new Size(944, 670);
             ucSplit3.SplitterDistance = 379;
             ucSplit3.TabIndex = 0;
             ucSplit3.TitleWidth = 121;
@@ -282,7 +283,7 @@
             ucPanel2.Dock = DockStyle.Fill;
             ucPanel2.Location = new Point(0, 0);
             ucPanel2.Name = "ucPanel2";
-            ucPanel2.Size = new Size(1005, 379);
+            ucPanel2.Size = new Size(944, 379);
             ucPanel2.TabIndex = 0;
             ucPanel2.Text = "Register Applicant";
             // 
@@ -749,7 +750,7 @@
             teb.Location = new Point(0, 0);
             teb.Name = "teb";
             teb.SelectedTabPage = xtraTabPage1;
-            teb.Size = new Size(1005, 287);
+            teb.Size = new Size(944, 287);
             teb.TabIndex = 0;
             teb.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] { xtraTabPage1, xtraTabPage2, xtraTabPage3, xtraTabPage4, xtraTabPage5, xtraTabPage6 });
             // 
@@ -757,7 +758,7 @@
             // 
             xtraTabPage1.Controls.Add(ucPanel3);
             xtraTabPage1.Name = "xtraTabPage1";
-            xtraTabPage1.Size = new Size(1003, 262);
+            xtraTabPage1.Size = new Size(942, 262);
             xtraTabPage1.TabPageWidth = 100;
             xtraTabPage1.Text = "Personal File";
             // 
@@ -769,7 +770,7 @@
             ucPanel3.Dock = DockStyle.Fill;
             ucPanel3.Location = new Point(0, 0);
             ucPanel3.Name = "ucPanel3";
-            ucPanel3.Size = new Size(1003, 262);
+            ucPanel3.Size = new Size(942, 262);
             ucPanel3.TabIndex = 0;
             // 
             // groupBox4
@@ -1160,7 +1161,7 @@
             // 
             xtraTabPage2.Controls.Add(g20);
             xtraTabPage2.Name = "xtraTabPage2";
-            xtraTabPage2.Size = new Size(1003, 262);
+            xtraTabPage2.Size = new Size(942, 262);
             xtraTabPage2.TabPageWidth = 100;
             xtraTabPage2.Text = "Family";
             // 
@@ -1170,14 +1171,14 @@
             g20.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             g20.Location = new Point(0, 0);
             g20.Name = "g20";
-            g20.Size = new Size(1003, 262);
+            g20.Size = new Size(942, 262);
             g20.TabIndex = 0;
             // 
             // xtraTabPage3
             // 
             xtraTabPage3.Controls.Add(g30);
             xtraTabPage3.Name = "xtraTabPage3";
-            xtraTabPage3.Size = new Size(1003, 262);
+            xtraTabPage3.Size = new Size(942, 262);
             xtraTabPage3.TabPageWidth = 100;
             xtraTabPage3.Text = "Education";
             // 
@@ -1187,14 +1188,14 @@
             g30.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             g30.Location = new Point(0, 0);
             g30.Name = "g30";
-            g30.Size = new Size(1003, 262);
+            g30.Size = new Size(942, 262);
             g30.TabIndex = 0;
             // 
             // xtraTabPage4
             // 
             xtraTabPage4.Controls.Add(g40);
             xtraTabPage4.Name = "xtraTabPage4";
-            xtraTabPage4.Size = new Size(1003, 262);
+            xtraTabPage4.Size = new Size(942, 262);
             xtraTabPage4.TabPageWidth = 100;
             xtraTabPage4.Text = "License";
             // 
@@ -1204,14 +1205,14 @@
             g40.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             g40.Location = new Point(0, 0);
             g40.Name = "g40";
-            g40.Size = new Size(1003, 262);
+            g40.Size = new Size(942, 262);
             g40.TabIndex = 0;
             // 
             // xtraTabPage5
             // 
             xtraTabPage5.Controls.Add(g50);
             xtraTabPage5.Name = "xtraTabPage5";
-            xtraTabPage5.Size = new Size(1003, 262);
+            xtraTabPage5.Size = new Size(942, 262);
             xtraTabPage5.TabPageWidth = 100;
             xtraTabPage5.Text = "Work History";
             // 
@@ -1221,14 +1222,14 @@
             g50.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             g50.Location = new Point(0, 0);
             g50.Name = "g50";
-            g50.Size = new Size(1003, 262);
+            g50.Size = new Size(942, 262);
             g50.TabIndex = 0;
             // 
             // xtraTabPage6
             // 
             xtraTabPage6.Controls.Add(g60);
             xtraTabPage6.Name = "xtraTabPage6";
-            xtraTabPage6.Size = new Size(1003, 262);
+            xtraTabPage6.Size = new Size(942, 262);
             xtraTabPage6.TabPageWidth = 100;
             xtraTabPage6.Text = "Documents";
             // 
@@ -1238,7 +1239,7 @@
             g60.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             g60.Location = new Point(0, 0);
             g60.Name = "g60";
-            g60.Size = new Size(1003, 262);
+            g60.Size = new Size(942, 262);
             g60.TabIndex = 0;
             // 
             // AppRegister
