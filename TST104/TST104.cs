@@ -36,6 +36,7 @@ namespace EpicV004.Frms
 
             //g10.SetText("first_name",[Value])
             //g10.SetText("first_name",[rowIndex],[Value])
+            
         }
 
         protected override void BarButtonAction(string frm, string action)
@@ -52,23 +53,35 @@ namespace EpicV004.Frms
                             DataSet dts = OpenDataSet("tst104_getnumber");
                             id.Text = DataValue(dts);
                         }
-                        //_Save
-                        MessageBox.Show("Okay1");
+                      
                         if (this.Save())
-                        { 
-                            
-                            //this.Open();
+                        {
+
+                            string newId = id.Text;
                             g10.Open();
-                            g10.FocuseByFindedValue("id", searchStr);
-                    
+
+                            // Try to focus directly using FocuseByFindedValue
+                            g10.FocuseByFindedValue("id", newId);
+
+                            // If the above didn't work (focused row doesn't match newId), 
+                            // fall back to the original search
+                            if (g10.GetText("id").ToString() != newId)
+                            {
+                                g10.FocuseByFindedValue("id", searchStr);
+                            }
+                  
+
+                            ////this.Open();
+                            //g10.Open();
+                            //g10.FocuseByFindedValue("id", searchStr);
+                            ////g10.FocusedRowIndex = 10;
+
                         }
                         break;
 
                     case "New":
-                        //id.Text = "";
-                        //first_name.Text = "";
                         NewWorkSet("f10");
-                        //NewWorkSet("g10");
+                        NewWorkSet("g10");
                         break;
 
                     default:

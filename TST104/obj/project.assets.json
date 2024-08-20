@@ -1290,7 +1290,7 @@
           }
         }
       },
-      "EpicPrologue/1.0.14": {
+      "EpicPrologue/1.0.15": {
         "type": "package",
         "dependencies": {
           "Dapper": "2.1.35",
@@ -3043,15 +3043,15 @@
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "EpicPrologue/1.0.14": {
-      "sha512": "N1sC08gyQWS33EUk5ZghsAZdy09tWenQ1n/RzK4NZTXntXKxyVqi3GUqmcP5DqWui5Q2WjHO92fOKYLu2RPpug==",
+    "EpicPrologue/1.0.15": {
+      "sha512": "hSe58D/FtXd9HlI+e4MBrcsqXO7R0A3Qt9B5wJ+M60wJCllwHB5Ax3+G5mClXKHsb8CswyQR7SWptWHNfYPgoA==",
       "type": "package",
-      "path": "epicprologue/1.0.14",
+      "path": "epicprologue/1.0.15",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
-        "epicprologue.1.0.14.nupkg.sha512",
+        "epicprologue.1.0.15.nupkg.sha512",
         "epicprologue.nuspec",
         "lib/net8.0-windows7.0/EpicPrologue.dll"
       ]
@@ -4344,7 +4344,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
-      "EpicPrologue >= 1.0.14"
+      "EpicPrologue >= 1.0.15"
     ]
   },
   "packageFolders": {
@@ -4404,7 +4404,7 @@
         "dependencies": {
           "EpicPrologue": {
             "target": "Package",
-            "version": "[1.0.14, )"
+            "version": "[1.0.15, )"
           }
         },
         "imports": [

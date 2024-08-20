@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "cksfB25pmX8=",
+  "dgSpecHash": "x7vHs28Rt2k=",
   "success": true,
   "projectFilePath": "C:\\Framework9\\Frms\\TST104\\TST104.csproj",
   "expectedPackageFiles": [
@@ -61,7 +61,7 @@
     "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.win.treemap\\23.2.3\\devexpress.win.treemap.23.2.3.nupkg.sha512",
     "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.win.verticalgrid\\23.2.3\\devexpress.win.verticalgrid.23.2.3.nupkg.sha512",
     "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.xpo\\23.2.3\\devexpress.xpo.23.2.3.nupkg.sha512",
-    "C:\\Users\\Satha\\.nuget\\packages\\epicprologue\\1.0.14\\epicprologue.1.0.14.nupkg.sha512",
+    "C:\\Users\\Satha\\.nuget\\packages\\epicprologue\\1.0.15\\epicprologue.1.0.15.nupkg.sha512",
     "C:\\Users\\Satha\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
     "C:\\Users\\Satha\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\2.0.0\\microsoft.extensions.dependencyinjection.2.0.0.nupkg.sha512",
     "C:\\Users\\Satha\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.0.0\\microsoft.extensions.dependencyinjection.abstractions.2.0.0.nupkg.sha512",
