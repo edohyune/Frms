@@ -1290,7 +1290,7 @@
           }
         }
       },
-      "EpicPrologue/1.0.14": {
+      "EpicPrologue/1.0.13": {
         "type": "package",
         "dependencies": {
           "Dapper": "2.1.35",
@@ -3043,15 +3043,15 @@
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "EpicPrologue/1.0.14": {
-      "sha512": "N1sC08gyQWS33EUk5ZghsAZdy09tWenQ1n/RzK4NZTXntXKxyVqi3GUqmcP5DqWui5Q2WjHO92fOKYLu2RPpug==",
+    "EpicPrologue/1.0.13": {
+      "sha512": "EUVaWIWHW2601zfLXmRlq+WUY7F8fUQgh/7VQPR8qIOqiUNP9pOk5FMMCagp1OcWBYIAsxqHqB4t55+GB4EAbQ==",
       "type": "package",
-      "path": "epicprologue/1.0.14",
+      "path": "epicprologue/1.0.13",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
-        "epicprologue.1.0.14.nupkg.sha512",
+        "epicprologue.1.0.13.nupkg.sha512",
         "epicprologue.nuspec",
         "lib/net8.0-windows7.0/EpicPrologue.dll"
       ]
@@ -4344,7 +4344,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
-      "EpicPrologue >= 1.0.14"
+      "EpicPrologue >= 1.0.13"
     ]
   },
   "packageFolders": {
@@ -4355,11 +4355,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Framework9\\Frms\\TST104\\TST104.csproj",
-      "projectName": "TST104",
-      "projectPath": "C:\\Framework9\\Frms\\TST104\\TST104.csproj",
+      "projectUniqueName": "C:\\Framework9\\Frms\\HR180\\HR180.csproj",
+      "projectName": "HR180",
+      "projectPath": "C:\\Framework9\\Frms\\HR180\\HR180.csproj",
       "packagesPath": "C:\\Users\\Satha\\.nuget\\packages\\",
-      "outputPath": "C:\\Framework9\\Frms\\TST104\\obj\\",
+      "outputPath": "C:\\Framework9\\Frms\\HR180\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages",
@@ -4404,7 +4404,7 @@
         "dependencies": {
           "EpicPrologue": {
             "target": "Package",
-            "version": "[1.0.14, )"
+            "version": "[1.0.13, )"
           }
         },
         "imports": [

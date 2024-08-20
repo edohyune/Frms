@@ -8,11 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="EpicPrologue" Version="1.0.13" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\TST108R\TST108R.csproj" />
+    <PackageReference Include="EpicPrologue" Version="1.0.14" />
   </ItemGroup>
 
   <ItemGroup>

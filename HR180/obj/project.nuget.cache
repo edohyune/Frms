@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fOeUKiE5wpE=",
+  "dgSpecHash": "qfxlwSEH54k=",
   "success": true,
-  "projectFilePath": "C:\\Framework9\\Frms\\HR150\\HR150.csproj",
+  "projectFilePath": "C:\\Framework9\\Frms\\HR180\\HR180.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Satha\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",
     "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.charts\\23.2.3\\devexpress.charts.23.2.3.nupkg.sha512",
@@ -61,7 +61,7 @@
     "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.win.treemap\\23.2.3\\devexpress.win.treemap.23.2.3.nupkg.sha512",
     "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.win.verticalgrid\\23.2.3\\devexpress.win.verticalgrid.23.2.3.nupkg.sha512",
     "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.xpo\\23.2.3\\devexpress.xpo.23.2.3.nupkg.sha512",
-    "C:\\Users\\Satha\\.nuget\\packages\\epicprologue\\1.0.14\\epicprologue.1.0.14.nupkg.sha512",
+    "C:\\Users\\Satha\\.nuget\\packages\\epicprologue\\1.0.13\\epicprologue.1.0.13.nupkg.sha512",
     "C:\\Users\\Satha\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
     "C:\\Users\\Satha\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\2.0.0\\microsoft.extensions.dependencyinjection.2.0.0.nupkg.sha512",
     "C:\\Users\\Satha\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.0.0\\microsoft.extensions.dependencyinjection.abstractions.2.0.0.nupkg.sha512",

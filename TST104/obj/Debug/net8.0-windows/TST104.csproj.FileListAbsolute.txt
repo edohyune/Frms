@@ -36,5 +36,3 @@ D:\25_EpicV004\EpicV004\Frms\TST104\obj\Debug\net8.0-windows\TST104.dll
 D:\25_EpicV004\EpicV004\Frms\TST104\obj\Debug\net8.0-windows\refint\TST104.dll
 D:\25_EpicV004\EpicV004\Frms\TST104\obj\Debug\net8.0-windows\TST104.pdb
 D:\25_EpicV004\EpicV004\Frms\TST104\obj\Debug\net8.0-windows\ref\TST104.dll
-C:\Framework9\Frms\TST104\bin\Debug\net8.0-windows\TST108R.dll
-C:\Framework9\Frms\TST104\bin\Debug\net8.0-windows\TST108R.pdb

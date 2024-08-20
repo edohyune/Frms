@@ -9,8 +9,8 @@ namespace EpicV004.Frms
 {
     public class TST104_G10 : EpicV004.Libs.MdlBase
     {
-        private int _id;
-        public int id
+        private string _id;
+        public string id
         {
             get => _id;
             set => Set(ref _id, value);

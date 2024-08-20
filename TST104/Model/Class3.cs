@@ -8,8 +8,8 @@ namespace EpicV004.Frms
 {
     public class TST104_G20 : EpicV004.Libs.MdlBase
     {
-        private int _id;
-        public int id
+        private string _id;
+        public string id
         {
             get => _id;
             set => Set(ref _id, value);
@@ -48,6 +48,13 @@ namespace EpicV004.Frms
         {
             get => _position;
             set => Set(ref _position, value);
+        }
+
+        private string _position_name;
+        public string position_name
+        {
+            get => _position_name;
+            set => Set(ref _position_name, value);
         }
 
         private string _memo;
