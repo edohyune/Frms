@@ -1,0 +1,17 @@
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HS500\bin\Debug\net8.0-windows\HS500.deps.json
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HS500\bin\Debug\net8.0-windows\HS500.dll
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HS500\bin\Debug\net8.0-windows\HS500.pdb
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HS500\bin\Debug\net8.0-windows\GAIADesignerV004.dll
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HS500\obj\Debug\net8.0-windows\HS500.csproj.AssemblyReference.cache
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HS500\obj\Debug\net8.0-windows\EpicV004.Frms.HS500.resources
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HS500\obj\Debug\net8.0-windows\HS500.csproj.GenerateResource.cache
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HS500\obj\Debug\net8.0-windows\HS500.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HS500\obj\Debug\net8.0-windows\HS500.AssemblyInfoInputs.cache
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HS500\obj\Debug\net8.0-windows\HS500.AssemblyInfo.cs
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HS500\obj\Debug\net8.0-windows\HS500.csproj.CoreCompileInputs.cache
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HS500\obj\Debug\net8.0-windows\HS500.sourcelink.json
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HS500\obj\Debug\net8.0-windows\HS500.csproj.Up2Date
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HS500\obj\Debug\net8.0-windows\HS500.dll
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HS500\obj\Debug\net8.0-windows\refint\HS500.dll
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HS500\obj\Debug\net8.0-windows\HS500.pdb
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HS500\obj\Debug\net8.0-windows\ref\HS500.dll

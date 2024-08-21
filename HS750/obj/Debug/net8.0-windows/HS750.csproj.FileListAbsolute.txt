@@ -1,0 +1,17 @@
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HS750\bin\Debug\net8.0-windows\HS750.deps.json
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HS750\bin\Debug\net8.0-windows\HS750.dll
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HS750\bin\Debug\net8.0-windows\HS750.pdb
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HS750\bin\Debug\net8.0-windows\GAIADesignerV004.dll
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HS750\obj\Debug\net8.0-windows\HS750.csproj.AssemblyReference.cache
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HS750\obj\Debug\net8.0-windows\EpicV004.Frms.HS750.resources
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HS750\obj\Debug\net8.0-windows\HS750.csproj.GenerateResource.cache
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HS750\obj\Debug\net8.0-windows\HS750.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HS750\obj\Debug\net8.0-windows\HS750.AssemblyInfoInputs.cache
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HS750\obj\Debug\net8.0-windows\HS750.AssemblyInfo.cs
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HS750\obj\Debug\net8.0-windows\HS750.csproj.CoreCompileInputs.cache
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HS750\obj\Debug\net8.0-windows\HS750.sourcelink.json
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HS750\obj\Debug\net8.0-windows\HS750.csproj.Up2Date
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HS750\obj\Debug\net8.0-windows\HS750.dll
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HS750\obj\Debug\net8.0-windows\refint\HS750.dll
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HS750\obj\Debug\net8.0-windows\HS750.pdb
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HS750\obj\Debug\net8.0-windows\ref\HS750.dll

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HS700")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2aedfbff610fa73d09b61ed7825c8c75e3b04c7d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+27786b38c036e5474a5ded2e4103d889891d1b3e")]
 [assembly: System.Reflection.AssemblyProductAttribute("HS700")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HS700")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
