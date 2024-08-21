@@ -1,0 +1,17 @@
+C:\Framework9\Frms\HR535\bin\Debug\net8.0-windows\HR535.deps.json
+C:\Framework9\Frms\HR535\bin\Debug\net8.0-windows\HR535.dll
+C:\Framework9\Frms\HR535\bin\Debug\net8.0-windows\HR535.pdb
+C:\Framework9\Frms\HR535\bin\Debug\net8.0-windows\GAIADesignerV004.dll
+C:\Framework9\Frms\HR535\obj\Debug\net8.0-windows\HR535.csproj.AssemblyReference.cache
+C:\Framework9\Frms\HR535\obj\Debug\net8.0-windows\EpicV004.Frms.HR535.resources
+C:\Framework9\Frms\HR535\obj\Debug\net8.0-windows\HR535.csproj.GenerateResource.cache
+C:\Framework9\Frms\HR535\obj\Debug\net8.0-windows\HR535.GeneratedMSBuildEditorConfig.editorconfig
+C:\Framework9\Frms\HR535\obj\Debug\net8.0-windows\HR535.AssemblyInfoInputs.cache
+C:\Framework9\Frms\HR535\obj\Debug\net8.0-windows\HR535.AssemblyInfo.cs
+C:\Framework9\Frms\HR535\obj\Debug\net8.0-windows\HR535.csproj.CoreCompileInputs.cache
+C:\Framework9\Frms\HR535\obj\Debug\net8.0-windows\HR535.sourcelink.json
+C:\Framework9\Frms\HR535\obj\Debug\net8.0-windows\HR535.csproj.Up2Date
+C:\Framework9\Frms\HR535\obj\Debug\net8.0-windows\HR535.dll
+C:\Framework9\Frms\HR535\obj\Debug\net8.0-windows\refint\HR535.dll
+C:\Framework9\Frms\HR535\obj\Debug\net8.0-windows\HR535.pdb
+C:\Framework9\Frms\HR535\obj\Debug\net8.0-windows\ref\HR535.dll

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HR590")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8aeab1115c387225b6e172a149eeacd705150aaa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2011e19ba8cfc900527b89e511c803f054435762")]
 [assembly: System.Reflection.AssemblyProductAttribute("HR590")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HR590")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

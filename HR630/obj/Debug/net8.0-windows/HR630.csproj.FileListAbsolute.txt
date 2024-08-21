@@ -1,0 +1,17 @@
+C:\Framework9\Frms\HR630\bin\Debug\net8.0-windows\HR630.deps.json
+C:\Framework9\Frms\HR630\bin\Debug\net8.0-windows\HR630.dll
+C:\Framework9\Frms\HR630\bin\Debug\net8.0-windows\HR630.pdb
+C:\Framework9\Frms\HR630\bin\Debug\net8.0-windows\GAIADesignerV004.dll
+C:\Framework9\Frms\HR630\obj\Debug\net8.0-windows\HR630.csproj.AssemblyReference.cache
+C:\Framework9\Frms\HR630\obj\Debug\net8.0-windows\EpicV004.Frms.HR630.resources
+C:\Framework9\Frms\HR630\obj\Debug\net8.0-windows\HR630.csproj.GenerateResource.cache
+C:\Framework9\Frms\HR630\obj\Debug\net8.0-windows\HR630.GeneratedMSBuildEditorConfig.editorconfig
+C:\Framework9\Frms\HR630\obj\Debug\net8.0-windows\HR630.AssemblyInfoInputs.cache
+C:\Framework9\Frms\HR630\obj\Debug\net8.0-windows\HR630.AssemblyInfo.cs
+C:\Framework9\Frms\HR630\obj\Debug\net8.0-windows\HR630.csproj.CoreCompileInputs.cache
+C:\Framework9\Frms\HR630\obj\Debug\net8.0-windows\HR630.sourcelink.json
+C:\Framework9\Frms\HR630\obj\Debug\net8.0-windows\HR630.csproj.Up2Date
+C:\Framework9\Frms\HR630\obj\Debug\net8.0-windows\HR630.dll
+C:\Framework9\Frms\HR630\obj\Debug\net8.0-windows\refint\HR630.dll
+C:\Framework9\Frms\HR630\obj\Debug\net8.0-windows\HR630.pdb
+C:\Framework9\Frms\HR630\obj\Debug\net8.0-windows\ref\HR630.dll

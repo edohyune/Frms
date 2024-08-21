@@ -1,0 +1,17 @@
+C:\Framework9\Frms\HR590\bin\Debug\net8.0-windows\HR590.deps.json
+C:\Framework9\Frms\HR590\bin\Debug\net8.0-windows\HR590.dll
+C:\Framework9\Frms\HR590\bin\Debug\net8.0-windows\HR590.pdb
+C:\Framework9\Frms\HR590\bin\Debug\net8.0-windows\GAIADesignerV004.dll
+C:\Framework9\Frms\HR590\obj\Debug\net8.0-windows\HR590.csproj.AssemblyReference.cache
+C:\Framework9\Frms\HR590\obj\Debug\net8.0-windows\EpicV004.Frms.HR590.resources
+C:\Framework9\Frms\HR590\obj\Debug\net8.0-windows\HR590.csproj.GenerateResource.cache
+C:\Framework9\Frms\HR590\obj\Debug\net8.0-windows\HR590.GeneratedMSBuildEditorConfig.editorconfig
+C:\Framework9\Frms\HR590\obj\Debug\net8.0-windows\HR590.AssemblyInfoInputs.cache
+C:\Framework9\Frms\HR590\obj\Debug\net8.0-windows\HR590.AssemblyInfo.cs
+C:\Framework9\Frms\HR590\obj\Debug\net8.0-windows\HR590.csproj.CoreCompileInputs.cache
+C:\Framework9\Frms\HR590\obj\Debug\net8.0-windows\HR590.sourcelink.json
+C:\Framework9\Frms\HR590\obj\Debug\net8.0-windows\HR590.csproj.Up2Date
+C:\Framework9\Frms\HR590\obj\Debug\net8.0-windows\HR590.dll
+C:\Framework9\Frms\HR590\obj\Debug\net8.0-windows\refint\HR590.dll
+C:\Framework9\Frms\HR590\obj\Debug\net8.0-windows\HR590.pdb
+C:\Framework9\Frms\HR590\obj\Debug\net8.0-windows\ref\HR590.dll
