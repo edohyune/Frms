@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HR590
+namespace EpicV004.Frms
 {
-    internal class Class1
+    public class HR590_G10 : EpicV004.Libs.MdlBase
     {
     }
 }
