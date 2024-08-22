@@ -1,0 +1,17 @@
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HR100\bin\Debug\net8.0-windows\HR100.deps.json
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HR100\bin\Debug\net8.0-windows\HR100.dll
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HR100\bin\Debug\net8.0-windows\HR100.pdb
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HR100\bin\Debug\net8.0-windows\GAIADesignerV004.dll
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HR100\obj\Debug\net8.0-windows\HR100.csproj.AssemblyReference.cache
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HR100\obj\Debug\net8.0-windows\EpicV004.Frms.HR100.resources
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HR100\obj\Debug\net8.0-windows\HR100.csproj.GenerateResource.cache
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HR100\obj\Debug\net8.0-windows\HR100.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HR100\obj\Debug\net8.0-windows\HR100.AssemblyInfoInputs.cache
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HR100\obj\Debug\net8.0-windows\HR100.AssemblyInfo.cs
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HR100\obj\Debug\net8.0-windows\HR100.csproj.CoreCompileInputs.cache
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HR100\obj\Debug\net8.0-windows\HR100.sourcelink.json
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HR100\obj\Debug\net8.0-windows\HR100.csproj.Up2Date
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HR100\obj\Debug\net8.0-windows\HR100.dll
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HR100\obj\Debug\net8.0-windows\refint\HR100.dll
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HR100\obj\Debug\net8.0-windows\HR100.pdb
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HR100\obj\Debug\net8.0-windows\ref\HR100.dll

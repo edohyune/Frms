@@ -1,0 +1,17 @@
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HR720\bin\Debug\net8.0-windows\HR720.deps.json
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HR720\bin\Debug\net8.0-windows\HR720.dll
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HR720\bin\Debug\net8.0-windows\HR720.pdb
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HR720\bin\Debug\net8.0-windows\GAIADesignerV004.dll
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HR720\obj\Debug\net8.0-windows\HR720.csproj.AssemblyReference.cache
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HR720\obj\Debug\net8.0-windows\EpicV004.Frms.HR720.resources
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HR720\obj\Debug\net8.0-windows\HR720.csproj.GenerateResource.cache
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HR720\obj\Debug\net8.0-windows\HR720.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HR720\obj\Debug\net8.0-windows\HR720.AssemblyInfoInputs.cache
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HR720\obj\Debug\net8.0-windows\HR720.AssemblyInfo.cs
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HR720\obj\Debug\net8.0-windows\HR720.csproj.CoreCompileInputs.cache
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HR720\obj\Debug\net8.0-windows\HR720.sourcelink.json
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HR720\obj\Debug\net8.0-windows\HR720.csproj.Up2Date
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HR720\obj\Debug\net8.0-windows\HR720.dll
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HR720\obj\Debug\net8.0-windows\refint\HR720.dll
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HR720\obj\Debug\net8.0-windows\HR720.pdb
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\HR720\obj\Debug\net8.0-windows\ref\HR720.dll
