@@ -1,0 +1,17 @@
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\FA700\bin\Debug\net8.0-windows\FA700.deps.json
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\FA700\bin\Debug\net8.0-windows\FA700.dll
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\FA700\bin\Debug\net8.0-windows\FA700.pdb
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\FA700\bin\Debug\net8.0-windows\GAIADesignerV004.dll
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\FA700\obj\Debug\net8.0-windows\FA700.csproj.AssemblyReference.cache
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\FA700\obj\Debug\net8.0-windows\EpicV004.Frms.FA700.resources
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\FA700\obj\Debug\net8.0-windows\FA700.csproj.GenerateResource.cache
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\FA700\obj\Debug\net8.0-windows\FA700.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\FA700\obj\Debug\net8.0-windows\FA700.AssemblyInfoInputs.cache
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\FA700\obj\Debug\net8.0-windows\FA700.AssemblyInfo.cs
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\FA700\obj\Debug\net8.0-windows\FA700.csproj.CoreCompileInputs.cache
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\FA700\obj\Debug\net8.0-windows\FA700.sourcelink.json
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\FA700\obj\Debug\net8.0-windows\FA700.csproj.Up2Date
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\FA700\obj\Debug\net8.0-windows\FA700.dll
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\FA700\obj\Debug\net8.0-windows\refint\FA700.dll
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\FA700\obj\Debug\net8.0-windows\FA700.pdb
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\FA700\obj\Debug\net8.0-windows\ref\FA700.dll

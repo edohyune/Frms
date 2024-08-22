@@ -1,0 +1,17 @@
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\Codes\bin\Debug\net8.0-windows\Codes.deps.json
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\Codes\bin\Debug\net8.0-windows\Codes.dll
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\Codes\bin\Debug\net8.0-windows\Codes.pdb
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\Codes\bin\Debug\net8.0-windows\GAIADesignerV004.dll
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\Codes\obj\Debug\net8.0-windows\Codes.csproj.AssemblyReference.cache
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\Codes\obj\Debug\net8.0-windows\EpicV004.Frms.Codes.resources
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\Codes\obj\Debug\net8.0-windows\Codes.csproj.GenerateResource.cache
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\Codes\obj\Debug\net8.0-windows\Codes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\Codes\obj\Debug\net8.0-windows\Codes.AssemblyInfoInputs.cache
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\Codes\obj\Debug\net8.0-windows\Codes.AssemblyInfo.cs
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\Codes\obj\Debug\net8.0-windows\Codes.csproj.CoreCompileInputs.cache
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\Codes\obj\Debug\net8.0-windows\Codes.sourcelink.json
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\Codes\obj\Debug\net8.0-windows\Codes.csproj.Up2Date
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\Codes\obj\Debug\net8.0-windows\Codes.dll
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\Codes\obj\Debug\net8.0-windows\refint\Codes.dll
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\Codes\obj\Debug\net8.0-windows\Codes.pdb
+C:\Users\Mupai03\Documents\Mupai Dev\Frms\Codes\obj\Debug\net8.0-windows\ref\Codes.dll
