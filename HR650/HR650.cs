@@ -1,10 +1,15 @@
-﻿namespace HR650
+﻿namespace EpicV004.Frms
 {
-    public partial class HR650 : UserControl
+    public partial class HR650 : FrmBase
     {
         public HR650()
         {
             InitializeComponent();
+        }
+
+        private void HR650_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

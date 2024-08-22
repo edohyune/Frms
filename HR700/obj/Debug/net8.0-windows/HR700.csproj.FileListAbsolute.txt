@@ -1,0 +1,17 @@
+C:\Framework9\Frms\HR700\bin\Debug\net8.0-windows\HR700.deps.json
+C:\Framework9\Frms\HR700\bin\Debug\net8.0-windows\HR700.dll
+C:\Framework9\Frms\HR700\bin\Debug\net8.0-windows\HR700.pdb
+C:\Framework9\Frms\HR700\obj\Debug\net8.0-windows\HR700.csproj.AssemblyReference.cache
+C:\Framework9\Frms\HR700\obj\Debug\net8.0-windows\HR700.csproj.GenerateResource.cache
+C:\Framework9\Frms\HR700\obj\Debug\net8.0-windows\HR700.GeneratedMSBuildEditorConfig.editorconfig
+C:\Framework9\Frms\HR700\obj\Debug\net8.0-windows\HR700.AssemblyInfoInputs.cache
+C:\Framework9\Frms\HR700\obj\Debug\net8.0-windows\HR700.AssemblyInfo.cs
+C:\Framework9\Frms\HR700\obj\Debug\net8.0-windows\HR700.csproj.CoreCompileInputs.cache
+C:\Framework9\Frms\HR700\obj\Debug\net8.0-windows\HR700.sourcelink.json
+C:\Framework9\Frms\HR700\obj\Debug\net8.0-windows\HR700.dll
+C:\Framework9\Frms\HR700\obj\Debug\net8.0-windows\refint\HR700.dll
+C:\Framework9\Frms\HR700\obj\Debug\net8.0-windows\HR700.pdb
+C:\Framework9\Frms\HR700\obj\Debug\net8.0-windows\ref\HR700.dll
+C:\Framework9\Frms\HR700\bin\Debug\net8.0-windows\GAIADesignerV004.dll
+C:\Framework9\Frms\HR700\obj\Debug\net8.0-windows\EpicV004.Frms.HR700.resources
+C:\Framework9\Frms\HR700\obj\Debug\net8.0-windows\HR700.csproj.Up2Date

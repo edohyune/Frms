@@ -1,0 +1,17 @@
+C:\Framework9\Frms\HR650\bin\Debug\net8.0-windows\HR650.deps.json
+C:\Framework9\Frms\HR650\bin\Debug\net8.0-windows\HR650.dll
+C:\Framework9\Frms\HR650\bin\Debug\net8.0-windows\HR650.pdb
+C:\Framework9\Frms\HR650\bin\Debug\net8.0-windows\GAIADesignerV004.dll
+C:\Framework9\Frms\HR650\obj\Debug\net8.0-windows\HR650.csproj.AssemblyReference.cache
+C:\Framework9\Frms\HR650\obj\Debug\net8.0-windows\EpicV004.Frms.HR650.resources
+C:\Framework9\Frms\HR650\obj\Debug\net8.0-windows\HR650.csproj.GenerateResource.cache
+C:\Framework9\Frms\HR650\obj\Debug\net8.0-windows\HR650.GeneratedMSBuildEditorConfig.editorconfig
+C:\Framework9\Frms\HR650\obj\Debug\net8.0-windows\HR650.AssemblyInfoInputs.cache
+C:\Framework9\Frms\HR650\obj\Debug\net8.0-windows\HR650.AssemblyInfo.cs
+C:\Framework9\Frms\HR650\obj\Debug\net8.0-windows\HR650.csproj.CoreCompileInputs.cache
+C:\Framework9\Frms\HR650\obj\Debug\net8.0-windows\HR650.sourcelink.json
+C:\Framework9\Frms\HR650\obj\Debug\net8.0-windows\HR650.csproj.Up2Date
+C:\Framework9\Frms\HR650\obj\Debug\net8.0-windows\HR650.dll
+C:\Framework9\Frms\HR650\obj\Debug\net8.0-windows\refint\HR650.dll
+C:\Framework9\Frms\HR650\obj\Debug\net8.0-windows\HR650.pdb
+C:\Framework9\Frms\HR650\obj\Debug\net8.0-windows\ref\HR650.dll

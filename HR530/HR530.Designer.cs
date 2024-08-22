@@ -55,6 +55,7 @@
             // ucSplit1
             // 
             ucSplit1.Dock = DockStyle.Fill;
+            ucSplit1.FixedPanel = FixedPanel.Panel1;
             ucSplit1.Location = new Point(0, 0);
             ucSplit1.Name = "ucSplit1";
             ucSplit1.Orientation = Orientation.Horizontal;
@@ -87,7 +88,9 @@
             // 
             // btn_summary
             // 
+            btn_summary.Appearance.BackColor = Color.DarkGray;
             btn_summary.Appearance.Font = new Font("Tahoma", 9F);
+            btn_summary.Appearance.Options.UseBackColor = true;
             btn_summary.Appearance.Options.UseFont = true;
             btn_summary.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             btn_summary.ControlHeight = 45;
