@@ -1,0 +1,17 @@
+C:\Framework9\Frms\HS600\bin\Debug\net8.0-windows\HS600.deps.json
+C:\Framework9\Frms\HS600\bin\Debug\net8.0-windows\HS600.dll
+C:\Framework9\Frms\HS600\bin\Debug\net8.0-windows\HS600.pdb
+C:\Framework9\Frms\HS600\bin\Debug\net8.0-windows\GAIADesignerV004.dll
+C:\Framework9\Frms\HS600\obj\Debug\net8.0-windows\HS600.csproj.AssemblyReference.cache
+C:\Framework9\Frms\HS600\obj\Debug\net8.0-windows\EpicV004.Frms.HS600.resources
+C:\Framework9\Frms\HS600\obj\Debug\net8.0-windows\HS600.csproj.GenerateResource.cache
+C:\Framework9\Frms\HS600\obj\Debug\net8.0-windows\HS600.GeneratedMSBuildEditorConfig.editorconfig
+C:\Framework9\Frms\HS600\obj\Debug\net8.0-windows\HS600.AssemblyInfoInputs.cache
+C:\Framework9\Frms\HS600\obj\Debug\net8.0-windows\HS600.AssemblyInfo.cs
+C:\Framework9\Frms\HS600\obj\Debug\net8.0-windows\HS600.csproj.CoreCompileInputs.cache
+C:\Framework9\Frms\HS600\obj\Debug\net8.0-windows\HS600.sourcelink.json
+C:\Framework9\Frms\HS600\obj\Debug\net8.0-windows\HS600.csproj.Up2Date
+C:\Framework9\Frms\HS600\obj\Debug\net8.0-windows\HS600.dll
+C:\Framework9\Frms\HS600\obj\Debug\net8.0-windows\refint\HS600.dll
+C:\Framework9\Frms\HS600\obj\Debug\net8.0-windows\HS600.pdb
+C:\Framework9\Frms\HS600\obj\Debug\net8.0-windows\ref\HS600.dll

@@ -15,3 +15,20 @@ C:\Users\mupai\OneDrive\Documents\EPICV004 Main\Frms\HR130\obj\Debug\net8.0-wind
 C:\Users\mupai\OneDrive\Documents\EPICV004 Main\Frms\HR130\obj\Debug\net8.0-windows\HR130.pdb
 C:\Users\mupai\OneDrive\Documents\EPICV004 Main\Frms\HR130\obj\Debug\net8.0-windows\ref\HR130.dll
 C:\Users\mupai\OneDrive\Documents\EPICV004 Main\Frms\HR130\obj\Debug\net8.0-windows\EpicV004.Frms.HR130.resources
+C:\Framework9\Frms\HR130\bin\Debug\net8.0-windows\HR130.deps.json
+C:\Framework9\Frms\HR130\bin\Debug\net8.0-windows\HR130.dll
+C:\Framework9\Frms\HR130\bin\Debug\net8.0-windows\HR130.pdb
+C:\Framework9\Frms\HR130\bin\Debug\net8.0-windows\GAIADesignerV004.dll
+C:\Framework9\Frms\HR130\obj\Debug\net8.0-windows\HR130.csproj.AssemblyReference.cache
+C:\Framework9\Frms\HR130\obj\Debug\net8.0-windows\EpicV004.Frms.HR130.resources
+C:\Framework9\Frms\HR130\obj\Debug\net8.0-windows\HR130.csproj.GenerateResource.cache
+C:\Framework9\Frms\HR130\obj\Debug\net8.0-windows\HR130.GeneratedMSBuildEditorConfig.editorconfig
+C:\Framework9\Frms\HR130\obj\Debug\net8.0-windows\HR130.AssemblyInfoInputs.cache
+C:\Framework9\Frms\HR130\obj\Debug\net8.0-windows\HR130.AssemblyInfo.cs
+C:\Framework9\Frms\HR130\obj\Debug\net8.0-windows\HR130.csproj.CoreCompileInputs.cache
+C:\Framework9\Frms\HR130\obj\Debug\net8.0-windows\HR130.sourcelink.json
+C:\Framework9\Frms\HR130\obj\Debug\net8.0-windows\HR130.csproj.Up2Date
+C:\Framework9\Frms\HR130\obj\Debug\net8.0-windows\HR130.dll
+C:\Framework9\Frms\HR130\obj\Debug\net8.0-windows\refint\HR130.dll
+C:\Framework9\Frms\HR130\obj\Debug\net8.0-windows\HR130.pdb
+C:\Framework9\Frms\HR130\obj\Debug\net8.0-windows\ref\HR130.dll

@@ -1290,7 +1290,7 @@
           }
         }
       },
-      "EpicPrologue/1.0.13": {
+      "EpicPrologue/1.0.16": {
         "type": "package",
         "dependencies": {
           "Dapper": "2.1.35",
@@ -3043,15 +3043,15 @@
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "EpicPrologue/1.0.13": {
-      "sha512": "EUVaWIWHW2601zfLXmRlq+WUY7F8fUQgh/7VQPR8qIOqiUNP9pOk5FMMCagp1OcWBYIAsxqHqB4t55+GB4EAbQ==",
+    "EpicPrologue/1.0.16": {
+      "sha512": "aihdW2F4BrQ/Oc8ci1yRnTGdtfLWLod58SvDcTMS+uZB1is9DrUYmiodBeEg506yfdAzjJpv9usPhZ0pS0OVEA==",
       "type": "package",
-      "path": "epicprologue/1.0.13",
+      "path": "epicprologue/1.0.16",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
-        "epicprologue.1.0.13.nupkg.sha512",
+        "epicprologue.1.0.16.nupkg.sha512",
         "epicprologue.nuspec",
         "lib/net8.0-windows7.0/EpicPrologue.dll"
       ]
@@ -4344,29 +4344,29 @@
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
-      "EpicPrologue >= 1.0.13"
+      "EpicPrologue >= 1.0.16"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mupai\\.nuget\\packages\\": {},
+    "C:\\Users\\Satha\\.nuget\\packages\\": {},
     "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mupai\\OneDrive\\Documents\\EPICV004 Main\\Frms\\HR130\\HR130.csproj",
+      "projectUniqueName": "C:\\Framework9\\Frms\\HR130\\HR130.csproj",
       "projectName": "HR130",
-      "projectPath": "C:\\Users\\mupai\\OneDrive\\Documents\\EPICV004 Main\\Frms\\HR130\\HR130.csproj",
-      "packagesPath": "C:\\Users\\mupai\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mupai\\OneDrive\\Documents\\EPICV004 Main\\Frms\\HR130\\obj\\",
+      "projectPath": "C:\\Framework9\\Frms\\HR130\\HR130.csproj",
+      "packagesPath": "C:\\Users\\Satha\\.nuget\\packages\\",
+      "outputPath": "C:\\Framework9\\Frms\\HR130\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages",
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\mupai\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Satha\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.2.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
@@ -4379,7 +4379,6 @@
         "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\DevExpress 23.2\\Components\\System\\Components\\Packages": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4405,7 +4404,7 @@
         "dependencies": {
           "EpicPrologue": {
             "target": "Package",
-            "version": "[1.0.13, )"
+            "version": "[1.0.16, )"
           }
         },
         "imports": [
@@ -4427,7 +4426,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
