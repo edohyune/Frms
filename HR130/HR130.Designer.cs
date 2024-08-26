@@ -35,15 +35,15 @@
             fr_dt = new Ctrls.UCDateBox();
             ucPanel2 = new Ctrls.UCPanel();
             ucTab1 = new Ctrls.UCTab();
-            control1 = new DevExpress.XtraTab.XtraTabPage();
+            xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
             g10 = new Ctrls.UCGridSet();
             xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
             g20 = new Ctrls.UCGridSet();
-            xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
-            g30 = new Ctrls.UCGridSet();
             xtraTabPage3 = new DevExpress.XtraTab.XtraTabPage();
-            g40 = new Ctrls.UCGridSet();
+            g30 = new Ctrls.UCGridSet();
             xtraTabPage4 = new DevExpress.XtraTab.XtraTabPage();
+            g40 = new Ctrls.UCGridSet();
+            xtraTabPage5 = new DevExpress.XtraTab.XtraTabPage();
             g50 = new Ctrls.UCGridSet();
             ((System.ComponentModel.ISupportInitialize)ucSplit1).BeginInit();
             ucSplit1.Panel1.SuspendLayout();
@@ -55,11 +55,11 @@
             ucPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ucTab1).BeginInit();
             ucTab1.SuspendLayout();
-            control1.SuspendLayout();
-            xtraTabPage2.SuspendLayout();
             xtraTabPage1.SuspendLayout();
+            xtraTabPage2.SuspendLayout();
             xtraTabPage3.SuspendLayout();
             xtraTabPage4.SuspendLayout();
+            xtraTabPage5.SuspendLayout();
             SuspendLayout();
             // 
             // ucSplit1
@@ -165,18 +165,18 @@
             ucTab1.Location = new Point(2, 23);
             ucTab1.Margin = new Padding(3, 2, 3, 2);
             ucTab1.Name = "ucTab1";
-            ucTab1.SelectedTabPage = control1;
+            ucTab1.SelectedTabPage = xtraTabPage1;
             ucTab1.Size = new Size(1082, 488);
             ucTab1.TabIndex = 0;
-            ucTab1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] { control1, xtraTabPage2, xtraTabPage1, xtraTabPage3, xtraTabPage4 });
+            ucTab1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] { xtraTabPage1, xtraTabPage2, xtraTabPage3, xtraTabPage4, xtraTabPage5 });
             // 
-            // control1
+            // xtraTabPage1
             // 
-            control1.Controls.Add(g10);
-            control1.Margin = new Padding(3, 2, 3, 2);
-            control1.Name = "control1";
-            control1.Size = new Size(1080, 463);
-            control1.Text = "Applicant Informations";
+            xtraTabPage1.Controls.Add(g10);
+            xtraTabPage1.Margin = new Padding(3, 2, 3, 2);
+            xtraTabPage1.Name = "xtraTabPage1";
+            xtraTabPage1.Size = new Size(1080, 463);
+            xtraTabPage1.Text = "Applicant Informations";
             // 
             // g10
             // 
@@ -191,7 +191,7 @@
             xtraTabPage2.Controls.Add(g20);
             xtraTabPage2.Margin = new Padding(3, 2, 3, 2);
             xtraTabPage2.Name = "xtraTabPage2";
-            xtraTabPage2.Size = new Size(1080, 452);
+            xtraTabPage2.Size = new Size(1080, 463);
             xtraTabPage2.Text = "Family";
             // 
             // g20
@@ -199,55 +199,55 @@
             g20.Dock = DockStyle.Fill;
             g20.Location = new Point(0, 0);
             g20.Name = "g20";
-            g20.Size = new Size(1080, 452);
+            g20.Size = new Size(1080, 463);
             g20.TabIndex = 0;
             // 
-            // xtraTabPage1
+            // xtraTabPage3
             // 
-            xtraTabPage1.Controls.Add(g30);
-            xtraTabPage1.Margin = new Padding(3, 2, 3, 2);
-            xtraTabPage1.Name = "xtraTabPage1";
-            xtraTabPage1.Size = new Size(1080, 452);
-            xtraTabPage1.Text = "Education";
+            xtraTabPage3.Controls.Add(g30);
+            xtraTabPage3.Margin = new Padding(3, 2, 3, 2);
+            xtraTabPage3.Name = "xtraTabPage3";
+            xtraTabPage3.Size = new Size(1080, 463);
+            xtraTabPage3.Text = "Education";
             // 
             // g30
             // 
             g30.Dock = DockStyle.Fill;
             g30.Location = new Point(0, 0);
             g30.Name = "g30";
-            g30.Size = new Size(1080, 452);
+            g30.Size = new Size(1080, 463);
             g30.TabIndex = 0;
             // 
-            // xtraTabPage3
+            // xtraTabPage4
             // 
-            xtraTabPage3.Controls.Add(g40);
-            xtraTabPage3.Margin = new Padding(3, 2, 3, 2);
-            xtraTabPage3.Name = "xtraTabPage3";
-            xtraTabPage3.Size = new Size(1080, 452);
-            xtraTabPage3.Text = "license";
+            xtraTabPage4.Controls.Add(g40);
+            xtraTabPage4.Margin = new Padding(3, 2, 3, 2);
+            xtraTabPage4.Name = "xtraTabPage4";
+            xtraTabPage4.Size = new Size(1080, 463);
+            xtraTabPage4.Text = "license";
             // 
             // g40
             // 
             g40.Dock = DockStyle.Fill;
             g40.Location = new Point(0, 0);
             g40.Name = "g40";
-            g40.Size = new Size(1080, 452);
+            g40.Size = new Size(1080, 463);
             g40.TabIndex = 0;
             // 
-            // xtraTabPage4
+            // xtraTabPage5
             // 
-            xtraTabPage4.Controls.Add(g50);
-            xtraTabPage4.Margin = new Padding(3, 2, 3, 2);
-            xtraTabPage4.Name = "xtraTabPage4";
-            xtraTabPage4.Size = new Size(1080, 452);
-            xtraTabPage4.Text = "Work History";
+            xtraTabPage5.Controls.Add(g50);
+            xtraTabPage5.Margin = new Padding(3, 2, 3, 2);
+            xtraTabPage5.Name = "xtraTabPage5";
+            xtraTabPage5.Size = new Size(1080, 463);
+            xtraTabPage5.Text = "Work History";
             // 
             // g50
             // 
             g50.Dock = DockStyle.Fill;
             g50.Location = new Point(0, 0);
             g50.Name = "g50";
-            g50.Size = new Size(1080, 452);
+            g50.Size = new Size(1080, 463);
             g50.TabIndex = 0;
             // 
             // HR130
@@ -268,11 +268,11 @@
             ucPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ucTab1).EndInit();
             ucTab1.ResumeLayout(false);
-            control1.ResumeLayout(false);
-            xtraTabPage2.ResumeLayout(false);
             xtraTabPage1.ResumeLayout(false);
+            xtraTabPage2.ResumeLayout(false);
             xtraTabPage3.ResumeLayout(false);
             xtraTabPage4.ResumeLayout(false);
+            xtraTabPage5.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -282,12 +282,12 @@
         private EpicV004.Ctrls.UCPanel ucPanel1;
         private EpicV004.Ctrls.UCPanel ucPanel2;
         private EpicV004.Ctrls.UCTab ucTab1;
-        private DevExpress.XtraTab.XtraTabPage control1;
+        private DevExpress.XtraTab.XtraTabPage xtraTabPage1;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage2;
         private EpicV004.Ctrls.UCGridSet g10;
-        private DevExpress.XtraTab.XtraTabPage xtraTabPage1;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage3;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage4;
+        private DevExpress.XtraTab.XtraTabPage xtraTabPage5;
         private EpicV004.Ctrls.UCGridSet g20;
         private EpicV004.Ctrls.UCGridSet g30;
         private EpicV004.Ctrls.UCGridSet g40;

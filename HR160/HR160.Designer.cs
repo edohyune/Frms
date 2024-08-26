@@ -764,9 +764,9 @@ namespace EpicV004.Frms
             groupBox30.Controls.Add(ucCodeBox6);
             groupBox30.Controls.Add(ucDateBox5);
             groupBox30.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            groupBox30.Location = new Point(131, 279);
+            groupBox30.Location = new Point(131, 288);
             groupBox30.Name = "groupBox30";
-            groupBox30.Size = new Size(1163, 55);
+            groupBox30.Size = new Size(1163, 46);
             groupBox30.TabIndex = 10;
             groupBox30.TabStop = false;
             groupBox30.Text = "Employee's Status";
@@ -1996,7 +1996,7 @@ namespace EpicV004.Frms
             // 
             xtraTabPage2.Controls.Add(g20);
             xtraTabPage2.Name = "xtraTabPage2";
-            xtraTabPage2.Size = new Size(1320, 318);
+            xtraTabPage2.Size = new Size(1341, 372);
             xtraTabPage2.TabPageWidth = 100;
             xtraTabPage2.Text = "Family";
             // 
@@ -2006,14 +2006,14 @@ namespace EpicV004.Frms
             g20.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             g20.Location = new Point(0, 0);
             g20.Name = "g20";
-            g20.Size = new Size(1320, 318);
+            g20.Size = new Size(1341, 372);
             g20.TabIndex = 0;
             // 
             // xtraTabPage3
             // 
             xtraTabPage3.Controls.Add(g30);
             xtraTabPage3.Name = "xtraTabPage3";
-            xtraTabPage3.Size = new Size(1320, 318);
+            xtraTabPage3.Size = new Size(1341, 372);
             xtraTabPage3.TabPageWidth = 100;
             xtraTabPage3.Text = "Education";
             // 
@@ -2023,14 +2023,14 @@ namespace EpicV004.Frms
             g30.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             g30.Location = new Point(0, 0);
             g30.Name = "g30";
-            g30.Size = new Size(1320, 318);
+            g30.Size = new Size(1341, 372);
             g30.TabIndex = 0;
             // 
             // xtraTabPage4
             // 
             xtraTabPage4.Controls.Add(g40);
             xtraTabPage4.Name = "xtraTabPage4";
-            xtraTabPage4.Size = new Size(1320, 318);
+            xtraTabPage4.Size = new Size(1341, 372);
             xtraTabPage4.TabPageWidth = 100;
             xtraTabPage4.Text = "License";
             // 
@@ -2040,14 +2040,14 @@ namespace EpicV004.Frms
             g40.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             g40.Location = new Point(0, 0);
             g40.Name = "g40";
-            g40.Size = new Size(1320, 318);
+            g40.Size = new Size(1341, 372);
             g40.TabIndex = 0;
             // 
             // xtraTabPage5
             // 
             xtraTabPage5.Controls.Add(g50);
             xtraTabPage5.Name = "xtraTabPage5";
-            xtraTabPage5.Size = new Size(1320, 318);
+            xtraTabPage5.Size = new Size(1341, 372);
             xtraTabPage5.TabPageWidth = 100;
             xtraTabPage5.Text = "Work History";
             // 
@@ -2057,14 +2057,14 @@ namespace EpicV004.Frms
             g50.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             g50.Location = new Point(0, 0);
             g50.Name = "g50";
-            g50.Size = new Size(1320, 318);
+            g50.Size = new Size(1341, 372);
             g50.TabIndex = 0;
             // 
             // xtraTabPage7
             // 
             xtraTabPage7.Controls.Add(g70);
             xtraTabPage7.Name = "xtraTabPage7";
-            xtraTabPage7.Size = new Size(1320, 318);
+            xtraTabPage7.Size = new Size(1341, 372);
             xtraTabPage7.Text = "Promotion";
             // 
             // g70
@@ -2072,14 +2072,14 @@ namespace EpicV004.Frms
             g70.Dock = DockStyle.Fill;
             g70.Location = new Point(0, 0);
             g70.Name = "g70";
-            g70.Size = new Size(1320, 318);
+            g70.Size = new Size(1341, 372);
             g70.TabIndex = 0;
             // 
             // xtraTabPage8
             // 
             xtraTabPage8.Controls.Add(g80);
             xtraTabPage8.Name = "xtraTabPage8";
-            xtraTabPage8.Size = new Size(1320, 318);
+            xtraTabPage8.Size = new Size(1341, 372);
             xtraTabPage8.Text = "Salary";
             // 
             // g80
@@ -2087,14 +2087,14 @@ namespace EpicV004.Frms
             g80.Dock = DockStyle.Fill;
             g80.Location = new Point(0, 0);
             g80.Name = "g80";
-            g80.Size = new Size(1320, 318);
+            g80.Size = new Size(1341, 372);
             g80.TabIndex = 0;
             // 
             // xtraTabPage9
             // 
             xtraTabPage9.Controls.Add(g90);
             xtraTabPage9.Name = "xtraTabPage9";
-            xtraTabPage9.Size = new Size(1320, 318);
+            xtraTabPage9.Size = new Size(1341, 372);
             xtraTabPage9.Text = "Shift";
             // 
             // g90
@@ -2102,14 +2102,14 @@ namespace EpicV004.Frms
             g90.Dock = DockStyle.Fill;
             g90.Location = new Point(0, 0);
             g90.Name = "g90";
-            g90.Size = new Size(1320, 318);
+            g90.Size = new Size(1341, 372);
             g90.TabIndex = 0;
             // 
             // xtraTabPage10
             // 
             xtraTabPage10.Controls.Add(ucPanel4);
             xtraTabPage10.Name = "xtraTabPage10";
-            xtraTabPage10.Size = new Size(1320, 318);
+            xtraTabPage10.Size = new Size(1341, 372);
             xtraTabPage10.Text = "Income Tax-Calculation";
             // 
             // ucPanel4
@@ -2124,7 +2124,7 @@ namespace EpicV004.Frms
             ucPanel4.Dock = DockStyle.Fill;
             ucPanel4.Location = new Point(0, 0);
             ucPanel4.Name = "ucPanel4";
-            ucPanel4.Size = new Size(1320, 318);
+            ucPanel4.Size = new Size(1341, 372);
             ucPanel4.TabIndex = 0;
             // 
             // tax_form_method
@@ -2590,7 +2590,7 @@ namespace EpicV004.Frms
             // 
             xtraTabPage11.Controls.Add(ucPanel5);
             xtraTabPage11.Name = "xtraTabPage11";
-            xtraTabPage11.Size = new Size(1320, 318);
+            xtraTabPage11.Size = new Size(1341, 372);
             xtraTabPage11.Text = "Income Tax-Deduction";
             // 
             // ucPanel5
@@ -2608,7 +2608,7 @@ namespace EpicV004.Frms
             ucPanel5.Dock = DockStyle.Fill;
             ucPanel5.Location = new Point(0, 0);
             ucPanel5.Name = "ucPanel5";
-            ucPanel5.Size = new Size(1320, 318);
+            ucPanel5.Size = new Size(1341, 372);
             ucPanel5.TabIndex = 0;
             // 
             // groupBox5
@@ -3366,7 +3366,7 @@ namespace EpicV004.Frms
             // 
             xtraTabPage12.Controls.Add(ucPanel6);
             xtraTabPage12.Name = "xtraTabPage12";
-            xtraTabPage12.Size = new Size(1320, 318);
+            xtraTabPage12.Size = new Size(1341, 372);
             xtraTabPage12.Text = "Social Security";
             // 
             // ucPanel6
@@ -3376,7 +3376,7 @@ namespace EpicV004.Frms
             ucPanel6.Dock = DockStyle.Fill;
             ucPanel6.Location = new Point(0, 0);
             ucPanel6.Name = "ucPanel6";
-            ucPanel6.Size = new Size(1320, 318);
+            ucPanel6.Size = new Size(1341, 372);
             ucPanel6.TabIndex = 0;
             // 
             // groupBox17
@@ -3582,7 +3582,7 @@ namespace EpicV004.Frms
             // 
             xtraTabPage13.Controls.Add(ucPanel7);
             xtraTabPage13.Name = "xtraTabPage13";
-            xtraTabPage13.Size = new Size(1320, 318);
+            xtraTabPage13.Size = new Size(1341, 372);
             xtraTabPage13.Text = "Prov.Fund";
             // 
             // ucPanel7
@@ -3593,7 +3593,7 @@ namespace EpicV004.Frms
             ucPanel7.Dock = DockStyle.Fill;
             ucPanel7.Location = new Point(0, 0);
             ucPanel7.Name = "ucPanel7";
-            ucPanel7.Size = new Size(1320, 318);
+            ucPanel7.Size = new Size(1341, 372);
             ucPanel7.TabIndex = 0;
             // 
             // groupBox27
@@ -3792,7 +3792,7 @@ namespace EpicV004.Frms
             // 
             xtraTabPage14.Controls.Add(g100);
             xtraTabPage14.Name = "xtraTabPage14";
-            xtraTabPage14.Size = new Size(1320, 318);
+            xtraTabPage14.Size = new Size(1341, 372);
             xtraTabPage14.Text = "Warning History";
             // 
             // g100
@@ -3800,14 +3800,14 @@ namespace EpicV004.Frms
             g100.Dock = DockStyle.Fill;
             g100.Location = new Point(0, 0);
             g100.Name = "g100";
-            g100.Size = new Size(1320, 318);
+            g100.Size = new Size(1341, 372);
             g100.TabIndex = 0;
             // 
             // xtraTabPage6
             // 
             xtraTabPage6.Controls.Add(g60);
             xtraTabPage6.Name = "xtraTabPage6";
-            xtraTabPage6.Size = new Size(1320, 318);
+            xtraTabPage6.Size = new Size(1341, 372);
             xtraTabPage6.TabPageWidth = 100;
             xtraTabPage6.Text = "Documents";
             // 
@@ -3817,7 +3817,7 @@ namespace EpicV004.Frms
             g60.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             g60.Location = new Point(0, 0);
             g60.Name = "g60";
-            g60.Size = new Size(1320, 318);
+            g60.Size = new Size(1341, 372);
             g60.TabIndex = 0;
             // 
             // HR160
