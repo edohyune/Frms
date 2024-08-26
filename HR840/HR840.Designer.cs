@@ -40,8 +40,8 @@ namespace EpicV004.Frms
             project = new Ctrls.UCTextBox();
             dept = new Ctrls.UCTextBox();
             ucSplit2 = new Ctrls.UCSplit();
-            ucGridSet1 = new Ctrls.UCGridSet();
-            ucGridSet2 = new Ctrls.UCGridSet();
+            g10 = new Ctrls.UCGridSet();
+            g20 = new Ctrls.UCGridSet();
             ((System.ComponentModel.ISupportInitialize)ucSplit1).BeginInit();
             ucSplit1.Panel1.SuspendLayout();
             ucSplit1.Panel2.SuspendLayout();
@@ -262,31 +262,31 @@ namespace EpicV004.Frms
             // 
             // ucSplit2.Panel1
             // 
-            ucSplit2.Panel1.Controls.Add(ucGridSet1);
+            ucSplit2.Panel1.Controls.Add(g10);
             // 
             // ucSplit2.Panel2
             // 
-            ucSplit2.Panel2.Controls.Add(ucGridSet2);
+            ucSplit2.Panel2.Controls.Add(g20);
             ucSplit2.Size = new Size(1311, 608);
-            ucSplit2.SplitterDistance = 889;
+            ucSplit2.SplitterDistance = 1007;
             ucSplit2.TabIndex = 0;
             ucSplit2.TitleWidth = 121;
             // 
-            // ucGridSet1
+            // g10
             // 
-            ucGridSet1.Dock = DockStyle.Fill;
-            ucGridSet1.Location = new Point(0, 0);
-            ucGridSet1.Name = "ucGridSet1";
-            ucGridSet1.Size = new Size(889, 608);
-            ucGridSet1.TabIndex = 0;
+            g10.Dock = DockStyle.Fill;
+            g10.Location = new Point(0, 0);
+            g10.Name = "g10";
+            g10.Size = new Size(1007, 608);
+            g10.TabIndex = 0;
             // 
-            // ucGridSet2
+            // g20
             // 
-            ucGridSet2.Dock = DockStyle.Fill;
-            ucGridSet2.Location = new Point(0, 0);
-            ucGridSet2.Name = "ucGridSet2";
-            ucGridSet2.Size = new Size(418, 608);
-            ucGridSet2.TabIndex = 0;
+            g20.Dock = DockStyle.Fill;
+            g20.Location = new Point(0, 0);
+            g20.Name = "g20";
+            g20.Size = new Size(300, 608);
+            g20.TabIndex = 0;
             // 
             // HR840
             // 
@@ -322,7 +322,7 @@ namespace EpicV004.Frms
         private Ctrls.UCTextBox project;
         private Ctrls.UCChkCodeBox s_tatus;
         private Ctrls.UCSplit ucSplit2;
-        private Ctrls.UCGridSet ucGridSet1;
-        private Ctrls.UCGridSet ucGridSet2;
+        private Ctrls.UCGridSet g10;
+        private Ctrls.UCGridSet g20;
     }
 }

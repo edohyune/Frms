@@ -40,9 +40,9 @@ namespace EpicV004.Frms
                         }
                         break;
                     case "Open":
-                        switch (teb.SelectedTabPage.Name)
+                        switch (ucTab1.SelectedTabPage.Name)
                         {
-                            case "xtraTabPage1":
+                            //case "xtraTabPage1":
                             case "xtraTabPage2":
                                 g20.Open();
                                 break;

@@ -60,7 +60,7 @@
             current_tel_no = new Ctrls.UCTextBox();
             id_card_no = new Ctrls.UCTextBox();
             first_name_eng = new Ctrls.UCTextBox();
-            teb = new Ctrls.UCTab();
+            ucTab1 = new Ctrls.UCTab();
             xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
             ucPanel3 = new Ctrls.UCPanel();
             groupBox4 = new GroupBox();
@@ -109,8 +109,8 @@
             ucSplit3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ucPanel2).BeginInit();
             ucPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)teb).BeginInit();
-            teb.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)ucTab1).BeginInit();
+            ucTab1.SuspendLayout();
             xtraTabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ucPanel3).BeginInit();
             ucPanel3.SuspendLayout();
@@ -249,7 +249,7 @@
             // 
             // ucSplit3.Panel2
             // 
-            ucSplit3.Panel2.Controls.Add(teb);
+            ucSplit3.Panel2.Controls.Add(ucTab1);
             ucSplit3.Size = new Size(944, 670);
             ucSplit3.SplitterDistance = 379;
             ucSplit3.TabIndex = 0;
@@ -744,15 +744,15 @@
             first_name_eng.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
             first_name_eng.TitleWidth = 100;
             // 
-            // teb
+            // ucTab1
             // 
-            teb.Dock = DockStyle.Fill;
-            teb.Location = new Point(0, 0);
-            teb.Name = "teb";
-            teb.SelectedTabPage = xtraTabPage1;
-            teb.Size = new Size(944, 287);
-            teb.TabIndex = 0;
-            teb.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] { xtraTabPage1, xtraTabPage2, xtraTabPage3, xtraTabPage4, xtraTabPage5, xtraTabPage6 });
+            ucTab1.Dock = DockStyle.Fill;
+            ucTab1.Location = new Point(0, 0);
+            ucTab1.Name = "ucTab1";
+            ucTab1.SelectedTabPage = xtraTabPage1;
+            ucTab1.Size = new Size(944, 287);
+            ucTab1.TabIndex = 0;
+            ucTab1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] { xtraTabPage1, xtraTabPage2, xtraTabPage3, xtraTabPage4, xtraTabPage5, xtraTabPage6 });
             // 
             // xtraTabPage1
             // 
@@ -1265,8 +1265,8 @@
             ucSplit3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ucPanel2).EndInit();
             ucPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)teb).EndInit();
-            teb.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)ucTab1).EndInit();
+            ucTab1.ResumeLayout(false);
             xtraTabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ucPanel3).EndInit();
             ucPanel3.ResumeLayout(false);
@@ -1289,7 +1289,7 @@
         private EpicV004.Ctrls.UCPanel ucPanel1;
         private EpicV004.Ctrls.UCGridSet g10;
         private EpicV004.Ctrls.UCPanel ucPanel2;
-        private EpicV004.Ctrls.UCTab teb;
+        private EpicV004.Ctrls.UCTab ucTab1;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage1;
         private EpicV004.Ctrls.UCPanel ucPanel3;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage2;
