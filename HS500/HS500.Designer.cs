@@ -92,7 +92,7 @@ namespace EpicV004.Frms
             ucChkCodeBox3.ControlWidth = 248;
             ucChkCodeBox3.FontFace = "Tahoma";
             ucChkCodeBox3.FontSize = 9F;
-            ucChkCodeBox3.Location = new Point(655, 49);
+            ucChkCodeBox3.Location = new Point(655, 51);
             ucChkCodeBox3.Name = "ucChkCodeBox3";
             ucChkCodeBox3.Size = new Size(248, 21);
             ucChkCodeBox3.TabIndex = 1;
@@ -109,7 +109,7 @@ namespace EpicV004.Frms
             s_emp_status.ControlWidth = 248;
             s_emp_status.FontFace = "Tahoma";
             s_emp_status.FontSize = 9F;
-            s_emp_status.Location = new Point(909, 24);
+            s_emp_status.Location = new Point(909, 26);
             s_emp_status.Name = "s_emp_status";
             s_emp_status.Size = new Size(248, 21);
             s_emp_status.TabIndex = 1;
@@ -126,7 +126,7 @@ namespace EpicV004.Frms
             job_site.ControlWidth = 248;
             job_site.FontFace = "Tahoma";
             job_site.FontSize = 9F;
-            job_site.Location = new Point(655, 24);
+            job_site.Location = new Point(655, 26);
             job_site.Name = "job_site";
             job_site.Size = new Size(248, 21);
             job_site.TabIndex = 1;
@@ -156,7 +156,7 @@ namespace EpicV004.Frms
             // 
             emp.Appearance.Font = new Font("Tahoma", 9F);
             emp.Appearance.Options.UseFont = true;
-            emp.ControlHeight = 19;
+            emp.ControlHeight = 22;
             emp.ControlWidth = 390;
             emp.FontColor = Color.Black;
             emp.FontFace = "Tahoma";
@@ -164,7 +164,7 @@ namespace EpicV004.Frms
             emp.FormatStr = "";
             emp.Location = new Point(5, 51);
             emp.Name = "emp";
-            emp.Size = new Size(390, 19);
+            emp.Size = new Size(390, 22);
             emp.TabIndex = 0;
             emp.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
             emp.Title = "Employee";
@@ -175,7 +175,7 @@ namespace EpicV004.Frms
             // 
             dept_name.Appearance.Font = new Font("Tahoma", 9F);
             dept_name.Appearance.Options.UseFont = true;
-            dept_name.ControlHeight = 19;
+            dept_name.ControlHeight = 21;
             dept_name.ControlWidth = 192;
             dept_name.FontColor = Color.Black;
             dept_name.FontFace = "Tahoma";
@@ -183,7 +183,7 @@ namespace EpicV004.Frms
             dept_name.FormatStr = "";
             dept_name.Location = new Point(203, 26);
             dept_name.Name = "dept_name";
-            dept_name.Size = new Size(192, 19);
+            dept_name.Size = new Size(192, 21);
             dept_name.TabIndex = 0;
             dept_name.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
             dept_name.Title = "UCTextBox";
@@ -194,15 +194,15 @@ namespace EpicV004.Frms
             // 
             project.Appearance.Font = new Font("Tahoma", 9F);
             project.Appearance.Options.UseFont = true;
-            project.ControlHeight = 19;
+            project.ControlHeight = 22;
             project.ControlWidth = 248;
             project.FontColor = Color.Black;
             project.FontFace = "Tahoma";
             project.FontSize = 9F;
             project.FormatStr = "";
-            project.Location = new Point(401, 53);
+            project.Location = new Point(401, 51);
             project.Name = "project";
-            project.Size = new Size(248, 19);
+            project.Size = new Size(248, 22);
             project.TabIndex = 0;
             project.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
             project.Title = "Project";
@@ -213,7 +213,7 @@ namespace EpicV004.Frms
             // 
             dept.Appearance.Font = new Font("Tahoma", 9F);
             dept.Appearance.Options.UseFont = true;
-            dept.ControlHeight = 19;
+            dept.ControlHeight = 21;
             dept.ControlWidth = 192;
             dept.FontColor = Color.Black;
             dept.FontFace = "Tahoma";
@@ -221,7 +221,7 @@ namespace EpicV004.Frms
             dept.FormatStr = "";
             dept.Location = new Point(5, 26);
             dept.Name = "dept";
-            dept.Size = new Size(192, 19);
+            dept.Size = new Size(192, 21);
             dept.TabIndex = 0;
             dept.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
             dept.Title = "Dept";
