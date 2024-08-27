@@ -34,7 +34,6 @@ namespace EpicV004.Frms
             s_tatus = new Ctrls.UCChkCodeBox();
             s_emp_status = new Ctrls.UCChkCodeBox();
             job_site = new Ctrls.UCChkCodeBox();
-            position = new Ctrls.UCChkCodeBox();
             emp = new Ctrls.UCTextBox();
             ucTextBox2 = new Ctrls.UCTextBox();
             project = new Ctrls.UCTextBox();
@@ -42,6 +41,8 @@ namespace EpicV004.Frms
             ucSplit2 = new Ctrls.UCSplit();
             g10 = new Ctrls.UCGridSet();
             g20 = new Ctrls.UCGridSet();
+            chk_last = new CheckBox();
+            position = new Ctrls.UCCodeBox();
             ((System.ComponentModel.ISupportInitialize)ucSplit1).BeginInit();
             ucSplit1.Panel1.SuspendLayout();
             ucSplit1.Panel2.SuspendLayout();
@@ -76,11 +77,12 @@ namespace EpicV004.Frms
             // 
             // ucPanel1
             // 
+            ucPanel1.Controls.Add(position);
+            ucPanel1.Controls.Add(chk_last);
             ucPanel1.Controls.Add(ucChkCodeBox3);
             ucPanel1.Controls.Add(s_tatus);
             ucPanel1.Controls.Add(s_emp_status);
             ucPanel1.Controls.Add(job_site);
-            ucPanel1.Controls.Add(position);
             ucPanel1.Controls.Add(emp);
             ucPanel1.Controls.Add(ucTextBox2);
             ucPanel1.Controls.Add(project);
@@ -100,7 +102,7 @@ namespace EpicV004.Frms
             ucChkCodeBox3.ControlWidth = 248;
             ucChkCodeBox3.FontFace = "Tahoma";
             ucChkCodeBox3.FontSize = 9F;
-            ucChkCodeBox3.Location = new Point(655, 49);
+            ucChkCodeBox3.Location = new Point(655, 51);
             ucChkCodeBox3.Name = "ucChkCodeBox3";
             ucChkCodeBox3.Size = new Size(248, 21);
             ucChkCodeBox3.TabIndex = 1;
@@ -151,7 +153,7 @@ namespace EpicV004.Frms
             job_site.ControlWidth = 248;
             job_site.FontFace = "Tahoma";
             job_site.FontSize = 9F;
-            job_site.Location = new Point(655, 24);
+            job_site.Location = new Point(655, 26);
             job_site.Name = "job_site";
             job_site.Size = new Size(248, 21);
             job_site.TabIndex = 1;
@@ -160,28 +162,11 @@ namespace EpicV004.Frms
             job_site.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
             job_site.TitleWidth = 117;
             // 
-            // position
-            // 
-            position.Appearance.Font = new Font("Tahoma", 9F);
-            position.Appearance.Options.UseFont = true;
-            position.ControlHeight = 21;
-            position.ControlWidth = 248;
-            position.FontFace = "Tahoma";
-            position.FontSize = 9F;
-            position.Location = new Point(401, 26);
-            position.Name = "position";
-            position.Size = new Size(248, 21);
-            position.TabIndex = 1;
-            position.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            position.Title = "Position";
-            position.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            position.TitleWidth = 93;
-            // 
             // emp
             // 
             emp.Appearance.Font = new Font("Tahoma", 9F);
             emp.Appearance.Options.UseFont = true;
-            emp.ControlHeight = 19;
+            emp.ControlHeight = 22;
             emp.ControlWidth = 390;
             emp.FontColor = Color.Black;
             emp.FontFace = "Tahoma";
@@ -189,7 +174,7 @@ namespace EpicV004.Frms
             emp.FormatStr = "";
             emp.Location = new Point(5, 51);
             emp.Name = "emp";
-            emp.Size = new Size(390, 19);
+            emp.Size = new Size(390, 22);
             emp.TabIndex = 0;
             emp.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
             emp.Title = "Employee";
@@ -200,7 +185,7 @@ namespace EpicV004.Frms
             // 
             ucTextBox2.Appearance.Font = new Font("Tahoma", 9F);
             ucTextBox2.Appearance.Options.UseFont = true;
-            ucTextBox2.ControlHeight = 19;
+            ucTextBox2.ControlHeight = 21;
             ucTextBox2.ControlWidth = 192;
             ucTextBox2.FontColor = Color.Black;
             ucTextBox2.FontFace = "Tahoma";
@@ -208,7 +193,7 @@ namespace EpicV004.Frms
             ucTextBox2.FormatStr = "";
             ucTextBox2.Location = new Point(203, 26);
             ucTextBox2.Name = "ucTextBox2";
-            ucTextBox2.Size = new Size(192, 19);
+            ucTextBox2.Size = new Size(192, 21);
             ucTextBox2.TabIndex = 0;
             ucTextBox2.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
             ucTextBox2.Title = "UCTextBox";
@@ -219,15 +204,15 @@ namespace EpicV004.Frms
             // 
             project.Appearance.Font = new Font("Tahoma", 9F);
             project.Appearance.Options.UseFont = true;
-            project.ControlHeight = 19;
+            project.ControlHeight = 23;
             project.ControlWidth = 248;
             project.FontColor = Color.Black;
             project.FontFace = "Tahoma";
             project.FontSize = 9F;
             project.FormatStr = "";
-            project.Location = new Point(401, 53);
+            project.Location = new Point(401, 51);
             project.Name = "project";
-            project.Size = new Size(248, 19);
+            project.Size = new Size(248, 23);
             project.TabIndex = 0;
             project.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
             project.Title = "Project";
@@ -238,7 +223,7 @@ namespace EpicV004.Frms
             // 
             dept.Appearance.Font = new Font("Tahoma", 9F);
             dept.Appearance.Options.UseFont = true;
-            dept.ControlHeight = 19;
+            dept.ControlHeight = 21;
             dept.ControlWidth = 192;
             dept.FontColor = Color.Black;
             dept.FontFace = "Tahoma";
@@ -246,7 +231,7 @@ namespace EpicV004.Frms
             dept.FormatStr = "";
             dept.Location = new Point(5, 26);
             dept.Name = "dept";
-            dept.Size = new Size(192, 19);
+            dept.Size = new Size(192, 21);
             dept.TabIndex = 0;
             dept.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
             dept.Title = "Dept";
@@ -268,7 +253,7 @@ namespace EpicV004.Frms
             // 
             ucSplit2.Panel2.Controls.Add(g20);
             ucSplit2.Size = new Size(1311, 608);
-            ucSplit2.SplitterDistance = 1007;
+            ucSplit2.SplitterDistance = 1038;
             ucSplit2.TabIndex = 0;
             ucSplit2.TitleWidth = 121;
             // 
@@ -277,7 +262,7 @@ namespace EpicV004.Frms
             g10.Dock = DockStyle.Fill;
             g10.Location = new Point(0, 0);
             g10.Name = "g10";
-            g10.Size = new Size(1007, 608);
+            g10.Size = new Size(1038, 608);
             g10.TabIndex = 0;
             // 
             // g20
@@ -285,8 +270,36 @@ namespace EpicV004.Frms
             g20.Dock = DockStyle.Fill;
             g20.Location = new Point(0, 0);
             g20.Name = "g20";
-            g20.Size = new Size(300, 608);
+            g20.Size = new Size(269, 608);
             g20.TabIndex = 0;
+            // 
+            // chk_last
+            // 
+            chk_last.AutoSize = true;
+            chk_last.CheckAlign = ContentAlignment.MiddleRight;
+            chk_last.Location = new Point(1163, 26);
+            chk_last.Name = "chk_last";
+            chk_last.Size = new Size(100, 17);
+            chk_last.TabIndex = 2;
+            chk_last.Text = "Show Last Shift";
+            chk_last.UseVisualStyleBackColor = true;
+            // 
+            // position
+            // 
+            position.ControlHeight = 23;
+            position.ControlWidth = 248;
+            position.FldTy = null;
+            position.FontColor = Color.Black;
+            position.FontFace = "Tahoma";
+            position.FontSize = 9F;
+            position.Location = new Point(401, 26);
+            position.Name = "position";
+            position.Size = new Size(248, 23);
+            position.TabIndex = 3;
+            position.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            position.Title = "Position";
+            position.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            position.TitleWidth = 93;
             // 
             // HR840
             // 
@@ -301,6 +314,7 @@ namespace EpicV004.Frms
             ucSplit1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ucPanel1).EndInit();
             ucPanel1.ResumeLayout(false);
+            ucPanel1.PerformLayout();
             ucSplit2.Panel1.ResumeLayout(false);
             ucSplit2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ucSplit2).EndInit();
@@ -316,7 +330,6 @@ namespace EpicV004.Frms
         private Ctrls.UCChkCodeBox ucChkCodeBox3;
         private Ctrls.UCChkCodeBox s_emp_status;
         private Ctrls.UCChkCodeBox job_site;
-        private Ctrls.UCChkCodeBox position;
         private Ctrls.UCTextBox emp;
         private Ctrls.UCTextBox ucTextBox2;
         private Ctrls.UCTextBox project;
@@ -324,5 +337,7 @@ namespace EpicV004.Frms
         private Ctrls.UCSplit ucSplit2;
         private Ctrls.UCGridSet g10;
         private Ctrls.UCGridSet g20;
+        private Ctrls.UCCodeBox position;
+        private CheckBox chk_last;
     }
 }
