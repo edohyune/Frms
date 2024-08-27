@@ -147,5 +147,17 @@ namespace EpicV004.Frms
             get => _memo;
             set => Set(ref _memo, value);
         }
+        private string _other_lang_name;
+        public string other_lang_name
+        {
+            get => _other_lang_name;
+            set => Set(ref _other_lang_name, value);
+        }
+        private string _nm;
+        public string nm
+        {
+            get => _nm;
+            set => Set(ref _nm, value);
+        }
     }
 }

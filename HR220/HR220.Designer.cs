@@ -39,7 +39,7 @@
             status = new Ctrls.UCCodeBox();
             memo = new Ctrls.UCTextBox();
             doc_no = new Ctrls.UCTextBox();
-            order_date = new Ctrls.UCDateBox();
+            apply_date = new Ctrls.UCDateBox();
             g20 = new Ctrls.UCGridSet();
             ((System.ComponentModel.ISupportInitialize)ucSplit1).BeginInit();
             ucSplit1.Panel1.SuspendLayout();
@@ -139,7 +139,7 @@
             // 
             ucSplit2.Panel2.Controls.Add(ucSplit3);
             ucSplit2.Size = new Size(1142, 553);
-            ucSplit2.SplitterDistance = 281;
+            ucSplit2.SplitterDistance = 278;
             ucSplit2.TabIndex = 0;
             ucSplit2.TitleWidth = 121;
             // 
@@ -148,7 +148,7 @@
             g10.Dock = DockStyle.Fill;
             g10.Location = new Point(0, 0);
             g10.Name = "g10";
-            g10.Size = new Size(281, 553);
+            g10.Size = new Size(278, 553);
             g10.TabIndex = 0;
             // 
             // ucSplit3
@@ -166,7 +166,7 @@
             // ucSplit3.Panel2
             // 
             ucSplit3.Panel2.Controls.Add(g20);
-            ucSplit3.Size = new Size(857, 553);
+            ucSplit3.Size = new Size(860, 553);
             ucSplit3.SplitterDistance = 98;
             ucSplit3.TabIndex = 0;
             ucSplit3.TitleWidth = 121;
@@ -176,11 +176,11 @@
             ucPanel2.Controls.Add(status);
             ucPanel2.Controls.Add(memo);
             ucPanel2.Controls.Add(doc_no);
-            ucPanel2.Controls.Add(order_date);
+            ucPanel2.Controls.Add(apply_date);
             ucPanel2.Dock = DockStyle.Fill;
             ucPanel2.Location = new Point(0, 0);
             ucPanel2.Name = "ucPanel2";
-            ucPanel2.Size = new Size(857, 98);
+            ucPanel2.Size = new Size(860, 98);
             ucPanel2.TabIndex = 0;
             ucPanel2.Text = "Batch Promotion Salary";
             // 
@@ -235,29 +235,29 @@
             doc_no.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
             doc_no.TitleWidth = 100;
             // 
-            // order_date
+            // apply_date
             // 
-            order_date.ControlHeight = 21;
-            order_date.ControlWidth = 248;
-            order_date.FontColor = Color.Black;
-            order_date.FontFace = "Tahoma";
-            order_date.FontSize = 9F;
-            order_date.FormatStr = "";
-            order_date.Location = new Point(5, 26);
-            order_date.Name = "order_date";
-            order_date.Size = new Size(248, 21);
-            order_date.TabIndex = 0;
-            order_date.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            order_date.Title = "Apply Date";
-            order_date.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            order_date.TitleWidth = 100;
+            apply_date.ControlHeight = 21;
+            apply_date.ControlWidth = 248;
+            apply_date.FontColor = Color.Black;
+            apply_date.FontFace = "Tahoma";
+            apply_date.FontSize = 9F;
+            apply_date.FormatStr = "";
+            apply_date.Location = new Point(5, 26);
+            apply_date.Name = "apply_date";
+            apply_date.Size = new Size(248, 21);
+            apply_date.TabIndex = 0;
+            apply_date.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            apply_date.Title = "Apply Date";
+            apply_date.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            apply_date.TitleWidth = 100;
             // 
             // g20
             // 
             g20.Dock = DockStyle.Fill;
             g20.Location = new Point(0, 0);
             g20.Name = "g20";
-            g20.Size = new Size(857, 451);
+            g20.Size = new Size(860, 451);
             g20.TabIndex = 0;
             // 
             // HR220
@@ -298,7 +298,7 @@
         private Ctrls.UCSplit ucSplit3;
         private Ctrls.UCPanel ucPanel2;
         private Ctrls.UCTextBox doc_no;
-        private Ctrls.UCDateBox order_date;
+        private Ctrls.UCDateBox apply_date;
         private Ctrls.UCGridSet g20;
         private Ctrls.UCCodeBox status;
         private Ctrls.UCTextBox memo;
