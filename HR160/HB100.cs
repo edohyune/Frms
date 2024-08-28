@@ -290,6 +290,13 @@ namespace EpicV004.Frms
             set => Set(ref _id_card_expire_dt, value);
         }
 
+        private DateTime _employment_date;
+        public DateTime employment_date
+        {
+            get => _employment_date;
+            set => Set(ref _employment_date, value);
+        }
+
         private string _id_card_addr1;
         public string id_card_addr1
         {
@@ -634,21 +641,35 @@ namespace EpicV004.Frms
             set => Set(ref _bmi_result, value);
         }
 
+        private string _kbn;
+        public string kbn
+        {
+            get => _kbn;
+            set => Set(ref _kbn, value);
+        }
+
+        private string _dept_nm;
+        public string dept_nm
+        {
+            get => _dept_nm;
+            set => Set(ref _dept_nm, value);
+        }
+
 
     }
 
-    //public class HR160_F10 : AppRegister_G10
-    //{
-    //    // Additional properties or methods specific to AppRegister_G10
-    //    private string _F10SpecificProperty;
-    //    public string F10SpecificProperty
-    //    {
-    //        get => _F10SpecificProperty;
-    //        set => Set(ref _F10SpecificProperty, value);
-    //    }
+    public class HR160_F10 : HR160_G10
+    {
+        // Additional properties or methods specific to AppRegister_G10
+        private string _F10SpecificProperty;
+        public string F10SpecificProperty
+        {
+            get => _F10SpecificProperty;
+            set => Set(ref _F10SpecificProperty, value);
+        }
 
 
-    //}
+    }
 
     //public class HR160_F20 : AppRegister_G10
     //{
