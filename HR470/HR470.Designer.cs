@@ -34,8 +34,10 @@
             f_to_year = new Ctrls.UCDateBox();
             f_year = new Ctrls.UCDateBox();
             ucSplit2 = new Ctrls.UCSplit();
-            g10 = new Ctrls.UCPanel();
-            g20 = new Ctrls.UCPanel();
+            UCPanel2 = new Ctrls.UCPanel();
+            g10 = new Ctrls.UCGridSet();
+            UCPanel3 = new Ctrls.UCPanel();
+            g20 = new Ctrls.UCGridSet();
             ((System.ComponentModel.ISupportInitialize)ucSplit1).BeginInit();
             ucSplit1.Panel1.SuspendLayout();
             ucSplit1.Panel2.SuspendLayout();
@@ -46,13 +48,16 @@
             ucSplit2.Panel1.SuspendLayout();
             ucSplit2.Panel2.SuspendLayout();
             ucSplit2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)g10).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)g20).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)UCPanel2).BeginInit();
+            UCPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)UCPanel3).BeginInit();
+            UCPanel3.SuspendLayout();
             SuspendLayout();
             // 
             // ucSplit1
             // 
             ucSplit1.Dock = DockStyle.Fill;
+            ucSplit1.FixedPanel = FixedPanel.Panel1;
             ucSplit1.Location = new Point(0, 0);
             ucSplit1.Name = "ucSplit1";
             ucSplit1.Orientation = Orientation.Horizontal;
@@ -91,7 +96,7 @@
             btn_copy.FontBold = FontStyle.Regular;
             btn_copy.FontFace = "Tahoma";
             btn_copy.FontSize = 9F;
-            btn_copy.Location = new Point(579, 32);
+            btn_copy.Location = new Point(576, 32);
             btn_copy.Name = "btn_copy";
             btn_copy.Size = new Size(123, 33);
             btn_copy.TabIndex = 1;
@@ -100,16 +105,16 @@
             // 
             // f_to_year
             // 
-            f_to_year.ControlHeight = 19;
+            f_to_year.ControlHeight = 21;
             f_to_year.ControlWidth = 186;
             f_to_year.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             f_to_year.FontColor = Color.Black;
             f_to_year.FontFace = "Tahoma";
             f_to_year.FontSize = 9F;
             f_to_year.FormatStr = "";
-            f_to_year.Location = new Point(238, 40);
+            f_to_year.Location = new Point(231, 38);
             f_to_year.Name = "f_to_year";
-            f_to_year.Size = new Size(186, 19);
+            f_to_year.Size = new Size(186, 21);
             f_to_year.TabIndex = 0;
             f_to_year.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
             f_to_year.Title = ">";
@@ -118,7 +123,7 @@
             // 
             // f_year
             // 
-            f_year.ControlHeight = 19;
+            f_year.ControlHeight = 21;
             f_year.ControlWidth = 186;
             f_year.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             f_year.FontColor = Color.Black;
@@ -127,7 +132,7 @@
             f_year.FormatStr = "";
             f_year.Location = new Point(5, 40);
             f_year.Name = "f_year";
-            f_year.Size = new Size(186, 19);
+            f_year.Size = new Size(186, 21);
             f_year.TabIndex = 0;
             f_year.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
             f_year.Title = "Year";
@@ -143,33 +148,51 @@
             // 
             // ucSplit2.Panel1
             // 
-            ucSplit2.Panel1.Controls.Add(g10);
+            ucSplit2.Panel1.Controls.Add(UCPanel2);
             // 
             // ucSplit2.Panel2
             // 
-            ucSplit2.Panel2.Controls.Add(g20);
+            ucSplit2.Panel2.Controls.Add(UCPanel3);
             ucSplit2.Size = new Size(1284, 597);
-            ucSplit2.SplitterDistance = 643;
+            ucSplit2.SplitterDistance = 947;
             ucSplit2.TabIndex = 0;
             ucSplit2.TitleWidth = 121;
+            // 
+            // UCPanel2
+            // 
+            UCPanel2.Controls.Add(g10);
+            UCPanel2.Dock = DockStyle.Fill;
+            UCPanel2.Location = new Point(0, 0);
+            UCPanel2.Name = "UCPanel2";
+            UCPanel2.Size = new Size(947, 597);
+            UCPanel2.TabIndex = 0;
+            UCPanel2.Text = "From";
             // 
             // g10
             // 
             g10.Dock = DockStyle.Fill;
-            g10.Location = new Point(0, 0);
+            g10.Location = new Point(2, 23);
             g10.Name = "g10";
-            g10.Size = new Size(643, 597);
+            g10.Size = new Size(943, 572);
             g10.TabIndex = 0;
-            g10.Text = "From";
+            // 
+            // UCPanel3
+            // 
+            UCPanel3.Controls.Add(g20);
+            UCPanel3.Dock = DockStyle.Fill;
+            UCPanel3.Location = new Point(0, 0);
+            UCPanel3.Name = "UCPanel3";
+            UCPanel3.Size = new Size(333, 597);
+            UCPanel3.TabIndex = 0;
+            UCPanel3.Text = "To (Edit)";
             // 
             // g20
             // 
             g20.Dock = DockStyle.Fill;
-            g20.Location = new Point(0, 0);
+            g20.Location = new Point(2, 23);
             g20.Name = "g20";
-            g20.Size = new Size(637, 597);
-            g20.TabIndex = 0;
-            g20.Text = "To (Edit)";
+            g20.Size = new Size(329, 572);
+            g20.TabIndex = 1;
             // 
             // HR470
             // 
@@ -188,8 +211,10 @@
             ucSplit2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ucSplit2).EndInit();
             ucSplit2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)g10).EndInit();
-            ((System.ComponentModel.ISupportInitialize)g20).EndInit();
+            ((System.ComponentModel.ISupportInitialize)UCPanel2).EndInit();
+            UCPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)UCPanel3).EndInit();
+            UCPanel3.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -201,7 +226,9 @@
         private EpicV004.Ctrls.UCDateBox f_to_year;
         private EpicV004.Ctrls.UCDateBox f_year;
         private EpicV004.Ctrls.UCSplit ucSplit2;
-        private EpicV004.Ctrls.UCPanel g10;
-        private EpicV004.Ctrls.UCPanel g20;
+        private EpicV004.Ctrls.UCPanel UCPanel2;
+        private EpicV004.Ctrls.UCPanel UCPanel3;
+        private Ctrls.UCGridSet g10;
+        private Ctrls.UCGridSet g20;
     }
 }

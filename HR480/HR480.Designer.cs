@@ -79,13 +79,13 @@
             // 
             // stt_type
             // 
-            stt_type.ControlHeight = 18;
+            stt_type.ControlHeight = 23;
             stt_type.ControlWidth = 271;
             stt_type.FontFace = "Tahoma";
             stt_type.FontSize = 9F;
             stt_type.Location = new Point(282, 36);
             stt_type.Name = "stt_type";
-            stt_type.Size = new Size(271, 18);
+            stt_type.Size = new Size(271, 23);
             stt_type.TabIndex = 1;
             stt_type.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
             stt_type.Title = "Stt Type";
@@ -94,7 +94,7 @@
             // 
             // stt_enabled
             // 
-            stt_enabled.ControlHeight = 18;
+            stt_enabled.ControlHeight = 23;
             stt_enabled.ControlWidth = 271;
             stt_enabled.FontColor = Color.Black;
             stt_enabled.FontFace = "Tahoma";
@@ -102,7 +102,7 @@
             stt_enabled.FormatStr = "";
             stt_enabled.Location = new Point(559, 36);
             stt_enabled.Name = "stt_enabled";
-            stt_enabled.Size = new Size(271, 18);
+            stt_enabled.Size = new Size(271, 23);
             stt_enabled.TabIndex = 0;
             stt_enabled.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
             stt_enabled.Title = "Enabled";
@@ -111,7 +111,7 @@
             // 
             // stt_key
             // 
-            stt_key.ControlHeight = 18;
+            stt_key.ControlHeight = 23;
             stt_key.ControlWidth = 271;
             stt_key.FontColor = Color.Black;
             stt_key.FontFace = "Tahoma";
@@ -119,7 +119,7 @@
             stt_key.FormatStr = "";
             stt_key.Location = new Point(5, 36);
             stt_key.Name = "stt_key";
-            stt_key.Size = new Size(271, 18);
+            stt_key.Size = new Size(271, 23);
             stt_key.TabIndex = 0;
             stt_key.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
             stt_key.Title = "Sttkey";
