@@ -1,4 +1,4 @@
-﻿namespace HR420
+﻿namespace EpicV004.Frms
 {
     partial class HR420
     {
