@@ -56,7 +56,7 @@ namespace EpicV004.Frms
                                 g50.Open();
                                 break;
                             case "xtraTabPage6":
-                                g60.Open();
+                                g100.Open();
                                 break;
 
                             default:
@@ -87,6 +87,11 @@ namespace EpicV004.Frms
         }
 
         private void groupBox20_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ucPanel7_UCCustomButtonClick(object Sender, DevExpress.XtraBars.Docking2010.BaseButtonEventArgs e)
         {
 
         }

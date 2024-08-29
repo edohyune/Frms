@@ -658,15 +658,15 @@ namespace EpicV004.Frms
 
     }
 
-    public class HR160_F10 : HR160_G10
-    {
-        // Additional properties or methods specific to AppRegister_G10
-        private string _F10SpecificProperty;
-        public string F10SpecificProperty
-        {
-            get => _F10SpecificProperty;
-            set => Set(ref _F10SpecificProperty, value);
-        }
+    //public class HR160_F10 : HR160_G10
+    //{
+    //    // Additional properties or methods specific to AppRegister_G10
+    //    private string _F10SpecificProperty;
+    //    public string F10SpecificProperty
+    //    {
+    //        get => _F10SpecificProperty;
+    //        set => Set(ref _F10SpecificProperty, value);
+    //    }
 
 
     }
@@ -683,4 +683,4 @@ namespace EpicV004.Frms
 
 
     //}
-}
+//}

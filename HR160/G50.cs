@@ -16,11 +16,11 @@ namespace EpicV004.Frms
             set => Set(ref _pid, value);
         }
 
-        private string _applicant_id;
-        public string applicant_id
+        private string _emp_no;
+        public string emp_no
         {
-            get => _applicant_id;
-            set => Set(ref _applicant_id, value);
+            get => _emp_no;
+            set => Set(ref _emp_no, value);
         }
 
         private int _seq;
@@ -37,18 +37,18 @@ namespace EpicV004.Frms
             set => Set(ref _company_name, value);
         }
 
-        private DateTime _since_dt;
-        public DateTime since_dt
+        private DateTime _since_date;
+        public DateTime since_date
         {
-            get => _since_dt;
-            set => Set(ref _since_dt, value);
+            get => _since_date;
+            set => Set(ref _since_date, value);
         }
 
-        private DateTime _end_dt;
-        public DateTime end_dt
+        private DateTime _end_date;
+        public DateTime end_date
         {
-            get => _end_dt;
-            set => Set(ref _end_dt, value);
+            get => _end_date;
+            set => Set(ref _end_date, value);
         }
 
         private string _job_title;
@@ -77,6 +77,13 @@ namespace EpicV004.Frms
         {
             get => _memo;
             set => Set(ref _memo, value);
+        }
+
+        private string _Period;
+        public string Period
+        {
+            get => _Period;
+            set => Set(ref _Period, value);
         }
     }
 }

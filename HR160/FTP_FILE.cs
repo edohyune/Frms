@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EpicV004.Frms
 {
-    public class HR160_G60 : EpicV004.Libs.MdlBase
+    public class HR160_G100 : EpicV004.Libs.MdlBase
     {
 
         private string _fId;

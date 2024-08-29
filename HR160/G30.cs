@@ -15,11 +15,11 @@ namespace EpicV004.Frms
             set => Set(ref _pid, value);
         }
 
-        private string _applicant_id;
-        public string applicant_id
+        private string _emp_no;
+        public string emp_no
         {
-            get => _applicant_id;
-            set => Set(ref _applicant_id, value);
+            get => _emp_no;
+            set => Set(ref _emp_no, value);
         }
 
         private int _seq;

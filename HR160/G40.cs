@@ -16,11 +16,11 @@ namespace EpicV004.Frms
             set => Set(ref _pid, value);
         }
 
-        private string _applicant_id;
-        public string applicant_id
+        private string _emp_no;
+        public string emp_no
         {
-            get => _applicant_id;
-            set => Set(ref _applicant_id, value);
+            get => _emp_no;
+            set => Set(ref _emp_no, value);
         }
 
         private int _seq;
@@ -44,18 +44,18 @@ namespace EpicV004.Frms
             set => Set(ref _license_no, value);
         }
 
-        private DateTime _certificate_dt;
-        public DateTime certificate_dt
+        private DateTime _certificate_date;
+        public DateTime certificate_date
         {
-            get => _certificate_dt;
-            set => Set(ref _certificate_dt, value);
+            get => _certificate_date;
+            set => Set(ref _certificate_date, value);
         }
 
-        private DateTime _expire_dt;
-        public DateTime expire_dt
+        private DateTime _expire_date;
+        public DateTime expire_date
         {
-            get => _expire_dt;
-            set => Set(ref _expire_dt, value);
+            get => _expire_date;
+            set => Set(ref _expire_date, value);
         }
 
         private string _institution_issued;
