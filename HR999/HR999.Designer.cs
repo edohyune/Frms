@@ -39,6 +39,25 @@
             g10 = new Ctrls.UCGridSet();
             ucPanel2 = new Ctrls.UCPanel();
             groupBox1 = new GroupBox();
+            ucTextBox46 = new Ctrls.UCTextBox();
+            ucTextBox47 = new Ctrls.UCTextBox();
+            ucTextBox48 = new Ctrls.UCTextBox();
+            ucTextBox50 = new Ctrls.UCTextBox();
+            ucTextBox40 = new Ctrls.UCTextBox();
+            ucTextBox41 = new Ctrls.UCTextBox();
+            ucTextBox42 = new Ctrls.UCTextBox();
+            ucTextBox43 = new Ctrls.UCTextBox();
+            ucTextBox44 = new Ctrls.UCTextBox();
+            ucTextBox35 = new Ctrls.UCTextBox();
+            ucTextBox36 = new Ctrls.UCTextBox();
+            ucTextBox37 = new Ctrls.UCTextBox();
+            ucTextBox38 = new Ctrls.UCTextBox();
+            ucTextBox39 = new Ctrls.UCTextBox();
+            ucTextBox30 = new Ctrls.UCTextBox();
+            ucTextBox31 = new Ctrls.UCTextBox();
+            ucTextBox32 = new Ctrls.UCTextBox();
+            ucTextBox33 = new Ctrls.UCTextBox();
+            ucTextBox34 = new Ctrls.UCTextBox();
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
@@ -66,6 +85,10 @@
             ucTextBox4 = new Ctrls.UCTextBox();
             ucTextBox3 = new Ctrls.UCTextBox();
             ucTextBox2 = new Ctrls.UCTextBox();
+            ucTextBox29 = new Ctrls.UCTextBox();
+            ucTextBox28 = new Ctrls.UCTextBox();
+            ucTextBox27 = new Ctrls.UCTextBox();
+            ucTextBox26 = new Ctrls.UCTextBox();
             ucTextBox21 = new Ctrls.UCTextBox();
             ucTextBox1 = new Ctrls.UCTextBox();
             table21 = new Ctrls.UCTextBox();
@@ -113,29 +136,30 @@
             g30 = new Ctrls.UCGridSet();
             ucPanel5 = new Ctrls.UCPanel();
             g40 = new Ctrls.UCGridSet();
-            ucTextBox26 = new Ctrls.UCTextBox();
-            ucTextBox27 = new Ctrls.UCTextBox();
-            ucTextBox28 = new Ctrls.UCTextBox();
-            ucTextBox29 = new Ctrls.UCTextBox();
-            ucTextBox30 = new Ctrls.UCTextBox();
-            ucTextBox31 = new Ctrls.UCTextBox();
-            ucTextBox32 = new Ctrls.UCTextBox();
-            ucTextBox33 = new Ctrls.UCTextBox();
-            ucTextBox34 = new Ctrls.UCTextBox();
-            ucTextBox35 = new Ctrls.UCTextBox();
-            ucTextBox36 = new Ctrls.UCTextBox();
-            ucTextBox37 = new Ctrls.UCTextBox();
-            ucTextBox38 = new Ctrls.UCTextBox();
-            ucTextBox39 = new Ctrls.UCTextBox();
-            ucTextBox40 = new Ctrls.UCTextBox();
-            ucTextBox41 = new Ctrls.UCTextBox();
-            ucTextBox42 = new Ctrls.UCTextBox();
-            ucTextBox43 = new Ctrls.UCTextBox();
-            ucTextBox44 = new Ctrls.UCTextBox();
-            ucTextBox46 = new Ctrls.UCTextBox();
-            ucTextBox47 = new Ctrls.UCTextBox();
-            ucTextBox48 = new Ctrls.UCTextBox();
-            ucTextBox50 = new Ctrls.UCTextBox();
+            checkBox1 = new CheckBox();
+            checkBox2 = new CheckBox();
+            checkBox3 = new CheckBox();
+            checkBox4 = new CheckBox();
+            checkBox5 = new CheckBox();
+            checkBox6 = new CheckBox();
+            checkBox7 = new CheckBox();
+            checkBox8 = new CheckBox();
+            checkBox9 = new CheckBox();
+            checkBox10 = new CheckBox();
+            checkBox11 = new CheckBox();
+            checkBox12 = new CheckBox();
+            checkBox13 = new CheckBox();
+            checkBox14 = new CheckBox();
+            checkBox15 = new CheckBox();
+            checkBox16 = new CheckBox();
+            checkBox17 = new CheckBox();
+            checkBox18 = new CheckBox();
+            checkBox19 = new CheckBox();
+            checkBox20 = new CheckBox();
+            checkBox22 = new CheckBox();
+            checkBox23 = new CheckBox();
+            checkBox24 = new CheckBox();
+            checkBox25 = new CheckBox();
             ((System.ComponentModel.ISupportInitialize)ucTab1).BeginInit();
             ucTab1.SuspendLayout();
             xtraTabPage1.SuspendLayout();
@@ -323,6 +347,30 @@
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(checkBox22);
+            groupBox1.Controls.Add(checkBox23);
+            groupBox1.Controls.Add(checkBox24);
+            groupBox1.Controls.Add(checkBox25);
+            groupBox1.Controls.Add(checkBox16);
+            groupBox1.Controls.Add(checkBox17);
+            groupBox1.Controls.Add(checkBox18);
+            groupBox1.Controls.Add(checkBox19);
+            groupBox1.Controls.Add(checkBox20);
+            groupBox1.Controls.Add(checkBox11);
+            groupBox1.Controls.Add(checkBox12);
+            groupBox1.Controls.Add(checkBox13);
+            groupBox1.Controls.Add(checkBox14);
+            groupBox1.Controls.Add(checkBox15);
+            groupBox1.Controls.Add(checkBox6);
+            groupBox1.Controls.Add(checkBox7);
+            groupBox1.Controls.Add(checkBox8);
+            groupBox1.Controls.Add(checkBox9);
+            groupBox1.Controls.Add(checkBox10);
+            groupBox1.Controls.Add(checkBox5);
+            groupBox1.Controls.Add(checkBox4);
+            groupBox1.Controls.Add(checkBox3);
+            groupBox1.Controls.Add(checkBox2);
+            groupBox1.Controls.Add(checkBox1);
             groupBox1.Controls.Add(ucTextBox46);
             groupBox1.Controls.Add(ucTextBox47);
             groupBox1.Controls.Add(ucTextBox48);
@@ -405,6 +453,329 @@
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Step";
+            // 
+            // ucTextBox46
+            // 
+            ucTextBox46.ControlHeight = 21;
+            ucTextBox46.ControlWidth = 57;
+            ucTextBox46.FontColor = Color.Black;
+            ucTextBox46.FontFace = "Tahoma";
+            ucTextBox46.FontSize = 9F;
+            ucTextBox46.FormatStr = "";
+            ucTextBox46.Location = new Point(438, 600);
+            ucTextBox46.Name = "ucTextBox46";
+            ucTextBox46.Size = new Size(57, 21);
+            ucTextBox46.TabIndex = 63;
+            ucTextBox46.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox46.Title = "/";
+            ucTextBox46.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox46.TitleWidth = 10;
+            // 
+            // ucTextBox47
+            // 
+            ucTextBox47.ControlHeight = 21;
+            ucTextBox47.ControlWidth = 57;
+            ucTextBox47.FontColor = Color.Black;
+            ucTextBox47.FontFace = "Tahoma";
+            ucTextBox47.FontSize = 9F;
+            ucTextBox47.FormatStr = "";
+            ucTextBox47.Location = new Point(438, 575);
+            ucTextBox47.Name = "ucTextBox47";
+            ucTextBox47.Size = new Size(57, 21);
+            ucTextBox47.TabIndex = 64;
+            ucTextBox47.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox47.Title = "/";
+            ucTextBox47.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox47.TitleWidth = 10;
+            // 
+            // ucTextBox48
+            // 
+            ucTextBox48.ControlHeight = 21;
+            ucTextBox48.ControlWidth = 57;
+            ucTextBox48.FontColor = Color.Black;
+            ucTextBox48.FontFace = "Tahoma";
+            ucTextBox48.FontSize = 9F;
+            ucTextBox48.FormatStr = "";
+            ucTextBox48.Location = new Point(438, 550);
+            ucTextBox48.Name = "ucTextBox48";
+            ucTextBox48.Size = new Size(57, 21);
+            ucTextBox48.TabIndex = 65;
+            ucTextBox48.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox48.Title = "/";
+            ucTextBox48.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox48.TitleWidth = 10;
+            // 
+            // ucTextBox50
+            // 
+            ucTextBox50.ControlHeight = 21;
+            ucTextBox50.ControlWidth = 57;
+            ucTextBox50.FontColor = Color.Black;
+            ucTextBox50.FontFace = "Tahoma";
+            ucTextBox50.FontSize = 9F;
+            ucTextBox50.FormatStr = "";
+            ucTextBox50.Location = new Point(438, 526);
+            ucTextBox50.Name = "ucTextBox50";
+            ucTextBox50.Size = new Size(57, 21);
+            ucTextBox50.TabIndex = 66;
+            ucTextBox50.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox50.Title = "/";
+            ucTextBox50.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox50.TitleWidth = 10;
+            // 
+            // ucTextBox40
+            // 
+            ucTextBox40.ControlHeight = 21;
+            ucTextBox40.ControlWidth = 57;
+            ucTextBox40.FontColor = Color.Black;
+            ucTextBox40.FontFace = "Tahoma";
+            ucTextBox40.FontSize = 9F;
+            ucTextBox40.FormatStr = "";
+            ucTextBox40.Location = new Point(438, 501);
+            ucTextBox40.Name = "ucTextBox40";
+            ucTextBox40.Size = new Size(57, 21);
+            ucTextBox40.TabIndex = 57;
+            ucTextBox40.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox40.Title = "/";
+            ucTextBox40.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox40.TitleWidth = 10;
+            // 
+            // ucTextBox41
+            // 
+            ucTextBox41.ControlHeight = 21;
+            ucTextBox41.ControlWidth = 57;
+            ucTextBox41.FontColor = Color.Black;
+            ucTextBox41.FontFace = "Tahoma";
+            ucTextBox41.FontSize = 9F;
+            ucTextBox41.FormatStr = "";
+            ucTextBox41.Location = new Point(438, 476);
+            ucTextBox41.Name = "ucTextBox41";
+            ucTextBox41.Size = new Size(57, 21);
+            ucTextBox41.TabIndex = 58;
+            ucTextBox41.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox41.Title = "/";
+            ucTextBox41.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox41.TitleWidth = 10;
+            // 
+            // ucTextBox42
+            // 
+            ucTextBox42.ControlHeight = 21;
+            ucTextBox42.ControlWidth = 57;
+            ucTextBox42.FontColor = Color.Black;
+            ucTextBox42.FontFace = "Tahoma";
+            ucTextBox42.FontSize = 9F;
+            ucTextBox42.FormatStr = "";
+            ucTextBox42.Location = new Point(438, 451);
+            ucTextBox42.Name = "ucTextBox42";
+            ucTextBox42.Size = new Size(57, 21);
+            ucTextBox42.TabIndex = 59;
+            ucTextBox42.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox42.Title = "/";
+            ucTextBox42.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox42.TitleWidth = 10;
+            // 
+            // ucTextBox43
+            // 
+            ucTextBox43.ControlHeight = 21;
+            ucTextBox43.ControlWidth = 57;
+            ucTextBox43.FontColor = Color.Black;
+            ucTextBox43.FontFace = "Tahoma";
+            ucTextBox43.FontSize = 9F;
+            ucTextBox43.FormatStr = "";
+            ucTextBox43.Location = new Point(438, 426);
+            ucTextBox43.Name = "ucTextBox43";
+            ucTextBox43.Size = new Size(57, 21);
+            ucTextBox43.TabIndex = 60;
+            ucTextBox43.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox43.Title = "/";
+            ucTextBox43.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox43.TitleWidth = 10;
+            // 
+            // ucTextBox44
+            // 
+            ucTextBox44.ControlHeight = 21;
+            ucTextBox44.ControlWidth = 57;
+            ucTextBox44.FontColor = Color.Black;
+            ucTextBox44.FontFace = "Tahoma";
+            ucTextBox44.FontSize = 9F;
+            ucTextBox44.FormatStr = "";
+            ucTextBox44.Location = new Point(438, 402);
+            ucTextBox44.Name = "ucTextBox44";
+            ucTextBox44.Size = new Size(57, 21);
+            ucTextBox44.TabIndex = 61;
+            ucTextBox44.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox44.Title = "/";
+            ucTextBox44.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox44.TitleWidth = 10;
+            // 
+            // ucTextBox35
+            // 
+            ucTextBox35.ControlHeight = 21;
+            ucTextBox35.ControlWidth = 57;
+            ucTextBox35.FontColor = Color.Black;
+            ucTextBox35.FontFace = "Tahoma";
+            ucTextBox35.FontSize = 9F;
+            ucTextBox35.FormatStr = "";
+            ucTextBox35.Location = new Point(438, 377);
+            ucTextBox35.Name = "ucTextBox35";
+            ucTextBox35.Size = new Size(57, 21);
+            ucTextBox35.TabIndex = 52;
+            ucTextBox35.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox35.Title = "/";
+            ucTextBox35.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox35.TitleWidth = 10;
+            // 
+            // ucTextBox36
+            // 
+            ucTextBox36.ControlHeight = 21;
+            ucTextBox36.ControlWidth = 57;
+            ucTextBox36.FontColor = Color.Black;
+            ucTextBox36.FontFace = "Tahoma";
+            ucTextBox36.FontSize = 9F;
+            ucTextBox36.FormatStr = "";
+            ucTextBox36.Location = new Point(438, 352);
+            ucTextBox36.Name = "ucTextBox36";
+            ucTextBox36.Size = new Size(57, 21);
+            ucTextBox36.TabIndex = 53;
+            ucTextBox36.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox36.Title = "/";
+            ucTextBox36.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox36.TitleWidth = 10;
+            // 
+            // ucTextBox37
+            // 
+            ucTextBox37.ControlHeight = 21;
+            ucTextBox37.ControlWidth = 57;
+            ucTextBox37.FontColor = Color.Black;
+            ucTextBox37.FontFace = "Tahoma";
+            ucTextBox37.FontSize = 9F;
+            ucTextBox37.FormatStr = "";
+            ucTextBox37.Location = new Point(438, 327);
+            ucTextBox37.Name = "ucTextBox37";
+            ucTextBox37.Size = new Size(57, 21);
+            ucTextBox37.TabIndex = 54;
+            ucTextBox37.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox37.Title = "/";
+            ucTextBox37.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox37.TitleWidth = 10;
+            // 
+            // ucTextBox38
+            // 
+            ucTextBox38.ControlHeight = 21;
+            ucTextBox38.ControlWidth = 57;
+            ucTextBox38.FontColor = Color.Black;
+            ucTextBox38.FontFace = "Tahoma";
+            ucTextBox38.FontSize = 9F;
+            ucTextBox38.FormatStr = "";
+            ucTextBox38.Location = new Point(438, 302);
+            ucTextBox38.Name = "ucTextBox38";
+            ucTextBox38.Size = new Size(57, 21);
+            ucTextBox38.TabIndex = 55;
+            ucTextBox38.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox38.Title = "/";
+            ucTextBox38.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox38.TitleWidth = 10;
+            // 
+            // ucTextBox39
+            // 
+            ucTextBox39.ControlHeight = 21;
+            ucTextBox39.ControlWidth = 57;
+            ucTextBox39.FontColor = Color.Black;
+            ucTextBox39.FontFace = "Tahoma";
+            ucTextBox39.FontSize = 9F;
+            ucTextBox39.FormatStr = "";
+            ucTextBox39.Location = new Point(438, 278);
+            ucTextBox39.Name = "ucTextBox39";
+            ucTextBox39.Size = new Size(57, 21);
+            ucTextBox39.TabIndex = 56;
+            ucTextBox39.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox39.Title = "/";
+            ucTextBox39.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox39.TitleWidth = 10;
+            // 
+            // ucTextBox30
+            // 
+            ucTextBox30.ControlHeight = 21;
+            ucTextBox30.ControlWidth = 57;
+            ucTextBox30.FontColor = Color.Black;
+            ucTextBox30.FontFace = "Tahoma";
+            ucTextBox30.FontSize = 9F;
+            ucTextBox30.FormatStr = "";
+            ucTextBox30.Location = new Point(438, 254);
+            ucTextBox30.Name = "ucTextBox30";
+            ucTextBox30.Size = new Size(57, 21);
+            ucTextBox30.TabIndex = 47;
+            ucTextBox30.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox30.Title = "/";
+            ucTextBox30.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox30.TitleWidth = 10;
+            // 
+            // ucTextBox31
+            // 
+            ucTextBox31.ControlHeight = 21;
+            ucTextBox31.ControlWidth = 57;
+            ucTextBox31.FontColor = Color.Black;
+            ucTextBox31.FontFace = "Tahoma";
+            ucTextBox31.FontSize = 9F;
+            ucTextBox31.FormatStr = "";
+            ucTextBox31.Location = new Point(438, 229);
+            ucTextBox31.Name = "ucTextBox31";
+            ucTextBox31.Size = new Size(57, 21);
+            ucTextBox31.TabIndex = 48;
+            ucTextBox31.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox31.Title = "/";
+            ucTextBox31.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox31.TitleWidth = 10;
+            // 
+            // ucTextBox32
+            // 
+            ucTextBox32.ControlHeight = 21;
+            ucTextBox32.ControlWidth = 57;
+            ucTextBox32.FontColor = Color.Black;
+            ucTextBox32.FontFace = "Tahoma";
+            ucTextBox32.FontSize = 9F;
+            ucTextBox32.FormatStr = "";
+            ucTextBox32.Location = new Point(438, 204);
+            ucTextBox32.Name = "ucTextBox32";
+            ucTextBox32.Size = new Size(57, 21);
+            ucTextBox32.TabIndex = 49;
+            ucTextBox32.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox32.Title = "/";
+            ucTextBox32.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox32.TitleWidth = 10;
+            // 
+            // ucTextBox33
+            // 
+            ucTextBox33.ControlHeight = 21;
+            ucTextBox33.ControlWidth = 57;
+            ucTextBox33.FontColor = Color.Black;
+            ucTextBox33.FontFace = "Tahoma";
+            ucTextBox33.FontSize = 9F;
+            ucTextBox33.FormatStr = "";
+            ucTextBox33.Location = new Point(438, 179);
+            ucTextBox33.Name = "ucTextBox33";
+            ucTextBox33.Size = new Size(57, 21);
+            ucTextBox33.TabIndex = 50;
+            ucTextBox33.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox33.Title = "/";
+            ucTextBox33.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox33.TitleWidth = 10;
+            // 
+            // ucTextBox34
+            // 
+            ucTextBox34.ControlHeight = 21;
+            ucTextBox34.ControlWidth = 57;
+            ucTextBox34.FontColor = Color.Black;
+            ucTextBox34.FontFace = "Tahoma";
+            ucTextBox34.FontSize = 9F;
+            ucTextBox34.FormatStr = "";
+            ucTextBox34.Location = new Point(438, 155);
+            ucTextBox34.Name = "ucTextBox34";
+            ucTextBox34.Size = new Size(57, 21);
+            ucTextBox34.TabIndex = 51;
+            ucTextBox34.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox34.Title = "/";
+            ucTextBox34.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox34.TitleWidth = 10;
             // 
             // label3
             // 
@@ -844,6 +1215,74 @@
             ucTextBox2.Title = "";
             ucTextBox2.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
             ucTextBox2.TitleWidth = 1;
+            // 
+            // ucTextBox29
+            // 
+            ucTextBox29.ControlHeight = 21;
+            ucTextBox29.ControlWidth = 57;
+            ucTextBox29.FontColor = Color.Black;
+            ucTextBox29.FontFace = "Tahoma";
+            ucTextBox29.FontSize = 9F;
+            ucTextBox29.FormatStr = "";
+            ucTextBox29.Location = new Point(438, 130);
+            ucTextBox29.Name = "ucTextBox29";
+            ucTextBox29.Size = new Size(57, 21);
+            ucTextBox29.TabIndex = 21;
+            ucTextBox29.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox29.Title = "/";
+            ucTextBox29.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox29.TitleWidth = 10;
+            // 
+            // ucTextBox28
+            // 
+            ucTextBox28.ControlHeight = 21;
+            ucTextBox28.ControlWidth = 57;
+            ucTextBox28.FontColor = Color.Black;
+            ucTextBox28.FontFace = "Tahoma";
+            ucTextBox28.FontSize = 9F;
+            ucTextBox28.FormatStr = "";
+            ucTextBox28.Location = new Point(438, 105);
+            ucTextBox28.Name = "ucTextBox28";
+            ucTextBox28.Size = new Size(57, 21);
+            ucTextBox28.TabIndex = 21;
+            ucTextBox28.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox28.Title = "/";
+            ucTextBox28.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox28.TitleWidth = 10;
+            // 
+            // ucTextBox27
+            // 
+            ucTextBox27.ControlHeight = 21;
+            ucTextBox27.ControlWidth = 57;
+            ucTextBox27.FontColor = Color.Black;
+            ucTextBox27.FontFace = "Tahoma";
+            ucTextBox27.FontSize = 9F;
+            ucTextBox27.FormatStr = "";
+            ucTextBox27.Location = new Point(438, 80);
+            ucTextBox27.Name = "ucTextBox27";
+            ucTextBox27.Size = new Size(57, 21);
+            ucTextBox27.TabIndex = 21;
+            ucTextBox27.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox27.Title = "/";
+            ucTextBox27.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox27.TitleWidth = 10;
+            // 
+            // ucTextBox26
+            // 
+            ucTextBox26.ControlHeight = 21;
+            ucTextBox26.ControlWidth = 57;
+            ucTextBox26.FontColor = Color.Black;
+            ucTextBox26.FontFace = "Tahoma";
+            ucTextBox26.FontSize = 9F;
+            ucTextBox26.FormatStr = "";
+            ucTextBox26.Location = new Point(438, 55);
+            ucTextBox26.Name = "ucTextBox26";
+            ucTextBox26.Size = new Size(57, 21);
+            ucTextBox26.TabIndex = 21;
+            ucTextBox26.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox26.Title = "/";
+            ucTextBox26.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox26.TitleWidth = 10;
             // 
             // ucTextBox21
             // 
@@ -1365,6 +1804,7 @@
             // ucSplit5
             // 
             ucSplit5.Dock = DockStyle.Fill;
+            ucSplit5.FixedPanel = FixedPanel.Panel1;
             ucSplit5.Location = new Point(0, 0);
             ucSplit5.Name = "ucSplit5";
             // 
@@ -1461,7 +1901,7 @@
             // 
             ucSplit6.Panel2.Controls.Add(ucPanel6);
             ucSplit6.Size = new Size(1075, 89);
-            ucSplit6.SplitterDistance = 352;
+            ucSplit6.SplitterDistance = 366;
             ucSplit6.TabIndex = 0;
             ucSplit6.TitleWidth = 121;
             // 
@@ -1471,7 +1911,7 @@
             g20.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             g20.Location = new Point(0, 0);
             g20.Name = "g20";
-            g20.Size = new Size(352, 89);
+            g20.Size = new Size(366, 89);
             g20.TabIndex = 0;
             // 
             // ucPanel6
@@ -1485,7 +1925,7 @@
             ucPanel6.Dock = DockStyle.Fill;
             ucPanel6.Location = new Point(0, 0);
             ucPanel6.Name = "ucPanel6";
-            ucPanel6.Size = new Size(719, 89);
+            ucPanel6.Size = new Size(705, 89);
             ucPanel6.TabIndex = 0;
             ucPanel6.Text = "Search";
             // 
@@ -1655,396 +2095,221 @@
             g40.Size = new Size(1419, 343);
             g40.TabIndex = 0;
             // 
-            // ucTextBox26
+            // checkBox1
             // 
-            ucTextBox26.ControlHeight = 21;
-            ucTextBox26.ControlWidth = 57;
-            ucTextBox26.FontColor = Color.Black;
-            ucTextBox26.FontFace = "Tahoma";
-            ucTextBox26.FontSize = 9F;
-            ucTextBox26.FormatStr = "";
-            ucTextBox26.Location = new Point(438, 55);
-            ucTextBox26.Name = "ucTextBox26";
-            ucTextBox26.Size = new Size(57, 21);
-            ucTextBox26.TabIndex = 21;
-            ucTextBox26.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox26.Title = "/";
-            ucTextBox26.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox26.TitleWidth = 10;
+            checkBox1.AutoSize = true;
+            checkBox1.Location = new Point(342, 35);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(15, 14);
+            checkBox1.TabIndex = 67;
+            checkBox1.UseVisualStyleBackColor = true;
             // 
-            // ucTextBox27
+            // checkBox2
             // 
-            ucTextBox27.ControlHeight = 21;
-            ucTextBox27.ControlWidth = 57;
-            ucTextBox27.FontColor = Color.Black;
-            ucTextBox27.FontFace = "Tahoma";
-            ucTextBox27.FontSize = 9F;
-            ucTextBox27.FormatStr = "";
-            ucTextBox27.Location = new Point(438, 80);
-            ucTextBox27.Name = "ucTextBox27";
-            ucTextBox27.Size = new Size(57, 21);
-            ucTextBox27.TabIndex = 21;
-            ucTextBox27.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox27.Title = "/";
-            ucTextBox27.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox27.TitleWidth = 10;
+            checkBox2.AutoSize = true;
+            checkBox2.Location = new Point(342, 59);
+            checkBox2.Name = "checkBox2";
+            checkBox2.Size = new Size(15, 14);
+            checkBox2.TabIndex = 67;
+            checkBox2.UseVisualStyleBackColor = true;
             // 
-            // ucTextBox28
+            // checkBox3
             // 
-            ucTextBox28.ControlHeight = 21;
-            ucTextBox28.ControlWidth = 57;
-            ucTextBox28.FontColor = Color.Black;
-            ucTextBox28.FontFace = "Tahoma";
-            ucTextBox28.FontSize = 9F;
-            ucTextBox28.FormatStr = "";
-            ucTextBox28.Location = new Point(438, 105);
-            ucTextBox28.Name = "ucTextBox28";
-            ucTextBox28.Size = new Size(57, 21);
-            ucTextBox28.TabIndex = 21;
-            ucTextBox28.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox28.Title = "/";
-            ucTextBox28.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox28.TitleWidth = 10;
+            checkBox3.AutoSize = true;
+            checkBox3.Location = new Point(342, 84);
+            checkBox3.Name = "checkBox3";
+            checkBox3.Size = new Size(15, 14);
+            checkBox3.TabIndex = 68;
+            checkBox3.UseVisualStyleBackColor = true;
             // 
-            // ucTextBox29
+            // checkBox4
             // 
-            ucTextBox29.ControlHeight = 21;
-            ucTextBox29.ControlWidth = 57;
-            ucTextBox29.FontColor = Color.Black;
-            ucTextBox29.FontFace = "Tahoma";
-            ucTextBox29.FontSize = 9F;
-            ucTextBox29.FormatStr = "";
-            ucTextBox29.Location = new Point(438, 130);
-            ucTextBox29.Name = "ucTextBox29";
-            ucTextBox29.Size = new Size(57, 21);
-            ucTextBox29.TabIndex = 21;
-            ucTextBox29.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox29.Title = "/";
-            ucTextBox29.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox29.TitleWidth = 10;
+            checkBox4.AutoSize = true;
+            checkBox4.Location = new Point(342, 109);
+            checkBox4.Name = "checkBox4";
+            checkBox4.Size = new Size(15, 14);
+            checkBox4.TabIndex = 69;
+            checkBox4.UseVisualStyleBackColor = true;
             // 
-            // ucTextBox30
+            // checkBox5
             // 
-            ucTextBox30.ControlHeight = 21;
-            ucTextBox30.ControlWidth = 57;
-            ucTextBox30.FontColor = Color.Black;
-            ucTextBox30.FontFace = "Tahoma";
-            ucTextBox30.FontSize = 9F;
-            ucTextBox30.FormatStr = "";
-            ucTextBox30.Location = new Point(438, 254);
-            ucTextBox30.Name = "ucTextBox30";
-            ucTextBox30.Size = new Size(57, 21);
-            ucTextBox30.TabIndex = 47;
-            ucTextBox30.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox30.Title = "/";
-            ucTextBox30.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox30.TitleWidth = 10;
+            checkBox5.AutoSize = true;
+            checkBox5.Location = new Point(342, 133);
+            checkBox5.Name = "checkBox5";
+            checkBox5.Size = new Size(15, 14);
+            checkBox5.TabIndex = 70;
+            checkBox5.UseVisualStyleBackColor = true;
             // 
-            // ucTextBox31
+            // checkBox6
             // 
-            ucTextBox31.ControlHeight = 21;
-            ucTextBox31.ControlWidth = 57;
-            ucTextBox31.FontColor = Color.Black;
-            ucTextBox31.FontFace = "Tahoma";
-            ucTextBox31.FontSize = 9F;
-            ucTextBox31.FormatStr = "";
-            ucTextBox31.Location = new Point(438, 229);
-            ucTextBox31.Name = "ucTextBox31";
-            ucTextBox31.Size = new Size(57, 21);
-            ucTextBox31.TabIndex = 48;
-            ucTextBox31.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox31.Title = "/";
-            ucTextBox31.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox31.TitleWidth = 10;
+            checkBox6.AutoSize = true;
+            checkBox6.Location = new Point(342, 256);
+            checkBox6.Name = "checkBox6";
+            checkBox6.Size = new Size(15, 14);
+            checkBox6.TabIndex = 75;
+            checkBox6.UseVisualStyleBackColor = true;
             // 
-            // ucTextBox32
+            // checkBox7
             // 
-            ucTextBox32.ControlHeight = 21;
-            ucTextBox32.ControlWidth = 57;
-            ucTextBox32.FontColor = Color.Black;
-            ucTextBox32.FontFace = "Tahoma";
-            ucTextBox32.FontSize = 9F;
-            ucTextBox32.FormatStr = "";
-            ucTextBox32.Location = new Point(438, 204);
-            ucTextBox32.Name = "ucTextBox32";
-            ucTextBox32.Size = new Size(57, 21);
-            ucTextBox32.TabIndex = 49;
-            ucTextBox32.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox32.Title = "/";
-            ucTextBox32.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox32.TitleWidth = 10;
+            checkBox7.AutoSize = true;
+            checkBox7.Location = new Point(342, 232);
+            checkBox7.Name = "checkBox7";
+            checkBox7.Size = new Size(15, 14);
+            checkBox7.TabIndex = 74;
+            checkBox7.UseVisualStyleBackColor = true;
             // 
-            // ucTextBox33
+            // checkBox8
             // 
-            ucTextBox33.ControlHeight = 21;
-            ucTextBox33.ControlWidth = 57;
-            ucTextBox33.FontColor = Color.Black;
-            ucTextBox33.FontFace = "Tahoma";
-            ucTextBox33.FontSize = 9F;
-            ucTextBox33.FormatStr = "";
-            ucTextBox33.Location = new Point(438, 179);
-            ucTextBox33.Name = "ucTextBox33";
-            ucTextBox33.Size = new Size(57, 21);
-            ucTextBox33.TabIndex = 50;
-            ucTextBox33.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox33.Title = "/";
-            ucTextBox33.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox33.TitleWidth = 10;
+            checkBox8.AutoSize = true;
+            checkBox8.Location = new Point(342, 207);
+            checkBox8.Name = "checkBox8";
+            checkBox8.Size = new Size(15, 14);
+            checkBox8.TabIndex = 73;
+            checkBox8.UseVisualStyleBackColor = true;
             // 
-            // ucTextBox34
+            // checkBox9
             // 
-            ucTextBox34.ControlHeight = 21;
-            ucTextBox34.ControlWidth = 57;
-            ucTextBox34.FontColor = Color.Black;
-            ucTextBox34.FontFace = "Tahoma";
-            ucTextBox34.FontSize = 9F;
-            ucTextBox34.FormatStr = "";
-            ucTextBox34.Location = new Point(438, 155);
-            ucTextBox34.Name = "ucTextBox34";
-            ucTextBox34.Size = new Size(57, 21);
-            ucTextBox34.TabIndex = 51;
-            ucTextBox34.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox34.Title = "/";
-            ucTextBox34.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox34.TitleWidth = 10;
+            checkBox9.AutoSize = true;
+            checkBox9.Location = new Point(342, 182);
+            checkBox9.Name = "checkBox9";
+            checkBox9.Size = new Size(15, 14);
+            checkBox9.TabIndex = 71;
+            checkBox9.UseVisualStyleBackColor = true;
             // 
-            // ucTextBox35
+            // checkBox10
             // 
-            ucTextBox35.ControlHeight = 21;
-            ucTextBox35.ControlWidth = 57;
-            ucTextBox35.FontColor = Color.Black;
-            ucTextBox35.FontFace = "Tahoma";
-            ucTextBox35.FontSize = 9F;
-            ucTextBox35.FormatStr = "";
-            ucTextBox35.Location = new Point(438, 377);
-            ucTextBox35.Name = "ucTextBox35";
-            ucTextBox35.Size = new Size(57, 21);
-            ucTextBox35.TabIndex = 52;
-            ucTextBox35.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox35.Title = "/";
-            ucTextBox35.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox35.TitleWidth = 10;
+            checkBox10.AutoSize = true;
+            checkBox10.Location = new Point(342, 158);
+            checkBox10.Name = "checkBox10";
+            checkBox10.Size = new Size(15, 14);
+            checkBox10.TabIndex = 72;
+            checkBox10.UseVisualStyleBackColor = true;
             // 
-            // ucTextBox36
+            // checkBox11
             // 
-            ucTextBox36.ControlHeight = 21;
-            ucTextBox36.ControlWidth = 57;
-            ucTextBox36.FontColor = Color.Black;
-            ucTextBox36.FontFace = "Tahoma";
-            ucTextBox36.FontSize = 9F;
-            ucTextBox36.FormatStr = "";
-            ucTextBox36.Location = new Point(438, 352);
-            ucTextBox36.Name = "ucTextBox36";
-            ucTextBox36.Size = new Size(57, 21);
-            ucTextBox36.TabIndex = 53;
-            ucTextBox36.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox36.Title = "/";
-            ucTextBox36.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox36.TitleWidth = 10;
+            checkBox11.AutoSize = true;
+            checkBox11.Location = new Point(342, 381);
+            checkBox11.Name = "checkBox11";
+            checkBox11.Size = new Size(15, 14);
+            checkBox11.TabIndex = 80;
+            checkBox11.UseVisualStyleBackColor = true;
             // 
-            // ucTextBox37
+            // checkBox12
             // 
-            ucTextBox37.ControlHeight = 21;
-            ucTextBox37.ControlWidth = 57;
-            ucTextBox37.FontColor = Color.Black;
-            ucTextBox37.FontFace = "Tahoma";
-            ucTextBox37.FontSize = 9F;
-            ucTextBox37.FormatStr = "";
-            ucTextBox37.Location = new Point(438, 327);
-            ucTextBox37.Name = "ucTextBox37";
-            ucTextBox37.Size = new Size(57, 21);
-            ucTextBox37.TabIndex = 54;
-            ucTextBox37.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox37.Title = "/";
-            ucTextBox37.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox37.TitleWidth = 10;
+            checkBox12.AutoSize = true;
+            checkBox12.Location = new Point(342, 357);
+            checkBox12.Name = "checkBox12";
+            checkBox12.Size = new Size(15, 14);
+            checkBox12.TabIndex = 79;
+            checkBox12.UseVisualStyleBackColor = true;
             // 
-            // ucTextBox38
+            // checkBox13
             // 
-            ucTextBox38.ControlHeight = 21;
-            ucTextBox38.ControlWidth = 57;
-            ucTextBox38.FontColor = Color.Black;
-            ucTextBox38.FontFace = "Tahoma";
-            ucTextBox38.FontSize = 9F;
-            ucTextBox38.FormatStr = "";
-            ucTextBox38.Location = new Point(438, 302);
-            ucTextBox38.Name = "ucTextBox38";
-            ucTextBox38.Size = new Size(57, 21);
-            ucTextBox38.TabIndex = 55;
-            ucTextBox38.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox38.Title = "/";
-            ucTextBox38.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox38.TitleWidth = 10;
+            checkBox13.AutoSize = true;
+            checkBox13.Location = new Point(342, 332);
+            checkBox13.Name = "checkBox13";
+            checkBox13.Size = new Size(15, 14);
+            checkBox13.TabIndex = 78;
+            checkBox13.UseVisualStyleBackColor = true;
             // 
-            // ucTextBox39
+            // checkBox14
             // 
-            ucTextBox39.ControlHeight = 21;
-            ucTextBox39.ControlWidth = 57;
-            ucTextBox39.FontColor = Color.Black;
-            ucTextBox39.FontFace = "Tahoma";
-            ucTextBox39.FontSize = 9F;
-            ucTextBox39.FormatStr = "";
-            ucTextBox39.Location = new Point(438, 278);
-            ucTextBox39.Name = "ucTextBox39";
-            ucTextBox39.Size = new Size(57, 21);
-            ucTextBox39.TabIndex = 56;
-            ucTextBox39.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox39.Title = "/";
-            ucTextBox39.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox39.TitleWidth = 10;
+            checkBox14.AutoSize = true;
+            checkBox14.Location = new Point(342, 305);
+            checkBox14.Name = "checkBox14";
+            checkBox14.Size = new Size(15, 14);
+            checkBox14.TabIndex = 76;
+            checkBox14.UseVisualStyleBackColor = true;
             // 
-            // ucTextBox40
+            // checkBox15
             // 
-            ucTextBox40.ControlHeight = 21;
-            ucTextBox40.ControlWidth = 57;
-            ucTextBox40.FontColor = Color.Black;
-            ucTextBox40.FontFace = "Tahoma";
-            ucTextBox40.FontSize = 9F;
-            ucTextBox40.FormatStr = "";
-            ucTextBox40.Location = new Point(438, 501);
-            ucTextBox40.Name = "ucTextBox40";
-            ucTextBox40.Size = new Size(57, 21);
-            ucTextBox40.TabIndex = 57;
-            ucTextBox40.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox40.Title = "/";
-            ucTextBox40.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox40.TitleWidth = 10;
+            checkBox15.AutoSize = true;
+            checkBox15.Location = new Point(342, 278);
+            checkBox15.Name = "checkBox15";
+            checkBox15.Size = new Size(15, 14);
+            checkBox15.TabIndex = 77;
+            checkBox15.UseVisualStyleBackColor = true;
             // 
-            // ucTextBox41
+            // checkBox16
             // 
-            ucTextBox41.ControlHeight = 21;
-            ucTextBox41.ControlWidth = 57;
-            ucTextBox41.FontColor = Color.Black;
-            ucTextBox41.FontFace = "Tahoma";
-            ucTextBox41.FontSize = 9F;
-            ucTextBox41.FormatStr = "";
-            ucTextBox41.Location = new Point(438, 476);
-            ucTextBox41.Name = "ucTextBox41";
-            ucTextBox41.Size = new Size(57, 21);
-            ucTextBox41.TabIndex = 58;
-            ucTextBox41.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox41.Title = "/";
-            ucTextBox41.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox41.TitleWidth = 10;
+            checkBox16.AutoSize = true;
+            checkBox16.Location = new Point(342, 506);
+            checkBox16.Name = "checkBox16";
+            checkBox16.Size = new Size(15, 14);
+            checkBox16.TabIndex = 85;
+            checkBox16.UseVisualStyleBackColor = true;
             // 
-            // ucTextBox42
+            // checkBox17
             // 
-            ucTextBox42.ControlHeight = 21;
-            ucTextBox42.ControlWidth = 57;
-            ucTextBox42.FontColor = Color.Black;
-            ucTextBox42.FontFace = "Tahoma";
-            ucTextBox42.FontSize = 9F;
-            ucTextBox42.FormatStr = "";
-            ucTextBox42.Location = new Point(438, 451);
-            ucTextBox42.Name = "ucTextBox42";
-            ucTextBox42.Size = new Size(57, 21);
-            ucTextBox42.TabIndex = 59;
-            ucTextBox42.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox42.Title = "/";
-            ucTextBox42.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox42.TitleWidth = 10;
+            checkBox17.AutoSize = true;
+            checkBox17.Location = new Point(342, 482);
+            checkBox17.Name = "checkBox17";
+            checkBox17.Size = new Size(15, 14);
+            checkBox17.TabIndex = 84;
+            checkBox17.UseVisualStyleBackColor = true;
             // 
-            // ucTextBox43
+            // checkBox18
             // 
-            ucTextBox43.ControlHeight = 21;
-            ucTextBox43.ControlWidth = 57;
-            ucTextBox43.FontColor = Color.Black;
-            ucTextBox43.FontFace = "Tahoma";
-            ucTextBox43.FontSize = 9F;
-            ucTextBox43.FormatStr = "";
-            ucTextBox43.Location = new Point(438, 426);
-            ucTextBox43.Name = "ucTextBox43";
-            ucTextBox43.Size = new Size(57, 21);
-            ucTextBox43.TabIndex = 60;
-            ucTextBox43.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox43.Title = "/";
-            ucTextBox43.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox43.TitleWidth = 10;
+            checkBox18.AutoSize = true;
+            checkBox18.Location = new Point(342, 457);
+            checkBox18.Name = "checkBox18";
+            checkBox18.Size = new Size(15, 14);
+            checkBox18.TabIndex = 83;
+            checkBox18.UseVisualStyleBackColor = true;
             // 
-            // ucTextBox44
+            // checkBox19
             // 
-            ucTextBox44.ControlHeight = 21;
-            ucTextBox44.ControlWidth = 57;
-            ucTextBox44.FontColor = Color.Black;
-            ucTextBox44.FontFace = "Tahoma";
-            ucTextBox44.FontSize = 9F;
-            ucTextBox44.FormatStr = "";
-            ucTextBox44.Location = new Point(438, 402);
-            ucTextBox44.Name = "ucTextBox44";
-            ucTextBox44.Size = new Size(57, 21);
-            ucTextBox44.TabIndex = 61;
-            ucTextBox44.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox44.Title = "/";
-            ucTextBox44.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox44.TitleWidth = 10;
+            checkBox19.AutoSize = true;
+            checkBox19.Location = new Point(342, 432);
+            checkBox19.Name = "checkBox19";
+            checkBox19.Size = new Size(15, 14);
+            checkBox19.TabIndex = 81;
+            checkBox19.UseVisualStyleBackColor = true;
             // 
-            // ucTextBox46
+            // checkBox20
             // 
-            ucTextBox46.ControlHeight = 21;
-            ucTextBox46.ControlWidth = 57;
-            ucTextBox46.FontColor = Color.Black;
-            ucTextBox46.FontFace = "Tahoma";
-            ucTextBox46.FontSize = 9F;
-            ucTextBox46.FormatStr = "";
-            ucTextBox46.Location = new Point(438, 600);
-            ucTextBox46.Name = "ucTextBox46";
-            ucTextBox46.Size = new Size(57, 21);
-            ucTextBox46.TabIndex = 63;
-            ucTextBox46.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox46.Title = "/";
-            ucTextBox46.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox46.TitleWidth = 10;
+            checkBox20.AutoSize = true;
+            checkBox20.Location = new Point(342, 408);
+            checkBox20.Name = "checkBox20";
+            checkBox20.Size = new Size(15, 14);
+            checkBox20.TabIndex = 82;
+            checkBox20.UseVisualStyleBackColor = true;
             // 
-            // ucTextBox47
+            // checkBox22
             // 
-            ucTextBox47.ControlHeight = 21;
-            ucTextBox47.ControlWidth = 57;
-            ucTextBox47.FontColor = Color.Black;
-            ucTextBox47.FontFace = "Tahoma";
-            ucTextBox47.FontSize = 9F;
-            ucTextBox47.FormatStr = "";
-            ucTextBox47.Location = new Point(438, 575);
-            ucTextBox47.Name = "ucTextBox47";
-            ucTextBox47.Size = new Size(57, 21);
-            ucTextBox47.TabIndex = 64;
-            ucTextBox47.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox47.Title = "/";
-            ucTextBox47.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox47.TitleWidth = 10;
+            checkBox22.AutoSize = true;
+            checkBox22.Location = new Point(342, 603);
+            checkBox22.Name = "checkBox22";
+            checkBox22.Size = new Size(15, 14);
+            checkBox22.TabIndex = 89;
+            checkBox22.UseVisualStyleBackColor = true;
             // 
-            // ucTextBox48
+            // checkBox23
             // 
-            ucTextBox48.ControlHeight = 21;
-            ucTextBox48.ControlWidth = 57;
-            ucTextBox48.FontColor = Color.Black;
-            ucTextBox48.FontFace = "Tahoma";
-            ucTextBox48.FontSize = 9F;
-            ucTextBox48.FormatStr = "";
-            ucTextBox48.Location = new Point(438, 550);
-            ucTextBox48.Name = "ucTextBox48";
-            ucTextBox48.Size = new Size(57, 21);
-            ucTextBox48.TabIndex = 65;
-            ucTextBox48.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox48.Title = "/";
-            ucTextBox48.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox48.TitleWidth = 10;
+            checkBox23.AutoSize = true;
+            checkBox23.Location = new Point(342, 578);
+            checkBox23.Name = "checkBox23";
+            checkBox23.Size = new Size(15, 14);
+            checkBox23.TabIndex = 88;
+            checkBox23.UseVisualStyleBackColor = true;
             // 
-            // ucTextBox50
+            // checkBox24
             // 
-            ucTextBox50.ControlHeight = 21;
-            ucTextBox50.ControlWidth = 57;
-            ucTextBox50.FontColor = Color.Black;
-            ucTextBox50.FontFace = "Tahoma";
-            ucTextBox50.FontSize = 9F;
-            ucTextBox50.FormatStr = "";
-            ucTextBox50.Location = new Point(438, 526);
-            ucTextBox50.Name = "ucTextBox50";
-            ucTextBox50.Size = new Size(57, 21);
-            ucTextBox50.TabIndex = 66;
-            ucTextBox50.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox50.Title = "/";
-            ucTextBox50.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox50.TitleWidth = 10;
+            checkBox24.AutoSize = true;
+            checkBox24.Location = new Point(342, 553);
+            checkBox24.Name = "checkBox24";
+            checkBox24.Size = new Size(15, 14);
+            checkBox24.TabIndex = 86;
+            checkBox24.UseVisualStyleBackColor = true;
+            // 
+            // checkBox25
+            // 
+            checkBox25.AutoSize = true;
+            checkBox25.Location = new Point(342, 529);
+            checkBox25.Name = "checkBox25";
+            checkBox25.Size = new Size(15, 14);
+            checkBox25.TabIndex = 87;
+            checkBox25.UseVisualStyleBackColor = true;
             // 
             // HR999
             // 
@@ -2208,5 +2473,29 @@
         private Ctrls.UCTextBox ucTextBox28;
         private Ctrls.UCTextBox ucTextBox27;
         private Ctrls.UCTextBox ucTextBox26;
+        private CheckBox checkBox3;
+        private CheckBox checkBox2;
+        private CheckBox checkBox1;
+        private CheckBox checkBox22;
+        private CheckBox checkBox23;
+        private CheckBox checkBox24;
+        private CheckBox checkBox25;
+        private CheckBox checkBox16;
+        private CheckBox checkBox17;
+        private CheckBox checkBox18;
+        private CheckBox checkBox19;
+        private CheckBox checkBox20;
+        private CheckBox checkBox11;
+        private CheckBox checkBox12;
+        private CheckBox checkBox13;
+        private CheckBox checkBox14;
+        private CheckBox checkBox15;
+        private CheckBox checkBox6;
+        private CheckBox checkBox7;
+        private CheckBox checkBox8;
+        private CheckBox checkBox9;
+        private CheckBox checkBox10;
+        private CheckBox checkBox5;
+        private CheckBox checkBox4;
     }
 }
