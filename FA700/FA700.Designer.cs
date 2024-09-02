@@ -36,7 +36,7 @@
             ucSplit3 = new Ctrls.UCSplit();
             ucPanel2 = new Ctrls.UCPanel();
             s_month = new Ctrls.UCDateBox();
-            ucGridSet1 = new Ctrls.UCGridSet();
+            g20 = new Ctrls.UCGridSet();
             ((System.ComponentModel.ISupportInitialize)ucSplit1).BeginInit();
             ucSplit1.Panel1.SuspendLayout();
             ucSplit1.Panel2.SuspendLayout();
@@ -131,6 +131,7 @@
             // ucSplit3
             // 
             ucSplit3.Dock = DockStyle.Fill;
+            ucSplit3.FixedPanel = FixedPanel.Panel1;
             ucSplit3.Location = new Point(0, 0);
             ucSplit3.Name = "ucSplit3";
             ucSplit3.Orientation = Orientation.Horizontal;
@@ -141,7 +142,7 @@
             // 
             // ucSplit3.Panel2
             // 
-            ucSplit3.Panel2.Controls.Add(ucGridSet1);
+            ucSplit3.Panel2.Controls.Add(g20);
             ucSplit3.Size = new Size(1129, 668);
             ucSplit3.SplitterDistance = 51;
             ucSplit3.TabIndex = 0;
@@ -174,13 +175,13 @@
             s_month.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
             s_month.TitleWidth = 100;
             // 
-            // ucGridSet1
+            // g20
             // 
-            ucGridSet1.Dock = DockStyle.Fill;
-            ucGridSet1.Location = new Point(0, 0);
-            ucGridSet1.Name = "ucGridSet1";
-            ucGridSet1.Size = new Size(1129, 613);
-            ucGridSet1.TabIndex = 0;
+            g20.Dock = DockStyle.Fill;
+            g20.Location = new Point(0, 0);
+            g20.Name = "g20";
+            g20.Size = new Size(1129, 613);
+            g20.TabIndex = 0;
             // 
             // FA700
             // 
@@ -218,6 +219,6 @@
         private Ctrls.UCSplit ucSplit3;
         private Ctrls.UCPanel ucPanel2;
         private Ctrls.UCDateBox s_month;
-        private Ctrls.UCGridSet ucGridSet1;
+        private Ctrls.UCGridSet g20;
     }
 }
