@@ -9,7 +9,7 @@
 
         private void HR675_Load(object sender, EventArgs e)
         {
-
+            g10.Open();
         }
     }
 }
