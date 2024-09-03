@@ -9,6 +9,8 @@ using DevExpress.XtraVerticalGrid.Rows;
 using System.Reflection;
 using DevExpress.XtraTreeList;
 using System.IO;
+using DevExpress.XtraCharts.Native;
+using EpicV004.Ctrls;
 
 namespace EpicV004.Frms
 {
@@ -42,6 +44,8 @@ namespace EpicV004.Frms
             #endregion
 
             EpicV004.FormMain.BarButtonActive += new EpicV004.FormMain.BarBtnEventHandler(BarButtonAction);
+
+            ctrlMsts = new CtrlMstRepo().GetAll();
         }
 
         private void BarButtonAction(string frm, string action)
@@ -247,9 +251,10 @@ namespace EpicV004.Frms
             }
         }
         #endregion
+
         private void groupControl2_CustomButtonClick(object sender, DevExpress.XtraBars.Docking2010.BaseButtonEventArgs e)
         {
-            if (e.Button.Properties.Caption== "Load Controllers")
+            if (e.Button.Properties.Caption == "Load Controllers")
             {
                 #region FormLoad - Reflection을 이용하여 개체를 로드한다. 
 
@@ -276,49 +281,106 @@ namespace EpicV004.Frms
                 FindControlsRecursive(ucform, 0);
                 PrintControlHierarchy(ucform, "    ");
                 #endregion
-
+            }
+            else if (e.Button.Properties.Caption == "DOM")
+            {
+                var elementList = new FrmEleRepo().GetByEpicFrmCtrl(selectedFrwId.Code, selectedFrmId.Text);
+                
             }
         }
+
+        private List<CtrlMst> ctrlMsts;
+
         public static void PrintControlHierarchy(Control control, string indent = "")
         {
             // 현재 컨트롤의 정보 출력
             Common.gLog = $"{indent}Control: {control.Name}, Type: {control.GetType().Name}";
-
             // 자식 컨트롤이 있는지 확인하고 재귀적으로 출력
             foreach (Control childControl in control.Controls)
             {
-                PrintControlHierarchy(childControl, indent + "    ");
+                bool chk = new CtrlMstRepo().ChkContainerByCtrlNm(control.GetType().Name);
+                if (chk)
+                {
+                    PrintControlHierarchy(childControl, indent + $"{chk}");
+                }
+                else
+                {
+                    //ctrl, CtrlMst에 등록되지 않은 컨트롤러가 Contain이면 FindcontrolsRecursive를 호출한다.
+                    if (control is System.Windows.Forms.ContainerControl)
+                    {
+                        PrintControlHierarchy(childControl, indent + $"{chk}");
+                    }
+                }
             }
         }
 
-        private void FindControlsRecursive(System.Windows.Forms.Control parentControl, int parentId)
+        private void FindControlsRecursive(System.Windows.Forms.Control parentControl, int parentId, int depth = 0, string pathId = "0")
         {
-            int currentId = SaveControl(parentControl, parentId);
-            foreach (System.Windows.Forms.Control ctrl in parentControl.Controls)
+            bool chk = new CtrlMstRepo().ChkContainerByCtrlNm(parentControl.GetType().Name);
+            int currentId = SaveControl(parentControl, parentId, depth, pathId);
+            if (chk)
             {
-                FindControlsRecursive(ctrl, currentId); // 재귀 호출
+                int childIndex = 1;
+                foreach (System.Windows.Forms.Control ctrl in parentControl.Controls)
+                {
+                    string newPathId = $"{pathId}.{childIndex}";
+                    //ctrl, CtrlMst에 등록되지 않은 컨트롤러가 Contain이면 FindcontrolsRecursive를 호출한다.
+                    FindControlsRecursive(ctrl, currentId, depth+1, newPathId);
+                    childIndex++;
+                }
             }
         }
-        private int SaveControl(System.Windows.Forms.Control control, int parentId)
+
+        private int SaveControl(System.Windows.Forms.Control control, int parentId, int depth, string pathId)
         {
+            string controlType = control.GetType().Name;
+            string panelPosition = string.Empty;
+            string panelName = string.Empty;
+
+            // control이 SplitPanel인지 확인
+            if (controlType == "SplitterPanel" && control.Parent is SplitContainer splitContainer)
+            {
+                // Panel1인지 Panel2인지 확인
+                if (splitContainer.Panel1 == control)
+                {
+                    panelPosition = $"{control.Parent.Name}_Panel1";
+                    panelName = "Panel1";
+                }
+                else if (splitContainer.Panel2 == control)
+                {
+                    panelPosition = $"{control.Parent.Name}_Panel2";
+                    panelName = "Panel2";
+                }
+            }
+
+            if (controlType == "SplitterPanel" && control.Parent is UCSplit uCSplit)
+            {
+                // Panel1인지 Panel2인지 확인
+                if (uCSplit.Panel1 == control)
+                {
+                    panelPosition = $"{control.Parent.Name}_Panel1";
+                    panelName = "Panel1";
+                }
+                else if (uCSplit.Panel2 == control)
+                {
+                    panelPosition = $"{control.Parent.Name}_Panel2";
+                    panelName = "Panel2";
+                }
+            }
+
+
             var frmEle = new FrmEle
             {
                 FrwId = Common.GetValue("gFrameWorkId"),
                 FrmId = selectedFrwFrm.FrmId,
-                CtrlNm = control.Name,
-                FldNm = control.Name,
+                CtrlNm = controlType== "SplitterPanel" ? panelPosition : control.Name,
+                FldNm = controlType == "SplitterPanel" ? panelName : control.Name,
                 ToolNm = control.GetType().Name,
-                DOM = $"Control: {control.Name}, Type: {control.GetType().Name}",
-                PId = parentId // Use 0 for root controls or parentId for child controls
-                //public long Id { get; set; }
-                //public long PId { get; set; }
-                //public string FrwId { get; set; }
-                //public string FrmId { get; set; }
-                //public string CtrlNm { get; set; }
-                //public string FldNm { get; set; }
-                //public string ToolNm { get; set; }
-                //public string DOM { get; set; }
-    };
+                DOM = $"{depth}.PathId : {pathId}, Control: {(controlType == "SplitterPanel" ? panelPosition : control.Name)}, Type: {control.GetType().Name}",
+                PId = parentId,
+                Depth = depth, 
+                PathId = pathId
+            };
             return new FrmEleRepo().Add(frmEle);
         }
     }
