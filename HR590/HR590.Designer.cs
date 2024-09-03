@@ -59,8 +59,8 @@
             // ucSplit1.Panel2
             // 
             ucSplit1.Panel2.Controls.Add(ucPanel2);
-            ucSplit1.Size = new Size(800, 474);
-            ucSplit1.SplitterDistance = 79;
+            ucSplit1.Size = new Size(1259, 726);
+            ucSplit1.SplitterDistance = 63;
             ucSplit1.TabIndex = 0;
             ucSplit1.TitleWidth = 121;
             // 
@@ -71,7 +71,7 @@
             ucPanel1.Dock = DockStyle.Fill;
             ucPanel1.Location = new Point(0, 0);
             ucPanel1.Name = "ucPanel1";
-            ucPanel1.Size = new Size(800, 79);
+            ucPanel1.Size = new Size(1259, 63);
             ucPanel1.TabIndex = 0;
             ucPanel1.Text = "Salary Degree";
             // 
@@ -82,14 +82,14 @@
             btn_copy.Appearance.Options.UseBackColor = true;
             btn_copy.Appearance.Options.UseFont = true;
             btn_copy.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            btn_copy.ControlHeight = 48;
+            btn_copy.ControlHeight = 32;
             btn_copy.ControlWidth = 175;
             btn_copy.FontBold = FontStyle.Regular;
             btn_copy.FontFace = "Tahoma";
             btn_copy.FontSize = 9F;
-            btn_copy.Location = new Point(466, 26);
+            btn_copy.Location = new Point(425, 26);
             btn_copy.Name = "btn_copy";
-            btn_copy.Size = new Size(175, 48);
+            btn_copy.Size = new Size(175, 32);
             btn_copy.TabIndex = 1;
             btn_copy.Title = "Copy Previous Year's Data";
             btn_copy.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
@@ -102,7 +102,7 @@
             s_year.FontFace = "Tahoma";
             s_year.FontSize = 9F;
             s_year.FormatStr = "";
-            s_year.Location = new Point(5, 37);
+            s_year.Location = new Point(5, 31);
             s_year.Name = "s_year";
             s_year.Size = new Size(237, 21);
             s_year.TabIndex = 0;
@@ -117,7 +117,7 @@
             ucPanel2.Dock = DockStyle.Fill;
             ucPanel2.Location = new Point(0, 0);
             ucPanel2.Name = "ucPanel2";
-            ucPanel2.Size = new Size(800, 391);
+            ucPanel2.Size = new Size(1259, 659);
             ucPanel2.TabIndex = 0;
             ucPanel2.Text = "Data";
             // 
@@ -126,7 +126,7 @@
             g10.Dock = DockStyle.Fill;
             g10.Location = new Point(2, 23);
             g10.Name = "g10";
-            g10.Size = new Size(796, 366);
+            g10.Size = new Size(1255, 634);
             g10.TabIndex = 0;
             // 
             // HR590
@@ -135,7 +135,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(ucSplit1);
             Name = "HR590";
-            Size = new Size(800, 474);
+            Size = new Size(1259, 726);
             Load += HR590_Load;
             ucSplit1.Panel1.ResumeLayout(false);
             ucSplit1.Panel2.ResumeLayout(false);

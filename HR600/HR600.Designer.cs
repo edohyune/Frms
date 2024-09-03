@@ -28,24 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            ucPanel1 = new EpicV004.Ctrls.UCPanel();
-            ucTab1 = new EpicV004.Ctrls.UCTab();
+            ucPanel1 = new Ctrls.UCPanel();
+            ucTab1 = new Ctrls.UCTab();
             xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
+            ucSplit1 = new Ctrls.UCSplit();
+            g10 = new Ctrls.UCGridSet();
+            g30 = new Ctrls.UCGridSet();
             xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
-            ucSplit1 = new EpicV004.Ctrls.UCSplit();
-            g10 = new EpicV004.Ctrls.UCGridSet();
-            g30 = new EpicV004.Ctrls.UCGridSet();
-            g20 = new EpicV004.Ctrls.UCGridSet();
+            g20 = new Ctrls.UCGridSet();
             ((System.ComponentModel.ISupportInitialize)ucPanel1).BeginInit();
             ucPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ucTab1).BeginInit();
             ucTab1.SuspendLayout();
             xtraTabPage1.SuspendLayout();
-            xtraTabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ucSplit1).BeginInit();
             ucSplit1.Panel1.SuspendLayout();
             ucSplit1.Panel2.SuspendLayout();
             ucSplit1.SuspendLayout();
+            xtraTabPage2.SuspendLayout();
             SuspendLayout();
             // 
             // ucPanel1
@@ -54,7 +54,7 @@
             ucPanel1.Dock = DockStyle.Fill;
             ucPanel1.Location = new Point(0, 0);
             ucPanel1.Name = "ucPanel1";
-            ucPanel1.Size = new Size(800, 450);
+            ucPanel1.Size = new Size(1150, 708);
             ucPanel1.TabIndex = 0;
             ucPanel1.Text = "Salary Criteria";
             // 
@@ -64,7 +64,7 @@
             ucTab1.Location = new Point(2, 23);
             ucTab1.Name = "ucTab1";
             ucTab1.SelectedTabPage = xtraTabPage1;
-            ucTab1.Size = new Size(796, 425);
+            ucTab1.Size = new Size(1146, 683);
             ucTab1.TabIndex = 0;
             ucTab1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] { xtraTabPage1, xtraTabPage2 });
             // 
@@ -72,15 +72,8 @@
             // 
             xtraTabPage1.Controls.Add(ucSplit1);
             xtraTabPage1.Name = "xtraTabPage1";
-            xtraTabPage1.Size = new Size(794, 400);
+            xtraTabPage1.Size = new Size(1144, 658);
             xtraTabPage1.Text = "Salary Code";
-            // 
-            // xtraTabPage2
-            // 
-            xtraTabPage2.Controls.Add(g20);
-            xtraTabPage2.Name = "xtraTabPage2";
-            xtraTabPage2.Size = new Size(794, 400);
-            xtraTabPage2.Text = "Severance";
             // 
             // ucSplit1
             // 
@@ -96,8 +89,8 @@
             // ucSplit1.Panel2
             // 
             ucSplit1.Panel2.Controls.Add(g30);
-            ucSplit1.Size = new Size(794, 400);
-            ucSplit1.SplitterDistance = 239;
+            ucSplit1.Size = new Size(1144, 658);
+            ucSplit1.SplitterDistance = 393;
             ucSplit1.TabIndex = 0;
             ucSplit1.TitleWidth = 121;
             // 
@@ -106,7 +99,7 @@
             g10.Dock = DockStyle.Fill;
             g10.Location = new Point(0, 0);
             g10.Name = "g10";
-            g10.Size = new Size(794, 239);
+            g10.Size = new Size(1144, 393);
             g10.TabIndex = 0;
             // 
             // g30
@@ -114,8 +107,15 @@
             g30.Dock = DockStyle.Fill;
             g30.Location = new Point(0, 0);
             g30.Name = "g30";
-            g30.Size = new Size(794, 157);
+            g30.Size = new Size(1144, 261);
             g30.TabIndex = 0;
+            // 
+            // xtraTabPage2
+            // 
+            xtraTabPage2.Controls.Add(g20);
+            xtraTabPage2.Name = "xtraTabPage2";
+            xtraTabPage2.Size = new Size(794, 400);
+            xtraTabPage2.Text = "Severance";
             // 
             // g20
             // 
@@ -131,18 +131,18 @@
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(ucPanel1);
             Name = "HR600";
-            Size = new Size(800, 450);
+            Size = new Size(1150, 708);
             Load += HR600_Load;
             ((System.ComponentModel.ISupportInitialize)ucPanel1).EndInit();
             ucPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ucTab1).EndInit();
             ucTab1.ResumeLayout(false);
             xtraTabPage1.ResumeLayout(false);
-            xtraTabPage2.ResumeLayout(false);
             ucSplit1.Panel1.ResumeLayout(false);
             ucSplit1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ucSplit1).EndInit();
             ucSplit1.ResumeLayout(false);
+            xtraTabPage2.ResumeLayout(false);
             ResumeLayout(false);
         }
 

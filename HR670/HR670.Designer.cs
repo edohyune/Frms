@@ -88,7 +88,7 @@
             // 
             ucSplit1.Panel2.Controls.Add(ucSplit3);
             ucSplit1.Size = new Size(1372, 598);
-            ucSplit1.SplitterDistance = 396;
+            ucSplit1.SplitterDistance = 320;
             ucSplit1.TabIndex = 0;
             ucSplit1.TitleWidth = 121;
             ucSplit1.SplitterMoved += ucSplit1_SplitterMoved;
@@ -108,7 +108,7 @@
             // ucSplit2.Panel2
             // 
             ucSplit2.Panel2.Controls.Add(g10);
-            ucSplit2.Size = new Size(396, 598);
+            ucSplit2.Size = new Size(320, 598);
             ucSplit2.SplitterDistance = 85;
             ucSplit2.TabIndex = 0;
             ucSplit2.TitleWidth = 121;
@@ -121,7 +121,7 @@
             ucPanel1.Dock = DockStyle.Fill;
             ucPanel1.Location = new Point(0, 0);
             ucPanel1.Name = "ucPanel1";
-            ucPanel1.Size = new Size(396, 85);
+            ucPanel1.Size = new Size(320, 85);
             ucPanel1.TabIndex = 0;
             ucPanel1.Text = "Search";
             // 
@@ -166,7 +166,7 @@
             g10.Dock = DockStyle.Fill;
             g10.Location = new Point(0, 0);
             g10.Name = "g10";
-            g10.Size = new Size(396, 509);
+            g10.Size = new Size(320, 509);
             g10.TabIndex = 0;
             // 
             // ucSplit3
@@ -184,7 +184,7 @@
             // ucSplit3.Panel2
             // 
             ucSplit3.Panel2.Controls.Add(ucTab1);
-            ucSplit3.Size = new Size(972, 598);
+            ucSplit3.Size = new Size(1048, 598);
             ucSplit3.SplitterDistance = 121;
             ucSplit3.TabIndex = 0;
             ucSplit3.TitleWidth = 121;
@@ -205,13 +205,15 @@
             ucPanel2.Dock = DockStyle.Fill;
             ucPanel2.Location = new Point(0, 0);
             ucPanel2.Name = "ucPanel2";
-            ucPanel2.Size = new Size(972, 121);
+            ucPanel2.Size = new Size(1048, 121);
             ucPanel2.TabIndex = 0;
             ucPanel2.Text = "Calculate Salary";
             // 
             // btn_voucher
             // 
+            btn_voucher.Appearance.BackColor = Color.DarkGray;
             btn_voucher.Appearance.Font = new Font("Tahoma", 9F);
+            btn_voucher.Appearance.Options.UseBackColor = true;
             btn_voucher.Appearance.Options.UseFont = true;
             btn_voucher.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             btn_voucher.ControlHeight = 45;
@@ -404,7 +406,7 @@
             ucTab1.Location = new Point(0, 0);
             ucTab1.Name = "ucTab1";
             ucTab1.SelectedTabPage = xtraTabPage1;
-            ucTab1.Size = new Size(972, 473);
+            ucTab1.Size = new Size(1048, 473);
             ucTab1.TabIndex = 0;
             ucTab1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] { xtraTabPage1, xtraTabPage2 });
             // 
@@ -412,7 +414,7 @@
             // 
             xtraTabPage1.Controls.Add(g20);
             xtraTabPage1.Name = "xtraTabPage1";
-            xtraTabPage1.Size = new Size(970, 448);
+            xtraTabPage1.Size = new Size(1046, 448);
             xtraTabPage1.Text = "HA850(PRRESULT)";
             // 
             // g20
@@ -420,14 +422,14 @@
             g20.Dock = DockStyle.Fill;
             g20.Location = new Point(0, 0);
             g20.Name = "g20";
-            g20.Size = new Size(970, 448);
+            g20.Size = new Size(1046, 448);
             g20.TabIndex = 0;
             // 
             // xtraTabPage2
             // 
             xtraTabPage2.Controls.Add(g30);
             xtraTabPage2.Name = "xtraTabPage2";
-            xtraTabPage2.Size = new Size(970, 448);
+            xtraTabPage2.Size = new Size(1046, 448);
             xtraTabPage2.Text = "HA880(PRTAXSTEP)";
             // 
             // g30
@@ -435,7 +437,7 @@
             g30.Dock = DockStyle.Fill;
             g30.Location = new Point(0, 0);
             g30.Name = "g30";
-            g30.Size = new Size(970, 448);
+            g30.Size = new Size(1046, 448);
             g30.TabIndex = 0;
             // 
             // HR670
