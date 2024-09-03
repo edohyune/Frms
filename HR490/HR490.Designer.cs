@@ -119,7 +119,7 @@
             // 
             // project
             // 
-            project.ControlHeight = 16;
+            project.ControlHeight = 23;
             project.ControlWidth = 200;
             project.FldTy = null;
             project.FontColor = Color.Black;
@@ -127,7 +127,7 @@
             project.FontSize = 9F;
             project.Location = new Point(563, 49);
             project.Name = "project";
-            project.Size = new Size(200, 16);
+            project.Size = new Size(200, 23);
             project.TabIndex = 4;
             project.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
             project.Title = "Project";
@@ -136,7 +136,7 @@
             // 
             // job_site
             // 
-            job_site.ControlHeight = 16;
+            job_site.ControlHeight = 21;
             job_site.ControlWidth = 200;
             job_site.FldTy = null;
             job_site.FontColor = Color.Black;
@@ -144,7 +144,7 @@
             job_site.FontSize = 9F;
             job_site.Location = new Point(769, 26);
             job_site.Name = "job_site";
-            job_site.Size = new Size(200, 16);
+            job_site.Size = new Size(200, 21);
             job_site.TabIndex = 4;
             job_site.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
             job_site.Title = "Job site";
@@ -153,7 +153,7 @@
             // 
             // position
             // 
-            position.ControlHeight = 16;
+            position.ControlHeight = 20;
             position.ControlWidth = 200;
             position.FldTy = null;
             position.FontColor = Color.Black;
@@ -161,7 +161,7 @@
             position.FontSize = 9F;
             position.Location = new Point(563, 27);
             position.Name = "position";
-            position.Size = new Size(200, 16);
+            position.Size = new Size(200, 20);
             position.TabIndex = 4;
             position.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
             position.Title = "Position";
@@ -172,7 +172,7 @@
             // 
             dept_name.Appearance.Font = new Font("Tahoma", 9F);
             dept_name.Appearance.Options.UseFont = true;
-            dept_name.ControlHeight = 19;
+            dept_name.ControlHeight = 23;
             dept_name.ControlWidth = 164;
             dept_name.FontColor = Color.Black;
             dept_name.FontFace = "Tahoma";
@@ -181,7 +181,7 @@
             dept_name.Location = new Point(392, 48);
             dept_name.Margin = new Padding(4, 3, 4, 3);
             dept_name.Name = "dept_name";
-            dept_name.Size = new Size(164, 19);
+            dept_name.Size = new Size(164, 23);
             dept_name.TabIndex = 3;
             dept_name.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
             dept_name.Title = "";
@@ -190,7 +190,7 @@
             // 
             // section
             // 
-            section.ControlHeight = 18;
+            section.ControlHeight = 22;
             section.ControlWidth = 200;
             section.FontColor = Color.Black;
             section.FontFace = "Tahoma";
@@ -198,7 +198,7 @@
             section.FormatStr = "";
             section.Location = new Point(769, 48);
             section.Name = "section";
-            section.Size = new Size(200, 18);
+            section.Size = new Size(200, 22);
             section.TabIndex = 3;
             section.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
             section.Title = "Section";
@@ -209,7 +209,7 @@
             // 
             dept.Appearance.Font = new Font("Tahoma", 9F);
             dept.Appearance.Options.UseFont = true;
-            dept.ControlHeight = 19;
+            dept.ControlHeight = 23;
             dept.ControlWidth = 172;
             dept.FontColor = Color.Black;
             dept.FontFace = "Tahoma";
@@ -218,7 +218,7 @@
             dept.Location = new Point(212, 47);
             dept.Margin = new Padding(4, 3, 4, 3);
             dept.Name = "dept";
-            dept.Size = new Size(172, 19);
+            dept.Size = new Size(172, 23);
             dept.TabIndex = 2;
             dept.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
             dept.Title = "dept";
