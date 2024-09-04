@@ -9,7 +9,7 @@
 
         private void HR700_Load(object sender, EventArgs e)
         {
-
+            g10.Open();
         }
 
         private void ucSplit3_SplitterMoved(object sender, SplitterEventArgs e)

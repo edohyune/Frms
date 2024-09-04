@@ -34,18 +34,18 @@
             s_year = new Ctrls.UCDateBox();
             ucPanel2 = new Ctrls.UCPanel();
             groupBox2 = new GroupBox();
-            ucButton3 = new Ctrls.UCButton();
-            ucButton2 = new Ctrls.UCButton();
-            ucButton6 = new Ctrls.UCButton();
-            ucButton5 = new Ctrls.UCButton();
-            ucButton4 = new Ctrls.UCButton();
-            ucButton1 = new Ctrls.UCButton();
-            ucTextBox9 = new Ctrls.UCTextBox();
-            ucTextBox6 = new Ctrls.UCTextBox();
-            ucTextBox8 = new Ctrls.UCTextBox();
-            ucTextBox5 = new Ctrls.UCTextBox();
-            ucTextBox7 = new Ctrls.UCTextBox();
-            ucTextBox4 = new Ctrls.UCTextBox();
+            btn_wk3 = new Ctrls.UCButton();
+            btn_wk = new Ctrls.UCButton();
+            btn_jump3 = new Ctrls.UCButton();
+            btn_jump2 = new Ctrls.UCButton();
+            btn_jump1 = new Ctrls.UCButton();
+            btn_wk1 = new Ctrls.UCButton();
+            cnt13 = new Ctrls.UCTextBox();
+            cnt3 = new Ctrls.UCTextBox();
+            cnt12 = new Ctrls.UCTextBox();
+            cnt2 = new Ctrls.UCTextBox();
+            cnt11 = new Ctrls.UCTextBox();
+            cnt1 = new Ctrls.UCTextBox();
             checkBox3 = new CheckBox();
             checkBox2 = new CheckBox();
             checkBox1 = new CheckBox();
@@ -76,6 +76,7 @@
             // ucSplit1
             // 
             ucSplit1.Dock = DockStyle.Fill;
+            ucSplit1.FixedPanel = FixedPanel.Panel1;
             ucSplit1.Location = new Point(0, 0);
             ucSplit1.Name = "ucSplit1";
             // 
@@ -86,8 +87,8 @@
             // ucSplit1.Panel2
             // 
             ucSplit1.Panel2.Controls.Add(ucPanel2);
-            ucSplit1.Size = new Size(1184, 578);
-            ucSplit1.SplitterDistance = 498;
+            ucSplit1.Size = new Size(1591, 784);
+            ucSplit1.SplitterDistance = 838;
             ucSplit1.TabIndex = 0;
             ucSplit1.TitleWidth = 121;
             // 
@@ -98,7 +99,7 @@
             ucPanel1.Dock = DockStyle.Fill;
             ucPanel1.Location = new Point(0, 0);
             ucPanel1.Name = "ucPanel1";
-            ucPanel1.Size = new Size(498, 578);
+            ucPanel1.Size = new Size(838, 784);
             ucPanel1.TabIndex = 0;
             ucPanel1.Text = "Payment Day";
             // 
@@ -107,7 +108,7 @@
             g10.Dock = DockStyle.Fill;
             g10.Location = new Point(2, 23);
             g10.Name = "g10";
-            g10.Size = new Size(494, 553);
+            g10.Size = new Size(834, 759);
             g10.TabIndex = 1;
             // 
             // s_year
@@ -134,24 +135,24 @@
             ucPanel2.Dock = DockStyle.Fill;
             ucPanel2.Location = new Point(0, 0);
             ucPanel2.Name = "ucPanel2";
-            ucPanel2.Size = new Size(682, 578);
+            ucPanel2.Size = new Size(749, 784);
             ucPanel2.TabIndex = 0;
             ucPanel2.Text = "Payment Calculation Step";
             // 
             // groupBox2
             // 
-            groupBox2.Controls.Add(ucButton3);
-            groupBox2.Controls.Add(ucButton2);
-            groupBox2.Controls.Add(ucButton6);
-            groupBox2.Controls.Add(ucButton5);
-            groupBox2.Controls.Add(ucButton4);
-            groupBox2.Controls.Add(ucButton1);
-            groupBox2.Controls.Add(ucTextBox9);
-            groupBox2.Controls.Add(ucTextBox6);
-            groupBox2.Controls.Add(ucTextBox8);
-            groupBox2.Controls.Add(ucTextBox5);
-            groupBox2.Controls.Add(ucTextBox7);
-            groupBox2.Controls.Add(ucTextBox4);
+            groupBox2.Controls.Add(btn_wk3);
+            groupBox2.Controls.Add(btn_wk);
+            groupBox2.Controls.Add(btn_jump3);
+            groupBox2.Controls.Add(btn_jump2);
+            groupBox2.Controls.Add(btn_jump1);
+            groupBox2.Controls.Add(btn_wk1);
+            groupBox2.Controls.Add(cnt13);
+            groupBox2.Controls.Add(cnt3);
+            groupBox2.Controls.Add(cnt12);
+            groupBox2.Controls.Add(cnt2);
+            groupBox2.Controls.Add(cnt11);
+            groupBox2.Controls.Add(cnt1);
             groupBox2.Controls.Add(checkBox3);
             groupBox2.Controls.Add(checkBox2);
             groupBox2.Controls.Add(checkBox1);
@@ -162,233 +163,234 @@
             groupBox2.Controls.Add(add_ded_date);
             groupBox2.Controls.Add(att_summ_date);
             groupBox2.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            groupBox2.Location = new Point(16, 155);
+            groupBox2.Location = new Point(28, 155);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(639, 186);
+            groupBox2.Size = new Size(690, 186);
             groupBox2.TabIndex = 1;
             groupBox2.TabStop = false;
             groupBox2.Text = "Step";
+            groupBox2.Enter += groupBox2_Enter;
             // 
-            // ucButton3
+            // btn_wk3
             // 
-            ucButton3.Appearance.BackColor = Color.DarkGray;
-            ucButton3.Appearance.Font = new Font("Tahoma", 9F);
-            ucButton3.Appearance.Options.UseBackColor = true;
-            ucButton3.Appearance.Options.UseFont = true;
-            ucButton3.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            ucButton3.ControlHeight = 30;
-            ucButton3.ControlWidth = 59;
-            ucButton3.FontBold = FontStyle.Regular;
-            ucButton3.FontFace = "Tahoma";
-            ucButton3.FontSize = 9F;
-            ucButton3.Location = new Point(458, 129);
-            ucButton3.Name = "ucButton3";
-            ucButton3.Size = new Size(59, 30);
-            ucButton3.TabIndex = 6;
-            ucButton3.Title = "Work";
-            ucButton3.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            btn_wk3.Appearance.BackColor = Color.DarkGray;
+            btn_wk3.Appearance.Font = new Font("Tahoma", 9F);
+            btn_wk3.Appearance.Options.UseBackColor = true;
+            btn_wk3.Appearance.Options.UseFont = true;
+            btn_wk3.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            btn_wk3.ControlHeight = 30;
+            btn_wk3.ControlWidth = 59;
+            btn_wk3.FontBold = FontStyle.Regular;
+            btn_wk3.FontFace = "Tahoma";
+            btn_wk3.FontSize = 9F;
+            btn_wk3.Location = new Point(515, 129);
+            btn_wk3.Name = "btn_wk3";
+            btn_wk3.Size = new Size(59, 30);
+            btn_wk3.TabIndex = 6;
+            btn_wk3.Title = "Work";
+            btn_wk3.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
             // 
-            // ucButton2
+            // btn_wk
             // 
-            ucButton2.Appearance.BackColor = Color.DarkGray;
-            ucButton2.Appearance.Font = new Font("Tahoma", 9F);
-            ucButton2.Appearance.Options.UseBackColor = true;
-            ucButton2.Appearance.Options.UseFont = true;
-            ucButton2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            ucButton2.ControlHeight = 30;
-            ucButton2.ControlWidth = 59;
-            ucButton2.FontBold = FontStyle.Regular;
-            ucButton2.FontFace = "Tahoma";
-            ucButton2.FontSize = 9F;
-            ucButton2.Location = new Point(458, 90);
-            ucButton2.Name = "ucButton2";
-            ucButton2.Size = new Size(59, 30);
-            ucButton2.TabIndex = 6;
-            ucButton2.Title = "Work";
-            ucButton2.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            btn_wk.Appearance.BackColor = Color.DarkGray;
+            btn_wk.Appearance.Font = new Font("Tahoma", 9F);
+            btn_wk.Appearance.Options.UseBackColor = true;
+            btn_wk.Appearance.Options.UseFont = true;
+            btn_wk.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            btn_wk.ControlHeight = 30;
+            btn_wk.ControlWidth = 59;
+            btn_wk.FontBold = FontStyle.Regular;
+            btn_wk.FontFace = "Tahoma";
+            btn_wk.FontSize = 9F;
+            btn_wk.Location = new Point(515, 90);
+            btn_wk.Name = "btn_wk";
+            btn_wk.Size = new Size(59, 30);
+            btn_wk.TabIndex = 6;
+            btn_wk.Title = "Work";
+            btn_wk.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
             // 
-            // ucButton6
+            // btn_jump3
             // 
-            ucButton6.Appearance.BackColor = Color.DarkGray;
-            ucButton6.Appearance.Font = new Font("Tahoma", 9F);
-            ucButton6.Appearance.Options.UseBackColor = true;
-            ucButton6.Appearance.Options.UseFont = true;
-            ucButton6.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            ucButton6.ControlHeight = 30;
-            ucButton6.ControlWidth = 94;
-            ucButton6.FontBold = FontStyle.Regular;
-            ucButton6.FontFace = "Tahoma";
-            ucButton6.FontSize = 9F;
-            ucButton6.Location = new Point(525, 129);
-            ucButton6.Name = "ucButton6";
-            ucButton6.Size = new Size(94, 30);
-            ucButton6.TabIndex = 6;
-            ucButton6.Title = "Jump to form";
-            ucButton6.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            btn_jump3.Appearance.BackColor = Color.DarkGray;
+            btn_jump3.Appearance.Font = new Font("Tahoma", 9F);
+            btn_jump3.Appearance.Options.UseBackColor = true;
+            btn_jump3.Appearance.Options.UseFont = true;
+            btn_jump3.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            btn_jump3.ControlHeight = 30;
+            btn_jump3.ControlWidth = 94;
+            btn_jump3.FontBold = FontStyle.Regular;
+            btn_jump3.FontFace = "Tahoma";
+            btn_jump3.FontSize = 9F;
+            btn_jump3.Location = new Point(582, 129);
+            btn_jump3.Name = "btn_jump3";
+            btn_jump3.Size = new Size(94, 30);
+            btn_jump3.TabIndex = 6;
+            btn_jump3.Title = "Jump to form";
+            btn_jump3.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
             // 
-            // ucButton5
+            // btn_jump2
             // 
-            ucButton5.Appearance.BackColor = Color.DarkGray;
-            ucButton5.Appearance.Font = new Font("Tahoma", 9F);
-            ucButton5.Appearance.Options.UseBackColor = true;
-            ucButton5.Appearance.Options.UseFont = true;
-            ucButton5.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            ucButton5.ControlHeight = 30;
-            ucButton5.ControlWidth = 94;
-            ucButton5.FontBold = FontStyle.Regular;
-            ucButton5.FontFace = "Tahoma";
-            ucButton5.FontSize = 9F;
-            ucButton5.Location = new Point(525, 90);
-            ucButton5.Name = "ucButton5";
-            ucButton5.Size = new Size(94, 30);
-            ucButton5.TabIndex = 6;
-            ucButton5.Title = "Jump to form";
-            ucButton5.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            btn_jump2.Appearance.BackColor = Color.DarkGray;
+            btn_jump2.Appearance.Font = new Font("Tahoma", 9F);
+            btn_jump2.Appearance.Options.UseBackColor = true;
+            btn_jump2.Appearance.Options.UseFont = true;
+            btn_jump2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            btn_jump2.ControlHeight = 30;
+            btn_jump2.ControlWidth = 94;
+            btn_jump2.FontBold = FontStyle.Regular;
+            btn_jump2.FontFace = "Tahoma";
+            btn_jump2.FontSize = 9F;
+            btn_jump2.Location = new Point(582, 90);
+            btn_jump2.Name = "btn_jump2";
+            btn_jump2.Size = new Size(94, 30);
+            btn_jump2.TabIndex = 6;
+            btn_jump2.Title = "Jump to form";
+            btn_jump2.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
             // 
-            // ucButton4
+            // btn_jump1
             // 
-            ucButton4.Appearance.BackColor = Color.DarkGray;
-            ucButton4.Appearance.Font = new Font("Tahoma", 9F);
-            ucButton4.Appearance.Options.UseBackColor = true;
-            ucButton4.Appearance.Options.UseFont = true;
-            ucButton4.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            ucButton4.ControlHeight = 30;
-            ucButton4.ControlWidth = 94;
-            ucButton4.FontBold = FontStyle.Regular;
-            ucButton4.FontFace = "Tahoma";
-            ucButton4.FontSize = 9F;
-            ucButton4.Location = new Point(525, 54);
-            ucButton4.Name = "ucButton4";
-            ucButton4.Size = new Size(94, 30);
-            ucButton4.TabIndex = 6;
-            ucButton4.Title = "Jump to form";
-            ucButton4.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            btn_jump1.Appearance.BackColor = Color.DarkGray;
+            btn_jump1.Appearance.Font = new Font("Tahoma", 9F);
+            btn_jump1.Appearance.Options.UseBackColor = true;
+            btn_jump1.Appearance.Options.UseFont = true;
+            btn_jump1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            btn_jump1.ControlHeight = 30;
+            btn_jump1.ControlWidth = 94;
+            btn_jump1.FontBold = FontStyle.Regular;
+            btn_jump1.FontFace = "Tahoma";
+            btn_jump1.FontSize = 9F;
+            btn_jump1.Location = new Point(582, 54);
+            btn_jump1.Name = "btn_jump1";
+            btn_jump1.Size = new Size(94, 30);
+            btn_jump1.TabIndex = 6;
+            btn_jump1.Title = "Jump to form";
+            btn_jump1.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
             // 
-            // ucButton1
+            // btn_wk1
             // 
-            ucButton1.Appearance.BackColor = Color.DarkGray;
-            ucButton1.Appearance.Font = new Font("Tahoma", 9F);
-            ucButton1.Appearance.Options.UseBackColor = true;
-            ucButton1.Appearance.Options.UseFont = true;
-            ucButton1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            ucButton1.ControlHeight = 30;
-            ucButton1.ControlWidth = 59;
-            ucButton1.FontBold = FontStyle.Regular;
-            ucButton1.FontFace = "Tahoma";
-            ucButton1.FontSize = 9F;
-            ucButton1.Location = new Point(458, 54);
-            ucButton1.Name = "ucButton1";
-            ucButton1.Size = new Size(59, 30);
-            ucButton1.TabIndex = 6;
-            ucButton1.Title = "Work";
-            ucButton1.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            btn_wk1.Appearance.BackColor = Color.DarkGray;
+            btn_wk1.Appearance.Font = new Font("Tahoma", 9F);
+            btn_wk1.Appearance.Options.UseBackColor = true;
+            btn_wk1.Appearance.Options.UseFont = true;
+            btn_wk1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            btn_wk1.ControlHeight = 30;
+            btn_wk1.ControlWidth = 59;
+            btn_wk1.FontBold = FontStyle.Regular;
+            btn_wk1.FontFace = "Tahoma";
+            btn_wk1.FontSize = 9F;
+            btn_wk1.Location = new Point(515, 54);
+            btn_wk1.Name = "btn_wk1";
+            btn_wk1.Size = new Size(59, 30);
+            btn_wk1.TabIndex = 6;
+            btn_wk1.Title = "Work";
+            btn_wk1.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
             // 
-            // ucTextBox9
+            // cnt13
             // 
-            ucTextBox9.ControlHeight = 21;
-            ucTextBox9.ControlWidth = 71;
-            ucTextBox9.FontColor = Color.Black;
-            ucTextBox9.FontFace = "Tahoma";
-            ucTextBox9.FontSize = 9F;
-            ucTextBox9.FormatStr = "";
-            ucTextBox9.Location = new Point(374, 136);
-            ucTextBox9.Name = "ucTextBox9";
-            ucTextBox9.Size = new Size(71, 21);
-            ucTextBox9.TabIndex = 5;
-            ucTextBox9.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox9.Title = "/";
-            ucTextBox9.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox9.TitleWidth = 20;
+            cnt13.ControlHeight = 21;
+            cnt13.ControlWidth = 71;
+            cnt13.FontColor = Color.Black;
+            cnt13.FontFace = "Tahoma";
+            cnt13.FontSize = 9F;
+            cnt13.FormatStr = "";
+            cnt13.Location = new Point(431, 136);
+            cnt13.Name = "cnt13";
+            cnt13.Size = new Size(71, 21);
+            cnt13.TabIndex = 5;
+            cnt13.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            cnt13.Title = "/";
+            cnt13.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            cnt13.TitleWidth = 20;
             // 
-            // ucTextBox6
+            // cnt3
             // 
-            ucTextBox6.ControlHeight = 21;
-            ucTextBox6.ControlWidth = 51;
-            ucTextBox6.FontColor = Color.Black;
-            ucTextBox6.FontFace = "Tahoma";
-            ucTextBox6.FontSize = 9F;
-            ucTextBox6.FormatStr = "";
-            ucTextBox6.Location = new Point(310, 136);
-            ucTextBox6.Name = "ucTextBox6";
-            ucTextBox6.Size = new Size(51, 21);
-            ucTextBox6.TabIndex = 5;
-            ucTextBox6.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox6.Title = "UCTextBox";
-            ucTextBox6.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox6.TitleWidth = 0;
+            cnt3.ControlHeight = 21;
+            cnt3.ControlWidth = 51;
+            cnt3.FontColor = Color.Black;
+            cnt3.FontFace = "Tahoma";
+            cnt3.FontSize = 9F;
+            cnt3.FormatStr = "";
+            cnt3.Location = new Point(367, 136);
+            cnt3.Name = "cnt3";
+            cnt3.Size = new Size(51, 21);
+            cnt3.TabIndex = 5;
+            cnt3.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            cnt3.Title = "UCTextBox";
+            cnt3.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            cnt3.TitleWidth = 0;
             // 
-            // ucTextBox8
+            // cnt12
             // 
-            ucTextBox8.ControlHeight = 21;
-            ucTextBox8.ControlWidth = 71;
-            ucTextBox8.FontColor = Color.Black;
-            ucTextBox8.FontFace = "Tahoma";
-            ucTextBox8.FontSize = 9F;
-            ucTextBox8.FormatStr = "";
-            ucTextBox8.Location = new Point(374, 97);
-            ucTextBox8.Name = "ucTextBox8";
-            ucTextBox8.Size = new Size(71, 21);
-            ucTextBox8.TabIndex = 5;
-            ucTextBox8.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox8.Title = "/";
-            ucTextBox8.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox8.TitleWidth = 20;
+            cnt12.ControlHeight = 21;
+            cnt12.ControlWidth = 71;
+            cnt12.FontColor = Color.Black;
+            cnt12.FontFace = "Tahoma";
+            cnt12.FontSize = 9F;
+            cnt12.FormatStr = "";
+            cnt12.Location = new Point(431, 97);
+            cnt12.Name = "cnt12";
+            cnt12.Size = new Size(71, 21);
+            cnt12.TabIndex = 5;
+            cnt12.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            cnt12.Title = "/";
+            cnt12.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            cnt12.TitleWidth = 20;
             // 
-            // ucTextBox5
+            // cnt2
             // 
-            ucTextBox5.ControlHeight = 21;
-            ucTextBox5.ControlWidth = 51;
-            ucTextBox5.FontColor = Color.Black;
-            ucTextBox5.FontFace = "Tahoma";
-            ucTextBox5.FontSize = 9F;
-            ucTextBox5.FormatStr = "";
-            ucTextBox5.Location = new Point(310, 97);
-            ucTextBox5.Name = "ucTextBox5";
-            ucTextBox5.Size = new Size(51, 21);
-            ucTextBox5.TabIndex = 5;
-            ucTextBox5.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox5.Title = "UCTextBox";
-            ucTextBox5.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox5.TitleWidth = 0;
+            cnt2.ControlHeight = 21;
+            cnt2.ControlWidth = 51;
+            cnt2.FontColor = Color.Black;
+            cnt2.FontFace = "Tahoma";
+            cnt2.FontSize = 9F;
+            cnt2.FormatStr = "";
+            cnt2.Location = new Point(367, 97);
+            cnt2.Name = "cnt2";
+            cnt2.Size = new Size(51, 21);
+            cnt2.TabIndex = 5;
+            cnt2.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            cnt2.Title = "UCTextBox";
+            cnt2.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            cnt2.TitleWidth = 0;
             // 
-            // ucTextBox7
+            // cnt11
             // 
-            ucTextBox7.ControlHeight = 21;
-            ucTextBox7.ControlWidth = 71;
-            ucTextBox7.FontColor = Color.Black;
-            ucTextBox7.FontFace = "Tahoma";
-            ucTextBox7.FontSize = 9F;
-            ucTextBox7.FormatStr = "";
-            ucTextBox7.Location = new Point(374, 58);
-            ucTextBox7.Name = "ucTextBox7";
-            ucTextBox7.Size = new Size(71, 21);
-            ucTextBox7.TabIndex = 5;
-            ucTextBox7.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox7.Title = "/";
-            ucTextBox7.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox7.TitleWidth = 20;
+            cnt11.ControlHeight = 21;
+            cnt11.ControlWidth = 71;
+            cnt11.FontColor = Color.Black;
+            cnt11.FontFace = "Tahoma";
+            cnt11.FontSize = 9F;
+            cnt11.FormatStr = "";
+            cnt11.Location = new Point(431, 58);
+            cnt11.Name = "cnt11";
+            cnt11.Size = new Size(71, 21);
+            cnt11.TabIndex = 5;
+            cnt11.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            cnt11.Title = "/";
+            cnt11.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            cnt11.TitleWidth = 20;
             // 
-            // ucTextBox4
+            // cnt1
             // 
-            ucTextBox4.ControlHeight = 21;
-            ucTextBox4.ControlWidth = 51;
-            ucTextBox4.FontColor = Color.Black;
-            ucTextBox4.FontFace = "Tahoma";
-            ucTextBox4.FontSize = 9F;
-            ucTextBox4.FormatStr = "";
-            ucTextBox4.Location = new Point(310, 58);
-            ucTextBox4.Name = "ucTextBox4";
-            ucTextBox4.Size = new Size(51, 21);
-            ucTextBox4.TabIndex = 5;
-            ucTextBox4.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox4.Title = "UCTextBox";
-            ucTextBox4.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox4.TitleWidth = 0;
+            cnt1.ControlHeight = 21;
+            cnt1.ControlWidth = 51;
+            cnt1.FontColor = Color.Black;
+            cnt1.FontFace = "Tahoma";
+            cnt1.FontSize = 9F;
+            cnt1.FormatStr = "";
+            cnt1.Location = new Point(367, 58);
+            cnt1.Name = "cnt1";
+            cnt1.Size = new Size(51, 21);
+            cnt1.TabIndex = 5;
+            cnt1.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            cnt1.Title = "UCTextBox";
+            cnt1.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            cnt1.TitleWidth = 0;
             // 
             // checkBox3
             // 
             checkBox3.AutoSize = true;
-            checkBox3.Location = new Point(276, 136);
+            checkBox3.Location = new Point(333, 136);
             checkBox3.Name = "checkBox3";
             checkBox3.Size = new Size(15, 14);
             checkBox3.TabIndex = 4;
@@ -397,7 +399,7 @@
             // checkBox2
             // 
             checkBox2.AutoSize = true;
-            checkBox2.Location = new Point(276, 97);
+            checkBox2.Location = new Point(333, 97);
             checkBox2.Name = "checkBox2";
             checkBox2.Size = new Size(15, 14);
             checkBox2.TabIndex = 4;
@@ -406,7 +408,7 @@
             // checkBox1
             // 
             checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(276, 61);
+            checkBox1.Location = new Point(333, 61);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(15, 14);
             checkBox1.TabIndex = 4;
@@ -415,7 +417,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(350, 29);
+            label3.Location = new Point(407, 29);
             label3.Name = "label3";
             label3.Size = new Size(40, 14);
             label3.TabIndex = 3;
@@ -424,7 +426,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(267, 29);
+            label2.Location = new Point(324, 29);
             label2.Name = "label2";
             label2.Size = new Size(35, 14);
             label2.TabIndex = 3;
@@ -442,14 +444,14 @@
             // calc_salary_date
             // 
             calc_salary_date.ControlHeight = 21;
-            calc_salary_date.ControlWidth = 233;
+            calc_salary_date.ControlWidth = 295;
             calc_salary_date.FontColor = Color.Black;
             calc_salary_date.FontFace = "Tahoma";
             calc_salary_date.FontSize = 9F;
             calc_salary_date.FormatStr = "";
             calc_salary_date.Location = new Point(23, 136);
             calc_salary_date.Name = "calc_salary_date";
-            calc_salary_date.Size = new Size(233, 21);
+            calc_salary_date.Size = new Size(295, 21);
             calc_salary_date.TabIndex = 2;
             calc_salary_date.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
             calc_salary_date.Title = "Calculate Salary /Tax";
@@ -459,14 +461,14 @@
             // add_ded_date
             // 
             add_ded_date.ControlHeight = 21;
-            add_ded_date.ControlWidth = 233;
+            add_ded_date.ControlWidth = 295;
             add_ded_date.FontColor = Color.Black;
             add_ded_date.FontFace = "Tahoma";
             add_ded_date.FontSize = 9F;
             add_ded_date.FormatStr = "";
             add_ded_date.Location = new Point(23, 97);
             add_ded_date.Name = "add_ded_date";
-            add_ded_date.Size = new Size(233, 21);
+            add_ded_date.Size = new Size(295, 21);
             add_ded_date.TabIndex = 1;
             add_ded_date.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
             add_ded_date.Title = "Add/Deduct Summary";
@@ -476,14 +478,14 @@
             // att_summ_date
             // 
             att_summ_date.ControlHeight = 21;
-            att_summ_date.ControlWidth = 233;
+            att_summ_date.ControlWidth = 295;
             att_summ_date.FontColor = Color.Black;
             att_summ_date.FontFace = "Tahoma";
             att_summ_date.FontSize = 9F;
             att_summ_date.FormatStr = "";
             att_summ_date.Location = new Point(23, 58);
             att_summ_date.Name = "att_summ_date";
-            att_summ_date.Size = new Size(233, 21);
+            att_summ_date.Size = new Size(295, 21);
             att_summ_date.TabIndex = 0;
             att_summ_date.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
             att_summ_date.Title = "Attendance Summary";
@@ -498,9 +500,9 @@
             groupBox1.Controls.Add(prp_paydate);
             groupBox1.Controls.Add(paymon);
             groupBox1.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            groupBox1.Location = new Point(16, 35);
+            groupBox1.Location = new Point(28, 35);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(639, 97);
+            groupBox1.Size = new Size(690, 97);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Payment Day";
@@ -508,14 +510,14 @@
             // prp_en_date
             // 
             prp_en_date.ControlHeight = 21;
-            prp_en_date.ControlWidth = 100;
+            prp_en_date.ControlWidth = 132;
             prp_en_date.FontColor = Color.Black;
             prp_en_date.FontFace = "Tahoma";
             prp_en_date.FontSize = 9F;
             prp_en_date.FormatStr = "";
-            prp_en_date.Location = new Point(470, 48);
+            prp_en_date.Location = new Point(523, 48);
             prp_en_date.Name = "prp_en_date";
-            prp_en_date.Size = new Size(100, 21);
+            prp_en_date.Size = new Size(132, 21);
             prp_en_date.TabIndex = 4;
             prp_en_date.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
             prp_en_date.Title = "~";
@@ -525,14 +527,14 @@
             // prp_st_date
             // 
             prp_st_date.ControlHeight = 21;
-            prp_st_date.ControlWidth = 186;
+            prp_st_date.ControlWidth = 200;
             prp_st_date.FontColor = Color.Black;
             prp_st_date.FontFace = "Tahoma";
             prp_st_date.FontSize = 9F;
             prp_st_date.FormatStr = "";
-            prp_st_date.Location = new Point(264, 48);
+            prp_st_date.Location = new Point(317, 48);
             prp_st_date.Name = "prp_st_date";
-            prp_st_date.Size = new Size(186, 21);
+            prp_st_date.Size = new Size(200, 21);
             prp_st_date.TabIndex = 3;
             prp_st_date.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
             prp_st_date.Title = "Work Period";
@@ -542,14 +544,14 @@
             // prp_pay_ty
             // 
             prp_pay_ty.ControlHeight = 21;
-            prp_pay_ty.ControlWidth = 306;
+            prp_pay_ty.ControlWidth = 338;
             prp_pay_ty.FldTy = null;
             prp_pay_ty.FontColor = Color.Black;
             prp_pay_ty.FontFace = "Tahoma";
             prp_pay_ty.FontSize = 9F;
-            prp_pay_ty.Location = new Point(264, 21);
+            prp_pay_ty.Location = new Point(317, 21);
             prp_pay_ty.Name = "prp_pay_ty";
-            prp_pay_ty.Size = new Size(306, 21);
+            prp_pay_ty.Size = new Size(338, 21);
             prp_pay_ty.TabIndex = 2;
             prp_pay_ty.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
             prp_pay_ty.Title = "Payment Type";
@@ -559,14 +561,14 @@
             // prp_paydate
             // 
             prp_paydate.ControlHeight = 21;
-            prp_paydate.ControlWidth = 215;
+            prp_paydate.ControlWidth = 288;
             prp_paydate.FontColor = Color.Black;
             prp_paydate.FontFace = "Tahoma";
             prp_paydate.FontSize = 9F;
             prp_paydate.FormatStr = "";
             prp_paydate.Location = new Point(23, 48);
             prp_paydate.Name = "prp_paydate";
-            prp_paydate.Size = new Size(215, 21);
+            prp_paydate.Size = new Size(288, 21);
             prp_paydate.TabIndex = 1;
             prp_paydate.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
             prp_paydate.Title = "Payment Date";
@@ -576,14 +578,14 @@
             // paymon
             // 
             paymon.ControlHeight = 21;
-            paymon.ControlWidth = 215;
+            paymon.ControlWidth = 288;
             paymon.FontColor = Color.Black;
             paymon.FontFace = "Tahoma";
             paymon.FontSize = 9F;
             paymon.FormatStr = "";
             paymon.Location = new Point(23, 21);
             paymon.Name = "paymon";
-            paymon.Size = new Size(215, 21);
+            paymon.Size = new Size(288, 21);
             paymon.TabIndex = 0;
             paymon.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
             paymon.Title = "Payment Month";
@@ -596,7 +598,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(ucSplit1);
             Name = "HR660";
-            Size = new Size(1184, 578);
+            Size = new Size(1591, 784);
             Load += HR660_Load;
             ucSplit1.Panel1.ResumeLayout(false);
             ucSplit1.Panel2.ResumeLayout(false);
@@ -626,12 +628,12 @@
         private EpicV004.Ctrls.UCCodeBox prp_pay_ty;
         private EpicV004.Ctrls.UCTextBox prp_paydate;
         private EpicV004.Ctrls.UCTextBox prp_en_date;
-        private EpicV004.Ctrls.UCTextBox ucTextBox9;
-        private EpicV004.Ctrls.UCTextBox ucTextBox6;
-        private EpicV004.Ctrls.UCTextBox ucTextBox8;
-        private EpicV004.Ctrls.UCTextBox ucTextBox5;
-        private EpicV004.Ctrls.UCTextBox ucTextBox7;
-        private EpicV004.Ctrls.UCTextBox ucTextBox4;
+        private EpicV004.Ctrls.UCTextBox cnt13;
+        private EpicV004.Ctrls.UCTextBox cnt3;
+        private EpicV004.Ctrls.UCTextBox cnt12;
+        private EpicV004.Ctrls.UCTextBox cnt2;
+        private EpicV004.Ctrls.UCTextBox cnt11;
+        private EpicV004.Ctrls.UCTextBox cnt1;
         private CheckBox checkBox3;
         private CheckBox checkBox2;
         private CheckBox checkBox1;
@@ -641,11 +643,11 @@
         private EpicV004.Ctrls.UCTextBox calc_salary_date;
         private EpicV004.Ctrls.UCTextBox add_ded_date;
         private EpicV004.Ctrls.UCTextBox att_summ_date;
-        private EpicV004.Ctrls.UCButton ucButton3;
-        private EpicV004.Ctrls.UCButton ucButton2;
-        private EpicV004.Ctrls.UCButton ucButton6;
-        private EpicV004.Ctrls.UCButton ucButton5;
-        private EpicV004.Ctrls.UCButton ucButton4;
-        private EpicV004.Ctrls.UCButton ucButton1;
+        private EpicV004.Ctrls.UCButton btn_wk3;
+        private EpicV004.Ctrls.UCButton btn_wk;
+        private EpicV004.Ctrls.UCButton btn_jump3;
+        private EpicV004.Ctrls.UCButton btn_jump2;
+        private EpicV004.Ctrls.UCButton btn_jump1;
+        private EpicV004.Ctrls.UCButton btn_wk1;
     }
 }
