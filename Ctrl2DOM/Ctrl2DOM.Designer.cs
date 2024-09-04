@@ -28,52 +28,45 @@ namespace EpicV004.Frms
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraEditors.ButtonsPanelControl.ButtonImageOptions buttonImageOptions1 = new DevExpress.XtraEditors.ButtonsPanelControl.ButtonImageOptions();
             splitContainer1 = new SplitContainer();
-            groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            selectedFrwId = new UsrCtrl.LabelCode();
             xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
             splitContainer2 = new SplitContainer();
-            grdCtrl = new DevExpress.XtraGrid.GridControl();
-            gvCtrl = new DevExpress.XtraGrid.Views.Grid.GridView();
             xtraTabControl2 = new DevExpress.XtraTab.XtraTabControl();
             xtraTabPage3 = new DevExpress.XtraTab.XtraTabPage();
             splitContainer3 = new SplitContainer();
-            groupControl2 = new DevExpress.XtraEditors.GroupControl();
-            rtxTAG = new UsrCtrl.RichSyntax();
+            splitContainer5 = new SplitContainer();
             xtraTabPage4 = new DevExpress.XtraTab.XtraTabPage();
+            rtxTag = new UsrCtrl.RichSyntax();
             xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
             splitContainer4 = new SplitContainer();
-            treeCtrls = new DevExpress.XtraTreeList.TreeList();
+            richSyntax1 = new UsrCtrl.RichSyntax();
+            richSyntax2 = new UsrCtrl.RichSyntax();
+            richSyntax3 = new UsrCtrl.RichSyntax();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
-            splitContainer1.Panel1.SuspendLayout();
             splitContainer1.Panel2.SuspendLayout();
             splitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)groupControl1).BeginInit();
-            groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)xtraTabControl1).BeginInit();
             xtraTabControl1.SuspendLayout();
             xtraTabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer2).BeginInit();
-            splitContainer2.Panel1.SuspendLayout();
             splitContainer2.Panel2.SuspendLayout();
             splitContainer2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)grdCtrl).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)gvCtrl).BeginInit();
             ((System.ComponentModel.ISupportInitialize)xtraTabControl2).BeginInit();
             xtraTabControl2.SuspendLayout();
             xtraTabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer3).BeginInit();
+            splitContainer3.Panel1.SuspendLayout();
             splitContainer3.Panel2.SuspendLayout();
             splitContainer3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)groupControl2).BeginInit();
-            groupControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)splitContainer5).BeginInit();
+            splitContainer5.Panel1.SuspendLayout();
+            splitContainer5.Panel2.SuspendLayout();
+            splitContainer5.SuspendLayout();
+            xtraTabPage4.SuspendLayout();
             xtraTabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer4).BeginInit();
-            splitContainer4.Panel1.SuspendLayout();
             splitContainer4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)treeCtrls).BeginInit();
             SuspendLayout();
             // 
             // splitContainer1
@@ -84,42 +77,12 @@ namespace EpicV004.Frms
             splitContainer1.Name = "splitContainer1";
             splitContainer1.Orientation = Orientation.Horizontal;
             // 
-            // splitContainer1.Panel1
-            // 
-            splitContainer1.Panel1.Controls.Add(groupControl1);
-            // 
             // splitContainer1.Panel2
             // 
             splitContainer1.Panel2.Controls.Add(xtraTabControl1);
             splitContainer1.Size = new Size(1198, 720);
             splitContainer1.SplitterDistance = 58;
             splitContainer1.TabIndex = 0;
-            // 
-            // groupControl1
-            // 
-            groupControl1.Controls.Add(selectedFrwId);
-            groupControl1.Dock = DockStyle.Fill;
-            groupControl1.Location = new Point(0, 0);
-            groupControl1.Name = "groupControl1";
-            groupControl1.Size = new Size(1198, 58);
-            groupControl1.TabIndex = 1;
-            groupControl1.Text = "GAIA Designer";
-            // 
-            // selectedFrwId
-            // 
-            selectedFrwId.FldTy = null;
-            selectedFrwId.FontColor = Color.FromArgb(40, 40, 40);
-            selectedFrwId.FontFace = "Tahoma";
-            selectedFrwId.FontSize = 9F;
-            selectedFrwId.Location = new Point(6, 32);
-            selectedFrwId.Margin = new Padding(4, 3, 4, 3);
-            selectedFrwId.Name = "selectedFrwId";
-            selectedFrwId.Size = new Size(200, 21);
-            selectedFrwId.TabIndex = 0;
-            selectedFrwId.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            selectedFrwId.Title = "FrameWork";
-            selectedFrwId.TitleAlignment = DevExpress.Utils.HorzAlignment.Far;
-            selectedFrwId.TitleWidth = 100;
             // 
             // xtraTabControl1
             // 
@@ -144,32 +107,12 @@ namespace EpicV004.Frms
             splitContainer2.Location = new Point(0, 0);
             splitContainer2.Name = "splitContainer2";
             // 
-            // splitContainer2.Panel1
-            // 
-            splitContainer2.Panel1.Controls.Add(grdCtrl);
-            // 
             // splitContainer2.Panel2
             // 
             splitContainer2.Panel2.Controls.Add(xtraTabControl2);
             splitContainer2.Size = new Size(1196, 632);
-            splitContainer2.SplitterDistance = 330;
+            splitContainer2.SplitterDistance = 551;
             splitContainer2.TabIndex = 0;
-            // 
-            // grdCtrl
-            // 
-            grdCtrl.Dock = DockStyle.Fill;
-            grdCtrl.Location = new Point(0, 0);
-            grdCtrl.MainView = gvCtrl;
-            grdCtrl.Name = "grdCtrl";
-            grdCtrl.Size = new Size(330, 632);
-            grdCtrl.TabIndex = 0;
-            grdCtrl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] { gvCtrl });
-            // 
-            // gvCtrl
-            // 
-            gvCtrl.GridControl = grdCtrl;
-            gvCtrl.Name = "gvCtrl";
-            gvCtrl.FocusedRowChanged += gvCtrl_FocusedRowChanged;
             // 
             // xtraTabControl2
             // 
@@ -177,7 +120,7 @@ namespace EpicV004.Frms
             xtraTabControl2.Location = new Point(0, 0);
             xtraTabControl2.Name = "xtraTabControl2";
             xtraTabControl2.SelectedTabPage = xtraTabPage3;
-            xtraTabControl2.Size = new Size(862, 632);
+            xtraTabControl2.Size = new Size(641, 632);
             xtraTabControl2.TabIndex = 0;
             xtraTabControl2.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] { xtraTabPage3, xtraTabPage4 });
             // 
@@ -185,57 +128,72 @@ namespace EpicV004.Frms
             // 
             xtraTabPage3.Controls.Add(splitContainer3);
             xtraTabPage3.Name = "xtraTabPage3";
-            xtraTabPage3.Size = new Size(860, 606);
+            xtraTabPage3.Size = new Size(639, 606);
             xtraTabPage3.Text = "xtraTabPage3";
             // 
             // splitContainer3
             // 
             splitContainer3.Dock = DockStyle.Fill;
+            splitContainer3.FixedPanel = FixedPanel.Panel2;
             splitContainer3.Location = new Point(0, 0);
             splitContainer3.Name = "splitContainer3";
+            splitContainer3.Orientation = Orientation.Horizontal;
+            // 
+            // splitContainer3.Panel1
+            // 
+            splitContainer3.Panel1.Controls.Add(richSyntax1);
             // 
             // splitContainer3.Panel2
             // 
-            splitContainer3.Panel2.Controls.Add(groupControl2);
-            splitContainer3.Size = new Size(860, 606);
-            splitContainer3.SplitterDistance = 286;
+            splitContainer3.Panel2.Controls.Add(splitContainer5);
+            splitContainer3.Size = new Size(639, 606);
+            splitContainer3.SplitterDistance = 416;
             splitContainer3.TabIndex = 0;
             // 
-            // groupControl2
+            // splitContainer5
             // 
-            groupControl2.Controls.Add(rtxTAG);
-            groupControl2.CustomHeaderButtons.AddRange(new DevExpress.XtraEditors.ButtonPanel.IBaseButton[] { new DevExpress.XtraEditors.ButtonsPanelControl.GroupBoxButton("Load Controllers", true, buttonImageOptions1, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "", -1, true, null, true, false, true, null, -1) });
-            groupControl2.Dock = DockStyle.Fill;
-            groupControl2.Location = new Point(0, 0);
-            groupControl2.Name = "groupControl2";
-            groupControl2.Size = new Size(570, 606);
-            groupControl2.TabIndex = 0;
-            groupControl2.CustomButtonClick += groupControl2_CustomButtonClick;
+            splitContainer5.Dock = DockStyle.Fill;
+            splitContainer5.FixedPanel = FixedPanel.Panel2;
+            splitContainer5.Location = new Point(0, 0);
+            splitContainer5.Name = "splitContainer5";
+            splitContainer5.Orientation = Orientation.Horizontal;
             // 
-            // rtxTAG
+            // splitContainer5.Panel1
             // 
-            rtxTAG.ActiveViewType = DevExpress.XtraRichEdit.RichEditViewType.Simple;
-            rtxTAG.Appearance.Text.Font = new Font("Cascadia Code Light", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rtxTAG.Appearance.Text.Options.UseFont = true;
-            rtxTAG.Dock = DockStyle.Fill;
-            rtxTAG.LayoutUnit = DevExpress.XtraRichEdit.DocumentLayoutUnit.Pixel;
-            rtxTAG.Location = new Point(2, 23);
-            rtxTAG.Modified = true;
-            rtxTAG.Name = "rtxTAG";
-            rtxTAG.Options.DocumentSaveOptions.CurrentFormat = DevExpress.XtraRichEdit.DocumentFormat.PlainText;
-            rtxTAG.Options.DocumentSaveOptions.DefaultFormat = DevExpress.XtraRichEdit.DocumentFormat.PlainText;
-            rtxTAG.Options.HorizontalRuler.Visibility = DevExpress.XtraRichEdit.RichEditRulerVisibility.Hidden;
-            rtxTAG.Options.Search.RegExResultMaxGuaranteedLength = 1000;
-            rtxTAG.Padding = new Padding(50, 0, 0, 0);
-            rtxTAG.Size = new Size(566, 581);
-            rtxTAG.TabIndex = 0;
-            rtxTAG.Views.SimpleView.AllowDisplayLineNumbers = true;
+            splitContainer5.Panel1.Controls.Add(richSyntax2);
+            // 
+            // splitContainer5.Panel2
+            // 
+            splitContainer5.Panel2.Controls.Add(richSyntax3);
+            splitContainer5.Size = new Size(639, 186);
+            splitContainer5.SplitterDistance = 84;
+            splitContainer5.TabIndex = 0;
             // 
             // xtraTabPage4
             // 
+            xtraTabPage4.Controls.Add(rtxTag);
             xtraTabPage4.Name = "xtraTabPage4";
-            xtraTabPage4.Size = new Size(860, 606);
+            xtraTabPage4.Size = new Size(639, 606);
             xtraTabPage4.Text = "xtraTabPage4";
+            // 
+            // rtxTag
+            // 
+            rtxTag.ActiveViewType = DevExpress.XtraRichEdit.RichEditViewType.Simple;
+            rtxTag.Appearance.Text.Font = new Font("Cascadia Code Light", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            rtxTag.Appearance.Text.Options.UseFont = true;
+            rtxTag.Dock = DockStyle.Fill;
+            rtxTag.LayoutUnit = DevExpress.XtraRichEdit.DocumentLayoutUnit.Pixel;
+            rtxTag.Location = new Point(0, 0);
+            rtxTag.Name = "rtxTag";
+            rtxTag.Options.DocumentSaveOptions.CurrentFormat = DevExpress.XtraRichEdit.DocumentFormat.PlainText;
+            rtxTag.Options.DocumentSaveOptions.DefaultFormat = DevExpress.XtraRichEdit.DocumentFormat.PlainText;
+            rtxTag.Options.HorizontalRuler.Visibility = DevExpress.XtraRichEdit.RichEditRulerVisibility.Hidden;
+            rtxTag.Options.Search.RegExResultMaxGuaranteedLength = 1000;
+            rtxTag.Padding = new Padding(50, 0, 0, 0);
+            rtxTag.Size = new Size(639, 606);
+            rtxTag.TabIndex = 0;
+            rtxTag.Text = "richSyntax4";
+            rtxTag.Views.SimpleView.AllowDisplayLineNumbers = true;
             // 
             // xtraTabPage2
             // 
@@ -249,21 +207,66 @@ namespace EpicV004.Frms
             splitContainer4.Dock = DockStyle.Fill;
             splitContainer4.Location = new Point(0, 0);
             splitContainer4.Name = "splitContainer4";
-            // 
-            // splitContainer4.Panel1
-            // 
-            splitContainer4.Panel1.Controls.Add(treeCtrls);
             splitContainer4.Size = new Size(1196, 632);
-            splitContainer4.SplitterDistance = 333;
+            splitContainer4.SplitterDistance = 545;
             splitContainer4.TabIndex = 0;
             // 
-            // treeCtrls
+            // richSyntax1
             // 
-            treeCtrls.Dock = DockStyle.Fill;
-            treeCtrls.Location = new Point(0, 0);
-            treeCtrls.Name = "treeCtrls";
-            treeCtrls.Size = new Size(333, 632);
-            treeCtrls.TabIndex = 3;
+            richSyntax1.ActiveViewType = DevExpress.XtraRichEdit.RichEditViewType.Simple;
+            richSyntax1.Appearance.Text.Font = new Font("Cascadia Code Light", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            richSyntax1.Appearance.Text.Options.UseFont = true;
+            richSyntax1.Dock = DockStyle.Fill;
+            richSyntax1.LayoutUnit = DevExpress.XtraRichEdit.DocumentLayoutUnit.Pixel;
+            richSyntax1.Location = new Point(0, 0);
+            richSyntax1.Name = "richSyntax1";
+            richSyntax1.Options.DocumentSaveOptions.CurrentFormat = DevExpress.XtraRichEdit.DocumentFormat.PlainText;
+            richSyntax1.Options.DocumentSaveOptions.DefaultFormat = DevExpress.XtraRichEdit.DocumentFormat.PlainText;
+            richSyntax1.Options.HorizontalRuler.Visibility = DevExpress.XtraRichEdit.RichEditRulerVisibility.Hidden;
+            richSyntax1.Options.Search.RegExResultMaxGuaranteedLength = 1000;
+            richSyntax1.Padding = new Padding(50, 0, 0, 0);
+            richSyntax1.Size = new Size(639, 416);
+            richSyntax1.TabIndex = 1;
+            richSyntax1.Text = "richSyntax4";
+            richSyntax1.Views.SimpleView.AllowDisplayLineNumbers = true;
+            // 
+            // richSyntax2
+            // 
+            richSyntax2.ActiveViewType = DevExpress.XtraRichEdit.RichEditViewType.Simple;
+            richSyntax2.Appearance.Text.Font = new Font("Cascadia Code Light", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            richSyntax2.Appearance.Text.Options.UseFont = true;
+            richSyntax2.Dock = DockStyle.Fill;
+            richSyntax2.LayoutUnit = DevExpress.XtraRichEdit.DocumentLayoutUnit.Pixel;
+            richSyntax2.Location = new Point(0, 0);
+            richSyntax2.Name = "richSyntax2";
+            richSyntax2.Options.DocumentSaveOptions.CurrentFormat = DevExpress.XtraRichEdit.DocumentFormat.PlainText;
+            richSyntax2.Options.DocumentSaveOptions.DefaultFormat = DevExpress.XtraRichEdit.DocumentFormat.PlainText;
+            richSyntax2.Options.HorizontalRuler.Visibility = DevExpress.XtraRichEdit.RichEditRulerVisibility.Hidden;
+            richSyntax2.Options.Search.RegExResultMaxGuaranteedLength = 1000;
+            richSyntax2.Padding = new Padding(50, 0, 0, 0);
+            richSyntax2.Size = new Size(639, 84);
+            richSyntax2.TabIndex = 1;
+            richSyntax2.Text = "richSyntax4";
+            richSyntax2.Views.SimpleView.AllowDisplayLineNumbers = true;
+            // 
+            // richSyntax3
+            // 
+            richSyntax3.ActiveViewType = DevExpress.XtraRichEdit.RichEditViewType.Simple;
+            richSyntax3.Appearance.Text.Font = new Font("Cascadia Code Light", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            richSyntax3.Appearance.Text.Options.UseFont = true;
+            richSyntax3.Dock = DockStyle.Fill;
+            richSyntax3.LayoutUnit = DevExpress.XtraRichEdit.DocumentLayoutUnit.Pixel;
+            richSyntax3.Location = new Point(0, 0);
+            richSyntax3.Name = "richSyntax3";
+            richSyntax3.Options.DocumentSaveOptions.CurrentFormat = DevExpress.XtraRichEdit.DocumentFormat.PlainText;
+            richSyntax3.Options.DocumentSaveOptions.DefaultFormat = DevExpress.XtraRichEdit.DocumentFormat.PlainText;
+            richSyntax3.Options.HorizontalRuler.Visibility = DevExpress.XtraRichEdit.RichEditRulerVisibility.Hidden;
+            richSyntax3.Options.Search.RegExResultMaxGuaranteedLength = 1000;
+            richSyntax3.Padding = new Padding(50, 0, 0, 0);
+            richSyntax3.Size = new Size(639, 98);
+            richSyntax3.TabIndex = 1;
+            richSyntax3.Text = "richSyntax4";
+            richSyntax3.Views.SimpleView.AllowDisplayLineNumbers = true;
             // 
             // Ctrl2DOM
             // 
@@ -272,34 +275,30 @@ namespace EpicV004.Frms
             Controls.Add(splitContainer1);
             Name = "Ctrl2DOM";
             Size = new Size(1198, 720);
-            splitContainer1.Panel1.ResumeLayout(false);
             splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
             splitContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)groupControl1).EndInit();
-            groupControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)xtraTabControl1).EndInit();
             xtraTabControl1.ResumeLayout(false);
             xtraTabPage1.ResumeLayout(false);
-            splitContainer2.Panel1.ResumeLayout(false);
             splitContainer2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)splitContainer2).EndInit();
             splitContainer2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)grdCtrl).EndInit();
-            ((System.ComponentModel.ISupportInitialize)gvCtrl).EndInit();
             ((System.ComponentModel.ISupportInitialize)xtraTabControl2).EndInit();
             xtraTabControl2.ResumeLayout(false);
             xtraTabPage3.ResumeLayout(false);
+            splitContainer3.Panel1.ResumeLayout(false);
             splitContainer3.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)splitContainer3).EndInit();
             splitContainer3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)groupControl2).EndInit();
-            groupControl2.ResumeLayout(false);
+            splitContainer5.Panel1.ResumeLayout(false);
+            splitContainer5.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)splitContainer5).EndInit();
+            splitContainer5.ResumeLayout(false);
+            xtraTabPage4.ResumeLayout(false);
             xtraTabPage2.ResumeLayout(false);
-            splitContainer4.Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)splitContainer4).EndInit();
             splitContainer4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)treeCtrls).EndInit();
             ResumeLayout(false);
         }
 
@@ -313,14 +312,12 @@ namespace EpicV004.Frms
         private DevExpress.XtraTab.XtraTabControl xtraTabControl2;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage4;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage3;
-        private DevExpress.XtraEditors.GroupControl groupControl1;
-        private DevExpress.XtraGrid.GridControl grdCtrl;
-        private DevExpress.XtraGrid.Views.Grid.GridView gvCtrl;
         private SplitContainer splitContainer3;
-        private EpicV004.UsrCtrl.LabelCode selectedFrwId;
         private SplitContainer splitContainer4;
-        private DevExpress.XtraTreeList.TreeList treeCtrls;
-        private DevExpress.XtraEditors.GroupControl groupControl2;
-        private UsrCtrl.RichSyntax rtxTAG;
+        private SplitContainer splitContainer5;
+        private UsrCtrl.RichSyntax rtxTag;
+        private UsrCtrl.RichSyntax richSyntax1;
+        private UsrCtrl.RichSyntax richSyntax2;
+        private UsrCtrl.RichSyntax richSyntax3;
     }
 }

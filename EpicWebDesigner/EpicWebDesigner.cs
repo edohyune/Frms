@@ -11,6 +11,7 @@ using DevExpress.XtraTreeList;
 using System.IO;
 using DevExpress.XtraCharts.Native;
 using EpicV004.Ctrls;
+using System.Text;
 
 namespace EpicV004.Frms
 {
@@ -282,10 +283,14 @@ namespace EpicV004.Frms
                 PrintControlHierarchy(ucform, "    ");
                 #endregion
             }
-            else if (e.Button.Properties.Caption == "DOM")
+            else if (e.Button.Properties.Caption == "Make DOM")
             {
-                var elementList = new FrmEleRepo().GetByEpicFrmCtrl(selectedFrwId.Code, selectedFrmId.Text);
-                
+                var elementList = new FrmEleRepo().GetByEpicDomCtrl(selectedFrwId.Code, selectedFrmId.Text);
+
+                StringBuilder htmlBuilder = new StringBuilder();
+                BuildHtmlRecursive(rootNode, htmlBuilder, 0);
+
+
             }
         }
 
