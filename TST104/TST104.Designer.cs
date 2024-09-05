@@ -30,6 +30,8 @@
         {
             ucSplit1 = new Ctrls.UCSplit();
             ucPanel1 = new Ctrls.UCPanel();
+            s_dept_name = new Ctrls.UCTextBox();
+            s_dept = new Ctrls.UCTextBox();
             ucButton2 = new Ctrls.UCButton();
             s_txt = new Ctrls.UCTextBox();
             ucSplit2 = new Ctrls.UCSplit();
@@ -49,8 +51,7 @@
             id = new Ctrls.UCTextBox();
             ucPanel4 = new Ctrls.UCPanel();
             g20 = new Ctrls.UCGridSet();
-            s_dept = new Ctrls.UCTextBox();
-            s_dept_name = new Ctrls.UCTextBox();
+            ucImage1 = new Ctrls.UCImage();
             ((System.ComponentModel.ISupportInitialize)ucSplit1).BeginInit();
             ucSplit1.Panel1.SuspendLayout();
             ucSplit1.Panel2.SuspendLayout();
@@ -71,6 +72,7 @@
             ucPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ucPanel4).BeginInit();
             ucPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)ucImage1.Properties).BeginInit();
             SuspendLayout();
             // 
             // ucSplit1
@@ -88,7 +90,7 @@
             // ucSplit1.Panel2
             // 
             ucSplit1.Panel2.Controls.Add(ucSplit2);
-            ucSplit1.Size = new Size(1165, 641);
+            ucSplit1.Size = new Size(1409, 814);
             ucSplit1.SplitterDistance = 74;
             ucSplit1.TabIndex = 0;
             ucSplit1.TitleWidth = 121;
@@ -102,9 +104,43 @@
             ucPanel1.Dock = DockStyle.Fill;
             ucPanel1.Location = new Point(0, 0);
             ucPanel1.Name = "ucPanel1";
-            ucPanel1.Size = new Size(1165, 74);
+            ucPanel1.Size = new Size(1409, 74);
             ucPanel1.TabIndex = 0;
             ucPanel1.Text = "Search";
+            // 
+            // s_dept_name
+            // 
+            s_dept_name.ControlHeight = 21;
+            s_dept_name.ControlWidth = 246;
+            s_dept_name.FontColor = Color.Black;
+            s_dept_name.FontFace = "Tahoma";
+            s_dept_name.FontSize = 9F;
+            s_dept_name.FormatStr = "";
+            s_dept_name.Location = new Point(568, 32);
+            s_dept_name.Name = "s_dept_name";
+            s_dept_name.Size = new Size(246, 21);
+            s_dept_name.TabIndex = 5;
+            s_dept_name.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            s_dept_name.Title = "Name";
+            s_dept_name.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            s_dept_name.TitleWidth = 100;
+            // 
+            // s_dept
+            // 
+            s_dept.ControlHeight = 21;
+            s_dept.ControlWidth = 244;
+            s_dept.FontColor = Color.Black;
+            s_dept.FontFace = "Tahoma";
+            s_dept.FontSize = 9F;
+            s_dept.FormatStr = "";
+            s_dept.Location = new Point(318, 32);
+            s_dept.Name = "s_dept";
+            s_dept.Size = new Size(244, 21);
+            s_dept.TabIndex = 4;
+            s_dept.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            s_dept.Title = "Dept";
+            s_dept.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            s_dept.TitleWidth = 100;
             // 
             // ucButton2
             // 
@@ -145,7 +181,6 @@
             s_txt.Title = "Search";
             s_txt.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
             s_txt.TitleWidth = 100;
-           
             // 
             // ucSplit2
             // 
@@ -160,8 +195,8 @@
             // ucSplit2.Panel2
             // 
             ucSplit2.Panel2.Controls.Add(ucSplit3);
-            ucSplit2.Size = new Size(1165, 563);
-            ucSplit2.SplitterDistance = 387;
+            ucSplit2.Size = new Size(1409, 736);
+            ucSplit2.SplitterDistance = 467;
             ucSplit2.TabIndex = 0;
             ucSplit2.TitleWidth = 121;
             // 
@@ -171,7 +206,7 @@
             ucPanel2.Dock = DockStyle.Fill;
             ucPanel2.Location = new Point(0, 0);
             ucPanel2.Name = "ucPanel2";
-            ucPanel2.Size = new Size(387, 563);
+            ucPanel2.Size = new Size(467, 736);
             ucPanel2.TabIndex = 0;
             ucPanel2.Text = "List Data";
             // 
@@ -180,9 +215,8 @@
             g10.Dock = DockStyle.Fill;
             g10.Location = new Point(2, 23);
             g10.Name = "g10";
-            g10.Size = new Size(383, 538);
+            g10.Size = new Size(463, 711);
             g10.TabIndex = 0;
-            g10.UCAfterFocusedRow += g10_UCAfterFocusedRow;
             // 
             // ucSplit3
             // 
@@ -199,13 +233,14 @@
             // ucSplit3.Panel2
             // 
             ucSplit3.Panel2.Controls.Add(ucPanel4);
-            ucSplit3.Size = new Size(774, 563);
+            ucSplit3.Size = new Size(938, 736);
             ucSplit3.SplitterDistance = 200;
             ucSplit3.TabIndex = 0;
             ucSplit3.TitleWidth = 121;
             // 
             // ucPanel3
             // 
+            ucPanel3.Controls.Add(ucImage1);
             ucPanel3.Controls.Add(txtChangedFlag);
             ucPanel3.Controls.Add(gend);
             ucPanel3.Controls.Add(dept_name);
@@ -219,7 +254,7 @@
             ucPanel3.Dock = DockStyle.Fill;
             ucPanel3.Location = new Point(0, 0);
             ucPanel3.Name = "ucPanel3";
-            ucPanel3.Size = new Size(774, 200);
+            ucPanel3.Size = new Size(938, 200);
             ucPanel3.TabIndex = 0;
             ucPanel3.Text = "Master Data";
             // 
@@ -231,7 +266,7 @@
             txtChangedFlag.FontFace = "Tahoma";
             txtChangedFlag.FontSize = 9F;
             txtChangedFlag.FormatStr = "";
-            txtChangedFlag.Location = new Point(573, 174);
+            txtChangedFlag.Location = new Point(590, 172);
             txtChangedFlag.Margin = new Padding(4, 3, 4, 3);
             txtChangedFlag.Name = "txtChangedFlag";
             txtChangedFlag.Size = new Size(110, 21);
@@ -249,7 +284,7 @@
             gend.FontColor = Color.Black;
             gend.FontFace = "Tahoma";
             gend.FontSize = 9F;
-            gend.Location = new Point(356, 38);
+            gend.Location = new Point(373, 36);
             gend.Margin = new Padding(4, 3, 4, 3);
             gend.Name = "gend";
             gend.Size = new Size(327, 21);
@@ -267,7 +302,7 @@
             dept_name.FontFace = "Tahoma";
             dept_name.FontSize = 9F;
             dept_name.FormatStr = "";
-            dept_name.Location = new Point(356, 119);
+            dept_name.Location = new Point(373, 117);
             dept_name.Margin = new Padding(4, 3, 4, 3);
             dept_name.Name = "dept_name";
             dept_name.Size = new Size(327, 21);
@@ -285,7 +320,7 @@
             dept.FontFace = "Tahoma";
             dept.FontSize = 9F;
             dept.FormatStr = "";
-            dept.Location = new Point(356, 92);
+            dept.Location = new Point(373, 90);
             dept.Margin = new Padding(4, 3, 4, 3);
             dept.Name = "dept";
             dept.Size = new Size(327, 21);
@@ -303,7 +338,7 @@
             tell.FontFace = "Tahoma";
             tell.FontSize = 9F;
             tell.FormatStr = "";
-            tell.Location = new Point(356, 65);
+            tell.Location = new Point(373, 63);
             tell.Margin = new Padding(4, 3, 4, 3);
             tell.Name = "tell";
             tell.Size = new Size(327, 21);
@@ -321,7 +356,7 @@
             addr.FontFace = "Tahoma";
             addr.FontSize = 9F;
             addr.FormatStr = "";
-            addr.Location = new Point(5, 147);
+            addr.Location = new Point(22, 145);
             addr.Margin = new Padding(4, 3, 4, 3);
             addr.Name = "addr";
             addr.Size = new Size(678, 21);
@@ -339,7 +374,7 @@
             eng_name.FontFace = "Tahoma";
             eng_name.FontSize = 9F;
             eng_name.FormatStr = "";
-            eng_name.Location = new Point(5, 119);
+            eng_name.Location = new Point(22, 117);
             eng_name.Margin = new Padding(4, 3, 4, 3);
             eng_name.Name = "eng_name";
             eng_name.Size = new Size(321, 21);
@@ -357,7 +392,7 @@
             last_name.FontFace = "Tahoma";
             last_name.FontSize = 9F;
             last_name.FormatStr = "";
-            last_name.Location = new Point(5, 92);
+            last_name.Location = new Point(22, 90);
             last_name.Margin = new Padding(4, 3, 4, 3);
             last_name.Name = "last_name";
             last_name.Size = new Size(321, 21);
@@ -375,7 +410,7 @@
             first_name.FontFace = "Tahoma";
             first_name.FontSize = 9F;
             first_name.FormatStr = "";
-            first_name.Location = new Point(5, 65);
+            first_name.Location = new Point(22, 63);
             first_name.Margin = new Padding(4, 3, 4, 3);
             first_name.Name = "first_name";
             first_name.Size = new Size(321, 21);
@@ -393,7 +428,7 @@
             id.FontFace = "Tahoma";
             id.FontSize = 9F;
             id.FormatStr = "";
-            id.Location = new Point(5, 38);
+            id.Location = new Point(22, 36);
             id.Margin = new Padding(4, 3, 4, 3);
             id.Name = "id";
             id.Size = new Size(321, 21);
@@ -409,7 +444,7 @@
             ucPanel4.Dock = DockStyle.Fill;
             ucPanel4.Location = new Point(0, 0);
             ucPanel4.Name = "ucPanel4";
-            ucPanel4.Size = new Size(774, 359);
+            ucPanel4.Size = new Size(938, 532);
             ucPanel4.TabIndex = 0;
             ucPanel4.Text = "Detail Data";
             // 
@@ -418,42 +453,16 @@
             g20.Dock = DockStyle.Fill;
             g20.Location = new Point(2, 23);
             g20.Name = "g20";
-            g20.Size = new Size(770, 334);
+            g20.Size = new Size(934, 507);
             g20.TabIndex = 0;
             // 
-            // s_dept
+            // ucImage1
             // 
-            s_dept.ControlHeight = 21;
-            s_dept.ControlWidth = 244;
-            s_dept.FontColor = Color.Black;
-            s_dept.FontFace = "Tahoma";
-            s_dept.FontSize = 9F;
-            s_dept.FormatStr = "";
-            s_dept.Location = new Point(318, 32);
-            s_dept.Name = "s_dept";
-            s_dept.Size = new Size(244, 21);
-            s_dept.TabIndex = 4;
-            s_dept.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            s_dept.Title = "Dept";
-            s_dept.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            s_dept.TitleWidth = 100;
-            // 
-            // s_dept_name
-            // 
-            s_dept_name.ControlHeight = 21;
-            s_dept_name.ControlWidth = 246;
-            s_dept_name.FontColor = Color.Black;
-            s_dept_name.FontFace = "Tahoma";
-            s_dept_name.FontSize = 9F;
-            s_dept_name.FormatStr = "";
-            s_dept_name.Location = new Point(568, 32);
-            s_dept_name.Name = "s_dept_name";
-            s_dept_name.Size = new Size(246, 21);
-            s_dept_name.TabIndex = 5;
-            s_dept_name.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            s_dept_name.Title = "Name";
-            s_dept_name.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            s_dept_name.TitleWidth = 100;
+            ucImage1.Location = new Point(707, 36);
+            ucImage1.Name = "ucImage1";
+            ucImage1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            ucImage1.Size = new Size(210, 143);
+            ucImage1.TabIndex = 0;
             // 
             // TST104
             // 
@@ -461,7 +470,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(ucSplit1);
             Name = "TST104";
-            Size = new Size(1165, 641);
+            Size = new Size(1409, 814);
             Load += TST104_Load;
             ucSplit1.Panel1.ResumeLayout(false);
             ucSplit1.Panel2.ResumeLayout(false);
@@ -483,6 +492,7 @@
             ucPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ucPanel4).EndInit();
             ucPanel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)ucImage1.Properties).EndInit();
             ResumeLayout(false);
         }
 
@@ -493,12 +503,9 @@
         private EpicV004.Ctrls.UCSplit ucSplit3;
         private EpicV004.Ctrls.UCPanel ucPanel1;
         private EpicV004.Ctrls.UCPanel ucPanel2;
-        private EpicV004.Ctrls.UCGridSet g10;
         private EpicV004.Ctrls.UCPanel ucPanel3;
         private EpicV004.Ctrls.UCPanel ucPanel4;
-        private Ctrls.UCGridSet ucGridSet1;
-        private Ctrls.UCTextBox ucTextBox2;
- 
+    
         private Ctrls.UCTextBox eng_name;
         private Ctrls.UCTextBox last_name;
         private Ctrls.UCTextBox first_name;
@@ -515,5 +522,7 @@
         private Ctrls.UCButton ucButton3;
         private Ctrls.UCTextBox s_dept_name;
         private Ctrls.UCTextBox s_dept;
+        private Ctrls.UCGridSet g10;
+        private Ctrls.UCImage ucImage1;
     }
 }

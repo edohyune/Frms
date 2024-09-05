@@ -78,6 +78,10 @@ namespace EpicV004.Frms
             set => Set(ref _date, value);
         }
 
+        
+
+
+
 
     }
 }

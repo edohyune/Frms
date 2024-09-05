@@ -61,43 +61,43 @@
             label14 = new Label();
             label13 = new Label();
             label2 = new Label();
-            ucTextBox44 = new Ctrls.UCTextBox();
-            ucTextBox43 = new Ctrls.UCTextBox();
-            ucTextBox42 = new Ctrls.UCTextBox();
-            ucTextBox41 = new Ctrls.UCTextBox();
-            ucTextBox31 = new Ctrls.UCTextBox();
-            ucTextBox32 = new Ctrls.UCTextBox();
-            ucTextBox33 = new Ctrls.UCTextBox();
-            ucTextBox34 = new Ctrls.UCTextBox();
-            ucTextBox35 = new Ctrls.UCTextBox();
-            ucTextBox17 = new Ctrls.UCTextBox();
-            ucTextBox23 = new Ctrls.UCTextBox();
-            ucTextBox22 = new Ctrls.UCTextBox();
-            ucTextBox21 = new Ctrls.UCTextBox();
-            ucTextBox20 = new Ctrls.UCTextBox();
-            ucTextBox19 = new Ctrls.UCTextBox();
-            ucTextBox18 = new Ctrls.UCTextBox();
-            ucTextBox16 = new Ctrls.UCTextBox();
-            ucTextBox15 = new Ctrls.UCTextBox();
-            ucTextBox14 = new Ctrls.UCTextBox();
-            ucTextBox13 = new Ctrls.UCTextBox();
-            ucTextBox12 = new Ctrls.UCTextBox();
-            ucTextBox11 = new Ctrls.UCTextBox();
-            ucTextBox36 = new Ctrls.UCTextBox();
-            ucTextBox37 = new Ctrls.UCTextBox();
-            ucTextBox10 = new Ctrls.UCTextBox();
-            ucTextBox9 = new Ctrls.UCTextBox();
-            ucTextBox8 = new Ctrls.UCTextBox();
-            ucTextBox7 = new Ctrls.UCTextBox();
-            ucTextBox6 = new Ctrls.UCTextBox();
-            ucTextBox5 = new Ctrls.UCTextBox();
-            ucTextBox4 = new Ctrls.UCTextBox();
-            ucTextBox3 = new Ctrls.UCTextBox();
-            ucTextBox2 = new Ctrls.UCTextBox();
-            ucTextBox25 = new Ctrls.UCTextBox();
-            ucTextBox24 = new Ctrls.UCTextBox();
-            ucTextBox1 = new Ctrls.UCTextBox();
-            ucTextBox38 = new Ctrls.UCTextBox();
+            add_tot = new Ctrls.UCTextBox();
+            add_11 = new Ctrls.UCTextBox();
+            add_10 = new Ctrls.UCTextBox();
+            add_9 = new Ctrls.UCTextBox();
+            add_8 = new Ctrls.UCTextBox();
+            add_7 = new Ctrls.UCTextBox();
+            no_6 = new Ctrls.UCTextBox();
+            no_5 = new Ctrls.UCTextBox();
+            no_4 = new Ctrls.UCTextBox();
+            ded_6 = new Ctrls.UCTextBox();
+            ded_tot = new Ctrls.UCTextBox();
+            ded_12 = new Ctrls.UCTextBox();
+            ded_11 = new Ctrls.UCTextBox();
+            ded_10 = new Ctrls.UCTextBox();
+            ded_9 = new Ctrls.UCTextBox();
+            ded_8 = new Ctrls.UCTextBox();
+            ded_7 = new Ctrls.UCTextBox();
+            ded_5 = new Ctrls.UCTextBox();
+            ded_4 = new Ctrls.UCTextBox();
+            ded_3 = new Ctrls.UCTextBox();
+            ded_2 = new Ctrls.UCTextBox();
+            ded_1 = new Ctrls.UCTextBox();
+            no_3 = new Ctrls.UCTextBox();
+            no_2 = new Ctrls.UCTextBox();
+            other_allowance = new Ctrls.UCTextBox();
+            ytd_social = new Ctrls.UCTextBox();
+            ytd_fund = new Ctrls.UCTextBox();
+            ytd_tax = new Ctrls.UCTextBox();
+            ytd_income = new Ctrls.UCTextBox();
+            add_6 = new Ctrls.UCTextBox();
+            add_5 = new Ctrls.UCTextBox();
+            add_4 = new Ctrls.UCTextBox();
+            add_3 = new Ctrls.UCTextBox();
+            net_pay = new Ctrls.UCTextBox();
+            payroll_date = new Ctrls.UCTextBox();
+            add_2 = new Ctrls.UCTextBox();
+            add_1 = new Ctrls.UCTextBox();
             bank_acc_no = new Ctrls.UCTextBox();
             dept = new Ctrls.UCTextBox();
             emp_name = new Ctrls.UCTextBox();
@@ -182,13 +182,13 @@
             btn_salary.Appearance.Options.UseFont = true;
             btn_salary.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             btn_salary.ControlHeight = 36;
-            btn_salary.ControlWidth = 108;
+            btn_salary.ControlWidth = 159;
             btn_salary.FontBold = FontStyle.Regular;
             btn_salary.FontFace = "Tahoma";
             btn_salary.FontSize = 9F;
-            btn_salary.Location = new Point(56, 59);
+            btn_salary.Location = new Point(5, 59);
             btn_salary.Name = "btn_salary";
-            btn_salary.Size = new Size(108, 36);
+            btn_salary.Size = new Size(159, 36);
             btn_salary.TabIndex = 1;
             btn_salary.Title = "Salary Date";
             btn_salary.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
@@ -434,43 +434,43 @@
             ucPanel3.Controls.Add(label14);
             ucPanel3.Controls.Add(label13);
             ucPanel3.Controls.Add(label2);
-            ucPanel3.Controls.Add(ucTextBox44);
-            ucPanel3.Controls.Add(ucTextBox43);
-            ucPanel3.Controls.Add(ucTextBox42);
-            ucPanel3.Controls.Add(ucTextBox41);
-            ucPanel3.Controls.Add(ucTextBox31);
-            ucPanel3.Controls.Add(ucTextBox32);
-            ucPanel3.Controls.Add(ucTextBox33);
-            ucPanel3.Controls.Add(ucTextBox34);
-            ucPanel3.Controls.Add(ucTextBox35);
-            ucPanel3.Controls.Add(ucTextBox17);
-            ucPanel3.Controls.Add(ucTextBox23);
-            ucPanel3.Controls.Add(ucTextBox22);
-            ucPanel3.Controls.Add(ucTextBox21);
-            ucPanel3.Controls.Add(ucTextBox20);
-            ucPanel3.Controls.Add(ucTextBox19);
-            ucPanel3.Controls.Add(ucTextBox18);
-            ucPanel3.Controls.Add(ucTextBox16);
-            ucPanel3.Controls.Add(ucTextBox15);
-            ucPanel3.Controls.Add(ucTextBox14);
-            ucPanel3.Controls.Add(ucTextBox13);
-            ucPanel3.Controls.Add(ucTextBox12);
-            ucPanel3.Controls.Add(ucTextBox11);
-            ucPanel3.Controls.Add(ucTextBox36);
-            ucPanel3.Controls.Add(ucTextBox37);
-            ucPanel3.Controls.Add(ucTextBox10);
-            ucPanel3.Controls.Add(ucTextBox9);
-            ucPanel3.Controls.Add(ucTextBox8);
-            ucPanel3.Controls.Add(ucTextBox7);
-            ucPanel3.Controls.Add(ucTextBox6);
-            ucPanel3.Controls.Add(ucTextBox5);
-            ucPanel3.Controls.Add(ucTextBox4);
-            ucPanel3.Controls.Add(ucTextBox3);
-            ucPanel3.Controls.Add(ucTextBox2);
-            ucPanel3.Controls.Add(ucTextBox25);
-            ucPanel3.Controls.Add(ucTextBox24);
-            ucPanel3.Controls.Add(ucTextBox1);
-            ucPanel3.Controls.Add(ucTextBox38);
+            ucPanel3.Controls.Add(add_tot);
+            ucPanel3.Controls.Add(add_11);
+            ucPanel3.Controls.Add(add_10);
+            ucPanel3.Controls.Add(add_9);
+            ucPanel3.Controls.Add(add_8);
+            ucPanel3.Controls.Add(add_7);
+            ucPanel3.Controls.Add(no_6);
+            ucPanel3.Controls.Add(no_5);
+            ucPanel3.Controls.Add(no_4);
+            ucPanel3.Controls.Add(ded_6);
+            ucPanel3.Controls.Add(ded_tot);
+            ucPanel3.Controls.Add(ded_12);
+            ucPanel3.Controls.Add(ded_11);
+            ucPanel3.Controls.Add(ded_10);
+            ucPanel3.Controls.Add(ded_9);
+            ucPanel3.Controls.Add(ded_8);
+            ucPanel3.Controls.Add(ded_7);
+            ucPanel3.Controls.Add(ded_5);
+            ucPanel3.Controls.Add(ded_4);
+            ucPanel3.Controls.Add(ded_3);
+            ucPanel3.Controls.Add(ded_2);
+            ucPanel3.Controls.Add(ded_1);
+            ucPanel3.Controls.Add(no_3);
+            ucPanel3.Controls.Add(no_2);
+            ucPanel3.Controls.Add(other_allowance);
+            ucPanel3.Controls.Add(ytd_social);
+            ucPanel3.Controls.Add(ytd_fund);
+            ucPanel3.Controls.Add(ytd_tax);
+            ucPanel3.Controls.Add(ytd_income);
+            ucPanel3.Controls.Add(add_6);
+            ucPanel3.Controls.Add(add_5);
+            ucPanel3.Controls.Add(add_4);
+            ucPanel3.Controls.Add(add_3);
+            ucPanel3.Controls.Add(net_pay);
+            ucPanel3.Controls.Add(payroll_date);
+            ucPanel3.Controls.Add(add_2);
+            ucPanel3.Controls.Add(add_1);
             ucPanel3.Controls.Add(bank_acc_no);
             ucPanel3.Controls.Add(dept);
             ucPanel3.Controls.Add(emp_name);
@@ -623,745 +623,745 @@
             label2.TabIndex = 51;
             label2.Text = "YTD Income";
             // 
-            // ucTextBox44
-            // 
-            ucTextBox44.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ucTextBox44.Appearance.Options.UseFont = true;
-            ucTextBox44.ControlHeight = 23;
-            ucTextBox44.ControlWidth = 366;
-            ucTextBox44.FontColor = Color.Black;
-            ucTextBox44.FontFace = "Tahoma";
-            ucTextBox44.FontSize = 9F;
-            ucTextBox44.FormatStr = "";
-            ucTextBox44.Location = new Point(43, 481);
-            ucTextBox44.Margin = new Padding(4, 3, 4, 3);
-            ucTextBox44.Name = "ucTextBox44";
-            ucTextBox44.Size = new Size(366, 23);
-            ucTextBox44.TabIndex = 42;
-            ucTextBox44.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox44.Title = "Total Earnings";
-            ucTextBox44.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            ucTextBox44.TitleWidth = 270;
-            // 
-            // ucTextBox43
-            // 
-            ucTextBox43.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ucTextBox43.Appearance.Options.UseFont = true;
-            ucTextBox43.ControlHeight = 23;
-            ucTextBox43.ControlWidth = 366;
-            ucTextBox43.FontColor = Color.Black;
-            ucTextBox43.FontFace = "Tahoma";
-            ucTextBox43.FontSize = 9F;
-            ucTextBox43.FormatStr = "";
-            ucTextBox43.Location = new Point(43, 422);
-            ucTextBox43.Margin = new Padding(4, 3, 4, 3);
-            ucTextBox43.Name = "ucTextBox43";
-            ucTextBox43.Size = new Size(366, 23);
-            ucTextBox43.TabIndex = 39;
-            ucTextBox43.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox43.Title = "Misc. Income";
-            ucTextBox43.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            ucTextBox43.TitleWidth = 270;
-            // 
-            // ucTextBox42
-            // 
-            ucTextBox42.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ucTextBox42.Appearance.Options.UseFont = true;
-            ucTextBox42.ControlHeight = 23;
-            ucTextBox42.ControlWidth = 366;
-            ucTextBox42.FontColor = Color.Black;
-            ucTextBox42.FontFace = "Tahoma";
-            ucTextBox42.FontSize = 9F;
-            ucTextBox42.FormatStr = "";
-            ucTextBox42.Location = new Point(43, 395);
-            ucTextBox42.Margin = new Padding(4, 3, 4, 3);
-            ucTextBox42.Name = "ucTextBox42";
-            ucTextBox42.Size = new Size(366, 23);
-            ucTextBox42.TabIndex = 38;
-            ucTextBox42.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox42.Title = "Bonus";
-            ucTextBox42.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            ucTextBox42.TitleWidth = 270;
-            // 
-            // ucTextBox41
-            // 
-            ucTextBox41.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ucTextBox41.Appearance.Options.UseFont = true;
-            ucTextBox41.ControlHeight = 23;
-            ucTextBox41.ControlWidth = 366;
-            ucTextBox41.FontColor = Color.Black;
-            ucTextBox41.FontFace = "Tahoma";
-            ucTextBox41.FontSize = 9F;
-            ucTextBox41.FormatStr = "";
-            ucTextBox41.Location = new Point(43, 368);
-            ucTextBox41.Margin = new Padding(4, 3, 4, 3);
-            ucTextBox41.Name = "ucTextBox41";
-            ucTextBox41.Size = new Size(366, 23);
-            ucTextBox41.TabIndex = 37;
-            ucTextBox41.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox41.Title = "Cremation / Compensation";
-            ucTextBox41.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            ucTextBox41.TitleWidth = 270;
-            // 
-            // ucTextBox31
-            // 
-            ucTextBox31.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ucTextBox31.Appearance.Options.UseFont = true;
-            ucTextBox31.ControlHeight = 23;
-            ucTextBox31.ControlWidth = 366;
-            ucTextBox31.FontColor = Color.Black;
-            ucTextBox31.FontFace = "Tahoma";
-            ucTextBox31.FontSize = 9F;
-            ucTextBox31.FormatStr = "";
-            ucTextBox31.Location = new Point(42, 341);
-            ucTextBox31.Margin = new Padding(4, 3, 4, 3);
-            ucTextBox31.Name = "ucTextBox31";
-            ucTextBox31.Size = new Size(366, 23);
-            ucTextBox31.TabIndex = 36;
-            ucTextBox31.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox31.Title = "Foods";
-            ucTextBox31.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            ucTextBox31.TitleWidth = 270;
-            // 
-            // ucTextBox32
-            // 
-            ucTextBox32.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ucTextBox32.Appearance.Options.UseFont = true;
-            ucTextBox32.ControlHeight = 23;
-            ucTextBox32.ControlWidth = 366;
-            ucTextBox32.FontColor = Color.Black;
-            ucTextBox32.FontFace = "Tahoma";
-            ucTextBox32.FontSize = 9F;
-            ucTextBox32.FormatStr = "";
-            ucTextBox32.Location = new Point(43, 314);
-            ucTextBox32.Margin = new Padding(4, 3, 4, 3);
-            ucTextBox32.Name = "ucTextBox32";
-            ucTextBox32.Size = new Size(366, 23);
-            ucTextBox32.TabIndex = 43;
-            ucTextBox32.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox32.Title = "Allowance";
-            ucTextBox32.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            ucTextBox32.TitleWidth = 270;
-            // 
-            // ucTextBox33
-            // 
-            ucTextBox33.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ucTextBox33.Appearance.Options.UseFont = true;
-            ucTextBox33.ControlHeight = 23;
-            ucTextBox33.ControlWidth = 244;
-            ucTextBox33.FontColor = Color.Black;
-            ucTextBox33.FontFace = "Tahoma";
-            ucTextBox33.FontSize = 9F;
-            ucTextBox33.FormatStr = "";
-            ucTextBox33.Location = new Point(42, 287);
-            ucTextBox33.Margin = new Padding(4, 3, 4, 3);
-            ucTextBox33.Name = "ucTextBox33";
-            ucTextBox33.Size = new Size(244, 23);
-            ucTextBox33.TabIndex = 44;
-            ucTextBox33.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox33.Title = "Overtime * 3.0 time";
-            ucTextBox33.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            ucTextBox33.TitleWidth = 150;
-            // 
-            // ucTextBox34
-            // 
-            ucTextBox34.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ucTextBox34.Appearance.Options.UseFont = true;
-            ucTextBox34.ControlHeight = 23;
-            ucTextBox34.ControlWidth = 243;
-            ucTextBox34.FontColor = Color.Black;
-            ucTextBox34.FontFace = "Tahoma";
-            ucTextBox34.FontSize = 9F;
-            ucTextBox34.FormatStr = "";
-            ucTextBox34.Location = new Point(43, 260);
-            ucTextBox34.Margin = new Padding(4, 3, 4, 3);
-            ucTextBox34.Name = "ucTextBox34";
-            ucTextBox34.Size = new Size(243, 23);
-            ucTextBox34.TabIndex = 45;
-            ucTextBox34.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox34.Title = "Overtime * 2.0 time";
-            ucTextBox34.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            ucTextBox34.TitleWidth = 150;
-            // 
-            // ucTextBox35
-            // 
-            ucTextBox35.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ucTextBox35.Appearance.Options.UseFont = true;
-            ucTextBox35.ControlHeight = 23;
-            ucTextBox35.ControlWidth = 243;
-            ucTextBox35.FontColor = Color.Black;
-            ucTextBox35.FontFace = "Tahoma";
-            ucTextBox35.FontSize = 9F;
-            ucTextBox35.FormatStr = "";
-            ucTextBox35.Location = new Point(43, 233);
-            ucTextBox35.Margin = new Padding(4, 3, 4, 3);
-            ucTextBox35.Name = "ucTextBox35";
-            ucTextBox35.Size = new Size(243, 23);
-            ucTextBox35.TabIndex = 46;
-            ucTextBox35.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox35.Title = "Overtime * 1.5 time";
-            ucTextBox35.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            ucTextBox35.TitleWidth = 150;
-            // 
-            // ucTextBox17
-            // 
-            ucTextBox17.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ucTextBox17.Appearance.Options.UseFont = true;
-            ucTextBox17.ControlHeight = 23;
-            ucTextBox17.ControlWidth = 243;
-            ucTextBox17.FontColor = Color.Black;
-            ucTextBox17.FontFace = "Tahoma";
-            ucTextBox17.FontSize = 9F;
-            ucTextBox17.FormatStr = "";
-            ucTextBox17.Location = new Point(434, 287);
-            ucTextBox17.Margin = new Padding(4, 3, 4, 3);
-            ucTextBox17.Name = "ucTextBox17";
-            ucTextBox17.Size = new Size(243, 23);
-            ucTextBox17.TabIndex = 47;
-            ucTextBox17.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox17.Title = "Thanachat Loan";
-            ucTextBox17.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            ucTextBox17.TitleWidth = 150;
-            // 
-            // ucTextBox23
-            // 
-            ucTextBox23.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ucTextBox23.Appearance.Options.UseFont = true;
-            ucTextBox23.ControlHeight = 23;
-            ucTextBox23.ControlWidth = 243;
-            ucTextBox23.FontColor = Color.Black;
-            ucTextBox23.FontFace = "Tahoma";
-            ucTextBox23.FontSize = 9F;
-            ucTextBox23.FormatStr = "";
-            ucTextBox23.Location = new Point(434, 476);
-            ucTextBox23.Margin = new Padding(4, 3, 4, 3);
-            ucTextBox23.Name = "ucTextBox23";
-            ucTextBox23.Size = new Size(243, 23);
-            ucTextBox23.TabIndex = 47;
-            ucTextBox23.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox23.Title = "Total Deductions";
-            ucTextBox23.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            ucTextBox23.TitleWidth = 150;
-            // 
-            // ucTextBox22
-            // 
-            ucTextBox22.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ucTextBox22.Appearance.Options.UseFont = true;
-            ucTextBox22.ControlHeight = 23;
-            ucTextBox22.ControlWidth = 243;
-            ucTextBox22.FontColor = Color.Black;
-            ucTextBox22.FontFace = "Tahoma";
-            ucTextBox22.FontSize = 9F;
-            ucTextBox22.FormatStr = "";
-            ucTextBox22.Location = new Point(434, 449);
-            ucTextBox22.Margin = new Padding(4, 3, 4, 3);
-            ucTextBox22.Name = "ucTextBox22";
-            ucTextBox22.Size = new Size(243, 23);
-            ucTextBox22.TabIndex = 47;
-            ucTextBox22.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox22.Title = "Tax";
-            ucTextBox22.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            ucTextBox22.TitleWidth = 150;
-            // 
-            // ucTextBox21
-            // 
-            ucTextBox21.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ucTextBox21.Appearance.Options.UseFont = true;
-            ucTextBox21.ControlHeight = 23;
-            ucTextBox21.ControlWidth = 243;
-            ucTextBox21.FontColor = Color.Black;
-            ucTextBox21.FontFace = "Tahoma";
-            ucTextBox21.FontSize = 9F;
-            ucTextBox21.FormatStr = "";
-            ucTextBox21.Location = new Point(434, 422);
-            ucTextBox21.Margin = new Padding(4, 3, 4, 3);
-            ucTextBox21.Name = "ucTextBox21";
-            ucTextBox21.Size = new Size(243, 23);
-            ucTextBox21.TabIndex = 47;
-            ucTextBox21.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox21.Title = "Social Security";
-            ucTextBox21.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            ucTextBox21.TitleWidth = 150;
-            // 
-            // ucTextBox20
-            // 
-            ucTextBox20.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ucTextBox20.Appearance.Options.UseFont = true;
-            ucTextBox20.ControlHeight = 23;
-            ucTextBox20.ControlWidth = 243;
-            ucTextBox20.FontColor = Color.Black;
-            ucTextBox20.FontFace = "Tahoma";
-            ucTextBox20.FontSize = 9F;
-            ucTextBox20.FormatStr = "";
-            ucTextBox20.Location = new Point(434, 395);
-            ucTextBox20.Margin = new Padding(4, 3, 4, 3);
-            ucTextBox20.Name = "ucTextBox20";
-            ucTextBox20.Size = new Size(243, 23);
-            ucTextBox20.TabIndex = 47;
-            ucTextBox20.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox20.Title = "Prov. Fund";
-            ucTextBox20.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            ucTextBox20.TitleWidth = 150;
-            // 
-            // ucTextBox19
-            // 
-            ucTextBox19.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ucTextBox19.Appearance.Options.UseFont = true;
-            ucTextBox19.ControlHeight = 23;
-            ucTextBox19.ControlWidth = 243;
-            ucTextBox19.FontColor = Color.Black;
-            ucTextBox19.FontFace = "Tahoma";
-            ucTextBox19.FontSize = 9F;
-            ucTextBox19.FormatStr = "";
-            ucTextBox19.Location = new Point(434, 368);
-            ucTextBox19.Margin = new Padding(4, 3, 4, 3);
-            ucTextBox19.Name = "ucTextBox19";
-            ucTextBox19.Size = new Size(243, 23);
-            ucTextBox19.TabIndex = 47;
-            ucTextBox19.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox19.Title = "Student Loan";
-            ucTextBox19.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            ucTextBox19.TitleWidth = 150;
-            // 
-            // ucTextBox18
-            // 
-            ucTextBox18.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ucTextBox18.Appearance.Options.UseFont = true;
-            ucTextBox18.ControlHeight = 23;
-            ucTextBox18.ControlWidth = 243;
-            ucTextBox18.FontColor = Color.Black;
-            ucTextBox18.FontFace = "Tahoma";
-            ucTextBox18.FontSize = 9F;
-            ucTextBox18.FormatStr = "";
-            ucTextBox18.Location = new Point(434, 341);
-            ucTextBox18.Margin = new Padding(4, 3, 4, 3);
-            ucTextBox18.Name = "ucTextBox18";
-            ucTextBox18.Size = new Size(243, 23);
-            ucTextBox18.TabIndex = 47;
-            ucTextBox18.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox18.Title = "Loan";
-            ucTextBox18.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            ucTextBox18.TitleWidth = 150;
-            // 
-            // ucTextBox16
-            // 
-            ucTextBox16.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ucTextBox16.Appearance.Options.UseFont = true;
-            ucTextBox16.ControlHeight = 23;
-            ucTextBox16.ControlWidth = 243;
-            ucTextBox16.FontColor = Color.Black;
-            ucTextBox16.FontFace = "Tahoma";
-            ucTextBox16.FontSize = 9F;
-            ucTextBox16.FormatStr = "";
-            ucTextBox16.Location = new Point(434, 314);
-            ucTextBox16.Margin = new Padding(4, 3, 4, 3);
-            ucTextBox16.Name = "ucTextBox16";
-            ucTextBox16.Size = new Size(243, 23);
-            ucTextBox16.TabIndex = 47;
-            ucTextBox16.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox16.Title = "Other Deduct";
-            ucTextBox16.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            ucTextBox16.TitleWidth = 150;
-            // 
-            // ucTextBox15
-            // 
-            ucTextBox15.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ucTextBox15.Appearance.Options.UseFont = true;
-            ucTextBox15.ControlHeight = 23;
-            ucTextBox15.ControlWidth = 243;
-            ucTextBox15.FontColor = Color.Black;
-            ucTextBox15.FontFace = "Tahoma";
-            ucTextBox15.FontSize = 9F;
-            ucTextBox15.FormatStr = "";
-            ucTextBox15.Location = new Point(434, 260);
-            ucTextBox15.Margin = new Padding(4, 3, 4, 3);
-            ucTextBox15.Name = "ucTextBox15";
-            ucTextBox15.Size = new Size(243, 23);
-            ucTextBox15.TabIndex = 47;
-            ucTextBox15.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox15.Title = "Advance";
-            ucTextBox15.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            ucTextBox15.TitleWidth = 150;
-            // 
-            // ucTextBox14
-            // 
-            ucTextBox14.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ucTextBox14.Appearance.Options.UseFont = true;
-            ucTextBox14.ControlHeight = 23;
-            ucTextBox14.ControlWidth = 243;
-            ucTextBox14.FontColor = Color.Black;
-            ucTextBox14.FontFace = "Tahoma";
-            ucTextBox14.FontSize = 9F;
-            ucTextBox14.FormatStr = "";
-            ucTextBox14.Location = new Point(434, 233);
-            ucTextBox14.Margin = new Padding(4, 3, 4, 3);
-            ucTextBox14.Name = "ucTextBox14";
-            ucTextBox14.Size = new Size(243, 23);
-            ucTextBox14.TabIndex = 47;
-            ucTextBox14.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox14.Title = "Less Legal Execution";
-            ucTextBox14.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            ucTextBox14.TitleWidth = 150;
-            // 
-            // ucTextBox13
-            // 
-            ucTextBox13.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ucTextBox13.Appearance.Options.UseFont = true;
-            ucTextBox13.ControlHeight = 23;
-            ucTextBox13.ControlWidth = 243;
-            ucTextBox13.FontColor = Color.Black;
-            ucTextBox13.FontFace = "Tahoma";
-            ucTextBox13.FontSize = 9F;
-            ucTextBox13.FormatStr = "";
-            ucTextBox13.Location = new Point(434, 206);
-            ucTextBox13.Margin = new Padding(4, 3, 4, 3);
-            ucTextBox13.Name = "ucTextBox13";
-            ucTextBox13.Size = new Size(243, 23);
-            ucTextBox13.TabIndex = 47;
-            ucTextBox13.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox13.Title = "Less Cremation";
-            ucTextBox13.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            ucTextBox13.TitleWidth = 150;
-            // 
-            // ucTextBox12
-            // 
-            ucTextBox12.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ucTextBox12.Appearance.Options.UseFont = true;
-            ucTextBox12.ControlHeight = 23;
-            ucTextBox12.ControlWidth = 243;
-            ucTextBox12.FontColor = Color.Black;
-            ucTextBox12.FontFace = "Tahoma";
-            ucTextBox12.FontSize = 9F;
-            ucTextBox12.FormatStr = "";
-            ucTextBox12.Location = new Point(434, 179);
-            ucTextBox12.Margin = new Padding(4, 3, 4, 3);
-            ucTextBox12.Name = "ucTextBox12";
-            ucTextBox12.Size = new Size(243, 23);
-            ucTextBox12.TabIndex = 47;
-            ucTextBox12.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox12.Title = "Tools/Uniform";
-            ucTextBox12.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            ucTextBox12.TitleWidth = 150;
-            // 
-            // ucTextBox11
-            // 
-            ucTextBox11.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ucTextBox11.Appearance.Options.UseFont = true;
-            ucTextBox11.ControlHeight = 23;
-            ucTextBox11.ControlWidth = 243;
-            ucTextBox11.FontColor = Color.Black;
-            ucTextBox11.FontFace = "Tahoma";
-            ucTextBox11.FontSize = 9F;
-            ucTextBox11.FormatStr = "";
-            ucTextBox11.Location = new Point(434, 152);
-            ucTextBox11.Margin = new Padding(4, 3, 4, 3);
-            ucTextBox11.Name = "ucTextBox11";
-            ucTextBox11.Size = new Size(243, 23);
-            ucTextBox11.TabIndex = 47;
-            ucTextBox11.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox11.Title = "Absent & Leave W/O";
-            ucTextBox11.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            ucTextBox11.TitleWidth = 150;
-            // 
-            // ucTextBox36
-            // 
-            ucTextBox36.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ucTextBox36.Appearance.Options.UseFont = true;
-            ucTextBox36.ControlHeight = 23;
-            ucTextBox36.ControlWidth = 243;
-            ucTextBox36.FontColor = Color.Black;
-            ucTextBox36.FontFace = "Tahoma";
-            ucTextBox36.FontSize = 9F;
-            ucTextBox36.FormatStr = "";
-            ucTextBox36.Location = new Point(43, 206);
-            ucTextBox36.Margin = new Padding(4, 3, 4, 3);
-            ucTextBox36.Name = "ucTextBox36";
-            ucTextBox36.Size = new Size(243, 23);
-            ucTextBox36.TabIndex = 47;
-            ucTextBox36.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox36.Title = "Overtime * 1.0 time";
-            ucTextBox36.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            ucTextBox36.TitleWidth = 150;
-            // 
-            // ucTextBox37
-            // 
-            ucTextBox37.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ucTextBox37.Appearance.Options.UseFont = true;
-            ucTextBox37.ControlHeight = 23;
-            ucTextBox37.ControlWidth = 243;
-            ucTextBox37.FontColor = Color.Black;
-            ucTextBox37.FontFace = "Tahoma";
-            ucTextBox37.FontSize = 9F;
-            ucTextBox37.FormatStr = "";
-            ucTextBox37.Location = new Point(43, 179);
-            ucTextBox37.Margin = new Padding(4, 3, 4, 3);
-            ucTextBox37.Name = "ucTextBox37";
-            ucTextBox37.Size = new Size(243, 23);
-            ucTextBox37.TabIndex = 48;
-            ucTextBox37.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox37.Title = "Salary";
-            ucTextBox37.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            ucTextBox37.TitleWidth = 150;
-            // 
-            // ucTextBox10
-            // 
-            ucTextBox10.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ucTextBox10.Appearance.Options.UseFont = true;
-            ucTextBox10.ControlHeight = 23;
-            ucTextBox10.ControlWidth = 110;
-            ucTextBox10.FontColor = Color.Black;
-            ucTextBox10.FontFace = "Tahoma";
-            ucTextBox10.FontSize = 9F;
-            ucTextBox10.FormatStr = "";
-            ucTextBox10.Location = new Point(571, 540);
-            ucTextBox10.Margin = new Padding(4, 3, 4, 3);
-            ucTextBox10.Name = "ucTextBox10";
-            ucTextBox10.Size = new Size(110, 23);
-            ucTextBox10.TabIndex = 49;
-            ucTextBox10.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox10.Title = "Rate";
-            ucTextBox10.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            ucTextBox10.TitleWidth = 0;
-            // 
-            // ucTextBox9
-            // 
-            ucTextBox9.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ucTextBox9.Appearance.Options.UseFont = true;
-            ucTextBox9.ControlHeight = 23;
-            ucTextBox9.ControlWidth = 110;
-            ucTextBox9.FontColor = Color.Black;
-            ucTextBox9.FontFace = "Tahoma";
-            ucTextBox9.FontSize = 9F;
-            ucTextBox9.FormatStr = "";
-            ucTextBox9.Location = new Point(413, 540);
-            ucTextBox9.Margin = new Padding(4, 3, 4, 3);
-            ucTextBox9.Name = "ucTextBox9";
-            ucTextBox9.Size = new Size(110, 23);
-            ucTextBox9.TabIndex = 49;
-            ucTextBox9.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox9.Title = "Rate";
-            ucTextBox9.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            ucTextBox9.TitleWidth = 0;
-            // 
-            // ucTextBox8
-            // 
-            ucTextBox8.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ucTextBox8.Appearance.Options.UseFont = true;
-            ucTextBox8.ControlHeight = 23;
-            ucTextBox8.ControlWidth = 110;
-            ucTextBox8.FontColor = Color.Black;
-            ucTextBox8.FontFace = "Tahoma";
-            ucTextBox8.FontSize = 9F;
-            ucTextBox8.FormatStr = "";
-            ucTextBox8.Location = new Point(281, 540);
-            ucTextBox8.Margin = new Padding(4, 3, 4, 3);
-            ucTextBox8.Name = "ucTextBox8";
-            ucTextBox8.Size = new Size(110, 23);
-            ucTextBox8.TabIndex = 49;
-            ucTextBox8.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox8.Title = "Rate";
-            ucTextBox8.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            ucTextBox8.TitleWidth = 0;
-            // 
-            // ucTextBox7
-            // 
-            ucTextBox7.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ucTextBox7.Appearance.Options.UseFont = true;
-            ucTextBox7.ControlHeight = 23;
-            ucTextBox7.ControlWidth = 110;
-            ucTextBox7.FontColor = Color.Black;
-            ucTextBox7.FontFace = "Tahoma";
-            ucTextBox7.FontSize = 9F;
-            ucTextBox7.FormatStr = "";
-            ucTextBox7.Location = new Point(157, 540);
-            ucTextBox7.Margin = new Padding(4, 3, 4, 3);
-            ucTextBox7.Name = "ucTextBox7";
-            ucTextBox7.Size = new Size(110, 23);
-            ucTextBox7.TabIndex = 49;
-            ucTextBox7.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox7.Title = "Rate";
-            ucTextBox7.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            ucTextBox7.TitleWidth = 0;
-            // 
-            // ucTextBox6
-            // 
-            ucTextBox6.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ucTextBox6.Appearance.Options.UseFont = true;
-            ucTextBox6.ControlHeight = 23;
-            ucTextBox6.ControlWidth = 110;
-            ucTextBox6.FontColor = Color.Black;
-            ucTextBox6.FontFace = "Tahoma";
-            ucTextBox6.FontSize = 9F;
-            ucTextBox6.FormatStr = "";
-            ucTextBox6.Location = new Point(25, 540);
-            ucTextBox6.Margin = new Padding(4, 3, 4, 3);
-            ucTextBox6.Name = "ucTextBox6";
-            ucTextBox6.Size = new Size(110, 23);
-            ucTextBox6.TabIndex = 49;
-            ucTextBox6.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox6.Title = "Rate";
-            ucTextBox6.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            ucTextBox6.TitleWidth = 0;
-            // 
-            // ucTextBox5
-            // 
-            ucTextBox5.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ucTextBox5.Appearance.Options.UseFont = true;
-            ucTextBox5.ControlHeight = 23;
-            ucTextBox5.ControlWidth = 94;
-            ucTextBox5.FontColor = Color.Black;
-            ucTextBox5.FontFace = "Tahoma";
-            ucTextBox5.FontSize = 9F;
-            ucTextBox5.FormatStr = "";
-            ucTextBox5.Location = new Point(314, 282);
-            ucTextBox5.Margin = new Padding(4, 3, 4, 3);
-            ucTextBox5.Name = "ucTextBox5";
-            ucTextBox5.Size = new Size(94, 23);
-            ucTextBox5.TabIndex = 49;
-            ucTextBox5.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox5.Title = "Rate";
-            ucTextBox5.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            ucTextBox5.TitleWidth = 0;
-            // 
-            // ucTextBox4
-            // 
-            ucTextBox4.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ucTextBox4.Appearance.Options.UseFont = true;
-            ucTextBox4.ControlHeight = 23;
-            ucTextBox4.ControlWidth = 94;
-            ucTextBox4.FontColor = Color.Black;
-            ucTextBox4.FontFace = "Tahoma";
-            ucTextBox4.FontSize = 9F;
-            ucTextBox4.FormatStr = "";
-            ucTextBox4.Location = new Point(314, 256);
-            ucTextBox4.Margin = new Padding(4, 3, 4, 3);
-            ucTextBox4.Name = "ucTextBox4";
-            ucTextBox4.Size = new Size(94, 23);
-            ucTextBox4.TabIndex = 49;
-            ucTextBox4.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox4.Title = "Rate";
-            ucTextBox4.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            ucTextBox4.TitleWidth = 0;
-            // 
-            // ucTextBox3
-            // 
-            ucTextBox3.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ucTextBox3.Appearance.Options.UseFont = true;
-            ucTextBox3.ControlHeight = 23;
-            ucTextBox3.ControlWidth = 94;
-            ucTextBox3.FontColor = Color.Black;
-            ucTextBox3.FontFace = "Tahoma";
-            ucTextBox3.FontSize = 9F;
-            ucTextBox3.FormatStr = "";
-            ucTextBox3.Location = new Point(314, 230);
-            ucTextBox3.Margin = new Padding(4, 3, 4, 3);
-            ucTextBox3.Name = "ucTextBox3";
-            ucTextBox3.Size = new Size(94, 23);
-            ucTextBox3.TabIndex = 49;
-            ucTextBox3.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox3.Title = "Rate";
-            ucTextBox3.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            ucTextBox3.TitleWidth = 0;
-            // 
-            // ucTextBox2
-            // 
-            ucTextBox2.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ucTextBox2.Appearance.Options.UseFont = true;
-            ucTextBox2.ControlHeight = 23;
-            ucTextBox2.ControlWidth = 94;
-            ucTextBox2.FontColor = Color.Black;
-            ucTextBox2.FontFace = "Tahoma";
-            ucTextBox2.FontSize = 9F;
-            ucTextBox2.FormatStr = "";
-            ucTextBox2.Location = new Point(314, 204);
-            ucTextBox2.Margin = new Padding(4, 3, 4, 3);
-            ucTextBox2.Name = "ucTextBox2";
-            ucTextBox2.Size = new Size(94, 23);
-            ucTextBox2.TabIndex = 49;
-            ucTextBox2.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox2.Title = "Rate";
-            ucTextBox2.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            ucTextBox2.TitleWidth = 0;
-            // 
-            // ucTextBox25
-            // 
-            ucTextBox25.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ucTextBox25.Appearance.Options.UseFont = true;
-            ucTextBox25.ControlHeight = 23;
-            ucTextBox25.ControlWidth = 94;
-            ucTextBox25.FontColor = Color.Black;
-            ucTextBox25.FontFace = "Tahoma";
-            ucTextBox25.FontSize = 9F;
-            ucTextBox25.FormatStr = "";
-            ucTextBox25.Location = new Point(747, 476);
-            ucTextBox25.Margin = new Padding(4, 3, 4, 3);
-            ucTextBox25.Name = "ucTextBox25";
-            ucTextBox25.Size = new Size(94, 23);
-            ucTextBox25.TabIndex = 49;
-            ucTextBox25.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox25.Title = "Rate";
-            ucTextBox25.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            ucTextBox25.TitleWidth = 0;
-            // 
-            // ucTextBox24
-            // 
-            ucTextBox24.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ucTextBox24.Appearance.Options.UseFont = true;
-            ucTextBox24.ControlHeight = 23;
-            ucTextBox24.ControlWidth = 94;
-            ucTextBox24.FontColor = Color.Black;
-            ucTextBox24.FontFace = "Tahoma";
-            ucTextBox24.FontSize = 9F;
-            ucTextBox24.FormatStr = "";
-            ucTextBox24.Location = new Point(734, 152);
-            ucTextBox24.Margin = new Padding(4, 3, 4, 3);
-            ucTextBox24.Name = "ucTextBox24";
-            ucTextBox24.Size = new Size(94, 23);
-            ucTextBox24.TabIndex = 49;
-            ucTextBox24.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox24.Title = "Rate";
-            ucTextBox24.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            ucTextBox24.TitleWidth = 0;
-            // 
-            // ucTextBox1
-            // 
-            ucTextBox1.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ucTextBox1.Appearance.Options.UseFont = true;
-            ucTextBox1.ControlHeight = 23;
-            ucTextBox1.ControlWidth = 94;
-            ucTextBox1.FontColor = Color.Black;
-            ucTextBox1.FontFace = "Tahoma";
-            ucTextBox1.FontSize = 9F;
-            ucTextBox1.FormatStr = "";
-            ucTextBox1.Location = new Point(314, 178);
-            ucTextBox1.Margin = new Padding(4, 3, 4, 3);
-            ucTextBox1.Name = "ucTextBox1";
-            ucTextBox1.Size = new Size(94, 23);
-            ucTextBox1.TabIndex = 49;
-            ucTextBox1.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox1.Title = "Rate";
-            ucTextBox1.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            ucTextBox1.TitleWidth = 0;
-            // 
-            // ucTextBox38
-            // 
-            ucTextBox38.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ucTextBox38.Appearance.Options.UseFont = true;
-            ucTextBox38.ControlHeight = 23;
-            ucTextBox38.ControlWidth = 365;
-            ucTextBox38.FontColor = Color.Black;
-            ucTextBox38.FontFace = "Tahoma";
-            ucTextBox38.FontSize = 9F;
-            ucTextBox38.FormatStr = "";
-            ucTextBox38.Location = new Point(43, 152);
-            ucTextBox38.Margin = new Padding(4, 3, 4, 3);
-            ucTextBox38.Name = "ucTextBox38";
-            ucTextBox38.Size = new Size(365, 23);
-            ucTextBox38.TabIndex = 49;
-            ucTextBox38.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox38.Title = "Rate";
-            ucTextBox38.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            ucTextBox38.TitleWidth = 270;
+            // add_tot
+            // 
+            add_tot.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            add_tot.Appearance.Options.UseFont = true;
+            add_tot.ControlHeight = 23;
+            add_tot.ControlWidth = 366;
+            add_tot.FontColor = Color.Black;
+            add_tot.FontFace = "Tahoma";
+            add_tot.FontSize = 9F;
+            add_tot.FormatStr = "";
+            add_tot.Location = new Point(43, 481);
+            add_tot.Margin = new Padding(4, 3, 4, 3);
+            add_tot.Name = "add_tot";
+            add_tot.Size = new Size(366, 23);
+            add_tot.TabIndex = 42;
+            add_tot.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            add_tot.Title = "Total Earnings";
+            add_tot.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            add_tot.TitleWidth = 270;
+            // 
+            // add_11
+            // 
+            add_11.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            add_11.Appearance.Options.UseFont = true;
+            add_11.ControlHeight = 23;
+            add_11.ControlWidth = 366;
+            add_11.FontColor = Color.Black;
+            add_11.FontFace = "Tahoma";
+            add_11.FontSize = 9F;
+            add_11.FormatStr = "";
+            add_11.Location = new Point(43, 422);
+            add_11.Margin = new Padding(4, 3, 4, 3);
+            add_11.Name = "add_11";
+            add_11.Size = new Size(366, 23);
+            add_11.TabIndex = 39;
+            add_11.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            add_11.Title = "Misc. Income";
+            add_11.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            add_11.TitleWidth = 270;
+            // 
+            // add_10
+            // 
+            add_10.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            add_10.Appearance.Options.UseFont = true;
+            add_10.ControlHeight = 23;
+            add_10.ControlWidth = 366;
+            add_10.FontColor = Color.Black;
+            add_10.FontFace = "Tahoma";
+            add_10.FontSize = 9F;
+            add_10.FormatStr = "";
+            add_10.Location = new Point(43, 395);
+            add_10.Margin = new Padding(4, 3, 4, 3);
+            add_10.Name = "add_10";
+            add_10.Size = new Size(366, 23);
+            add_10.TabIndex = 38;
+            add_10.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            add_10.Title = "Bonus";
+            add_10.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            add_10.TitleWidth = 270;
+            // 
+            // add_9
+            // 
+            add_9.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            add_9.Appearance.Options.UseFont = true;
+            add_9.ControlHeight = 23;
+            add_9.ControlWidth = 366;
+            add_9.FontColor = Color.Black;
+            add_9.FontFace = "Tahoma";
+            add_9.FontSize = 9F;
+            add_9.FormatStr = "";
+            add_9.Location = new Point(43, 368);
+            add_9.Margin = new Padding(4, 3, 4, 3);
+            add_9.Name = "add_9";
+            add_9.Size = new Size(366, 23);
+            add_9.TabIndex = 37;
+            add_9.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            add_9.Title = "Cremation / Compensation";
+            add_9.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            add_9.TitleWidth = 270;
+            // 
+            // add_8
+            // 
+            add_8.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            add_8.Appearance.Options.UseFont = true;
+            add_8.ControlHeight = 23;
+            add_8.ControlWidth = 366;
+            add_8.FontColor = Color.Black;
+            add_8.FontFace = "Tahoma";
+            add_8.FontSize = 9F;
+            add_8.FormatStr = "";
+            add_8.Location = new Point(42, 341);
+            add_8.Margin = new Padding(4, 3, 4, 3);
+            add_8.Name = "add_8";
+            add_8.Size = new Size(366, 23);
+            add_8.TabIndex = 36;
+            add_8.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            add_8.Title = "Foods";
+            add_8.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            add_8.TitleWidth = 270;
+            // 
+            // add_7
+            // 
+            add_7.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            add_7.Appearance.Options.UseFont = true;
+            add_7.ControlHeight = 23;
+            add_7.ControlWidth = 366;
+            add_7.FontColor = Color.Black;
+            add_7.FontFace = "Tahoma";
+            add_7.FontSize = 9F;
+            add_7.FormatStr = "";
+            add_7.Location = new Point(43, 314);
+            add_7.Margin = new Padding(4, 3, 4, 3);
+            add_7.Name = "add_7";
+            add_7.Size = new Size(366, 23);
+            add_7.TabIndex = 43;
+            add_7.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            add_7.Title = "Allowance";
+            add_7.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            add_7.TitleWidth = 270;
+            // 
+            // no_6
+            // 
+            no_6.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            no_6.Appearance.Options.UseFont = true;
+            no_6.ControlHeight = 23;
+            no_6.ControlWidth = 244;
+            no_6.FontColor = Color.Black;
+            no_6.FontFace = "Tahoma";
+            no_6.FontSize = 9F;
+            no_6.FormatStr = "";
+            no_6.Location = new Point(42, 287);
+            no_6.Margin = new Padding(4, 3, 4, 3);
+            no_6.Name = "no_6";
+            no_6.Size = new Size(244, 23);
+            no_6.TabIndex = 44;
+            no_6.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            no_6.Title = "Overtime * 3.0 time";
+            no_6.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            no_6.TitleWidth = 150;
+            // 
+            // no_5
+            // 
+            no_5.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            no_5.Appearance.Options.UseFont = true;
+            no_5.ControlHeight = 23;
+            no_5.ControlWidth = 243;
+            no_5.FontColor = Color.Black;
+            no_5.FontFace = "Tahoma";
+            no_5.FontSize = 9F;
+            no_5.FormatStr = "";
+            no_5.Location = new Point(43, 260);
+            no_5.Margin = new Padding(4, 3, 4, 3);
+            no_5.Name = "no_5";
+            no_5.Size = new Size(243, 23);
+            no_5.TabIndex = 45;
+            no_5.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            no_5.Title = "Overtime * 2.0 time";
+            no_5.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            no_5.TitleWidth = 150;
+            // 
+            // no_4
+            // 
+            no_4.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            no_4.Appearance.Options.UseFont = true;
+            no_4.ControlHeight = 23;
+            no_4.ControlWidth = 243;
+            no_4.FontColor = Color.Black;
+            no_4.FontFace = "Tahoma";
+            no_4.FontSize = 9F;
+            no_4.FormatStr = "";
+            no_4.Location = new Point(43, 233);
+            no_4.Margin = new Padding(4, 3, 4, 3);
+            no_4.Name = "no_4";
+            no_4.Size = new Size(243, 23);
+            no_4.TabIndex = 46;
+            no_4.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            no_4.Title = "Overtime * 1.5 time";
+            no_4.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            no_4.TitleWidth = 150;
+            // 
+            // ded_6
+            // 
+            ded_6.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ded_6.Appearance.Options.UseFont = true;
+            ded_6.ControlHeight = 23;
+            ded_6.ControlWidth = 243;
+            ded_6.FontColor = Color.Black;
+            ded_6.FontFace = "Tahoma";
+            ded_6.FontSize = 9F;
+            ded_6.FormatStr = "";
+            ded_6.Location = new Point(434, 287);
+            ded_6.Margin = new Padding(4, 3, 4, 3);
+            ded_6.Name = "ded_6";
+            ded_6.Size = new Size(243, 23);
+            ded_6.TabIndex = 47;
+            ded_6.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ded_6.Title = "Thanachat Loan";
+            ded_6.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            ded_6.TitleWidth = 150;
+            // 
+            // ded_tot
+            // 
+            ded_tot.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ded_tot.Appearance.Options.UseFont = true;
+            ded_tot.ControlHeight = 23;
+            ded_tot.ControlWidth = 243;
+            ded_tot.FontColor = Color.Black;
+            ded_tot.FontFace = "Tahoma";
+            ded_tot.FontSize = 9F;
+            ded_tot.FormatStr = "";
+            ded_tot.Location = new Point(434, 476);
+            ded_tot.Margin = new Padding(4, 3, 4, 3);
+            ded_tot.Name = "ded_tot";
+            ded_tot.Size = new Size(243, 23);
+            ded_tot.TabIndex = 47;
+            ded_tot.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ded_tot.Title = "Total Deductions";
+            ded_tot.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            ded_tot.TitleWidth = 150;
+            // 
+            // ded_12
+            // 
+            ded_12.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ded_12.Appearance.Options.UseFont = true;
+            ded_12.ControlHeight = 23;
+            ded_12.ControlWidth = 243;
+            ded_12.FontColor = Color.Black;
+            ded_12.FontFace = "Tahoma";
+            ded_12.FontSize = 9F;
+            ded_12.FormatStr = "";
+            ded_12.Location = new Point(434, 449);
+            ded_12.Margin = new Padding(4, 3, 4, 3);
+            ded_12.Name = "ded_12";
+            ded_12.Size = new Size(243, 23);
+            ded_12.TabIndex = 47;
+            ded_12.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ded_12.Title = "Tax";
+            ded_12.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            ded_12.TitleWidth = 150;
+            // 
+            // ded_11
+            // 
+            ded_11.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ded_11.Appearance.Options.UseFont = true;
+            ded_11.ControlHeight = 23;
+            ded_11.ControlWidth = 243;
+            ded_11.FontColor = Color.Black;
+            ded_11.FontFace = "Tahoma";
+            ded_11.FontSize = 9F;
+            ded_11.FormatStr = "";
+            ded_11.Location = new Point(434, 422);
+            ded_11.Margin = new Padding(4, 3, 4, 3);
+            ded_11.Name = "ded_11";
+            ded_11.Size = new Size(243, 23);
+            ded_11.TabIndex = 47;
+            ded_11.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ded_11.Title = "Social Security";
+            ded_11.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            ded_11.TitleWidth = 150;
+            // 
+            // ded_10
+            // 
+            ded_10.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ded_10.Appearance.Options.UseFont = true;
+            ded_10.ControlHeight = 23;
+            ded_10.ControlWidth = 243;
+            ded_10.FontColor = Color.Black;
+            ded_10.FontFace = "Tahoma";
+            ded_10.FontSize = 9F;
+            ded_10.FormatStr = "";
+            ded_10.Location = new Point(434, 395);
+            ded_10.Margin = new Padding(4, 3, 4, 3);
+            ded_10.Name = "ded_10";
+            ded_10.Size = new Size(243, 23);
+            ded_10.TabIndex = 47;
+            ded_10.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ded_10.Title = "Prov. Fund";
+            ded_10.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            ded_10.TitleWidth = 150;
+            // 
+            // ded_9
+            // 
+            ded_9.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ded_9.Appearance.Options.UseFont = true;
+            ded_9.ControlHeight = 23;
+            ded_9.ControlWidth = 243;
+            ded_9.FontColor = Color.Black;
+            ded_9.FontFace = "Tahoma";
+            ded_9.FontSize = 9F;
+            ded_9.FormatStr = "";
+            ded_9.Location = new Point(434, 368);
+            ded_9.Margin = new Padding(4, 3, 4, 3);
+            ded_9.Name = "ded_9";
+            ded_9.Size = new Size(243, 23);
+            ded_9.TabIndex = 47;
+            ded_9.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ded_9.Title = "Student Loan";
+            ded_9.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            ded_9.TitleWidth = 150;
+            // 
+            // ded_8
+            // 
+            ded_8.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ded_8.Appearance.Options.UseFont = true;
+            ded_8.ControlHeight = 23;
+            ded_8.ControlWidth = 243;
+            ded_8.FontColor = Color.Black;
+            ded_8.FontFace = "Tahoma";
+            ded_8.FontSize = 9F;
+            ded_8.FormatStr = "";
+            ded_8.Location = new Point(434, 341);
+            ded_8.Margin = new Padding(4, 3, 4, 3);
+            ded_8.Name = "ded_8";
+            ded_8.Size = new Size(243, 23);
+            ded_8.TabIndex = 47;
+            ded_8.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ded_8.Title = "Loan";
+            ded_8.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            ded_8.TitleWidth = 150;
+            // 
+            // ded_7
+            // 
+            ded_7.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ded_7.Appearance.Options.UseFont = true;
+            ded_7.ControlHeight = 23;
+            ded_7.ControlWidth = 243;
+            ded_7.FontColor = Color.Black;
+            ded_7.FontFace = "Tahoma";
+            ded_7.FontSize = 9F;
+            ded_7.FormatStr = "";
+            ded_7.Location = new Point(434, 314);
+            ded_7.Margin = new Padding(4, 3, 4, 3);
+            ded_7.Name = "ded_7";
+            ded_7.Size = new Size(243, 23);
+            ded_7.TabIndex = 47;
+            ded_7.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ded_7.Title = "Other Deduct";
+            ded_7.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            ded_7.TitleWidth = 150;
+            // 
+            // ded_5
+            // 
+            ded_5.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ded_5.Appearance.Options.UseFont = true;
+            ded_5.ControlHeight = 23;
+            ded_5.ControlWidth = 243;
+            ded_5.FontColor = Color.Black;
+            ded_5.FontFace = "Tahoma";
+            ded_5.FontSize = 9F;
+            ded_5.FormatStr = "";
+            ded_5.Location = new Point(434, 260);
+            ded_5.Margin = new Padding(4, 3, 4, 3);
+            ded_5.Name = "ded_5";
+            ded_5.Size = new Size(243, 23);
+            ded_5.TabIndex = 47;
+            ded_5.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ded_5.Title = "Advance";
+            ded_5.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            ded_5.TitleWidth = 150;
+            // 
+            // ded_4
+            // 
+            ded_4.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ded_4.Appearance.Options.UseFont = true;
+            ded_4.ControlHeight = 23;
+            ded_4.ControlWidth = 243;
+            ded_4.FontColor = Color.Black;
+            ded_4.FontFace = "Tahoma";
+            ded_4.FontSize = 9F;
+            ded_4.FormatStr = "";
+            ded_4.Location = new Point(434, 233);
+            ded_4.Margin = new Padding(4, 3, 4, 3);
+            ded_4.Name = "ded_4";
+            ded_4.Size = new Size(243, 23);
+            ded_4.TabIndex = 47;
+            ded_4.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ded_4.Title = "Less Legal Execution";
+            ded_4.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            ded_4.TitleWidth = 150;
+            // 
+            // ded_3
+            // 
+            ded_3.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ded_3.Appearance.Options.UseFont = true;
+            ded_3.ControlHeight = 23;
+            ded_3.ControlWidth = 243;
+            ded_3.FontColor = Color.Black;
+            ded_3.FontFace = "Tahoma";
+            ded_3.FontSize = 9F;
+            ded_3.FormatStr = "";
+            ded_3.Location = new Point(434, 206);
+            ded_3.Margin = new Padding(4, 3, 4, 3);
+            ded_3.Name = "ded_3";
+            ded_3.Size = new Size(243, 23);
+            ded_3.TabIndex = 47;
+            ded_3.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ded_3.Title = "Less Cremation";
+            ded_3.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            ded_3.TitleWidth = 150;
+            // 
+            // ded_2
+            // 
+            ded_2.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ded_2.Appearance.Options.UseFont = true;
+            ded_2.ControlHeight = 23;
+            ded_2.ControlWidth = 243;
+            ded_2.FontColor = Color.Black;
+            ded_2.FontFace = "Tahoma";
+            ded_2.FontSize = 9F;
+            ded_2.FormatStr = "";
+            ded_2.Location = new Point(434, 179);
+            ded_2.Margin = new Padding(4, 3, 4, 3);
+            ded_2.Name = "ded_2";
+            ded_2.Size = new Size(243, 23);
+            ded_2.TabIndex = 47;
+            ded_2.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ded_2.Title = "Tools/Uniform";
+            ded_2.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            ded_2.TitleWidth = 150;
+            // 
+            // ded_1
+            // 
+            ded_1.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ded_1.Appearance.Options.UseFont = true;
+            ded_1.ControlHeight = 23;
+            ded_1.ControlWidth = 243;
+            ded_1.FontColor = Color.Black;
+            ded_1.FontFace = "Tahoma";
+            ded_1.FontSize = 9F;
+            ded_1.FormatStr = "";
+            ded_1.Location = new Point(434, 152);
+            ded_1.Margin = new Padding(4, 3, 4, 3);
+            ded_1.Name = "ded_1";
+            ded_1.Size = new Size(243, 23);
+            ded_1.TabIndex = 47;
+            ded_1.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ded_1.Title = "Absent & Leave W/O";
+            ded_1.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            ded_1.TitleWidth = 150;
+            // 
+            // no_3
+            // 
+            no_3.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            no_3.Appearance.Options.UseFont = true;
+            no_3.ControlHeight = 23;
+            no_3.ControlWidth = 243;
+            no_3.FontColor = Color.Black;
+            no_3.FontFace = "Tahoma";
+            no_3.FontSize = 9F;
+            no_3.FormatStr = "";
+            no_3.Location = new Point(43, 206);
+            no_3.Margin = new Padding(4, 3, 4, 3);
+            no_3.Name = "no_3";
+            no_3.Size = new Size(243, 23);
+            no_3.TabIndex = 47;
+            no_3.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            no_3.Title = "Overtime * 1.0 time";
+            no_3.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            no_3.TitleWidth = 150;
+            // 
+            // no_2
+            // 
+            no_2.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            no_2.Appearance.Options.UseFont = true;
+            no_2.ControlHeight = 23;
+            no_2.ControlWidth = 243;
+            no_2.FontColor = Color.Black;
+            no_2.FontFace = "Tahoma";
+            no_2.FontSize = 9F;
+            no_2.FormatStr = "";
+            no_2.Location = new Point(43, 179);
+            no_2.Margin = new Padding(4, 3, 4, 3);
+            no_2.Name = "no_2";
+            no_2.Size = new Size(243, 23);
+            no_2.TabIndex = 48;
+            no_2.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            no_2.Title = "Salary";
+            no_2.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            no_2.TitleWidth = 150;
+            // 
+            // other_allowance
+            // 
+            other_allowance.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            other_allowance.Appearance.Options.UseFont = true;
+            other_allowance.ControlHeight = 23;
+            other_allowance.ControlWidth = 110;
+            other_allowance.FontColor = Color.Black;
+            other_allowance.FontFace = "Tahoma";
+            other_allowance.FontSize = 9F;
+            other_allowance.FormatStr = "";
+            other_allowance.Location = new Point(571, 540);
+            other_allowance.Margin = new Padding(4, 3, 4, 3);
+            other_allowance.Name = "other_allowance";
+            other_allowance.Size = new Size(110, 23);
+            other_allowance.TabIndex = 49;
+            other_allowance.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            other_allowance.Title = "Rate";
+            other_allowance.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            other_allowance.TitleWidth = 0;
+            // 
+            // ytd_social
+            // 
+            ytd_social.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ytd_social.Appearance.Options.UseFont = true;
+            ytd_social.ControlHeight = 23;
+            ytd_social.ControlWidth = 110;
+            ytd_social.FontColor = Color.Black;
+            ytd_social.FontFace = "Tahoma";
+            ytd_social.FontSize = 9F;
+            ytd_social.FormatStr = "";
+            ytd_social.Location = new Point(413, 540);
+            ytd_social.Margin = new Padding(4, 3, 4, 3);
+            ytd_social.Name = "ytd_social";
+            ytd_social.Size = new Size(110, 23);
+            ytd_social.TabIndex = 49;
+            ytd_social.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ytd_social.Title = "Rate";
+            ytd_social.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            ytd_social.TitleWidth = 0;
+            // 
+            // ytd_fund
+            // 
+            ytd_fund.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ytd_fund.Appearance.Options.UseFont = true;
+            ytd_fund.ControlHeight = 23;
+            ytd_fund.ControlWidth = 110;
+            ytd_fund.FontColor = Color.Black;
+            ytd_fund.FontFace = "Tahoma";
+            ytd_fund.FontSize = 9F;
+            ytd_fund.FormatStr = "";
+            ytd_fund.Location = new Point(281, 540);
+            ytd_fund.Margin = new Padding(4, 3, 4, 3);
+            ytd_fund.Name = "ytd_fund";
+            ytd_fund.Size = new Size(110, 23);
+            ytd_fund.TabIndex = 49;
+            ytd_fund.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ytd_fund.Title = "Rate";
+            ytd_fund.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            ytd_fund.TitleWidth = 0;
+            // 
+            // ytd_tax
+            // 
+            ytd_tax.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ytd_tax.Appearance.Options.UseFont = true;
+            ytd_tax.ControlHeight = 23;
+            ytd_tax.ControlWidth = 110;
+            ytd_tax.FontColor = Color.Black;
+            ytd_tax.FontFace = "Tahoma";
+            ytd_tax.FontSize = 9F;
+            ytd_tax.FormatStr = "";
+            ytd_tax.Location = new Point(157, 540);
+            ytd_tax.Margin = new Padding(4, 3, 4, 3);
+            ytd_tax.Name = "ytd_tax";
+            ytd_tax.Size = new Size(110, 23);
+            ytd_tax.TabIndex = 49;
+            ytd_tax.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ytd_tax.Title = "Rate";
+            ytd_tax.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            ytd_tax.TitleWidth = 0;
+            // 
+            // ytd_income
+            // 
+            ytd_income.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ytd_income.Appearance.Options.UseFont = true;
+            ytd_income.ControlHeight = 23;
+            ytd_income.ControlWidth = 110;
+            ytd_income.FontColor = Color.Black;
+            ytd_income.FontFace = "Tahoma";
+            ytd_income.FontSize = 9F;
+            ytd_income.FormatStr = "";
+            ytd_income.Location = new Point(25, 540);
+            ytd_income.Margin = new Padding(4, 3, 4, 3);
+            ytd_income.Name = "ytd_income";
+            ytd_income.Size = new Size(110, 23);
+            ytd_income.TabIndex = 49;
+            ytd_income.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ytd_income.Title = "Rate";
+            ytd_income.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            ytd_income.TitleWidth = 0;
+            // 
+            // add_6
+            // 
+            add_6.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            add_6.Appearance.Options.UseFont = true;
+            add_6.ControlHeight = 23;
+            add_6.ControlWidth = 94;
+            add_6.FontColor = Color.Black;
+            add_6.FontFace = "Tahoma";
+            add_6.FontSize = 9F;
+            add_6.FormatStr = "";
+            add_6.Location = new Point(314, 282);
+            add_6.Margin = new Padding(4, 3, 4, 3);
+            add_6.Name = "add_6";
+            add_6.Size = new Size(94, 23);
+            add_6.TabIndex = 49;
+            add_6.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            add_6.Title = "Rate";
+            add_6.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            add_6.TitleWidth = 0;
+            // 
+            // add_5
+            // 
+            add_5.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            add_5.Appearance.Options.UseFont = true;
+            add_5.ControlHeight = 23;
+            add_5.ControlWidth = 94;
+            add_5.FontColor = Color.Black;
+            add_5.FontFace = "Tahoma";
+            add_5.FontSize = 9F;
+            add_5.FormatStr = "";
+            add_5.Location = new Point(314, 256);
+            add_5.Margin = new Padding(4, 3, 4, 3);
+            add_5.Name = "add_5";
+            add_5.Size = new Size(94, 23);
+            add_5.TabIndex = 49;
+            add_5.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            add_5.Title = "Rate";
+            add_5.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            add_5.TitleWidth = 0;
+            // 
+            // add_4
+            // 
+            add_4.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            add_4.Appearance.Options.UseFont = true;
+            add_4.ControlHeight = 23;
+            add_4.ControlWidth = 94;
+            add_4.FontColor = Color.Black;
+            add_4.FontFace = "Tahoma";
+            add_4.FontSize = 9F;
+            add_4.FormatStr = "";
+            add_4.Location = new Point(314, 230);
+            add_4.Margin = new Padding(4, 3, 4, 3);
+            add_4.Name = "add_4";
+            add_4.Size = new Size(94, 23);
+            add_4.TabIndex = 49;
+            add_4.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            add_4.Title = "Rate";
+            add_4.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            add_4.TitleWidth = 0;
+            // 
+            // add_3
+            // 
+            add_3.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            add_3.Appearance.Options.UseFont = true;
+            add_3.ControlHeight = 23;
+            add_3.ControlWidth = 94;
+            add_3.FontColor = Color.Black;
+            add_3.FontFace = "Tahoma";
+            add_3.FontSize = 9F;
+            add_3.FormatStr = "";
+            add_3.Location = new Point(314, 204);
+            add_3.Margin = new Padding(4, 3, 4, 3);
+            add_3.Name = "add_3";
+            add_3.Size = new Size(94, 23);
+            add_3.TabIndex = 49;
+            add_3.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            add_3.Title = "Rate";
+            add_3.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            add_3.TitleWidth = 0;
+            // 
+            // net_pay
+            // 
+            net_pay.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            net_pay.Appearance.Options.UseFont = true;
+            net_pay.ControlHeight = 23;
+            net_pay.ControlWidth = 94;
+            net_pay.FontColor = Color.Black;
+            net_pay.FontFace = "Tahoma";
+            net_pay.FontSize = 9F;
+            net_pay.FormatStr = "";
+            net_pay.Location = new Point(747, 476);
+            net_pay.Margin = new Padding(4, 3, 4, 3);
+            net_pay.Name = "net_pay";
+            net_pay.Size = new Size(94, 23);
+            net_pay.TabIndex = 49;
+            net_pay.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            net_pay.Title = "Rate";
+            net_pay.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            net_pay.TitleWidth = 0;
+            // 
+            // payroll_date
+            // 
+            payroll_date.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            payroll_date.Appearance.Options.UseFont = true;
+            payroll_date.ControlHeight = 23;
+            payroll_date.ControlWidth = 94;
+            payroll_date.FontColor = Color.Black;
+            payroll_date.FontFace = "Tahoma";
+            payroll_date.FontSize = 9F;
+            payroll_date.FormatStr = "";
+            payroll_date.Location = new Point(734, 152);
+            payroll_date.Margin = new Padding(4, 3, 4, 3);
+            payroll_date.Name = "payroll_date";
+            payroll_date.Size = new Size(94, 23);
+            payroll_date.TabIndex = 49;
+            payroll_date.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            payroll_date.Title = "Rate";
+            payroll_date.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            payroll_date.TitleWidth = 0;
+            // 
+            // add_2
+            // 
+            add_2.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            add_2.Appearance.Options.UseFont = true;
+            add_2.ControlHeight = 23;
+            add_2.ControlWidth = 94;
+            add_2.FontColor = Color.Black;
+            add_2.FontFace = "Tahoma";
+            add_2.FontSize = 9F;
+            add_2.FormatStr = "";
+            add_2.Location = new Point(314, 178);
+            add_2.Margin = new Padding(4, 3, 4, 3);
+            add_2.Name = "add_2";
+            add_2.Size = new Size(94, 23);
+            add_2.TabIndex = 49;
+            add_2.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            add_2.Title = "Rate";
+            add_2.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            add_2.TitleWidth = 0;
+            // 
+            // add_1
+            // 
+            add_1.Appearance.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            add_1.Appearance.Options.UseFont = true;
+            add_1.ControlHeight = 23;
+            add_1.ControlWidth = 365;
+            add_1.FontColor = Color.Black;
+            add_1.FontFace = "Tahoma";
+            add_1.FontSize = 9F;
+            add_1.FormatStr = "";
+            add_1.Location = new Point(43, 152);
+            add_1.Margin = new Padding(4, 3, 4, 3);
+            add_1.Name = "add_1";
+            add_1.Size = new Size(365, 23);
+            add_1.TabIndex = 49;
+            add_1.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            add_1.Title = "Rate";
+            add_1.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            add_1.TitleWidth = 270;
             // 
             // bank_acc_no
             // 
@@ -1498,59 +1498,59 @@
         private Ctrls.UCButton btn_mail;
         private Ctrls.UCGridSet g20;
         private Ctrls.UCPanel ucPanel3;
-        private Ctrls.UCTextBox ucTextBox44;
-        private Ctrls.UCTextBox ucTextBox43;
-        private Ctrls.UCTextBox ucTextBox42;
-        private Ctrls.UCTextBox ucTextBox41;
-        private Ctrls.UCTextBox ucTextBox31;
-        private Ctrls.UCTextBox ucTextBox32;
-        private Ctrls.UCTextBox ucTextBox33;
-        private Ctrls.UCTextBox ucTextBox34;
-        private Ctrls.UCTextBox ucTextBox35;
-        private Ctrls.UCTextBox ucTextBox36;
-        private Ctrls.UCTextBox ucTextBox37;
-        private Ctrls.UCTextBox ucTextBox38;
+        private Ctrls.UCTextBox add_tot;
+        private Ctrls.UCTextBox add_11;
+        private Ctrls.UCTextBox add_10;
+        private Ctrls.UCTextBox add_9;
+        private Ctrls.UCTextBox add_8;
+        private Ctrls.UCTextBox add_7;
+        private Ctrls.UCTextBox no_6;
+        private Ctrls.UCTextBox no_5;
+        private Ctrls.UCTextBox no_4;
+        private Ctrls.UCTextBox no_3;
+        private Ctrls.UCTextBox no_2;
+        private Ctrls.UCTextBox add_1;
         private Ctrls.UCTextBox emp_no;
         private Ctrls.UCTextBox bank_acc_no;
         private Ctrls.UCTextBox dept;
         private Ctrls.UCTextBox emp_name;
-        private Ctrls.UCTextBox ucTextBox5;
-        private Ctrls.UCTextBox ucTextBox4;
-        private Ctrls.UCTextBox ucTextBox3;
-        private Ctrls.UCTextBox ucTextBox2;
-        private Ctrls.UCTextBox ucTextBox1;
+        private Ctrls.UCTextBox add_6;
+        private Ctrls.UCTextBox add_5;
+        private Ctrls.UCTextBox add_4;
+        private Ctrls.UCTextBox add_3;
+        private Ctrls.UCTextBox add_2;
         private Label label5;
         private Label label4;
         private Label label3;
         private Label label1;
         private Label label2;
-        private Ctrls.UCTextBox ucTextBox10;
-        private Ctrls.UCTextBox ucTextBox9;
-        private Ctrls.UCTextBox ucTextBox8;
-        private Ctrls.UCTextBox ucTextBox7;
-        private Ctrls.UCTextBox ucTextBox6;
+        private Ctrls.UCTextBox other_allowance;
+        private Ctrls.UCTextBox ytd_social;
+        private Ctrls.UCTextBox ytd_fund;
+        private Ctrls.UCTextBox ytd_tax;
+        private Ctrls.UCTextBox ytd_income;
         private Label label10;
         private Label label9;
         private Label label8;
         private Label label7;
         private Label label6;
-        private Ctrls.UCTextBox ucTextBox17;
-        private Ctrls.UCTextBox ucTextBox23;
-        private Ctrls.UCTextBox ucTextBox22;
-        private Ctrls.UCTextBox ucTextBox21;
-        private Ctrls.UCTextBox ucTextBox20;
-        private Ctrls.UCTextBox ucTextBox19;
-        private Ctrls.UCTextBox ucTextBox18;
-        private Ctrls.UCTextBox ucTextBox16;
-        private Ctrls.UCTextBox ucTextBox15;
-        private Ctrls.UCTextBox ucTextBox14;
-        private Ctrls.UCTextBox ucTextBox13;
-        private Ctrls.UCTextBox ucTextBox12;
-        private Ctrls.UCTextBox ucTextBox11;
+        private Ctrls.UCTextBox ded_6;
+        private Ctrls.UCTextBox ded_tot;
+        private Ctrls.UCTextBox ded_12;
+        private Ctrls.UCTextBox ded_11;
+        private Ctrls.UCTextBox ded_10;
+        private Ctrls.UCTextBox ded_9;
+        private Ctrls.UCTextBox ded_8;
+        private Ctrls.UCTextBox ded_7;
+        private Ctrls.UCTextBox ded_5;
+        private Ctrls.UCTextBox ded_4;
+        private Ctrls.UCTextBox ded_3;
+        private Ctrls.UCTextBox ded_2;
+        private Ctrls.UCTextBox ded_1;
         private Label label12;
         private Label label11;
-        private Ctrls.UCTextBox ucTextBox25;
-        private Ctrls.UCTextBox ucTextBox24;
+        private Ctrls.UCTextBox net_pay;
+        private Ctrls.UCTextBox payroll_date;
         private Label label14;
         private Label label13;
     }

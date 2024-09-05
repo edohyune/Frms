@@ -25,7 +25,7 @@ namespace EpicV004.Frms
         private void TST104_Load(object sender, EventArgs e)
         {
             //MessageBox.Show("2");
-            g10.Open();
+            //g10.Open();
             //this.Open();
         }
       
