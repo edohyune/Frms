@@ -1290,7 +1290,7 @@
           }
         }
       },
-      "EpicPrologue/1.0.13": {
+      "EpicPrologue/1.0.17": {
         "type": "package",
         "dependencies": {
           "Dapper": "2.1.35",
@@ -3043,15 +3043,15 @@
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "EpicPrologue/1.0.13": {
-      "sha512": "EUVaWIWHW2601zfLXmRlq+WUY7F8fUQgh/7VQPR8qIOqiUNP9pOk5FMMCagp1OcWBYIAsxqHqB4t55+GB4EAbQ==",
+    "EpicPrologue/1.0.17": {
+      "sha512": "jH1FqDH9MyaV3jT5w3P39U0eFETKvWIXcU8cTHAE6skt4f24SU3Isn2yKFa3B5oet4DlFiwszvH19mnPScyfyw==",
       "type": "package",
-      "path": "epicprologue/1.0.13",
+      "path": "epicprologue/1.0.17",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
-        "epicprologue.1.0.13.nupkg.sha512",
+        "epicprologue.1.0.17.nupkg.sha512",
         "epicprologue.nuspec",
         "lib/net8.0-windows7.0/EpicPrologue.dll"
       ]
@@ -4345,12 +4345,13 @@
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
       "DevExpress.Win.Design >= 23.2.3",
-      "EpicPrologue >= 1.0.13"
+      "EpicPrologue >= 1.0.17"
     ]
   },
   "packageFolders": {
     "C:\\Users\\mupai\\.nuget\\packages\\": {},
     "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages": {},
+    "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
@@ -4364,12 +4365,14 @@
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages",
+        "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages",
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
         "C:\\Users\\mupai\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.2.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 24.1.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4379,6 +4382,7 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\DevExpress 23.2\\Components\\System\\Components\\Packages": {},
+        "C:\\Program Files\\DevExpress 24.1\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
@@ -4409,7 +4413,7 @@
           },
           "EpicPrologue": {
             "target": "Package",
-            "version": "[1.0.13, )"
+            "version": "[1.0.17, )"
           }
         },
         "imports": [
