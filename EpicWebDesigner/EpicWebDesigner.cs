@@ -253,6 +253,7 @@ namespace EpicV004.Frms
         }
         #endregion
 
+        public FrmEleRepo _frmeleRepo;
         private void groupControl2_CustomButtonClick(object sender, DevExpress.XtraBars.Docking2010.BaseButtonEventArgs e)
         {
             if (e.Button.Properties.Caption == "Load Controllers")
@@ -288,10 +289,41 @@ namespace EpicV004.Frms
                 var elementList = new FrmEleRepo().GetByEpicDomCtrl(selectedFrwId.Code, selectedFrmId.Text);
 
                 StringBuilder htmlBuilder = new StringBuilder();
-                BuildHtmlRecursive(rootNode, htmlBuilder, 0);
+                GenerateDomRecursive(rootNode, htmlBuilder, 0);
 
 
             }
+        }
+
+        // 재귀적으로 FrmEle 정보를 DOM으로 변환
+        private string GenerateDomRecursive(FrmEle element)
+        {
+            // CtrlDomRepo에서 ToolNm에 해당하는 DOM 정보를 가져옵니다.
+            var ctrlDom = _ctrlDomRepo.GetByToolNm(element.ToolNm);
+
+            if (ctrlDom == null)
+                throw new Exception($"CtrlDom for {element.ToolNm} not found");
+
+            // DOM 태그 시작 부분 생성
+            string domTag = ctrlDom.StTag;
+
+            // 중간 부분 (MdTag)이 있으면 추가
+            if (!string.IsNullOrEmpty(ctrlDom.MdTag))
+            {
+                domTag += ctrlDom.MdTag;
+            }
+
+            // 자식 컨트롤을 가져와 재귀적으로 DOM 생성
+            var childElements = _frmEleRepo.GetChildElements(element.Id);
+            foreach (var child in childElements)
+            {
+                domTag += GenerateDomRecursive(child);
+            }
+
+            // 끝 부분 (EdTag)을 추가하여 태그를 닫습니다
+            domTag += ctrlDom.EdTag;
+
+            return domTag;
         }
 
         private List<CtrlMst> ctrlMsts;

@@ -93,7 +93,6 @@ namespace EpicV004.Frms
             set => Set(ref _PId, value);
         }
     }
-
     public class CtrlDom_RTXS : Libs.MdlBase
     {
         private string _ToolNm;
@@ -136,6 +135,27 @@ namespace EpicV004.Frms
         {
             get => _EdTag;
             set => Set(ref _EdTag, value);
+        }
+
+        private string _AtCode;
+        public string AtCode
+        {
+            get => _AtCode;
+            set => Set(ref _AtCode, value);
+        }
+
+        private string _Etc01;
+        public string Etc01
+        {
+            get => _Etc01;
+            set => Set(ref _Etc01, value);
+        }
+
+        private string _Etc02;
+        public string Etc02
+        {
+            get => _Etc02;
+            set => Set(ref _Etc02, value);
         }
 
         private long _Id;
@@ -189,6 +209,27 @@ namespace EpicV004.Frms
             set => Set(ref _EdTag, value);
         }
 
+        private string _AtCode;
+        public string AtCode
+        {
+            get => _AtCode;
+            set => Set(ref _AtCode, value);
+        }
+
+        private string _Etc01;
+        public string Etc01
+        {
+            get => _Etc01;
+            set => Set(ref _Etc01, value);
+        }
+
+        private string _Etc02;
+        public string Etc02
+        {
+            get => _Etc02;
+            set => Set(ref _Etc02, value);
+        }
+
         private long _Id;
         public long Id
         {
@@ -240,6 +281,27 @@ namespace EpicV004.Frms
             set => Set(ref _EdTag, value);
         }
 
+        private string _AtCode;
+        public string AtCode
+        {
+            get => _AtCode;
+            set => Set(ref _AtCode, value);
+        }
+
+        private string _Etc01;
+        public string Etc01
+        {
+            get => _Etc01;
+            set => Set(ref _Etc01, value);
+        }
+
+        private string _Etc02;
+        public string Etc02
+        {
+            get => _Etc02;
+            set => Set(ref _Etc02, value);
+        }
+
         private long _Id;
         public long Id
         {
@@ -247,4 +309,221 @@ namespace EpicV004.Frms
             set => Set(ref _Id, value);
         }
     }
+    public class CtrlDom_FLDETC01 : MdlBase
+    {
+        private string _ToolNm;
+        public string ToolNm
+        {
+            get => _ToolNm;
+            set => Set(ref _ToolNm, value);
+        }
+
+        private string _DOMTy;
+        public string DOMTy
+        {
+            get => _DOMTy;
+            set => Set(ref _DOMTy, value);
+        }
+
+        private string _DOM;
+        public string DOM
+        {
+            get => _DOM;
+            set => Set(ref _DOM, value);
+        }
+
+        private string _StTag;
+        public string StTag
+        {
+            get => _StTag;
+            set => Set(ref _StTag, value);
+        }
+
+        private string _MdTag;
+        public string MdTag
+        {
+            get => _MdTag;
+            set => Set(ref _MdTag, value);
+        }
+
+        private string _EdTag;
+        public string EdTag
+        {
+            get => _EdTag;
+            set => Set(ref _EdTag, value);
+        }
+
+        private string _AtCode;
+        public string AtCode
+        {
+            get => _AtCode;
+            set => Set(ref _AtCode, value);
+        }
+
+        private string _Etc01;
+        public string Etc01
+        {
+            get => _Etc01;
+            set => Set(ref _Etc01, value);
+        }
+
+        private string _Etc02;
+        public string Etc02
+        {
+            get => _Etc02;
+            set => Set(ref _Etc02, value);
+        }
+
+        private long _Id;
+        public long Id
+        {
+            get => _Id;
+            set => Set(ref _Id, value);
+        }
+    }
+    public class CtrlDom_FLDETC02 : MdlBase
+    {
+        private string _ToolNm;
+        public string ToolNm
+        {
+            get => _ToolNm;
+            set => Set(ref _ToolNm, value);
+        }
+
+        private string _DOMTy;
+        public string DOMTy
+        {
+            get => _DOMTy;
+            set => Set(ref _DOMTy, value);
+        }
+
+        private string _DOM;
+        public string DOM
+        {
+            get => _DOM;
+            set => Set(ref _DOM, value);
+        }
+
+        private string _StTag;
+        public string StTag
+        {
+            get => _StTag;
+            set => Set(ref _StTag, value);
+        }
+
+        private string _MdTag;
+        public string MdTag
+        {
+            get => _MdTag;
+            set => Set(ref _MdTag, value);
+        }
+
+        private string _EdTag;
+        public string EdTag
+        {
+            get => _EdTag;
+            set => Set(ref _EdTag, value);
+        }
+
+        private string _AtCode;
+        public string AtCode
+        {
+            get => _AtCode;
+            set => Set(ref _AtCode, value);
+        }
+
+        private string _Etc01;
+        public string Etc01
+        {
+            get => _Etc01;
+            set => Set(ref _Etc01, value);
+        }
+
+        private string _Etc02;
+        public string Etc02
+        {
+            get => _Etc02;
+            set => Set(ref _Etc02, value);
+        }
+
+        private long _Id;
+        public long Id
+        {
+            get => _Id;
+            set => Set(ref _Id, value);
+        }
+    }
+    public class CtrlDom_FLDCODE : MdlBase
+    {
+        private string _ToolNm;
+        public string ToolNm
+        {
+            get => _ToolNm;
+            set => Set(ref _ToolNm, value);
+        }
+
+        private string _DOMTy;
+        public string DOMTy
+        {
+            get => _DOMTy;
+            set => Set(ref _DOMTy, value);
+        }
+
+        private string _DOM;
+        public string DOM
+        {
+            get => _DOM;
+            set => Set(ref _DOM, value);
+        }
+
+        private string _StTag;
+        public string StTag
+        {
+            get => _StTag;
+            set => Set(ref _StTag, value);
+        }
+
+        private string _MdTag;
+        public string MdTag
+        {
+            get => _MdTag;
+            set => Set(ref _MdTag, value);
+        }
+
+        private string _EdTag;
+        public string EdTag
+        {
+            get => _EdTag;
+            set => Set(ref _EdTag, value);
+        }
+
+        private string _AtCode;
+        public string AtCode
+        {
+            get => _AtCode;
+            set => Set(ref _AtCode, value);
+        }
+
+        private string _Etc01;
+        public string Etc01
+        {
+            get => _Etc01;
+            set => Set(ref _Etc01, value);
+        }
+
+        private string _Etc02;
+        public string Etc02
+        {
+            get => _Etc02;
+            set => Set(ref _Etc02, value);
+        }
+
+        private long _Id;
+        public long Id
+        {
+            get => _Id;
+            set => Set(ref _Id, value);
+        }
+    }
+
 }
