@@ -39,6 +39,7 @@
             g10 = new Ctrls.UCGridSet();
             ucSplit3 = new Ctrls.UCSplit();
             ucPanel3 = new Ctrls.UCPanel();
+            photo = new Ctrls.UCImage();
             txtChangedFlag = new Ctrls.UCTextBox();
             gend = new Ctrls.UCCodeBox();
             dept_name = new Ctrls.UCTextBox();
@@ -51,7 +52,6 @@
             id = new Ctrls.UCTextBox();
             ucPanel4 = new Ctrls.UCPanel();
             g20 = new Ctrls.UCGridSet();
-            ucImage1 = new Ctrls.UCImage();
             ((System.ComponentModel.ISupportInitialize)ucSplit1).BeginInit();
             ucSplit1.Panel1.SuspendLayout();
             ucSplit1.Panel2.SuspendLayout();
@@ -70,9 +70,9 @@
             ucSplit3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ucPanel3).BeginInit();
             ucPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)photo.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ucPanel4).BeginInit();
             ucPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)ucImage1.Properties).BeginInit();
             SuspendLayout();
             // 
             // ucSplit1
@@ -196,7 +196,7 @@
             // 
             ucSplit2.Panel2.Controls.Add(ucSplit3);
             ucSplit2.Size = new Size(1409, 736);
-            ucSplit2.SplitterDistance = 467;
+            ucSplit2.SplitterDistance = 383;
             ucSplit2.TabIndex = 0;
             ucSplit2.TitleWidth = 121;
             // 
@@ -206,7 +206,7 @@
             ucPanel2.Dock = DockStyle.Fill;
             ucPanel2.Location = new Point(0, 0);
             ucPanel2.Name = "ucPanel2";
-            ucPanel2.Size = new Size(467, 736);
+            ucPanel2.Size = new Size(383, 736);
             ucPanel2.TabIndex = 0;
             ucPanel2.Text = "List Data";
             // 
@@ -215,7 +215,7 @@
             g10.Dock = DockStyle.Fill;
             g10.Location = new Point(2, 23);
             g10.Name = "g10";
-            g10.Size = new Size(463, 711);
+            g10.Size = new Size(379, 711);
             g10.TabIndex = 0;
             // 
             // ucSplit3
@@ -233,14 +233,14 @@
             // ucSplit3.Panel2
             // 
             ucSplit3.Panel2.Controls.Add(ucPanel4);
-            ucSplit3.Size = new Size(938, 736);
+            ucSplit3.Size = new Size(1022, 736);
             ucSplit3.SplitterDistance = 200;
             ucSplit3.TabIndex = 0;
             ucSplit3.TitleWidth = 121;
             // 
             // ucPanel3
             // 
-            ucPanel3.Controls.Add(ucImage1);
+            ucPanel3.Controls.Add(photo);
             ucPanel3.Controls.Add(txtChangedFlag);
             ucPanel3.Controls.Add(gend);
             ucPanel3.Controls.Add(dept_name);
@@ -254,9 +254,17 @@
             ucPanel3.Dock = DockStyle.Fill;
             ucPanel3.Location = new Point(0, 0);
             ucPanel3.Name = "ucPanel3";
-            ucPanel3.Size = new Size(938, 200);
+            ucPanel3.Size = new Size(1022, 200);
             ucPanel3.TabIndex = 0;
             ucPanel3.Text = "Master Data";
+            // 
+            // photo
+            // 
+            photo.Location = new Point(707, 26);
+            photo.Name = "photo";
+            photo.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            photo.Size = new Size(210, 167);
+            photo.TabIndex = 0;
             // 
             // txtChangedFlag
             // 
@@ -444,7 +452,7 @@
             ucPanel4.Dock = DockStyle.Fill;
             ucPanel4.Location = new Point(0, 0);
             ucPanel4.Name = "ucPanel4";
-            ucPanel4.Size = new Size(938, 532);
+            ucPanel4.Size = new Size(1022, 532);
             ucPanel4.TabIndex = 0;
             ucPanel4.Text = "Detail Data";
             // 
@@ -453,16 +461,8 @@
             g20.Dock = DockStyle.Fill;
             g20.Location = new Point(2, 23);
             g20.Name = "g20";
-            g20.Size = new Size(934, 507);
+            g20.Size = new Size(1018, 507);
             g20.TabIndex = 0;
-            // 
-            // ucImage1
-            // 
-            ucImage1.Location = new Point(707, 36);
-            ucImage1.Name = "ucImage1";
-            ucImage1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            ucImage1.Size = new Size(210, 143);
-            ucImage1.TabIndex = 0;
             // 
             // TST104
             // 
@@ -490,9 +490,9 @@
             ucSplit3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ucPanel3).EndInit();
             ucPanel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)photo.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)ucPanel4).EndInit();
             ucPanel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)ucImage1.Properties).EndInit();
             ResumeLayout(false);
         }
 
@@ -523,6 +523,6 @@
         private Ctrls.UCTextBox s_dept_name;
         private Ctrls.UCTextBox s_dept;
         private Ctrls.UCGridSet g10;
-        private Ctrls.UCImage ucImage1;
+        private Ctrls.UCImage photo;
     }
 }
