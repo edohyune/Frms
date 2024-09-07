@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraEditors.ButtonsPanelControl.ButtonImageOptions buttonImageOptions1 = new DevExpress.XtraEditors.ButtonsPanelControl.ButtonImageOptions();
-            DevExpress.XtraEditors.ButtonsPanelControl.ButtonImageOptions buttonImageOptions2 = new DevExpress.XtraEditors.ButtonsPanelControl.ButtonImageOptions();
+            DevExpress.XtraEditors.ButtonsPanelControl.ButtonImageOptions buttonImageOptions4 = new DevExpress.XtraEditors.ButtonsPanelControl.ButtonImageOptions();
+            DevExpress.XtraEditors.ButtonsPanelControl.ButtonImageOptions buttonImageOptions5 = new DevExpress.XtraEditors.ButtonsPanelControl.ButtonImageOptions();
+            DevExpress.XtraEditors.ButtonsPanelControl.ButtonImageOptions buttonImageOptions6 = new DevExpress.XtraEditors.ButtonsPanelControl.ButtonImageOptions();
             splitContainer1 = new SplitContainer();
             groupControl1 = new DevExpress.XtraEditors.GroupControl();
             selectedFrwId = new UsrCtrl.LabelCode();
@@ -45,11 +46,14 @@
             splitContainer3 = new SplitContainer();
             treeFrmCtrl = new DevExpress.XtraTreeList.TreeList();
             groupControl2 = new DevExpress.XtraEditors.GroupControl();
-            msgCtrl = new DevExpress.XtraEditors.MemoEdit();
+            rtxDom = new Ctrls.UCRichText();
             xtraTabPage4 = new DevExpress.XtraTab.XtraTabPage();
             xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
             splitContainer4 = new SplitContainer();
             treeCtrls = new DevExpress.XtraTreeList.TreeList();
+            ucSplit1 = new Ctrls.UCSplit();
+            rtxEvent = new Ctrls.UCRichText();
+            rtxFunc = new Ctrls.UCRichText();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
             splitContainer1.Panel2.SuspendLayout();
@@ -75,12 +79,16 @@
             ((System.ComponentModel.ISupportInitialize)treeFrmCtrl).BeginInit();
             ((System.ComponentModel.ISupportInitialize)groupControl2).BeginInit();
             groupControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)msgCtrl.Properties).BeginInit();
+            xtraTabPage4.SuspendLayout();
             xtraTabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer4).BeginInit();
             splitContainer4.Panel1.SuspendLayout();
             splitContainer4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)treeCtrls).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)ucSplit1).BeginInit();
+            ucSplit1.Panel1.SuspendLayout();
+            ucSplit1.Panel2.SuspendLayout();
+            ucSplit1.SuspendLayout();
             SuspendLayout();
             // 
             // splitContainer1
@@ -255,11 +263,12 @@
             treeFrmCtrl.Name = "treeFrmCtrl";
             treeFrmCtrl.Size = new Size(286, 606);
             treeFrmCtrl.TabIndex = 4;
+            treeFrmCtrl.FocusedNodeChanged += treeFrmCtrl_FocusedNodeChanged;
             // 
             // groupControl2
             // 
-            groupControl2.Controls.Add(msgCtrl);
-            groupControl2.CustomHeaderButtons.AddRange(new DevExpress.XtraEditors.ButtonPanel.IBaseButton[] { new DevExpress.XtraEditors.ButtonsPanelControl.GroupBoxButton("Load Controllers", true, buttonImageOptions1, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "", -1, true, null, true, false, true, null, -1), new DevExpress.XtraEditors.ButtonsPanelControl.GroupBoxButton("Make DOM", true, buttonImageOptions2, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "", -1, true, null, true, false, true, null, -1) });
+            groupControl2.Controls.Add(rtxDom);
+            groupControl2.CustomHeaderButtons.AddRange(new DevExpress.XtraEditors.ButtonPanel.IBaseButton[] { new DevExpress.XtraEditors.ButtonsPanelControl.GroupBoxButton("Load Controllers", true, buttonImageOptions4, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "", -1, true, null, true, false, true, null, -1), new DevExpress.XtraEditors.ButtonsPanelControl.GroupBoxButton("Make DOM", true, buttonImageOptions5, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "", -1, true, null, true, false, true, null, -1), new DevExpress.XtraEditors.ButtonsPanelControl.GroupBoxButton("Check Event", true, buttonImageOptions6, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "", -1, true, null, true, false, true, null, -1) });
             groupControl2.Dock = DockStyle.Fill;
             groupControl2.Location = new Point(0, 0);
             groupControl2.Name = "groupControl2";
@@ -267,16 +276,28 @@
             groupControl2.TabIndex = 0;
             groupControl2.CustomButtonClick += groupControl2_CustomButtonClick;
             // 
-            // msgCtrl
+            // rtxDom
             // 
-            msgCtrl.Dock = DockStyle.Fill;
-            msgCtrl.Location = new Point(2, 23);
-            msgCtrl.Name = "msgCtrl";
-            msgCtrl.Size = new Size(566, 581);
-            msgCtrl.TabIndex = 1;
+            rtxDom.ActiveViewType = DevExpress.XtraRichEdit.RichEditViewType.Simple;
+            rtxDom.Appearance.Text.Font = new Font("Cascadia Code Light", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            rtxDom.Appearance.Text.Options.UseFont = true;
+            rtxDom.Dock = DockStyle.Fill;
+            rtxDom.LayoutUnit = DevExpress.XtraRichEdit.DocumentLayoutUnit.Pixel;
+            rtxDom.Location = new Point(2, 23);
+            rtxDom.Modified = true;
+            rtxDom.Name = "rtxDom";
+            rtxDom.Options.DocumentSaveOptions.CurrentFormat = DevExpress.XtraRichEdit.DocumentFormat.PlainText;
+            rtxDom.Options.DocumentSaveOptions.DefaultFormat = DevExpress.XtraRichEdit.DocumentFormat.PlainText;
+            rtxDom.Options.HorizontalRuler.Visibility = DevExpress.XtraRichEdit.RichEditRulerVisibility.Hidden;
+            rtxDom.Options.Search.RegExResultMaxGuaranteedLength = 1000;
+            rtxDom.Padding = new Padding(50, 0, 0, 0);
+            rtxDom.Size = new Size(566, 581);
+            rtxDom.TabIndex = 0;
+            rtxDom.Views.SimpleView.AllowDisplayLineNumbers = true;
             // 
             // xtraTabPage4
             // 
+            xtraTabPage4.Controls.Add(ucSplit1);
             xtraTabPage4.Name = "xtraTabPage4";
             xtraTabPage4.Size = new Size(860, 606);
             xtraTabPage4.Text = "xtraTabPage4";
@@ -308,6 +329,60 @@
             treeCtrls.Name = "treeCtrls";
             treeCtrls.Size = new Size(333, 632);
             treeCtrls.TabIndex = 3;
+            // 
+            // ucSplit1
+            // 
+            ucSplit1.Dock = DockStyle.Fill;
+            ucSplit1.Location = new Point(0, 0);
+            ucSplit1.Name = "ucSplit1";
+            // 
+            // ucSplit1.Panel1
+            // 
+            ucSplit1.Panel1.Controls.Add(rtxEvent);
+            // 
+            // ucSplit1.Panel2
+            // 
+            ucSplit1.Panel2.Controls.Add(rtxFunc);
+            ucSplit1.Size = new Size(860, 606);
+            ucSplit1.SplitterDistance = 405;
+            ucSplit1.TabIndex = 0;
+            ucSplit1.TitleWidth = 121;
+            // 
+            // rtxEvent
+            // 
+            rtxEvent.ActiveViewType = DevExpress.XtraRichEdit.RichEditViewType.Simple;
+            rtxEvent.Appearance.Text.Font = new Font("Cascadia Code Light", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            rtxEvent.Appearance.Text.Options.UseFont = true;
+            rtxEvent.Dock = DockStyle.Fill;
+            rtxEvent.LayoutUnit = DevExpress.XtraRichEdit.DocumentLayoutUnit.Pixel;
+            rtxEvent.Location = new Point(0, 0);
+            rtxEvent.Name = "rtxEvent";
+            rtxEvent.Options.DocumentSaveOptions.CurrentFormat = DevExpress.XtraRichEdit.DocumentFormat.PlainText;
+            rtxEvent.Options.DocumentSaveOptions.DefaultFormat = DevExpress.XtraRichEdit.DocumentFormat.PlainText;
+            rtxEvent.Options.HorizontalRuler.Visibility = DevExpress.XtraRichEdit.RichEditRulerVisibility.Hidden;
+            rtxEvent.Options.Search.RegExResultMaxGuaranteedLength = 1000;
+            rtxEvent.Padding = new Padding(50, 0, 0, 0);
+            rtxEvent.Size = new Size(405, 606);
+            rtxEvent.TabIndex = 0;
+            rtxEvent.Views.SimpleView.AllowDisplayLineNumbers = true;
+            // 
+            // rtxFunc
+            // 
+            rtxFunc.ActiveViewType = DevExpress.XtraRichEdit.RichEditViewType.Simple;
+            rtxFunc.Appearance.Text.Font = new Font("Cascadia Code Light", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            rtxFunc.Appearance.Text.Options.UseFont = true;
+            rtxFunc.Dock = DockStyle.Fill;
+            rtxFunc.LayoutUnit = DevExpress.XtraRichEdit.DocumentLayoutUnit.Pixel;
+            rtxFunc.Location = new Point(0, 0);
+            rtxFunc.Name = "rtxFunc";
+            rtxFunc.Options.DocumentSaveOptions.CurrentFormat = DevExpress.XtraRichEdit.DocumentFormat.PlainText;
+            rtxFunc.Options.DocumentSaveOptions.DefaultFormat = DevExpress.XtraRichEdit.DocumentFormat.PlainText;
+            rtxFunc.Options.HorizontalRuler.Visibility = DevExpress.XtraRichEdit.RichEditRulerVisibility.Hidden;
+            rtxFunc.Options.Search.RegExResultMaxGuaranteedLength = 1000;
+            rtxFunc.Padding = new Padding(50, 0, 0, 0);
+            rtxFunc.Size = new Size(451, 606);
+            rtxFunc.TabIndex = 0;
+            rtxFunc.Views.SimpleView.AllowDisplayLineNumbers = true;
             // 
             // EpicWebDesigner
             // 
@@ -341,12 +416,16 @@
             ((System.ComponentModel.ISupportInitialize)treeFrmCtrl).EndInit();
             ((System.ComponentModel.ISupportInitialize)groupControl2).EndInit();
             groupControl2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)msgCtrl.Properties).EndInit();
+            xtraTabPage4.ResumeLayout(false);
             xtraTabPage2.ResumeLayout(false);
             splitContainer4.Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)splitContainer4).EndInit();
             splitContainer4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)treeCtrls).EndInit();
+            ucSplit1.Panel1.ResumeLayout(false);
+            ucSplit1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)ucSplit1).EndInit();
+            ucSplit1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -370,7 +449,10 @@
         private SplitContainer splitContainer4;
         private DevExpress.XtraTreeList.TreeList treeCtrls;
         private DevExpress.XtraEditors.GroupControl groupControl2;
-        private DevExpress.XtraEditors.MemoEdit msgCtrl;
         private DevExpress.XtraTreeList.TreeList treeFrmCtrl;
+        private Ctrls.UCRichText rtxDom;
+        private Ctrls.UCSplit ucSplit1;
+        private Ctrls.UCRichText rtxEvent;
+        private Ctrls.UCRichText rtxFunc;
     }
 }

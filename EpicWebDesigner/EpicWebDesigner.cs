@@ -12,6 +12,8 @@ using System.IO;
 using DevExpress.XtraCharts.Native;
 using EpicV004.Ctrls;
 using System.Text;
+using EpicWebDesigner.Services;
+using System.Text.RegularExpressions;
 
 namespace EpicV004.Frms
 {
@@ -182,11 +184,18 @@ namespace EpicV004.Frms
             treeFrmCtrl.KeyFieldName = "Id";          // 각 노드의 고유 키
             treeFrmCtrl.ParentFieldName = "PId";      // 부모 노드의 키
             treeFrmCtrl.TreeViewFieldName = "DOM";
-            
+
             treeFrmCtrl.DataSource = new BindingList<FrmEle>(treeFrmCtrls);
             treeFrmCtrl.ExpandAll();
         }
-        #endregion
+
+        private FrmEle selectedFrmEle;
+        private void treeFrmCtrl_FocusedNodeChanged(object sender, FocusedNodeChangedEventArgs e)
+        {
+            //treeFrmCtrl.FocusedNode를 selectedFrmEle에 할당한다. 
+            selectedFrmEle = treeFrmCtrl.GetDataRecordByNode(treeFrmCtrl.FocusedNode) as FrmEle;
+        }
+      #endregion
 
         #region ETC Function
         /// <summary>
@@ -254,76 +263,128 @@ namespace EpicV004.Frms
         #endregion
 
         public FrmEleRepo _frmeleRepo;
+        public DomConverter domConverter;
         private void groupControl2_CustomButtonClick(object sender, DevExpress.XtraBars.Docking2010.BaseButtonEventArgs e)
         {
+            if (selectedFrwFrm == null) return;
+
+            //frm.FilePath, frm.NmSpace의 값이 없으면 아무것도 하지 않는다.
+            if (string.IsNullOrEmpty(selectedFrwFrm.FilePath) || string.IsNullOrEmpty(selectedFrwFrm.NmSpace))
+            {
+                return;
+            }
+
+            //UserControl정보를 넣는 변수 ucform을 선언한다.
+            System.Windows.Forms.UserControl ucform = null;
+
+            string strFullPath = $"{GenFunc.GetIni(Common.GetValue("gFrameWorkId"))}\\{selectedFrwFrm.FilePath}\\{selectedFrwFrm.FileNm}";
+            string strCsPath = $"{GenFunc.GetIni(Common.GetValue("gFrameWorkId"))}\\{selectedFrwFrm.FrmId}\\{selectedFrwFrm.FrmId}.cs";
+            Assembly assembly = AppDomain.CurrentDomain.Load(File.ReadAllBytes($"{strFullPath}"));
+            var ty = assembly.GetType(selectedFrwFrm.NmSpace);
+
             if (e.Button.Properties.Caption == "Load Controllers")
             {
                 #region FormLoad - Reflection을 이용하여 개체를 로드한다. 
-
-                if (selectedFrwFrm == null) return;
-
-                //frm.FilePath, frm.NmSpace의 값이 없으면 아무것도 하지 않는다.
-                if (string.IsNullOrEmpty(selectedFrwFrm.FilePath) || string.IsNullOrEmpty(selectedFrwFrm.NmSpace))
-                {
-                    return;
-                }
-
-                //UserControl정보를 넣는 변수 ucform을 선언한다.
-                System.Windows.Forms.UserControl ucform = null;
-
-                string strFullPath = $"{GenFunc.GetIni(Common.GetValue("gFrameWorkId"))}\\{selectedFrwFrm.FilePath}\\{selectedFrwFrm.FileNm}";
-
-                Assembly assembly = AppDomain.CurrentDomain.Load(File.ReadAllBytes($"{strFullPath}"));
-                var ty = assembly.GetType(selectedFrwFrm.NmSpace);
+                //컨트롤러 계층으로 목록화함
                 ucform = (System.Windows.Forms.UserControl)Activator.CreateInstance(ty);
-
                 #endregion
                 #region FormLoad - Controller 목록 구성
                 new FrmEleRepo().Delete(selectedFrwId.Code, selectedFrmId.Text);
                 FindControlsRecursive(ucform, 0);
-                PrintControlHierarchy(ucform, "    ");
+                //PrintControlHierarchy(ucform, "    ");
                 #endregion
             }
             else if (e.Button.Properties.Caption == "Make DOM")
             {
-                var elementList = new FrmEleRepo().GetByEpicDomCtrl(selectedFrwId.Code, selectedFrmId.Text);
+                FrmEleRepo frmEles = new FrmEleRepo();
+                CtrlDomRepo ctrlDom = new CtrlDomRepo();
+                domConverter = new DomConverter(frmEles, ctrlDom);
 
-                StringBuilder htmlBuilder = new StringBuilder();
-                GenerateDomRecursive(rootNode, htmlBuilder, 0);
-
-
+                string generatedDom = domConverter.ConvertToDom(selectedFrmEle, "DOM10");
+                rtxDom.Text = generatedDom;
             }
-        }
-
-        // 재귀적으로 FrmEle 정보를 DOM으로 변환
-        private string GenerateDomRecursive(FrmEle element)
-        {
-            // CtrlDomRepo에서 ToolNm에 해당하는 DOM 정보를 가져옵니다.
-            var ctrlDom = _ctrlDomRepo.GetByToolNm(element.ToolNm);
-
-            if (ctrlDom == null)
-                throw new Exception($"CtrlDom for {element.ToolNm} not found");
-
-            // DOM 태그 시작 부분 생성
-            string domTag = ctrlDom.StTag;
-
-            // 중간 부분 (MdTag)이 있으면 추가
-            if (!string.IsNullOrEmpty(ctrlDom.MdTag))
+            else if (e.Button.Properties.Caption == "Check Event")
             {
-                domTag += ctrlDom.MdTag;
+                string fileContent = string.Empty;
+                if (File.Exists(strCsPath))
+                {
+                    // 파일의 모든 내용을 읽어옴
+                    fileContent = File.ReadAllText(strCsPath);
+                }
+                else
+                { 
+                    MessageBox.Show($"File : ({strCsPath})를 찾을 수 없습니다. ");
+                    return;
+                }
+                    rtxEvent.Text = string.Empty;
+                rtxFunc.Text = string.Empty;
+                //폼에 등록된 이벤트를 읽어온다. 
+                //EventInfo[] events = ucform.GetType().GetEvents();
+                EventInfo[] events = ty.GetEvents(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
+                foreach (var evt in events)
+                {
+                    // 이벤트가 선언된 타입이 폼 클래스가 아니고 사용자가 정의한 네임스페이스일 경우
+                    if (evt.DeclaringType == ty && evt.Module.Name == assembly.ManifestModule.Name)
+                    {
+                        rtxEvent.Text += $"Event: {evt.Name}{Environment.NewLine}";
+                    }
+                }
+
+                MethodInfo[] methods = ty.GetMethods(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
+                foreach (var method in methods)
+                {
+                    //if (method.DeclaringType == ty && method.Module.Name == assembly.ManifestModule.Name)
+                    //{
+                    //    rtxFunc.Text += $"Method: {method.Name}{Environment.NewLine}";
+                    //}
+                    // 메서드가 선언된 타입이 폼 클래스가 아니고 사용자가 정의한 네임스페이스일 경우
+                    if (method.DeclaringType == ty && method.Module.Name == assembly.ManifestModule.Name)
+                    {
+                        // 메서드 이름
+                        string methodName = method.Name;
+
+                        // 정규식을 사용하여 메서드 정의 부분을 찾음
+                        string pattern = $@"\b{methodName}\b\s*\(.*?\)\s*\{{"; // 메서드 시그니처에 매칭되는 패턴
+                        Match match = Regex.Match(fileContent, pattern);
+
+                        if (match.Success)
+                        {
+                            // 메서드 정의 시작 지점부터 끝까지 추출
+                            int startIndex = match.Index;
+                            int braceCount = 0;
+                            int endIndex = startIndex;
+
+                            // 중괄호의 개수를 세어 메서드 끝을 찾아감
+                            for (int i = startIndex; i < fileContent.Length; i++)
+                            {
+                                if (fileContent[i] == '{')
+                                {
+                                    braceCount++;
+                                }
+                                else if (fileContent[i] == '}')
+                                {
+                                    braceCount--;
+                                    if (braceCount == 0)
+                                    {
+                                        endIndex = i + 1;
+                                        break;
+                                    }
+                                }
+                            }
+
+                            // 메서드의 내용 출력
+                            string methodContent = fileContent.Substring(startIndex, endIndex - startIndex);
+                            rtxFunc.Text += $"Method: {methodName}\n";
+                            rtxFunc.Text += methodContent + "\n\n"; // 각 메서드를 구분하여 출력
+                        }
+                        else
+                        {
+                            rtxFunc.Text += $"Method {methodName} 정의를 찾을 수 없습니다.\n";
+                        }
+                    }
+                }
+
             }
-
-            // 자식 컨트롤을 가져와 재귀적으로 DOM 생성
-            var childElements = _frmEleRepo.GetChildElements(element.Id);
-            foreach (var child in childElements)
-            {
-                domTag += GenerateDomRecursive(child);
-            }
-
-            // 끝 부분 (EdTag)을 추가하여 태그를 닫습니다
-            domTag += ctrlDom.EdTag;
-
-            return domTag;
         }
 
         private List<CtrlMst> ctrlMsts;
@@ -362,7 +423,7 @@ namespace EpicV004.Frms
                 {
                     string newPathId = $"{pathId}.{childIndex}";
                     //ctrl, CtrlMst에 등록되지 않은 컨트롤러가 Contain이면 FindcontrolsRecursive를 호출한다.
-                    FindControlsRecursive(ctrl, currentId, depth+1, newPathId);
+                    FindControlsRecursive(ctrl, currentId, depth + 1, newPathId);
                     childIndex++;
                 }
             }
@@ -410,12 +471,12 @@ namespace EpicV004.Frms
             {
                 FrwId = Common.GetValue("gFrameWorkId"),
                 FrmId = selectedFrwFrm.FrmId,
-                CtrlNm = controlType== "SplitterPanel" ? panelPosition : control.Name,
+                CtrlNm = controlType == "SplitterPanel" ? panelPosition : control.Name,
                 FldNm = controlType == "SplitterPanel" ? panelName : control.Name,
                 ToolNm = control.GetType().Name,
                 DOM = $"{depth}.PathId : {pathId}, Control: {(controlType == "SplitterPanel" ? panelPosition : control.Name)}, Type: {control.GetType().Name}",
                 PId = parentId,
-                Depth = depth, 
+                Depth = depth,
                 PathId = pathId
             };
             return new FrmEleRepo().Add(frmEle);

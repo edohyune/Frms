@@ -15,3 +15,20 @@ C:\Users\Mupai03\Documents\Mupai Dev\Frms\AppRegister\obj\Debug\net8.0-windows\r
 C:\Users\Mupai03\Documents\Mupai Dev\Frms\AppRegister\bin\Debug\net8.0-windows\GAIADesignerV004.dll
 C:\Users\Mupai03\Documents\Mupai Dev\Frms\AppRegister\obj\Debug\net8.0-windows\EpicV004.Frms.AppRegister.resources
 C:\Users\Mupai03\Documents\Mupai Dev\Frms\AppRegister\obj\Debug\net8.0-windows\AppRegis.FAB99C02.Up2Date
+D:\25_EpicV004\EpicV004\Frms\AppRegister\bin\Debug\net8.0-windows\AppRegister.deps.json
+D:\25_EpicV004\EpicV004\Frms\AppRegister\bin\Debug\net8.0-windows\AppRegister.dll
+D:\25_EpicV004\EpicV004\Frms\AppRegister\bin\Debug\net8.0-windows\AppRegister.pdb
+D:\25_EpicV004\EpicV004\Frms\AppRegister\bin\Debug\net8.0-windows\GAIADesignerV004.dll
+D:\25_EpicV004\EpicV004\Frms\AppRegister\obj\Debug\net8.0-windows\AppRegister.csproj.AssemblyReference.cache
+D:\25_EpicV004\EpicV004\Frms\AppRegister\obj\Debug\net8.0-windows\EpicV004.Frms.AppRegister.resources
+D:\25_EpicV004\EpicV004\Frms\AppRegister\obj\Debug\net8.0-windows\AppRegister.csproj.GenerateResource.cache
+D:\25_EpicV004\EpicV004\Frms\AppRegister\obj\Debug\net8.0-windows\AppRegister.GeneratedMSBuildEditorConfig.editorconfig
+D:\25_EpicV004\EpicV004\Frms\AppRegister\obj\Debug\net8.0-windows\AppRegister.AssemblyInfoInputs.cache
+D:\25_EpicV004\EpicV004\Frms\AppRegister\obj\Debug\net8.0-windows\AppRegister.AssemblyInfo.cs
+D:\25_EpicV004\EpicV004\Frms\AppRegister\obj\Debug\net8.0-windows\AppRegister.csproj.CoreCompileInputs.cache
+D:\25_EpicV004\EpicV004\Frms\AppRegister\obj\Debug\net8.0-windows\AppRegister.sourcelink.json
+D:\25_EpicV004\EpicV004\Frms\AppRegister\obj\Debug\net8.0-windows\AppRegis.FAB99C02.Up2Date
+D:\25_EpicV004\EpicV004\Frms\AppRegister\obj\Debug\net8.0-windows\AppRegister.dll
+D:\25_EpicV004\EpicV004\Frms\AppRegister\obj\Debug\net8.0-windows\refint\AppRegister.dll
+D:\25_EpicV004\EpicV004\Frms\AppRegister\obj\Debug\net8.0-windows\AppRegister.pdb
+D:\25_EpicV004\EpicV004\Frms\AppRegister\obj\Debug\net8.0-windows\ref\AppRegister.dll
