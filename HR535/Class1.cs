@@ -119,5 +119,20 @@ namespace EpicV004.Frms
             get => _other_lang_name;
             set => Set(ref _other_lang_name, value);
         }
+
+        private int _cid;
+        public int cid
+        {
+            get => _cid;
+            set => Set(ref _cid, value);
+        }
+
+        private DateTime _cdt;
+        public DateTime cdt
+        {
+            get => _cdt;
+            set => Set(ref _cdt, value);
+        }
+
     }
 }

@@ -58,7 +58,7 @@
             // 
             ucSplit1.Panel2.Controls.Add(g10);
             ucSplit1.Size = new Size(1131, 589);
-            ucSplit1.SplitterDistance = 55;
+            ucSplit1.SplitterDistance = 54;
             ucSplit1.TabIndex = 0;
             ucSplit1.TitleWidth = 121;
             // 
@@ -70,7 +70,7 @@
             ucPanel1.Dock = DockStyle.Fill;
             ucPanel1.Location = new Point(0, 0);
             ucPanel1.Name = "ucPanel1";
-            ucPanel1.Size = new Size(1131, 55);
+            ucPanel1.Size = new Size(1131, 54);
             ucPanel1.TabIndex = 0;
             ucPanel1.Text = "Search";
             // 
@@ -130,7 +130,7 @@
             g10.Dock = DockStyle.Fill;
             g10.Location = new Point(0, 0);
             g10.Name = "g10";
-            g10.Size = new Size(1131, 530);
+            g10.Size = new Size(1131, 531);
             g10.TabIndex = 0;
             // 
             // HS600

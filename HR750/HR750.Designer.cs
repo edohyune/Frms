@@ -39,12 +39,11 @@
             g10 = new Ctrls.UCGridSet();
             ucSplit3 = new Ctrls.UCSplit();
             ucPanel2 = new Ctrls.UCPanel();
-            ucButton1 = new Ctrls.UCButton();
-            ucTextBox5 = new Ctrls.UCTextBox();
-            ucCodeBox1 = new Ctrls.UCCodeBox();
-            ucDateBox3 = new Ctrls.UCDateBox();
-            ucTextBox1 = new Ctrls.UCTextBox();
-            ucTextBox3 = new Ctrls.UCTextBox();
+            dept = new Ctrls.UCTextBox();
+            status = new Ctrls.UCCodeBox();
+            terminate_date = new Ctrls.UCDateBox();
+            memo = new Ctrls.UCTextBox();
+            doc_no = new Ctrls.UCTextBox();
             ucSplit4 = new Ctrls.UCSplit();
             g20 = new Ctrls.UCGridSet();
             g30 = new Ctrls.UCGridSet();
@@ -85,8 +84,8 @@
             // ucSplit1.Panel2
             // 
             ucSplit1.Panel2.Controls.Add(ucSplit2);
-            ucSplit1.Size = new Size(1321, 707);
-            ucSplit1.SplitterDistance = 82;
+            ucSplit1.Size = new Size(1426, 707);
+            ucSplit1.SplitterDistance = 79;
             ucSplit1.TabIndex = 0;
             ucSplit1.TitleWidth = 121;
             // 
@@ -100,7 +99,7 @@
             ucPanel1.Dock = DockStyle.Fill;
             ucPanel1.Location = new Point(0, 0);
             ucPanel1.Name = "ucPanel1";
-            ucPanel1.Size = new Size(1321, 82);
+            ucPanel1.Size = new Size(1426, 79);
             ucPanel1.TabIndex = 0;
             ucPanel1.Text = "Termination";
             // 
@@ -211,8 +210,8 @@
             // ucSplit2.Panel2
             // 
             ucSplit2.Panel2.Controls.Add(ucSplit3);
-            ucSplit2.Size = new Size(1321, 621);
-            ucSplit2.SplitterDistance = 288;
+            ucSplit2.Size = new Size(1426, 624);
+            ucSplit2.SplitterDistance = 330;
             ucSplit2.TabIndex = 0;
             ucSplit2.TitleWidth = 121;
             // 
@@ -221,7 +220,7 @@
             g10.Dock = DockStyle.Fill;
             g10.Location = new Point(0, 0);
             g10.Name = "g10";
-            g10.Size = new Size(288, 621);
+            g10.Size = new Size(330, 624);
             g10.TabIndex = 0;
             // 
             // ucSplit3
@@ -239,136 +238,118 @@
             // ucSplit3.Panel2
             // 
             ucSplit3.Panel2.Controls.Add(ucSplit4);
-            ucSplit3.Size = new Size(1029, 621);
-            ucSplit3.SplitterDistance = 124;
+            ucSplit3.Size = new Size(1092, 624);
+            ucSplit3.SplitterDistance = 110;
             ucSplit3.TabIndex = 0;
             ucSplit3.TitleWidth = 121;
             // 
             // ucPanel2
             // 
-            ucPanel2.Controls.Add(ucButton1);
-            ucPanel2.Controls.Add(ucTextBox5);
-            ucPanel2.Controls.Add(ucCodeBox1);
-            ucPanel2.Controls.Add(ucDateBox3);
-            ucPanel2.Controls.Add(ucTextBox1);
-            ucPanel2.Controls.Add(ucTextBox3);
+            ucPanel2.Controls.Add(dept);
+            ucPanel2.Controls.Add(status);
+            ucPanel2.Controls.Add(terminate_date);
+            ucPanel2.Controls.Add(memo);
+            ucPanel2.Controls.Add(doc_no);
             ucPanel2.Dock = DockStyle.Fill;
             ucPanel2.Location = new Point(0, 0);
             ucPanel2.Name = "ucPanel2";
-            ucPanel2.Size = new Size(1029, 124);
+            ucPanel2.Size = new Size(1092, 110);
             ucPanel2.TabIndex = 0;
             ucPanel2.Text = "Termination Ifo.";
             // 
-            // ucButton1
+            // dept
             // 
-            ucButton1.Appearance.Font = new Font("Tahoma", 9F);
-            ucButton1.Appearance.Options.UseFont = true;
-            ucButton1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            ucButton1.ControlHeight = 48;
-            ucButton1.ControlWidth = 190;
-            ucButton1.FontBold = FontStyle.Regular;
-            ucButton1.FontFace = "Tahoma";
-            ucButton1.FontSize = 9F;
-            ucButton1.Location = new Point(522, 26);
-            ucButton1.Name = "ucButton1";
-            ucButton1.Size = new Size(190, 48);
-            ucButton1.TabIndex = 10;
-            ucButton1.Title = "Submit (ERP)";
-            ucButton1.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            dept.Appearance.Font = new Font("Tahoma", 9F);
+            dept.Appearance.Options.UseFont = true;
+            dept.ControlHeight = 21;
+            dept.ControlWidth = 249;
+            dept.FontColor = Color.Black;
+            dept.FontFace = "Tahoma";
+            dept.FontSize = 9F;
+            dept.FormatStr = "";
+            dept.Location = new Point(260, 53);
+            dept.Name = "dept";
+            dept.Size = new Size(249, 21);
+            dept.TabIndex = 9;
+            dept.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            dept.Title = "Dept";
+            dept.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            dept.TitleWidth = 100;
             // 
-            // ucTextBox5
+            // status
             // 
-            ucTextBox5.Appearance.Font = new Font("Tahoma", 9F);
-            ucTextBox5.Appearance.Options.UseFont = true;
-            ucTextBox5.ControlHeight = 21;
-            ucTextBox5.ControlWidth = 249;
-            ucTextBox5.FontColor = Color.Black;
-            ucTextBox5.FontFace = "Tahoma";
-            ucTextBox5.FontSize = 9F;
-            ucTextBox5.FormatStr = "";
-            ucTextBox5.Location = new Point(260, 53);
-            ucTextBox5.Name = "ucTextBox5";
-            ucTextBox5.Size = new Size(249, 21);
-            ucTextBox5.TabIndex = 9;
-            ucTextBox5.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox5.Title = "Dept";
-            ucTextBox5.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox5.TitleWidth = 100;
+            status.Appearance.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            status.Appearance.Options.UseFont = true;
+            status.ControlHeight = 21;
+            status.ControlWidth = 249;
+            status.FldTy = null;
+            status.FontColor = Color.Black;
+            status.FontFace = "Tahoma";
+            status.FontSize = 9F;
+            status.Location = new Point(260, 26);
+            status.Name = "status";
+            status.Size = new Size(249, 21);
+            status.TabIndex = 8;
+            status.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            status.Title = "Status";
+            status.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            status.TitleWidth = 100;
             // 
-            // ucCodeBox1
+            // terminate_date
             // 
-            ucCodeBox1.Appearance.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ucCodeBox1.Appearance.Options.UseFont = true;
-            ucCodeBox1.ControlHeight = 21;
-            ucCodeBox1.ControlWidth = 249;
-            ucCodeBox1.FldTy = null;
-            ucCodeBox1.FontColor = Color.Black;
-            ucCodeBox1.FontFace = "Tahoma";
-            ucCodeBox1.FontSize = 9F;
-            ucCodeBox1.Location = new Point(260, 26);
-            ucCodeBox1.Name = "ucCodeBox1";
-            ucCodeBox1.Size = new Size(249, 21);
-            ucCodeBox1.TabIndex = 8;
-            ucCodeBox1.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucCodeBox1.Title = "Status";
-            ucCodeBox1.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucCodeBox1.TitleWidth = 100;
+            terminate_date.ControlHeight = 21;
+            terminate_date.ControlWidth = 248;
+            terminate_date.Font = new Font("Tahoma", 9F);
+            terminate_date.FontColor = Color.Black;
+            terminate_date.FontFace = "Tahoma";
+            terminate_date.FontSize = 9F;
+            terminate_date.FormatStr = "";
+            terminate_date.Location = new Point(5, 53);
+            terminate_date.Name = "terminate_date";
+            terminate_date.Size = new Size(248, 21);
+            terminate_date.TabIndex = 5;
+            terminate_date.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            terminate_date.Title = "Termination Date";
+            terminate_date.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            terminate_date.TitleWidth = 100;
             // 
-            // ucDateBox3
+            // memo
             // 
-            ucDateBox3.ControlHeight = 21;
-            ucDateBox3.ControlWidth = 248;
-            ucDateBox3.Font = new Font("Tahoma", 9F);
-            ucDateBox3.FontColor = Color.Black;
-            ucDateBox3.FontFace = "Tahoma";
-            ucDateBox3.FontSize = 9F;
-            ucDateBox3.FormatStr = "";
-            ucDateBox3.Location = new Point(5, 53);
-            ucDateBox3.Name = "ucDateBox3";
-            ucDateBox3.Size = new Size(248, 21);
-            ucDateBox3.TabIndex = 5;
-            ucDateBox3.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucDateBox3.Title = "Termination Date";
-            ucDateBox3.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucDateBox3.TitleWidth = 100;
+            memo.Appearance.Font = new Font("Tahoma", 9F);
+            memo.Appearance.Options.UseFont = true;
+            memo.ControlHeight = 21;
+            memo.ControlWidth = 504;
+            memo.FontColor = Color.Black;
+            memo.FontFace = "Tahoma";
+            memo.FontSize = 9F;
+            memo.FormatStr = "";
+            memo.Location = new Point(5, 80);
+            memo.Name = "memo";
+            memo.Size = new Size(504, 21);
+            memo.TabIndex = 1;
+            memo.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            memo.Title = "Memo";
+            memo.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            memo.TitleWidth = 100;
             // 
-            // ucTextBox1
+            // doc_no
             // 
-            ucTextBox1.Appearance.Font = new Font("Tahoma", 9F);
-            ucTextBox1.Appearance.Options.UseFont = true;
-            ucTextBox1.ControlHeight = 21;
-            ucTextBox1.ControlWidth = 504;
-            ucTextBox1.FontColor = Color.Black;
-            ucTextBox1.FontFace = "Tahoma";
-            ucTextBox1.FontSize = 9F;
-            ucTextBox1.FormatStr = "";
-            ucTextBox1.Location = new Point(5, 80);
-            ucTextBox1.Name = "ucTextBox1";
-            ucTextBox1.Size = new Size(504, 21);
-            ucTextBox1.TabIndex = 1;
-            ucTextBox1.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox1.Title = "Memo";
-            ucTextBox1.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox1.TitleWidth = 100;
-            // 
-            // ucTextBox3
-            // 
-            ucTextBox3.Appearance.Font = new Font("Tahoma", 9F);
-            ucTextBox3.Appearance.Options.UseFont = true;
-            ucTextBox3.ControlHeight = 21;
-            ucTextBox3.ControlWidth = 249;
-            ucTextBox3.FontColor = Color.Black;
-            ucTextBox3.FontFace = "Tahoma";
-            ucTextBox3.FontSize = 9F;
-            ucTextBox3.FormatStr = "";
-            ucTextBox3.Location = new Point(5, 26);
-            ucTextBox3.Name = "ucTextBox3";
-            ucTextBox3.Size = new Size(249, 21);
-            ucTextBox3.TabIndex = 1;
-            ucTextBox3.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox3.Title = "DOC No";
-            ucTextBox3.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox3.TitleWidth = 100;
+            doc_no.Appearance.Font = new Font("Tahoma", 9F);
+            doc_no.Appearance.Options.UseFont = true;
+            doc_no.ControlHeight = 21;
+            doc_no.ControlWidth = 249;
+            doc_no.FontColor = Color.Black;
+            doc_no.FontFace = "Tahoma";
+            doc_no.FontSize = 9F;
+            doc_no.FormatStr = "";
+            doc_no.Location = new Point(5, 26);
+            doc_no.Name = "doc_no";
+            doc_no.Size = new Size(249, 21);
+            doc_no.TabIndex = 1;
+            doc_no.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            doc_no.Title = "DOC No";
+            doc_no.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            doc_no.TitleWidth = 100;
             // 
             // ucSplit4
             // 
@@ -384,8 +365,8 @@
             // ucSplit4.Panel2
             // 
             ucSplit4.Panel2.Controls.Add(g30);
-            ucSplit4.Size = new Size(1029, 493);
-            ucSplit4.SplitterDistance = 622;
+            ucSplit4.Size = new Size(1092, 510);
+            ucSplit4.SplitterDistance = 861;
             ucSplit4.TabIndex = 0;
             ucSplit4.TitleWidth = 121;
             // 
@@ -394,7 +375,7 @@
             g20.Dock = DockStyle.Fill;
             g20.Location = new Point(0, 0);
             g20.Name = "g20";
-            g20.Size = new Size(622, 493);
+            g20.Size = new Size(861, 510);
             g20.TabIndex = 0;
             // 
             // g30
@@ -402,7 +383,7 @@
             g30.Dock = DockStyle.Fill;
             g30.Location = new Point(0, 0);
             g30.Name = "g30";
-            g30.Size = new Size(403, 493);
+            g30.Size = new Size(227, 510);
             g30.TabIndex = 0;
             // 
             // HR750
@@ -411,7 +392,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(ucSplit1);
             Name = "HR750";
-            Size = new Size(1321, 707);
+            Size = new Size(1426, 707);
             ucSplit1.Panel1.ResumeLayout(false);
             ucSplit1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ucSplit1).EndInit();
@@ -451,11 +432,10 @@
         private Ctrls.UCTextBox f_dept;
         private Ctrls.UCDateBox s_to_dt;
         private Ctrls.UCDateBox s_fr_dt;
-        private Ctrls.UCTextBox ucTextBox3;
-        private Ctrls.UCCodeBox ucCodeBox1;
-        private Ctrls.UCDateBox ucDateBox3;
-        private Ctrls.UCTextBox ucTextBox1;
-        private Ctrls.UCButton ucButton1;
-        private Ctrls.UCTextBox ucTextBox5;
+        private Ctrls.UCTextBox doc_no;
+        private Ctrls.UCCodeBox status;
+        private Ctrls.UCDateBox terminate_date;
+        private Ctrls.UCTextBox memo;
+        private Ctrls.UCTextBox dept;
     }
 }
