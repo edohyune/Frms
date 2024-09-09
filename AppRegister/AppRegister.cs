@@ -26,17 +26,17 @@ namespace EpicV004.Frms
                             g10.Open(); // Reload the grid data
                             g10.FocuseByFindedValue("applicant_id", searchStr); // Focus the row with the saved ID
 
-                        //    g20.Open();
-                        //    g20.FocuseByFindedValue("applicant_id", searchStr);
+                            //    g20.Open();
+                            //    g20.FocuseByFindedValue("applicant_id", searchStr);
 
-                        //    g30.Open();
-                        //    g30.FocuseByFindedValue("applicant_id", searchStr);
+                            //    g30.Open();
+                            //    g30.FocuseByFindedValue("applicant_id", searchStr);
 
-                        //    g40.Open();
-                        //    g40.FocuseByFindedValue("applicant_id", searchStr);
+                            //    g40.Open();
+                            //    g40.FocuseByFindedValue("applicant_id", searchStr);
 
-                        //    g50.Open();
-                        //    g50.FocuseByFindedValue("applicant_id", searchStr);
+                            //    g50.Open();
+                            //    g50.FocuseByFindedValue("applicant_id", searchStr);
                         }
                         break;
                     case "Open":
@@ -64,7 +64,7 @@ namespace EpicV004.Frms
                                 break;
                         }
 
-                       this.Open();
+                        this.Open();
                         break;
                     case "New":
                         NewWorkSet("f10");
@@ -76,5 +76,9 @@ namespace EpicV004.Frms
             }
         }
 
+        private void ucImage1_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

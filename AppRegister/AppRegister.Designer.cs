@@ -93,6 +93,7 @@
             g50 = new Ctrls.UCGridSet();
             xtraTabPage6 = new DevExpress.XtraTab.XtraTabPage();
             g60 = new Ctrls.UCGridSet();
+            photo = new Ctrls.UCImage();
             ((System.ComponentModel.ISupportInitialize)ucSplit1).BeginInit();
             ucSplit1.Panel1.SuspendLayout();
             ucSplit1.Panel2.SuspendLayout();
@@ -122,6 +123,7 @@
             xtraTabPage4.SuspendLayout();
             xtraTabPage5.SuspendLayout();
             xtraTabPage6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)photo.Properties).BeginInit();
             SuspendLayout();
             // 
             // ucSplit1
@@ -175,7 +177,7 @@
             // 
             // f_enddate
             // 
-            f_enddate.ControlHeight = 18;
+            f_enddate.ControlHeight = 21;
             f_enddate.ControlWidth = 137;
             f_enddate.FontColor = Color.Black;
             f_enddate.FontFace = "Tahoma";
@@ -183,7 +185,7 @@
             f_enddate.FormatStr = "";
             f_enddate.Location = new Point(182, 29);
             f_enddate.Name = "f_enddate";
-            f_enddate.Size = new Size(137, 18);
+            f_enddate.Size = new Size(137, 21);
             f_enddate.TabIndex = 0;
             f_enddate.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
             f_enddate.Title = "~";
@@ -192,7 +194,7 @@
             // 
             // f_stardate
             // 
-            f_stardate.ControlHeight = 18;
+            f_stardate.ControlHeight = 21;
             f_stardate.ControlWidth = 171;
             f_stardate.FontColor = Color.Black;
             f_stardate.FontFace = "Tahoma";
@@ -200,7 +202,7 @@
             f_stardate.FormatStr = "";
             f_stardate.Location = new Point(5, 29);
             f_stardate.Name = "f_stardate";
-            f_stardate.Size = new Size(171, 18);
+            f_stardate.Size = new Size(171, 21);
             f_stardate.TabIndex = 0;
             f_stardate.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
             f_stardate.Title = "Apply Date";
@@ -257,6 +259,7 @@
             // 
             // ucPanel2
             // 
+            ucPanel2.Controls.Add(photo);
             ucPanel2.Controls.Add(gender);
             ucPanel2.Controls.Add(first_name);
             ucPanel2.Controls.Add(applicant_id);
@@ -1242,6 +1245,15 @@
             g60.Size = new Size(942, 262);
             g60.TabIndex = 0;
             // 
+            // photo
+            // 
+            photo.Location = new Point(3, 40);
+            photo.Name = "photo";
+            photo.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            photo.Size = new Size(145, 318);
+            photo.TabIndex = 0;
+            photo.EditValueChanged += ucImage1_EditValueChanged;
+            // 
             // AppRegister
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -1278,6 +1290,7 @@
             xtraTabPage4.ResumeLayout(false);
             xtraTabPage5.ResumeLayout(false);
             xtraTabPage6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)photo.Properties).EndInit();
             ResumeLayout(false);
         }
 
@@ -1348,5 +1361,6 @@
         private Ctrls.UCTextBox current_tel_no;
         private Ctrls.UCTextBox id_card_no;
         private Ctrls.UCTextBox first_name_eng;
+        private Ctrls.UCImage photo;
     }
 }
