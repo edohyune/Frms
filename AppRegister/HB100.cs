@@ -636,20 +636,6 @@ namespace EpicV004.Frms
 
 
     }
-
-    public class AppRegister_F10 : AppRegister_G10
-    {
-        // Additional properties or methods specific to AppRegister_G10
-        private string _F10SpecificProperty;
-        public string F10SpecificProperty
-        {
-            get => _F10SpecificProperty;
-            set => Set(ref _F10SpecificProperty, value);
-        }
-
-
-    }
-
     public class AppRegister_F20 : AppRegister_G10
     {
         // Additional properties or methods specific to AppRegister_G10

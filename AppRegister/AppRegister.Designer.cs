@@ -37,6 +37,7 @@
             g10 = new Ctrls.UCGridSet();
             ucSplit3 = new Ctrls.UCSplit();
             ucPanel2 = new Ctrls.UCPanel();
+            photo = new Ctrls.UCImage();
             gender = new Ctrls.UCCodeBox();
             first_name = new Ctrls.UCTextBox();
             applicant_id = new Ctrls.UCTextBox();
@@ -93,7 +94,13 @@
             g50 = new Ctrls.UCGridSet();
             xtraTabPage6 = new DevExpress.XtraTab.XtraTabPage();
             g60 = new Ctrls.UCGridSet();
-            photo = new Ctrls.UCImage();
+            ucTextBox1 = new Ctrls.UCTextBox();
+            ucTextBox2 = new Ctrls.UCTextBox();
+            ucTextBox3 = new Ctrls.UCTextBox();
+            checkBox1 = new CheckBox();
+            checkBox2 = new CheckBox();
+            checkBox3 = new CheckBox();
+            checkBox4 = new CheckBox();
             ((System.ComponentModel.ISupportInitialize)ucSplit1).BeginInit();
             ucSplit1.Panel1.SuspendLayout();
             ucSplit1.Panel2.SuspendLayout();
@@ -110,6 +117,7 @@
             ucSplit3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ucPanel2).BeginInit();
             ucPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)photo.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ucTab1).BeginInit();
             ucTab1.SuspendLayout();
             xtraTabPage1.SuspendLayout();
@@ -123,7 +131,6 @@
             xtraTabPage4.SuspendLayout();
             xtraTabPage5.SuspendLayout();
             xtraTabPage6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)photo.Properties).BeginInit();
             SuspendLayout();
             // 
             // ucSplit1
@@ -141,7 +148,7 @@
             // ucSplit1.Panel2
             // 
             ucSplit1.Panel2.Controls.Add(ucSplit2);
-            ucSplit1.Size = new Size(1276, 726);
+            ucSplit1.Size = new Size(1464, 726);
             ucSplit1.SplitterDistance = 52;
             ucSplit1.TabIndex = 0;
             ucSplit1.TitleWidth = 121;
@@ -154,7 +161,7 @@
             ucPanel1.Dock = DockStyle.Fill;
             ucPanel1.Location = new Point(0, 0);
             ucPanel1.Name = "ucPanel1";
-            ucPanel1.Size = new Size(1276, 52);
+            ucPanel1.Size = new Size(1464, 52);
             ucPanel1.TabIndex = 0;
             ucPanel1.Text = "Search";
             // 
@@ -223,7 +230,7 @@
             // ucSplit2.Panel2
             // 
             ucSplit2.Panel2.Controls.Add(ucSplit3);
-            ucSplit2.Size = new Size(1276, 670);
+            ucSplit2.Size = new Size(1464, 670);
             ucSplit2.SplitterDistance = 328;
             ucSplit2.TabIndex = 0;
             ucSplit2.TitleWidth = 121;
@@ -252,13 +259,20 @@
             // ucSplit3.Panel2
             // 
             ucSplit3.Panel2.Controls.Add(ucTab1);
-            ucSplit3.Size = new Size(944, 670);
+            ucSplit3.Size = new Size(1132, 670);
             ucSplit3.SplitterDistance = 379;
             ucSplit3.TabIndex = 0;
             ucSplit3.TitleWidth = 121;
             // 
             // ucPanel2
             // 
+            ucPanel2.Controls.Add(checkBox4);
+            ucPanel2.Controls.Add(checkBox3);
+            ucPanel2.Controls.Add(checkBox2);
+            ucPanel2.Controls.Add(checkBox1);
+            ucPanel2.Controls.Add(ucTextBox3);
+            ucPanel2.Controls.Add(ucTextBox2);
+            ucPanel2.Controls.Add(ucTextBox1);
             ucPanel2.Controls.Add(photo);
             ucPanel2.Controls.Add(gender);
             ucPanel2.Controls.Add(first_name);
@@ -286,9 +300,18 @@
             ucPanel2.Dock = DockStyle.Fill;
             ucPanel2.Location = new Point(0, 0);
             ucPanel2.Name = "ucPanel2";
-            ucPanel2.Size = new Size(944, 379);
+            ucPanel2.Size = new Size(1132, 379);
             ucPanel2.TabIndex = 0;
             ucPanel2.Text = "Register Applicant";
+            // 
+            // photo
+            // 
+            photo.Location = new Point(3, 40);
+            photo.Name = "photo";
+            photo.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            photo.Size = new Size(145, 318);
+            photo.TabIndex = 0;
+            photo.EditValueChanged += ucImage1_EditValueChanged;
             // 
             // gender
             // 
@@ -753,7 +776,7 @@
             ucTab1.Location = new Point(0, 0);
             ucTab1.Name = "ucTab1";
             ucTab1.SelectedTabPage = xtraTabPage1;
-            ucTab1.Size = new Size(944, 287);
+            ucTab1.Size = new Size(1132, 287);
             ucTab1.TabIndex = 0;
             ucTab1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] { xtraTabPage1, xtraTabPage2, xtraTabPage3, xtraTabPage4, xtraTabPage5, xtraTabPage6 });
             // 
@@ -761,7 +784,7 @@
             // 
             xtraTabPage1.Controls.Add(ucPanel3);
             xtraTabPage1.Name = "xtraTabPage1";
-            xtraTabPage1.Size = new Size(942, 262);
+            xtraTabPage1.Size = new Size(1130, 262);
             xtraTabPage1.TabPageWidth = 100;
             xtraTabPage1.Text = "Personal File";
             // 
@@ -773,7 +796,7 @@
             ucPanel3.Dock = DockStyle.Fill;
             ucPanel3.Location = new Point(0, 0);
             ucPanel3.Name = "ucPanel3";
-            ucPanel3.Size = new Size(942, 262);
+            ucPanel3.Size = new Size(1130, 262);
             ucPanel3.TabIndex = 0;
             // 
             // groupBox4
@@ -1245,14 +1268,100 @@
             g60.Size = new Size(942, 262);
             g60.TabIndex = 0;
             // 
-            // photo
+            // ucTextBox1
             // 
-            photo.Location = new Point(3, 40);
-            photo.Name = "photo";
-            photo.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            photo.Size = new Size(145, 318);
-            photo.TabIndex = 0;
-            photo.EditValueChanged += ucImage1_EditValueChanged;
+            ucTextBox1.ControlHeight = 21;
+            ucTextBox1.ControlWidth = 200;
+            ucTextBox1.FontColor = Color.Black;
+            ucTextBox1.FontFace = "Tahoma";
+            ucTextBox1.FontSize = 9F;
+            ucTextBox1.FormatStr = "";
+            ucTextBox1.Location = new Point(862, 43);
+            ucTextBox1.Name = "ucTextBox1";
+            ucTextBox1.Size = new Size(200, 21);
+            ucTextBox1.TabIndex = 28;
+            ucTextBox1.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox1.Title = "1. Interview";
+            ucTextBox1.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox1.TitleWidth = 100;
+            // 
+            // ucTextBox2
+            // 
+            ucTextBox2.ControlHeight = 21;
+            ucTextBox2.ControlWidth = 200;
+            ucTextBox2.FontColor = Color.Black;
+            ucTextBox2.FontFace = "Tahoma";
+            ucTextBox2.FontSize = 9F;
+            ucTextBox2.FormatStr = "";
+            ucTextBox2.Location = new Point(862, 66);
+            ucTextBox2.Name = "ucTextBox2";
+            ucTextBox2.Size = new Size(200, 21);
+            ucTextBox2.TabIndex = 28;
+            ucTextBox2.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox2.Title = "2. Health Check";
+            ucTextBox2.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox2.TitleWidth = 100;
+            // 
+            // ucTextBox3
+            // 
+            ucTextBox3.ControlHeight = 21;
+            ucTextBox3.ControlWidth = 200;
+            ucTextBox3.FontColor = Color.Black;
+            ucTextBox3.FontFace = "Tahoma";
+            ucTextBox3.FontSize = 9F;
+            ucTextBox3.FormatStr = "";
+            ucTextBox3.Location = new Point(862, 335);
+            ucTextBox3.Name = "ucTextBox3";
+            ucTextBox3.Size = new Size(200, 21);
+            ucTextBox3.TabIndex = 29;
+            ucTextBox3.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox3.Title = "Issue No";
+            ucTextBox3.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox3.TitleWidth = 100;
+            // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.CheckAlign = ContentAlignment.MiddleRight;
+            checkBox1.Location = new Point(862, 95);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(129, 17);
+            checkBox1.TabIndex = 30;
+            checkBox1.Text = "Transfer to Employee";
+            checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            checkBox2.AutoSize = true;
+            checkBox2.CheckAlign = ContentAlignment.MiddleRight;
+            checkBox2.Location = new Point(862, 132);
+            checkBox2.Name = "checkBox2";
+            checkBox2.Size = new Size(69, 17);
+            checkBox2.TabIndex = 30;
+            checkBox2.Text = "Black List";
+            checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            checkBox3.AutoSize = true;
+            checkBox3.CheckAlign = ContentAlignment.MiddleRight;
+            checkBox3.Location = new Point(862, 161);
+            checkBox3.Name = "checkBox3";
+            checkBox3.Size = new Size(150, 17);
+            checkBox3.TabIndex = 30;
+            checkBox3.Text = "Resigned Within 3 months";
+            checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox4
+            // 
+            checkBox4.AutoSize = true;
+            checkBox4.CheckAlign = ContentAlignment.MiddleRight;
+            checkBox4.Location = new Point(862, 306);
+            checkBox4.Name = "checkBox4";
+            checkBox4.Size = new Size(78, 17);
+            checkBox4.TabIndex = 30;
+            checkBox4.Text = "Foreignner";
+            checkBox4.UseVisualStyleBackColor = true;
             // 
             // AppRegister
             // 
@@ -1260,7 +1369,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(ucSplit1);
             Name = "AppRegister";
-            Size = new Size(1276, 726);
+            Size = new Size(1464, 726);
             ucSplit1.Panel1.ResumeLayout(false);
             ucSplit1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ucSplit1).EndInit();
@@ -1277,6 +1386,8 @@
             ucSplit3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ucPanel2).EndInit();
             ucPanel2.ResumeLayout(false);
+            ucPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)photo.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)ucTab1).EndInit();
             ucTab1.ResumeLayout(false);
             xtraTabPage1.ResumeLayout(false);
@@ -1290,7 +1401,6 @@
             xtraTabPage4.ResumeLayout(false);
             xtraTabPage5.ResumeLayout(false);
             xtraTabPage6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)photo.Properties).EndInit();
             ResumeLayout(false);
         }
 
@@ -1362,5 +1472,12 @@
         private Ctrls.UCTextBox id_card_no;
         private Ctrls.UCTextBox first_name_eng;
         private Ctrls.UCImage photo;
+        private CheckBox checkBox4;
+        private CheckBox checkBox3;
+        private CheckBox checkBox2;
+        private CheckBox checkBox1;
+        private Ctrls.UCTextBox ucTextBox3;
+        private Ctrls.UCTextBox ucTextBox2;
+        private Ctrls.UCTextBox ucTextBox1;
     }
 }
