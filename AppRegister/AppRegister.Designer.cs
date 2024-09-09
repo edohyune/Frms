@@ -37,6 +37,13 @@
             g10 = new Ctrls.UCGridSet();
             ucSplit3 = new Ctrls.UCSplit();
             ucPanel2 = new Ctrls.UCPanel();
+            checkBox4 = new CheckBox();
+            checkBox3 = new CheckBox();
+            checkBox2 = new CheckBox();
+            checkBox1 = new CheckBox();
+            ucTextBox3 = new Ctrls.UCTextBox();
+            ucTextBox2 = new Ctrls.UCTextBox();
+            ucTextBox1 = new Ctrls.UCTextBox();
             photo = new Ctrls.UCImage();
             gender = new Ctrls.UCCodeBox();
             first_name = new Ctrls.UCTextBox();
@@ -64,6 +71,12 @@
             ucTab1 = new Ctrls.UCTab();
             xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
             ucPanel3 = new Ctrls.UCPanel();
+            groupBox6 = new GroupBox();
+            ucRichText1 = new Ctrls.UCRichText();
+            checkBox6 = new CheckBox();
+            groupBox5 = new GroupBox();
+            ucRichText2 = new Ctrls.UCRichText();
+            checkBox5 = new CheckBox();
             groupBox4 = new GroupBox();
             emergency_contact_addr1 = new Ctrls.UCTextBox();
             emergency_contact_relation = new Ctrls.UCCodeBox();
@@ -94,13 +107,6 @@
             g50 = new Ctrls.UCGridSet();
             xtraTabPage6 = new DevExpress.XtraTab.XtraTabPage();
             g60 = new Ctrls.UCGridSet();
-            ucTextBox1 = new Ctrls.UCTextBox();
-            ucTextBox2 = new Ctrls.UCTextBox();
-            ucTextBox3 = new Ctrls.UCTextBox();
-            checkBox1 = new CheckBox();
-            checkBox2 = new CheckBox();
-            checkBox3 = new CheckBox();
-            checkBox4 = new CheckBox();
             ((System.ComponentModel.ISupportInitialize)ucSplit1).BeginInit();
             ucSplit1.Panel1.SuspendLayout();
             ucSplit1.Panel2.SuspendLayout();
@@ -123,6 +129,8 @@
             xtraTabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ucPanel3).BeginInit();
             ucPanel3.SuspendLayout();
+            groupBox6.SuspendLayout();
+            groupBox5.SuspendLayout();
             groupBox4.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
@@ -148,7 +156,7 @@
             // ucSplit1.Panel2
             // 
             ucSplit1.Panel2.Controls.Add(ucSplit2);
-            ucSplit1.Size = new Size(1464, 726);
+            ucSplit1.Size = new Size(1534, 726);
             ucSplit1.SplitterDistance = 52;
             ucSplit1.TabIndex = 0;
             ucSplit1.TitleWidth = 121;
@@ -161,7 +169,7 @@
             ucPanel1.Dock = DockStyle.Fill;
             ucPanel1.Location = new Point(0, 0);
             ucPanel1.Name = "ucPanel1";
-            ucPanel1.Size = new Size(1464, 52);
+            ucPanel1.Size = new Size(1534, 52);
             ucPanel1.TabIndex = 0;
             ucPanel1.Text = "Search";
             // 
@@ -230,7 +238,7 @@
             // ucSplit2.Panel2
             // 
             ucSplit2.Panel2.Controls.Add(ucSplit3);
-            ucSplit2.Size = new Size(1464, 670);
+            ucSplit2.Size = new Size(1534, 670);
             ucSplit2.SplitterDistance = 328;
             ucSplit2.TabIndex = 0;
             ucSplit2.TitleWidth = 121;
@@ -259,7 +267,7 @@
             // ucSplit3.Panel2
             // 
             ucSplit3.Panel2.Controls.Add(ucTab1);
-            ucSplit3.Size = new Size(1132, 670);
+            ucSplit3.Size = new Size(1202, 670);
             ucSplit3.SplitterDistance = 379;
             ucSplit3.TabIndex = 0;
             ucSplit3.TitleWidth = 121;
@@ -300,9 +308,104 @@
             ucPanel2.Dock = DockStyle.Fill;
             ucPanel2.Location = new Point(0, 0);
             ucPanel2.Name = "ucPanel2";
-            ucPanel2.Size = new Size(1132, 379);
+            ucPanel2.Size = new Size(1202, 379);
             ucPanel2.TabIndex = 0;
             ucPanel2.Text = "Register Applicant";
+            // 
+            // checkBox4
+            // 
+            checkBox4.AutoSize = true;
+            checkBox4.CheckAlign = ContentAlignment.MiddleRight;
+            checkBox4.Location = new Point(934, 283);
+            checkBox4.Name = "checkBox4";
+            checkBox4.Size = new Size(78, 17);
+            checkBox4.TabIndex = 30;
+            checkBox4.Text = "Foreignner";
+            checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            checkBox3.AutoSize = true;
+            checkBox3.CheckAlign = ContentAlignment.MiddleRight;
+            checkBox3.Location = new Point(862, 161);
+            checkBox3.Name = "checkBox3";
+            checkBox3.Size = new Size(150, 17);
+            checkBox3.TabIndex = 30;
+            checkBox3.Text = "Resigned Within 3 months";
+            checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            checkBox2.AutoSize = true;
+            checkBox2.CheckAlign = ContentAlignment.MiddleRight;
+            checkBox2.Location = new Point(943, 132);
+            checkBox2.Name = "checkBox2";
+            checkBox2.Size = new Size(69, 17);
+            checkBox2.TabIndex = 30;
+            checkBox2.Text = "Black List";
+            checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.CheckAlign = ContentAlignment.MiddleRight;
+            checkBox1.Location = new Point(883, 95);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(129, 17);
+            checkBox1.TabIndex = 30;
+            checkBox1.Text = "Transfer to Employee";
+            checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // ucTextBox3
+            // 
+            ucTextBox3.ControlHeight = 21;
+            ucTextBox3.ControlWidth = 200;
+            ucTextBox3.FontColor = Color.Black;
+            ucTextBox3.FontFace = "Tahoma";
+            ucTextBox3.FontSize = 9F;
+            ucTextBox3.FormatStr = "";
+            ucTextBox3.Location = new Point(908, 321);
+            ucTextBox3.Name = "ucTextBox3";
+            ucTextBox3.Size = new Size(200, 21);
+            ucTextBox3.TabIndex = 29;
+            ucTextBox3.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox3.Title = "Issue No";
+            ucTextBox3.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox3.TitleWidth = 100;
+            // 
+            // ucTextBox2
+            // 
+            ucTextBox2.ControlHeight = 21;
+            ucTextBox2.ControlWidth = 200;
+            ucTextBox2.FontColor = Color.Black;
+            ucTextBox2.FontFace = "Tahoma";
+            ucTextBox2.FontSize = 9F;
+            ucTextBox2.FormatStr = "";
+            ucTextBox2.Location = new Point(895, 66);
+            ucTextBox2.Name = "ucTextBox2";
+            ucTextBox2.Size = new Size(200, 21);
+            ucTextBox2.TabIndex = 28;
+            ucTextBox2.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox2.Title = "2. Health Check";
+            ucTextBox2.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox2.TitleWidth = 100;
+            // 
+            // ucTextBox1
+            // 
+            ucTextBox1.ControlHeight = 21;
+            ucTextBox1.ControlWidth = 200;
+            ucTextBox1.FontColor = Color.Black;
+            ucTextBox1.FontFace = "Tahoma";
+            ucTextBox1.FontSize = 9F;
+            ucTextBox1.FormatStr = "";
+            ucTextBox1.Location = new Point(895, 43);
+            ucTextBox1.Name = "ucTextBox1";
+            ucTextBox1.Size = new Size(200, 21);
+            ucTextBox1.TabIndex = 28;
+            ucTextBox1.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox1.Title = "1. Interview";
+            ucTextBox1.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox1.TitleWidth = 100;
             // 
             // photo
             // 
@@ -776,7 +879,7 @@
             ucTab1.Location = new Point(0, 0);
             ucTab1.Name = "ucTab1";
             ucTab1.SelectedTabPage = xtraTabPage1;
-            ucTab1.Size = new Size(1132, 287);
+            ucTab1.Size = new Size(1202, 287);
             ucTab1.TabIndex = 0;
             ucTab1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] { xtraTabPage1, xtraTabPage2, xtraTabPage3, xtraTabPage4, xtraTabPage5, xtraTabPage6 });
             // 
@@ -784,20 +887,102 @@
             // 
             xtraTabPage1.Controls.Add(ucPanel3);
             xtraTabPage1.Name = "xtraTabPage1";
-            xtraTabPage1.Size = new Size(1130, 262);
+            xtraTabPage1.Size = new Size(1200, 262);
             xtraTabPage1.TabPageWidth = 100;
             xtraTabPage1.Text = "Personal File";
             // 
             // ucPanel3
             // 
+            ucPanel3.Controls.Add(groupBox6);
+            ucPanel3.Controls.Add(groupBox5);
             ucPanel3.Controls.Add(groupBox4);
             ucPanel3.Controls.Add(groupBox2);
             ucPanel3.Controls.Add(groupBox3);
             ucPanel3.Dock = DockStyle.Fill;
             ucPanel3.Location = new Point(0, 0);
             ucPanel3.Name = "ucPanel3";
-            ucPanel3.Size = new Size(1130, 262);
+            ucPanel3.Size = new Size(1200, 262);
             ucPanel3.TabIndex = 0;
+            // 
+            // groupBox6
+            // 
+            groupBox6.Controls.Add(ucRichText1);
+            groupBox6.Controls.Add(checkBox6);
+            groupBox6.Location = new Point(841, 137);
+            groupBox6.Name = "groupBox6";
+            groupBox6.Size = new Size(354, 87);
+            groupBox6.TabIndex = 1;
+            groupBox6.TabStop = false;
+            groupBox6.Text = "Disease Info";
+            // 
+            // ucRichText1
+            // 
+            ucRichText1.ActiveViewType = DevExpress.XtraRichEdit.RichEditViewType.Simple;
+            ucRichText1.Appearance.Text.Font = new Font("Cascadia Code Light", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ucRichText1.Appearance.Text.Options.UseFont = true;
+            ucRichText1.LayoutUnit = DevExpress.XtraRichEdit.DocumentLayoutUnit.Pixel;
+            ucRichText1.Location = new Point(115, 18);
+            ucRichText1.Modified = true;
+            ucRichText1.Name = "ucRichText1";
+            ucRichText1.Options.DocumentSaveOptions.CurrentFormat = DevExpress.XtraRichEdit.DocumentFormat.PlainText;
+            ucRichText1.Options.DocumentSaveOptions.DefaultFormat = DevExpress.XtraRichEdit.DocumentFormat.PlainText;
+            ucRichText1.Options.HorizontalRuler.Visibility = DevExpress.XtraRichEdit.RichEditRulerVisibility.Hidden;
+            ucRichText1.Options.Search.RegExResultMaxGuaranteedLength = 1000;
+            ucRichText1.Padding = new Padding(50, 0, 0, 0);
+            ucRichText1.Size = new Size(233, 66);
+            ucRichText1.TabIndex = 31;
+            ucRichText1.Views.SimpleView.AllowDisplayLineNumbers = true;
+            // 
+            // checkBox6
+            // 
+            checkBox6.AutoSize = true;
+            checkBox6.CheckAlign = ContentAlignment.MiddleRight;
+            checkBox6.Location = new Point(6, 20);
+            checkBox6.Name = "checkBox6";
+            checkBox6.Size = new Size(100, 17);
+            checkBox6.TabIndex = 30;
+            checkBox6.Text = "Disease Record";
+            checkBox6.UseVisualStyleBackColor = true;
+            // 
+            // groupBox5
+            // 
+            groupBox5.Controls.Add(ucRichText2);
+            groupBox5.Controls.Add(checkBox5);
+            groupBox5.Location = new Point(841, 33);
+            groupBox5.Name = "groupBox5";
+            groupBox5.Size = new Size(357, 90);
+            groupBox5.TabIndex = 1;
+            groupBox5.TabStop = false;
+            groupBox5.Text = "Criminal Info";
+            // 
+            // ucRichText2
+            // 
+            ucRichText2.ActiveViewType = DevExpress.XtraRichEdit.RichEditViewType.Simple;
+            ucRichText2.Appearance.Text.Font = new Font("Cascadia Code Light", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ucRichText2.Appearance.Text.Options.UseFont = true;
+            ucRichText2.LayoutUnit = DevExpress.XtraRichEdit.DocumentLayoutUnit.Pixel;
+            ucRichText2.Location = new Point(115, 15);
+            ucRichText2.Modified = true;
+            ucRichText2.Name = "ucRichText2";
+            ucRichText2.Options.DocumentSaveOptions.CurrentFormat = DevExpress.XtraRichEdit.DocumentFormat.PlainText;
+            ucRichText2.Options.DocumentSaveOptions.DefaultFormat = DevExpress.XtraRichEdit.DocumentFormat.PlainText;
+            ucRichText2.Options.HorizontalRuler.Visibility = DevExpress.XtraRichEdit.RichEditRulerVisibility.Hidden;
+            ucRichText2.Options.Search.RegExResultMaxGuaranteedLength = 1000;
+            ucRichText2.Padding = new Padding(50, 0, 0, 0);
+            ucRichText2.Size = new Size(233, 66);
+            ucRichText2.TabIndex = 31;
+            ucRichText2.Views.SimpleView.AllowDisplayLineNumbers = true;
+            // 
+            // checkBox5
+            // 
+            checkBox5.AutoSize = true;
+            checkBox5.CheckAlign = ContentAlignment.MiddleRight;
+            checkBox5.Location = new Point(11, 26);
+            checkBox5.Name = "checkBox5";
+            checkBox5.Size = new Size(98, 17);
+            checkBox5.TabIndex = 30;
+            checkBox5.Text = "Crimnal Record";
+            checkBox5.UseVisualStyleBackColor = true;
             // 
             // groupBox4
             // 
@@ -1187,7 +1372,7 @@
             // 
             xtraTabPage2.Controls.Add(g20);
             xtraTabPage2.Name = "xtraTabPage2";
-            xtraTabPage2.Size = new Size(942, 262);
+            xtraTabPage2.Size = new Size(1200, 262);
             xtraTabPage2.TabPageWidth = 100;
             xtraTabPage2.Text = "Family";
             // 
@@ -1197,14 +1382,14 @@
             g20.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             g20.Location = new Point(0, 0);
             g20.Name = "g20";
-            g20.Size = new Size(942, 262);
+            g20.Size = new Size(1200, 262);
             g20.TabIndex = 0;
             // 
             // xtraTabPage3
             // 
             xtraTabPage3.Controls.Add(g30);
             xtraTabPage3.Name = "xtraTabPage3";
-            xtraTabPage3.Size = new Size(942, 262);
+            xtraTabPage3.Size = new Size(1200, 262);
             xtraTabPage3.TabPageWidth = 100;
             xtraTabPage3.Text = "Education";
             // 
@@ -1214,14 +1399,14 @@
             g30.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             g30.Location = new Point(0, 0);
             g30.Name = "g30";
-            g30.Size = new Size(942, 262);
+            g30.Size = new Size(1200, 262);
             g30.TabIndex = 0;
             // 
             // xtraTabPage4
             // 
             xtraTabPage4.Controls.Add(g40);
             xtraTabPage4.Name = "xtraTabPage4";
-            xtraTabPage4.Size = new Size(942, 262);
+            xtraTabPage4.Size = new Size(1200, 262);
             xtraTabPage4.TabPageWidth = 100;
             xtraTabPage4.Text = "License";
             // 
@@ -1231,14 +1416,14 @@
             g40.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             g40.Location = new Point(0, 0);
             g40.Name = "g40";
-            g40.Size = new Size(942, 262);
+            g40.Size = new Size(1200, 262);
             g40.TabIndex = 0;
             // 
             // xtraTabPage5
             // 
             xtraTabPage5.Controls.Add(g50);
             xtraTabPage5.Name = "xtraTabPage5";
-            xtraTabPage5.Size = new Size(942, 262);
+            xtraTabPage5.Size = new Size(1200, 262);
             xtraTabPage5.TabPageWidth = 100;
             xtraTabPage5.Text = "Work History";
             // 
@@ -1248,14 +1433,14 @@
             g50.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             g50.Location = new Point(0, 0);
             g50.Name = "g50";
-            g50.Size = new Size(942, 262);
+            g50.Size = new Size(1200, 262);
             g50.TabIndex = 0;
             // 
             // xtraTabPage6
             // 
             xtraTabPage6.Controls.Add(g60);
             xtraTabPage6.Name = "xtraTabPage6";
-            xtraTabPage6.Size = new Size(942, 262);
+            xtraTabPage6.Size = new Size(1200, 262);
             xtraTabPage6.TabPageWidth = 100;
             xtraTabPage6.Text = "Documents";
             // 
@@ -1265,103 +1450,8 @@
             g60.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             g60.Location = new Point(0, 0);
             g60.Name = "g60";
-            g60.Size = new Size(942, 262);
+            g60.Size = new Size(1200, 262);
             g60.TabIndex = 0;
-            // 
-            // ucTextBox1
-            // 
-            ucTextBox1.ControlHeight = 21;
-            ucTextBox1.ControlWidth = 200;
-            ucTextBox1.FontColor = Color.Black;
-            ucTextBox1.FontFace = "Tahoma";
-            ucTextBox1.FontSize = 9F;
-            ucTextBox1.FormatStr = "";
-            ucTextBox1.Location = new Point(862, 43);
-            ucTextBox1.Name = "ucTextBox1";
-            ucTextBox1.Size = new Size(200, 21);
-            ucTextBox1.TabIndex = 28;
-            ucTextBox1.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox1.Title = "1. Interview";
-            ucTextBox1.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox1.TitleWidth = 100;
-            // 
-            // ucTextBox2
-            // 
-            ucTextBox2.ControlHeight = 21;
-            ucTextBox2.ControlWidth = 200;
-            ucTextBox2.FontColor = Color.Black;
-            ucTextBox2.FontFace = "Tahoma";
-            ucTextBox2.FontSize = 9F;
-            ucTextBox2.FormatStr = "";
-            ucTextBox2.Location = new Point(862, 66);
-            ucTextBox2.Name = "ucTextBox2";
-            ucTextBox2.Size = new Size(200, 21);
-            ucTextBox2.TabIndex = 28;
-            ucTextBox2.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox2.Title = "2. Health Check";
-            ucTextBox2.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox2.TitleWidth = 100;
-            // 
-            // ucTextBox3
-            // 
-            ucTextBox3.ControlHeight = 21;
-            ucTextBox3.ControlWidth = 200;
-            ucTextBox3.FontColor = Color.Black;
-            ucTextBox3.FontFace = "Tahoma";
-            ucTextBox3.FontSize = 9F;
-            ucTextBox3.FormatStr = "";
-            ucTextBox3.Location = new Point(862, 335);
-            ucTextBox3.Name = "ucTextBox3";
-            ucTextBox3.Size = new Size(200, 21);
-            ucTextBox3.TabIndex = 29;
-            ucTextBox3.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox3.Title = "Issue No";
-            ucTextBox3.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox3.TitleWidth = 100;
-            // 
-            // checkBox1
-            // 
-            checkBox1.AutoSize = true;
-            checkBox1.CheckAlign = ContentAlignment.MiddleRight;
-            checkBox1.Location = new Point(862, 95);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(129, 17);
-            checkBox1.TabIndex = 30;
-            checkBox1.Text = "Transfer to Employee";
-            checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            checkBox2.AutoSize = true;
-            checkBox2.CheckAlign = ContentAlignment.MiddleRight;
-            checkBox2.Location = new Point(862, 132);
-            checkBox2.Name = "checkBox2";
-            checkBox2.Size = new Size(69, 17);
-            checkBox2.TabIndex = 30;
-            checkBox2.Text = "Black List";
-            checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            checkBox3.AutoSize = true;
-            checkBox3.CheckAlign = ContentAlignment.MiddleRight;
-            checkBox3.Location = new Point(862, 161);
-            checkBox3.Name = "checkBox3";
-            checkBox3.Size = new Size(150, 17);
-            checkBox3.TabIndex = 30;
-            checkBox3.Text = "Resigned Within 3 months";
-            checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox4
-            // 
-            checkBox4.AutoSize = true;
-            checkBox4.CheckAlign = ContentAlignment.MiddleRight;
-            checkBox4.Location = new Point(862, 306);
-            checkBox4.Name = "checkBox4";
-            checkBox4.Size = new Size(78, 17);
-            checkBox4.TabIndex = 30;
-            checkBox4.Text = "Foreignner";
-            checkBox4.UseVisualStyleBackColor = true;
             // 
             // AppRegister
             // 
@@ -1369,7 +1459,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(ucSplit1);
             Name = "AppRegister";
-            Size = new Size(1464, 726);
+            Size = new Size(1534, 726);
             ucSplit1.Panel1.ResumeLayout(false);
             ucSplit1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ucSplit1).EndInit();
@@ -1393,6 +1483,10 @@
             xtraTabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ucPanel3).EndInit();
             ucPanel3.ResumeLayout(false);
+            groupBox6.ResumeLayout(false);
+            groupBox6.PerformLayout();
+            groupBox5.ResumeLayout(false);
+            groupBox5.PerformLayout();
             groupBox4.ResumeLayout(false);
             groupBox2.ResumeLayout(false);
             groupBox3.ResumeLayout(false);
@@ -1479,5 +1573,11 @@
         private Ctrls.UCTextBox ucTextBox3;
         private Ctrls.UCTextBox ucTextBox2;
         private Ctrls.UCTextBox ucTextBox1;
+        private GroupBox groupBox6;
+        private Ctrls.UCRichText ucRichText1;
+        private CheckBox checkBox6;
+        private GroupBox groupBox5;
+        private Ctrls.UCRichText ucRichText2;
+        private CheckBox checkBox5;
     }
 }
