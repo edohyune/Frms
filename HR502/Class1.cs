@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EpicV004.Frms
 {
-    public class HA660 : Libs.MdlBase
+    public class HR502_G10 : Libs.MdlBase
     {
         private long _pid;
         public long pid

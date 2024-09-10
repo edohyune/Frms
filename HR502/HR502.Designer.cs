@@ -30,10 +30,10 @@
         {
             ucSplit1 = new Ctrls.UCSplit();
             ucPanel1 = new Ctrls.UCPanel();
+            s_enable = new Ctrls.UCTextBox();
             s_txt = new Ctrls.UCTextBox();
             ucPanel2 = new Ctrls.UCPanel();
-            ucGridSet1 = new Ctrls.UCGridSet();
-            s_enable = new Ctrls.UCTextBox();
+            g10 = new Ctrls.UCGridSet();
             ((System.ComponentModel.ISupportInitialize)ucSplit1).BeginInit();
             ucSplit1.Panel1.SuspendLayout();
             ucSplit1.Panel2.SuspendLayout();
@@ -47,7 +47,9 @@
             // ucSplit1
             // 
             ucSplit1.Dock = DockStyle.Fill;
+            ucSplit1.FixedPanel = FixedPanel.Panel1;
             ucSplit1.Location = new Point(0, 0);
+            ucSplit1.Margin = new Padding(3, 2, 3, 2);
             ucSplit1.Name = "ucSplit1";
             ucSplit1.Orientation = Orientation.Horizontal;
             // 
@@ -58,8 +60,9 @@
             // ucSplit1.Panel2
             // 
             ucSplit1.Panel2.Controls.Add(ucPanel2);
-            ucSplit1.Size = new Size(1112, 605);
-            ucSplit1.SplitterDistance = 145;
+            ucSplit1.Size = new Size(973, 454);
+            ucSplit1.SplitterDistance = 63;
+            ucSplit1.SplitterWidth = 3;
             ucSplit1.TabIndex = 0;
             ucSplit1.TitleWidth = 121;
             // 
@@ -69,25 +72,46 @@
             ucPanel1.Controls.Add(s_txt);
             ucPanel1.Dock = DockStyle.Fill;
             ucPanel1.Location = new Point(0, 0);
+            ucPanel1.Margin = new Padding(3, 2, 3, 2);
             ucPanel1.Name = "ucPanel1";
-            ucPanel1.Size = new Size(1112, 145);
+            ucPanel1.Size = new Size(973, 63);
             ucPanel1.TabIndex = 0;
-            ucPanel1.Text = "ucPanel1";
+            ucPanel1.Text = "Shift(Work Schedule)";
+            // 
+            // s_enable
+            // 
+            s_enable.Appearance.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            s_enable.Appearance.Options.UseFont = true;
+            s_enable.ControlHeight = 22;
+            s_enable.ControlWidth = 250;
+            s_enable.FontColor = Color.Black;
+            s_enable.FontFace = "Tahoma";
+            s_enable.FontSize = 9F;
+            s_enable.FormatStr = "";
+            s_enable.Location = new Point(283, 35);
+            s_enable.Margin = new Padding(4, 2, 4, 2);
+            s_enable.Name = "s_enable";
+            s_enable.Size = new Size(250, 22);
+            s_enable.TabIndex = 1;
+            s_enable.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            s_enable.Title = "Enable";
+            s_enable.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            s_enable.TitleWidth = 50;
             // 
             // s_txt
             // 
             s_txt.Appearance.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             s_txt.Appearance.Options.UseFont = true;
-            s_txt.ControlHeight = 29;
-            s_txt.ControlWidth = 307;
+            s_txt.ControlHeight = 22;
+            s_txt.ControlWidth = 269;
             s_txt.FontColor = Color.Black;
             s_txt.FontFace = "Tahoma";
             s_txt.FontSize = 9F;
             s_txt.FormatStr = "";
-            s_txt.Location = new Point(39, 72);
-            s_txt.Margin = new Padding(5, 3, 5, 3);
+            s_txt.Location = new Point(6, 35);
+            s_txt.Margin = new Padding(4, 2, 4, 2);
             s_txt.Name = "s_txt";
-            s_txt.Size = new Size(307, 29);
+            s_txt.Size = new Size(269, 22);
             s_txt.TabIndex = 0;
             s_txt.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
             s_txt.Title = "Search";
@@ -96,50 +120,31 @@
             // 
             // ucPanel2
             // 
-            ucPanel2.Controls.Add(ucGridSet1);
+            ucPanel2.Controls.Add(g10);
             ucPanel2.Dock = DockStyle.Fill;
             ucPanel2.Location = new Point(0, 0);
+            ucPanel2.Margin = new Padding(3, 2, 3, 2);
             ucPanel2.Name = "ucPanel2";
-            ucPanel2.Size = new Size(1112, 456);
+            ucPanel2.Size = new Size(973, 388);
             ucPanel2.TabIndex = 0;
-            ucPanel2.Text = "ucPanel2";
+            ucPanel2.Text = "Shift for Staff";
             // 
-            // ucGridSet1
+            // g10
             // 
-            ucGridSet1.Dock = DockStyle.Fill;
-            ucGridSet1.Location = new Point(2, 28);
-            ucGridSet1.Margin = new Padding(3, 4, 3, 4);
-            ucGridSet1.Name = "ucGridSet1";
-            ucGridSet1.Size = new Size(1108, 426);
-            ucGridSet1.TabIndex = 0;
-            // 
-            // s_enable
-            // 
-            s_enable.Appearance.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            s_enable.Appearance.Options.UseFont = true;
-            s_enable.ControlHeight = 29;
-            s_enable.ControlWidth = 286;
-            s_enable.FontColor = Color.Black;
-            s_enable.FontFace = "Tahoma";
-            s_enable.FontSize = 9F;
-            s_enable.FormatStr = "";
-            s_enable.Location = new Point(367, 72);
-            s_enable.Margin = new Padding(5, 3, 5, 3);
-            s_enable.Name = "s_enable";
-            s_enable.Size = new Size(286, 29);
-            s_enable.TabIndex = 1;
-            s_enable.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            s_enable.Title = "Enable";
-            s_enable.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            s_enable.TitleWidth = 50;
+            g10.Dock = DockStyle.Fill;
+            g10.Location = new Point(2, 23);
+            g10.Name = "g10";
+            g10.Size = new Size(969, 363);
+            g10.TabIndex = 0;
             // 
             // HR502
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(ucSplit1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "HR502";
-            Size = new Size(1112, 605);
+            Size = new Size(973, 454);
             ucSplit1.Panel1.ResumeLayout(false);
             ucSplit1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ucSplit1).EndInit();
@@ -157,7 +162,7 @@
         private Ctrls.UCPanel ucPanel1;
         private Ctrls.UCPanel ucPanel2;
         private Ctrls.UCTextBox s_txt;
-        private Ctrls.UCGridSet ucGridSet1;
+        private Ctrls.UCGridSet g10;
         private Ctrls.UCTextBox s_enable;
     }
 }
