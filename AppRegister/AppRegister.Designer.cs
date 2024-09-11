@@ -961,8 +961,9 @@
             ucRichText2.ActiveViewType = DevExpress.XtraRichEdit.RichEditViewType.Simple;
             ucRichText2.Appearance.Text.Font = new Font("Cascadia Code Light", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
             ucRichText2.Appearance.Text.Options.UseFont = true;
+            ucRichText2.Dock = DockStyle.Fill;
             ucRichText2.LayoutUnit = DevExpress.XtraRichEdit.DocumentLayoutUnit.Pixel;
-            ucRichText2.Location = new Point(115, 15);
+            ucRichText2.Location = new Point(3, 17);
             ucRichText2.Modified = true;
             ucRichText2.Name = "ucRichText2";
             ucRichText2.Options.DocumentSaveOptions.CurrentFormat = DevExpress.XtraRichEdit.DocumentFormat.PlainText;
@@ -970,7 +971,7 @@
             ucRichText2.Options.HorizontalRuler.Visibility = DevExpress.XtraRichEdit.RichEditRulerVisibility.Hidden;
             ucRichText2.Options.Search.RegExResultMaxGuaranteedLength = 1000;
             ucRichText2.Padding = new Padding(50, 0, 0, 0);
-            ucRichText2.Size = new Size(233, 66);
+            ucRichText2.Size = new Size(351, 70);
             ucRichText2.TabIndex = 31;
             ucRichText2.Views.SimpleView.AllowDisplayLineNumbers = true;
             // 
