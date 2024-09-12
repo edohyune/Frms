@@ -34,7 +34,7 @@
             ucSplit2 = new Ctrls.UCSplit();
             ucPanel2 = new Ctrls.UCPanel();
             btn_tdm = new Ctrls.UCButton();
-            comment = new Ctrls.UCTextBox();
+            memo = new Ctrls.UCTextBox();
             renewal_date = new Ctrls.UCDateBox();
             ucSplit3 = new Ctrls.UCSplit();
             ucPanel3 = new Ctrls.UCPanel();
@@ -77,7 +77,7 @@
             // 
             ucSplit1.Panel2.Controls.Add(ucSplit2);
             ucSplit1.Size = new Size(1316, 728);
-            ucSplit1.SplitterDistance = 438;
+            ucSplit1.SplitterDistance = 299;
             ucSplit1.TabIndex = 0;
             ucSplit1.TitleWidth = 121;
             // 
@@ -87,7 +87,7 @@
             ucPanel1.Dock = DockStyle.Fill;
             ucPanel1.Location = new Point(0, 0);
             ucPanel1.Name = "ucPanel1";
-            ucPanel1.Size = new Size(438, 728);
+            ucPanel1.Size = new Size(299, 728);
             ucPanel1.TabIndex = 0;
             ucPanel1.Text = "History of Renewal date";
             // 
@@ -96,7 +96,7 @@
             g10.Dock = DockStyle.Fill;
             g10.Location = new Point(2, 23);
             g10.Name = "g10";
-            g10.Size = new Size(434, 703);
+            g10.Size = new Size(295, 703);
             g10.TabIndex = 0;
             // 
             // ucSplit2
@@ -114,7 +114,7 @@
             // ucSplit2.Panel2
             // 
             ucSplit2.Panel2.Controls.Add(ucSplit3);
-            ucSplit2.Size = new Size(874, 728);
+            ucSplit2.Size = new Size(1013, 728);
             ucSplit2.SplitterDistance = 95;
             ucSplit2.TabIndex = 0;
             ucSplit2.TitleWidth = 121;
@@ -122,12 +122,12 @@
             // ucPanel2
             // 
             ucPanel2.Controls.Add(btn_tdm);
-            ucPanel2.Controls.Add(comment);
+            ucPanel2.Controls.Add(memo);
             ucPanel2.Controls.Add(renewal_date);
             ucPanel2.Dock = DockStyle.Fill;
             ucPanel2.Location = new Point(0, 0);
             ucPanel2.Name = "ucPanel2";
-            ucPanel2.Size = new Size(874, 95);
+            ucPanel2.Size = new Size(1013, 95);
             ucPanel2.TabIndex = 0;
             ucPanel2.Text = "Dept Register Date";
             // 
@@ -148,22 +148,22 @@
             btn_tdm.Title = "Transfer Dept Master";
             btn_tdm.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
             // 
-            // comment
+            // memo
             // 
-            comment.ControlHeight = 21;
-            comment.ControlWidth = 418;
-            comment.FontColor = Color.Black;
-            comment.FontFace = "Tahoma";
-            comment.FontSize = 9F;
-            comment.FormatStr = "";
-            comment.Location = new Point(5, 53);
-            comment.Name = "comment";
-            comment.Size = new Size(418, 21);
-            comment.TabIndex = 1;
-            comment.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            comment.Title = "Comment";
-            comment.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            comment.TitleWidth = 100;
+            memo.ControlHeight = 21;
+            memo.ControlWidth = 418;
+            memo.FontColor = Color.Black;
+            memo.FontFace = "Tahoma";
+            memo.FontSize = 9F;
+            memo.FormatStr = "";
+            memo.Location = new Point(5, 53);
+            memo.Name = "memo";
+            memo.Size = new Size(418, 21);
+            memo.TabIndex = 1;
+            memo.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            memo.Title = "Comment";
+            memo.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            memo.TitleWidth = 100;
             // 
             // renewal_date
             // 
@@ -197,7 +197,7 @@
             // ucSplit3.Panel2
             // 
             ucSplit3.Panel2.Controls.Add(ucPanel4);
-            ucSplit3.Size = new Size(874, 629);
+            ucSplit3.Size = new Size(1013, 629);
             ucSplit3.SplitterDistance = 281;
             ucSplit3.TabIndex = 0;
             ucSplit3.TitleWidth = 121;
@@ -208,7 +208,7 @@
             ucPanel3.Dock = DockStyle.Fill;
             ucPanel3.Location = new Point(0, 0);
             ucPanel3.Name = "ucPanel3";
-            ucPanel3.Size = new Size(874, 281);
+            ucPanel3.Size = new Size(1013, 281);
             ucPanel3.TabIndex = 0;
             ucPanel3.Text = "Register Dept";
             // 
@@ -217,7 +217,7 @@
             g20.Dock = DockStyle.Fill;
             g20.Location = new Point(2, 23);
             g20.Name = "g20";
-            g20.Size = new Size(870, 256);
+            g20.Size = new Size(1009, 256);
             g20.TabIndex = 0;
             // 
             // ucPanel4
@@ -226,7 +226,7 @@
             ucPanel4.Dock = DockStyle.Fill;
             ucPanel4.Location = new Point(0, 0);
             ucPanel4.Name = "ucPanel4";
-            ucPanel4.Size = new Size(874, 344);
+            ucPanel4.Size = new Size(1013, 344);
             ucPanel4.TabIndex = 0;
             ucPanel4.Text = "Staff List";
             // 
@@ -235,7 +235,7 @@
             g30.Dock = DockStyle.Fill;
             g30.Location = new Point(2, 23);
             g30.Name = "g30";
-            g30.Size = new Size(870, 319);
+            g30.Size = new Size(1009, 319);
             g30.TabIndex = 0;
             // 
             // HR100
@@ -276,7 +276,7 @@
         private Ctrls.UCSplit ucSplit2;
         private Ctrls.UCPanel ucPanel2;
         private Ctrls.UCButton btn_tdm;
-        private Ctrls.UCTextBox comment;
+        private Ctrls.UCTextBox memo;
         private Ctrls.UCDateBox renewal_date;
         private Ctrls.UCSplit ucSplit3;
         private Ctrls.UCPanel ucPanel3;

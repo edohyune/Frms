@@ -96,7 +96,7 @@
             btn_copy.FontBold = FontStyle.Regular;
             btn_copy.FontFace = "Tahoma";
             btn_copy.FontSize = 9F;
-            btn_copy.Location = new Point(576, 32);
+            btn_copy.Location = new Point(563, 32);
             btn_copy.Name = "btn_copy";
             btn_copy.Size = new Size(123, 33);
             btn_copy.TabIndex = 1;
@@ -154,7 +154,7 @@
             // 
             ucSplit2.Panel2.Controls.Add(UCPanel3);
             ucSplit2.Size = new Size(1284, 597);
-            ucSplit2.SplitterDistance = 947;
+            ucSplit2.SplitterDistance = 932;
             ucSplit2.TabIndex = 0;
             ucSplit2.TitleWidth = 121;
             // 
@@ -164,7 +164,7 @@
             UCPanel2.Dock = DockStyle.Fill;
             UCPanel2.Location = new Point(0, 0);
             UCPanel2.Name = "UCPanel2";
-            UCPanel2.Size = new Size(947, 597);
+            UCPanel2.Size = new Size(932, 597);
             UCPanel2.TabIndex = 0;
             UCPanel2.Text = "From";
             // 
@@ -173,7 +173,7 @@
             g10.Dock = DockStyle.Fill;
             g10.Location = new Point(2, 23);
             g10.Name = "g10";
-            g10.Size = new Size(943, 572);
+            g10.Size = new Size(928, 572);
             g10.TabIndex = 0;
             // 
             // UCPanel3
@@ -182,7 +182,7 @@
             UCPanel3.Dock = DockStyle.Fill;
             UCPanel3.Location = new Point(0, 0);
             UCPanel3.Name = "UCPanel3";
-            UCPanel3.Size = new Size(333, 597);
+            UCPanel3.Size = new Size(348, 597);
             UCPanel3.TabIndex = 0;
             UCPanel3.Text = "To (Edit)";
             // 
@@ -191,7 +191,7 @@
             g20.Dock = DockStyle.Fill;
             g20.Location = new Point(2, 23);
             g20.Name = "g20";
-            g20.Size = new Size(329, 572);
+            g20.Size = new Size(344, 572);
             g20.TabIndex = 1;
             // 
             // HR470

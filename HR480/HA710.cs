@@ -10,6 +10,7 @@ namespace EpicV004.Frms
     {
         private long _pid;
         public long pid
+        
         {
             get => _pid;
             set => Set(ref _pid, value);

@@ -40,8 +40,6 @@
             g10 = new Ctrls.UCGridSet();
             ucSplit3 = new Ctrls.UCSplit();
             f10 = new Ctrls.UCPanel();
-            ucButton2 = new Ctrls.UCButton();
-            ucButton1 = new Ctrls.UCButton();
             memo = new Ctrls.UCTextBox();
             address = new Ctrls.UCTextBox();
             website = new Ctrls.UCTextBox();
@@ -56,10 +54,10 @@
             supid = new Ctrls.UCTextBox();
             ucPanel4 = new Ctrls.UCPanel();
             ucTab1 = new Ctrls.UCTab();
-            xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
-            ucPanel6 = new Ctrls.UCPanel();
             Detail1 = new DevExpress.XtraTab.XtraTabPage();
             g20 = new Ctrls.UCGridSet();
+            xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
+            ucPanel6 = new Ctrls.UCPanel();
             xtraTabPage3 = new DevExpress.XtraTab.XtraTabPage();
             ucPanel7 = new Ctrls.UCPanel();
             xtraTabPage4 = new DevExpress.XtraTab.XtraTabPage();
@@ -86,9 +84,9 @@
             ucPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ucTab1).BeginInit();
             ucTab1.SuspendLayout();
+            Detail1.SuspendLayout();
             xtraTabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ucPanel6).BeginInit();
-            Detail1.SuspendLayout();
             xtraTabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ucPanel7).BeginInit();
             xtraTabPage4.SuspendLayout();
@@ -171,7 +169,6 @@
             // 
             f_status.Appearance.Font = new Font("Tahoma", 9F);
             f_status.Appearance.Options.UseFont = true;
-            f_status.ButtonVisiable = false;
             f_status.ControlHeight = 20;
             f_status.ControlWidth = 233;
             f_status.FontColor = Color.Black;
@@ -192,8 +189,8 @@
             // 
             f_supname.Appearance.Font = new Font("Tahoma", 9F);
             f_supname.Appearance.Options.UseFont = true;
-            f_supname.ControlHeight = 21;
-            f_supname.ControlWidth = 200;
+            f_supname.ControlHeight = 20;
+            f_supname.ControlWidth = 231;
             f_supname.FldTy = null;
             f_supname.FontColor = Color.Black;
             f_supname.FontFace = "Tahoma";
@@ -212,8 +209,8 @@
             // 
             f_supid.Appearance.Font = new Font("Tahoma", 9F);
             f_supid.Appearance.Options.UseFont = true;
-            f_supid.ControlHeight = 21;
-            f_supid.ControlWidth = 200;
+            f_supid.ControlHeight = 23;
+            f_supid.ControlWidth = 231;
             f_supid.FldTy = null;
             f_supid.FontColor = Color.Black;
             f_supid.FontFace = "Tahoma";
@@ -290,8 +287,6 @@
             // 
             // f10
             // 
-            f10.Controls.Add(ucButton2);
-            f10.Controls.Add(ucButton1);
             f10.Controls.Add(memo);
             f10.Controls.Add(address);
             f10.Controls.Add(website);
@@ -311,52 +306,10 @@
             f10.TabIndex = 0;
             f10.Text = "Information";
             // 
-            // ucButton2
-            // 
-            ucButton2.Appearance.Font = new Font("Tahoma", 9F);
-            ucButton2.Appearance.Options.UseFont = true;
-            ucButton2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            ucButton2.ControlHeight = 48;
-            ucButton2.ControlWidth = 100;
-            ucButton2.FontBold = FontStyle.Regular;
-            ucButton2.FontFace = "Tahoma";
-            ucButton2.FontSize = 9F;
-            ucButton2.Location = new Point(560, 89);
-            ucButton2.Name = "ucButton2";
-            ucButton2.Size = new Size(100, 48);
-            ucButton2.TabIndex = 1;
-            ucButton2.Title = "UCButton";
-            ucButton2.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            // 
-            // ucButton1
-            // 
-            ucButton1.Appearance.BackColor = Color.FromArgb(128, 128, 255);
-            ucButton1.Appearance.BorderColor = Color.FromArgb(64, 64, 64);
-            ucButton1.Appearance.Font = new Font("Tahoma", 9F, FontStyle.Bold);
-            ucButton1.Appearance.FontStyleDelta = FontStyle.Bold;
-            ucButton1.Appearance.ForeColor = Color.White;
-            ucButton1.Appearance.Options.UseBackColor = true;
-            ucButton1.Appearance.Options.UseBorderColor = true;
-            ucButton1.Appearance.Options.UseFont = true;
-            ucButton1.Appearance.Options.UseForeColor = true;
-            ucButton1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            ucButton1.ControlHeight = 48;
-            ucButton1.ControlWidth = 100;
-            ucButton1.FontBold = FontStyle.Bold;
-            ucButton1.FontFace = "Tahoma";
-            ucButton1.FontSize = 9F;
-            ucButton1.Location = new Point(560, 35);
-            ucButton1.Name = "ucButton1";
-            ucButton1.Size = new Size(100, 48);
-            ucButton1.TabIndex = 1;
-            ucButton1.Title = "UCButton";
-            ucButton1.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            // 
             // memo
             // 
             memo.Appearance.Font = new Font("Tahoma", 9F);
             memo.Appearance.Options.UseFont = true;
-            memo.ButtonVisiable = false;
             memo.ControlHeight = 22;
             memo.ControlWidth = 536;
             memo.FontColor = Color.Black;
@@ -376,7 +329,6 @@
             // 
             address.Appearance.Font = new Font("Tahoma", 9F);
             address.Appearance.Options.UseFont = true;
-            address.ButtonVisiable = false;
             address.ControlHeight = 21;
             address.ControlWidth = 265;
             address.FontColor = Color.Black;
@@ -396,7 +348,6 @@
             // 
             website.Appearance.Font = new Font("Tahoma", 9F);
             website.Appearance.Options.UseFont = true;
-            website.ButtonVisiable = false;
             website.ControlHeight = 21;
             website.ControlWidth = 265;
             website.FontColor = Color.Black;
@@ -416,7 +367,6 @@
             // 
             phone.Appearance.Font = new Font("Tahoma", 9F);
             phone.Appearance.Options.UseFont = true;
-            phone.ButtonVisiable = false;
             phone.ControlHeight = 21;
             phone.ControlWidth = 265;
             phone.FontColor = Color.Black;
@@ -436,7 +386,6 @@
             // 
             country.Appearance.Font = new Font("Tahoma", 9F);
             country.Appearance.Options.UseFont = true;
-            country.ButtonVisiable = false;
             country.ControlHeight = 21;
             country.ControlWidth = 265;
             country.FontColor = Color.Black;
@@ -456,7 +405,6 @@
             // 
             coemail.Appearance.Font = new Font("Tahoma", 9F);
             coemail.Appearance.Options.UseFont = true;
-            coemail.ButtonVisiable = false;
             coemail.ControlHeight = 21;
             coemail.ControlWidth = 265;
             coemail.FontColor = Color.Black;
@@ -476,7 +424,6 @@
             // 
             zipcode.Appearance.Font = new Font("Tahoma", 9F);
             zipcode.Appearance.Options.UseFont = true;
-            zipcode.ButtonVisiable = false;
             zipcode.ControlHeight = 21;
             zipcode.ControlWidth = 265;
             zipcode.FontColor = Color.Black;
@@ -496,7 +443,6 @@
             // 
             coname.Appearance.Font = new Font("Tahoma", 9F);
             coname.Appearance.Options.UseFont = true;
-            coname.ButtonVisiable = false;
             coname.ControlHeight = 21;
             coname.ControlWidth = 265;
             coname.FontColor = Color.Black;
@@ -516,7 +462,6 @@
             // 
             status.Appearance.Font = new Font("Tahoma", 9F);
             status.Appearance.Options.UseFont = true;
-            status.ButtonVisiable = false;
             status.ControlHeight = 21;
             status.ControlWidth = 265;
             status.FontColor = Color.Black;
@@ -536,7 +481,6 @@
             // 
             supname.Appearance.Font = new Font("Tahoma", 9F);
             supname.Appearance.Options.UseFont = true;
-            supname.ButtonVisiable = false;
             supname.ControlHeight = 21;
             supname.ControlWidth = 265;
             supname.FontColor = Color.Black;
@@ -556,7 +500,6 @@
             // 
             city.Appearance.Font = new Font("Tahoma", 9F);
             city.Appearance.Options.UseFont = true;
-            city.ButtonVisiable = false;
             city.ControlHeight = 21;
             city.ControlWidth = 265;
             city.FontColor = Color.Black;
@@ -576,7 +519,6 @@
             // 
             supid.Appearance.Font = new Font("Tahoma", 9F);
             supid.Appearance.Options.UseFont = true;
-            supid.ButtonVisiable = false;
             supid.ControlHeight = 21;
             supid.ControlWidth = 265;
             supid.FontColor = Color.Black;
@@ -612,6 +554,22 @@
             ucTab1.TabIndex = 0;
             ucTab1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] { Detail1, xtraTabPage2, xtraTabPage3, xtraTabPage4 });
             // 
+            // Detail1
+            // 
+            Detail1.Controls.Add(g20);
+            Detail1.Name = "Detail1";
+            Detail1.Size = new Size(749, 266);
+            Detail1.TabPageWidth = 80;
+            Detail1.Text = "Detail1";
+            // 
+            // g20
+            // 
+            g20.Dock = DockStyle.Fill;
+            g20.Location = new Point(0, 0);
+            g20.Name = "g20";
+            g20.Size = new Size(749, 266);
+            g20.TabIndex = 0;
+            // 
             // xtraTabPage2
             // 
             xtraTabPage2.Controls.Add(ucPanel6);
@@ -628,22 +586,6 @@
             ucPanel6.Size = new Size(749, 266);
             ucPanel6.TabIndex = 0;
             ucPanel6.Text = "ucPanel6";
-            // 
-            // Detail1
-            // 
-            Detail1.Controls.Add(g20);
-            Detail1.Name = "Detail1";
-            Detail1.Size = new Size(749, 266);
-            Detail1.TabPageWidth = 80;
-            Detail1.Text = "Detail1";
-            // 
-            // g20
-            // 
-            g20.Dock = DockStyle.Fill;
-            g20.Location = new Point(0, 0);
-            g20.Name = "g20";
-            g20.Size = new Size(749, 266);
-            g20.TabIndex = 0;
             // 
             // xtraTabPage3
             // 
@@ -708,9 +650,9 @@
             ucPanel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ucTab1).EndInit();
             ucTab1.ResumeLayout(false);
+            Detail1.ResumeLayout(false);
             xtraTabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ucPanel6).EndInit();
-            Detail1.ResumeLayout(false);
             xtraTabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ucPanel7).EndInit();
             xtraTabPage4.ResumeLayout(false);
@@ -753,8 +695,6 @@
         private Ctrls.UCPanel ucPanel6;
         private Ctrls.UCPanel ucPanel7;
         private Ctrls.UCPanel ucPanel8;
-        private Ctrls.UCButton ucButton2;
-        private Ctrls.UCButton ucButton1;
         private Ctrls.UCGridSet g20;
     }
 }
