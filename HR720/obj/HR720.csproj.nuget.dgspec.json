@@ -1,34 +1,39 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mupai03\\Documents\\Mupai Dev\\Frms\\HR720\\HR720.csproj": {}
+    "D:\\25_EpicV004\\EpicV004\\Frms\\HR720\\HR720.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mupai03\\Documents\\Mupai Dev\\Frms\\HR720\\HR720.csproj": {
+    "D:\\25_EpicV004\\EpicV004\\Frms\\HR720\\HR720.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mupai03\\Documents\\Mupai Dev\\Frms\\HR720\\HR720.csproj",
+        "projectUniqueName": "D:\\25_EpicV004\\EpicV004\\Frms\\HR720\\HR720.csproj",
         "projectName": "HR720",
-        "projectPath": "C:\\Users\\Mupai03\\Documents\\Mupai Dev\\Frms\\HR720\\HR720.csproj",
-        "packagesPath": "C:\\Users\\Mupai03\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mupai03\\Documents\\Mupai Dev\\Frms\\HR720\\obj\\",
+        "projectPath": "D:\\25_EpicV004\\EpicV004\\Frms\\HR720\\HR720.csproj",
+        "packagesPath": "C:\\Users\\mupai\\.nuget\\packages\\",
+        "outputPath": "D:\\25_EpicV004\\EpicV004\\Frms\\HR720\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages"
+          "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages",
+          "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Mupai03\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mupai\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 24.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0-windows"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\DevExpress 23.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\DevExpress 24.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -54,7 +59,7 @@
           "dependencies": {
             "EpicPrologue": {
               "target": "Package",
-              "version": "[1.0.16, )"
+              "version": "[1.0.19, )"
             }
           },
           "imports": [
@@ -76,7 +81,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -21,6 +21,8 @@ namespace EpicWebDesigner.Processors
         {
             switch (toolNm)
             {
+                case "UCGridSet":
+                    return new GridUnitProc();
                 case "UCSplit":
                 case "SplitContainer":
                     return new SplitContainerProc(domConverter);
@@ -33,6 +35,7 @@ namespace EpicWebDesigner.Processors
                 case "LabelText":
                 case "UCDateBox":
                 case "UCTextBox":
+                case "UCRichText":
                     return new UCTextBoxProc();
                 case "XtraTabControl":
                 case "UCTab":

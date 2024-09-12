@@ -39,7 +39,10 @@ namespace EpicWebDesigner.Services
             CtrlDom ctrlDom = ctrlDoms.GetByToolNm(element.ToolNm, domType);
 
             if (ctrlDom == null)
-                throw new Exception($"CtrlDom for {element.ToolNm} not found");
+            {
+                MessageBox.Show($"CtrlDom for {element.ToolNm} not found");
+                return string.Empty;
+            }
 
 
             //var childElements = frmEles.GetChildElements(element.FrmId, element.PathId);
