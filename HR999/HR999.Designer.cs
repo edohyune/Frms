@@ -32,13 +32,37 @@
             xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
             ucSplit1 = new Ctrls.UCSplit();
             ucPanel1 = new Ctrls.UCPanel();
-            ucTextBox49 = new Ctrls.UCTextBox();
-            ucButton3 = new Ctrls.UCButton();
-            ucButton2 = new Ctrls.UCButton();
+            s_lock_status = new Ctrls.UCTextBox();
+            bnt_cu = new Ctrls.UCButton();
+            btn_erp = new Ctrls.UCButton();
             ucSplit2 = new Ctrls.UCSplit();
             g10 = new Ctrls.UCGridSet();
             ucPanel2 = new Ctrls.UCPanel();
             groupBox1 = new GroupBox();
+            checkBox22 = new CheckBox();
+            checkBox23 = new CheckBox();
+            checkBox24 = new CheckBox();
+            checkBox25 = new CheckBox();
+            checkBox16 = new CheckBox();
+            checkBox17 = new CheckBox();
+            checkBox18 = new CheckBox();
+            checkBox19 = new CheckBox();
+            checkBox20 = new CheckBox();
+            checkBox11 = new CheckBox();
+            checkBox12 = new CheckBox();
+            checkBox13 = new CheckBox();
+            checkBox14 = new CheckBox();
+            checkBox15 = new CheckBox();
+            checkBox6 = new CheckBox();
+            checkBox7 = new CheckBox();
+            checkBox8 = new CheckBox();
+            checkBox9 = new CheckBox();
+            checkBox10 = new CheckBox();
+            checkBox5 = new CheckBox();
+            checkBox4 = new CheckBox();
+            checkBox3 = new CheckBox();
+            checkBox2 = new CheckBox();
+            checkBox1 = new CheckBox();
             ucTextBox46 = new Ctrls.UCTextBox();
             ucTextBox47 = new Ctrls.UCTextBox();
             ucTextBox48 = new Ctrls.UCTextBox();
@@ -61,7 +85,7 @@
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
-            ucButton1 = new Ctrls.UCButton();
+            btn_conversion = new Ctrls.UCButton();
             ucTextBox22 = new Ctrls.UCTextBox();
             ucTextBox23 = new Ctrls.UCTextBox();
             ucTextBox24 = new Ctrls.UCTextBox();
@@ -119,47 +143,23 @@
             ucSplit3 = new Ctrls.UCSplit();
             ucSplit5 = new Ctrls.UCSplit();
             ucPanel3 = new Ctrls.UCPanel();
-            ucButton5 = new Ctrls.UCButton();
-            ucButton4 = new Ctrls.UCButton();
-            ucDateBox1 = new Ctrls.UCDateBox();
+            btn_query = new Ctrls.UCButton();
+            btn_pdq = new Ctrls.UCButton();
+            s_payMon = new Ctrls.UCDateBox();
             ucSplit6 = new Ctrls.UCSplit();
             g20 = new Ctrls.UCGridSet();
             ucPanel6 = new Ctrls.UCPanel();
-            ucChkCodeBox2 = new Ctrls.UCChkCodeBox();
+            s_status = new Ctrls.UCChkCodeBox();
             emp_type = new Ctrls.UCChkCodeBox();
-            ucButton6 = new Ctrls.UCButton();
-            ucTextBox51 = new Ctrls.UCTextBox();
-            key = new Ctrls.UCTextBox();
+            btn_make = new Ctrls.UCButton();
+            s_emp = new Ctrls.UCTextBox();
+            s_prp_key = new Ctrls.UCTextBox();
             dept = new Ctrls.UCTextBox();
             ucSplit4 = new Ctrls.UCSplit();
             ucPanel4 = new Ctrls.UCPanel();
             g30 = new Ctrls.UCGridSet();
             ucPanel5 = new Ctrls.UCPanel();
             g40 = new Ctrls.UCGridSet();
-            checkBox1 = new CheckBox();
-            checkBox2 = new CheckBox();
-            checkBox3 = new CheckBox();
-            checkBox4 = new CheckBox();
-            checkBox5 = new CheckBox();
-            checkBox6 = new CheckBox();
-            checkBox7 = new CheckBox();
-            checkBox8 = new CheckBox();
-            checkBox9 = new CheckBox();
-            checkBox10 = new CheckBox();
-            checkBox11 = new CheckBox();
-            checkBox12 = new CheckBox();
-            checkBox13 = new CheckBox();
-            checkBox14 = new CheckBox();
-            checkBox15 = new CheckBox();
-            checkBox16 = new CheckBox();
-            checkBox17 = new CheckBox();
-            checkBox18 = new CheckBox();
-            checkBox19 = new CheckBox();
-            checkBox20 = new CheckBox();
-            checkBox22 = new CheckBox();
-            checkBox23 = new CheckBox();
-            checkBox24 = new CheckBox();
-            checkBox25 = new CheckBox();
             ((System.ComponentModel.ISupportInitialize)ucTab1).BeginInit();
             ucTab1.SuspendLayout();
             xtraTabPage1.SuspendLayout();
@@ -243,9 +243,9 @@
             // 
             // ucPanel1
             // 
-            ucPanel1.Controls.Add(ucTextBox49);
-            ucPanel1.Controls.Add(ucButton3);
-            ucPanel1.Controls.Add(ucButton2);
+            ucPanel1.Controls.Add(s_lock_status);
+            ucPanel1.Controls.Add(bnt_cu);
+            ucPanel1.Controls.Add(btn_erp);
             ucPanel1.Dock = DockStyle.Fill;
             ucPanel1.Location = new Point(0, 0);
             ucPanel1.Name = "ucPanel1";
@@ -253,60 +253,60 @@
             ucPanel1.TabIndex = 0;
             ucPanel1.Text = "Bplus Data Conversion";
             // 
-            // ucTextBox49
+            // s_lock_status
             // 
-            ucTextBox49.ControlHeight = 21;
-            ucTextBox49.ControlWidth = 178;
-            ucTextBox49.FontColor = Color.Black;
-            ucTextBox49.FontFace = "Tahoma";
-            ucTextBox49.FontSize = 9F;
-            ucTextBox49.FormatStr = "";
-            ucTextBox49.Location = new Point(748, 23);
-            ucTextBox49.Name = "ucTextBox49";
-            ucTextBox49.Size = new Size(178, 21);
-            ucTextBox49.TabIndex = 1;
-            ucTextBox49.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox49.Title = "Lock Status";
-            ucTextBox49.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox49.TitleWidth = 100;
+            s_lock_status.ControlHeight = 21;
+            s_lock_status.ControlWidth = 178;
+            s_lock_status.FontColor = Color.Black;
+            s_lock_status.FontFace = "Tahoma";
+            s_lock_status.FontSize = 9F;
+            s_lock_status.FormatStr = "";
+            s_lock_status.Location = new Point(748, 23);
+            s_lock_status.Name = "s_lock_status";
+            s_lock_status.Size = new Size(178, 21);
+            s_lock_status.TabIndex = 1;
+            s_lock_status.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            s_lock_status.Title = "Lock Status";
+            s_lock_status.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            s_lock_status.TitleWidth = 100;
             // 
-            // ucButton3
+            // bnt_cu
             // 
-            ucButton3.Appearance.BackColor = Color.FromArgb(224, 224, 224);
-            ucButton3.Appearance.Font = new Font("Tahoma", 9F);
-            ucButton3.Appearance.Options.UseBackColor = true;
-            ucButton3.Appearance.Options.UseFont = true;
-            ucButton3.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            ucButton3.ControlHeight = 21;
-            ucButton3.ControlWidth = 181;
-            ucButton3.FontBold = FontStyle.Regular;
-            ucButton3.FontFace = "Tahoma";
-            ucButton3.FontSize = 9F;
-            ucButton3.Location = new Point(561, 23);
-            ucButton3.Name = "ucButton3";
-            ucButton3.Size = new Size(181, 21);
-            ucButton3.TabIndex = 0;
-            ucButton3.Title = "Coversion Unlock";
-            ucButton3.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            bnt_cu.Appearance.BackColor = Color.FromArgb(224, 224, 224);
+            bnt_cu.Appearance.Font = new Font("Tahoma", 9F);
+            bnt_cu.Appearance.Options.UseBackColor = true;
+            bnt_cu.Appearance.Options.UseFont = true;
+            bnt_cu.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            bnt_cu.ControlHeight = 21;
+            bnt_cu.ControlWidth = 181;
+            bnt_cu.FontBold = FontStyle.Regular;
+            bnt_cu.FontFace = "Tahoma";
+            bnt_cu.FontSize = 9F;
+            bnt_cu.Location = new Point(561, 23);
+            bnt_cu.Name = "bnt_cu";
+            bnt_cu.Size = new Size(181, 21);
+            bnt_cu.TabIndex = 0;
+            bnt_cu.Title = "Coversion Unlock";
+            bnt_cu.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
             // 
-            // ucButton2
+            // btn_erp
             // 
-            ucButton2.Appearance.BackColor = Color.Silver;
-            ucButton2.Appearance.Font = new Font("Tahoma", 9F);
-            ucButton2.Appearance.Options.UseBackColor = true;
-            ucButton2.Appearance.Options.UseFont = true;
-            ucButton2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            ucButton2.ControlHeight = 21;
-            ucButton2.ControlWidth = 181;
-            ucButton2.FontBold = FontStyle.Regular;
-            ucButton2.FontFace = "Tahoma";
-            ucButton2.FontSize = 9F;
-            ucButton2.Location = new Point(5, 25);
-            ucButton2.Name = "ucButton2";
-            ucButton2.Size = new Size(181, 21);
-            ucButton2.TabIndex = 0;
-            ucButton2.Title = "ERP-Bplus Table Data Count";
-            ucButton2.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            btn_erp.Appearance.BackColor = Color.Silver;
+            btn_erp.Appearance.Font = new Font("Tahoma", 9F);
+            btn_erp.Appearance.Options.UseBackColor = true;
+            btn_erp.Appearance.Options.UseFont = true;
+            btn_erp.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            btn_erp.ControlHeight = 21;
+            btn_erp.ControlWidth = 181;
+            btn_erp.FontBold = FontStyle.Regular;
+            btn_erp.FontFace = "Tahoma";
+            btn_erp.FontSize = 9F;
+            btn_erp.Location = new Point(5, 25);
+            btn_erp.Name = "btn_erp";
+            btn_erp.Size = new Size(181, 21);
+            btn_erp.TabIndex = 0;
+            btn_erp.Title = "ERP-Bplus Table Data Count";
+            btn_erp.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
             // 
             // ucSplit2
             // 
@@ -393,7 +393,7 @@
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(label1);
-            groupBox1.Controls.Add(ucButton1);
+            groupBox1.Controls.Add(btn_conversion);
             groupBox1.Controls.Add(ucTextBox22);
             groupBox1.Controls.Add(ucTextBox23);
             groupBox1.Controls.Add(ucTextBox24);
@@ -453,6 +453,222 @@
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Step";
+            // 
+            // checkBox22
+            // 
+            checkBox22.AutoSize = true;
+            checkBox22.Location = new Point(342, 603);
+            checkBox22.Name = "checkBox22";
+            checkBox22.Size = new Size(15, 14);
+            checkBox22.TabIndex = 89;
+            checkBox22.UseVisualStyleBackColor = true;
+            // 
+            // checkBox23
+            // 
+            checkBox23.AutoSize = true;
+            checkBox23.Location = new Point(342, 578);
+            checkBox23.Name = "checkBox23";
+            checkBox23.Size = new Size(15, 14);
+            checkBox23.TabIndex = 88;
+            checkBox23.UseVisualStyleBackColor = true;
+            // 
+            // checkBox24
+            // 
+            checkBox24.AutoSize = true;
+            checkBox24.Location = new Point(342, 553);
+            checkBox24.Name = "checkBox24";
+            checkBox24.Size = new Size(15, 14);
+            checkBox24.TabIndex = 86;
+            checkBox24.UseVisualStyleBackColor = true;
+            // 
+            // checkBox25
+            // 
+            checkBox25.AutoSize = true;
+            checkBox25.Location = new Point(342, 529);
+            checkBox25.Name = "checkBox25";
+            checkBox25.Size = new Size(15, 14);
+            checkBox25.TabIndex = 87;
+            checkBox25.UseVisualStyleBackColor = true;
+            // 
+            // checkBox16
+            // 
+            checkBox16.AutoSize = true;
+            checkBox16.Location = new Point(342, 506);
+            checkBox16.Name = "checkBox16";
+            checkBox16.Size = new Size(15, 14);
+            checkBox16.TabIndex = 85;
+            checkBox16.UseVisualStyleBackColor = true;
+            // 
+            // checkBox17
+            // 
+            checkBox17.AutoSize = true;
+            checkBox17.Location = new Point(342, 482);
+            checkBox17.Name = "checkBox17";
+            checkBox17.Size = new Size(15, 14);
+            checkBox17.TabIndex = 84;
+            checkBox17.UseVisualStyleBackColor = true;
+            // 
+            // checkBox18
+            // 
+            checkBox18.AutoSize = true;
+            checkBox18.Location = new Point(342, 457);
+            checkBox18.Name = "checkBox18";
+            checkBox18.Size = new Size(15, 14);
+            checkBox18.TabIndex = 83;
+            checkBox18.UseVisualStyleBackColor = true;
+            // 
+            // checkBox19
+            // 
+            checkBox19.AutoSize = true;
+            checkBox19.Location = new Point(342, 432);
+            checkBox19.Name = "checkBox19";
+            checkBox19.Size = new Size(15, 14);
+            checkBox19.TabIndex = 81;
+            checkBox19.UseVisualStyleBackColor = true;
+            // 
+            // checkBox20
+            // 
+            checkBox20.AutoSize = true;
+            checkBox20.Location = new Point(342, 408);
+            checkBox20.Name = "checkBox20";
+            checkBox20.Size = new Size(15, 14);
+            checkBox20.TabIndex = 82;
+            checkBox20.UseVisualStyleBackColor = true;
+            // 
+            // checkBox11
+            // 
+            checkBox11.AutoSize = true;
+            checkBox11.Location = new Point(342, 381);
+            checkBox11.Name = "checkBox11";
+            checkBox11.Size = new Size(15, 14);
+            checkBox11.TabIndex = 80;
+            checkBox11.UseVisualStyleBackColor = true;
+            // 
+            // checkBox12
+            // 
+            checkBox12.AutoSize = true;
+            checkBox12.Location = new Point(342, 357);
+            checkBox12.Name = "checkBox12";
+            checkBox12.Size = new Size(15, 14);
+            checkBox12.TabIndex = 79;
+            checkBox12.UseVisualStyleBackColor = true;
+            // 
+            // checkBox13
+            // 
+            checkBox13.AutoSize = true;
+            checkBox13.Location = new Point(342, 332);
+            checkBox13.Name = "checkBox13";
+            checkBox13.Size = new Size(15, 14);
+            checkBox13.TabIndex = 78;
+            checkBox13.UseVisualStyleBackColor = true;
+            // 
+            // checkBox14
+            // 
+            checkBox14.AutoSize = true;
+            checkBox14.Location = new Point(342, 305);
+            checkBox14.Name = "checkBox14";
+            checkBox14.Size = new Size(15, 14);
+            checkBox14.TabIndex = 76;
+            checkBox14.UseVisualStyleBackColor = true;
+            // 
+            // checkBox15
+            // 
+            checkBox15.AutoSize = true;
+            checkBox15.Location = new Point(342, 278);
+            checkBox15.Name = "checkBox15";
+            checkBox15.Size = new Size(15, 14);
+            checkBox15.TabIndex = 77;
+            checkBox15.UseVisualStyleBackColor = true;
+            // 
+            // checkBox6
+            // 
+            checkBox6.AutoSize = true;
+            checkBox6.Location = new Point(342, 256);
+            checkBox6.Name = "checkBox6";
+            checkBox6.Size = new Size(15, 14);
+            checkBox6.TabIndex = 75;
+            checkBox6.UseVisualStyleBackColor = true;
+            // 
+            // checkBox7
+            // 
+            checkBox7.AutoSize = true;
+            checkBox7.Location = new Point(342, 232);
+            checkBox7.Name = "checkBox7";
+            checkBox7.Size = new Size(15, 14);
+            checkBox7.TabIndex = 74;
+            checkBox7.UseVisualStyleBackColor = true;
+            // 
+            // checkBox8
+            // 
+            checkBox8.AutoSize = true;
+            checkBox8.Location = new Point(342, 207);
+            checkBox8.Name = "checkBox8";
+            checkBox8.Size = new Size(15, 14);
+            checkBox8.TabIndex = 73;
+            checkBox8.UseVisualStyleBackColor = true;
+            // 
+            // checkBox9
+            // 
+            checkBox9.AutoSize = true;
+            checkBox9.Location = new Point(342, 182);
+            checkBox9.Name = "checkBox9";
+            checkBox9.Size = new Size(15, 14);
+            checkBox9.TabIndex = 71;
+            checkBox9.UseVisualStyleBackColor = true;
+            // 
+            // checkBox10
+            // 
+            checkBox10.AutoSize = true;
+            checkBox10.Location = new Point(342, 158);
+            checkBox10.Name = "checkBox10";
+            checkBox10.Size = new Size(15, 14);
+            checkBox10.TabIndex = 72;
+            checkBox10.UseVisualStyleBackColor = true;
+            // 
+            // checkBox5
+            // 
+            checkBox5.AutoSize = true;
+            checkBox5.Location = new Point(342, 133);
+            checkBox5.Name = "checkBox5";
+            checkBox5.Size = new Size(15, 14);
+            checkBox5.TabIndex = 70;
+            checkBox5.UseVisualStyleBackColor = true;
+            // 
+            // checkBox4
+            // 
+            checkBox4.AutoSize = true;
+            checkBox4.Location = new Point(342, 109);
+            checkBox4.Name = "checkBox4";
+            checkBox4.Size = new Size(15, 14);
+            checkBox4.TabIndex = 69;
+            checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            checkBox3.AutoSize = true;
+            checkBox3.Location = new Point(342, 84);
+            checkBox3.Name = "checkBox3";
+            checkBox3.Size = new Size(15, 14);
+            checkBox3.TabIndex = 68;
+            checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            checkBox2.AutoSize = true;
+            checkBox2.Location = new Point(342, 59);
+            checkBox2.Name = "checkBox2";
+            checkBox2.Size = new Size(15, 14);
+            checkBox2.TabIndex = 67;
+            checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.Location = new Point(342, 35);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(15, 14);
+            checkBox1.TabIndex = 67;
+            checkBox1.UseVisualStyleBackColor = true;
             // 
             // ucTextBox46
             // 
@@ -806,24 +1022,24 @@
             label1.TabIndex = 46;
             label1.Text = "Table";
             // 
-            // ucButton1
+            // btn_conversion
             // 
-            ucButton1.Appearance.BackColor = Color.FromArgb(224, 224, 224);
-            ucButton1.Appearance.Font = new Font("Tahoma", 9F);
-            ucButton1.Appearance.Options.UseBackColor = true;
-            ucButton1.Appearance.Options.UseFont = true;
-            ucButton1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            ucButton1.ControlHeight = 589;
-            ucButton1.ControlWidth = 76;
-            ucButton1.FontBold = FontStyle.Regular;
-            ucButton1.FontFace = "Tahoma";
-            ucButton1.FontSize = 9F;
-            ucButton1.Location = new Point(534, 32);
-            ucButton1.Name = "ucButton1";
-            ucButton1.Size = new Size(76, 589);
-            ucButton1.TabIndex = 45;
-            ucButton1.Title = "Conversion";
-            ucButton1.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            btn_conversion.Appearance.BackColor = Color.FromArgb(224, 224, 224);
+            btn_conversion.Appearance.Font = new Font("Tahoma", 9F);
+            btn_conversion.Appearance.Options.UseBackColor = true;
+            btn_conversion.Appearance.Options.UseFont = true;
+            btn_conversion.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            btn_conversion.ControlHeight = 589;
+            btn_conversion.ControlWidth = 76;
+            btn_conversion.FontBold = FontStyle.Regular;
+            btn_conversion.FontFace = "Tahoma";
+            btn_conversion.FontSize = 9F;
+            btn_conversion.Location = new Point(534, 32);
+            btn_conversion.Name = "btn_conversion";
+            btn_conversion.Size = new Size(76, 589);
+            btn_conversion.TabIndex = 45;
+            btn_conversion.Title = "Conversion";
+            btn_conversion.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
             // 
             // ucTextBox22
             // 
@@ -1822,9 +2038,9 @@
             // 
             // ucPanel3
             // 
-            ucPanel3.Controls.Add(ucButton5);
-            ucPanel3.Controls.Add(ucButton4);
-            ucPanel3.Controls.Add(ucDateBox1);
+            ucPanel3.Controls.Add(btn_query);
+            ucPanel3.Controls.Add(btn_pdq);
+            ucPanel3.Controls.Add(s_payMon);
             ucPanel3.Dock = DockStyle.Fill;
             ucPanel3.Location = new Point(0, 0);
             ucPanel3.Name = "ucPanel3";
@@ -1832,60 +2048,60 @@
             ucPanel3.TabIndex = 0;
             ucPanel3.Text = "Carry Over Annual Leave";
             // 
-            // ucButton5
+            // btn_query
             // 
-            ucButton5.Appearance.BackColor = Color.FromArgb(224, 224, 224);
-            ucButton5.Appearance.Font = new Font("Tahoma", 9F);
-            ucButton5.Appearance.Options.UseBackColor = true;
-            ucButton5.Appearance.Options.UseFont = true;
-            ucButton5.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            ucButton5.ControlHeight = 20;
-            ucButton5.ControlWidth = 177;
-            ucButton5.FontBold = FontStyle.Regular;
-            ucButton5.FontFace = "Tahoma";
-            ucButton5.FontSize = 9F;
-            ucButton5.Location = new Point(5, 61);
-            ucButton5.Name = "ucButton5";
-            ucButton5.Size = new Size(177, 20);
-            ucButton5.TabIndex = 1;
-            ucButton5.Title = "Query";
-            ucButton5.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            btn_query.Appearance.BackColor = Color.FromArgb(224, 224, 224);
+            btn_query.Appearance.Font = new Font("Tahoma", 9F);
+            btn_query.Appearance.Options.UseBackColor = true;
+            btn_query.Appearance.Options.UseFont = true;
+            btn_query.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            btn_query.ControlHeight = 20;
+            btn_query.ControlWidth = 177;
+            btn_query.FontBold = FontStyle.Regular;
+            btn_query.FontFace = "Tahoma";
+            btn_query.FontSize = 9F;
+            btn_query.Location = new Point(5, 61);
+            btn_query.Name = "btn_query";
+            btn_query.Size = new Size(177, 20);
+            btn_query.TabIndex = 1;
+            btn_query.Title = "Query";
+            btn_query.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
             // 
-            // ucButton4
+            // btn_pdq
             // 
-            ucButton4.Appearance.BackColor = Color.FromArgb(224, 224, 224);
-            ucButton4.Appearance.Font = new Font("Tahoma", 9F);
-            ucButton4.Appearance.Options.UseBackColor = true;
-            ucButton4.Appearance.Options.UseFont = true;
-            ucButton4.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            ucButton4.ControlHeight = 30;
-            ucButton4.ControlWidth = 138;
-            ucButton4.FontBold = FontStyle.Regular;
-            ucButton4.FontFace = "Tahoma";
-            ucButton4.FontSize = 9F;
-            ucButton4.Location = new Point(188, 28);
-            ucButton4.Name = "ucButton4";
-            ucButton4.Size = new Size(138, 30);
-            ucButton4.TabIndex = 1;
-            ucButton4.Title = "Payment Date Query";
-            ucButton4.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            btn_pdq.Appearance.BackColor = Color.FromArgb(224, 224, 224);
+            btn_pdq.Appearance.Font = new Font("Tahoma", 9F);
+            btn_pdq.Appearance.Options.UseBackColor = true;
+            btn_pdq.Appearance.Options.UseFont = true;
+            btn_pdq.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            btn_pdq.ControlHeight = 30;
+            btn_pdq.ControlWidth = 138;
+            btn_pdq.FontBold = FontStyle.Regular;
+            btn_pdq.FontFace = "Tahoma";
+            btn_pdq.FontSize = 9F;
+            btn_pdq.Location = new Point(188, 28);
+            btn_pdq.Name = "btn_pdq";
+            btn_pdq.Size = new Size(138, 30);
+            btn_pdq.TabIndex = 1;
+            btn_pdq.Title = "Payment Date Query";
+            btn_pdq.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
             // 
-            // ucDateBox1
+            // s_payMon
             // 
-            ucDateBox1.ControlHeight = 21;
-            ucDateBox1.ControlWidth = 177;
-            ucDateBox1.FontColor = Color.Black;
-            ucDateBox1.FontFace = "Tahoma";
-            ucDateBox1.FontSize = 9F;
-            ucDateBox1.FormatStr = "";
-            ucDateBox1.Location = new Point(5, 33);
-            ucDateBox1.Name = "ucDateBox1";
-            ucDateBox1.Size = new Size(177, 21);
-            ucDateBox1.TabIndex = 0;
-            ucDateBox1.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucDateBox1.Title = "Month";
-            ucDateBox1.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucDateBox1.TitleWidth = 80;
+            s_payMon.ControlHeight = 21;
+            s_payMon.ControlWidth = 177;
+            s_payMon.FontColor = Color.Black;
+            s_payMon.FontFace = "Tahoma";
+            s_payMon.FontSize = 9F;
+            s_payMon.FormatStr = "";
+            s_payMon.Location = new Point(5, 33);
+            s_payMon.Name = "s_payMon";
+            s_payMon.Size = new Size(177, 21);
+            s_payMon.TabIndex = 0;
+            s_payMon.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            s_payMon.Title = "Month";
+            s_payMon.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            s_payMon.TitleWidth = 80;
             // 
             // ucSplit6
             // 
@@ -1916,11 +2132,11 @@
             // 
             // ucPanel6
             // 
-            ucPanel6.Controls.Add(ucChkCodeBox2);
+            ucPanel6.Controls.Add(s_status);
             ucPanel6.Controls.Add(emp_type);
-            ucPanel6.Controls.Add(ucButton6);
-            ucPanel6.Controls.Add(ucTextBox51);
-            ucPanel6.Controls.Add(key);
+            ucPanel6.Controls.Add(btn_make);
+            ucPanel6.Controls.Add(s_emp);
+            ucPanel6.Controls.Add(s_prp_key);
             ucPanel6.Controls.Add(dept);
             ucPanel6.Dock = DockStyle.Fill;
             ucPanel6.Location = new Point(0, 0);
@@ -1929,22 +2145,22 @@
             ucPanel6.TabIndex = 0;
             ucPanel6.Text = "Search";
             // 
-            // ucChkCodeBox2
+            // s_status
             // 
-            ucChkCodeBox2.Appearance.Font = new Font("Tahoma", 9F);
-            ucChkCodeBox2.Appearance.Options.UseFont = true;
-            ucChkCodeBox2.ControlHeight = 21;
-            ucChkCodeBox2.ControlWidth = 200;
-            ucChkCodeBox2.FontFace = "Tahoma";
-            ucChkCodeBox2.FontSize = 9F;
-            ucChkCodeBox2.Location = new Point(365, 56);
-            ucChkCodeBox2.Name = "ucChkCodeBox2";
-            ucChkCodeBox2.Size = new Size(200, 21);
-            ucChkCodeBox2.TabIndex = 2;
-            ucChkCodeBox2.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucChkCodeBox2.Title = "Status";
-            ucChkCodeBox2.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            ucChkCodeBox2.TitleWidth = 117;
+            s_status.Appearance.Font = new Font("Tahoma", 9F);
+            s_status.Appearance.Options.UseFont = true;
+            s_status.ControlHeight = 21;
+            s_status.ControlWidth = 200;
+            s_status.FontFace = "Tahoma";
+            s_status.FontSize = 9F;
+            s_status.Location = new Point(365, 56);
+            s_status.Name = "s_status";
+            s_status.Size = new Size(200, 21);
+            s_status.TabIndex = 2;
+            s_status.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            s_status.Title = "Status";
+            s_status.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            s_status.TitleWidth = 117;
             // 
             // emp_type
             // 
@@ -1963,60 +2179,60 @@
             emp_type.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
             emp_type.TitleWidth = 117;
             // 
-            // ucButton6
+            // btn_make
             // 
-            ucButton6.Appearance.Font = new Font("Tahoma", 9F);
-            ucButton6.Appearance.Options.UseFont = true;
-            ucButton6.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            ucButton6.ControlHeight = 44;
-            ucButton6.ControlWidth = 186;
-            ucButton6.FontBold = FontStyle.Regular;
-            ucButton6.FontFace = "Tahoma";
-            ucButton6.FontSize = 9F;
-            ucButton6.Location = new Point(173, 33);
-            ucButton6.Name = "ucButton6";
-            ucButton6.Size = new Size(186, 44);
-            ucButton6.TabIndex = 1;
-            ucButton6.Title = "Make HA845 data From HA855(Generate Past data)";
-            ucButton6.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            btn_make.Appearance.Font = new Font("Tahoma", 9F);
+            btn_make.Appearance.Options.UseFont = true;
+            btn_make.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            btn_make.ControlHeight = 44;
+            btn_make.ControlWidth = 186;
+            btn_make.FontBold = FontStyle.Regular;
+            btn_make.FontFace = "Tahoma";
+            btn_make.FontSize = 9F;
+            btn_make.Location = new Point(173, 33);
+            btn_make.Name = "btn_make";
+            btn_make.Size = new Size(186, 44);
+            btn_make.TabIndex = 1;
+            btn_make.Title = "Make HA845 data From HA855(Generate Past data)";
+            btn_make.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
             // 
-            // ucTextBox51
+            // s_emp
             // 
-            ucTextBox51.Appearance.Font = new Font("Tahoma", 9F);
-            ucTextBox51.Appearance.Options.UseFont = true;
-            ucTextBox51.ControlHeight = 21;
-            ucTextBox51.ControlWidth = 162;
-            ucTextBox51.FontColor = Color.Black;
-            ucTextBox51.FontFace = "Tahoma";
-            ucTextBox51.FontSize = 9F;
-            ucTextBox51.FormatStr = "";
-            ucTextBox51.Location = new Point(5, 56);
-            ucTextBox51.Name = "ucTextBox51";
-            ucTextBox51.Size = new Size(162, 21);
-            ucTextBox51.TabIndex = 0;
-            ucTextBox51.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox51.Title = "Employee";
-            ucTextBox51.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox51.TitleWidth = 70;
+            s_emp.Appearance.Font = new Font("Tahoma", 9F);
+            s_emp.Appearance.Options.UseFont = true;
+            s_emp.ControlHeight = 21;
+            s_emp.ControlWidth = 162;
+            s_emp.FontColor = Color.Black;
+            s_emp.FontFace = "Tahoma";
+            s_emp.FontSize = 9F;
+            s_emp.FormatStr = "";
+            s_emp.Location = new Point(5, 56);
+            s_emp.Name = "s_emp";
+            s_emp.Size = new Size(162, 21);
+            s_emp.TabIndex = 0;
+            s_emp.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            s_emp.Title = "Employee";
+            s_emp.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            s_emp.TitleWidth = 70;
             // 
-            // key
+            // s_prp_key
             // 
-            key.Appearance.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            key.Appearance.Options.UseFont = true;
-            key.ControlHeight = 21;
-            key.ControlWidth = 109;
-            key.FontColor = Color.Black;
-            key.FontFace = "Tahoma";
-            key.FontSize = 9F;
-            key.FormatStr = "";
-            key.Location = new Point(571, 33);
-            key.Name = "key";
-            key.Size = new Size(109, 21);
-            key.TabIndex = 0;
-            key.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            key.Title = "key";
-            key.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            key.TitleWidth = 47;
+            s_prp_key.Appearance.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            s_prp_key.Appearance.Options.UseFont = true;
+            s_prp_key.ControlHeight = 21;
+            s_prp_key.ControlWidth = 109;
+            s_prp_key.FontColor = Color.Black;
+            s_prp_key.FontFace = "Tahoma";
+            s_prp_key.FontSize = 9F;
+            s_prp_key.FormatStr = "";
+            s_prp_key.Location = new Point(571, 33);
+            s_prp_key.Name = "s_prp_key";
+            s_prp_key.Size = new Size(109, 21);
+            s_prp_key.TabIndex = 0;
+            s_prp_key.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            s_prp_key.Title = "key";
+            s_prp_key.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            s_prp_key.TitleWidth = 47;
             // 
             // dept
             // 
@@ -2094,222 +2310,6 @@
             g40.Name = "g40";
             g40.Size = new Size(1419, 343);
             g40.TabIndex = 0;
-            // 
-            // checkBox1
-            // 
-            checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(342, 35);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(15, 14);
-            checkBox1.TabIndex = 67;
-            checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            checkBox2.AutoSize = true;
-            checkBox2.Location = new Point(342, 59);
-            checkBox2.Name = "checkBox2";
-            checkBox2.Size = new Size(15, 14);
-            checkBox2.TabIndex = 67;
-            checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            checkBox3.AutoSize = true;
-            checkBox3.Location = new Point(342, 84);
-            checkBox3.Name = "checkBox3";
-            checkBox3.Size = new Size(15, 14);
-            checkBox3.TabIndex = 68;
-            checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox4
-            // 
-            checkBox4.AutoSize = true;
-            checkBox4.Location = new Point(342, 109);
-            checkBox4.Name = "checkBox4";
-            checkBox4.Size = new Size(15, 14);
-            checkBox4.TabIndex = 69;
-            checkBox4.UseVisualStyleBackColor = true;
-            // 
-            // checkBox5
-            // 
-            checkBox5.AutoSize = true;
-            checkBox5.Location = new Point(342, 133);
-            checkBox5.Name = "checkBox5";
-            checkBox5.Size = new Size(15, 14);
-            checkBox5.TabIndex = 70;
-            checkBox5.UseVisualStyleBackColor = true;
-            // 
-            // checkBox6
-            // 
-            checkBox6.AutoSize = true;
-            checkBox6.Location = new Point(342, 256);
-            checkBox6.Name = "checkBox6";
-            checkBox6.Size = new Size(15, 14);
-            checkBox6.TabIndex = 75;
-            checkBox6.UseVisualStyleBackColor = true;
-            // 
-            // checkBox7
-            // 
-            checkBox7.AutoSize = true;
-            checkBox7.Location = new Point(342, 232);
-            checkBox7.Name = "checkBox7";
-            checkBox7.Size = new Size(15, 14);
-            checkBox7.TabIndex = 74;
-            checkBox7.UseVisualStyleBackColor = true;
-            // 
-            // checkBox8
-            // 
-            checkBox8.AutoSize = true;
-            checkBox8.Location = new Point(342, 207);
-            checkBox8.Name = "checkBox8";
-            checkBox8.Size = new Size(15, 14);
-            checkBox8.TabIndex = 73;
-            checkBox8.UseVisualStyleBackColor = true;
-            // 
-            // checkBox9
-            // 
-            checkBox9.AutoSize = true;
-            checkBox9.Location = new Point(342, 182);
-            checkBox9.Name = "checkBox9";
-            checkBox9.Size = new Size(15, 14);
-            checkBox9.TabIndex = 71;
-            checkBox9.UseVisualStyleBackColor = true;
-            // 
-            // checkBox10
-            // 
-            checkBox10.AutoSize = true;
-            checkBox10.Location = new Point(342, 158);
-            checkBox10.Name = "checkBox10";
-            checkBox10.Size = new Size(15, 14);
-            checkBox10.TabIndex = 72;
-            checkBox10.UseVisualStyleBackColor = true;
-            // 
-            // checkBox11
-            // 
-            checkBox11.AutoSize = true;
-            checkBox11.Location = new Point(342, 381);
-            checkBox11.Name = "checkBox11";
-            checkBox11.Size = new Size(15, 14);
-            checkBox11.TabIndex = 80;
-            checkBox11.UseVisualStyleBackColor = true;
-            // 
-            // checkBox12
-            // 
-            checkBox12.AutoSize = true;
-            checkBox12.Location = new Point(342, 357);
-            checkBox12.Name = "checkBox12";
-            checkBox12.Size = new Size(15, 14);
-            checkBox12.TabIndex = 79;
-            checkBox12.UseVisualStyleBackColor = true;
-            // 
-            // checkBox13
-            // 
-            checkBox13.AutoSize = true;
-            checkBox13.Location = new Point(342, 332);
-            checkBox13.Name = "checkBox13";
-            checkBox13.Size = new Size(15, 14);
-            checkBox13.TabIndex = 78;
-            checkBox13.UseVisualStyleBackColor = true;
-            // 
-            // checkBox14
-            // 
-            checkBox14.AutoSize = true;
-            checkBox14.Location = new Point(342, 305);
-            checkBox14.Name = "checkBox14";
-            checkBox14.Size = new Size(15, 14);
-            checkBox14.TabIndex = 76;
-            checkBox14.UseVisualStyleBackColor = true;
-            // 
-            // checkBox15
-            // 
-            checkBox15.AutoSize = true;
-            checkBox15.Location = new Point(342, 278);
-            checkBox15.Name = "checkBox15";
-            checkBox15.Size = new Size(15, 14);
-            checkBox15.TabIndex = 77;
-            checkBox15.UseVisualStyleBackColor = true;
-            // 
-            // checkBox16
-            // 
-            checkBox16.AutoSize = true;
-            checkBox16.Location = new Point(342, 506);
-            checkBox16.Name = "checkBox16";
-            checkBox16.Size = new Size(15, 14);
-            checkBox16.TabIndex = 85;
-            checkBox16.UseVisualStyleBackColor = true;
-            // 
-            // checkBox17
-            // 
-            checkBox17.AutoSize = true;
-            checkBox17.Location = new Point(342, 482);
-            checkBox17.Name = "checkBox17";
-            checkBox17.Size = new Size(15, 14);
-            checkBox17.TabIndex = 84;
-            checkBox17.UseVisualStyleBackColor = true;
-            // 
-            // checkBox18
-            // 
-            checkBox18.AutoSize = true;
-            checkBox18.Location = new Point(342, 457);
-            checkBox18.Name = "checkBox18";
-            checkBox18.Size = new Size(15, 14);
-            checkBox18.TabIndex = 83;
-            checkBox18.UseVisualStyleBackColor = true;
-            // 
-            // checkBox19
-            // 
-            checkBox19.AutoSize = true;
-            checkBox19.Location = new Point(342, 432);
-            checkBox19.Name = "checkBox19";
-            checkBox19.Size = new Size(15, 14);
-            checkBox19.TabIndex = 81;
-            checkBox19.UseVisualStyleBackColor = true;
-            // 
-            // checkBox20
-            // 
-            checkBox20.AutoSize = true;
-            checkBox20.Location = new Point(342, 408);
-            checkBox20.Name = "checkBox20";
-            checkBox20.Size = new Size(15, 14);
-            checkBox20.TabIndex = 82;
-            checkBox20.UseVisualStyleBackColor = true;
-            // 
-            // checkBox22
-            // 
-            checkBox22.AutoSize = true;
-            checkBox22.Location = new Point(342, 603);
-            checkBox22.Name = "checkBox22";
-            checkBox22.Size = new Size(15, 14);
-            checkBox22.TabIndex = 89;
-            checkBox22.UseVisualStyleBackColor = true;
-            // 
-            // checkBox23
-            // 
-            checkBox23.AutoSize = true;
-            checkBox23.Location = new Point(342, 578);
-            checkBox23.Name = "checkBox23";
-            checkBox23.Size = new Size(15, 14);
-            checkBox23.TabIndex = 88;
-            checkBox23.UseVisualStyleBackColor = true;
-            // 
-            // checkBox24
-            // 
-            checkBox24.AutoSize = true;
-            checkBox24.Location = new Point(342, 553);
-            checkBox24.Name = "checkBox24";
-            checkBox24.Size = new Size(15, 14);
-            checkBox24.TabIndex = 86;
-            checkBox24.UseVisualStyleBackColor = true;
-            // 
-            // checkBox25
-            // 
-            checkBox25.AutoSize = true;
-            checkBox25.Location = new Point(342, 529);
-            checkBox25.Name = "checkBox25";
-            checkBox25.Size = new Size(15, 14);
-            checkBox25.TabIndex = 87;
-            checkBox25.UseVisualStyleBackColor = true;
             // 
             // HR999
             // 
@@ -2422,32 +2422,32 @@
         private EpicV004.Ctrls.UCTextBox ucTextBox3;
         private EpicV004.Ctrls.UCTextBox ucTextBox2;
         private EpicV004.Ctrls.UCTextBox ucTextBox1;
-        private EpicV004.Ctrls.UCButton ucButton1;
+        private EpicV004.Ctrls.UCButton btn_conversion;
         private EpicV004.Ctrls.UCTextBox ucTextBox21;
         private Label label3;
         private Label label2;
         private Label label1;
-        private EpicV004.Ctrls.UCButton ucButton2;
-        private EpicV004.Ctrls.UCTextBox ucTextBox49;
-        private EpicV004.Ctrls.UCButton ucButton3;
+        private EpicV004.Ctrls.UCButton btn_erp;
+        private EpicV004.Ctrls.UCTextBox s_lock_status;
+        private EpicV004.Ctrls.UCButton bnt_cu;
         private EpicV004.Ctrls.UCSplit ucSplit3;
         private EpicV004.Ctrls.UCSplit ucSplit5;
         private EpicV004.Ctrls.UCPanel ucPanel3;
-        private EpicV004.Ctrls.UCButton ucButton5;
-        private EpicV004.Ctrls.UCButton ucButton4;
-        private EpicV004.Ctrls.UCDateBox ucDateBox1;
+        private EpicV004.Ctrls.UCButton btn_query;
+        private EpicV004.Ctrls.UCButton btn_pdq;
+        private EpicV004.Ctrls.UCDateBox s_payMon;
         private EpicV004.Ctrls.UCSplit ucSplit6;
         private EpicV004.Ctrls.UCGridSet g20;
         private EpicV004.Ctrls.UCPanel ucPanel6;
         private EpicV004.Ctrls.UCSplit ucSplit4;
         private EpicV004.Ctrls.UCPanel ucPanel4;
         private EpicV004.Ctrls.UCPanel ucPanel5;
-        private EpicV004.Ctrls.UCChkCodeBox ucChkCodeBox2;
+        private EpicV004.Ctrls.UCChkCodeBox s_status;
         private EpicV004.Ctrls.UCChkCodeBox emp_type;
-        private EpicV004.Ctrls.UCButton ucButton6;
-        private EpicV004.Ctrls.UCTextBox ucTextBox51;
+        private EpicV004.Ctrls.UCButton btn_make;
+        private EpicV004.Ctrls.UCTextBox s_emp;
         private EpicV004.Ctrls.UCTextBox dept;
-        private EpicV004.Ctrls.UCTextBox key;
+        private EpicV004.Ctrls.UCTextBox s_prp_key;
         private EpicV004.Ctrls.UCGridSet g30;
         private EpicV004.Ctrls.UCGridSet g40;
         private Ctrls.UCTextBox ucTextBox46;
