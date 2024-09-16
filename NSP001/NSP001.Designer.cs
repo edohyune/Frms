@@ -63,6 +63,7 @@
             xtraTabPage4 = new DevExpress.XtraTab.XtraTabPage();
             ucPanel8 = new Ctrls.UCPanel();
             ucTextBox1 = new Ctrls.UCTextBox();
+            ucTextBox2 = new Ctrls.UCTextBox();
             ((System.ComponentModel.ISupportInitialize)ucSplit1).BeginInit();
             ucSplit1.Panel1.SuspendLayout();
             ucSplit1.Panel2.SuspendLayout();
@@ -291,6 +292,7 @@
             f10.Controls.Add(memo);
             f10.Controls.Add(address);
             f10.Controls.Add(ucTextBox1);
+            f10.Controls.Add(ucTextBox2);
             f10.Controls.Add(website);
             f10.Controls.Add(phone);
             f10.Controls.Add(country);
@@ -643,6 +645,25 @@
             ucTextBox1.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
             ucTextBox1.TitleWidth = 80;
             // 
+            // ucTextBox2
+            // 
+            ucTextBox2.Appearance.Font = new Font("Tahoma", 9F);
+            ucTextBox2.Appearance.Options.UseFont = true;
+            ucTextBox2.ControlHeight = 21;
+            ucTextBox2.ControlWidth = 183;
+            ucTextBox2.FontColor = Color.Black;
+            ucTextBox2.FontFace = "Tahoma";
+            ucTextBox2.FontSize = 9F;
+            ucTextBox2.FormatStr = "";
+            ucTextBox2.Location = new Point(548, 116);
+            ucTextBox2.Name = "ucTextBox2";
+            ucTextBox2.Size = new Size(183, 21);
+            ucTextBox2.TabIndex = 0;
+            ucTextBox2.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox2.Title = "Website";
+            ucTextBox2.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox2.TitleWidth = 58;
+            // 
             // NSP001
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -719,5 +740,6 @@
         private Ctrls.UCPanel ucPanel8;
         private Ctrls.UCGridSet g20;
         private Ctrls.UCTextBox ucTextBox1;
+        private Ctrls.UCTextBox ucTextBox2;
     }
 }
