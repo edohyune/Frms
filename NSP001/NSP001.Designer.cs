@@ -65,6 +65,9 @@
             xtraTabPage4 = new DevExpress.XtraTab.XtraTabPage();
             ucPanel8 = new Ctrls.UCPanel();
             ucButton3 = new Ctrls.UCButton();
+            ucButton4 = new Ctrls.UCButton();
+            ucButton5 = new Ctrls.UCButton();
+            ucButton6 = new Ctrls.UCButton();
             ((System.ComponentModel.ISupportInitialize)ucSplit1).BeginInit();
             ucSplit1.Panel1.SuspendLayout();
             ucSplit1.Panel2.SuspendLayout();
@@ -290,6 +293,9 @@
             // 
             // f10
             // 
+            f10.Controls.Add(ucButton6);
+            f10.Controls.Add(ucButton5);
+            f10.Controls.Add(ucButton4);
             f10.Controls.Add(ucButton3);
             f10.Controls.Add(ucButton2);
             f10.Controls.Add(ucButton1);
@@ -678,6 +684,57 @@
             ucButton3.Title = "UCButtonM";
             ucButton3.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
             // 
+            // ucButton4
+            // 
+            ucButton4.Appearance.Font = new Font("Tahoma", 9F);
+            ucButton4.Appearance.Options.UseFont = true;
+            ucButton4.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            ucButton4.ControlHeight = 21;
+            ucButton4.ControlWidth = 100;
+            ucButton4.FontBold = FontStyle.Regular;
+            ucButton4.FontFace = "Tahoma";
+            ucButton4.FontSize = 9F;
+            ucButton4.Location = new Point(578, 130);
+            ucButton4.Name = "ucButton4";
+            ucButton4.Size = new Size(100, 21);
+            ucButton4.TabIndex = 2;
+            ucButton4.Title = "UCButtonM";
+            ucButton4.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            // 
+            // ucButton5
+            // 
+            ucButton5.Appearance.Font = new Font("Tahoma", 9F);
+            ucButton5.Appearance.Options.UseFont = true;
+            ucButton5.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            ucButton5.ControlHeight = 21;
+            ucButton5.ControlWidth = 100;
+            ucButton5.FontBold = FontStyle.Regular;
+            ucButton5.FontFace = "Tahoma";
+            ucButton5.FontSize = 9F;
+            ucButton5.Location = new Point(578, 157);
+            ucButton5.Name = "ucButton5";
+            ucButton5.Size = new Size(100, 21);
+            ucButton5.TabIndex = 2;
+            ucButton5.Title = "UCButtonM";
+            ucButton5.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            // 
+            // ucButton6
+            // 
+            ucButton6.Appearance.Font = new Font("Tahoma", 9F);
+            ucButton6.Appearance.Options.UseFont = true;
+            ucButton6.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            ucButton6.ControlHeight = 21;
+            ucButton6.ControlWidth = 100;
+            ucButton6.FontBold = FontStyle.Regular;
+            ucButton6.FontFace = "Tahoma";
+            ucButton6.FontSize = 9F;
+            ucButton6.Location = new Point(578, 184);
+            ucButton6.Name = "ucButton6";
+            ucButton6.Size = new Size(100, 21);
+            ucButton6.TabIndex = 2;
+            ucButton6.Title = "UCButtonM";
+            ucButton6.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            // 
             // NSP001
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -756,5 +813,8 @@
         private Ctrls.UCButton ucButton1;
         private Ctrls.UCButton ucButton2;
         private Ctrls.UCButton ucButton3;
+        private Ctrls.UCButton ucButton6;
+        private Ctrls.UCButton ucButton5;
+        private Ctrls.UCButton ucButton4;
     }
 }
