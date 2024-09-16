@@ -30,7 +30,6 @@ namespace EpicV004.Frms
             set => Set(ref _prt_emp, value);
         }
 
-        // ---------------Column from view uv_staff-------------
         private string _emp_name;
         public string emp_name
         {
@@ -38,26 +37,18 @@ namespace EpicV004.Frms
             set => Set(ref _emp_name, value);
         }
 
-   
+        private string _emp_ename;
+        public string emp_ename
+        {
+            get => _emp_ename;
+            set => Set(ref _emp_ename, value);
+        }
+
         private string _dept;
         public string dept
         {
             get => _dept;
             set => Set(ref _dept, value);
-        }
-
-        private string _dept_ename;
-        public string dept_ename
-        {
-            get => _dept_ename;
-            set => Set(ref _dept_ename, value);
-        }
-
-        private string _project;
-        public string project
-        {
-            get => _project;
-            set => Set(ref _project, value);
         }
 
         private string _position;
@@ -67,11 +58,19 @@ namespace EpicV004.Frms
             set => Set(ref _position, value);
         }
 
+        private string _project;
+        public string project
+        {
+            get => _project;
+            set => Set(ref _project, value);
+        }
 
-        //-------------------------------------------------------------------
-
-
-        //--------------------------------- Column in table HA810
+        private int _prt_df;
+        public int prt_df
+        {
+            get => _prt_df;
+            set => Set(ref _prt_df, value);
+        }
 
         private string _df_desc;
         public string df_desc
@@ -87,12 +86,11 @@ namespace EpicV004.Frms
             set => Set(ref _df_e_desc, value);
         }
 
-        //--------------------------------- end
-        private int _prt_df;
-        public int prt_df
+        private DateTime _prt_date;
+        public DateTime prt_date
         {
-            get => _prt_df;
-            set => Set(ref _prt_df, value);
+            get => _prt_date;
+            set => Set(ref _prt_date, value);
         }
 
         private DateTime _pay_date;
@@ -172,13 +170,6 @@ namespace EpicV004.Frms
             set => Set(ref _prt_retire, value);
         }
 
-        private DateTime _prt_date;
-        public DateTime prt_date
-        {
-            get => _prt_date;
-            set => Set(ref _prt_date, value);
-        }
-
         private DateTime _prt_start_work;
         public DateTime prt_start_work
         {
@@ -200,32 +191,11 @@ namespace EpicV004.Frms
             set => Set(ref _past_salary, value);
         }
 
-        private string _deleted;
-        public string deleted
-        {
-            get => _deleted;
-            set => Set(ref _deleted, value);
-        }
-
         private string _memo;
         public string memo
         {
             get => _memo;
             set => Set(ref _memo, value);
-        }
-
-        private int _mid;
-        public int mid
-        {
-            get => _mid;
-            set => Set(ref _mid, value);
-        }
-
-        private DateTime _mdt;
-        public DateTime mdt
-        {
-            get => _mdt;
-            set => Set(ref _mdt, value);
         }
     }
 }
