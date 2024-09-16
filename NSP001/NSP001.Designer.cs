@@ -40,8 +40,11 @@
             g10 = new Ctrls.UCGridSet();
             ucSplit3 = new Ctrls.UCSplit();
             f10 = new Ctrls.UCPanel();
+            ucButton1 = new Ctrls.UCButton();
             memo = new Ctrls.UCTextBox();
             address = new Ctrls.UCTextBox();
+            ucTextBox1 = new Ctrls.UCTextBox();
+            ucTextBox2 = new Ctrls.UCTextBox();
             website = new Ctrls.UCTextBox();
             phone = new Ctrls.UCTextBox();
             country = new Ctrls.UCTextBox();
@@ -62,6 +65,14 @@
             ucPanel7 = new Ctrls.UCPanel();
             xtraTabPage4 = new DevExpress.XtraTab.XtraTabPage();
             ucPanel8 = new Ctrls.UCPanel();
+            ucTextBox1 = new Ctrls.UCTextBox();
+            ucTextBox2 = new Ctrls.UCTextBox();
+            ucButton1 = new Ctrls.UCButton();
+            ucButton2 = new Ctrls.UCButton();
+            ucButton3 = new Ctrls.UCButton();
+            ucTextBox3 = new Ctrls.UCTextBox();
+            ucTextBox3 = new Ctrls.UCTextBox();
+            ucTextBox4 = new Ctrls.UCTextBox();
             ((System.ComponentModel.ISupportInitialize)ucSplit1).BeginInit();
             ucSplit1.Panel1.SuspendLayout();
             ucSplit1.Panel2.SuspendLayout();
@@ -116,8 +127,11 @@
             // 
             // ucPanel1
             // 
+            ucPanel1.Controls.Add(ucButton3);
+            ucPanel1.Controls.Add(ucButton2);
             ucPanel1.Controls.Add(f_e_date);
             ucPanel1.Controls.Add(f_s_date);
+            ucPanel1.Controls.Add(ucTextBox3);
             ucPanel1.Controls.Add(f_status);
             ucPanel1.Controls.Add(f_supname);
             ucPanel1.Controls.Add(f_supid);
@@ -287,8 +301,13 @@
             // 
             // f10
             // 
+            f10.Controls.Add(ucButton1);
             f10.Controls.Add(memo);
             f10.Controls.Add(address);
+            f10.Controls.Add(ucTextBox1);
+            f10.Controls.Add(ucTextBox4);
+            f10.Controls.Add(ucTextBox3);
+            f10.Controls.Add(ucTextBox2);
             f10.Controls.Add(website);
             f10.Controls.Add(phone);
             f10.Controls.Add(country);
@@ -305,6 +324,23 @@
             f10.Size = new Size(755, 224);
             f10.TabIndex = 0;
             f10.Text = "Information";
+            // 
+            // ucButton1
+            // 
+            ucButton1.Appearance.Font = new Font("Tahoma", 9F);
+            ucButton1.Appearance.Options.UseFont = true;
+            ucButton1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            ucButton1.ControlHeight = 33;
+            ucButton1.ControlWidth = 100;
+            ucButton1.FontBold = FontStyle.Regular;
+            ucButton1.FontFace = "Tahoma";
+            ucButton1.FontSize = 9F;
+            ucButton1.Location = new Point(631, 62);
+            ucButton1.Name = "ucButton1";
+            ucButton1.Size = new Size(100, 33);
+            ucButton1.TabIndex = 2;
+            ucButton1.Title = "UCButtonM";
+            ucButton1.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
             // 
             // memo
             // 
@@ -343,6 +379,45 @@
             address.Title = "Address";
             address.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
             address.TitleWidth = 117;
+            // 
+            // ucTextBox1
+            // 
+            ucTextBox1.Appearance.Font = new Font("Tahoma", 9F);
+            ucTextBox1.Appearance.Options.UseFont = true;
+            ucTextBox1.ControlHeight = 20;
+            ucTextBox1.ControlWidth = 183;
+            ucTextBox1.FontColor = Color.Black;
+            ucTextBox1.FontFace = "Tahoma";
+            ucTextBox1.FontSize = 9F;
+            ucTextBox1.FormatStr = "";
+            ucTextBox1.Location = new Point(548, 35);
+            ucTextBox1.Margin = new Padding(4, 3, 4, 3);
+            ucTextBox1.Name = "ucTextBox1";
+            ucTextBox1.Size = new Size(183, 20);
+            ucTextBox1.TabIndex = 1;
+            ucTextBox1.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox1.Title = "Status";
+            ucTextBox1.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox1.TitleWidth = 80;
+            // 
+            // ucTextBox2
+            // 
+            ucTextBox2.Appearance.Font = new Font("Tahoma", 9F);
+            ucTextBox2.Appearance.Options.UseFont = true;
+            ucTextBox2.ControlHeight = 21;
+            ucTextBox2.ControlWidth = 183;
+            ucTextBox2.FontColor = Color.Black;
+            ucTextBox2.FontFace = "Tahoma";
+            ucTextBox2.FontSize = 9F;
+            ucTextBox2.FormatStr = "";
+            ucTextBox2.Location = new Point(548, 116);
+            ucTextBox2.Name = "ucTextBox2";
+            ucTextBox2.Size = new Size(183, 21);
+            ucTextBox2.TabIndex = 0;
+            ucTextBox2.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox2.Title = "Website";
+            ucTextBox2.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox2.TitleWidth = 58;
             // 
             // website
             // 
@@ -621,6 +696,98 @@
             ucPanel8.TabIndex = 0;
             ucPanel8.Text = "ucPanel8";
             // 
+            // ucTextBox3
+            // 
+            ucTextBox3.Appearance.Font = new Font("Tahoma", 9F);
+            ucTextBox3.Appearance.Options.UseFont = true;
+            ucTextBox3.ControlHeight = 21;
+            ucTextBox3.ControlWidth = 183;
+            ucTextBox3.FontColor = Color.Black;
+            ucTextBox3.FontFace = "Tahoma";
+            ucTextBox3.FontSize = 9F;
+            ucTextBox3.FormatStr = "";
+            ucTextBox3.Location = new Point(548, 143);
+            ucTextBox3.Name = "ucTextBox3";
+            ucTextBox3.Size = new Size(183, 21);
+            ucTextBox3.TabIndex = 0;
+            ucTextBox3.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox3.Title = "Website";
+            ucTextBox3.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox3.TitleWidth = 58;
+            // 
+            // ucTextBox4
+            // 
+            ucTextBox4.Appearance.Font = new Font("Tahoma", 9F);
+            ucTextBox4.Appearance.Options.UseFont = true;
+            ucTextBox4.ControlHeight = 21;
+            ucTextBox4.ControlWidth = 183;
+            ucTextBox4.FontColor = Color.Black;
+            ucTextBox4.FontFace = "Tahoma";
+            ucTextBox4.FontSize = 9F;
+            ucTextBox4.FormatStr = "";
+            ucTextBox4.Location = new Point(548, 197);
+            ucTextBox4.Name = "ucTextBox4";
+            ucTextBox4.Size = new Size(183, 21);
+            ucTextBox4.TabIndex = 0;
+            ucTextBox4.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox4.Title = "Website";
+            ucTextBox4.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox4.TitleWidth = 58;
+            // 
+            // ucButton2
+            // 
+            ucButton2.Appearance.Font = new Font("Tahoma", 9F);
+            ucButton2.Appearance.Options.UseFont = true;
+            ucButton2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            ucButton2.ControlHeight = 21;
+            ucButton2.ControlWidth = 100;
+            ucButton2.FontBold = FontStyle.Regular;
+            ucButton2.FontFace = "Tahoma";
+            ucButton2.FontSize = 9F;
+            ucButton2.Location = new Point(719, 30);
+            ucButton2.Name = "ucButton2";
+            ucButton2.Size = new Size(100, 21);
+            ucButton2.TabIndex = 3;
+            ucButton2.Title = "UCButtonM";
+            ucButton2.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            // 
+            // ucButton3
+            // 
+            ucButton3.Appearance.Font = new Font("Tahoma", 9F);
+            ucButton3.Appearance.Options.UseFont = true;
+            ucButton3.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            ucButton3.ControlHeight = 21;
+            ucButton3.ControlWidth = 100;
+            ucButton3.FontBold = FontStyle.Regular;
+            ucButton3.FontFace = "Tahoma";
+            ucButton3.FontSize = 9F;
+            ucButton3.Location = new Point(825, 30);
+            ucButton3.Name = "ucButton3";
+            ucButton3.Size = new Size(100, 21);
+            ucButton3.TabIndex = 4;
+            ucButton3.Title = "UCButtonM";
+            ucButton3.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            // 
+            // ucTextBox3
+            // 
+            ucTextBox3.Appearance.Font = new Font("Tahoma", 9F);
+            ucTextBox3.Appearance.Options.UseFont = true;
+            ucTextBox3.ControlHeight = 20;
+            ucTextBox3.ControlWidth = 233;
+            ucTextBox3.FontColor = Color.Black;
+            ucTextBox3.FontFace = "Tahoma";
+            ucTextBox3.FontSize = 9F;
+            ucTextBox3.FormatStr = "";
+            ucTextBox3.Location = new Point(479, 57);
+            ucTextBox3.Margin = new Padding(4, 3, 4, 3);
+            ucTextBox3.Name = "ucTextBox3";
+            ucTextBox3.Size = new Size(233, 20);
+            ucTextBox3.TabIndex = 1;
+            ucTextBox3.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox3.Title = "Status";
+            ucTextBox3.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox3.TitleWidth = 80;
+            // 
             // NSP001
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -696,5 +863,13 @@
         private Ctrls.UCPanel ucPanel7;
         private Ctrls.UCPanel ucPanel8;
         private Ctrls.UCGridSet g20;
+        private Ctrls.UCTextBox ucTextBox1;
+        private Ctrls.UCTextBox ucTextBox2;
+        private Ctrls.UCButton ucButton1;
+        private Ctrls.UCButton ucButton3;
+        private Ctrls.UCButton ucButton2;
+        private Ctrls.UCTextBox ucTextBox3;
+        private Ctrls.UCTextBox ucTextBox4;
+        private Ctrls.UCTextBox ucTextBox3;
     }
 }
