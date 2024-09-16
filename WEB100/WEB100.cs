@@ -1,8 +1,8 @@
-﻿namespace WEB100
+﻿namespace EpicV004.Frms
 {
-    public partial class UserControl1 : UserControl
+    public partial class WEB100 : FrmBase
     {
-        public UserControl1()
+        public WEB100()
         {
             InitializeComponent();
         }

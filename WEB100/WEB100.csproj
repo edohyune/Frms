@@ -7,4 +7,14 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="EpicPrologue" Version="1.0.19" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="GAIADesignerV004">
+      <HintPath>..\..\..\GAIADesigner\FormMain\bin\Debug\net8.0-windows\GAIADesignerV004.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

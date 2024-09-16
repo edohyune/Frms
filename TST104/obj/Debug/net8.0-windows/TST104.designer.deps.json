@@ -1014,15 +1014,15 @@
           }
         }
       },
-      "EpicPrologue/1.0.15": {
+      "EpicPrologue/1.0.19": {
         "dependencies": {
           "Dapper": "2.1.35",
           "DevExpress.Win.Design": "23.2.3"
         },
         "runtime": {
           "lib/net8.0-windows7.0/EpicPrologue.dll": {
-            "assemblyVersion": "1.0.15.0",
-            "fileVersion": "1.0.15.0"
+            "assemblyVersion": "1.0.19.0",
+            "fileVersion": "1.0.19.0"
           }
         }
       },
@@ -2034,12 +2034,12 @@
       "path": "devexpress.xpo/23.2.3",
       "hashPath": "devexpress.xpo.23.2.3.nupkg.sha512"
     },
-    "EpicPrologue/1.0.15": {
+    "EpicPrologue/1.0.19": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-hSe58D/FtXd9HlI+e4MBrcsqXO7R0A3Qt9B5wJ+M60wJCllwHB5Ax3+G5mClXKHsb8CswyQR7SWptWHNfYPgoA==",
-      "path": "epicprologue/1.0.15",
-      "hashPath": "epicprologue.1.0.15.nupkg.sha512"
+      "sha512": "sha512-cLQn7K3BfinB3nD4De4kvZV6AeGfftp8nA397EZG/pmG3FEX4ZF3hYxhbxD9prBBtcIQR2aIcv25N1aUdG4wpw==",
+      "path": "epicprologue/1.0.19",
+      "hashPath": "epicprologue.1.0.19.nupkg.sha512"
     },
     "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
       "type": "package",

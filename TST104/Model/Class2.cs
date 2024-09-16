@@ -78,8 +78,8 @@ namespace EpicV004.Frms
             set => Set(ref _date, value);
         }
 
-        private Image _photo;
-        public Image photo
+        private byte[] _photo;
+        public byte[] photo
         {
             get => _photo;
             set => Set(ref _photo, value);

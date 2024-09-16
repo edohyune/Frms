@@ -36,7 +36,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             Name = "UserControl1";
             Size = new Size(800, 450);
-            Load += UserControl1_Load;
             ResumeLayout(false);
         }
 
