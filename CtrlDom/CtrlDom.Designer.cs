@@ -32,6 +32,8 @@
             xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
             ucSplit2 = new Ctrls.UCSplit();
             g10 = new Ctrls.UCGridSet();
+            ucTab2 = new Ctrls.UCTab();
+            xtraTabPage3 = new DevExpress.XtraTab.XtraTabPage();
             ucSplit3 = new Ctrls.UCSplit();
             ucSplit5 = new Ctrls.UCSplit();
             cmdDomTy = new Ctrls.UCCodeBox();
@@ -41,14 +43,15 @@
             ucSplit4 = new Ctrls.UCSplit();
             richTxt2 = new Ctrls.UCRichText();
             richTxt3 = new Ctrls.UCRichText();
+            xtraTabPage4 = new DevExpress.XtraTab.XtraTabPage();
+            ucPanel1 = new Ctrls.UCPanel();
+            ucButton1 = new Ctrls.UCButton();
+            ucRichText2 = new Ctrls.UCRichText();
+            ucChkCodeBox1 = new Ctrls.UCChkCodeBox();
             xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
             ucSplit6 = new Ctrls.UCSplit();
             rtxEtc01 = new Ctrls.UCRichText();
             rtxEtc02 = new Ctrls.UCRichText();
-            ucTab2 = new Ctrls.UCTab();
-            xtraTabPage3 = new DevExpress.XtraTab.XtraTabPage();
-            xtraTabPage4 = new DevExpress.XtraTab.XtraTabPage();
-            ucPanel1 = new Ctrls.UCPanel();
             ((System.ComponentModel.ISupportInitialize)ucTab1).BeginInit();
             ucTab1.SuspendLayout();
             xtraTabPage1.SuspendLayout();
@@ -56,6 +59,9 @@
             ucSplit2.Panel1.SuspendLayout();
             ucSplit2.Panel2.SuspendLayout();
             ucSplit2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)ucTab2).BeginInit();
+            ucTab2.SuspendLayout();
+            xtraTabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ucSplit3).BeginInit();
             ucSplit3.Panel1.SuspendLayout();
             ucSplit3.Panel2.SuspendLayout();
@@ -72,16 +78,14 @@
             ucSplit4.Panel1.SuspendLayout();
             ucSplit4.Panel2.SuspendLayout();
             ucSplit4.SuspendLayout();
+            xtraTabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)ucPanel1).BeginInit();
+            ucPanel1.SuspendLayout();
             xtraTabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ucSplit6).BeginInit();
             ucSplit6.Panel1.SuspendLayout();
             ucSplit6.Panel2.SuspendLayout();
             ucSplit6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)ucTab2).BeginInit();
-            ucTab2.SuspendLayout();
-            xtraTabPage3.SuspendLayout();
-            xtraTabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)ucPanel1).BeginInit();
             SuspendLayout();
             // 
             // ucTab1
@@ -127,6 +131,23 @@
             g10.Name = "g10";
             g10.Size = new Size(482, 424);
             g10.TabIndex = 0;
+            // 
+            // ucTab2
+            // 
+            ucTab2.Dock = DockStyle.Fill;
+            ucTab2.Location = new Point(0, 0);
+            ucTab2.Name = "ucTab2";
+            ucTab2.SelectedTabPage = xtraTabPage3;
+            ucTab2.Size = new Size(312, 424);
+            ucTab2.TabIndex = 1;
+            ucTab2.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] { xtraTabPage3, xtraTabPage4 });
+            // 
+            // xtraTabPage3
+            // 
+            xtraTabPage3.Controls.Add(ucSplit3);
+            xtraTabPage3.Name = "xtraTabPage3";
+            xtraTabPage3.Size = new Size(310, 398);
+            xtraTabPage3.Text = "xtraTabPage3";
             // 
             // ucSplit3
             // 
@@ -288,6 +309,76 @@
             richTxt3.TabIndex = 0;
             richTxt3.Views.DraftView.AllowDisplayLineNumbers = true;
             // 
+            // xtraTabPage4
+            // 
+            xtraTabPage4.Controls.Add(ucPanel1);
+            xtraTabPage4.Name = "xtraTabPage4";
+            xtraTabPage4.Size = new Size(310, 398);
+            xtraTabPage4.Text = "xtraTabPage4";
+            // 
+            // ucPanel1
+            // 
+            ucPanel1.Controls.Add(ucButton1);
+            ucPanel1.Controls.Add(ucRichText2);
+            ucPanel1.Controls.Add(ucChkCodeBox1);
+            ucPanel1.Dock = DockStyle.Fill;
+            ucPanel1.Location = new Point(0, 0);
+            ucPanel1.Name = "ucPanel1";
+            ucPanel1.Size = new Size(310, 398);
+            ucPanel1.TabIndex = 0;
+            // 
+            // ucButton1
+            // 
+            ucButton1.Appearance.Options.UseFont = true;
+            ucButton1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            ucButton1.ControlHeight = 21;
+            ucButton1.ControlWidth = 100;
+            ucButton1.FontBold = FontStyle.Regular;
+            ucButton1.FontFace = "Tahoma";
+            ucButton1.FontSize = 9F;
+            ucButton1.Location = new Point(102, 74);
+            ucButton1.Name = "ucButton1";
+            ucButton1.Size = new Size(100, 21);
+            ucButton1.TabIndex = 2;
+            ucButton1.Title = "UCButtonM";
+            ucButton1.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            ucButton1.Click += ucButton1_Click;
+            // 
+            // ucRichText2
+            // 
+            ucRichText2.ActiveViewType = DevExpress.XtraRichEdit.RichEditViewType.Simple;
+            ucRichText2.Appearance.Text.Font = new Font("Cascadia Code Light", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ucRichText2.Appearance.Text.Options.UseFont = true;
+            ucRichText2.LayoutUnit = DevExpress.XtraRichEdit.DocumentLayoutUnit.Pixel;
+            ucRichText2.Location = new Point(37, 136);
+            ucRichText2.Modified = true;
+            ucRichText2.Name = "ucRichText2";
+            ucRichText2.Options.DocumentSaveOptions.CurrentFormat = DevExpress.XtraRichEdit.DocumentFormat.PlainText;
+            ucRichText2.Options.DocumentSaveOptions.DefaultFormat = DevExpress.XtraRichEdit.DocumentFormat.PlainText;
+            ucRichText2.Options.HorizontalRuler.Visibility = DevExpress.XtraRichEdit.RichEditRulerVisibility.Hidden;
+            ucRichText2.Options.Search.RegExResultMaxGuaranteedLength = 1000;
+            ucRichText2.Padding = new Padding(50, 0, 0, 0);
+            ucRichText2.Size = new Size(227, 202);
+            ucRichText2.TabIndex = 1;
+            ucRichText2.Views.SimpleView.AllowDisplayLineNumbers = true;
+            // 
+            // ucChkCodeBox1
+            // 
+            ucChkCodeBox1.ControlHeight = 21;
+            ucChkCodeBox1.ControlWidth = 200;
+            ucChkCodeBox1.FontFace = "Tahoma";
+            ucChkCodeBox1.FontSize = 9F;
+            ucChkCodeBox1.Location = new Point(53, 36);
+            ucChkCodeBox1.Margin = new Padding(4, 3, 4, 3);
+            ucChkCodeBox1.Name = "ucChkCodeBox1";
+            ucChkCodeBox1.Size = new Size(200, 21);
+            ucChkCodeBox1.TabIndex = 0;
+            ucChkCodeBox1.Text = "ucChkCodeBox1";
+            ucChkCodeBox1.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucChkCodeBox1.Title = "UCChkCodeBox";
+            ucChkCodeBox1.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            ucChkCodeBox1.TitleWidth = 100;
+            // 
             // xtraTabPage2
             // 
             xtraTabPage2.Controls.Add(ucSplit6);
@@ -352,38 +443,6 @@
             rtxEtc02.TabIndex = 0;
             rtxEtc02.Views.SimpleView.AllowDisplayLineNumbers = true;
             // 
-            // ucTab2
-            // 
-            ucTab2.Dock = DockStyle.Fill;
-            ucTab2.Location = new Point(0, 0);
-            ucTab2.Name = "ucTab2";
-            ucTab2.SelectedTabPage = xtraTabPage3;
-            ucTab2.Size = new Size(312, 424);
-            ucTab2.TabIndex = 1;
-            ucTab2.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] { xtraTabPage3, xtraTabPage4 });
-            // 
-            // xtraTabPage3
-            // 
-            xtraTabPage3.Controls.Add(ucSplit3);
-            xtraTabPage3.Name = "xtraTabPage3";
-            xtraTabPage3.Size = new Size(310, 398);
-            xtraTabPage3.Text = "xtraTabPage3";
-            // 
-            // xtraTabPage4
-            // 
-            xtraTabPage4.Controls.Add(ucPanel1);
-            xtraTabPage4.Name = "xtraTabPage4";
-            xtraTabPage4.Size = new Size(310, 398);
-            xtraTabPage4.Text = "xtraTabPage4";
-            // 
-            // ucPanel1
-            // 
-            ucPanel1.Dock = DockStyle.Fill;
-            ucPanel1.Location = new Point(0, 0);
-            ucPanel1.Name = "ucPanel1";
-            ucPanel1.Size = new Size(310, 398);
-            ucPanel1.TabIndex = 0;
-            // 
             // CtrlDom
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -398,6 +457,9 @@
             ucSplit2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ucSplit2).EndInit();
             ucSplit2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)ucTab2).EndInit();
+            ucTab2.ResumeLayout(false);
+            xtraTabPage3.ResumeLayout(false);
             ucSplit3.Panel1.ResumeLayout(false);
             ucSplit3.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ucSplit3).EndInit();
@@ -414,16 +476,14 @@
             ucSplit4.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ucSplit4).EndInit();
             ucSplit4.ResumeLayout(false);
+            xtraTabPage4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)ucPanel1).EndInit();
+            ucPanel1.ResumeLayout(false);
             xtraTabPage2.ResumeLayout(false);
             ucSplit6.Panel1.ResumeLayout(false);
             ucSplit6.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ucSplit6).EndInit();
             ucSplit6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)ucTab2).EndInit();
-            ucTab2.ResumeLayout(false);
-            xtraTabPage3.ResumeLayout(false);
-            xtraTabPage4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)ucPanel1).EndInit();
             ResumeLayout(false);
         }
 
@@ -449,6 +509,10 @@
         private DevExpress.XtraTab.XtraTabPage xtraTabPage3;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage4;
         private Ctrls.UCPanel ucPanel1;
+        private Ctrls.UCChkCodeBox ucChkCodeBox1;
+        private Ctrls.UCRichText ucRichText1;
+        private Ctrls.UCButton ucButton1;
+        private Ctrls.UCRichText ucRichText2;
         //private RichTxt richTxt1;
         //private RichTxt richTxt2;
         //private RichTxt richTxt3;

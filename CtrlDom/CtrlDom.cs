@@ -6,5 +6,10 @@
         {
             InitializeComponent();
         }
+
+        private void ucButton1_Click(object sender, EventArgs e)
+        {
+            ucRichText2.Text = ucChkCodeBox1.Code;
+        }
     }
 }
