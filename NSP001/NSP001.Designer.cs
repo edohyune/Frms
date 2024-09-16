@@ -65,6 +65,12 @@
             ucPanel7 = new Ctrls.UCPanel();
             xtraTabPage4 = new DevExpress.XtraTab.XtraTabPage();
             ucPanel8 = new Ctrls.UCPanel();
+            ucTextBox1 = new Ctrls.UCTextBox();
+            ucTextBox2 = new Ctrls.UCTextBox();
+            ucButton1 = new Ctrls.UCButton();
+            ucButton2 = new Ctrls.UCButton();
+            ucButton3 = new Ctrls.UCButton();
+            ucTextBox3 = new Ctrls.UCTextBox();
             ucTextBox3 = new Ctrls.UCTextBox();
             ucTextBox4 = new Ctrls.UCTextBox();
             ((System.ComponentModel.ISupportInitialize)ucSplit1).BeginInit();
@@ -121,8 +127,11 @@
             // 
             // ucPanel1
             // 
+            ucPanel1.Controls.Add(ucButton3);
+            ucPanel1.Controls.Add(ucButton2);
             ucPanel1.Controls.Add(f_e_date);
             ucPanel1.Controls.Add(f_s_date);
+            ucPanel1.Controls.Add(ucTextBox3);
             ucPanel1.Controls.Add(f_status);
             ucPanel1.Controls.Add(f_supname);
             ucPanel1.Controls.Add(f_supid);
@@ -725,6 +734,60 @@
             ucTextBox4.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
             ucTextBox4.TitleWidth = 58;
             // 
+            // ucButton2
+            // 
+            ucButton2.Appearance.Font = new Font("Tahoma", 9F);
+            ucButton2.Appearance.Options.UseFont = true;
+            ucButton2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            ucButton2.ControlHeight = 21;
+            ucButton2.ControlWidth = 100;
+            ucButton2.FontBold = FontStyle.Regular;
+            ucButton2.FontFace = "Tahoma";
+            ucButton2.FontSize = 9F;
+            ucButton2.Location = new Point(719, 30);
+            ucButton2.Name = "ucButton2";
+            ucButton2.Size = new Size(100, 21);
+            ucButton2.TabIndex = 3;
+            ucButton2.Title = "UCButtonM";
+            ucButton2.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            // 
+            // ucButton3
+            // 
+            ucButton3.Appearance.Font = new Font("Tahoma", 9F);
+            ucButton3.Appearance.Options.UseFont = true;
+            ucButton3.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            ucButton3.ControlHeight = 21;
+            ucButton3.ControlWidth = 100;
+            ucButton3.FontBold = FontStyle.Regular;
+            ucButton3.FontFace = "Tahoma";
+            ucButton3.FontSize = 9F;
+            ucButton3.Location = new Point(825, 30);
+            ucButton3.Name = "ucButton3";
+            ucButton3.Size = new Size(100, 21);
+            ucButton3.TabIndex = 4;
+            ucButton3.Title = "UCButtonM";
+            ucButton3.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            // 
+            // ucTextBox3
+            // 
+            ucTextBox3.Appearance.Font = new Font("Tahoma", 9F);
+            ucTextBox3.Appearance.Options.UseFont = true;
+            ucTextBox3.ControlHeight = 20;
+            ucTextBox3.ControlWidth = 233;
+            ucTextBox3.FontColor = Color.Black;
+            ucTextBox3.FontFace = "Tahoma";
+            ucTextBox3.FontSize = 9F;
+            ucTextBox3.FormatStr = "";
+            ucTextBox3.Location = new Point(479, 57);
+            ucTextBox3.Margin = new Padding(4, 3, 4, 3);
+            ucTextBox3.Name = "ucTextBox3";
+            ucTextBox3.Size = new Size(233, 20);
+            ucTextBox3.TabIndex = 1;
+            ucTextBox3.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox3.Title = "Status";
+            ucTextBox3.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox3.TitleWidth = 80;
+            // 
             // NSP001
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -803,6 +866,9 @@
         private Ctrls.UCTextBox ucTextBox1;
         private Ctrls.UCTextBox ucTextBox2;
         private Ctrls.UCButton ucButton1;
+        private Ctrls.UCButton ucButton3;
+        private Ctrls.UCButton ucButton2;
+        private Ctrls.UCTextBox ucTextBox3;
         private Ctrls.UCTextBox ucTextBox4;
         private Ctrls.UCTextBox ucTextBox3;
     }
