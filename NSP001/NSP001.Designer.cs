@@ -62,6 +62,7 @@
             ucPanel7 = new Ctrls.UCPanel();
             xtraTabPage4 = new DevExpress.XtraTab.XtraTabPage();
             ucPanel8 = new Ctrls.UCPanel();
+            ucTextBox1 = new Ctrls.UCTextBox();
             ((System.ComponentModel.ISupportInitialize)ucSplit1).BeginInit();
             ucSplit1.Panel1.SuspendLayout();
             ucSplit1.Panel2.SuspendLayout();
@@ -289,6 +290,7 @@
             // 
             f10.Controls.Add(memo);
             f10.Controls.Add(address);
+            f10.Controls.Add(ucTextBox1);
             f10.Controls.Add(website);
             f10.Controls.Add(phone);
             f10.Controls.Add(country);
@@ -621,6 +623,26 @@
             ucPanel8.TabIndex = 0;
             ucPanel8.Text = "ucPanel8";
             // 
+            // ucTextBox1
+            // 
+            ucTextBox1.Appearance.Font = new Font("Tahoma", 9F);
+            ucTextBox1.Appearance.Options.UseFont = true;
+            ucTextBox1.ControlHeight = 20;
+            ucTextBox1.ControlWidth = 183;
+            ucTextBox1.FontColor = Color.Black;
+            ucTextBox1.FontFace = "Tahoma";
+            ucTextBox1.FontSize = 9F;
+            ucTextBox1.FormatStr = "";
+            ucTextBox1.Location = new Point(548, 35);
+            ucTextBox1.Margin = new Padding(4, 3, 4, 3);
+            ucTextBox1.Name = "ucTextBox1";
+            ucTextBox1.Size = new Size(183, 20);
+            ucTextBox1.TabIndex = 1;
+            ucTextBox1.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox1.Title = "Status";
+            ucTextBox1.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucTextBox1.TitleWidth = 80;
+            // 
             // NSP001
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -696,5 +718,6 @@
         private Ctrls.UCPanel ucPanel7;
         private Ctrls.UCPanel ucPanel8;
         private Ctrls.UCGridSet g20;
+        private Ctrls.UCTextBox ucTextBox1;
     }
 }
