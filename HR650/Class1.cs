@@ -36,8 +36,15 @@ namespace EpicV004.Frms
             set => Set(ref _prp_month, value);
         }
 
-        private int _prp_pay_ty;
-        public int prp_pay_ty
+        private string _prp_pay;
+        public string prp_pay
+        {
+            get => _prp_pay;
+            set => Set(ref _prp_pay, value);
+        }
+
+        private string _prp_pay_ty;
+        public string prp_pay_ty
         {
             get => _prp_pay_ty;
             set => Set(ref _prp_pay_ty, value);

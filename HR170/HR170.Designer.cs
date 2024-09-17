@@ -30,7 +30,6 @@
         {
             ucSplit1 = new Ctrls.UCSplit();
             ucPanel1 = new Ctrls.UCPanel();
-            s_status = new Ctrls.UCChkCodeBox();
             health_chk = new Ctrls.UCChkCodeBox();
             interview = new Ctrls.UCChkCodeBox();
             trn_emp = new Ctrls.UCChkCodeBox();
@@ -39,6 +38,7 @@
             fr_dt = new Ctrls.UCDateBox();
             ucPanel2 = new Ctrls.UCPanel();
             g10 = new Ctrls.UCGridSet();
+            s_status = new Ctrls.UCChkCodeBox();
             ((System.ComponentModel.ISupportInitialize)ucSplit1).BeginInit();
             ucSplit1.Panel1.SuspendLayout();
             ucSplit1.Panel2.SuspendLayout();
@@ -84,21 +84,6 @@
             ucPanel1.Size = new Size(1118, 82);
             ucPanel1.TabIndex = 0;
             ucPanel1.Text = "Applicant Recruitment";
-            // 
-            // s_status
-            // 
-            s_status.ControlHeight = 21;
-            s_status.ControlWidth = 200;
-            s_status.FontFace = "Tahoma";
-            s_status.FontSize = 9F;
-            s_status.Location = new Point(827, 26);
-            s_status.Name = "s_status";
-            s_status.Size = new Size(200, 21);
-            s_status.TabIndex = 8;
-            s_status.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            s_status.Title = "Status";
-            s_status.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            s_status.TitleWidth = 100;
             // 
             // health_chk
             // 
@@ -219,6 +204,21 @@
             g10.Size = new Size(1114, 463);
             g10.TabIndex = 0;
             // 
+            // s_status
+            // 
+            s_status.ControlHeight = 21;
+            s_status.ControlWidth = 200;
+            s_status.FontFace = "Tahoma";
+            s_status.FontSize = 9F;
+            s_status.Location = new Point(827, 26);
+            s_status.Name = "s_status";
+            s_status.Size = new Size(200, 21);
+            s_status.TabIndex = 8;
+            s_status.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            s_status.Title = "Status";
+            s_status.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            s_status.TitleWidth = 100;
+            // 
             // HR170
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -248,7 +248,7 @@
         private Ctrls.UCGridSet g10;
         private Ctrls.UCChkCodeBox trn_emp;
         private Ctrls.UCChkCodeBox interview;
-        private Ctrls.UCChkCodeBox s_status;
         private Ctrls.UCChkCodeBox health_chk;
+        private Ctrls.UCChkCodeBox s_status;
     }
 }
