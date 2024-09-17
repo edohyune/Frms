@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="EpicPrologue" Version="1.0.19" />
+    <PackageReference Include="EpicPrologue" Version="1.0.21" />
   </ItemGroup>
 
   <ItemGroup>
