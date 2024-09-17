@@ -30,15 +30,15 @@
         {
             ucSplit1 = new Ctrls.UCSplit();
             ucPanel1 = new Ctrls.UCPanel();
+            s_status = new Ctrls.UCChkCodeBox();
+            health_chk = new Ctrls.UCChkCodeBox();
+            interview = new Ctrls.UCChkCodeBox();
+            trn_emp = new Ctrls.UCChkCodeBox();
             s_applicant_id = new Ctrls.UCTextBox();
             to_dt = new Ctrls.UCDateBox();
             fr_dt = new Ctrls.UCDateBox();
             ucPanel2 = new Ctrls.UCPanel();
             g10 = new Ctrls.UCGridSet();
-            trn_emp = new Ctrls.UCChkCodeBox();
-            s_status = new Ctrls.UCChkCodeBox();
-            health_chk = new Ctrls.UCChkCodeBox();
-            interview = new Ctrls.UCChkCodeBox();
             ((System.ComponentModel.ISupportInitialize)ucSplit1).BeginInit();
             ucSplit1.Panel1.SuspendLayout();
             ucSplit1.Panel2.SuspendLayout();
@@ -84,6 +84,66 @@
             ucPanel1.Size = new Size(1118, 82);
             ucPanel1.TabIndex = 0;
             ucPanel1.Text = "Applicant Recruitment";
+            // 
+            // s_status
+            // 
+            s_status.ControlHeight = 21;
+            s_status.ControlWidth = 200;
+            s_status.FontFace = "Tahoma";
+            s_status.FontSize = 9F;
+            s_status.Location = new Point(827, 26);
+            s_status.Name = "s_status";
+            s_status.Size = new Size(200, 21);
+            s_status.TabIndex = 8;
+            s_status.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            s_status.Title = "Status";
+            s_status.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            s_status.TitleWidth = 100;
+            // 
+            // health_chk
+            // 
+            health_chk.ControlHeight = 21;
+            health_chk.ControlWidth = 200;
+            health_chk.FontFace = "Tahoma";
+            health_chk.FontSize = 9F;
+            health_chk.Location = new Point(621, 52);
+            health_chk.Name = "health_chk";
+            health_chk.Size = new Size(200, 21);
+            health_chk.TabIndex = 7;
+            health_chk.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            health_chk.Title = "Health Check";
+            health_chk.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            health_chk.TitleWidth = 100;
+            // 
+            // interview
+            // 
+            interview.ControlHeight = 21;
+            interview.ControlWidth = 200;
+            interview.FontFace = "Tahoma";
+            interview.FontSize = 9F;
+            interview.Location = new Point(621, 26);
+            interview.Name = "interview";
+            interview.Size = new Size(200, 21);
+            interview.TabIndex = 6;
+            interview.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            interview.Title = "Interview";
+            interview.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            interview.TitleWidth = 100;
+            // 
+            // trn_emp
+            // 
+            trn_emp.ControlHeight = 21;
+            trn_emp.ControlWidth = 345;
+            trn_emp.FontFace = "Tahoma";
+            trn_emp.FontSize = 9F;
+            trn_emp.Location = new Point(269, 53);
+            trn_emp.Name = "trn_emp";
+            trn_emp.Size = new Size(345, 21);
+            trn_emp.TabIndex = 2;
+            trn_emp.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            trn_emp.Title = "Transfer to Employee Master";
+            trn_emp.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            trn_emp.TitleWidth = 160;
             // 
             // s_applicant_id
             // 
@@ -159,66 +219,6 @@
             g10.Size = new Size(1114, 463);
             g10.TabIndex = 0;
             // 
-            // trn_emp
-            // 
-            trn_emp.ControlHeight = 21;
-            trn_emp.ControlWidth = 345;
-            trn_emp.FontFace = "Tahoma";
-            trn_emp.FontSize = 9F;
-            trn_emp.Location = new Point(269, 53);
-            trn_emp.Name = "trn_emp";
-            trn_emp.Size = new Size(345, 21);
-            trn_emp.TabIndex = 2;
-            trn_emp.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            trn_emp.Title = "Transfer to Employee Master";
-            trn_emp.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            trn_emp.TitleWidth = 160;
-            // 
-            // s_status
-            // 
-            s_status.ControlHeight = 21;
-            s_status.ControlWidth = 200;
-            s_status.FontFace = "Tahoma";
-            s_status.FontSize = 9F;
-            s_status.Location = new Point(827, 26);
-            s_status.Name = "s_status";
-            s_status.Size = new Size(200, 21);
-            s_status.TabIndex = 8;
-            s_status.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            s_status.Title = "Status";
-            s_status.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            s_status.TitleWidth = 100;
-            // 
-            // health_chk
-            // 
-            health_chk.ControlHeight = 21;
-            health_chk.ControlWidth = 200;
-            health_chk.FontFace = "Tahoma";
-            health_chk.FontSize = 9F;
-            health_chk.Location = new Point(621, 52);
-            health_chk.Name = "health_chk";
-            health_chk.Size = new Size(200, 21);
-            health_chk.TabIndex = 7;
-            health_chk.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            health_chk.Title = "Health Check";
-            health_chk.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            health_chk.TitleWidth = 100;
-            // 
-            // interview
-            // 
-            interview.ControlHeight = 21;
-            interview.ControlWidth = 200;
-            interview.FontFace = "Tahoma";
-            interview.FontSize = 9F;
-            interview.Location = new Point(621, 26);
-            interview.Name = "interview";
-            interview.Size = new Size(200, 21);
-            interview.TabIndex = 6;
-            interview.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            interview.Title = "Interview";
-            interview.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            interview.TitleWidth = 100;
-            // 
             // HR170
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -247,8 +247,8 @@
         private Ctrls.UCDateBox to_dt;
         private Ctrls.UCGridSet g10;
         private Ctrls.UCChkCodeBox trn_emp;
+        private Ctrls.UCChkCodeBox interview;
         private Ctrls.UCChkCodeBox s_status;
         private Ctrls.UCChkCodeBox health_chk;
-        private Ctrls.UCChkCodeBox interview;
     }
 }
