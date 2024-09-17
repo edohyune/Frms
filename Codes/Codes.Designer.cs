@@ -69,7 +69,7 @@
             // 
             ucSplit1.Panel2.Controls.Add(ucSplit2);
             ucSplit1.Size = new Size(1341, 722);
-            ucSplit1.SplitterDistance = 76;
+            ucSplit1.SplitterDistance = 64;
             ucSplit1.TabIndex = 0;
             ucSplit1.TitleWidth = 121;
             // 
@@ -80,7 +80,7 @@
             ucPanel3.Dock = DockStyle.Fill;
             ucPanel3.Location = new Point(0, 0);
             ucPanel3.Name = "ucPanel3";
-            ucPanel3.Size = new Size(1341, 76);
+            ucPanel3.Size = new Size(1341, 64);
             ucPanel3.TabIndex = 0;
             ucPanel3.Text = "Lookup";
             // 
@@ -132,8 +132,8 @@
             // ucSplit2.Panel2
             // 
             ucSplit2.Panel2.Controls.Add(ucPanel2);
-            ucSplit2.Size = new Size(1341, 642);
-            ucSplit2.SplitterDistance = 369;
+            ucSplit2.Size = new Size(1341, 654);
+            ucSplit2.SplitterDistance = 375;
             ucSplit2.TabIndex = 0;
             ucSplit2.TitleWidth = 121;
             // 
@@ -143,7 +143,7 @@
             ucPanel1.Dock = DockStyle.Fill;
             ucPanel1.Location = new Point(0, 0);
             ucPanel1.Name = "ucPanel1";
-            ucPanel1.Size = new Size(1341, 369);
+            ucPanel1.Size = new Size(1341, 375);
             ucPanel1.TabIndex = 0;
             ucPanel1.Text = "Classification Code";
             // 
@@ -152,7 +152,7 @@
             g10.Dock = DockStyle.Fill;
             g10.Location = new Point(2, 23);
             g10.Name = "g10";
-            g10.Size = new Size(1337, 344);
+            g10.Size = new Size(1337, 350);
             g10.TabIndex = 0;
             // 
             // ucPanel2
@@ -161,7 +161,7 @@
             ucPanel2.Dock = DockStyle.Fill;
             ucPanel2.Location = new Point(0, 0);
             ucPanel2.Name = "ucPanel2";
-            ucPanel2.Size = new Size(1341, 269);
+            ucPanel2.Size = new Size(1341, 275);
             ucPanel2.TabIndex = 0;
             ucPanel2.Text = "BaseCode";
             // 
@@ -170,7 +170,7 @@
             g20.Dock = DockStyle.Fill;
             g20.Location = new Point(2, 23);
             g20.Name = "g20";
-            g20.Size = new Size(1337, 244);
+            g20.Size = new Size(1337, 250);
             g20.TabIndex = 0;
             // 
             // Codes

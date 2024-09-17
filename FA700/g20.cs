@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EpicV004.Frms
 {
-    public class FA700_G10 : Libs.MdlBase
+    public class FA700_G20 : Libs.MdlBase
     {
 
         private long _pid;
@@ -35,6 +35,13 @@ namespace EpicV004.Frms
         {
             get => _dept;
             set => Set(ref _dept, value);
+        }
+
+        private string _dept_name;
+        public string dept_name
+        {
+            get => _dept_name;
+            set => Set(ref _dept_name, value);
         }
 
         private string _emp_category;
