@@ -31,8 +31,6 @@
             ucSplit1 = new Ctrls.UCSplit();
             ucSplit2 = new Ctrls.UCSplit();
             ucPanel1 = new Ctrls.UCPanel();
-            btn_payment = new Ctrls.UCButton();
-            s_year = new Ctrls.UCDateBox();
             g10 = new Ctrls.UCGridSet();
             ucSplit3 = new Ctrls.UCSplit();
             ucPanel2 = new Ctrls.UCPanel();
@@ -57,6 +55,8 @@
             g70 = new Ctrls.UCGridSet();
             xtraTabPage7 = new DevExpress.XtraTab.XtraTabPage();
             g80 = new Ctrls.UCGridSet();
+            s_year = new Ctrls.UCDateBox();
+            btn_payment = new Ctrls.UCButton();
             ((System.ComponentModel.ISupportInitialize)ucSplit1).BeginInit();
             ucSplit1.Panel1.SuspendLayout();
             ucSplit1.Panel2.SuspendLayout();
@@ -98,7 +98,7 @@
             // 
             ucSplit1.Panel2.Controls.Add(ucSplit3);
             ucSplit1.Size = new Size(1346, 614);
-            ucSplit1.SplitterDistance = 305;
+            ucSplit1.SplitterDistance = 335;
             ucSplit1.TabIndex = 0;
             ucSplit1.TitleWidth = 121;
             // 
@@ -116,7 +116,7 @@
             // ucSplit2.Panel2
             // 
             ucSplit2.Panel2.Controls.Add(g10);
-            ucSplit2.Size = new Size(305, 614);
+            ucSplit2.Size = new Size(335, 614);
             ucSplit2.SplitterDistance = 66;
             ucSplit2.TabIndex = 0;
             ucSplit2.TitleWidth = 121;
@@ -128,52 +128,16 @@
             ucPanel1.Dock = DockStyle.Fill;
             ucPanel1.Location = new Point(0, 0);
             ucPanel1.Name = "ucPanel1";
-            ucPanel1.Size = new Size(305, 66);
+            ucPanel1.Size = new Size(335, 66);
             ucPanel1.TabIndex = 0;
             ucPanel1.Text = "Payment Date";
-            // 
-            // btn_payment
-            // 
-            btn_payment.Appearance.BackColor = Color.DarkGray;
-            btn_payment.Appearance.Font = new Font("Tahoma", 9F);
-            btn_payment.Appearance.Options.UseBackColor = true;
-            btn_payment.Appearance.Options.UseFont = true;
-            btn_payment.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            btn_payment.ControlHeight = 35;
-            btn_payment.ControlWidth = 145;
-            btn_payment.FontBold = FontStyle.Regular;
-            btn_payment.FontFace = "Tahoma";
-            btn_payment.FontSize = 9F;
-            btn_payment.Location = new Point(154, 26);
-            btn_payment.Name = "btn_payment";
-            btn_payment.Size = new Size(145, 35);
-            btn_payment.TabIndex = 1;
-            btn_payment.Title = "Payment Date Query";
-            btn_payment.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            // 
-            // s_year
-            // 
-            s_year.ControlHeight = 21;
-            s_year.ControlWidth = 134;
-            s_year.FontColor = Color.Black;
-            s_year.FontFace = "Tahoma";
-            s_year.FontSize = 9F;
-            s_year.FormatStr = "";
-            s_year.Location = new Point(5, 31);
-            s_year.Name = "s_year";
-            s_year.Size = new Size(134, 21);
-            s_year.TabIndex = 0;
-            s_year.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            s_year.Title = "Year";
-            s_year.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            s_year.TitleWidth = 50;
             // 
             // g10
             // 
             g10.Dock = DockStyle.Fill;
             g10.Location = new Point(0, 0);
             g10.Name = "g10";
-            g10.Size = new Size(305, 544);
+            g10.Size = new Size(335, 544);
             g10.TabIndex = 0;
             // 
             // ucSplit3
@@ -191,7 +155,7 @@
             // ucSplit3.Panel2
             // 
             ucSplit3.Panel2.Controls.Add(ucTab1);
-            ucSplit3.Size = new Size(1037, 614);
+            ucSplit3.Size = new Size(1007, 614);
             ucSplit3.SplitterDistance = 70;
             ucSplit3.TabIndex = 0;
             ucSplit3.TitleWidth = 121;
@@ -207,7 +171,7 @@
             ucPanel2.Dock = DockStyle.Fill;
             ucPanel2.Location = new Point(0, 0);
             ucPanel2.Name = "ucPanel2";
-            ucPanel2.Size = new Size(1037, 70);
+            ucPanel2.Size = new Size(1007, 70);
             ucPanel2.TabIndex = 0;
             ucPanel2.Text = "Make Transfer File";
             // 
@@ -325,7 +289,7 @@
             ucTab1.Location = new Point(0, 0);
             ucTab1.Name = "ucTab1";
             ucTab1.SelectedTabPage = xtraTabPage1;
-            ucTab1.Size = new Size(1037, 540);
+            ucTab1.Size = new Size(1007, 540);
             ucTab1.TabIndex = 0;
             ucTab1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] { xtraTabPage1, xtraTabPage2, xtraTabPage3, xtraTabPage4, xtraTabPage5, xtraTabPage6, xtraTabPage7 });
             // 
@@ -333,7 +297,7 @@
             // 
             xtraTabPage1.Controls.Add(g20);
             xtraTabPage1.Name = "xtraTabPage1";
-            xtraTabPage1.Size = new Size(1035, 515);
+            xtraTabPage1.Size = new Size(1005, 515);
             xtraTabPage1.Text = "Payroll Bank Transfer Data";
             // 
             // g20
@@ -341,14 +305,14 @@
             g20.Dock = DockStyle.Fill;
             g20.Location = new Point(0, 0);
             g20.Name = "g20";
-            g20.Size = new Size(1035, 515);
+            g20.Size = new Size(1005, 515);
             g20.TabIndex = 0;
             // 
             // xtraTabPage2
             // 
             xtraTabPage2.Controls.Add(g30);
             xtraTabPage2.Name = "xtraTabPage2";
-            xtraTabPage2.Size = new Size(993, 515);
+            xtraTabPage2.Size = new Size(1005, 515);
             xtraTabPage2.Text = "Social Security Data";
             // 
             // g30
@@ -356,14 +320,14 @@
             g30.Dock = DockStyle.Fill;
             g30.Location = new Point(0, 0);
             g30.Name = "g30";
-            g30.Size = new Size(993, 515);
+            g30.Size = new Size(1005, 515);
             g30.TabIndex = 0;
             // 
             // xtraTabPage3
             // 
             xtraTabPage3.Controls.Add(g40);
             xtraTabPage3.Name = "xtraTabPage3";
-            xtraTabPage3.Size = new Size(993, 515);
+            xtraTabPage3.Size = new Size(1005, 515);
             xtraTabPage3.Text = "Prov. Fund Transfer Data";
             // 
             // g40
@@ -371,14 +335,14 @@
             g40.Dock = DockStyle.Fill;
             g40.Location = new Point(0, 0);
             g40.Name = "g40";
-            g40.Size = new Size(993, 515);
+            g40.Size = new Size(1005, 515);
             g40.TabIndex = 0;
             // 
             // xtraTabPage4
             // 
             xtraTabPage4.Controls.Add(g50);
             xtraTabPage4.Name = "xtraTabPage4";
-            xtraTabPage4.Size = new Size(993, 515);
+            xtraTabPage4.Size = new Size(1005, 515);
             xtraTabPage4.Text = "Tax Transfer Data";
             // 
             // g50
@@ -386,14 +350,14 @@
             g50.Dock = DockStyle.Fill;
             g50.Location = new Point(0, 0);
             g50.Name = "g50";
-            g50.Size = new Size(993, 515);
+            g50.Size = new Size(1005, 515);
             g50.TabIndex = 0;
             // 
             // xtraTabPage5
             // 
             xtraTabPage5.Controls.Add(g60);
             xtraTabPage5.Name = "xtraTabPage5";
-            xtraTabPage5.Size = new Size(993, 515);
+            xtraTabPage5.Size = new Size(1005, 515);
             xtraTabPage5.Text = "SSO (Excel Print)";
             // 
             // g60
@@ -401,14 +365,14 @@
             g60.Dock = DockStyle.Fill;
             g60.Location = new Point(0, 0);
             g60.Name = "g60";
-            g60.Size = new Size(993, 515);
+            g60.Size = new Size(1005, 515);
             g60.TabIndex = 0;
             // 
             // xtraTabPage6
             // 
             xtraTabPage6.Controls.Add(g70);
             xtraTabPage6.Name = "xtraTabPage6";
-            xtraTabPage6.Size = new Size(993, 515);
+            xtraTabPage6.Size = new Size(1005, 515);
             xtraTabPage6.Text = "PND1 (Excel Print)";
             // 
             // g70
@@ -416,14 +380,14 @@
             g70.Dock = DockStyle.Fill;
             g70.Location = new Point(0, 0);
             g70.Name = "g70";
-            g70.Size = new Size(993, 515);
+            g70.Size = new Size(1005, 515);
             g70.TabIndex = 0;
             // 
             // xtraTabPage7
             // 
             xtraTabPage7.Controls.Add(g80);
             xtraTabPage7.Name = "xtraTabPage7";
-            xtraTabPage7.Size = new Size(993, 515);
+            xtraTabPage7.Size = new Size(1005, 515);
             xtraTabPage7.Text = "Cash Payment (Print)";
             // 
             // g80
@@ -431,8 +395,44 @@
             g80.Dock = DockStyle.Fill;
             g80.Location = new Point(0, 0);
             g80.Name = "g80";
-            g80.Size = new Size(993, 515);
+            g80.Size = new Size(1005, 515);
             g80.TabIndex = 0;
+            // 
+            // s_year
+            // 
+            s_year.ControlHeight = 21;
+            s_year.ControlWidth = 165;
+            s_year.FontColor = Color.Black;
+            s_year.FontFace = "Tahoma";
+            s_year.FontSize = 9F;
+            s_year.FormatStr = "";
+            s_year.Location = new Point(5, 31);
+            s_year.Name = "s_year";
+            s_year.Size = new Size(165, 21);
+            s_year.TabIndex = 0;
+            s_year.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            s_year.Title = "Year";
+            s_year.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            s_year.TitleWidth = 40;
+            // 
+            // btn_payment
+            // 
+            btn_payment.Appearance.BackColor = Color.DarkGray;
+            btn_payment.Appearance.Font = new Font("Tahoma", 9F);
+            btn_payment.Appearance.Options.UseBackColor = true;
+            btn_payment.Appearance.Options.UseFont = true;
+            btn_payment.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            btn_payment.ControlHeight = 35;
+            btn_payment.ControlWidth = 154;
+            btn_payment.FontBold = FontStyle.Regular;
+            btn_payment.FontFace = "Tahoma";
+            btn_payment.FontSize = 9F;
+            btn_payment.Location = new Point(176, 26);
+            btn_payment.Name = "btn_payment";
+            btn_payment.Size = new Size(154, 35);
+            btn_payment.TabIndex = 1;
+            btn_payment.Title = "Payment Date Query";
+            btn_payment.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
             // 
             // HR690
             // 
@@ -475,8 +475,6 @@
         private Ctrls.UCSplit ucSplit1;
         private Ctrls.UCSplit ucSplit2;
         private Ctrls.UCPanel ucPanel1;
-        private Ctrls.UCButton btn_payment;
-        private Ctrls.UCDateBox s_year;
         private Ctrls.UCSplit ucSplit3;
         private Ctrls.UCPanel ucPanel2;
         private Ctrls.UCButton btn_print;
@@ -502,5 +500,7 @@
         private Ctrls.UCGridSet g70;
        
         private Ctrls.UCGridSet g80;
+        private Ctrls.UCButton btn_payment;
+        private Ctrls.UCDateBox s_year;
     }
 }

@@ -9,8 +9,8 @@
 
         private void HR530_Load(object sender, EventArgs e)
         {
-            g10.Open(); 
-            g20.Open();    
+            //g10.Open(); 
+            //g20.Open();    
         }
     }
 }
