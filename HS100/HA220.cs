@@ -22,12 +22,18 @@ namespace EpicV004.Frms
             set => Set(ref _emp_no, value);
         }
 
- //-------------------------column in table Ha100. use join
         private string _dept;
         public string dept
         {
             get => _dept;
             set => Set(ref _dept, value);
+        }
+
+        private string _dept_nm;
+        public string dept_nm
+        {
+            get => _dept_nm;
+            set => Set(ref _dept_nm, value);
         }
 
         private string _emp_name;
@@ -37,15 +43,12 @@ namespace EpicV004.Frms
             set => Set(ref _emp_name, value);
         }
 
-
         private string _position;
         public string position
         {
             get => _position;
             set => Set(ref _position, value);
         }
-
-//-----------------------------------------------
 
         private int _seq;
         public int seq
