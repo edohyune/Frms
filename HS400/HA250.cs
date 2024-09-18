@@ -22,18 +22,6 @@ namespace EpicV004.Frms
             set => Set(ref _emp_no, value);
         }
 
-
-        //-------------------------- Column in table HA100. Column Name is: other_lang_name As emp_name
-
-        private string _emp_name;
-        public string emp_name
-        {
-            get => _emp_name;
-            set => Set(ref _emp_name, value);
-        }
-        //--------------------------------------------------------- end
-
-        //------------------------Column in table HA100. Column Name is: dept, dept_nm = dbo.fndeptnm_epic2(b.dept) and position
         private string _dept;
         public string dept
         {
@@ -48,6 +36,12 @@ namespace EpicV004.Frms
             set => Set(ref _dept_nm, value);
         }
 
+        private string _emp_name;
+        public string emp_name
+        {
+            get => _emp_name;
+            set => Set(ref _emp_name, value);
+        }
 
         private string _position;
         public string position
@@ -55,7 +49,7 @@ namespace EpicV004.Frms
             get => _position;
             set => Set(ref _position, value);
         }
-        //----------------------------------------------------------------------- end
+
         private int _seq;
         public int seq
         {
@@ -82,6 +76,13 @@ namespace EpicV004.Frms
         {
             get => _end_date;
             set => Set(ref _end_date, value);
+        }
+
+        private int _period;
+        public int period
+        {
+            get => _period;
+            set => Set(ref _period, value);
         }
 
         private string _job_title;

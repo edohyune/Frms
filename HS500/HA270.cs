@@ -57,6 +57,13 @@ namespace EpicV004.Frms
             set => Set(ref _dept, value);
         }
 
+        private string _dept_nm;
+        public string dept_nm
+        {
+            get => _dept_nm;
+            set => Set(ref _dept_nm, value);
+        }
+
         //----------------------------------------------- Column in table HA100
         private string _old_dept; // old_dept=b.dept
         public string old_dept
