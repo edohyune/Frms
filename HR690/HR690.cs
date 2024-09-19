@@ -9,7 +9,7 @@
 
         private void HR690_Load(object sender, EventArgs e)
         {
-            g10.Open();
+            //g10.Open();
         }
     }
 }
