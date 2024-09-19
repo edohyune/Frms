@@ -30,9 +30,9 @@ namespace EpicV004.Frms
         {
             ucSplit1 = new Ctrls.UCSplit();
             ucPanel1 = new Ctrls.UCPanel();
-            ucChkCodeBox3 = new Ctrls.UCChkCodeBox();
-            s_emp_status = new Ctrls.UCChkCodeBox();
             job_site = new Ctrls.UCChkCodeBox();
+            s_emp_status = new Ctrls.UCChkCodeBox();
+            section = new Ctrls.UCChkCodeBox();
             position = new Ctrls.UCChkCodeBox();
             emp = new Ctrls.UCTextBox();
             dept_name = new Ctrls.UCTextBox();
@@ -69,9 +69,9 @@ namespace EpicV004.Frms
             // 
             // ucPanel1
             // 
-            ucPanel1.Controls.Add(ucChkCodeBox3);
-            ucPanel1.Controls.Add(s_emp_status);
             ucPanel1.Controls.Add(job_site);
+            ucPanel1.Controls.Add(s_emp_status);
+            ucPanel1.Controls.Add(section);
             ucPanel1.Controls.Add(position);
             ucPanel1.Controls.Add(emp);
             ucPanel1.Controls.Add(dept_name);
@@ -84,22 +84,22 @@ namespace EpicV004.Frms
             ucPanel1.TabIndex = 0;
             ucPanel1.Text = "Search";
             // 
-            // ucChkCodeBox3
+            // job_site
             // 
-            ucChkCodeBox3.Appearance.Font = new Font("Tahoma", 9F);
-            ucChkCodeBox3.Appearance.Options.UseFont = true;
-            ucChkCodeBox3.ControlHeight = 21;
-            ucChkCodeBox3.ControlWidth = 248;
-            ucChkCodeBox3.FontFace = "Tahoma";
-            ucChkCodeBox3.FontSize = 9F;
-            ucChkCodeBox3.Location = new Point(655, 51);
-            ucChkCodeBox3.Name = "ucChkCodeBox3";
-            ucChkCodeBox3.Size = new Size(248, 21);
-            ucChkCodeBox3.TabIndex = 1;
-            ucChkCodeBox3.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucChkCodeBox3.Title = "Job Site";
-            ucChkCodeBox3.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            ucChkCodeBox3.TitleWidth = 117;
+            job_site.Appearance.Font = new Font("Tahoma", 9F);
+            job_site.Appearance.Options.UseFont = true;
+            job_site.ControlHeight = 21;
+            job_site.ControlWidth = 248;
+            job_site.FontFace = "Tahoma";
+            job_site.FontSize = 9F;
+            job_site.Location = new Point(655, 51);
+            job_site.Name = "job_site";
+            job_site.Size = new Size(248, 21);
+            job_site.TabIndex = 1;
+            job_site.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            job_site.Title = "Job Site";
+            job_site.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            job_site.TitleWidth = 117;
             // 
             // s_emp_status
             // 
@@ -118,22 +118,22 @@ namespace EpicV004.Frms
             s_emp_status.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
             s_emp_status.TitleWidth = 117;
             // 
-            // job_site
+            // section
             // 
-            job_site.Appearance.Font = new Font("Tahoma", 9F);
-            job_site.Appearance.Options.UseFont = true;
-            job_site.ControlHeight = 21;
-            job_site.ControlWidth = 248;
-            job_site.FontFace = "Tahoma";
-            job_site.FontSize = 9F;
-            job_site.Location = new Point(655, 26);
-            job_site.Name = "job_site";
-            job_site.Size = new Size(248, 21);
-            job_site.TabIndex = 1;
-            job_site.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            job_site.Title = "Section";
-            job_site.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            job_site.TitleWidth = 117;
+            section.Appearance.Font = new Font("Tahoma", 9F);
+            section.Appearance.Options.UseFont = true;
+            section.ControlHeight = 21;
+            section.ControlWidth = 248;
+            section.FontFace = "Tahoma";
+            section.FontSize = 9F;
+            section.Location = new Point(655, 26);
+            section.Name = "section";
+            section.Size = new Size(248, 21);
+            section.TabIndex = 1;
+            section.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            section.Title = "Section";
+            section.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            section.TitleWidth = 117;
             // 
             // position
             // 
@@ -259,9 +259,9 @@ namespace EpicV004.Frms
         private Ctrls.UCPanel ucPanel1;
         private Ctrls.UCTextBox dept;
         private Ctrls.UCGridSet g10;
-        private Ctrls.UCChkCodeBox ucChkCodeBox3;
-        private Ctrls.UCChkCodeBox s_emp_status;
         private Ctrls.UCChkCodeBox job_site;
+        private Ctrls.UCChkCodeBox s_emp_status;
+        private Ctrls.UCChkCodeBox section;
         private Ctrls.UCChkCodeBox position;
         private Ctrls.UCTextBox emp;
         private Ctrls.UCTextBox dept_name;

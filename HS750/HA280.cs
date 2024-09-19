@@ -9,13 +9,6 @@ namespace EpicV004.Frms
 {
     public class HS750_G10 : Libs.MdlBase
     {
-        private long _pid;
-        public long pid
-        {
-            get => _pid;
-            set => Set(ref _pid, value);
-        }
-
         private string _emp_no;
         public string emp_no
         {
@@ -23,44 +16,40 @@ namespace EpicV004.Frms
             set => Set(ref _emp_no, value);
         }
 
-        //-------------------------- Column in View uv_staff. Column Name is: 
-
-        private string _emp_name; // emp_name=b.emp_name
-        public string emp_name
-        {
-            get => _emp_name;
-            set => Set(ref _emp_name, value);
-        }
-
-        private string _dept; // dept 
+        private string _dept;
         public string dept
         {
             get => _dept;
             set => Set(ref _dept, value);
         }
 
-        private string _dept_nm; // dept_nm = dbo.fndeptnm_epic2(b.dept)
+        private string _dept_nm;
         public string dept_nm
         {
             get => _dept_nm;
             set => Set(ref _dept_nm, value);
         }
 
-
-        private string _position; // position
-        public string position
+        private string _emp_name;
+        public string emp_name
         {
-            get => _position;
-            set => Set(ref _position, value);
+            get => _emp_name;
+            set => Set(ref _emp_name, value);
         }
 
-        private string _other_lang_name; // other_lang_name
+        private string _other_lang_name;
         public string other_lang_name
         {
             get => _other_lang_name;
             set => Set(ref _other_lang_name, value);
         }
-        //----------------------------------------------------------------------- end
+
+        private string _position;
+        public string position
+        {
+            get => _position;
+            set => Set(ref _position, value);
+        }
 
         private int _seq;
         public int seq
@@ -88,6 +77,13 @@ namespace EpicV004.Frms
         {
             get => _warning_msg;
             set => Set(ref _warning_msg, value);
+        }
+
+        private long _pid;
+        public long pid
+        {
+            get => _pid;
+            set => Set(ref _pid, value);
         }
     }
 }
