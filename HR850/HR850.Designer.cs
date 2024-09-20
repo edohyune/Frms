@@ -30,8 +30,8 @@ namespace EpicV004.Frms
         {
             ucSplit1 = new Ctrls.UCSplit();
             ucPanel1 = new Ctrls.UCPanel();
-            resign_type = new Ctrls.UCChkCodeBox();
-            oder_to_date = new Ctrls.UCDateBox();
+            res_type = new Ctrls.UCChkCodeBox();
+            res_to_date = new Ctrls.UCDateBox();
             res_date = new Ctrls.UCDateBox();
             s_emp_status = new Ctrls.UCChkCodeBox();
             emp = new Ctrls.UCTextBox();
@@ -67,8 +67,8 @@ namespace EpicV004.Frms
             // 
             // ucPanel1
             // 
-            ucPanel1.Controls.Add(resign_type);
-            ucPanel1.Controls.Add(oder_to_date);
+            ucPanel1.Controls.Add(res_type);
+            ucPanel1.Controls.Add(res_to_date);
             ucPanel1.Controls.Add(res_date);
             ucPanel1.Controls.Add(s_emp_status);
             ucPanel1.Controls.Add(emp);
@@ -80,37 +80,37 @@ namespace EpicV004.Frms
             ucPanel1.TabIndex = 0;
             ucPanel1.Text = "Resign Order";
             // 
-            // resign_type
+            // res_type
             // 
-            resign_type.ControlHeight = 21;
-            resign_type.ControlWidth = 228;
-            resign_type.FontFace = "Tahoma";
-            resign_type.FontSize = 9F;
-            resign_type.Location = new Point(751, 28);
-            resign_type.Name = "resign_type";
-            resign_type.Size = new Size(228, 21);
-            resign_type.TabIndex = 4;
-            resign_type.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            resign_type.Title = "Resign Type";
-            resign_type.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            resign_type.TitleWidth = 100;
+            res_type.ControlHeight = 21;
+            res_type.ControlWidth = 228;
+            res_type.FontFace = "Tahoma";
+            res_type.FontSize = 9F;
+            res_type.Location = new Point(751, 28);
+            res_type.Name = "res_type";
+            res_type.Size = new Size(228, 21);
+            res_type.TabIndex = 4;
+            res_type.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            res_type.Title = "Resign Type";
+            res_type.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            res_type.TitleWidth = 100;
             // 
-            // oder_to_date
+            // res_to_date
             // 
-            oder_to_date.ControlHeight = 21;
-            oder_to_date.ControlWidth = 144;
-            oder_to_date.FontColor = Color.Black;
-            oder_to_date.FontFace = "Tahoma";
-            oder_to_date.FontSize = 9F;
-            oder_to_date.FormatStr = "";
-            oder_to_date.Location = new Point(205, 28);
-            oder_to_date.Name = "oder_to_date";
-            oder_to_date.Size = new Size(144, 21);
-            oder_to_date.TabIndex = 3;
-            oder_to_date.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            oder_to_date.Title = "~";
-            oder_to_date.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            oder_to_date.TitleWidth = 25;
+            res_to_date.ControlHeight = 21;
+            res_to_date.ControlWidth = 144;
+            res_to_date.FontColor = Color.Black;
+            res_to_date.FontFace = "Tahoma";
+            res_to_date.FontSize = 9F;
+            res_to_date.FormatStr = "";
+            res_to_date.Location = new Point(205, 28);
+            res_to_date.Name = "res_to_date";
+            res_to_date.Size = new Size(144, 21);
+            res_to_date.TabIndex = 3;
+            res_to_date.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            res_to_date.Title = "~";
+            res_to_date.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            res_to_date.TitleWidth = 25;
             // 
             // res_date
             // 
@@ -217,8 +217,8 @@ namespace EpicV004.Frms
         private Ctrls.UCGridSet g10;
         private Ctrls.UCChkCodeBox s_emp_status;
         private Ctrls.UCTextBox emp;
-        private Ctrls.UCDateBox oder_to_date;
+        private Ctrls.UCDateBox res_to_date;
         private Ctrls.UCDateBox res_date;
-        private Ctrls.UCChkCodeBox resign_type;
+        private Ctrls.UCChkCodeBox res_type;
     }
 }

@@ -35,7 +35,7 @@ namespace EpicV004.Frms
             evt_status = new Ctrls.UCChkCodeBox();
             rq_status = new Ctrls.UCChkCodeBox();
             s_emp_status = new Ctrls.UCChkCodeBox();
-            job_site = new Ctrls.UCChkCodeBox();
+            training = new Ctrls.UCChkCodeBox();
             dept_name = new Ctrls.UCTextBox();
             course = new Ctrls.UCTextBox();
             name = new Ctrls.UCTextBox();
@@ -76,7 +76,7 @@ namespace EpicV004.Frms
             ucPanel1.Controls.Add(evt_status);
             ucPanel1.Controls.Add(rq_status);
             ucPanel1.Controls.Add(s_emp_status);
-            ucPanel1.Controls.Add(job_site);
+            ucPanel1.Controls.Add(training);
             ucPanel1.Controls.Add(dept_name);
             ucPanel1.Controls.Add(course);
             ucPanel1.Controls.Add(name);
@@ -173,22 +173,22 @@ namespace EpicV004.Frms
             s_emp_status.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
             s_emp_status.TitleWidth = 117;
             // 
-            // job_site
+            // training
             // 
-            job_site.Appearance.Font = new Font("Tahoma", 9F);
-            job_site.Appearance.Options.UseFont = true;
-            job_site.ControlHeight = 21;
-            job_site.ControlWidth = 248;
-            job_site.FontFace = "Tahoma";
-            job_site.FontSize = 9F;
-            job_site.Location = new Point(539, 55);
-            job_site.Name = "job_site";
-            job_site.Size = new Size(248, 21);
-            job_site.TabIndex = 1;
-            job_site.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            job_site.Title = "Training";
-            job_site.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            job_site.TitleWidth = 90;
+            training.Appearance.Font = new Font("Tahoma", 9F);
+            training.Appearance.Options.UseFont = true;
+            training.ControlHeight = 21;
+            training.ControlWidth = 248;
+            training.FontFace = "Tahoma";
+            training.FontSize = 9F;
+            training.Location = new Point(539, 55);
+            training.Name = "training";
+            training.Size = new Size(248, 21);
+            training.TabIndex = 1;
+            training.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            training.Title = "Training";
+            training.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            training.TitleWidth = 90;
             // 
             // dept_name
             // 
@@ -299,7 +299,7 @@ namespace EpicV004.Frms
         private Ctrls.UCGridSet g10;
         private Ctrls.UCChkCodeBox rq_status;
         private Ctrls.UCChkCodeBox s_emp_status;
-        private Ctrls.UCChkCodeBox job_site;
+        private Ctrls.UCChkCodeBox training;
         private Ctrls.UCTextBox dept_name;
         private Ctrls.UCTextBox course;
         private Ctrls.UCDateBox to_date;
