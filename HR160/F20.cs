@@ -548,7 +548,7 @@ namespace EpicV004.Frms
         }
 
         private string _emergency_contact_tel_no;
-        public string eg_contact_tel_no
+        public string emergency_contact_tel_no
         {
             get => _emergency_contact_tel_no;
             set => Set(ref _emergency_contact_tel_no, value);
