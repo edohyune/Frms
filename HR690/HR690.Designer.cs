@@ -31,12 +31,14 @@
             ucSplit1 = new Ctrls.UCSplit();
             ucSplit2 = new Ctrls.UCSplit();
             ucPanel1 = new Ctrls.UCPanel();
+            btn_payment = new Ctrls.UCButton();
+            s_year = new Ctrls.UCDateBox();
             g10 = new Ctrls.UCGridSet();
             ucSplit3 = new Ctrls.UCSplit();
             ucPanel2 = new Ctrls.UCPanel();
+            s_paydate = new Ctrls.UCDateBox();
             btn_print = new Ctrls.UCButton();
             s_pay_ty = new Ctrls.UCCodeBox();
-            s_pay_date = new Ctrls.UCDateBox();
             s_paymonth = new Ctrls.UCDateBox();
             btn_file = new Ctrls.UCButton();
             btn_open = new Ctrls.UCButton();
@@ -55,8 +57,6 @@
             g70 = new Ctrls.UCGridSet();
             xtraTabPage7 = new DevExpress.XtraTab.XtraTabPage();
             g80 = new Ctrls.UCGridSet();
-            s_year = new Ctrls.UCDateBox();
-            btn_payment = new Ctrls.UCButton();
             ((System.ComponentModel.ISupportInitialize)ucSplit1).BeginInit();
             ucSplit1.Panel1.SuspendLayout();
             ucSplit1.Panel2.SuspendLayout();
@@ -87,6 +87,7 @@
             // ucSplit1
             // 
             ucSplit1.Dock = DockStyle.Fill;
+            ucSplit1.FixedPanel = FixedPanel.Panel1;
             ucSplit1.Location = new Point(0, 0);
             ucSplit1.Name = "ucSplit1";
             // 
@@ -132,6 +133,41 @@
             ucPanel1.TabIndex = 0;
             ucPanel1.Text = "Payment Date";
             // 
+            // btn_payment
+            // 
+            btn_payment.Appearance.BackColor = Color.DarkGray;
+            btn_payment.Appearance.Options.UseBackColor = true;
+            btn_payment.Appearance.Options.UseFont = true;
+            btn_payment.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            btn_payment.ControlHeight = 35;
+            btn_payment.ControlWidth = 154;
+            btn_payment.FontBold = FontStyle.Regular;
+            btn_payment.FontFace = "Tahoma";
+            btn_payment.FontSize = 9F;
+            btn_payment.Location = new Point(176, 26);
+            btn_payment.Name = "btn_payment";
+            btn_payment.Size = new Size(154, 35);
+            btn_payment.TabIndex = 1;
+            btn_payment.Title = "Payment Date Query";
+            btn_payment.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            // 
+            // s_year
+            // 
+            s_year.ControlHeight = 21;
+            s_year.ControlWidth = 165;
+            s_year.FontColor = Color.Black;
+            s_year.FontFace = "Tahoma";
+            s_year.FontSize = 9F;
+            s_year.FormatStr = "";
+            s_year.Location = new Point(5, 33);
+            s_year.Name = "s_year";
+            s_year.Size = new Size(165, 21);
+            s_year.TabIndex = 0;
+            s_year.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            s_year.Title = "Year";
+            s_year.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            s_year.TitleWidth = 40;
+            // 
             // g10
             // 
             g10.Dock = DockStyle.Fill;
@@ -162,9 +198,9 @@
             // 
             // ucPanel2
             // 
+            ucPanel2.Controls.Add(s_paydate);
             ucPanel2.Controls.Add(btn_print);
             ucPanel2.Controls.Add(s_pay_ty);
-            ucPanel2.Controls.Add(s_pay_date);
             ucPanel2.Controls.Add(s_paymonth);
             ucPanel2.Controls.Add(btn_file);
             ucPanel2.Controls.Add(btn_open);
@@ -175,10 +211,26 @@
             ucPanel2.TabIndex = 0;
             ucPanel2.Text = "Make Transfer File";
             // 
+            // s_paydate
+            // 
+            s_paydate.ControlHeight = 21;
+            s_paydate.ControlWidth = 165;
+            s_paydate.FontColor = Color.Black;
+            s_paydate.FontFace = "Tahoma";
+            s_paydate.FontSize = 9F;
+            s_paydate.FormatStr = "";
+            s_paydate.Location = new Point(411, 33);
+            s_paydate.Name = "s_paydate";
+            s_paydate.Size = new Size(165, 21);
+            s_paydate.TabIndex = 6;
+            s_paydate.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            s_paydate.Title = "Date";
+            s_paydate.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            s_paydate.TitleWidth = 60;
+            // 
             // btn_print
             // 
             btn_print.Appearance.BackColor = Color.DarkGray;
-            btn_print.Appearance.Font = new Font("Tahoma", 9F);
             btn_print.Appearance.Options.UseBackColor = true;
             btn_print.Appearance.Options.UseFont = true;
             btn_print.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
@@ -187,7 +239,7 @@
             btn_print.FontBold = FontStyle.Regular;
             btn_print.FontFace = "Tahoma";
             btn_print.FontSize = 9F;
-            btn_print.Location = new Point(783, 26);
+            btn_print.Location = new Point(807, 26);
             btn_print.Name = "btn_print";
             btn_print.Size = new Size(97, 35);
             btn_print.TabIndex = 5;
@@ -202,7 +254,8 @@
             s_pay_ty.FontColor = Color.Black;
             s_pay_ty.FontFace = "Tahoma";
             s_pay_ty.FontSize = 9F;
-            s_pay_ty.Location = new Point(588, 31);
+            s_pay_ty.Location = new Point(618, 33);
+            s_pay_ty.Margin = new Padding(4, 3, 4, 3);
             s_pay_ty.Name = "s_pay_ty";
             s_pay_ty.Size = new Size(182, 21);
             s_pay_ty.TabIndex = 4;
@@ -210,23 +263,6 @@
             s_pay_ty.Title = "Pay Type";
             s_pay_ty.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
             s_pay_ty.TitleWidth = 70;
-            // 
-            // s_pay_date
-            // 
-            s_pay_date.ControlHeight = 21;
-            s_pay_date.ControlWidth = 171;
-            s_pay_date.FontColor = Color.Black;
-            s_pay_date.FontFace = "Tahoma";
-            s_pay_date.FontSize = 9F;
-            s_pay_date.FormatStr = "";
-            s_pay_date.Location = new Point(411, 31);
-            s_pay_date.Name = "s_pay_date";
-            s_pay_date.Size = new Size(171, 21);
-            s_pay_date.TabIndex = 3;
-            s_pay_date.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            s_pay_date.Title = "Pay Date";
-            s_pay_date.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            s_pay_date.TitleWidth = 60;
             // 
             // s_paymonth
             // 
@@ -236,7 +272,7 @@
             s_paymonth.FontFace = "Tahoma";
             s_paymonth.FontSize = 9F;
             s_paymonth.FormatStr = "";
-            s_paymonth.Location = new Point(240, 31);
+            s_paymonth.Location = new Point(240, 33);
             s_paymonth.Name = "s_paymonth";
             s_paymonth.Size = new Size(165, 21);
             s_paymonth.TabIndex = 2;
@@ -248,7 +284,6 @@
             // btn_file
             // 
             btn_file.Appearance.BackColor = Color.DarkGray;
-            btn_file.Appearance.Font = new Font("Tahoma", 9F);
             btn_file.Appearance.Options.UseBackColor = true;
             btn_file.Appearance.Options.UseFont = true;
             btn_file.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
@@ -267,7 +302,6 @@
             // btn_open
             // 
             btn_open.Appearance.BackColor = Color.DarkGray;
-            btn_open.Appearance.Font = new Font("Tahoma", 9F);
             btn_open.Appearance.Options.UseBackColor = true;
             btn_open.Appearance.Options.UseFont = true;
             btn_open.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
@@ -297,7 +331,7 @@
             // 
             xtraTabPage1.Controls.Add(g20);
             xtraTabPage1.Name = "xtraTabPage1";
-            xtraTabPage1.Size = new Size(1005, 515);
+            xtraTabPage1.Size = new Size(1005, 514);
             xtraTabPage1.Text = "Payroll Bank Transfer Data";
             // 
             // g20
@@ -305,14 +339,14 @@
             g20.Dock = DockStyle.Fill;
             g20.Location = new Point(0, 0);
             g20.Name = "g20";
-            g20.Size = new Size(1005, 515);
+            g20.Size = new Size(1005, 514);
             g20.TabIndex = 0;
             // 
             // xtraTabPage2
             // 
             xtraTabPage2.Controls.Add(g30);
             xtraTabPage2.Name = "xtraTabPage2";
-            xtraTabPage2.Size = new Size(1005, 515);
+            xtraTabPage2.Size = new Size(1005, 514);
             xtraTabPage2.Text = "Social Security Data";
             // 
             // g30
@@ -320,14 +354,14 @@
             g30.Dock = DockStyle.Fill;
             g30.Location = new Point(0, 0);
             g30.Name = "g30";
-            g30.Size = new Size(1005, 515);
+            g30.Size = new Size(1005, 514);
             g30.TabIndex = 0;
             // 
             // xtraTabPage3
             // 
             xtraTabPage3.Controls.Add(g40);
             xtraTabPage3.Name = "xtraTabPage3";
-            xtraTabPage3.Size = new Size(1005, 515);
+            xtraTabPage3.Size = new Size(1005, 514);
             xtraTabPage3.Text = "Prov. Fund Transfer Data";
             // 
             // g40
@@ -335,14 +369,14 @@
             g40.Dock = DockStyle.Fill;
             g40.Location = new Point(0, 0);
             g40.Name = "g40";
-            g40.Size = new Size(1005, 515);
+            g40.Size = new Size(1005, 514);
             g40.TabIndex = 0;
             // 
             // xtraTabPage4
             // 
             xtraTabPage4.Controls.Add(g50);
             xtraTabPage4.Name = "xtraTabPage4";
-            xtraTabPage4.Size = new Size(1005, 515);
+            xtraTabPage4.Size = new Size(1005, 514);
             xtraTabPage4.Text = "Tax Transfer Data";
             // 
             // g50
@@ -350,14 +384,14 @@
             g50.Dock = DockStyle.Fill;
             g50.Location = new Point(0, 0);
             g50.Name = "g50";
-            g50.Size = new Size(1005, 515);
+            g50.Size = new Size(1005, 514);
             g50.TabIndex = 0;
             // 
             // xtraTabPage5
             // 
             xtraTabPage5.Controls.Add(g60);
             xtraTabPage5.Name = "xtraTabPage5";
-            xtraTabPage5.Size = new Size(1005, 515);
+            xtraTabPage5.Size = new Size(1005, 514);
             xtraTabPage5.Text = "SSO (Excel Print)";
             // 
             // g60
@@ -365,14 +399,14 @@
             g60.Dock = DockStyle.Fill;
             g60.Location = new Point(0, 0);
             g60.Name = "g60";
-            g60.Size = new Size(1005, 515);
+            g60.Size = new Size(1005, 514);
             g60.TabIndex = 0;
             // 
             // xtraTabPage6
             // 
             xtraTabPage6.Controls.Add(g70);
             xtraTabPage6.Name = "xtraTabPage6";
-            xtraTabPage6.Size = new Size(1005, 515);
+            xtraTabPage6.Size = new Size(1005, 514);
             xtraTabPage6.Text = "PND1 (Excel Print)";
             // 
             // g70
@@ -380,14 +414,14 @@
             g70.Dock = DockStyle.Fill;
             g70.Location = new Point(0, 0);
             g70.Name = "g70";
-            g70.Size = new Size(1005, 515);
+            g70.Size = new Size(1005, 514);
             g70.TabIndex = 0;
             // 
             // xtraTabPage7
             // 
             xtraTabPage7.Controls.Add(g80);
             xtraTabPage7.Name = "xtraTabPage7";
-            xtraTabPage7.Size = new Size(1005, 515);
+            xtraTabPage7.Size = new Size(1005, 514);
             xtraTabPage7.Text = "Cash Payment (Print)";
             // 
             // g80
@@ -395,44 +429,8 @@
             g80.Dock = DockStyle.Fill;
             g80.Location = new Point(0, 0);
             g80.Name = "g80";
-            g80.Size = new Size(1005, 515);
+            g80.Size = new Size(1005, 514);
             g80.TabIndex = 0;
-            // 
-            // s_year
-            // 
-            s_year.ControlHeight = 21;
-            s_year.ControlWidth = 165;
-            s_year.FontColor = Color.Black;
-            s_year.FontFace = "Tahoma";
-            s_year.FontSize = 9F;
-            s_year.FormatStr = "";
-            s_year.Location = new Point(5, 31);
-            s_year.Name = "s_year";
-            s_year.Size = new Size(165, 21);
-            s_year.TabIndex = 0;
-            s_year.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            s_year.Title = "Year";
-            s_year.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            s_year.TitleWidth = 40;
-            // 
-            // btn_payment
-            // 
-            btn_payment.Appearance.BackColor = Color.DarkGray;
-            btn_payment.Appearance.Font = new Font("Tahoma", 9F);
-            btn_payment.Appearance.Options.UseBackColor = true;
-            btn_payment.Appearance.Options.UseFont = true;
-            btn_payment.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            btn_payment.ControlHeight = 35;
-            btn_payment.ControlWidth = 154;
-            btn_payment.FontBold = FontStyle.Regular;
-            btn_payment.FontFace = "Tahoma";
-            btn_payment.FontSize = 9F;
-            btn_payment.Location = new Point(176, 26);
-            btn_payment.Name = "btn_payment";
-            btn_payment.Size = new Size(154, 35);
-            btn_payment.TabIndex = 1;
-            btn_payment.Title = "Payment Date Query";
-            btn_payment.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
             // 
             // HR690
             // 
@@ -479,7 +477,6 @@
         private Ctrls.UCPanel ucPanel2;
         private Ctrls.UCButton btn_print;
         private Ctrls.UCCodeBox s_pay_ty;
-        private Ctrls.UCDateBox s_pay_date;
         private Ctrls.UCDateBox s_paymonth;
         private Ctrls.UCButton btn_file;
         private Ctrls.UCButton btn_open;
@@ -502,5 +499,6 @@
         private Ctrls.UCGridSet g80;
         private Ctrls.UCButton btn_payment;
         private Ctrls.UCDateBox s_year;
+        private Ctrls.UCDateBox s_paydate;
     }
 }

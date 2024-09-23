@@ -11,5 +11,10 @@
         {
             //g10.Open();
         }
+
+        private void btn_payment_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(s_paydate.Text);
+        }
     }
 }

@@ -36,6 +36,7 @@
             xtraTabPage3 = new DevExpress.XtraTab.XtraTabPage();
             ucSplit3 = new Ctrls.UCSplit();
             ucSplit5 = new Ctrls.UCSplit();
+            ucCheckBox3 = new Ctrls.UCCheckBox();
             cmdDomTy = new Ctrls.UCCodeBox();
             ucSplit1 = new Ctrls.UCSplit();
             richTxt4 = new Ctrls.UCRichText();
@@ -52,6 +53,8 @@
             ucSplit6 = new Ctrls.UCSplit();
             rtxEtc01 = new Ctrls.UCRichText();
             rtxEtc02 = new Ctrls.UCRichText();
+            ucCheckBox1 = new Ctrls.UCCheckBox();
+            ucCheckBox2 = new Ctrls.UCCheckBox();
             ((System.ComponentModel.ISupportInitialize)ucTab1).BeginInit();
             ucTab1.SuspendLayout();
             xtraTabPage1.SuspendLayout();
@@ -94,7 +97,7 @@
             ucTab1.Location = new Point(0, 0);
             ucTab1.Name = "ucTab1";
             ucTab1.SelectedTabPage = xtraTabPage1;
-            ucTab1.Size = new Size(800, 450);
+            ucTab1.Size = new Size(1059, 470);
             ucTab1.TabIndex = 0;
             ucTab1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] { xtraTabPage1, xtraTabPage2 });
             // 
@@ -102,7 +105,7 @@
             // 
             xtraTabPage1.Controls.Add(ucSplit2);
             xtraTabPage1.Name = "xtraTabPage1";
-            xtraTabPage1.Size = new Size(798, 424);
+            xtraTabPage1.Size = new Size(1057, 444);
             xtraTabPage1.TabPageWidth = 120;
             xtraTabPage1.Text = "Controller List";
             // 
@@ -119,8 +122,8 @@
             // ucSplit2.Panel2
             // 
             ucSplit2.Panel2.Controls.Add(ucTab2);
-            ucSplit2.Size = new Size(798, 424);
-            ucSplit2.SplitterDistance = 482;
+            ucSplit2.Size = new Size(1057, 444);
+            ucSplit2.SplitterDistance = 533;
             ucSplit2.TabIndex = 0;
             ucSplit2.TitleWidth = 121;
             // 
@@ -129,7 +132,7 @@
             g10.Dock = DockStyle.Fill;
             g10.Location = new Point(0, 0);
             g10.Name = "g10";
-            g10.Size = new Size(482, 424);
+            g10.Size = new Size(533, 444);
             g10.TabIndex = 0;
             // 
             // ucTab2
@@ -138,7 +141,7 @@
             ucTab2.Location = new Point(0, 0);
             ucTab2.Name = "ucTab2";
             ucTab2.SelectedTabPage = xtraTabPage3;
-            ucTab2.Size = new Size(312, 424);
+            ucTab2.Size = new Size(520, 444);
             ucTab2.TabIndex = 1;
             ucTab2.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] { xtraTabPage3, xtraTabPage4 });
             // 
@@ -146,7 +149,7 @@
             // 
             xtraTabPage3.Controls.Add(ucSplit3);
             xtraTabPage3.Name = "xtraTabPage3";
-            xtraTabPage3.Size = new Size(310, 398);
+            xtraTabPage3.Size = new Size(518, 418);
             xtraTabPage3.Text = "xtraTabPage3";
             // 
             // ucSplit3
@@ -164,8 +167,8 @@
             // ucSplit3.Panel2
             // 
             ucSplit3.Panel2.Controls.Add(ucSplit4);
-            ucSplit3.Size = new Size(310, 398);
-            ucSplit3.SplitterDistance = 292;
+            ucSplit3.Size = new Size(518, 418);
+            ucSplit3.SplitterDistance = 312;
             ucSplit3.TabIndex = 0;
             ucSplit3.TitleWidth = 121;
             // 
@@ -179,15 +182,31 @@
             // 
             // ucSplit5.Panel1
             // 
+            ucSplit5.Panel1.Controls.Add(ucCheckBox3);
             ucSplit5.Panel1.Controls.Add(cmdDomTy);
             // 
             // ucSplit5.Panel2
             // 
             ucSplit5.Panel2.Controls.Add(ucSplit1);
-            ucSplit5.Size = new Size(310, 292);
+            ucSplit5.Size = new Size(518, 312);
             ucSplit5.SplitterDistance = 38;
             ucSplit5.TabIndex = 0;
             ucSplit5.TitleWidth = 121;
+            // 
+            // ucCheckBox3
+            // 
+            ucCheckBox3.Checked = false;
+            ucCheckBox3.ControlHeight = 21;
+            ucCheckBox3.ControlWidth = 200;
+            ucCheckBox3.FontColor = Color.Black;
+            ucCheckBox3.FontFace = "Tahoma";
+            ucCheckBox3.FontSize = 9F;
+            ucCheckBox3.Location = new Point(217, 9);
+            ucCheckBox3.Name = "ucCheckBox3";
+            ucCheckBox3.Size = new Size(200, 21);
+            ucCheckBox3.TabIndex = 1;
+            ucCheckBox3.TextAlignment = DevExpress.Utils.HorzAlignment.Far;
+            ucCheckBox3.TitleAlignment = DevExpress.Utils.HorzAlignment.Far;
             // 
             // cmdDomTy
             // 
@@ -221,8 +240,8 @@
             // ucSplit1.Panel2
             // 
             ucSplit1.Panel2.Controls.Add(richTxt1);
-            ucSplit1.Size = new Size(310, 250);
-            ucSplit1.SplitterDistance = 93;
+            ucSplit1.Size = new Size(518, 270);
+            ucSplit1.SplitterDistance = 100;
             ucSplit1.TabIndex = 0;
             ucSplit1.TitleWidth = 121;
             // 
@@ -238,7 +257,7 @@
             richTxt4.Options.HorizontalRuler.Visibility = DevExpress.XtraRichEdit.RichEditRulerVisibility.Hidden;
             richTxt4.Options.Search.RegExResultMaxGuaranteedLength = 1000;
             richTxt4.Padding = new Padding(50, 0, 0, 0);
-            richTxt4.Size = new Size(310, 93);
+            richTxt4.Size = new Size(518, 100);
             richTxt4.TabIndex = 1;
             richTxt4.Views.DraftView.AllowDisplayLineNumbers = true;
             // 
@@ -254,7 +273,7 @@
             richTxt1.Options.HorizontalRuler.Visibility = DevExpress.XtraRichEdit.RichEditRulerVisibility.Hidden;
             richTxt1.Options.Search.RegExResultMaxGuaranteedLength = 1000;
             richTxt1.Padding = new Padding(50, 0, 0, 0);
-            richTxt1.Size = new Size(310, 153);
+            richTxt1.Size = new Size(518, 166);
             richTxt1.TabIndex = 0;
             richTxt1.Views.DraftView.AllowDisplayLineNumbers = true;
             // 
@@ -272,7 +291,7 @@
             // ucSplit4.Panel2
             // 
             ucSplit4.Panel2.Controls.Add(richTxt3);
-            ucSplit4.Size = new Size(310, 102);
+            ucSplit4.Size = new Size(518, 102);
             ucSplit4.SplitterDistance = 51;
             ucSplit4.TabIndex = 0;
             ucSplit4.TitleWidth = 121;
@@ -289,7 +308,7 @@
             richTxt2.Options.HorizontalRuler.Visibility = DevExpress.XtraRichEdit.RichEditRulerVisibility.Hidden;
             richTxt2.Options.Search.RegExResultMaxGuaranteedLength = 1000;
             richTxt2.Padding = new Padding(50, 0, 0, 0);
-            richTxt2.Size = new Size(310, 51);
+            richTxt2.Size = new Size(518, 51);
             richTxt2.TabIndex = 0;
             richTxt2.Views.DraftView.AllowDisplayLineNumbers = true;
             // 
@@ -305,7 +324,7 @@
             richTxt3.Options.HorizontalRuler.Visibility = DevExpress.XtraRichEdit.RichEditRulerVisibility.Hidden;
             richTxt3.Options.Search.RegExResultMaxGuaranteedLength = 1000;
             richTxt3.Padding = new Padding(50, 0, 0, 0);
-            richTxt3.Size = new Size(310, 47);
+            richTxt3.Size = new Size(518, 47);
             richTxt3.TabIndex = 0;
             richTxt3.Views.DraftView.AllowDisplayLineNumbers = true;
             // 
@@ -313,7 +332,7 @@
             // 
             xtraTabPage4.Controls.Add(ucPanel1);
             xtraTabPage4.Name = "xtraTabPage4";
-            xtraTabPage4.Size = new Size(310, 398);
+            xtraTabPage4.Size = new Size(518, 418);
             xtraTabPage4.Text = "xtraTabPage4";
             // 
             // ucPanel1
@@ -324,7 +343,7 @@
             ucPanel1.Dock = DockStyle.Fill;
             ucPanel1.Location = new Point(0, 0);
             ucPanel1.Name = "ucPanel1";
-            ucPanel1.Size = new Size(310, 398);
+            ucPanel1.Size = new Size(518, 418);
             ucPanel1.TabIndex = 0;
             // 
             // ucButton1
@@ -383,7 +402,7 @@
             // 
             xtraTabPage2.Controls.Add(ucSplit6);
             xtraTabPage2.Name = "xtraTabPage2";
-            xtraTabPage2.Size = new Size(798, 424);
+            xtraTabPage2.Size = new Size(1057, 444);
             xtraTabPage2.TabPageWidth = 120;
             xtraTabPage2.Text = "xtraTabPage2";
             // 
@@ -400,8 +419,8 @@
             // ucSplit6.Panel2
             // 
             ucSplit6.Panel2.Controls.Add(rtxEtc02);
-            ucSplit6.Size = new Size(798, 424);
-            ucSplit6.SplitterDistance = 380;
+            ucSplit6.Size = new Size(1057, 444);
+            ucSplit6.SplitterDistance = 503;
             ucSplit6.TabIndex = 0;
             ucSplit6.TitleWidth = 121;
             // 
@@ -420,7 +439,7 @@
             rtxEtc01.Options.HorizontalRuler.Visibility = DevExpress.XtraRichEdit.RichEditRulerVisibility.Hidden;
             rtxEtc01.Options.Search.RegExResultMaxGuaranteedLength = 1000;
             rtxEtc01.Padding = new Padding(50, 0, 0, 0);
-            rtxEtc01.Size = new Size(380, 424);
+            rtxEtc01.Size = new Size(503, 444);
             rtxEtc01.TabIndex = 0;
             rtxEtc01.Views.SimpleView.AllowDisplayLineNumbers = true;
             // 
@@ -439,9 +458,39 @@
             rtxEtc02.Options.HorizontalRuler.Visibility = DevExpress.XtraRichEdit.RichEditRulerVisibility.Hidden;
             rtxEtc02.Options.Search.RegExResultMaxGuaranteedLength = 1000;
             rtxEtc02.Padding = new Padding(50, 0, 0, 0);
-            rtxEtc02.Size = new Size(414, 424);
+            rtxEtc02.Size = new Size(550, 444);
             rtxEtc02.TabIndex = 0;
             rtxEtc02.Views.SimpleView.AllowDisplayLineNumbers = true;
+            // 
+            // ucCheckBox1
+            // 
+            ucCheckBox1.Checked = false;
+            ucCheckBox1.ControlHeight = 21;
+            ucCheckBox1.ControlWidth = 200;
+            ucCheckBox1.FontColor = Color.Black;
+            ucCheckBox1.FontFace = "Tahoma";
+            ucCheckBox1.FontSize = 9F;
+            ucCheckBox1.Location = new Point(0, 0);
+            ucCheckBox1.Name = "ucCheckBox1";
+            ucCheckBox1.Size = new Size(200, 21);
+            ucCheckBox1.TabIndex = 0;
+            ucCheckBox1.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucCheckBox1.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            // 
+            // ucCheckBox2
+            // 
+            ucCheckBox2.Checked = false;
+            ucCheckBox2.ControlHeight = 21;
+            ucCheckBox2.ControlWidth = 200;
+            ucCheckBox2.FontColor = Color.Black;
+            ucCheckBox2.FontFace = "Tahoma";
+            ucCheckBox2.FontSize = 9F;
+            ucCheckBox2.Location = new Point(294, 12);
+            ucCheckBox2.Name = "ucCheckBox2";
+            ucCheckBox2.Size = new Size(200, 21);
+            ucCheckBox2.TabIndex = 2;
+            ucCheckBox2.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucCheckBox2.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
             // 
             // CtrlDom
             // 
@@ -449,7 +498,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(ucTab1);
             Name = "CtrlDom";
-            Size = new Size(800, 450);
+            Size = new Size(1059, 470);
             ((System.ComponentModel.ISupportInitialize)ucTab1).EndInit();
             ucTab1.ResumeLayout(false);
             xtraTabPage1.ResumeLayout(false);
@@ -513,6 +562,9 @@
         private Ctrls.UCRichText ucRichText1;
         private Ctrls.UCButton ucButton1;
         private Ctrls.UCRichText ucRichText2;
+        private Ctrls.UCCheckBox ucCheckBox1;
+        private Ctrls.UCCheckBox ucCheckBox2;
+        private Ctrls.UCCheckBox ucCheckBox3;
         //private RichTxt richTxt1;
         //private RichTxt richTxt2;
         //private RichTxt richTxt3;
