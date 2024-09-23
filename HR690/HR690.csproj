@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\EpicPrologue\EpicPrologue.csproj" />
+    <PackageReference Include="EpicPrologue" Version="1.0.24" />
   </ItemGroup>
 
   <ItemGroup>
