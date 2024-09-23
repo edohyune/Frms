@@ -30,9 +30,9 @@ namespace EpicV004.Frms
         {
             ucSplit1 = new Ctrls.UCSplit();
             ucPanel1 = new Ctrls.UCPanel();
-            oder_to_date = new Ctrls.UCDateBox();
+            app_to_date = new Ctrls.UCDateBox();
             app_date = new Ctrls.UCDateBox();
-            ucChkCodeBox3 = new Ctrls.UCChkCodeBox();
+            leave_type = new Ctrls.UCChkCodeBox();
             s_emp_status = new Ctrls.UCChkCodeBox();
             emp = new Ctrls.UCTextBox();
             dept_name = new Ctrls.UCTextBox();
@@ -68,9 +68,9 @@ namespace EpicV004.Frms
             // 
             // ucPanel1
             // 
-            ucPanel1.Controls.Add(oder_to_date);
+            ucPanel1.Controls.Add(app_to_date);
             ucPanel1.Controls.Add(app_date);
-            ucPanel1.Controls.Add(ucChkCodeBox3);
+            ucPanel1.Controls.Add(leave_type);
             ucPanel1.Controls.Add(s_emp_status);
             ucPanel1.Controls.Add(emp);
             ucPanel1.Controls.Add(dept_name);
@@ -82,22 +82,22 @@ namespace EpicV004.Frms
             ucPanel1.TabIndex = 0;
             ucPanel1.Text = "Leave List";
             // 
-            // oder_to_date
+            // app_to_date
             // 
-            oder_to_date.ControlHeight = 21;
-            oder_to_date.ControlWidth = 192;
-            oder_to_date.FontColor = Color.Black;
-            oder_to_date.FontFace = "Tahoma";
-            oder_to_date.FontSize = 9F;
-            oder_to_date.FormatStr = "";
-            oder_to_date.Location = new Point(5, 53);
-            oder_to_date.Name = "oder_to_date";
-            oder_to_date.Size = new Size(192, 21);
-            oder_to_date.TabIndex = 3;
-            oder_to_date.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            oder_to_date.Title = "~";
-            oder_to_date.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            oder_to_date.TitleWidth = 90;
+            app_to_date.ControlHeight = 21;
+            app_to_date.ControlWidth = 192;
+            app_to_date.FontColor = Color.Black;
+            app_to_date.FontFace = "Tahoma";
+            app_to_date.FontSize = 9F;
+            app_to_date.FormatStr = "";
+            app_to_date.Location = new Point(5, 53);
+            app_to_date.Name = "app_to_date";
+            app_to_date.Size = new Size(192, 21);
+            app_to_date.TabIndex = 3;
+            app_to_date.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            app_to_date.Title = "~";
+            app_to_date.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            app_to_date.TitleWidth = 90;
             // 
             // app_date
             // 
@@ -116,22 +116,22 @@ namespace EpicV004.Frms
             app_date.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
             app_date.TitleWidth = 90;
             // 
-            // ucChkCodeBox3
+            // leave_type
             // 
-            ucChkCodeBox3.Appearance.Font = new Font("Tahoma", 9F);
-            ucChkCodeBox3.Appearance.Options.UseFont = true;
-            ucChkCodeBox3.ControlHeight = 21;
-            ucChkCodeBox3.ControlWidth = 248;
-            ucChkCodeBox3.FontFace = "Tahoma";
-            ucChkCodeBox3.FontSize = 9F;
-            ucChkCodeBox3.Location = new Point(674, 28);
-            ucChkCodeBox3.Name = "ucChkCodeBox3";
-            ucChkCodeBox3.Size = new Size(248, 21);
-            ucChkCodeBox3.TabIndex = 1;
-            ucChkCodeBox3.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucChkCodeBox3.Title = "Leave Type";
-            ucChkCodeBox3.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            ucChkCodeBox3.TitleWidth = 117;
+            leave_type.Appearance.Font = new Font("Tahoma", 9F);
+            leave_type.Appearance.Options.UseFont = true;
+            leave_type.ControlHeight = 21;
+            leave_type.ControlWidth = 248;
+            leave_type.FontFace = "Tahoma";
+            leave_type.FontSize = 9F;
+            leave_type.Location = new Point(674, 28);
+            leave_type.Name = "leave_type";
+            leave_type.Size = new Size(248, 21);
+            leave_type.TabIndex = 1;
+            leave_type.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            leave_type.Title = "Leave Type";
+            leave_type.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            leave_type.TitleWidth = 117;
             // 
             // s_emp_status
             // 
@@ -238,12 +238,12 @@ namespace EpicV004.Frms
         private Ctrls.UCPanel ucPanel1;
         private Ctrls.UCTextBox dept;
         private Ctrls.UCGridSet g10;
-        private Ctrls.UCChkCodeBox ucChkCodeBox3;
+        private Ctrls.UCChkCodeBox leave_type;
         private Ctrls.UCChkCodeBox s_emp_status;
         private Ctrls.UCChkCodeBox job_site;
         private Ctrls.UCTextBox emp;
         private Ctrls.UCTextBox dept_name;
-        private Ctrls.UCDateBox oder_to_date;
+        private Ctrls.UCDateBox app_to_date;
         private Ctrls.UCDateBox app_date;
     }
 }

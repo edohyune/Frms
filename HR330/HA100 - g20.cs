@@ -344,39 +344,39 @@ namespace EpicV004.Frms
             set => Set(ref _id_card_addr1, value);
         }
 
-        private string _eg_contact_name;
-        public string eg_contact_name
+        private string _emergency_contact_name;
+        public string emergency_contact_name
         {
-            get => _eg_contact_name;
-            set => Set(ref _eg_contact_name, value);
+            get => _emergency_contact_name;
+            set => Set(ref _emergency_contact_name, value);
         }
 
-        private string _eg_contact_postage;
-        public string eg_contact_postage
+        private string _emergency_contact_postage;
+        public string emergency_contact_postage
         {
-            get => _eg_contact_postage;
-            set => Set(ref _eg_contact_postage, value);
+            get => _emergency_contact_postage;
+            set => Set(ref _emergency_contact_postage, value);
         }
 
-        private string _eg_contact_addr1;
-        public string eg_contact_addr1
+        private string _emergency_contact_addr1;
+        public string emergency_contact_addr1
         {
-            get => _eg_contact_addr1;
-            set => Set(ref _eg_contact_addr1, value);
+            get => _emergency_contact_addr1;
+            set => Set(ref _emergency_contact_addr1, value);
         }
 
-        private string _eg_contact_tel_no;
-        public string eg_contact_tel_no
+        private string _emergency_contact_tel_no;
+        public string emergency_contact_tel_no
         {
-            get => _eg_contact_tel_no;
-            set => Set(ref _eg_contact_tel_no, value);
+            get => _emergency_contact_tel_no;
+            set => Set(ref _emergency_contact_tel_no, value);
         }
 
-        private string _eg_contact_relation;
-        public string eg_contact_relation
+        private string _emergency_contact_relation;
+        public string emergency_contact_relation
         {
-            get => _eg_contact_relation;
-            set => Set(ref _eg_contact_relation, value);
+            get => _emergency_contact_relation;
+            set => Set(ref _emergency_contact_relation, value);
         }
 
         private string _memo;
