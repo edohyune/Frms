@@ -30,10 +30,10 @@
         {
             ucSplit1 = new Ctrls.UCSplit();
             ucPanel1 = new Ctrls.UCPanel();
-            frmDt = new Ctrls.UCDateBox();
-            toDt = new Ctrls.UCDateBox();
+            s_emp_status = new Ctrls.UCChkCodeBox();
             s_applicant_id = new Ctrls.UCTextBox();
-            ucChkCodeBox1 = new Ctrls.UCChkCodeBox();
+            toDt = new Ctrls.UCDateBox();
+            frmDt = new Ctrls.UCDateBox();
             g10 = new Ctrls.UCGridSet();
             ((System.ComponentModel.ISupportInitialize)ucSplit1).BeginInit();
             ucSplit1.Panel1.SuspendLayout();
@@ -65,7 +65,7 @@
             // 
             // ucPanel1
             // 
-            ucPanel1.Controls.Add(ucChkCodeBox1);
+            ucPanel1.Controls.Add(s_emp_status);
             ucPanel1.Controls.Add(s_applicant_id);
             ucPanel1.Controls.Add(toDt);
             ucPanel1.Controls.Add(frmDt);
@@ -76,23 +76,37 @@
             ucPanel1.TabIndex = 0;
             ucPanel1.Text = "Applicant Resource Report";
             // 
-            // frmDt
+            // s_emp_status
             // 
-            frmDt.ControlHeight = 21;
-            frmDt.ControlWidth = 200;
-            frmDt.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            frmDt.FontColor = Color.Black;
-            frmDt.FontFace = "Tahoma";
-            frmDt.FontSize = 9F;
-            frmDt.FormatStr = "";
-            frmDt.Location = new Point(5, 26);
-            frmDt.Name = "frmDt";
-            frmDt.Size = new Size(200, 21);
-            frmDt.TabIndex = 0;
-            frmDt.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            frmDt.Title = "Apply Date";
-            frmDt.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            frmDt.TitleWidth = 100;
+            s_emp_status.ControlHeight = 21;
+            s_emp_status.ControlWidth = 212;
+            s_emp_status.FontFace = "Tahoma";
+            s_emp_status.FontSize = 9F;
+            s_emp_status.Location = new Point(600, 26);
+            s_emp_status.Name = "s_emp_status";
+            s_emp_status.Size = new Size(212, 21);
+            s_emp_status.TabIndex = 2;
+            s_emp_status.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            s_emp_status.Title = "Employee Status";
+            s_emp_status.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            s_emp_status.TitleWidth = 100;
+            // 
+            // s_applicant_id
+            // 
+            s_applicant_id.ControlHeight = 21;
+            s_applicant_id.ControlWidth = 200;
+            s_applicant_id.FontColor = Color.Black;
+            s_applicant_id.FontFace = "Tahoma";
+            s_applicant_id.FontSize = 9F;
+            s_applicant_id.FormatStr = "";
+            s_applicant_id.Location = new Point(394, 26);
+            s_applicant_id.Name = "s_applicant_id";
+            s_applicant_id.Size = new Size(200, 21);
+            s_applicant_id.TabIndex = 1;
+            s_applicant_id.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            s_applicant_id.Title = "Applicant";
+            s_applicant_id.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            s_applicant_id.TitleWidth = 100;
             // 
             // toDt
             // 
@@ -112,37 +126,23 @@
             toDt.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
             toDt.TitleWidth = 60;
             // 
-            // s_applicant_id
+            // frmDt
             // 
-            s_applicant_id.ControlHeight = 21;
-            s_applicant_id.ControlWidth = 200;
-            s_applicant_id.FontColor = Color.Black;
-            s_applicant_id.FontFace = "Tahoma";
-            s_applicant_id.FontSize = 9F;
-            s_applicant_id.FormatStr = "";
-            s_applicant_id.Location = new Point(394, 26);
-            s_applicant_id.Name = "s_applicant_id";
-            s_applicant_id.Size = new Size(200, 21);
-            s_applicant_id.TabIndex = 1;
-            s_applicant_id.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            s_applicant_id.Title = "Applicant";
-            s_applicant_id.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            s_applicant_id.TitleWidth = 100;
-            // 
-            // ucChkCodeBox1
-            // 
-            ucChkCodeBox1.ControlHeight = 21;
-            ucChkCodeBox1.ControlWidth = 212;
-            ucChkCodeBox1.FontFace = "Tahoma";
-            ucChkCodeBox1.FontSize = 9F;
-            ucChkCodeBox1.Location = new Point(600, 26);
-            ucChkCodeBox1.Name = "ucChkCodeBox1";
-            ucChkCodeBox1.Size = new Size(212, 21);
-            ucChkCodeBox1.TabIndex = 2;
-            ucChkCodeBox1.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucChkCodeBox1.Title = "Employee Status";
-            ucChkCodeBox1.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            ucChkCodeBox1.TitleWidth = 100;
+            frmDt.ControlHeight = 21;
+            frmDt.ControlWidth = 200;
+            frmDt.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            frmDt.FontColor = Color.Black;
+            frmDt.FontFace = "Tahoma";
+            frmDt.FontSize = 9F;
+            frmDt.FormatStr = "";
+            frmDt.Location = new Point(5, 26);
+            frmDt.Name = "frmDt";
+            frmDt.Size = new Size(200, 21);
+            frmDt.TabIndex = 0;
+            frmDt.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            frmDt.Title = "Apply Date";
+            frmDt.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            frmDt.TitleWidth = 100;
             // 
             // g10
             // 
@@ -172,7 +172,7 @@
 
         private Ctrls.UCSplit ucSplit1;
         private Ctrls.UCPanel ucPanel1;
-        private Ctrls.UCChkCodeBox ucChkCodeBox1;
+        private Ctrls.UCChkCodeBox s_emp_status;
         private Ctrls.UCTextBox s_applicant_id;
         private Ctrls.UCDateBox toDt;
         private Ctrls.UCDateBox frmDt;

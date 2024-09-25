@@ -30,10 +30,10 @@
         {
             ucSplit1 = new Ctrls.UCSplit();
             ucPanel1 = new Ctrls.UCPanel();
-            s_emp_status = new Ctrls.UCCodeBox();
-            frwk = new Ctrls.UCTextBox();
+            s_emp_status = new Ctrls.UCChkCodeBox();
             frmdt = new Ctrls.UCDateBox();
             g10 = new Ctrls.UCGridSet();
+            frwk = new Ctrls.UCCodeBox();
             ((System.ComponentModel.ISupportInitialize)ucSplit1).BeginInit();
             ucSplit1.Panel1.SuspendLayout();
             ucSplit1.Panel2.SuspendLayout();
@@ -64,8 +64,8 @@
             // 
             // ucPanel1
             // 
-            ucPanel1.Controls.Add(s_emp_status);
             ucPanel1.Controls.Add(frwk);
+            ucPanel1.Controls.Add(s_emp_status);
             ucPanel1.Controls.Add(frmdt);
             ucPanel1.Dock = DockStyle.Fill;
             ucPanel1.Location = new Point(0, 0);
@@ -76,41 +76,18 @@
             // 
             // s_emp_status
             // 
-            s_emp_status.Appearance.Font = new Font("Tahoma", 9F);
-            s_emp_status.Appearance.Options.UseFont = true;
             s_emp_status.ControlHeight = 21;
-            s_emp_status.ControlWidth = 207;
-            s_emp_status.FldTy = null;
-            s_emp_status.FontColor = Color.Black;
+            s_emp_status.ControlWidth = 219;
             s_emp_status.FontFace = "Tahoma";
             s_emp_status.FontSize = 9F;
-            s_emp_status.Location = new Point(220, 26);
+            s_emp_status.Location = new Point(211, 26);
             s_emp_status.Name = "s_emp_status";
-            s_emp_status.Size = new Size(207, 21);
+            s_emp_status.Size = new Size(219, 21);
             s_emp_status.TabIndex = 2;
             s_emp_status.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
             s_emp_status.Title = "Employee Status";
-            s_emp_status.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            s_emp_status.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
             s_emp_status.TitleWidth = 100;
-            // 
-            // frwk
-            // 
-            frwk.Appearance.Font = new Font("Tahoma", 9F);
-            frwk.Appearance.Options.UseFont = true;
-            frwk.ControlHeight = 21;
-            frwk.ControlWidth = 200;
-            frwk.FontColor = Color.Black;
-            frwk.FontFace = "Tahoma";
-            frwk.FontSize = 9F;
-            frwk.FormatStr = "";
-            frwk.Location = new Point(5, 48);
-            frwk.Name = "frwk";
-            frwk.Size = new Size(200, 21);
-            frwk.TabIndex = 1;
-            frwk.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            frwk.Title = "Week";
-            frwk.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            frwk.TitleWidth = 100;
             // 
             // frmdt
             // 
@@ -138,6 +115,23 @@
             g10.Size = new Size(1414, 480);
             g10.TabIndex = 0;
             // 
+            // frwk
+            // 
+            frwk.ControlHeight = 21;
+            frwk.ControlWidth = 200;
+            frwk.FldTy = null;
+            frwk.FontColor = Color.Black;
+            frwk.FontFace = "Tahoma";
+            frwk.FontSize = 9F;
+            frwk.Location = new Point(5, 48);
+            frwk.Name = "frwk";
+            frwk.Size = new Size(200, 21);
+            frwk.TabIndex = 3;
+            frwk.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            frwk.Title = "Week";
+            frwk.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            frwk.TitleWidth = 100;
+            // 
             // HT100
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -158,9 +152,9 @@
 
         private Ctrls.UCSplit ucSplit1;
         private Ctrls.UCPanel ucPanel1;
-        private Ctrls.UCCodeBox s_emp_status;
-        private Ctrls.UCTextBox frwk;
         private Ctrls.UCDateBox frmdt;
         private Ctrls.UCGridSet g10;
+        private Ctrls.UCChkCodeBox s_emp_status;
+        private Ctrls.UCCodeBox frwk;
     }
 }
