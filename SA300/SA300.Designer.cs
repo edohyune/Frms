@@ -64,6 +64,7 @@
             // ucSplit1
             // 
             ucSplit1.Dock = DockStyle.Fill;
+            ucSplit1.FixedPanel = FixedPanel.Panel1;
             ucSplit1.Location = new Point(0, 0);
             ucSplit1.Name = "ucSplit1";
             // 
@@ -75,7 +76,7 @@
             // 
             ucSplit1.Panel2.Controls.Add(ucSplit3);
             ucSplit1.Size = new Size(1316, 844);
-            ucSplit1.SplitterDistance = 301;
+            ucSplit1.SplitterDistance = 345;
             ucSplit1.TabIndex = 0;
             ucSplit1.TitleWidth = 121;
             // 
@@ -94,7 +95,7 @@
             // ucSplit2.Panel2
             // 
             ucSplit2.Panel2.Controls.Add(g10);
-            ucSplit2.Size = new Size(301, 844);
+            ucSplit2.Size = new Size(345, 844);
             ucSplit2.SplitterDistance = 136;
             ucSplit2.TabIndex = 0;
             ucSplit2.TitleWidth = 121;
@@ -107,7 +108,7 @@
             ucPanel1.Dock = DockStyle.Fill;
             ucPanel1.Location = new Point(0, 0);
             ucPanel1.Name = "ucPanel1";
-            ucPanel1.Size = new Size(301, 136);
+            ucPanel1.Size = new Size(345, 136);
             ucPanel1.TabIndex = 0;
             ucPanel1.Text = "Search";
             // 
@@ -171,7 +172,7 @@
             g10.Dock = DockStyle.Fill;
             g10.Location = new Point(0, 0);
             g10.Name = "g10";
-            g10.Size = new Size(301, 704);
+            g10.Size = new Size(345, 704);
             g10.TabIndex = 0;
             // 
             // ucSplit3
@@ -189,7 +190,7 @@
             // ucSplit3.Panel2
             // 
             ucSplit3.Panel2.Controls.Add(g20);
-            ucSplit3.Size = new Size(1011, 844);
+            ucSplit3.Size = new Size(967, 844);
             ucSplit3.SplitterDistance = 135;
             ucSplit3.TabIndex = 0;
             ucSplit3.TitleWidth = 121;
@@ -204,7 +205,7 @@
             ucPanel2.Dock = DockStyle.Fill;
             ucPanel2.Location = new Point(0, 0);
             ucPanel2.Name = "ucPanel2";
-            ucPanel2.Size = new Size(1011, 135);
+            ucPanel2.Size = new Size(967, 135);
             ucPanel2.TabIndex = 1;
             ucPanel2.Text = "Template Info";
             // 
@@ -304,7 +305,7 @@
             g20.Dock = DockStyle.Fill;
             g20.Location = new Point(0, 0);
             g20.Name = "g20";
-            g20.Size = new Size(1011, 705);
+            g20.Size = new Size(967, 705);
             g20.TabIndex = 1;
             // 
             // SA300
