@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SO201P\SO201P.csproj" />
+    <ProjectReference Include="..\SP170\SP170.csproj" />
   </ItemGroup>
 
   <ItemGroup>

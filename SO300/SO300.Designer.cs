@@ -41,12 +41,11 @@
             g10 = new Ctrls.UCGridSet();
             ucSplit3 = new Ctrls.UCSplit();
             ucPanel2 = new Ctrls.UCPanel();
-            ucCheckBox4 = new Ctrls.UCCheckBox();
-            ucCheckBox3 = new Ctrls.UCCheckBox();
-            ucCheckBox2 = new Ctrls.UCCheckBox();
-            ucCheckBox1 = new Ctrls.UCCheckBox();
-            note = new Ctrls.UCRichText();
-            label3 = new Label();
+            note = new Ctrls.UCNote();
+            sr_guarantee_na = new Ctrls.UCCheckBox();
+            sr_guarantee_retention = new Ctrls.UCCheckBox();
+            sr_performance_bond = new Ctrls.UCCheckBox();
+            sr_guarantee_bank = new Ctrls.UCCheckBox();
             btn_getdata = new Ctrls.UCButton();
             label2 = new Label();
             sr_mesurement_type = new Ctrls.UCCodeBox();
@@ -94,7 +93,9 @@
             g20 = new Ctrls.UCGridSet();
             xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
             cuFtp = new Ctrls.UCGridSet();
-            s_currency = new Ctrls.UCCodeBox();
+            label1 = new Label();
+            label3 = new Label();
+            label4 = new Label();
             ((System.ComponentModel.ISupportInitialize)ucSplit1).BeginInit();
             ucSplit1.Panel1.SuspendLayout();
             ucSplit1.Panel2.SuspendLayout();
@@ -146,7 +147,6 @@
             ucPanel1.Controls.Add(f_invoice_no);
             ucPanel1.Controls.Add(to_dt);
             ucPanel1.Controls.Add(fr_dt);
-            ucPanel1.Controls.Add(s_currency);
             ucPanel1.Dock = DockStyle.Fill;
             ucPanel1.Location = new Point(0, 0);
             ucPanel1.Name = "ucPanel1";
@@ -320,13 +320,15 @@
             // 
             // ucPanel2
             // 
-            ucPanel2.Controls.Add(ucCheckBox4);
-            ucPanel2.Controls.Add(ucCheckBox3);
-            ucPanel2.Controls.Add(ucCheckBox2);
-            ucPanel2.Controls.Add(ucCheckBox1);
             ucPanel2.Controls.Add(note);
-            ucPanel2.Controls.Add(label3);
+            ucPanel2.Controls.Add(sr_guarantee_na);
+            ucPanel2.Controls.Add(sr_guarantee_retention);
+            ucPanel2.Controls.Add(sr_performance_bond);
+            ucPanel2.Controls.Add(sr_guarantee_bank);
             ucPanel2.Controls.Add(btn_getdata);
+            ucPanel2.Controls.Add(label4);
+            ucPanel2.Controls.Add(label3);
+            ucPanel2.Controls.Add(label1);
             ucPanel2.Controls.Add(label2);
             ucPanel2.Controls.Add(sr_mesurement_type);
             ucPanel2.Controls.Add(sr_contract_type);
@@ -375,93 +377,85 @@
             ucPanel2.TabIndex = 0;
             ucPanel2.Text = "Service Invoice Info";
             // 
-            // ucCheckBox4
-            // 
-            ucCheckBox4.Checked = false;
-            ucCheckBox4.ControlHeight = 21;
-            ucCheckBox4.ControlWidth = 117;
-            ucCheckBox4.FontColor = Color.Black;
-            ucCheckBox4.FontFace = "Tahoma";
-            ucCheckBox4.FontSize = 9F;
-            ucCheckBox4.Location = new Point(647, 282);
-            ucCheckBox4.Name = "ucCheckBox4";
-            ucCheckBox4.Size = new Size(117, 21);
-            ucCheckBox4.TabIndex = 47;
-            ucCheckBox4.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucCheckBox4.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            // 
-            // ucCheckBox3
-            // 
-            ucCheckBox3.Checked = false;
-            ucCheckBox3.ControlHeight = 21;
-            ucCheckBox3.ControlWidth = 117;
-            ucCheckBox3.FontColor = Color.Black;
-            ucCheckBox3.FontFace = "Tahoma";
-            ucCheckBox3.FontSize = 9F;
-            ucCheckBox3.Location = new Point(471, 282);
-            ucCheckBox3.Name = "ucCheckBox3";
-            ucCheckBox3.Size = new Size(117, 21);
-            ucCheckBox3.TabIndex = 47;
-            ucCheckBox3.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucCheckBox3.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            // 
-            // ucCheckBox2
-            // 
-            ucCheckBox2.Checked = false;
-            ucCheckBox2.ControlHeight = 21;
-            ucCheckBox2.ControlWidth = 117;
-            ucCheckBox2.FontColor = Color.Black;
-            ucCheckBox2.FontFace = "Tahoma";
-            ucCheckBox2.FontSize = 9F;
-            ucCheckBox2.Location = new Point(294, 282);
-            ucCheckBox2.Name = "ucCheckBox2";
-            ucCheckBox2.Size = new Size(117, 21);
-            ucCheckBox2.TabIndex = 47;
-            ucCheckBox2.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucCheckBox2.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            // 
-            // ucCheckBox1
-            // 
-            ucCheckBox1.Checked = false;
-            ucCheckBox1.ControlHeight = 21;
-            ucCheckBox1.ControlWidth = 117;
-            ucCheckBox1.FontColor = Color.Black;
-            ucCheckBox1.FontFace = "Tahoma";
-            ucCheckBox1.FontSize = 9F;
-            ucCheckBox1.Location = new Point(106, 282);
-            ucCheckBox1.Name = "ucCheckBox1";
-            ucCheckBox1.Size = new Size(117, 21);
-            ucCheckBox1.TabIndex = 47;
-            ucCheckBox1.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucCheckBox1.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            // 
             // note
             // 
-            note.ActiveViewType = DevExpress.XtraRichEdit.RichEditViewType.Simple;
-            note.Appearance.Text.Font = new Font("Cascadia Code Light", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            note.Appearance.Text.Options.UseFont = true;
-            note.LayoutUnit = DevExpress.XtraRichEdit.DocumentLayoutUnit.Pixel;
-            note.Location = new Point(106, 212);
-            note.Modified = true;
+            note.ControlHeight = 39;
+            note.ControlWidth = 754;
+            note.FontColor = Color.Black;
+            note.FontFace = "Tahoma";
+            note.FontSize = 9F;
+            note.Location = new Point(5, 212);
             note.Name = "note";
-            note.Options.DocumentSaveOptions.CurrentFormat = DevExpress.XtraRichEdit.DocumentFormat.PlainText;
-            note.Options.DocumentSaveOptions.DefaultFormat = DevExpress.XtraRichEdit.DocumentFormat.PlainText;
-            note.Options.HorizontalRuler.Visibility = DevExpress.XtraRichEdit.RichEditRulerVisibility.Hidden;
-            note.Options.Search.RegExResultMaxGuaranteedLength = 1000;
-            note.Padding = new Padding(50, 0, 0, 0);
-            note.Size = new Size(652, 37);
-            note.TabIndex = 45;
-            note.Views.SimpleView.AllowDisplayLineNumbers = true;
+            note.Size = new Size(754, 39);
+            note.TabIndex = 48;
+            note.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            note.Title = "Note";
+            note.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            note.TitleWidth = 97;
             // 
-            // label3
+            // sr_guarantee_na
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(5, 223);
-            label3.Name = "label3";
-            label3.Size = new Size(40, 14);
-            label3.TabIndex = 46;
-            label3.Text = "Memo";
+            sr_guarantee_na.Checked = false;
+            sr_guarantee_na.ControlHeight = 21;
+            sr_guarantee_na.ControlWidth = 109;
+            sr_guarantee_na.FontColor = Color.Black;
+            sr_guarantee_na.FontFace = "Tahoma";
+            sr_guarantee_na.FontSize = 9F;
+            sr_guarantee_na.Location = new Point(650, 282);
+            sr_guarantee_na.Name = "sr_guarantee_na";
+            sr_guarantee_na.Size = new Size(109, 21);
+            sr_guarantee_na.TabIndex = 47;
+            sr_guarantee_na.Text = "Not Applicable";
+            sr_guarantee_na.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            sr_guarantee_na.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            // 
+            // sr_guarantee_retention
+            // 
+            sr_guarantee_retention.Checked = false;
+            sr_guarantee_retention.ControlHeight = 21;
+            sr_guarantee_retention.ControlWidth = 81;
+            sr_guarantee_retention.FontColor = Color.Black;
+            sr_guarantee_retention.FontFace = "Tahoma";
+            sr_guarantee_retention.FontSize = 9F;
+            sr_guarantee_retention.Location = new Point(503, 282);
+            sr_guarantee_retention.Name = "sr_guarantee_retention";
+            sr_guarantee_retention.Size = new Size(81, 21);
+            sr_guarantee_retention.TabIndex = 47;
+            sr_guarantee_retention.Text = "Retention";
+            sr_guarantee_retention.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            sr_guarantee_retention.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            // 
+            // sr_performance_bond
+            // 
+            sr_performance_bond.Checked = false;
+            sr_performance_bond.ControlHeight = 21;
+            sr_performance_bond.ControlWidth = 129;
+            sr_performance_bond.FontColor = Color.Black;
+            sr_performance_bond.FontFace = "Tahoma";
+            sr_performance_bond.FontSize = 9F;
+            sr_performance_bond.Location = new Point(294, 282);
+            sr_performance_bond.Name = "sr_performance_bond";
+            sr_performance_bond.Size = new Size(129, 21);
+            sr_performance_bond.TabIndex = 47;
+            sr_performance_bond.Text = "Performance Bond";
+            sr_performance_bond.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            sr_performance_bond.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            // 
+            // sr_guarantee_bank
+            // 
+            sr_guarantee_bank.Checked = false;
+            sr_guarantee_bank.ControlHeight = 21;
+            sr_guarantee_bank.ControlWidth = 108;
+            sr_guarantee_bank.FontColor = Color.Black;
+            sr_guarantee_bank.FontFace = "Tahoma";
+            sr_guarantee_bank.FontSize = 9F;
+            sr_guarantee_bank.Location = new Point(106, 282);
+            sr_guarantee_bank.Name = "sr_guarantee_bank";
+            sr_guarantee_bank.Size = new Size(108, 21);
+            sr_guarantee_bank.TabIndex = 47;
+            sr_guarantee_bank.Text = "Bank Guarantee";
+            sr_guarantee_bank.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            sr_guarantee_bank.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
             // 
             // btn_getdata
             // 
@@ -481,6 +475,7 @@
             btn_getdata.TabIndex = 30;
             btn_getdata.Title = "Get SO";
             btn_getdata.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            btn_getdata.Click += btn_getdata_Click;
             // 
             // label2
             // 
@@ -529,14 +524,14 @@
             // ucTextBox1
             // 
             ucTextBox1.ControlHeight = 21;
-            ucTextBox1.ControlWidth = 51;
+            ucTextBox1.ControlWidth = 41;
             ucTextBox1.FontColor = Color.Black;
             ucTextBox1.FontFace = "Tahoma";
             ucTextBox1.FontSize = 9F;
             ucTextBox1.FormatStr = "";
-            ucTextBox1.Location = new Point(590, 282);
+            ucTextBox1.Location = new Point(584, 282);
             ucTextBox1.Name = "ucTextBox1";
-            ucTextBox1.Size = new Size(51, 21);
+            ucTextBox1.Size = new Size(41, 21);
             ucTextBox1.TabIndex = 20;
             ucTextBox1.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
             ucTextBox1.Title = "UCTextBox";
@@ -551,7 +546,7 @@
             ucTextBox5.FontFace = "Tahoma";
             ucTextBox5.FontSize = 9F;
             ucTextBox5.FormatStr = "";
-            ucTextBox5.Location = new Point(417, 282);
+            ucTextBox5.Location = new Point(429, 282);
             ucTextBox5.Name = "ucTextBox5";
             ucTextBox5.Size = new Size(47, 21);
             ucTextBox5.TabIndex = 21;
@@ -563,14 +558,14 @@
             // ucTextBox6
             // 
             ucTextBox6.ControlHeight = 21;
-            ucTextBox6.ControlWidth = 59;
+            ucTextBox6.ControlWidth = 41;
             ucTextBox6.FontColor = Color.Black;
             ucTextBox6.FontFace = "Tahoma";
             ucTextBox6.FontSize = 9F;
             ucTextBox6.FormatStr = "";
-            ucTextBox6.Location = new Point(229, 282);
+            ucTextBox6.Location = new Point(220, 282);
             ucTextBox6.Name = "ucTextBox6";
-            ucTextBox6.Size = new Size(59, 21);
+            ucTextBox6.Size = new Size(41, 21);
             ucTextBox6.TabIndex = 22;
             ucTextBox6.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
             ucTextBox6.Title = "UCTextBox";
@@ -1214,22 +1209,35 @@
             cuFtp.Size = new Size(1180, 359);
             cuFtp.TabIndex = 0;
             // 
-            // s_currency
+            // label1
             // 
-            s_currency.ControlHeight = 21;
-            s_currency.ControlWidth = 248;
-            s_currency.FldTy = null;
-            s_currency.FontColor = Color.Black;
-            s_currency.FontFace = "Tahoma";
-            s_currency.FontSize = 9F;
-            s_currency.Location = new Point(840, 29);
-            s_currency.Name = "s_currency";
-            s_currency.Size = new Size(248, 21);
-            s_currency.TabIndex = 15;
-            s_currency.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            s_currency.Title = "Currency";
-            s_currency.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            s_currency.TitleWidth = 100;
+            label1.AutoSize = true;
+            label1.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(267, 285);
+            label1.Name = "label1";
+            label1.Size = new Size(19, 14);
+            label1.TabIndex = 29;
+            label1.Text = "%";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Location = new Point(482, 285);
+            label3.Name = "label3";
+            label3.Size = new Size(19, 14);
+            label3.TabIndex = 29;
+            label3.Text = "%";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label4.Location = new Point(627, 285);
+            label4.Name = "label4";
+            label4.Size = new Size(19, 14);
+            label4.TabIndex = 29;
+            label4.Text = "%";
             // 
             // SO300
             // 
@@ -1327,12 +1335,13 @@
         private EpicV004.Ctrls.UCTextBox tax_invoice_no;
         private EpicV004.Ctrls.UCTextBox ivc_paidAmount;
         private EpicV004.Ctrls.UCTextBox ivc_sumRetention;
-        private Ctrls.UCRichText note;
+        private Ctrls.UCCheckBox sr_guarantee_bank;
+        private Ctrls.UCCheckBox sr_guarantee_na;
+        private Ctrls.UCCheckBox sr_guarantee_retention;
+        private Ctrls.UCCheckBox sr_performance_bond;
+        private Ctrls.UCNote note;
+        private Label label1;
+        private Label label4;
         private Label label3;
-        private Ctrls.UCCheckBox ucCheckBox1;
-        private Ctrls.UCCheckBox ucCheckBox4;
-        private Ctrls.UCCheckBox ucCheckBox3;
-        private Ctrls.UCCheckBox ucCheckBox2;
-        private Ctrls.UCCodeBox s_currency;
     }
 }
