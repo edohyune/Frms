@@ -40,7 +40,7 @@ namespace EpicV004.Frms
             f_to_dt = new Ctrls.UCDateBox();
             f_fr_dt = new Ctrls.UCDateBox();
             ucSplit2 = new Ctrls.UCSplit();
-            g10 = new Ctrls.UCGridSet();
+            g00 = new Ctrls.UCGridSet();
             ucSplit3 = new Ctrls.UCSplit();
             ucPanel2 = new Ctrls.UCPanel();
             close_yn = new Ctrls.UCCheckBox();
@@ -64,15 +64,15 @@ namespace EpicV004.Frms
             period_fr = new Ctrls.UCDateBox();
             project_date = new Ctrls.UCDateBox();
             project_no = new Ctrls.UCTextBox();
-            memo = new Ctrls.UCRichText();
             ucSplit4 = new Ctrls.UCSplit();
-            g20 = new Ctrls.UCGridSet();
+            g10 = new Ctrls.UCGridSet();
             ucSplit5 = new Ctrls.UCSplit();
             ucPanel3 = new Ctrls.UCPanel();
             btn_gbc = new Ctrls.UCButton();
             int_status = new Ctrls.UCCodeBox();
             dept = new Ctrls.UCCodeBox();
-            g30 = new Ctrls.UCGridSet();
+            g20 = new Ctrls.UCGridSet();
+            memo = new Ctrls.UCNote();
             ((System.ComponentModel.ISupportInitialize)ucSplit1).BeginInit();
             ucSplit1.Panel1.SuspendLayout();
             ucSplit1.Panel2.SuspendLayout();
@@ -151,6 +151,7 @@ namespace EpicV004.Frms
             f_close_yn.Name = "f_close_yn";
             f_close_yn.Size = new Size(127, 21);
             f_close_yn.TabIndex = 11;
+            f_close_yn.Text = "Include Close";
             f_close_yn.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
             f_close_yn.TitleAlignment = DevExpress.Utils.HorzAlignment.Far;
             // 
@@ -300,7 +301,7 @@ namespace EpicV004.Frms
             // 
             // ucSplit2.Panel1
             // 
-            ucSplit2.Panel1.Controls.Add(g10);
+            ucSplit2.Panel1.Controls.Add(g00);
             // 
             // ucSplit2.Panel2
             // 
@@ -310,13 +311,13 @@ namespace EpicV004.Frms
             ucSplit2.TabIndex = 0;
             ucSplit2.TitleWidth = 121;
             // 
-            // g10
+            // g00
             // 
-            g10.Dock = DockStyle.Fill;
-            g10.Location = new Point(0, 0);
-            g10.Name = "g10";
-            g10.Size = new Size(376, 575);
-            g10.TabIndex = 0;
+            g00.Dock = DockStyle.Fill;
+            g00.Location = new Point(0, 0);
+            g00.Name = "g00";
+            g00.Size = new Size(376, 575);
+            g00.TabIndex = 0;
             // 
             // ucSplit3
             // 
@@ -340,6 +341,7 @@ namespace EpicV004.Frms
             // 
             // ucPanel2
             // 
+            ucPanel2.Controls.Add(memo);
             ucPanel2.Controls.Add(close_yn);
             ucPanel2.Controls.Add(status);
             ucPanel2.Controls.Add(contract_total);
@@ -361,7 +363,6 @@ namespace EpicV004.Frms
             ucPanel2.Controls.Add(period_fr);
             ucPanel2.Controls.Add(project_date);
             ucPanel2.Controls.Add(project_no);
-            ucPanel2.Controls.Add(memo);
             ucPanel2.Dock = DockStyle.Fill;
             ucPanel2.Location = new Point(0, 0);
             ucPanel2.Name = "ucPanel2";
@@ -380,6 +381,7 @@ namespace EpicV004.Frms
             close_yn.Name = "close_yn";
             close_yn.Size = new Size(109, 18);
             close_yn.TabIndex = 26;
+            close_yn.Text = "Close";
             close_yn.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
             close_yn.TitleAlignment = DevExpress.Utils.HorzAlignment.Far;
             // 
@@ -750,24 +752,6 @@ namespace EpicV004.Frms
             project_no.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
             project_no.TitleWidth = 100;
             // 
-            // memo
-            // 
-            memo.ActiveViewType = DevExpress.XtraRichEdit.RichEditViewType.Simple;
-            memo.Appearance.Text.Font = new Font("Cascadia Code Light", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            memo.Appearance.Text.Options.UseFont = true;
-            memo.LayoutUnit = DevExpress.XtraRichEdit.DocumentLayoutUnit.Pixel;
-            memo.Location = new Point(106, 119);
-            memo.Modified = true;
-            memo.Name = "memo";
-            memo.Options.DocumentSaveOptions.CurrentFormat = DevExpress.XtraRichEdit.DocumentFormat.PlainText;
-            memo.Options.DocumentSaveOptions.DefaultFormat = DevExpress.XtraRichEdit.DocumentFormat.PlainText;
-            memo.Options.HorizontalRuler.Visibility = DevExpress.XtraRichEdit.RichEditRulerVisibility.Hidden;
-            memo.Options.Search.RegExResultMaxGuaranteedLength = 1000;
-            memo.Padding = new Padding(50, 0, 0, 0);
-            memo.Size = new Size(1004, 32);
-            memo.TabIndex = 3;
-            memo.Views.SimpleView.AllowDisplayLineNumbers = true;
-            // 
             // ucSplit4
             // 
             ucSplit4.Dock = DockStyle.Fill;
@@ -776,7 +760,7 @@ namespace EpicV004.Frms
             // 
             // ucSplit4.Panel1
             // 
-            ucSplit4.Panel1.Controls.Add(g20);
+            ucSplit4.Panel1.Controls.Add(g10);
             // 
             // ucSplit4.Panel2
             // 
@@ -786,13 +770,13 @@ namespace EpicV004.Frms
             ucSplit4.TabIndex = 0;
             ucSplit4.TitleWidth = 121;
             // 
-            // g20
+            // g10
             // 
-            g20.Dock = DockStyle.Fill;
-            g20.Location = new Point(0, 0);
-            g20.Name = "g20";
-            g20.Size = new Size(321, 410);
-            g20.TabIndex = 1;
+            g10.Dock = DockStyle.Fill;
+            g10.Location = new Point(0, 0);
+            g10.Name = "g10";
+            g10.Size = new Size(321, 410);
+            g10.TabIndex = 1;
             // 
             // ucSplit5
             // 
@@ -808,7 +792,7 @@ namespace EpicV004.Frms
             // 
             // ucSplit5.Panel2
             // 
-            ucSplit5.Panel2.Controls.Add(g30);
+            ucSplit5.Panel2.Controls.Add(g20);
             ucSplit5.Size = new Size(913, 410);
             ucSplit5.SplitterDistance = 56;
             ucSplit5.TabIndex = 0;
@@ -879,13 +863,31 @@ namespace EpicV004.Frms
             dept.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
             dept.TitleWidth = 100;
             // 
-            // g30
+            // g20
             // 
-            g30.Dock = DockStyle.Fill;
-            g30.Location = new Point(0, 0);
-            g30.Name = "g30";
-            g30.Size = new Size(913, 350);
-            g30.TabIndex = 1;
+            g20.Dock = DockStyle.Fill;
+            g20.Location = new Point(0, 0);
+            g20.Name = "g20";
+            g20.Size = new Size(913, 350);
+            g20.TabIndex = 1;
+            // 
+            // memo
+            // 
+            memo.Appearance.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            memo.Appearance.Options.UseFont = true;
+            memo.ControlHeight = 35;
+            memo.ControlWidth = 1105;
+            memo.FontColor = Color.Black;
+            memo.FontFace = "Tahoma";
+            memo.FontSize = 9F;
+            memo.Location = new Point(5, 118);
+            memo.Name = "memo";
+            memo.Size = new Size(1105, 35);
+            memo.TabIndex = 27;
+            memo.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            memo.Title = "Memo";
+            memo.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            memo.TitleWidth = 97;
             // 
             // SA411
             // 
@@ -931,9 +933,8 @@ namespace EpicV004.Frms
         private Ctrls.UCPanel ucPanel1;
         private Ctrls.UCDateBox f_to_dt;
         private Ctrls.UCDateBox f_fr_dt;
-        private Ctrls.UCGridSet g10;
+        private Ctrls.UCGridSet g00;
         private Ctrls.UCPanel ucPanel2;
-        private Ctrls.UCRichText memo;
         private Ctrls.UCCheckBox f_close_yn;
         private Ctrls.UCChkCodeBox f_category;
         private Ctrls.UCChkCodeBox f_class;
@@ -963,12 +964,13 @@ namespace EpicV004.Frms
         private Ctrls.UCTextBox amount;
         private Ctrls.UCCheckBox close_yn;
         private Ctrls.UCSplit ucSplit4;
-        private Ctrls.UCGridSet g20;
+        private Ctrls.UCGridSet g10;
         private Ctrls.UCSplit ucSplit5;
         private Ctrls.UCPanel ucPanel3;
         private Ctrls.UCButton btn_gbc;
         private Ctrls.UCCodeBox int_status;
         private Ctrls.UCCodeBox dept;
-        private Ctrls.UCGridSet g30;
+        private Ctrls.UCGridSet g20;
+        private Ctrls.UCNote memo;
     }
 }

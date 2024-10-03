@@ -40,10 +40,12 @@ namespace EpicV004.Frms
             f_to_dt = new Ctrls.UCDateBox();
             f_fr_dt = new Ctrls.UCDateBox();
             ucSplit2 = new Ctrls.UCSplit();
-            g10 = new Ctrls.UCGridSet();
+            g00 = new Ctrls.UCGridSet();
             ucSplit3 = new Ctrls.UCSplit();
             ucPanel2 = new Ctrls.UCPanel();
-            remainning_amount = new Ctrls.UCTextBox();
+            buget_memo = new Ctrls.UCNote();
+            thb_equivalent = new Ctrls.UCTextBox();
+            remain_amount = new Ctrls.UCTextBox();
             total_project = new Ctrls.UCTextBox();
             co_amount = new Ctrls.UCTextBox();
             amend_amount = new Ctrls.UCTextBox();
@@ -57,14 +59,17 @@ namespace EpicV004.Frms
             currency = new Ctrls.UCCodeBox();
             project_name = new Ctrls.UCTextBox();
             project_manager_name = new Ctrls.UCTextBox();
-            Project_manager = new Ctrls.UCTextBox();
+            project_manager = new Ctrls.UCTextBox();
             category = new Ctrls.UCCodeBox();
             project_date = new Ctrls.UCDateBox();
             project_no = new Ctrls.UCTextBox();
-            budget_memo = new Ctrls.UCRichText();
             ucSplit4 = new Ctrls.UCSplit();
-            g20 = new Ctrls.UCGridSet();
+            g10 = new Ctrls.UCGridSet();
+            budget_memo = new Ctrls.UCTab();
+            xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
             ucPanel3 = new Ctrls.UCPanel();
+            memo = new Ctrls.UCNote();
+            invoice_description = new Ctrls.UCNote();
             ivc_status = new Ctrls.UCCodeBox();
             groupBox6 = new GroupBox();
             acc_retention = new Ctrls.UCTextBox();
@@ -97,22 +102,21 @@ namespace EpicV004.Frms
             cust_invoice_no = new Ctrls.UCTextBox();
             purchase_order_number = new Ctrls.UCTextBox();
             groupBox1 = new GroupBox();
-            ucTextBox5 = new Ctrls.UCTextBox();
+            bank_name = new Ctrls.UCTextBox();
             bank_acc_no = new Ctrls.UCTextBox();
             bank_address = new Ctrls.UCTextBox();
             bank = new Ctrls.UCTextBox();
             bjc_info = new Ctrls.UCTextBox();
-            ucCodeBox2 = new Ctrls.UCCodeBox();
+            payment_term = new Ctrls.UCCodeBox();
             ucCodeBox1 = new Ctrls.UCCodeBox();
             ucTextBox3 = new Ctrls.UCTextBox();
-            payment_term = new Ctrls.UCTextBox();
-            memo = new Ctrls.UCRichText();
-            invoice_description = new Ctrls.UCRichText();
+            payment_days = new Ctrls.UCTextBox();
             subject = new Ctrls.UCTextBox();
             due_date = new Ctrls.UCDateBox();
             invoice_date = new Ctrls.UCDateBox();
             invoice_no = new Ctrls.UCTextBox();
-            thb_equivalent = new Ctrls.UCTextBox();
+            xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
+            g20 = new Ctrls.UCGridSet();
             ((System.ComponentModel.ISupportInitialize)ucSplit1).BeginInit();
             ucSplit1.Panel1.SuspendLayout();
             ucSplit1.Panel2.SuspendLayout();
@@ -133,6 +137,9 @@ namespace EpicV004.Frms
             ucSplit4.Panel1.SuspendLayout();
             ucSplit4.Panel2.SuspendLayout();
             ucSplit4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)budget_memo).BeginInit();
+            budget_memo.SuspendLayout();
+            xtraTabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ucPanel3).BeginInit();
             ucPanel3.SuspendLayout();
             groupBox6.SuspendLayout();
@@ -141,6 +148,7 @@ namespace EpicV004.Frms
             groupBox3.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox1.SuspendLayout();
+            xtraTabPage2.SuspendLayout();
             SuspendLayout();
             // 
             // ucSplit1
@@ -193,6 +201,7 @@ namespace EpicV004.Frms
             f_close_yn.Name = "f_close_yn";
             f_close_yn.Size = new Size(127, 21);
             f_close_yn.TabIndex = 11;
+            f_close_yn.Text = "Close";
             f_close_yn.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
             f_close_yn.TitleAlignment = DevExpress.Utils.HorzAlignment.Far;
             // 
@@ -342,7 +351,7 @@ namespace EpicV004.Frms
             // 
             // ucSplit2.Panel1
             // 
-            ucSplit2.Panel1.Controls.Add(g10);
+            ucSplit2.Panel1.Controls.Add(g00);
             // 
             // ucSplit2.Panel2
             // 
@@ -352,13 +361,13 @@ namespace EpicV004.Frms
             ucSplit2.TabIndex = 0;
             ucSplit2.TitleWidth = 121;
             // 
-            // g10
+            // g00
             // 
-            g10.Dock = DockStyle.Fill;
-            g10.Location = new Point(0, 0);
-            g10.Name = "g10";
-            g10.Size = new Size(399, 693);
-            g10.TabIndex = 0;
+            g00.Dock = DockStyle.Fill;
+            g00.Location = new Point(0, 0);
+            g00.Name = "g00";
+            g00.Size = new Size(399, 693);
+            g00.TabIndex = 0;
             // 
             // ucSplit3
             // 
@@ -382,8 +391,9 @@ namespace EpicV004.Frms
             // 
             // ucPanel2
             // 
+            ucPanel2.Controls.Add(buget_memo);
             ucPanel2.Controls.Add(thb_equivalent);
-            ucPanel2.Controls.Add(remainning_amount);
+            ucPanel2.Controls.Add(remain_amount);
             ucPanel2.Controls.Add(total_project);
             ucPanel2.Controls.Add(co_amount);
             ucPanel2.Controls.Add(amend_amount);
@@ -397,35 +407,71 @@ namespace EpicV004.Frms
             ucPanel2.Controls.Add(currency);
             ucPanel2.Controls.Add(project_name);
             ucPanel2.Controls.Add(project_manager_name);
-            ucPanel2.Controls.Add(Project_manager);
+            ucPanel2.Controls.Add(project_manager);
             ucPanel2.Controls.Add(category);
             ucPanel2.Controls.Add(project_date);
             ucPanel2.Controls.Add(project_no);
-            ucPanel2.Controls.Add(budget_memo);
             ucPanel2.Dock = DockStyle.Fill;
             ucPanel2.Location = new Point(0, 0);
             ucPanel2.Name = "ucPanel2";
             ucPanel2.Size = new Size(1317, 161);
             ucPanel2.TabIndex = 1;
             // 
-            // remainning_amount
+            // buget_memo
             // 
-            remainning_amount.Appearance.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            remainning_amount.Appearance.Options.UseFont = true;
-            remainning_amount.ControlHeight = 21;
-            remainning_amount.ControlWidth = 224;
-            remainning_amount.FontColor = Color.Black;
-            remainning_amount.FontFace = "Tahoma";
-            remainning_amount.FontSize = 9F;
-            remainning_amount.FormatStr = "";
-            remainning_amount.Location = new Point(895, 48);
-            remainning_amount.Name = "remainning_amount";
-            remainning_amount.Size = new Size(224, 21);
-            remainning_amount.TabIndex = 33;
-            remainning_amount.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            remainning_amount.Title = "Remaining Amount";
-            remainning_amount.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            remainning_amount.TitleWidth = 110;
+            buget_memo.Appearance.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            buget_memo.Appearance.Options.UseFont = true;
+            buget_memo.ControlHeight = 37;
+            buget_memo.ControlWidth = 1113;
+            buget_memo.FontColor = Color.Black;
+            buget_memo.FontFace = "Tahoma";
+            buget_memo.FontSize = 9F;
+            buget_memo.Location = new Point(5, 119);
+            buget_memo.Name = "buget_memo";
+            buget_memo.Size = new Size(1113, 37);
+            buget_memo.TabIndex = 35;
+            buget_memo.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            buget_memo.Title = "Memo";
+            buget_memo.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            buget_memo.TitleWidth = 97;
+            // 
+            // thb_equivalent
+            // 
+            thb_equivalent.Appearance.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            thb_equivalent.Appearance.Options.UseFont = true;
+            thb_equivalent.ControlHeight = 21;
+            thb_equivalent.ControlWidth = 224;
+            thb_equivalent.FontColor = Color.Black;
+            thb_equivalent.FontFace = "Tahoma";
+            thb_equivalent.FontSize = 9F;
+            thb_equivalent.FormatStr = "";
+            thb_equivalent.Location = new Point(894, 70);
+            thb_equivalent.Name = "thb_equivalent";
+            thb_equivalent.Size = new Size(224, 21);
+            thb_equivalent.TabIndex = 34;
+            thb_equivalent.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            thb_equivalent.Title = "THB Equivalent";
+            thb_equivalent.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            thb_equivalent.TitleWidth = 110;
+            // 
+            // remain_amount
+            // 
+            remain_amount.Appearance.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            remain_amount.Appearance.Options.UseFont = true;
+            remain_amount.ControlHeight = 21;
+            remain_amount.ControlWidth = 224;
+            remain_amount.FontColor = Color.Black;
+            remain_amount.FontFace = "Tahoma";
+            remain_amount.FontSize = 9F;
+            remain_amount.FormatStr = "";
+            remain_amount.Location = new Point(895, 48);
+            remain_amount.Name = "remain_amount";
+            remain_amount.Size = new Size(224, 21);
+            remain_amount.TabIndex = 33;
+            remain_amount.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            remain_amount.Title = "Remaining Amount";
+            remain_amount.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            remain_amount.TitleWidth = 110;
             // 
             // total_project
             // 
@@ -670,24 +716,24 @@ namespace EpicV004.Frms
             project_manager_name.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
             project_manager_name.TitleWidth = 1;
             // 
-            // Project_manager
+            // project_manager
             // 
-            Project_manager.Appearance.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Project_manager.Appearance.Options.UseFont = true;
-            Project_manager.ControlHeight = 21;
-            Project_manager.ControlWidth = 226;
-            Project_manager.FontColor = Color.Black;
-            Project_manager.FontFace = "Tahoma";
-            Project_manager.FontSize = 9F;
-            Project_manager.FormatStr = "";
-            Project_manager.Location = new Point(5, 92);
-            Project_manager.Name = "Project_manager";
-            Project_manager.Size = new Size(226, 21);
-            Project_manager.TabIndex = 8;
-            Project_manager.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            Project_manager.Title = "Project Manager";
-            Project_manager.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            Project_manager.TitleWidth = 100;
+            project_manager.Appearance.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            project_manager.Appearance.Options.UseFont = true;
+            project_manager.ControlHeight = 21;
+            project_manager.ControlWidth = 226;
+            project_manager.FontColor = Color.Black;
+            project_manager.FontFace = "Tahoma";
+            project_manager.FontSize = 9F;
+            project_manager.FormatStr = "";
+            project_manager.Location = new Point(5, 92);
+            project_manager.Name = "project_manager";
+            project_manager.Size = new Size(226, 21);
+            project_manager.TabIndex = 8;
+            project_manager.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            project_manager.Title = "Project Manager";
+            project_manager.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            project_manager.TitleWidth = 100;
             // 
             // category
             // 
@@ -743,24 +789,6 @@ namespace EpicV004.Frms
             project_no.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
             project_no.TitleWidth = 100;
             // 
-            // budget_memo
-            // 
-            budget_memo.ActiveViewType = DevExpress.XtraRichEdit.RichEditViewType.Simple;
-            budget_memo.Appearance.Text.Font = new Font("Cascadia Code Light", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            budget_memo.Appearance.Text.Options.UseFont = true;
-            budget_memo.LayoutUnit = DevExpress.XtraRichEdit.DocumentLayoutUnit.Pixel;
-            budget_memo.Location = new Point(106, 119);
-            budget_memo.Modified = true;
-            budget_memo.Name = "budget_memo";
-            budget_memo.Options.DocumentSaveOptions.CurrentFormat = DevExpress.XtraRichEdit.DocumentFormat.PlainText;
-            budget_memo.Options.DocumentSaveOptions.DefaultFormat = DevExpress.XtraRichEdit.DocumentFormat.PlainText;
-            budget_memo.Options.HorizontalRuler.Visibility = DevExpress.XtraRichEdit.RichEditRulerVisibility.Hidden;
-            budget_memo.Options.Search.RegExResultMaxGuaranteedLength = 1000;
-            budget_memo.Padding = new Padding(50, 0, 0, 0);
-            budget_memo.Size = new Size(1013, 32);
-            budget_memo.TabIndex = 3;
-            budget_memo.Views.SimpleView.AllowDisplayLineNumbers = true;
-            // 
             // ucSplit4
             // 
             ucSplit4.Dock = DockStyle.Fill;
@@ -769,26 +797,46 @@ namespace EpicV004.Frms
             // 
             // ucSplit4.Panel1
             // 
-            ucSplit4.Panel1.Controls.Add(g20);
+            ucSplit4.Panel1.Controls.Add(g10);
             // 
             // ucSplit4.Panel2
             // 
-            ucSplit4.Panel2.Controls.Add(ucPanel3);
+            ucSplit4.Panel2.Controls.Add(budget_memo);
             ucSplit4.Size = new Size(1317, 528);
             ucSplit4.SplitterDistance = 341;
             ucSplit4.TabIndex = 0;
             ucSplit4.TitleWidth = 121;
             // 
-            // g20
+            // g10
             // 
-            g20.Dock = DockStyle.Fill;
-            g20.Location = new Point(0, 0);
-            g20.Name = "g20";
-            g20.Size = new Size(341, 528);
-            g20.TabIndex = 1;
+            g10.Dock = DockStyle.Fill;
+            g10.Location = new Point(0, 0);
+            g10.Name = "g10";
+            g10.Size = new Size(341, 528);
+            g10.TabIndex = 1;
+            // 
+            // budget_memo
+            // 
+            budget_memo.Dock = DockStyle.Fill;
+            budget_memo.Location = new Point(0, 0);
+            budget_memo.Name = "budget_memo";
+            budget_memo.SelectedTabPage = xtraTabPage1;
+            budget_memo.Size = new Size(972, 528);
+            budget_memo.TabIndex = 0;
+            budget_memo.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] { xtraTabPage1, xtraTabPage2 });
+            // 
+            // xtraTabPage1
+            // 
+            xtraTabPage1.Controls.Add(ucPanel3);
+            xtraTabPage1.Name = "xtraTabPage1";
+            xtraTabPage1.Size = new Size(970, 503);
+            xtraTabPage1.TabPageWidth = 100;
+            xtraTabPage1.Text = "Project Invoice Info";
             // 
             // ucPanel3
             // 
+            ucPanel3.Controls.Add(memo);
+            ucPanel3.Controls.Add(invoice_description);
             ucPanel3.Controls.Add(ivc_status);
             ucPanel3.Controls.Add(groupBox6);
             ucPanel3.Controls.Add(groupBox5);
@@ -796,12 +844,10 @@ namespace EpicV004.Frms
             ucPanel3.Controls.Add(groupBox3);
             ucPanel3.Controls.Add(groupBox2);
             ucPanel3.Controls.Add(groupBox1);
-            ucPanel3.Controls.Add(ucCodeBox2);
+            ucPanel3.Controls.Add(payment_term);
             ucPanel3.Controls.Add(ucCodeBox1);
             ucPanel3.Controls.Add(ucTextBox3);
-            ucPanel3.Controls.Add(payment_term);
-            ucPanel3.Controls.Add(memo);
-            ucPanel3.Controls.Add(invoice_description);
+            ucPanel3.Controls.Add(payment_days);
             ucPanel3.Controls.Add(subject);
             ucPanel3.Controls.Add(due_date);
             ucPanel3.Controls.Add(invoice_date);
@@ -809,9 +855,45 @@ namespace EpicV004.Frms
             ucPanel3.Dock = DockStyle.Fill;
             ucPanel3.Location = new Point(0, 0);
             ucPanel3.Name = "ucPanel3";
-            ucPanel3.Size = new Size(972, 528);
+            ucPanel3.Size = new Size(970, 503);
             ucPanel3.TabIndex = 0;
             ucPanel3.Text = "Incoice Info";
+            // 
+            // memo
+            // 
+            memo.Appearance.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            memo.Appearance.Options.UseFont = true;
+            memo.ControlHeight = 45;
+            memo.ControlWidth = 618;
+            memo.FontColor = Color.Black;
+            memo.FontFace = "Tahoma";
+            memo.FontSize = 9F;
+            memo.Location = new Point(3, 164);
+            memo.Name = "memo";
+            memo.Size = new Size(618, 45);
+            memo.TabIndex = 36;
+            memo.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            memo.Title = "Memo";
+            memo.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            memo.TitleWidth = 147;
+            // 
+            // invoice_description
+            // 
+            invoice_description.Appearance.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            invoice_description.Appearance.Options.UseFont = true;
+            invoice_description.ControlHeight = 44;
+            invoice_description.ControlWidth = 618;
+            invoice_description.FontColor = Color.Black;
+            invoice_description.FontFace = "Tahoma";
+            invoice_description.FontSize = 9F;
+            invoice_description.Location = new Point(5, 114);
+            invoice_description.Name = "invoice_description";
+            invoice_description.Size = new Size(618, 44);
+            invoice_description.TabIndex = 36;
+            invoice_description.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            invoice_description.Title = "Invoice Description";
+            invoice_description.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            invoice_description.TitleWidth = 147;
             // 
             // ivc_status
             // 
@@ -1362,7 +1444,7 @@ namespace EpicV004.Frms
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(ucTextBox5);
+            groupBox1.Controls.Add(bank_name);
             groupBox1.Controls.Add(bank_acc_no);
             groupBox1.Controls.Add(bank_address);
             groupBox1.Controls.Add(bank);
@@ -1375,24 +1457,24 @@ namespace EpicV004.Frms
             groupBox1.TabStop = false;
             groupBox1.Text = "* Beneficialry";
             // 
-            // ucTextBox5
+            // bank_name
             // 
-            ucTextBox5.Appearance.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ucTextBox5.Appearance.Options.UseFont = true;
-            ucTextBox5.ControlHeight = 21;
-            ucTextBox5.ControlWidth = 338;
-            ucTextBox5.FontColor = Color.Black;
-            ucTextBox5.FontFace = "Tahoma";
-            ucTextBox5.FontSize = 9F;
-            ucTextBox5.FormatStr = "";
-            ucTextBox5.Location = new Point(280, 42);
-            ucTextBox5.Name = "ucTextBox5";
-            ucTextBox5.Size = new Size(338, 21);
-            ucTextBox5.TabIndex = 24;
-            ucTextBox5.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox5.Title = "";
-            ucTextBox5.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox5.TitleWidth = 1;
+            bank_name.Appearance.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            bank_name.Appearance.Options.UseFont = true;
+            bank_name.ControlHeight = 21;
+            bank_name.ControlWidth = 338;
+            bank_name.FontColor = Color.Black;
+            bank_name.FontFace = "Tahoma";
+            bank_name.FontSize = 9F;
+            bank_name.FormatStr = "";
+            bank_name.Location = new Point(280, 42);
+            bank_name.Name = "bank_name";
+            bank_name.Size = new Size(338, 21);
+            bank_name.TabIndex = 24;
+            bank_name.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            bank_name.Title = "";
+            bank_name.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            bank_name.TitleWidth = 1;
             // 
             // bank_acc_no
             // 
@@ -1470,22 +1552,22 @@ namespace EpicV004.Frms
             bjc_info.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
             bjc_info.TitleWidth = 150;
             // 
-            // ucCodeBox2
+            // payment_term
             // 
-            ucCodeBox2.ControlHeight = 21;
-            ucCodeBox2.ControlWidth = 142;
-            ucCodeBox2.FldTy = null;
-            ucCodeBox2.FontColor = Color.Black;
-            ucCodeBox2.FontFace = "Tahoma";
-            ucCodeBox2.FontSize = 9F;
-            ucCodeBox2.Location = new Point(481, 48);
-            ucCodeBox2.Name = "ucCodeBox2";
-            ucCodeBox2.Size = new Size(142, 21);
-            ucCodeBox2.TabIndex = 38;
-            ucCodeBox2.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucCodeBox2.Title = "";
-            ucCodeBox2.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucCodeBox2.TitleWidth = 25;
+            payment_term.ControlHeight = 21;
+            payment_term.ControlWidth = 142;
+            payment_term.FldTy = null;
+            payment_term.FontColor = Color.Black;
+            payment_term.FontFace = "Tahoma";
+            payment_term.FontSize = 9F;
+            payment_term.Location = new Point(481, 48);
+            payment_term.Name = "payment_term";
+            payment_term.Size = new Size(142, 21);
+            payment_term.TabIndex = 38;
+            payment_term.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            payment_term.Title = "";
+            payment_term.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            payment_term.TitleWidth = 25;
             // 
             // ucCodeBox1
             // 
@@ -1523,60 +1605,24 @@ namespace EpicV004.Frms
             ucTextBox3.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
             ucTextBox3.TitleWidth = 100;
             // 
-            // payment_term
+            // payment_days
             // 
-            payment_term.Appearance.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            payment_term.Appearance.Options.UseFont = true;
-            payment_term.ControlHeight = 21;
-            payment_term.ControlWidth = 190;
-            payment_term.FontColor = Color.Black;
-            payment_term.FontFace = "Tahoma";
-            payment_term.FontSize = 9F;
-            payment_term.FormatStr = "";
-            payment_term.Location = new Point(285, 48);
-            payment_term.Name = "payment_term";
-            payment_term.Size = new Size(190, 21);
-            payment_term.TabIndex = 36;
-            payment_term.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            payment_term.Title = "Payment Term";
-            payment_term.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            payment_term.TitleWidth = 100;
-            // 
-            // memo
-            // 
-            memo.ActiveViewType = DevExpress.XtraRichEdit.RichEditViewType.Simple;
-            memo.Appearance.Text.Font = new Font("Cascadia Code Light", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            memo.Appearance.Text.Options.UseFont = true;
-            memo.LayoutUnit = DevExpress.XtraRichEdit.DocumentLayoutUnit.Pixel;
-            memo.Location = new Point(157, 167);
-            memo.Modified = true;
-            memo.Name = "memo";
-            memo.Options.DocumentSaveOptions.CurrentFormat = DevExpress.XtraRichEdit.DocumentFormat.PlainText;
-            memo.Options.DocumentSaveOptions.DefaultFormat = DevExpress.XtraRichEdit.DocumentFormat.PlainText;
-            memo.Options.HorizontalRuler.Visibility = DevExpress.XtraRichEdit.RichEditRulerVisibility.Hidden;
-            memo.Options.Search.RegExResultMaxGuaranteedLength = 1000;
-            memo.Padding = new Padding(50, 0, 0, 0);
-            memo.Size = new Size(466, 42);
-            memo.TabIndex = 34;
-            memo.Views.SimpleView.AllowDisplayLineNumbers = true;
-            // 
-            // invoice_description
-            // 
-            invoice_description.ActiveViewType = DevExpress.XtraRichEdit.RichEditViewType.Simple;
-            invoice_description.Appearance.Text.Font = new Font("Cascadia Code Light", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            invoice_description.Appearance.Text.Options.UseFont = true;
-            invoice_description.LayoutUnit = DevExpress.XtraRichEdit.DocumentLayoutUnit.Pixel;
-            invoice_description.Location = new Point(157, 119);
-            invoice_description.Modified = true;
-            invoice_description.Name = "invoice_description";
-            invoice_description.Options.DocumentSaveOptions.CurrentFormat = DevExpress.XtraRichEdit.DocumentFormat.PlainText;
-            invoice_description.Options.DocumentSaveOptions.DefaultFormat = DevExpress.XtraRichEdit.DocumentFormat.PlainText;
-            invoice_description.Options.HorizontalRuler.Visibility = DevExpress.XtraRichEdit.RichEditRulerVisibility.Hidden;
-            invoice_description.Options.Search.RegExResultMaxGuaranteedLength = 1000;
-            invoice_description.Padding = new Padding(50, 0, 0, 0);
-            invoice_description.Size = new Size(466, 42);
-            invoice_description.TabIndex = 33;
-            invoice_description.Views.SimpleView.AllowDisplayLineNumbers = true;
+            payment_days.Appearance.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            payment_days.Appearance.Options.UseFont = true;
+            payment_days.ControlHeight = 21;
+            payment_days.ControlWidth = 190;
+            payment_days.FontColor = Color.Black;
+            payment_days.FontFace = "Tahoma";
+            payment_days.FontSize = 9F;
+            payment_days.FormatStr = "";
+            payment_days.Location = new Point(285, 48);
+            payment_days.Name = "payment_days";
+            payment_days.Size = new Size(190, 21);
+            payment_days.TabIndex = 36;
+            payment_days.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            payment_days.Title = "Payment Term";
+            payment_days.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            payment_days.TitleWidth = 100;
             // 
             // subject
             // 
@@ -1652,24 +1698,21 @@ namespace EpicV004.Frms
             invoice_no.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
             invoice_no.TitleWidth = 150;
             // 
-            // thb_equivalent
+            // xtraTabPage2
             // 
-            thb_equivalent.Appearance.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            thb_equivalent.Appearance.Options.UseFont = true;
-            thb_equivalent.ControlHeight = 21;
-            thb_equivalent.ControlWidth = 224;
-            thb_equivalent.FontColor = Color.Black;
-            thb_equivalent.FontFace = "Tahoma";
-            thb_equivalent.FontSize = 9F;
-            thb_equivalent.FormatStr = "";
-            thb_equivalent.Location = new Point(894, 70);
-            thb_equivalent.Name = "thb_equivalent";
-            thb_equivalent.Size = new Size(224, 21);
-            thb_equivalent.TabIndex = 34;
-            thb_equivalent.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            thb_equivalent.Title = "THB Equivalent";
-            thb_equivalent.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            thb_equivalent.TitleWidth = 110;
+            xtraTabPage2.Controls.Add(g20);
+            xtraTabPage2.Name = "xtraTabPage2";
+            xtraTabPage2.Size = new Size(970, 503);
+            xtraTabPage2.TabPageWidth = 150;
+            xtraTabPage2.Text = "Project Invoice Deduction Info";
+            // 
+            // g20
+            // 
+            g20.Dock = DockStyle.Fill;
+            g20.Location = new Point(0, 0);
+            g20.Name = "g20";
+            g20.Size = new Size(970, 503);
+            g20.TabIndex = 2;
             // 
             // SA432
             // 
@@ -1698,6 +1741,9 @@ namespace EpicV004.Frms
             ucSplit4.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ucSplit4).EndInit();
             ucSplit4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)budget_memo).EndInit();
+            budget_memo.ResumeLayout(false);
+            xtraTabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ucPanel3).EndInit();
             ucPanel3.ResumeLayout(false);
             groupBox6.ResumeLayout(false);
@@ -1707,6 +1753,7 @@ namespace EpicV004.Frms
             groupBox3.ResumeLayout(false);
             groupBox2.ResumeLayout(false);
             groupBox1.ResumeLayout(false);
+            xtraTabPage2.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -1718,9 +1765,8 @@ namespace EpicV004.Frms
         private Ctrls.UCPanel ucPanel1;
         private Ctrls.UCDateBox f_to_dt;
         private Ctrls.UCDateBox f_fr_dt;
-        private Ctrls.UCGridSet g10;
+        private Ctrls.UCGridSet g00;
         private Ctrls.UCPanel ucPanel2;
-        private Ctrls.UCRichText budget_memo;
         private Ctrls.UCCheckBox f_close_yn;
         private Ctrls.UCChkCodeBox f_category;
         private Ctrls.UCChkCodeBox f_class;
@@ -1729,7 +1775,7 @@ namespace EpicV004.Frms
         private Ctrls.UCTextBox f_project_manager;
         private Ctrls.UCTextBox f_project_no;
         private Ctrls.UCTextBox project_manager_name;
-        private Ctrls.UCTextBox Project_manager;
+        private Ctrls.UCTextBox project_manager;
         private Ctrls.UCCodeBox category;
         private Ctrls.UCDateBox project_date;
         private Ctrls.UCTextBox project_no;
@@ -1741,27 +1787,25 @@ namespace EpicV004.Frms
         private Ctrls.UCTextBox received_amount;
         private Ctrls.UCCheckBox close_yn;
         private Ctrls.UCSplit ucSplit4;
-        private Ctrls.UCGridSet g20;
+        private Ctrls.UCGridSet g10;
         private Ctrls.UCTextBox invoice_to_name;
         private Ctrls.UCTextBox invoice_to;
         private Ctrls.UCTextBox contract_amount;
         private Ctrls.UCTextBox amend_amount;
         private Ctrls.UCTextBox total_project;
         private Ctrls.UCTextBox co_amount;
-        private Ctrls.UCTextBox remainning_amount;
+        private Ctrls.UCTextBox remain_amount;
         private Ctrls.UCPanel ucPanel3;
-        private Ctrls.UCRichText memo;
-        private Ctrls.UCRichText invoice_description;
         private Ctrls.UCTextBox subject;
         private Ctrls.UCDateBox due_date;
         private Ctrls.UCDateBox invoice_date;
         private Ctrls.UCTextBox invoice_no;
-        private Ctrls.UCTextBox payment_term;
+        private Ctrls.UCTextBox payment_days;
         private Ctrls.UCCodeBox ucCodeBox1;
         private Ctrls.UCTextBox ucTextBox3;
-        private Ctrls.UCCodeBox ucCodeBox2;
+        private Ctrls.UCCodeBox payment_term;
         private GroupBox groupBox1;
-        private Ctrls.UCTextBox ucTextBox5;
+        private Ctrls.UCTextBox bank_name;
         private Ctrls.UCTextBox bank_acc_no;
         private Ctrls.UCTextBox bank_address;
         private Ctrls.UCTextBox bank;
@@ -1798,5 +1842,12 @@ namespace EpicV004.Frms
         private Label label2;
         private Label label1;
         private Ctrls.UCTextBox thb_equivalent;
+        private Ctrls.UCNote buget_memo;
+        private Ctrls.UCTab budget_memo;
+        private DevExpress.XtraTab.XtraTabPage xtraTabPage1;
+        private DevExpress.XtraTab.XtraTabPage xtraTabPage2;
+        private Ctrls.UCGridSet g20;
+        private Ctrls.UCNote memo;
+        private Ctrls.UCNote invoice_description;
     }
 }
