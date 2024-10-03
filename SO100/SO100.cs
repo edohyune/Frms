@@ -6,5 +6,10 @@ namespace EpicV004.Frms
         {
             InitializeComponent();
         }
+
+        private void groupBox3_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

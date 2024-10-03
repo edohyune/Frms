@@ -6,5 +6,15 @@ namespace EpicV004.Frms
         {
             InitializeComponent();
         }
+
+        private void ucTextBox1_UCEditValueChanged(object Sender, Control control)
+        {
+
+        }
+
+        private void ucButton1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
