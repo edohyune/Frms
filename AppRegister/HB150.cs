@@ -51,6 +51,13 @@ namespace EpicV004.Frms
             set => Set(ref _end_dt, value);
         }
 
+        private string _period;
+        public string period
+        {
+            get => _period;
+            set => Set(ref _period, value);
+        }
+
         private string _job_title;
         public string job_title
         {

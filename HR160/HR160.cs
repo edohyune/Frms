@@ -76,24 +76,6 @@ namespace EpicV004.Frms
             }
         }
 
-        private void ucPanel2_UCCustomButtonClick(object Sender, DevExpress.XtraBars.Docking2010.BaseButtonEventArgs e)
-        {
-
-        }
-
-        private void groupBox13_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox20_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ucPanel7_UCCustomButtonClick(object Sender, DevExpress.XtraBars.Docking2010.BaseButtonEventArgs e)
-        {
-
-        }
+        
     }
 }

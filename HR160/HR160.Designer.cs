@@ -30,8 +30,8 @@ namespace EpicV004.Frms
         {
             ucSplit1 = new Ctrls.UCSplit();
             ucPanel1 = new Ctrls.UCPanel();
+            s_foreigner = new Ctrls.UCCheckBox();
             btn_copy = new Ctrls.UCButton();
-            s_foreigner = new CheckBox();
             s_dept_name = new Ctrls.UCTextBox();
             s_dept = new Ctrls.UCTextBox();
             s_emp = new Ctrls.UCTextBox();
@@ -41,6 +41,10 @@ namespace EpicV004.Frms
             g10 = new Ctrls.UCGridSet();
             ucSplit3 = new Ctrls.UCSplit();
             ucPanel2 = new Ctrls.UCPanel();
+            groupBox32 = new GroupBox();
+            signimg = new Ctrls.UCImage();
+            groupBox31 = new GroupBox();
+            photo = new Ctrls.UCImage();
             gender = new Ctrls.UCCodeBox();
             first_name = new Ctrls.UCTextBox();
             emp_no = new Ctrls.UCTextBox();
@@ -49,8 +53,8 @@ namespace EpicV004.Frms
             dept_nm = new Ctrls.UCTextBox();
             email = new Ctrls.UCTextBox();
             groupBox29 = new GroupBox();
+            black_list_yn = new Ctrls.UCCheckBox();
             black_reason = new Ctrls.UCTextBox();
-            black_list_yn = new CheckBox();
             groupBox30 = new GroupBox();
             employee_status_reason = new Ctrls.UCTextBox();
             employee_status = new Ctrls.UCCodeBox();
@@ -91,17 +95,18 @@ namespace EpicV004.Frms
             emergency_contact_postage = new Ctrls.UCTextBox();
             emergency_contact_name = new Ctrls.UCTextBox();
             groupBox8 = new GroupBox();
-            no_salary_vc = new CheckBox();
-            scan_yn = new CheckBox();
-            messenger_use = new CheckBox();
+            scan_yn = new Ctrls.UCCheckBox();
+            nosalary_vc = new Ctrls.UCCheckBox();
+            messenger_use = new Ctrls.UCCheckBox();
             new_empno = new Ctrls.UCTextBox();
             groupBox9 = new GroupBox();
-            checkBox2 = new CheckBox();
-            disease_memo = new Ctrls.UCTextBox();
+            disease_memo1 = new Ctrls.UCNote();
+            chk_disease = new Ctrls.UCCheckBox();
             groupBox7 = new GroupBox();
-            chk_criminal = new CheckBox();
-            criminal_memo = new Ctrls.UCTextBox();
+            criminal_memo = new Ctrls.UCNote();
+            chk_criminal = new Ctrls.UCCheckBox();
             groupBox2 = new GroupBox();
+            ethnicity = new Ctrls.UCCodeBox();
             nationality = new Ctrls.UCCodeBox();
             current_addr1 = new Ctrls.UCTextBox();
             bmi_result = new Ctrls.UCTextBox();
@@ -139,11 +144,11 @@ namespace EpicV004.Frms
             tax_calc_method = new Ctrls.UCCodeBox();
             groupBox11 = new GroupBox();
             groupBox16 = new GroupBox();
+            tax_yr_force_enabled1 = new Ctrls.UCCheckBox();
             tax_yr_force_amt = new Ctrls.UCTextBox();
-            tax_yr_force_enabled = new CheckBox();
             groupBox15 = new GroupBox();
+            tax_force_enabled1 = new Ctrls.UCCheckBox();
             tax_force_amt = new Ctrls.UCTextBox();
-            tax_force_enabled = new CheckBox();
             groupBox14 = new GroupBox();
             compensation1 = new Ctrls.UCTextBox();
             spouse_65years = new Ctrls.UCTextBox();
@@ -163,21 +168,21 @@ namespace EpicV004.Frms
             donate_school = new Ctrls.UCTextBox();
             xtraTabPage11 = new DevExpress.XtraTab.XtraTabPage();
             ucPanel5 = new Ctrls.UCPanel();
+            spouse_deduction = new Ctrls.UCCheckBox();
             groupBox5 = new GroupBox();
-            insurance_mother_spouse = new CheckBox();
-            insurance_father_spouse = new CheckBox();
+            insurance_mother_spouse4 = new Ctrls.UCCheckBox();
             sum_insurance_spouse = new Ctrls.UCTextBox();
+            insurance_father_spouse4 = new Ctrls.UCCheckBox();
             groupBox18 = new GroupBox();
-            sponsor_fmoher_spouse = new CheckBox();
-            sponsor_father_spouse = new CheckBox();
-            checkBox7 = new CheckBox();
-            groupBox1 = new GroupBox();
-            insurance_mother = new CheckBox();
+            sponsor_fmoher_spouse3 = new Ctrls.UCCheckBox();
+            sponsor_father_spouse3 = new Ctrls.UCCheckBox();
+            insurance_father2 = new GroupBox();
+            insurance_mother2 = new Ctrls.UCCheckBox();
+            ucCheckBox2 = new Ctrls.UCCheckBox();
             sum_insurance = new Ctrls.UCTextBox();
-            insurance_father = new CheckBox();
             groupBox19 = new GroupBox();
-            sponsor_mother = new CheckBox();
-            sponsor_father = new CheckBox();
+            sponsor_mother1 = new Ctrls.UCCheckBox();
+            sponsor_father = new Ctrls.UCCheckBox();
             groupBox20 = new GroupBox();
             purchase_goods1 = new Ctrls.UCTextBox();
             long_term_fund = new Ctrls.UCTextBox();
@@ -218,7 +223,6 @@ namespace EpicV004.Frms
             choose_no2 = new Ctrls.UCTextBox();
             choose_no1 = new Ctrls.UCTextBox();
             groupBox6 = new GroupBox();
-            social_sec_deduction = new CheckBox();
             social_sec_no = new Ctrls.UCTextBox();
             deduction_method = new Ctrls.UCCodeBox();
             application_date = new Ctrls.UCDateBox();
@@ -240,6 +244,7 @@ namespace EpicV004.Frms
             g90 = new Ctrls.UCGridSet();
             xtraTabPage6 = new DevExpress.XtraTab.XtraTabPage();
             g100 = new Ctrls.UCGridSet();
+            social_sec_deduction1 = new Ctrls.UCCheckBox();
             ((System.ComponentModel.ISupportInitialize)ucSplit1).BeginInit();
             ucSplit1.Panel1.SuspendLayout();
             ucSplit1.Panel2.SuspendLayout();
@@ -256,6 +261,10 @@ namespace EpicV004.Frms
             ucSplit3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ucPanel2).BeginInit();
             ucPanel2.SuspendLayout();
+            groupBox32.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)signimg.Properties).BeginInit();
+            groupBox31.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)photo.Properties).BeginInit();
             groupBox29.SuspendLayout();
             groupBox30.SuspendLayout();
             groupBox28.SuspendLayout();
@@ -292,7 +301,7 @@ namespace EpicV004.Frms
             ucPanel5.SuspendLayout();
             groupBox5.SuspendLayout();
             groupBox18.SuspendLayout();
-            groupBox1.SuspendLayout();
+            insurance_father2.SuspendLayout();
             groupBox19.SuspendLayout();
             groupBox20.SuspendLayout();
             groupBox25.SuspendLayout();
@@ -336,8 +345,8 @@ namespace EpicV004.Frms
             // 
             // ucPanel1
             // 
-            ucPanel1.Controls.Add(btn_copy);
             ucPanel1.Controls.Add(s_foreigner);
+            ucPanel1.Controls.Add(btn_copy);
             ucPanel1.Controls.Add(s_dept_name);
             ucPanel1.Controls.Add(s_dept);
             ucPanel1.Controls.Add(s_emp);
@@ -349,6 +358,22 @@ namespace EpicV004.Frms
             ucPanel1.Size = new Size(1691, 66);
             ucPanel1.TabIndex = 0;
             ucPanel1.Text = "Search";
+            // 
+            // s_foreigner
+            // 
+            s_foreigner.Checked = false;
+            s_foreigner.ControlHeight = 18;
+            s_foreigner.ControlWidth = 93;
+            s_foreigner.FontColor = Color.Black;
+            s_foreigner.FontFace = "Tahoma";
+            s_foreigner.FontSize = 9F;
+            s_foreigner.Location = new Point(650, 31);
+            s_foreigner.Name = "s_foreigner";
+            s_foreigner.Size = new Size(93, 18);
+            s_foreigner.TabIndex = 9;
+            s_foreigner.Text = "Foreigner";
+            s_foreigner.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            s_foreigner.TitleAlignment = DevExpress.Utils.HorzAlignment.Far;
             // 
             // btn_copy
             // 
@@ -368,18 +393,6 @@ namespace EpicV004.Frms
             btn_copy.TabIndex = 25;
             btn_copy.Title = "Copy prev info";
             btn_copy.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            // 
-            // s_foreigner
-            // 
-            s_foreigner.AutoSize = true;
-            s_foreigner.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            s_foreigner.Location = new Point(650, 36);
-            s_foreigner.Name = "s_foreigner";
-            s_foreigner.RightToLeft = RightToLeft.Yes;
-            s_foreigner.Size = new Size(77, 18);
-            s_foreigner.TabIndex = 7;
-            s_foreigner.Text = "Foreigner";
-            s_foreigner.UseVisualStyleBackColor = true;
             // 
             // s_dept_name
             // 
@@ -532,6 +545,8 @@ namespace EpicV004.Frms
             // 
             // ucPanel2
             // 
+            ucPanel2.Controls.Add(groupBox32);
+            ucPanel2.Controls.Add(groupBox31);
             ucPanel2.Controls.Add(gender);
             ucPanel2.Controls.Add(first_name);
             ucPanel2.Controls.Add(emp_no);
@@ -571,7 +586,44 @@ namespace EpicV004.Frms
             ucPanel2.Size = new Size(1241, 341);
             ucPanel2.TabIndex = 0;
             ucPanel2.Text = "Register Applicant";
-            ucPanel2.UCCustomButtonClick += ucPanel2_UCCustomButtonClick;
+            // 
+            // groupBox32
+            // 
+            groupBox32.Controls.Add(signimg);
+            groupBox32.Location = new Point(8, 176);
+            groupBox32.Name = "groupBox32";
+            groupBox32.Size = new Size(116, 154);
+            groupBox32.TabIndex = 29;
+            groupBox32.TabStop = false;
+            groupBox32.Text = "Sign Photo";
+            // 
+            // signimg
+            // 
+            signimg.Location = new Point(12, 28);
+            signimg.Name = "signimg";
+            signimg.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            signimg.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            signimg.Size = new Size(90, 120);
+            signimg.TabIndex = 1;
+            // 
+            // groupBox31
+            // 
+            groupBox31.Controls.Add(photo);
+            groupBox31.Location = new Point(8, 27);
+            groupBox31.Name = "groupBox31";
+            groupBox31.Size = new Size(116, 143);
+            groupBox31.TabIndex = 28;
+            groupBox31.TabStop = false;
+            groupBox31.Text = "Emp Photo";
+            // 
+            // photo
+            // 
+            photo.Location = new Point(12, 17);
+            photo.Name = "photo";
+            photo.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            photo.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            photo.Size = new Size(90, 120);
+            photo.TabIndex = 0;
             // 
             // gender
             // 
@@ -716,8 +768,8 @@ namespace EpicV004.Frms
             // 
             // groupBox29
             // 
-            groupBox29.Controls.Add(black_reason);
             groupBox29.Controls.Add(black_list_yn);
+            groupBox29.Controls.Add(black_reason);
             groupBox29.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             groupBox29.Location = new Point(605, 200);
             groupBox29.Name = "groupBox29";
@@ -725,6 +777,22 @@ namespace EpicV004.Frms
             groupBox29.TabIndex = 10;
             groupBox29.TabStop = false;
             groupBox29.Text = "Black List";
+            // 
+            // black_list_yn
+            // 
+            black_list_yn.Checked = false;
+            black_list_yn.ControlHeight = 21;
+            black_list_yn.ControlWidth = 108;
+            black_list_yn.FontColor = Color.Black;
+            black_list_yn.FontFace = "Tahoma";
+            black_list_yn.FontSize = 9F;
+            black_list_yn.Location = new Point(8, 21);
+            black_list_yn.Name = "black_list_yn";
+            black_list_yn.Size = new Size(108, 21);
+            black_list_yn.TabIndex = 8;
+            black_list_yn.Text = "Black List YN";
+            black_list_yn.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            black_list_yn.TitleAlignment = DevExpress.Utils.HorzAlignment.Far;
             // 
             // black_reason
             // 
@@ -745,18 +813,6 @@ namespace EpicV004.Frms
             black_reason.Title = "Black Reason";
             black_reason.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
             black_reason.TitleWidth = 90;
-            // 
-            // black_list_yn
-            // 
-            black_list_yn.AutoSize = true;
-            black_list_yn.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            black_list_yn.Location = new Point(8, 21);
-            black_list_yn.Name = "black_list_yn";
-            black_list_yn.RightToLeft = RightToLeft.Yes;
-            black_list_yn.Size = new Size(95, 18);
-            black_list_yn.TabIndex = 7;
-            black_list_yn.Text = "Black List YN";
-            black_list_yn.UseVisualStyleBackColor = true;
             // 
             // groupBox30
             // 
@@ -806,7 +862,6 @@ namespace EpicV004.Frms
             employee_status.Name = "employee_status";
             employee_status.Size = new Size(225, 23);
             employee_status.TabIndex = 24;
-            employee_status.Text = "Employees";
             employee_status.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
             employee_status.Title = "Emp Status";
             employee_status.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
@@ -1480,53 +1535,65 @@ namespace EpicV004.Frms
             // 
             // groupBox8
             // 
-            groupBox8.Controls.Add(no_salary_vc);
             groupBox8.Controls.Add(scan_yn);
+            groupBox8.Controls.Add(nosalary_vc);
             groupBox8.Controls.Add(messenger_use);
             groupBox8.Controls.Add(new_empno);
             groupBox8.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            groupBox8.Location = new Point(5, 252);
+            groupBox8.Location = new Point(5, 290);
             groupBox8.Name = "groupBox8";
             groupBox8.Size = new Size(541, 74);
             groupBox8.TabIndex = 0;
             groupBox8.TabStop = false;
             groupBox8.Text = "Etc";
             // 
-            // no_salary_vc
-            // 
-            no_salary_vc.AutoSize = true;
-            no_salary_vc.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            no_salary_vc.Location = new Point(263, 22);
-            no_salary_vc.Name = "no_salary_vc";
-            no_salary_vc.RightToLeft = RightToLeft.Yes;
-            no_salary_vc.Size = new Size(95, 18);
-            no_salary_vc.TabIndex = 7;
-            no_salary_vc.Text = "No Salary VC";
-            no_salary_vc.UseVisualStyleBackColor = true;
-            // 
             // scan_yn
             // 
-            scan_yn.AutoSize = true;
-            scan_yn.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            scan_yn.Location = new Point(126, 21);
+            scan_yn.Checked = false;
+            scan_yn.ControlHeight = 20;
+            scan_yn.ControlWidth = 108;
+            scan_yn.FontColor = Color.Black;
+            scan_yn.FontFace = "Tahoma";
+            scan_yn.FontSize = 9F;
+            scan_yn.Location = new Point(180, 19);
             scan_yn.Name = "scan_yn";
-            scan_yn.RightToLeft = RightToLeft.Yes;
-            scan_yn.Size = new Size(76, 18);
-            scan_yn.TabIndex = 7;
-            scan_yn.Text = "Not Scan";
-            scan_yn.UseVisualStyleBackColor = true;
+            scan_yn.Size = new Size(108, 20);
+            scan_yn.TabIndex = 12;
+            scan_yn.Text = "scan_yn";
+            scan_yn.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            scan_yn.TitleAlignment = DevExpress.Utils.HorzAlignment.Far;
+            // 
+            // nosalary_vc
+            // 
+            nosalary_vc.Checked = false;
+            nosalary_vc.ControlHeight = 20;
+            nosalary_vc.ControlWidth = 145;
+            nosalary_vc.FontColor = Color.Black;
+            nosalary_vc.FontFace = "Tahoma";
+            nosalary_vc.FontSize = 9F;
+            nosalary_vc.Location = new Point(325, 21);
+            nosalary_vc.Name = "nosalary_vc";
+            nosalary_vc.Size = new Size(145, 20);
+            nosalary_vc.TabIndex = 11;
+            nosalary_vc.Text = "Criminal nosalary_vc";
+            nosalary_vc.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            nosalary_vc.TitleAlignment = DevExpress.Utils.HorzAlignment.Far;
             // 
             // messenger_use
             // 
-            messenger_use.AutoSize = true;
-            messenger_use.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            messenger_use.Location = new Point(6, 22);
+            messenger_use.Checked = false;
+            messenger_use.ControlHeight = 20;
+            messenger_use.ControlWidth = 108;
+            messenger_use.FontColor = Color.Black;
+            messenger_use.FontFace = "Tahoma";
+            messenger_use.FontSize = 9F;
+            messenger_use.Location = new Point(7, 21);
             messenger_use.Name = "messenger_use";
-            messenger_use.RightToLeft = RightToLeft.Yes;
-            messenger_use.Size = new Size(107, 18);
-            messenger_use.TabIndex = 7;
-            messenger_use.Text = "Messenger use";
-            messenger_use.UseVisualStyleBackColor = true;
+            messenger_use.Size = new Size(108, 20);
+            messenger_use.TabIndex = 10;
+            messenger_use.Text = "messenger_use";
+            messenger_use.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            messenger_use.TitleAlignment = DevExpress.Utils.HorzAlignment.Far;
             // 
             // new_empno
             // 
@@ -1538,7 +1605,7 @@ namespace EpicV004.Frms
             new_empno.FontFace = "Tahoma";
             new_empno.FontSize = 9F;
             new_empno.FormatStr = "";
-            new_empno.Location = new Point(9, 46);
+            new_empno.Location = new Point(7, 45);
             new_empno.Margin = new Padding(4, 3, 4, 3);
             new_empno.Name = "new_empno";
             new_empno.Size = new Size(193, 23);
@@ -1550,94 +1617,99 @@ namespace EpicV004.Frms
             // 
             // groupBox9
             // 
-            groupBox9.Controls.Add(checkBox2);
-            groupBox9.Controls.Add(disease_memo);
+            groupBox9.Controls.Add(disease_memo1);
+            groupBox9.Controls.Add(chk_disease);
             groupBox9.Font = new Font("Tahoma", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             groupBox9.Location = new Point(553, 197);
             groupBox9.Name = "groupBox9";
-            groupBox9.Size = new Size(598, 55);
+            groupBox9.Size = new Size(598, 87);
             groupBox9.TabIndex = 0;
             groupBox9.TabStop = false;
             groupBox9.Text = "Disease info ";
             // 
-            // checkBox2
+            // disease_memo1
             // 
-            checkBox2.AutoSize = true;
-            checkBox2.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            checkBox2.Location = new Point(6, 22);
-            checkBox2.Name = "checkBox2";
-            checkBox2.RightToLeft = RightToLeft.Yes;
-            checkBox2.Size = new Size(108, 18);
-            checkBox2.TabIndex = 7;
-            checkBox2.Text = "Disease Record";
-            checkBox2.UseVisualStyleBackColor = true;
+            disease_memo1.Appearance.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            disease_memo1.Appearance.Options.UseFont = true;
+            disease_memo1.ControlHeight = 54;
+            disease_memo1.ControlWidth = 448;
+            disease_memo1.FontColor = Color.Black;
+            disease_memo1.FontFace = "Tahoma";
+            disease_memo1.FontSize = 9F;
+            disease_memo1.Location = new Point(131, 22);
+            disease_memo1.Name = "disease_memo1";
+            disease_memo1.Size = new Size(448, 54);
+            disease_memo1.TabIndex = 11;
+            disease_memo1.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            disease_memo1.Title = "";
+            disease_memo1.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            disease_memo1.TitleWidth = 25;
             // 
-            // disease_memo
+            // chk_disease
             // 
-            disease_memo.Appearance.Font = new Font("Tahoma", 9F);
-            disease_memo.Appearance.Options.UseFont = true;
-            disease_memo.ControlHeight = 23;
-            disease_memo.ControlWidth = 447;
-            disease_memo.FontColor = Color.Black;
-            disease_memo.FontFace = "Tahoma";
-            disease_memo.FontSize = 9F;
-            disease_memo.FormatStr = "";
-            disease_memo.Location = new Point(132, 19);
-            disease_memo.Margin = new Padding(4, 3, 4, 3);
-            disease_memo.Name = "disease_memo";
-            disease_memo.Size = new Size(447, 23);
-            disease_memo.TabIndex = 1;
-            disease_memo.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            disease_memo.Title = "Weight";
-            disease_memo.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            disease_memo.TitleWidth = 0;
+            chk_disease.Checked = false;
+            chk_disease.ControlHeight = 19;
+            chk_disease.ControlWidth = 119;
+            chk_disease.FontColor = Color.Black;
+            chk_disease.FontFace = "Tahoma";
+            chk_disease.FontSize = 9F;
+            chk_disease.Location = new Point(6, 22);
+            chk_disease.Name = "chk_disease";
+            chk_disease.Size = new Size(119, 19);
+            chk_disease.TabIndex = 13;
+            chk_disease.Text = "disease Record";
+            chk_disease.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            chk_disease.TitleAlignment = DevExpress.Utils.HorzAlignment.Far;
             // 
             // groupBox7
             // 
-            groupBox7.Controls.Add(chk_criminal);
             groupBox7.Controls.Add(criminal_memo);
+            groupBox7.Controls.Add(chk_criminal);
             groupBox7.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             groupBox7.Location = new Point(6, 196);
             groupBox7.Name = "groupBox7";
-            groupBox7.Size = new Size(541, 55);
+            groupBox7.Size = new Size(541, 88);
             groupBox7.TabIndex = 0;
             groupBox7.TabStop = false;
             groupBox7.Text = "Criminal info";
             // 
-            // chk_criminal
-            // 
-            chk_criminal.AutoSize = true;
-            chk_criminal.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            chk_criminal.Location = new Point(6, 22);
-            chk_criminal.Name = "chk_criminal";
-            chk_criminal.RightToLeft = RightToLeft.Yes;
-            chk_criminal.Size = new Size(108, 18);
-            chk_criminal.TabIndex = 7;
-            chk_criminal.Text = "Criminal Record";
-            chk_criminal.UseVisualStyleBackColor = true;
-            // 
             // criminal_memo
             // 
-            criminal_memo.Appearance.Font = new Font("Tahoma", 9F);
+            criminal_memo.Appearance.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             criminal_memo.Appearance.Options.UseFont = true;
-            criminal_memo.ControlHeight = 23;
-            criminal_memo.ControlWidth = 395;
+            criminal_memo.ControlHeight = 54;
+            criminal_memo.ControlWidth = 403;
             criminal_memo.FontColor = Color.Black;
             criminal_memo.FontFace = "Tahoma";
             criminal_memo.FontSize = 9F;
-            criminal_memo.FormatStr = "";
-            criminal_memo.Location = new Point(132, 22);
-            criminal_memo.Margin = new Padding(4, 3, 4, 3);
+            criminal_memo.Location = new Point(124, 23);
             criminal_memo.Name = "criminal_memo";
-            criminal_memo.Size = new Size(395, 23);
-            criminal_memo.TabIndex = 1;
+            criminal_memo.Size = new Size(403, 54);
+            criminal_memo.TabIndex = 10;
             criminal_memo.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            criminal_memo.Title = "Weight";
+            criminal_memo.Title = "";
             criminal_memo.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            criminal_memo.TitleWidth = 0;
+            criminal_memo.TitleWidth = 25;
+            // 
+            // chk_criminal
+            // 
+            chk_criminal.Checked = false;
+            chk_criminal.ControlHeight = 20;
+            chk_criminal.ControlWidth = 108;
+            chk_criminal.FontColor = Color.Black;
+            chk_criminal.FontFace = "Tahoma";
+            chk_criminal.FontSize = 9F;
+            chk_criminal.Location = new Point(6, 23);
+            chk_criminal.Name = "chk_criminal";
+            chk_criminal.Size = new Size(108, 20);
+            chk_criminal.TabIndex = 9;
+            chk_criminal.Text = "Criminal Record";
+            chk_criminal.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            chk_criminal.TitleAlignment = DevExpress.Utils.HorzAlignment.Far;
             // 
             // groupBox2
             // 
+            groupBox2.Controls.Add(ethnicity);
             groupBox2.Controls.Add(nationality);
             groupBox2.Controls.Add(current_addr1);
             groupBox2.Controls.Add(bmi_result);
@@ -1655,6 +1727,26 @@ namespace EpicV004.Frms
             groupBox2.TabIndex = 0;
             groupBox2.TabStop = false;
             groupBox2.Text = "Personal info";
+            // 
+            // ethnicity
+            // 
+            ethnicity.Appearance.Font = new Font("Tahoma", 9F);
+            ethnicity.Appearance.Options.UseFont = true;
+            ethnicity.ControlHeight = 23;
+            ethnicity.ControlWidth = 167;
+            ethnicity.FldTy = null;
+            ethnicity.FontColor = Color.Black;
+            ethnicity.FontFace = "Tahoma";
+            ethnicity.FontSize = 9F;
+            ethnicity.Location = new Point(7, 21);
+            ethnicity.Margin = new Padding(4, 3, 4, 3);
+            ethnicity.Name = "ethnicity";
+            ethnicity.Size = new Size(167, 23);
+            ethnicity.TabIndex = 2;
+            ethnicity.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ethnicity.Title = "Ethnicity";
+            ethnicity.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ethnicity.TitleWidth = 70;
             // 
             // nationality
             // 
@@ -2181,8 +2273,8 @@ namespace EpicV004.Frms
             // 
             // groupBox16
             // 
+            groupBox16.Controls.Add(tax_yr_force_enabled1);
             groupBox16.Controls.Add(tax_yr_force_amt);
-            groupBox16.Controls.Add(tax_yr_force_enabled);
             groupBox16.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             groupBox16.Location = new Point(17, 136);
             groupBox16.Name = "groupBox16";
@@ -2190,7 +2282,23 @@ namespace EpicV004.Frms
             groupBox16.TabIndex = 4;
             groupBox16.TabStop = false;
             groupBox16.Text = "Last Period";
-            groupBox16.Enter += groupBox13_Enter;
+            // 
+            // tax_yr_force_enabled1
+            // 
+            tax_yr_force_enabled1.Checked = false;
+            tax_yr_force_enabled1.ControlHeight = 20;
+            tax_yr_force_enabled1.ControlWidth = 186;
+            tax_yr_force_enabled1.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            tax_yr_force_enabled1.FontColor = Color.Black;
+            tax_yr_force_enabled1.FontFace = "Tahoma";
+            tax_yr_force_enabled1.FontSize = 9F;
+            tax_yr_force_enabled1.Location = new Point(22, 21);
+            tax_yr_force_enabled1.Name = "tax_yr_force_enabled1";
+            tax_yr_force_enabled1.Size = new Size(186, 20);
+            tax_yr_force_enabled1.TabIndex = 14;
+            tax_yr_force_enabled1.Text = "Need to fix";
+            tax_yr_force_enabled1.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            tax_yr_force_enabled1.TitleAlignment = DevExpress.Utils.HorzAlignment.Far;
             // 
             // tax_yr_force_amt
             // 
@@ -2212,22 +2320,10 @@ namespace EpicV004.Frms
             tax_yr_force_amt.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
             tax_yr_force_amt.TitleWidth = 167;
             // 
-            // tax_yr_force_enabled
-            // 
-            tax_yr_force_enabled.AutoSize = true;
-            tax_yr_force_enabled.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            tax_yr_force_enabled.Location = new Point(19, 27);
-            tax_yr_force_enabled.Name = "tax_yr_force_enabled";
-            tax_yr_force_enabled.RightToLeft = RightToLeft.Yes;
-            tax_yr_force_enabled.Size = new Size(87, 18);
-            tax_yr_force_enabled.TabIndex = 7;
-            tax_yr_force_enabled.Text = "Need to fix";
-            tax_yr_force_enabled.UseVisualStyleBackColor = true;
-            // 
             // groupBox15
             // 
+            groupBox15.Controls.Add(tax_force_enabled1);
             groupBox15.Controls.Add(tax_force_amt);
-            groupBox15.Controls.Add(tax_force_enabled);
             groupBox15.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             groupBox15.Location = new Point(17, 21);
             groupBox15.Name = "groupBox15";
@@ -2235,7 +2331,23 @@ namespace EpicV004.Frms
             groupBox15.TabIndex = 4;
             groupBox15.TabStop = false;
             groupBox15.Text = "Exemptions";
-            groupBox15.Enter += groupBox13_Enter;
+            // 
+            // tax_force_enabled1
+            // 
+            tax_force_enabled1.Checked = false;
+            tax_force_enabled1.ControlHeight = 20;
+            tax_force_enabled1.ControlWidth = 186;
+            tax_force_enabled1.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            tax_force_enabled1.FontColor = Color.Black;
+            tax_force_enabled1.FontFace = "Tahoma";
+            tax_force_enabled1.FontSize = 9F;
+            tax_force_enabled1.Location = new Point(22, 21);
+            tax_force_enabled1.Name = "tax_force_enabled1";
+            tax_force_enabled1.Size = new Size(186, 20);
+            tax_force_enabled1.TabIndex = 13;
+            tax_force_enabled1.Text = "Need to fix";
+            tax_force_enabled1.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            tax_force_enabled1.TitleAlignment = DevExpress.Utils.HorzAlignment.Far;
             // 
             // tax_force_amt
             // 
@@ -2257,18 +2369,6 @@ namespace EpicV004.Frms
             tax_force_amt.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
             tax_force_amt.TitleWidth = 167;
             // 
-            // tax_force_enabled
-            // 
-            tax_force_enabled.AutoSize = true;
-            tax_force_enabled.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            tax_force_enabled.Location = new Point(19, 27);
-            tax_force_enabled.Name = "tax_force_enabled";
-            tax_force_enabled.RightToLeft = RightToLeft.Yes;
-            tax_force_enabled.Size = new Size(87, 18);
-            tax_force_enabled.TabIndex = 7;
-            tax_force_enabled.Text = "Need to fix";
-            tax_force_enabled.UseVisualStyleBackColor = true;
-            // 
             // groupBox14
             // 
             groupBox14.Controls.Add(compensation1);
@@ -2284,7 +2384,6 @@ namespace EpicV004.Frms
             groupBox14.TabIndex = 4;
             groupBox14.TabStop = false;
             groupBox14.Text = "Exempted income items";
-            groupBox14.Enter += groupBox13_Enter;
             // 
             // compensation1
             // 
@@ -2415,7 +2514,6 @@ namespace EpicV004.Frms
             groupBox12.TabIndex = 4;
             groupBox12.TabStop = false;
             groupBox12.Text = "For employee not employed from year's begining";
-            groupBox12.Enter += groupBox13_Enter;
             // 
             // tax_prev_emp
             // 
@@ -2488,7 +2586,6 @@ namespace EpicV004.Frms
             groupBox10.TabIndex = 4;
             groupBox10.TabStop = false;
             groupBox10.Text = "Interest paid on purchase residence";
-            groupBox10.Enter += groupBox13_Enter;
             // 
             // residence_values
             // 
@@ -2541,7 +2638,6 @@ namespace EpicV004.Frms
             groupBox13.TabIndex = 4;
             groupBox13.TabStop = false;
             groupBox13.Text = "Deduction educational support and donations";
-            groupBox13.Enter += groupBox13_Enter;
             // 
             // donations
             // 
@@ -2592,10 +2688,10 @@ namespace EpicV004.Frms
             // 
             // ucPanel5
             // 
+            ucPanel5.Controls.Add(spouse_deduction);
             ucPanel5.Controls.Add(groupBox5);
             ucPanel5.Controls.Add(groupBox18);
-            ucPanel5.Controls.Add(checkBox7);
-            ucPanel5.Controls.Add(groupBox1);
+            ucPanel5.Controls.Add(insurance_father2);
             ucPanel5.Controls.Add(groupBox19);
             ucPanel5.Controls.Add(groupBox20);
             ucPanel5.Controls.Add(groupBox25);
@@ -2608,11 +2704,28 @@ namespace EpicV004.Frms
             ucPanel5.Size = new Size(1239, 510);
             ucPanel5.TabIndex = 0;
             // 
+            // spouse_deduction
+            // 
+            spouse_deduction.Checked = false;
+            spouse_deduction.ControlHeight = 20;
+            spouse_deduction.ControlWidth = 200;
+            spouse_deduction.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            spouse_deduction.FontColor = Color.Black;
+            spouse_deduction.FontFace = "Tahoma";
+            spouse_deduction.FontSize = 9F;
+            spouse_deduction.Location = new Point(14, 39);
+            spouse_deduction.Name = "spouse_deduction";
+            spouse_deduction.Size = new Size(200, 20);
+            spouse_deduction.TabIndex = 12;
+            spouse_deduction.Text = "Spouse Deduction";
+            spouse_deduction.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            spouse_deduction.TitleAlignment = DevExpress.Utils.HorzAlignment.Far;
+            // 
             // groupBox5
             // 
-            groupBox5.Controls.Add(insurance_mother_spouse);
-            groupBox5.Controls.Add(insurance_father_spouse);
+            groupBox5.Controls.Add(insurance_mother_spouse4);
             groupBox5.Controls.Add(sum_insurance_spouse);
+            groupBox5.Controls.Add(insurance_father_spouse4);
             groupBox5.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             groupBox5.Location = new Point(776, 148);
             groupBox5.Name = "groupBox5";
@@ -2621,29 +2734,22 @@ namespace EpicV004.Frms
             groupBox5.TabStop = false;
             groupBox5.Text = "Spouse parent insurance premium";
             // 
-            // insurance_mother_spouse
+            // insurance_mother_spouse4
             // 
-            insurance_mother_spouse.AutoSize = true;
-            insurance_mother_spouse.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            insurance_mother_spouse.Location = new Point(14, 46);
-            insurance_mother_spouse.Name = "insurance_mother_spouse";
-            insurance_mother_spouse.RightToLeft = RightToLeft.Yes;
-            insurance_mother_spouse.Size = new Size(65, 18);
-            insurance_mother_spouse.TabIndex = 7;
-            insurance_mother_spouse.Text = "Mother";
-            insurance_mother_spouse.UseVisualStyleBackColor = true;
-            // 
-            // insurance_father_spouse
-            // 
-            insurance_father_spouse.AutoSize = true;
-            insurance_father_spouse.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            insurance_father_spouse.Location = new Point(19, 19);
-            insurance_father_spouse.Name = "insurance_father_spouse";
-            insurance_father_spouse.RightToLeft = RightToLeft.Yes;
-            insurance_father_spouse.Size = new Size(61, 18);
-            insurance_father_spouse.TabIndex = 7;
-            insurance_father_spouse.Text = "Father";
-            insurance_father_spouse.UseVisualStyleBackColor = true;
+            insurance_mother_spouse4.Checked = false;
+            insurance_mother_spouse4.ControlHeight = 20;
+            insurance_mother_spouse4.ControlWidth = 152;
+            insurance_mother_spouse4.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            insurance_mother_spouse4.FontColor = Color.Black;
+            insurance_mother_spouse4.FontFace = "Tahoma";
+            insurance_mother_spouse4.FontSize = 9F;
+            insurance_mother_spouse4.Location = new Point(21, 47);
+            insurance_mother_spouse4.Name = "insurance_mother_spouse4";
+            insurance_mother_spouse4.Size = new Size(152, 20);
+            insurance_mother_spouse4.TabIndex = 20;
+            insurance_mother_spouse4.Text = "Mother";
+            insurance_mother_spouse4.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            insurance_mother_spouse4.TitleAlignment = DevExpress.Utils.HorzAlignment.Far;
             // 
             // sum_insurance_spouse
             // 
@@ -2665,10 +2771,27 @@ namespace EpicV004.Frms
             sum_insurance_spouse.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
             sum_insurance_spouse.TitleWidth = 180;
             // 
+            // insurance_father_spouse4
+            // 
+            insurance_father_spouse4.Checked = false;
+            insurance_father_spouse4.ControlHeight = 20;
+            insurance_father_spouse4.ControlWidth = 152;
+            insurance_father_spouse4.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            insurance_father_spouse4.FontColor = Color.Black;
+            insurance_father_spouse4.FontFace = "Tahoma";
+            insurance_father_spouse4.FontSize = 9F;
+            insurance_father_spouse4.Location = new Point(21, 21);
+            insurance_father_spouse4.Name = "insurance_father_spouse4";
+            insurance_father_spouse4.Size = new Size(152, 20);
+            insurance_father_spouse4.TabIndex = 19;
+            insurance_father_spouse4.Text = "Father";
+            insurance_father_spouse4.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            insurance_father_spouse4.TitleAlignment = DevExpress.Utils.HorzAlignment.Far;
+            // 
             // groupBox18
             // 
-            groupBox18.Controls.Add(sponsor_fmoher_spouse);
-            groupBox18.Controls.Add(sponsor_father_spouse);
+            groupBox18.Controls.Add(sponsor_fmoher_spouse3);
+            groupBox18.Controls.Add(sponsor_father_spouse3);
             groupBox18.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             groupBox18.Location = new Point(776, 42);
             groupBox18.Name = "groupBox18";
@@ -2677,66 +2800,86 @@ namespace EpicV004.Frms
             groupBox18.TabStop = false;
             groupBox18.Text = "Sponser for parents adn spouse";
             // 
-            // sponsor_fmoher_spouse
+            // sponsor_fmoher_spouse3
             // 
-            sponsor_fmoher_spouse.AutoSize = true;
-            sponsor_fmoher_spouse.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            sponsor_fmoher_spouse.Location = new Point(14, 48);
-            sponsor_fmoher_spouse.Name = "sponsor_fmoher_spouse";
-            sponsor_fmoher_spouse.RightToLeft = RightToLeft.Yes;
-            sponsor_fmoher_spouse.Size = new Size(65, 18);
-            sponsor_fmoher_spouse.TabIndex = 7;
-            sponsor_fmoher_spouse.Text = "Mother";
-            sponsor_fmoher_spouse.UseVisualStyleBackColor = true;
+            sponsor_fmoher_spouse3.Checked = false;
+            sponsor_fmoher_spouse3.ControlHeight = 20;
+            sponsor_fmoher_spouse3.ControlWidth = 152;
+            sponsor_fmoher_spouse3.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            sponsor_fmoher_spouse3.FontColor = Color.Black;
+            sponsor_fmoher_spouse3.FontFace = "Tahoma";
+            sponsor_fmoher_spouse3.FontSize = 9F;
+            sponsor_fmoher_spouse3.Location = new Point(21, 47);
+            sponsor_fmoher_spouse3.Name = "sponsor_fmoher_spouse3";
+            sponsor_fmoher_spouse3.Size = new Size(152, 20);
+            sponsor_fmoher_spouse3.TabIndex = 18;
+            sponsor_fmoher_spouse3.Text = "Mother";
+            sponsor_fmoher_spouse3.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            sponsor_fmoher_spouse3.TitleAlignment = DevExpress.Utils.HorzAlignment.Far;
             // 
-            // sponsor_father_spouse
+            // sponsor_father_spouse3
             // 
-            sponsor_father_spouse.AutoSize = true;
-            sponsor_father_spouse.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            sponsor_father_spouse.Location = new Point(19, 21);
-            sponsor_father_spouse.Name = "sponsor_father_spouse";
-            sponsor_father_spouse.RightToLeft = RightToLeft.Yes;
-            sponsor_father_spouse.Size = new Size(61, 18);
-            sponsor_father_spouse.TabIndex = 7;
-            sponsor_father_spouse.Text = "Father";
-            sponsor_father_spouse.UseVisualStyleBackColor = true;
+            sponsor_father_spouse3.Checked = false;
+            sponsor_father_spouse3.ControlHeight = 20;
+            sponsor_father_spouse3.ControlWidth = 152;
+            sponsor_father_spouse3.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            sponsor_father_spouse3.FontColor = Color.Black;
+            sponsor_father_spouse3.FontFace = "Tahoma";
+            sponsor_father_spouse3.FontSize = 9F;
+            sponsor_father_spouse3.Location = new Point(21, 21);
+            sponsor_father_spouse3.Name = "sponsor_father_spouse3";
+            sponsor_father_spouse3.Size = new Size(152, 20);
+            sponsor_father_spouse3.TabIndex = 17;
+            sponsor_father_spouse3.Text = "Father";
+            sponsor_father_spouse3.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            sponsor_father_spouse3.TitleAlignment = DevExpress.Utils.HorzAlignment.Far;
             // 
-            // checkBox7
+            // insurance_father2
             // 
-            checkBox7.AutoSize = true;
-            checkBox7.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            checkBox7.Location = new Point(15, 42);
-            checkBox7.Name = "checkBox7";
-            checkBox7.RightToLeft = RightToLeft.Yes;
-            checkBox7.Size = new Size(126, 18);
-            checkBox7.TabIndex = 7;
-            checkBox7.Text = "Spouse Deduction";
-            checkBox7.UseVisualStyleBackColor = true;
+            insurance_father2.Controls.Add(insurance_mother2);
+            insurance_father2.Controls.Add(ucCheckBox2);
+            insurance_father2.Controls.Add(sum_insurance);
+            insurance_father2.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            insurance_father2.Location = new Point(407, 148);
+            insurance_father2.Name = "insurance_father2";
+            insurance_father2.Size = new Size(363, 100);
+            insurance_father2.TabIndex = 4;
+            insurance_father2.TabStop = false;
+            insurance_father2.Text = "Health Insurance premium for tzpayer parent";
             // 
-            // groupBox1
+            // insurance_mother2
             // 
-            groupBox1.Controls.Add(insurance_mother);
-            groupBox1.Controls.Add(sum_insurance);
-            groupBox1.Controls.Add(insurance_father);
-            groupBox1.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            groupBox1.Location = new Point(407, 148);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(363, 100);
-            groupBox1.TabIndex = 4;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "Health Insurance premium for tzpayer parent";
+            insurance_mother2.Checked = false;
+            insurance_mother2.ControlHeight = 20;
+            insurance_mother2.ControlWidth = 152;
+            insurance_mother2.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            insurance_mother2.FontColor = Color.Black;
+            insurance_mother2.FontFace = "Tahoma";
+            insurance_mother2.FontSize = 9F;
+            insurance_mother2.Location = new Point(21, 43);
+            insurance_mother2.Name = "insurance_mother2";
+            insurance_mother2.Size = new Size(152, 20);
+            insurance_mother2.TabIndex = 16;
+            insurance_mother2.Text = "Mother";
+            insurance_mother2.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            insurance_mother2.TitleAlignment = DevExpress.Utils.HorzAlignment.Far;
             // 
-            // insurance_mother
+            // ucCheckBox2
             // 
-            insurance_mother.AutoSize = true;
-            insurance_mother.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            insurance_mother.Location = new Point(14, 46);
-            insurance_mother.Name = "insurance_mother";
-            insurance_mother.RightToLeft = RightToLeft.Yes;
-            insurance_mother.Size = new Size(65, 18);
-            insurance_mother.TabIndex = 7;
-            insurance_mother.Text = "Mother";
-            insurance_mother.UseVisualStyleBackColor = true;
+            ucCheckBox2.Checked = false;
+            ucCheckBox2.ControlHeight = 20;
+            ucCheckBox2.ControlWidth = 152;
+            ucCheckBox2.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ucCheckBox2.FontColor = Color.Black;
+            ucCheckBox2.FontFace = "Tahoma";
+            ucCheckBox2.FontSize = 9F;
+            ucCheckBox2.Location = new Point(21, 17);
+            ucCheckBox2.Name = "ucCheckBox2";
+            ucCheckBox2.Size = new Size(152, 20);
+            ucCheckBox2.TabIndex = 15;
+            ucCheckBox2.Text = "Father";
+            ucCheckBox2.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            ucCheckBox2.TitleAlignment = DevExpress.Utils.HorzAlignment.Far;
             // 
             // sum_insurance
             // 
@@ -2758,21 +2901,9 @@ namespace EpicV004.Frms
             sum_insurance.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
             sum_insurance.TitleWidth = 180;
             // 
-            // insurance_father
-            // 
-            insurance_father.AutoSize = true;
-            insurance_father.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            insurance_father.Location = new Point(19, 19);
-            insurance_father.Name = "insurance_father";
-            insurance_father.RightToLeft = RightToLeft.Yes;
-            insurance_father.Size = new Size(61, 18);
-            insurance_father.TabIndex = 7;
-            insurance_father.Text = "Father";
-            insurance_father.UseVisualStyleBackColor = true;
-            // 
             // groupBox19
             // 
-            groupBox19.Controls.Add(sponsor_mother);
+            groupBox19.Controls.Add(sponsor_mother1);
             groupBox19.Controls.Add(sponsor_father);
             groupBox19.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             groupBox19.Location = new Point(407, 42);
@@ -2782,29 +2913,39 @@ namespace EpicV004.Frms
             groupBox19.TabStop = false;
             groupBox19.Text = "Sponser for parents with income";
             // 
-            // sponsor_mother
+            // sponsor_mother1
             // 
-            sponsor_mother.AutoSize = true;
-            sponsor_mother.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            sponsor_mother.Location = new Point(14, 54);
-            sponsor_mother.Name = "sponsor_mother";
-            sponsor_mother.RightToLeft = RightToLeft.Yes;
-            sponsor_mother.Size = new Size(65, 18);
-            sponsor_mother.TabIndex = 7;
-            sponsor_mother.Text = "Mother";
-            sponsor_mother.UseVisualStyleBackColor = true;
+            sponsor_mother1.Checked = false;
+            sponsor_mother1.ControlHeight = 20;
+            sponsor_mother1.ControlWidth = 165;
+            sponsor_mother1.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            sponsor_mother1.FontColor = Color.Black;
+            sponsor_mother1.FontFace = "Tahoma";
+            sponsor_mother1.FontSize = 9F;
+            sponsor_mother1.Location = new Point(8, 47);
+            sponsor_mother1.Name = "sponsor_mother1";
+            sponsor_mother1.Size = new Size(165, 20);
+            sponsor_mother1.TabIndex = 14;
+            sponsor_mother1.Text = "Mother";
+            sponsor_mother1.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            sponsor_mother1.TitleAlignment = DevExpress.Utils.HorzAlignment.Far;
             // 
             // sponsor_father
             // 
-            sponsor_father.AutoSize = true;
+            sponsor_father.Checked = false;
+            sponsor_father.ControlHeight = 20;
+            sponsor_father.ControlWidth = 165;
             sponsor_father.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            sponsor_father.Location = new Point(19, 27);
+            sponsor_father.FontColor = Color.Black;
+            sponsor_father.FontFace = "Tahoma";
+            sponsor_father.FontSize = 9F;
+            sponsor_father.Location = new Point(8, 21);
             sponsor_father.Name = "sponsor_father";
-            sponsor_father.RightToLeft = RightToLeft.Yes;
-            sponsor_father.Size = new Size(61, 18);
-            sponsor_father.TabIndex = 7;
+            sponsor_father.Size = new Size(165, 20);
+            sponsor_father.TabIndex = 13;
             sponsor_father.Text = "Father";
-            sponsor_father.UseVisualStyleBackColor = true;
+            sponsor_father.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            sponsor_father.TitleAlignment = DevExpress.Utils.HorzAlignment.Far;
             // 
             // groupBox20
             // 
@@ -2823,7 +2964,6 @@ namespace EpicV004.Frms
             groupBox20.TabIndex = 8;
             groupBox20.TabStop = false;
             groupBox20.Text = "Single or couple filing separately";
-            groupBox20.Enter += groupBox20_Enter;
             // 
             // purchase_goods1
             // 
@@ -3463,7 +3603,7 @@ namespace EpicV004.Frms
             // 
             // groupBox6
             // 
-            groupBox6.Controls.Add(social_sec_deduction);
+            groupBox6.Controls.Add(social_sec_deduction1);
             groupBox6.Controls.Add(social_sec_no);
             groupBox6.Controls.Add(deduction_method);
             groupBox6.Controls.Add(application_date);
@@ -3476,18 +3616,6 @@ namespace EpicV004.Frms
             groupBox6.TabStop = false;
             groupBox6.Text = "Social Security Detail";
             // 
-            // social_sec_deduction
-            // 
-            social_sec_deduction.AutoSize = true;
-            social_sec_deduction.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            social_sec_deduction.Location = new Point(4, 20);
-            social_sec_deduction.Name = "social_sec_deduction";
-            social_sec_deduction.RightToLeft = RightToLeft.Yes;
-            social_sec_deduction.Size = new Size(145, 18);
-            social_sec_deduction.TabIndex = 7;
-            social_sec_deduction.Text = " Soc.Sec.Deduction *";
-            social_sec_deduction.UseVisualStyleBackColor = true;
-            // 
             // social_sec_no
             // 
             social_sec_no.Appearance.Font = new Font("Tahoma", 9F);
@@ -3498,7 +3626,7 @@ namespace EpicV004.Frms
             social_sec_no.FontFace = "Tahoma";
             social_sec_no.FontSize = 9F;
             social_sec_no.FormatStr = "";
-            social_sec_no.Location = new Point(7, 86);
+            social_sec_no.Location = new Point(7, 92);
             social_sec_no.Margin = new Padding(4, 3, 4, 3);
             social_sec_no.Name = "social_sec_no";
             social_sec_no.Size = new Size(371, 23);
@@ -3518,7 +3646,7 @@ namespace EpicV004.Frms
             deduction_method.FontColor = Color.Black;
             deduction_method.FontFace = "Tahoma";
             deduction_method.FontSize = 9F;
-            deduction_method.Location = new Point(7, 38);
+            deduction_method.Location = new Point(7, 47);
             deduction_method.Margin = new Padding(4, 3, 4, 3);
             deduction_method.Name = "deduction_method";
             deduction_method.Size = new Size(371, 23);
@@ -3537,7 +3665,7 @@ namespace EpicV004.Frms
             application_date.FontFace = "Tahoma";
             application_date.FontSize = 9F;
             application_date.FormatStr = "";
-            application_date.Location = new Point(7, 63);
+            application_date.Location = new Point(6, 67);
             application_date.Name = "application_date";
             application_date.Size = new Size(371, 23);
             application_date.TabIndex = 25;
@@ -3556,7 +3684,7 @@ namespace EpicV004.Frms
             title_social_sec.FontColor = Color.Black;
             title_social_sec.FontFace = "Tahoma";
             title_social_sec.FontSize = 9F;
-            title_social_sec.Location = new Point(7, 111);
+            title_social_sec.Location = new Point(7, 115);
             title_social_sec.Margin = new Padding(4, 3, 4, 3);
             title_social_sec.Name = "title_social_sec";
             title_social_sec.Size = new Size(371, 23);
@@ -3583,7 +3711,6 @@ namespace EpicV004.Frms
             ucPanel7.Name = "ucPanel7";
             ucPanel7.Size = new Size(1239, 510);
             ucPanel7.TabIndex = 0;
-            ucPanel7.UCCustomButtonClick += ucPanel7_UCCustomButtonClick;
             // 
             // groupBox27
             // 
@@ -3809,6 +3936,23 @@ namespace EpicV004.Frms
             g100.Size = new Size(1239, 510);
             g100.TabIndex = 0;
             // 
+            // social_sec_deduction1
+            // 
+            social_sec_deduction1.Checked = false;
+            social_sec_deduction1.ControlHeight = 20;
+            social_sec_deduction1.ControlWidth = 186;
+            social_sec_deduction1.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            social_sec_deduction1.FontColor = Color.Black;
+            social_sec_deduction1.FontFace = "Tahoma";
+            social_sec_deduction1.FontSize = 9F;
+            social_sec_deduction1.Location = new Point(7, 21);
+            social_sec_deduction1.Name = "social_sec_deduction1";
+            social_sec_deduction1.Size = new Size(186, 20);
+            social_sec_deduction1.TabIndex = 26;
+            social_sec_deduction1.Text = "* Soc.Sec.Deduction";
+            social_sec_deduction1.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            social_sec_deduction1.TitleAlignment = DevExpress.Utils.HorzAlignment.Far;
+            // 
             // HR160
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -3822,7 +3966,6 @@ namespace EpicV004.Frms
             ucSplit1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ucPanel1).EndInit();
             ucPanel1.ResumeLayout(false);
-            ucPanel1.PerformLayout();
             ucSplit2.Panel1.ResumeLayout(false);
             ucSplit2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ucSplit2).EndInit();
@@ -3833,8 +3976,11 @@ namespace EpicV004.Frms
             ucSplit3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ucPanel2).EndInit();
             ucPanel2.ResumeLayout(false);
+            groupBox32.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)signimg.Properties).EndInit();
+            groupBox31.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)photo.Properties).EndInit();
             groupBox29.ResumeLayout(false);
-            groupBox29.PerformLayout();
             groupBox30.ResumeLayout(false);
             groupBox28.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)teb).EndInit();
@@ -3844,11 +3990,8 @@ namespace EpicV004.Frms
             ucPanel3.ResumeLayout(false);
             groupBox4.ResumeLayout(false);
             groupBox8.ResumeLayout(false);
-            groupBox8.PerformLayout();
             groupBox9.ResumeLayout(false);
-            groupBox9.PerformLayout();
             groupBox7.ResumeLayout(false);
-            groupBox7.PerformLayout();
             groupBox2.ResumeLayout(false);
             groupBox3.ResumeLayout(false);
             xtraTabPage2.ResumeLayout(false);
@@ -3863,9 +4006,7 @@ namespace EpicV004.Frms
             ucPanel4.ResumeLayout(false);
             groupBox11.ResumeLayout(false);
             groupBox16.ResumeLayout(false);
-            groupBox16.PerformLayout();
             groupBox15.ResumeLayout(false);
-            groupBox15.PerformLayout();
             groupBox14.ResumeLayout(false);
             groupBox12.ResumeLayout(false);
             groupBox10.ResumeLayout(false);
@@ -3873,15 +4014,10 @@ namespace EpicV004.Frms
             xtraTabPage11.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ucPanel5).EndInit();
             ucPanel5.ResumeLayout(false);
-            ucPanel5.PerformLayout();
             groupBox5.ResumeLayout(false);
-            groupBox5.PerformLayout();
             groupBox18.ResumeLayout(false);
-            groupBox18.PerformLayout();
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
+            insurance_father2.ResumeLayout(false);
             groupBox19.ResumeLayout(false);
-            groupBox19.PerformLayout();
             groupBox20.ResumeLayout(false);
             groupBox25.ResumeLayout(false);
             groupBox25.PerformLayout();
@@ -3894,7 +4030,6 @@ namespace EpicV004.Frms
             ucPanel6.ResumeLayout(false);
             groupBox17.ResumeLayout(false);
             groupBox6.ResumeLayout(false);
-            groupBox6.PerformLayout();
             xtraTabPage13.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ucPanel7).EndInit();
             ucPanel7.ResumeLayout(false);
@@ -3975,7 +4110,6 @@ namespace EpicV004.Frms
         private Ctrls.UCCodeBox job_class;
         private Ctrls.UCCodeBox employee_type;
         private Ctrls.UCButton btn_copy;
-        private CheckBox s_foreigner;
         private Ctrls.UCTextBox s_dept_name;
         private Ctrls.UCTextBox s_dept;
         private Ctrls.UCTextBox s_emp;
@@ -3989,13 +4123,8 @@ namespace EpicV004.Frms
         private Ctrls.UCTextBox obesity;
         private Ctrls.UCTextBox current_road;
         private GroupBox groupBox8;
-        private CheckBox no_salary_vc;
-        private CheckBox scan_yn;
-        private CheckBox messenger_use;
         private Ctrls.UCTextBox new_empno;
         private GroupBox groupBox7;
-        private CheckBox chk_criminal;
-        private Ctrls.UCTextBox criminal_memo;
         private GroupBox groupBox9;
         private CheckBox checkBox2;
         private Ctrls.UCTextBox disease_memo;
@@ -4014,7 +4143,6 @@ namespace EpicV004.Frms
         private Ctrls.UCCodeBox tax_form_method;
         private Ctrls.UCCodeBox tax_calc_method;
         private GroupBox groupBox11;
-        private CheckBox sponsor_father;
         private Ctrls.UCTextBox tax_force_amt;
         private GroupBox groupBox13;
         private Ctrls.UCTextBox donations;
@@ -4072,7 +4200,7 @@ namespace EpicV004.Frms
         private Ctrls.UCTextBox pension_insurance_spouse;
         private Ctrls.UCTextBox life_insurance_spouse;
         private GroupBox groupBox5;
-        private GroupBox groupBox1;
+        private GroupBox insurance_father2;
         private Ctrls.UCTextBox sum_insurance;
         private Label label6;
         private Label label5;
@@ -4085,7 +4213,7 @@ namespace EpicV004.Frms
         private CheckBox insurance_father;
         private CheckBox sponsor_mother;
         private Ctrls.UCTextBox etc;
-     
+
         private Ctrls.UCPanel ucPanel6;
         private GroupBox groupBox17;
         private Ctrls.UCTextBox choose_no3;
@@ -4093,7 +4221,6 @@ namespace EpicV004.Frms
         private Ctrls.UCTextBox choose_no1;
         private GroupBox groupBox6;
         private Ctrls.UCTextBox social_sec_no;
-        private CheckBox social_sec_deduction;
         private Ctrls.UCCodeBox deduction_method;
         private Ctrls.UCDateBox application_date;
         private Ctrls.UCCodeBox title_social_sec;
@@ -4113,7 +4240,6 @@ namespace EpicV004.Frms
         private Ctrls.UCGridSet g90;
         private GroupBox groupBox29;
         private Ctrls.UCTextBox black_reason;
-        private CheckBox black_list_yn;
         private GroupBox groupBox30;
         private Ctrls.UCCodeBox employee_status;
         private GroupBox groupBox28;
@@ -4122,5 +4248,32 @@ namespace EpicV004.Frms
         private Ctrls.UCTextBox employee_status_reason;
         private Ctrls.UCDateBox resign_date;
         private Ctrls.UCTextBox compensation1;
+        private GroupBox groupBox32;
+        private Ctrls.UCImage ucImage2;
+        private GroupBox groupBox31;
+        private Ctrls.UCImage photo;
+        private Ctrls.UCCheckBox s_foreigner;
+        private Ctrls.UCCheckBox black_list_yn;
+        private Ctrls.UCCheckBox scan_yn;
+        private Ctrls.UCCheckBox nosalary_vc;
+        private Ctrls.UCCheckBox messenger_use;
+        private Ctrls.UCNote criminal_memo;
+        private Ctrls.UCCheckBox chk_criminal;
+        private Ctrls.UCNote disease_memo1;
+        private Ctrls.UCCheckBox chk_disease;
+        private Ctrls.UCImage signimg;
+        private Ctrls.UCCodeBox ethnicity;
+        private Ctrls.UCCheckBox spouse_deduction;
+        private Ctrls.UCCheckBox sponsor_mother1;
+        private Ctrls.UCCheckBox sponsor_father;
+        private Ctrls.UCCheckBox insurance_mother2;
+        private Ctrls.UCCheckBox ucCheckBox2;
+        private Ctrls.UCCheckBox insurance_mother_spouse4;
+        private Ctrls.UCCheckBox insurance_father_spouse4;
+        private Ctrls.UCCheckBox sponsor_fmoher_spouse3;
+        private Ctrls.UCCheckBox sponsor_father_spouse3;
+        private Ctrls.UCCheckBox tax_yr_force_enabled1;
+        private Ctrls.UCCheckBox tax_force_enabled1;
+        private Ctrls.UCCheckBox social_sec_deduction1;
     }
 }

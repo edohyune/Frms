@@ -71,8 +71,8 @@ namespace EpicV004.Frms
             set => Set(ref _last_name_eng, value);
         }
 
-        private string _messenger_use;
-        public string messenger_use
+        private bool _messenger_use;
+        public bool messenger_use
         {
             get => _messenger_use;
             set => Set(ref _messenger_use, value);
@@ -188,6 +188,55 @@ namespace EpicV004.Frms
         {
             get => _current_email;
             set => Set(ref _current_email, value);
+        }
+
+        private string _pass_interview;
+        public string pass_interview
+        {
+            get => _pass_interview;
+            set => Set(ref _pass_interview, value);
+        }
+
+        private string _pass_health_check;
+        public string pass_health_check
+        {
+            get => _pass_health_check;
+            set => Set(ref _pass_health_check, value);
+        }
+
+        private bool _black_list_yn;
+        public bool black_list_yn
+        {
+            get => _black_list_yn;
+            set => Set(ref _black_list_yn, value);
+        }
+
+        private bool _resign_in_3mon;
+        public bool resign_in_3mon
+        {
+            get => _resign_in_3mon;
+            set => Set(ref _resign_in_3mon, value);
+        }
+
+        private string _trans_emp_master;
+        public string trans_emp_master
+        {
+            get => _trans_emp_master;
+            set => Set(ref _trans_emp_master, value);
+        }
+
+        private bool _chk_foreigner;
+        public bool chk_foreigner
+        {
+            get => _chk_foreigner;
+            set => Set(ref _chk_foreigner, value);
+        }
+
+        private string _issue_no;
+        public string issue_no
+        {
+            get => _issue_no;
+            set => Set(ref _issue_no, value);
         }
     }
     }
