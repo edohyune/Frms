@@ -15,6 +15,13 @@ namespace EpicV004.Frms
             set => Set(ref _pid, value);
         }
 
+        private string _selected;
+        public string selected
+        {
+            get => _selected;
+            set => Set(ref _selected, value);
+        }
+
         private string _emp_no;
         public string emp_no
         {
@@ -22,18 +29,18 @@ namespace EpicV004.Frms
             set => Set(ref _emp_no, value);
         }
 
-        private int _seq;
-        public int seq
+        private string _nm;
+        public string nm
         {
-            get => _seq;
-            set => Set(ref _seq, value);
+            get => _nm;
+            set => Set(ref _nm, value);
         }
 
-        private string _order_type;
-        public string order_type
+        private string _other_lang_name;
+        public string other_lang_name
         {
-            get => _order_type;
-            set => Set(ref _order_type, value);
+            get => _other_lang_name;
+            set => Set(ref _other_lang_name, value);
         }
 
         private DateTime _order_date;
@@ -41,6 +48,13 @@ namespace EpicV004.Frms
         {
             get => _order_date;
             set => Set(ref _order_date, value);
+        }
+
+        private string _order_type;
+        public string order_type
+        {
+            get => _order_type;
+            set => Set(ref _order_type, value);
         }
 
         private string _emp_category;
@@ -55,6 +69,13 @@ namespace EpicV004.Frms
         {
             get => _dept;
             set => Set(ref _dept, value);
+        }
+
+        private string _dept_name;
+        public string dept_name
+        {
+            get => _dept_name;
+            set => Set(ref _dept_name, value);
         }
 
         private string _section;
@@ -78,6 +99,13 @@ namespace EpicV004.Frms
             set => Set(ref _project, value);
         }
 
+        private string _project_name;
+        public string project_name
+        {
+            get => _project_name;
+            set => Set(ref _project_name, value);
+        }
+
         private string _position;
         public string position
         {
@@ -99,46 +127,11 @@ namespace EpicV004.Frms
             set => Set(ref _employee_type, value);
         }
 
-        private string _employment_category;
-        public string employment_category
-        {
-            get => _employment_category;
-            set => Set(ref _employment_category, value);
-        }
-
-        private string _applicant_id;
-        public string applicant_id
-        {
-            get => _applicant_id;
-            set => Set(ref _applicant_id, value);
-        }
-
-        private decimal _salary_rate;
-        public decimal salary_rate
-        {
-            get => _salary_rate;
-            set => Set(ref _salary_rate, value);
-        }
-
         private string _doc_no;
         public string doc_no
         {
             get => _doc_no;
             set => Set(ref _doc_no, value);
-        }
-
-        private string _selected;
-        public string selected
-        {
-            get => _selected;
-            set => Set(ref _selected, value);
-        }
-
-        private string _status;
-        public string status
-        {
-            get => _status;
-            set => Set(ref _status, value);
         }
 
         private string _memo;
@@ -147,17 +140,12 @@ namespace EpicV004.Frms
             get => _memo;
             set => Set(ref _memo, value);
         }
-        private string _other_lang_name;
-        public string other_lang_name
+
+        private string _status;
+        public string status
         {
-            get => _other_lang_name;
-            set => Set(ref _other_lang_name, value);
-        }
-        private string _nm;
-        public string nm
-        {
-            get => _nm;
-            set => Set(ref _nm, value);
+            get => _status;
+            set => Set(ref _status, value);
         }
     }
 }

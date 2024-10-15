@@ -36,11 +36,11 @@
             g10 = new Ctrls.UCGridSet();
             ucSplit3 = new Ctrls.UCSplit();
             ucPanel2 = new Ctrls.UCPanel();
-            memo = new Ctrls.UCTextBox();
             status = new Ctrls.UCCodeBox();
             doc_no = new Ctrls.UCTextBox();
             order_date = new Ctrls.UCDateBox();
             g20 = new Ctrls.UCGridSet();
+            memo = new Ctrls.UCNote();
             ((System.ComponentModel.ISupportInitialize)ucSplit1).BeginInit();
             ucSplit1.Panel1.SuspendLayout();
             ucSplit1.Panel2.SuspendLayout();
@@ -183,23 +183,6 @@
             ucPanel2.TabIndex = 0;
             ucPanel2.Text = "Batch Order List";
             // 
-            // memo
-            // 
-            memo.ControlHeight = 21;
-            memo.ControlWidth = 465;
-            memo.FontColor = Color.Black;
-            memo.FontFace = "Tahoma";
-            memo.FontSize = 9F;
-            memo.FormatStr = "";
-            memo.Location = new Point(5, 72);
-            memo.Name = "memo";
-            memo.Size = new Size(465, 21);
-            memo.TabIndex = 3;
-            memo.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            memo.Title = "Memo";
-            memo.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            memo.TitleWidth = 100;
-            // 
             // status
             // 
             status.ControlHeight = 21;
@@ -259,6 +242,22 @@
             g20.Size = new Size(919, 439);
             g20.TabIndex = 0;
             // 
+            // memo
+            // 
+            memo.ControlHeight = 22;
+            memo.ControlWidth = 465;
+            memo.FontColor = Color.Black;
+            memo.FontFace = "Tahoma";
+            memo.FontSize = 9F;
+            memo.Location = new Point(5, 72);
+            memo.Name = "memo";
+            memo.Size = new Size(465, 22);
+            memo.TabIndex = 3;
+            memo.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            memo.Title = "Memo";
+            memo.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            memo.TitleWidth = 100;
+            // 
             // HR200
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -297,9 +296,9 @@
         private Ctrls.UCSplit ucSplit3;
         private Ctrls.UCPanel ucPanel2;
         private Ctrls.UCGridSet g20;
-        private Ctrls.UCTextBox memo;
         private Ctrls.UCCodeBox status;
         private Ctrls.UCTextBox doc_no;
         private Ctrls.UCDateBox order_date;
+        private Ctrls.UCNote memo;
     }
 }

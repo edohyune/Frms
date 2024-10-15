@@ -37,10 +37,10 @@
             ucSplit3 = new Ctrls.UCSplit();
             ucPanel2 = new Ctrls.UCPanel();
             status = new Ctrls.UCCodeBox();
-            memo = new Ctrls.UCTextBox();
             doc_no = new Ctrls.UCTextBox();
             apply_date = new Ctrls.UCDateBox();
             g20 = new Ctrls.UCGridSet();
+            memo = new Ctrls.UCNote();
             ((System.ComponentModel.ISupportInitialize)ucSplit1).BeginInit();
             ucSplit1.Panel1.SuspendLayout();
             ucSplit1.Panel2.SuspendLayout();
@@ -173,8 +173,8 @@
             // 
             // ucPanel2
             // 
-            ucPanel2.Controls.Add(status);
             ucPanel2.Controls.Add(memo);
+            ucPanel2.Controls.Add(status);
             ucPanel2.Controls.Add(doc_no);
             ucPanel2.Controls.Add(apply_date);
             ucPanel2.Dock = DockStyle.Fill;
@@ -200,23 +200,6 @@
             status.Title = "Status";
             status.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
             status.TitleWidth = 50;
-            // 
-            // memo
-            // 
-            memo.ControlHeight = 21;
-            memo.ControlWidth = 433;
-            memo.FontColor = Color.Black;
-            memo.FontFace = "Tahoma";
-            memo.FontSize = 9F;
-            memo.FormatStr = "";
-            memo.Location = new Point(5, 73);
-            memo.Name = "memo";
-            memo.Size = new Size(433, 21);
-            memo.TabIndex = 2;
-            memo.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            memo.Title = "Memo";
-            memo.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            memo.TitleWidth = 100;
             // 
             // doc_no
             // 
@@ -260,6 +243,24 @@
             g20.Size = new Size(860, 451);
             g20.TabIndex = 0;
             // 
+            // memo
+            // 
+            memo.Appearance.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            memo.Appearance.Options.UseFont = true;
+            memo.ControlHeight = 21;
+            memo.ControlWidth = 433;
+            memo.FontColor = Color.Black;
+            memo.FontFace = "Tahoma";
+            memo.FontSize = 9F;
+            memo.Location = new Point(5, 72);
+            memo.Name = "memo";
+            memo.Size = new Size(433, 21);
+            memo.TabIndex = 4;
+            memo.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            memo.Title = "Memo";
+            memo.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            memo.TitleWidth = 100;
+            // 
             // HR220
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -301,6 +302,6 @@
         private Ctrls.UCDateBox apply_date;
         private Ctrls.UCGridSet g20;
         private Ctrls.UCCodeBox status;
-        private Ctrls.UCTextBox memo;
+        private Ctrls.UCNote memo;
     }
 }

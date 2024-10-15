@@ -36,6 +36,13 @@ namespace EpicV004.Frms
             set => Set(ref _title, value);
         }
 
+        private string _emp_no;
+        public string emp_no
+        {
+            get => _emp_no;
+            set => Set(ref _emp_no, value);
+        }
+
         private string _first_name;
         public string first_name
         {
@@ -76,13 +83,6 @@ namespace EpicV004.Frms
         {
             get => _nick_name;
             set => Set(ref _nick_name, value);
-        }
-
-        private string _account_type;
-        public string account_type
-        {
-            get => _account_type;
-            set => Set(ref _account_type, value);
         }
 
         private string _gender;
@@ -204,13 +204,6 @@ namespace EpicV004.Frms
             set => Set(ref _current_country, value);
         }
 
-        private string _place_of_birth;
-        public string place_of_birth
-        {
-            get => _place_of_birth;
-            set => Set(ref _place_of_birth, value);
-        }
-
         private string _ethnicity;
         public string ethnicity
         {
@@ -223,27 +216,6 @@ namespace EpicV004.Frms
         {
             get => _nationality;
             set => Set(ref _nationality, value);
-        }
-
-        private string _religion;
-        public string religion
-        {
-            get => _religion;
-            set => Set(ref _religion, value);
-        }
-
-        private string _military;
-        public string military
-        {
-            get => _military;
-            set => Set(ref _military, value);
-        }
-
-        private string _blood;
-        public string blood
-        {
-            get => _blood;
-            set => Set(ref _blood, value);
         }
 
         private decimal _height;
@@ -379,71 +351,22 @@ namespace EpicV004.Frms
             set => Set(ref _emergency_contact_relation, value);
         }
 
-        private string _pass_interview;
-        public string pass_interview
-        {
-            get => _pass_interview;
-            set => Set(ref _pass_interview, value);
-        }
-
-        private string _pass_health_check;
-        public string pass_health_check
-        {
-            get => _pass_health_check;
-            set => Set(ref _pass_health_check, value);
-        }
-
-        private int _trans_emp_master;
-        public int trans_emp_master
-        {
-            get => _trans_emp_master;
-            set => Set(ref _trans_emp_master, value);
-        }
-
-        private string _emp_no;
-        public string emp_no
-        {
-            get => _emp_no;
-            set => Set(ref _emp_no, value);
-        }
-
-        private string _black_list_yn;
-        public string black_list_yn
+        private bool _black_list_yn;
+        public bool black_list_yn
         {
             get => _black_list_yn;
             set => Set(ref _black_list_yn, value);
         }
 
-        private string _resign_in_3mon;
-        public string resign_in_3mon
+        private bool _resign_in_3mon;
+        public bool resign_in_3mon
         {
             get => _resign_in_3mon;
             set => Set(ref _resign_in_3mon, value);
         }
 
-        private string _doc_no;
-        public string doc_no
-        {
-            get => _doc_no;
-            set => Set(ref _doc_no, value);
-        }
-
-        private string _selected;
-        public string selected
-        {
-            get => _selected;
-            set => Set(ref _selected, value);
-        }
-
-        private string _messenger_use;
-        public string messenger_use
-        {
-            get => _messenger_use;
-            set => Set(ref _messenger_use, value);
-        }
-
-        private string _chk_criminal;
-        public string chk_criminal
+        private bool _chk_criminal;
+        public bool chk_criminal
         {
             get => _chk_criminal;
             set => Set(ref _chk_criminal, value);
@@ -456,8 +379,8 @@ namespace EpicV004.Frms
             set => Set(ref _criminal_memo, value);
         }
 
-        private string _chk_disease;
-        public string chk_disease
+        private bool _chk_disease;
+        public bool chk_disease
         {
             get => _chk_disease;
             set => Set(ref _chk_disease, value);
@@ -470,71 +393,8 @@ namespace EpicV004.Frms
             set => Set(ref _disease_memo, value);
         }
 
-        private string _emp_category;
-        public string emp_category
-        {
-            get => _emp_category;
-            set => Set(ref _emp_category, value);
-        }
-
-        private string _employee_type;
-        public string employee_type
-        {
-            get => _employee_type;
-            set => Set(ref _employee_type, value);
-        }
-
-        private DateTime _order_date;
-        public DateTime order_date
-        {
-            get => _order_date;
-            set => Set(ref _order_date, value);
-        }
-
-        private string _job_class;
-        public string job_class
-        {
-            get => _job_class;
-            set => Set(ref _job_class, value);
-        }
-
-        private string _position;
-        public string position
-        {
-            get => _position;
-            set => Set(ref _position, value);
-        }
-
-        private string _dept;
-        public string dept
-        {
-            get => _dept;
-            set => Set(ref _dept, value);
-        }
-
-        private string _project;
-        public string project
-        {
-            get => _project;
-            set => Set(ref _project, value);
-        }
-
-        private string _job_site;
-        public string job_site
-        {
-            get => _job_site;
-            set => Set(ref _job_site, value);
-        }
-
-        private string _section;
-        public string section
-        {
-            get => _section;
-            set => Set(ref _section, value);
-        }
-
-        private string _chk_foreigner;
-        public string chk_foreigner
+        private bool _chk_foreigner;
+        public bool chk_foreigner
         {
             get => _chk_foreigner;
             set => Set(ref _chk_foreigner, value);
@@ -547,60 +407,11 @@ namespace EpicV004.Frms
             set => Set(ref _issue_no, value);
         }
 
-        private DateTime _salary_date;
-        public DateTime salary_date
+        private bool _messenger_use;
+        public bool messenger_use
         {
-            get => _salary_date;
-            set => Set(ref _salary_date, value);
-        }
-
-        private string _salary_category;
-        public string salary_category
-        {
-            get => _salary_category;
-            set => Set(ref _salary_category, value);
-        }
-
-        private decimal _salary_rate;
-        public decimal salary_rate
-        {
-            get => _salary_rate;
-            set => Set(ref _salary_rate, value);
-        }
-
-        private string _lumpsum_yn;
-        public string lumpsum_yn
-        {
-            get => _lumpsum_yn;
-            set => Set(ref _lumpsum_yn, value);
-        }
-
-        private string _payment_method;
-        public string payment_method
-        {
-            get => _payment_method;
-            set => Set(ref _payment_method, value);
-        }
-
-        private string _bank_name;
-        public string bank_name
-        {
-            get => _bank_name;
-            set => Set(ref _bank_name, value);
-        }
-
-        private string _bank_account_no;
-        public string bank_account_no
-        {
-            get => _bank_account_no;
-            set => Set(ref _bank_account_no, value);
-        }
-
-        private string _status;
-        public string status
-        {
-            get => _status;
-            set => Set(ref _status, value);
+            get => _messenger_use;
+            set => Set(ref _messenger_use, value);
         }
     }
 }
