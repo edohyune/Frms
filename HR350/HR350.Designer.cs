@@ -157,7 +157,7 @@
             Controls.Add(ucSplit1);
             Name = "HR350";
             Size = new Size(1181, 618);
-            Load += HR350_Load;
+         
             ucSplit1.Panel1.ResumeLayout(false);
             ucSplit1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ucSplit1).EndInit();

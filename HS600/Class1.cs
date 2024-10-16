@@ -8,6 +8,13 @@ namespace EpicV004.Frms
 {
     public class HS600_G10 : EpicV004.Libs.MdlBase
     {
+        private string _emp_name;
+        public string emp_name
+        {
+            get => _emp_name;
+            set => Set(ref _emp_name, value);
+        }
+
         private long _pid;
         public long pid
         {
@@ -230,13 +237,6 @@ namespace EpicV004.Frms
         {
             get => _deleted;
             set => Set(ref _deleted, value);
-        }
-
-        private string _emp_name;
-        public string emp_name
-        {
-            get => _emp_name;
-            set => Set(ref _emp_name, value);
         }
     }
 }

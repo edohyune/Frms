@@ -7,9 +7,6 @@
             InitializeComponent();
         }
 
-        private void HR350_Load(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }
