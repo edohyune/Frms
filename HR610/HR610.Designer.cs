@@ -52,6 +52,7 @@
             al_work_period = new Ctrls.UCTextBox();
             groupBox3 = new GroupBox();
             label2 = new Label();
+            label33 = new Label();
             label16 = new Label();
             al_consume_max = new Ctrls.UCTextBox();
             al_tour_max = new Ctrls.UCTextBox();
@@ -86,6 +87,7 @@
             al_fnd_r = new Ctrls.UCTextBox();
             al_fnd_max = new Ctrls.UCTextBox();
             groupBox1 = new GroupBox();
+            pid = new Ctrls.UCTextBox();
             label13 = new Label();
             label12 = new Label();
             label11 = new Label();
@@ -154,7 +156,7 @@
             prm_soc_prov = new Ctrls.UCTextBox();
             xtraTabPage4 = new DevExpress.XtraTab.XtraTabPage();
             g20 = new Ctrls.UCGridSet();
-            label33 = new Label();
+            f20_pid = new Ctrls.UCTextBox();
             ((System.ComponentModel.ISupportInitialize)ucPanel1).BeginInit();
             ucPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ucTab1).BeginInit();
@@ -486,6 +488,16 @@
             label2.Size = new Size(356, 14);
             label2.TabIndex = 1;
             label2.Text = "C. Allowance and Deduction after deduction of expenses";
+            // 
+            // label33
+            // 
+            label33.AutoSize = true;
+            label33.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label33.Location = new Point(8, 466);
+            label33.Name = "label33";
+            label33.Size = new Size(282, 14);
+            label33.TabIndex = 1;
+            label33.Text = "17. Sum (items 1.to13.) to be filled in at item A.6";
             // 
             // label16
             // 
@@ -1109,6 +1121,7 @@
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(pid);
             groupBox1.Controls.Add(label13);
             groupBox1.Controls.Add(label12);
             groupBox1.Controls.Add(label11);
@@ -1133,6 +1146,23 @@
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Enter += groupBox1_Enter;
+            // 
+            // pid
+            // 
+            pid.ControlHeight = 21;
+            pid.ControlWidth = 145;
+            pid.FontColor = Color.Black;
+            pid.FontFace = "Tahoma";
+            pid.FontSize = 9F;
+            pid.FormatStr = "";
+            pid.Location = new Point(354, 20);
+            pid.Name = "pid";
+            pid.Size = new Size(145, 21);
+            pid.TabIndex = 2;
+            pid.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            pid.Title = "pid";
+            pid.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            pid.TitleWidth = 100;
             // 
             // label13
             // 
@@ -2132,6 +2162,7 @@
             // 
             // groupBox5
             // 
+            groupBox5.Controls.Add(f20_pid);
             groupBox5.Controls.Add(label29);
             groupBox5.Controls.Add(prm_soc_b4);
             groupBox5.Controls.Add(prm_soc_acct_br);
@@ -2271,15 +2302,22 @@
             g20.Size = new Size(1615, 699);
             g20.TabIndex = 0;
             // 
-            // label33
+            // f20_pid
             // 
-            label33.AutoSize = true;
-            label33.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label33.Location = new Point(8, 466);
-            label33.Name = "label33";
-            label33.Size = new Size(282, 14);
-            label33.TabIndex = 1;
-            label33.Text = "17. Sum (items 1.to13.) to be filled in at item A.6";
+            f20_pid.ControlHeight = 21;
+            f20_pid.ControlWidth = 223;
+            f20_pid.FontColor = Color.Black;
+            f20_pid.FontFace = "Tahoma";
+            f20_pid.FontSize = 9F;
+            f20_pid.FormatStr = "";
+            f20_pid.Location = new Point(158, 2);
+            f20_pid.Name = "f20_pid";
+            f20_pid.Size = new Size(223, 21);
+            f20_pid.TabIndex = 2;
+            f20_pid.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            f20_pid.Title = "pid";
+            f20_pid.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            f20_pid.TitleWidth = 100;
             // 
             // HR610
             // 
@@ -2448,5 +2486,7 @@
         private Ctrls.UCGridSet g20;
         private Ctrls.UCTextBox prm_soc_prov_br;
         private Label label33;
+        private Ctrls.UCTextBox pid;
+        private Ctrls.UCTextBox f20_pid;
     }
 }
