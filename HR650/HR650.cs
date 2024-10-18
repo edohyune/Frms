@@ -10,7 +10,7 @@
         private void HR650_Load(object sender, EventArgs e)
         {
             g10.Open();
-            g20.Open();
+            //g20.Open();
         }
     }
 }

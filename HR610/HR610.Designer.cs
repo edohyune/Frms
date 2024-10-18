@@ -148,6 +148,7 @@
             prm_scc_r = new Ctrls.UCTextBox();
             prm_soc_ty = new Ctrls.UCTextBox();
             groupBox5 = new GroupBox();
+            f20_pid = new Ctrls.UCTextBox();
             label29 = new Label();
             prm_soc_b4 = new Ctrls.UCTextBox();
             prm_soc_acct_br = new Ctrls.UCTextBox();
@@ -156,7 +157,6 @@
             prm_soc_prov = new Ctrls.UCTextBox();
             xtraTabPage4 = new DevExpress.XtraTab.XtraTabPage();
             g20 = new Ctrls.UCGridSet();
-            f20_pid = new Ctrls.UCTextBox();
             ((System.ComponentModel.ISupportInitialize)ucPanel1).BeginInit();
             ucPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ucTab1).BeginInit();
@@ -2177,6 +2177,23 @@
             groupBox5.TabStop = false;
             groupBox5.Text = "Social Security ID";
             // 
+            // f20_pid
+            // 
+            f20_pid.ControlHeight = 21;
+            f20_pid.ControlWidth = 223;
+            f20_pid.FontColor = Color.Black;
+            f20_pid.FontFace = "Tahoma";
+            f20_pid.FontSize = 9F;
+            f20_pid.FormatStr = "";
+            f20_pid.Location = new Point(158, 2);
+            f20_pid.Name = "f20_pid";
+            f20_pid.Size = new Size(223, 21);
+            f20_pid.TabIndex = 2;
+            f20_pid.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            f20_pid.Title = "pid";
+            f20_pid.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            f20_pid.TitleWidth = 100;
+            // 
             // label29
             // 
             label29.AutoSize = true;
@@ -2301,23 +2318,6 @@
             g20.Name = "g20";
             g20.Size = new Size(1615, 699);
             g20.TabIndex = 0;
-            // 
-            // f20_pid
-            // 
-            f20_pid.ControlHeight = 21;
-            f20_pid.ControlWidth = 223;
-            f20_pid.FontColor = Color.Black;
-            f20_pid.FontFace = "Tahoma";
-            f20_pid.FontSize = 9F;
-            f20_pid.FormatStr = "";
-            f20_pid.Location = new Point(158, 2);
-            f20_pid.Name = "f20_pid";
-            f20_pid.Size = new Size(223, 21);
-            f20_pid.TabIndex = 2;
-            f20_pid.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            f20_pid.Title = "pid";
-            f20_pid.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            f20_pid.TitleWidth = 100;
             // 
             // HR610
             // 
