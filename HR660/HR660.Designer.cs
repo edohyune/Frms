@@ -34,6 +34,9 @@
             s_year = new Ctrls.UCDateBox();
             ucPanel2 = new Ctrls.UCPanel();
             groupBox2 = new GroupBox();
+            calc_salary_close = new Ctrls.UCCheckBox();
+            add_ded_close = new Ctrls.UCCheckBox();
+            att_summ_close = new Ctrls.UCCheckBox();
             btn_wk3 = new Ctrls.UCButton();
             btn_wk = new Ctrls.UCButton();
             btn_jump3 = new Ctrls.UCButton();
@@ -46,9 +49,6 @@
             cnt2 = new Ctrls.UCTextBox();
             cnt11 = new Ctrls.UCTextBox();
             cnt1 = new Ctrls.UCTextBox();
-            checkBox3 = new CheckBox();
-            checkBox2 = new CheckBox();
-            checkBox1 = new CheckBox();
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
@@ -141,6 +141,9 @@
             // 
             // groupBox2
             // 
+            groupBox2.Controls.Add(calc_salary_close);
+            groupBox2.Controls.Add(add_ded_close);
+            groupBox2.Controls.Add(att_summ_close);
             groupBox2.Controls.Add(btn_wk3);
             groupBox2.Controls.Add(btn_wk);
             groupBox2.Controls.Add(btn_jump3);
@@ -153,9 +156,6 @@
             groupBox2.Controls.Add(cnt2);
             groupBox2.Controls.Add(cnt11);
             groupBox2.Controls.Add(cnt1);
-            groupBox2.Controls.Add(checkBox3);
-            groupBox2.Controls.Add(checkBox2);
-            groupBox2.Controls.Add(checkBox1);
             groupBox2.Controls.Add(label3);
             groupBox2.Controls.Add(label2);
             groupBox2.Controls.Add(label1);
@@ -170,6 +170,55 @@
             groupBox2.TabStop = false;
             groupBox2.Text = "Step";
             groupBox2.Enter += groupBox2_Enter;
+            // 
+            // calc_salary_close
+            // 
+            calc_salary_close.Checked = false;
+            calc_salary_close.ControlHeight = 21;
+            calc_salary_close.ControlWidth = 21;
+            calc_salary_close.FontColor = Color.Black;
+            calc_salary_close.FontFace = "Tahoma";
+            calc_salary_close.FontSize = 9F;
+            calc_salary_close.Location = new Point(332, 136);
+            calc_salary_close.Name = "calc_salary_close";
+            calc_salary_close.Size = new Size(21, 21);
+            calc_salary_close.TabIndex = 9;
+            calc_salary_close.Text = "UCCheckBox";
+            calc_salary_close.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            calc_salary_close.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            // 
+            // add_ded_close
+            // 
+            add_ded_close.Checked = false;
+            add_ded_close.ControlHeight = 21;
+            add_ded_close.ControlWidth = 21;
+            add_ded_close.FontColor = Color.Black;
+            add_ded_close.FontFace = "Tahoma";
+            add_ded_close.FontSize = 9F;
+            add_ded_close.Location = new Point(332, 97);
+            add_ded_close.Name = "add_ded_close";
+            add_ded_close.Size = new Size(21, 21);
+            add_ded_close.TabIndex = 8;
+            add_ded_close.Text = "UCCheckBox";
+            add_ded_close.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            add_ded_close.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            // 
+            // att_summ_close
+            // 
+            att_summ_close.Checked = false;
+            att_summ_close.ControlHeight = 21;
+            att_summ_close.ControlWidth = 21;
+            att_summ_close.FontColor = Color.Black;
+            att_summ_close.FontFace = "Tahoma";
+            att_summ_close.FontSize = 9F;
+            att_summ_close.Location = new Point(332, 58);
+            att_summ_close.Name = "att_summ_close";
+            att_summ_close.Size = new Size(21, 21);
+            att_summ_close.TabIndex = 7;
+            att_summ_close.Tag = "";
+            att_summ_close.Text = "UCCheckBox";
+            att_summ_close.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            att_summ_close.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
             // 
             // btn_wk3
             // 
@@ -386,33 +435,6 @@
             cnt1.Title = "UCTextBox";
             cnt1.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
             cnt1.TitleWidth = 0;
-            // 
-            // checkBox3
-            // 
-            checkBox3.AutoSize = true;
-            checkBox3.Location = new Point(333, 136);
-            checkBox3.Name = "checkBox3";
-            checkBox3.Size = new Size(15, 14);
-            checkBox3.TabIndex = 4;
-            checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            checkBox2.AutoSize = true;
-            checkBox2.Location = new Point(333, 97);
-            checkBox2.Name = "checkBox2";
-            checkBox2.Size = new Size(15, 14);
-            checkBox2.TabIndex = 4;
-            checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox1
-            // 
-            checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(333, 61);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(15, 14);
-            checkBox1.TabIndex = 4;
-            checkBox1.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -634,9 +656,6 @@
         private EpicV004.Ctrls.UCTextBox cnt2;
         private EpicV004.Ctrls.UCTextBox cnt11;
         private EpicV004.Ctrls.UCTextBox cnt1;
-        private CheckBox checkBox3;
-        private CheckBox checkBox2;
-        private CheckBox checkBox1;
         private Label label3;
         private Label label2;
         private Label label1;
@@ -649,5 +668,8 @@
         private EpicV004.Ctrls.UCButton btn_jump2;
         private EpicV004.Ctrls.UCButton btn_jump1;
         private EpicV004.Ctrls.UCButton btn_wk1;
+        private Ctrls.UCCheckBox calc_salary_close;
+        private Ctrls.UCCheckBox add_ded_close;
+        private Ctrls.UCCheckBox att_summ_close;
     }
 }

@@ -78,8 +78,8 @@ namespace EpicV004.Frms
             set => Set(ref _att_summ_date, value);
         }
 
-        private string _att_summ_close;
-        public string att_summ_close
+        private bool _att_summ_close;
+        public bool att_summ_close
         {
             get => _att_summ_close;
             set => Set(ref _att_summ_close, value);
@@ -92,8 +92,8 @@ namespace EpicV004.Frms
             set => Set(ref _add_ded_date, value);
         }
 
-        private string _add_ded_close;
-        public string add_ded_close
+        private bool _add_ded_close;
+        public bool add_ded_close
         {
             get => _add_ded_close;
             set => Set(ref _add_ded_close, value);
@@ -106,8 +106,8 @@ namespace EpicV004.Frms
             set => Set(ref _calc_salary_date, value);
         }
 
-        private string _calc_salary_close;
-        public string calc_salary_close
+        private bool _calc_salary_close;
+        public bool calc_salary_close
         {
             get => _calc_salary_close;
             set => Set(ref _calc_salary_close, value);

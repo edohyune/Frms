@@ -21,5 +21,10 @@
         {
 
         }
+
+        private void btn_salary_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

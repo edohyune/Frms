@@ -348,6 +348,7 @@
             btn_salary.TabIndex = 3;
             btn_salary.Title = "Salary/Tax Calculation";
             btn_salary.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            btn_salary.Click += btn_salary_Click;
             // 
             // s_pay_date
             // 
@@ -481,7 +482,6 @@
         private Ctrls.UCPanel ucPanel2;
         private Ctrls.UCTab ucTab1;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage1;
-        private Ctrls.UCGridSet g20;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage2;
         private Ctrls.UCGridSet g30;
         private Ctrls.UCButton btn_payment;
@@ -497,5 +497,6 @@
         private Ctrls.UCDateBox s_pay_date;
         private Ctrls.UCTextBox s_emp;
         private Ctrls.UCTextBox s_dept;
+        private Ctrls.UCGridSet g20;
     }
 }
