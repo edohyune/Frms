@@ -1,6 +1,6 @@
 ﻿namespace EpicV004.Frms
 {
-    public partial class HR502 : UserControl
+    public partial class HR502 : FrmBase
     {
         public HR502()
         {

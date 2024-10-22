@@ -43,6 +43,62 @@ namespace EpicV004.Frms
             set => Set(ref _wt_e_name, value);
         }
 
+        private string _sf_wd_begin;
+        public string sf_wd_begin
+        {
+            get => _sf_wd_begin;
+            set => Set(ref _sf_wd_begin, value);
+        }
+
+        private string _sf_wd_end;
+        public string sf_wd_end
+        {
+            get => _sf_wd_end;
+            set => Set(ref _sf_wd_end, value);
+        }
+
+        private string _sf_wd_break_begin;
+        public string sf_wd_break_begin
+        {
+            get => _sf_wd_break_begin;
+            set => Set(ref _sf_wd_break_begin, value);
+        }
+
+        private string _sf_wd_break_end;
+        public string sf_wd_break_end
+        {
+            get => _sf_wd_break_end;
+            set => Set(ref _sf_wd_break_end, value);
+        }
+
+        private string _sf_wk_begin;
+        public string sf_wk_begin
+        {
+            get => _sf_wk_begin;
+            set => Set(ref _sf_wk_begin, value);
+        }
+
+        private string _sf_wk_end;
+        public string sf_wk_end
+        {
+            get => _sf_wk_end;
+            set => Set(ref _sf_wk_end, value);
+        }
+
+        private string _sf_wk_break_begin;
+        public string sf_wk_break_begin
+        {
+            get => _sf_wk_break_begin;
+            set => Set(ref _sf_wk_break_begin, value);
+        }
+
+        private string _sf_wk_break_end;
+        public string sf_wk_break_end
+        {
+            get => _sf_wk_break_end;
+            set => Set(ref _sf_wk_break_end, value);
+        }
+
         private int _wt_mon_sf;
         public int wt_mon_sf
         {
@@ -127,67 +183,25 @@ namespace EpicV004.Frms
             set => Set(ref _sf_key, value);
         }
 
-        private TimeSpan _sf_wd_begin;
-        public TimeSpan sf_wd_begin
-        {
-            get => _sf_wd_begin;
-            set => Set(ref _sf_wd_begin, value);
-        }
-
-        private TimeSpan _sf_wd_end;
-        public TimeSpan sf_wd_end
-        {
-            get => _sf_wd_end;
-            set => Set(ref _sf_wd_end, value);
-        }
-
-        private TimeSpan _sf_wd_break_begin;
-        public TimeSpan sf_wd_break_begin
-        {
-            get => _sf_wd_break_begin;
-            set => Set(ref _sf_wd_break_begin, value);
-        }
-
-        private TimeSpan _sf_wd_break_end;
-        public TimeSpan sf_wd_break_end
-        {
-            get => _sf_wd_break_end;
-            set => Set(ref _sf_wd_break_end, value);
-        }
-
-        private TimeSpan _sf_wk_begin;
-        public TimeSpan sf_wk_begin
-        {
-            get => _sf_wk_begin;
-            set => Set(ref _sf_wk_begin, value);
-        }
-
-        private TimeSpan _sf_wk_end;
-        public TimeSpan sf_wk_end
-        {
-            get => _sf_wk_end;
-            set => Set(ref _sf_wk_end, value);
-        }
-
-        private TimeSpan _sf_wk_break_begin;
-        public TimeSpan sf_wk_break_begin
-        {
-            get => _sf_wk_break_begin;
-            set => Set(ref _sf_wk_break_begin, value);
-        }
-
-        private TimeSpan _sf_wk_break_end;
-        public TimeSpan sf_wk_break_end
-        {
-            get => _sf_wk_break_end;
-            set => Set(ref _sf_wk_break_end, value);
-        }
-
         private string _night_shift_wage;
         public string night_shift_wage
         {
             get => _night_shift_wage;
             set => Set(ref _night_shift_wage, value);
+        }
+
+        private int _cnt;
+        public int cnt
+        {
+            get => _cnt;
+            set => Set(ref _cnt, value);
+        }
+
+        private string _sf_name;
+        public string sf_name
+        {
+            get => _sf_name;
+            set => Set(ref _sf_name, value);
         }
 
     }

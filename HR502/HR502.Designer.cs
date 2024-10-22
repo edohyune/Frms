@@ -30,10 +30,10 @@
         {
             ucSplit1 = new Ctrls.UCSplit();
             ucPanel1 = new Ctrls.UCPanel();
-            s_enable = new Ctrls.UCTextBox();
-            s_txt = new Ctrls.UCTextBox();
+            s_search = new Ctrls.UCTextBox();
             ucPanel2 = new Ctrls.UCPanel();
             g10 = new Ctrls.UCGridSet();
+            s_enabled = new Ctrls.UCCodeBox();
             ((System.ComponentModel.ISupportInitialize)ucSplit1).BeginInit();
             ucSplit1.Panel1.SuspendLayout();
             ucSplit1.Panel2.SuspendLayout();
@@ -68,8 +68,8 @@
             // 
             // ucPanel1
             // 
-            ucPanel1.Controls.Add(s_enable);
-            ucPanel1.Controls.Add(s_txt);
+            ucPanel1.Controls.Add(s_enabled);
+            ucPanel1.Controls.Add(s_search);
             ucPanel1.Dock = DockStyle.Fill;
             ucPanel1.Location = new Point(0, 0);
             ucPanel1.Margin = new Padding(3, 2, 3, 2);
@@ -78,45 +78,25 @@
             ucPanel1.TabIndex = 0;
             ucPanel1.Text = "Shift(Work Schedule)";
             // 
-            // s_enable
+            // s_search
             // 
-            s_enable.Appearance.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            s_enable.Appearance.Options.UseFont = true;
-            s_enable.ControlHeight = 22;
-            s_enable.ControlWidth = 250;
-            s_enable.FontColor = Color.Black;
-            s_enable.FontFace = "Tahoma";
-            s_enable.FontSize = 9F;
-            s_enable.FormatStr = "";
-            s_enable.Location = new Point(283, 35);
-            s_enable.Margin = new Padding(4, 2, 4, 2);
-            s_enable.Name = "s_enable";
-            s_enable.Size = new Size(250, 22);
-            s_enable.TabIndex = 1;
-            s_enable.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            s_enable.Title = "Enable";
-            s_enable.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            s_enable.TitleWidth = 50;
-            // 
-            // s_txt
-            // 
-            s_txt.Appearance.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            s_txt.Appearance.Options.UseFont = true;
-            s_txt.ControlHeight = 22;
-            s_txt.ControlWidth = 269;
-            s_txt.FontColor = Color.Black;
-            s_txt.FontFace = "Tahoma";
-            s_txt.FontSize = 9F;
-            s_txt.FormatStr = "";
-            s_txt.Location = new Point(6, 35);
-            s_txt.Margin = new Padding(4, 2, 4, 2);
-            s_txt.Name = "s_txt";
-            s_txt.Size = new Size(269, 22);
-            s_txt.TabIndex = 0;
-            s_txt.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            s_txt.Title = "Search";
-            s_txt.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            s_txt.TitleWidth = 60;
+            s_search.Appearance.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            s_search.Appearance.Options.UseFont = true;
+            s_search.ControlHeight = 22;
+            s_search.ControlWidth = 269;
+            s_search.FontColor = Color.Black;
+            s_search.FontFace = "Tahoma";
+            s_search.FontSize = 9F;
+            s_search.FormatStr = "";
+            s_search.Location = new Point(6, 35);
+            s_search.Margin = new Padding(4, 2, 4, 2);
+            s_search.Name = "s_search";
+            s_search.Size = new Size(269, 22);
+            s_search.TabIndex = 0;
+            s_search.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            s_search.Title = "Plate No.";
+            s_search.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            s_search.TitleWidth = 60;
             // 
             // ucPanel2
             // 
@@ -136,6 +116,23 @@
             g10.Name = "g10";
             g10.Size = new Size(969, 363);
             g10.TabIndex = 0;
+            // 
+            // s_enabled
+            // 
+            s_enabled.ControlHeight = 21;
+            s_enabled.ControlWidth = 242;
+            s_enabled.FldTy = null;
+            s_enabled.FontColor = Color.Black;
+            s_enabled.FontFace = "Tahoma";
+            s_enabled.FontSize = 9F;
+            s_enabled.Location = new Point(282, 35);
+            s_enabled.Name = "s_enabled";
+            s_enabled.Size = new Size(242, 21);
+            s_enabled.TabIndex = 1;
+            s_enabled.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            s_enabled.Title = "Enabled";
+            s_enabled.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            s_enabled.TitleWidth = 100;
             // 
             // HR502
             // 
@@ -161,8 +158,8 @@
         private Ctrls.UCSplit ucSplit1;
         private Ctrls.UCPanel ucPanel1;
         private Ctrls.UCPanel ucPanel2;
-        private Ctrls.UCTextBox s_txt;
+        private Ctrls.UCTextBox s_search;
         private Ctrls.UCGridSet g10;
-        private Ctrls.UCTextBox s_enable;
+        private Ctrls.UCCodeBox s_enabled;
     }
 }
