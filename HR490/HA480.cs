@@ -29,8 +29,6 @@ namespace EpicV004.Frms
             set => Set(ref _emp_no, value);
         }
 
-
-        //----------------------------------------- Columns in View uv_staff
         private string _emp_name;
         public string emp_name
         {
@@ -44,12 +42,14 @@ namespace EpicV004.Frms
             get => _emp_ename;
             set => Set(ref _emp_ename, value);
         }
+
         private string _position;
         public string position
         {
             get => _position;
             set => Set(ref _position, value);
         }
+
         private string _dept;
         public string dept
         {
@@ -57,11 +57,11 @@ namespace EpicV004.Frms
             set => Set(ref _dept, value);
         }
 
-        private string _dept_name;
-        public string dept_name
+        private string _dept_nm;
+        public string dept_nm
         {
-            get => _dept_name;
-            set => Set(ref _dept_name, value);
+            get => _dept_nm;
+            set => Set(ref _dept_nm, value);
         }
 
         private string _project;
@@ -99,15 +99,12 @@ namespace EpicV004.Frms
             set => Set(ref _employment_date, value);
         }
 
-
-        //private DateTime _emp_period;
-        //public DateTime emp_period
-        //{
-        //    get => _emp_period;
-        //    set => Set(ref _emp_period, value);
-        //}
-        //---------------------------------------end
-
+        private string _emp_period;
+        public string emp_period
+        {
+            get => _emp_period;
+            set => Set(ref _emp_period, value);
+        }
 
         private string _leave_type;
         public string leave_type
@@ -121,13 +118,6 @@ namespace EpicV004.Frms
         {
             get => _leave_qty;
             set => Set(ref _leave_qty, value);
-        }
-
-        private string _memo;
-        public string memo
-        {
-            get => _memo;
-            set => Set(ref _memo, value);
         }
     }
 }
