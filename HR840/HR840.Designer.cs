@@ -31,7 +31,6 @@ namespace EpicV004.Frms
             ucSplit1 = new Ctrls.UCSplit();
             ucPanel1 = new Ctrls.UCPanel();
             position = new Ctrls.UCCodeBox();
-            chk_last = new CheckBox();
             s_job_site = new Ctrls.UCChkCodeBox();
             s_tatus = new Ctrls.UCChkCodeBox();
             s_emp_status = new Ctrls.UCChkCodeBox();
@@ -43,6 +42,7 @@ namespace EpicV004.Frms
             ucSplit2 = new Ctrls.UCSplit();
             g10 = new Ctrls.UCGridSet();
             g20 = new Ctrls.UCGridSet();
+            chk_last = new Ctrls.UCCheckBox();
             ((System.ComponentModel.ISupportInitialize)ucSplit1).BeginInit();
             ucSplit1.Panel1.SuspendLayout();
             ucSplit1.Panel2.SuspendLayout();
@@ -77,8 +77,8 @@ namespace EpicV004.Frms
             // 
             // ucPanel1
             // 
-            ucPanel1.Controls.Add(position);
             ucPanel1.Controls.Add(chk_last);
+            ucPanel1.Controls.Add(position);
             ucPanel1.Controls.Add(s_job_site);
             ucPanel1.Controls.Add(s_tatus);
             ucPanel1.Controls.Add(s_emp_status);
@@ -110,17 +110,6 @@ namespace EpicV004.Frms
             position.Title = "Position";
             position.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
             position.TitleWidth = 93;
-            // 
-            // chk_last
-            // 
-            chk_last.AutoSize = true;
-            chk_last.CheckAlign = ContentAlignment.MiddleRight;
-            chk_last.Location = new Point(1163, 26);
-            chk_last.Name = "chk_last";
-            chk_last.Size = new Size(100, 17);
-            chk_last.TabIndex = 2;
-            chk_last.Text = "Show Last Shift";
-            chk_last.UseVisualStyleBackColor = true;
             // 
             // s_job_site
             // 
@@ -301,6 +290,22 @@ namespace EpicV004.Frms
             g20.Size = new Size(269, 608);
             g20.TabIndex = 0;
             // 
+            // chk_last
+            // 
+            chk_last.Checked = false;
+            chk_last.ControlHeight = 21;
+            chk_last.ControlWidth = 115;
+            chk_last.FontColor = Color.Black;
+            chk_last.FontFace = "Tahoma";
+            chk_last.FontSize = 9F;
+            chk_last.Location = new Point(1163, 26);
+            chk_last.Name = "chk_last";
+            chk_last.Size = new Size(115, 21);
+            chk_last.TabIndex = 4;
+            chk_last.Text = "Show Last Shift";
+            chk_last.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            chk_last.TitleAlignment = DevExpress.Utils.HorzAlignment.Far;
+            // 
             // HR840
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -314,7 +319,6 @@ namespace EpicV004.Frms
             ucSplit1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ucPanel1).EndInit();
             ucPanel1.ResumeLayout(false);
-            ucPanel1.PerformLayout();
             ucSplit2.Panel1.ResumeLayout(false);
             ucSplit2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ucSplit2).EndInit();
@@ -338,6 +342,6 @@ namespace EpicV004.Frms
         private Ctrls.UCGridSet g10;
         private Ctrls.UCGridSet g20;
         private Ctrls.UCCodeBox position;
-        private CheckBox chk_last;
+        private Ctrls.UCCheckBox chk_last;
     }
 }

@@ -35,7 +35,7 @@
             section = new Ctrls.UCChkCodeBox();
             position = new Ctrls.UCChkCodeBox();
             emp = new Ctrls.UCTextBox();
-            ucTextBox2 = new Ctrls.UCTextBox();
+            dept_name = new Ctrls.UCTextBox();
             project = new Ctrls.UCTextBox();
             dept = new Ctrls.UCTextBox();
             g10 = new Ctrls.UCGridSet();
@@ -74,7 +74,7 @@
             ucPanel1.Controls.Add(section);
             ucPanel1.Controls.Add(position);
             ucPanel1.Controls.Add(emp);
-            ucPanel1.Controls.Add(ucTextBox2);
+            ucPanel1.Controls.Add(dept_name);
             ucPanel1.Controls.Add(project);
             ucPanel1.Controls.Add(dept);
             ucPanel1.Dock = DockStyle.Fill;
@@ -171,24 +171,24 @@
             emp.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
             emp.TitleWidth = 117;
             // 
-            // ucTextBox2
+            // dept_name
             // 
-            ucTextBox2.Appearance.Font = new Font("Tahoma", 9F);
-            ucTextBox2.Appearance.Options.UseFont = true;
-            ucTextBox2.ControlHeight = 21;
-            ucTextBox2.ControlWidth = 192;
-            ucTextBox2.FontColor = Color.Black;
-            ucTextBox2.FontFace = "Tahoma";
-            ucTextBox2.FontSize = 9F;
-            ucTextBox2.FormatStr = "";
-            ucTextBox2.Location = new Point(203, 26);
-            ucTextBox2.Name = "ucTextBox2";
-            ucTextBox2.Size = new Size(192, 21);
-            ucTextBox2.TabIndex = 0;
-            ucTextBox2.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox2.Title = "UCTextBox";
-            ucTextBox2.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
-            ucTextBox2.TitleWidth = 1;
+            dept_name.Appearance.Font = new Font("Tahoma", 9F);
+            dept_name.Appearance.Options.UseFont = true;
+            dept_name.ControlHeight = 21;
+            dept_name.ControlWidth = 192;
+            dept_name.FontColor = Color.Black;
+            dept_name.FontFace = "Tahoma";
+            dept_name.FontSize = 9F;
+            dept_name.FormatStr = "";
+            dept_name.Location = new Point(203, 26);
+            dept_name.Name = "dept_name";
+            dept_name.Size = new Size(192, 21);
+            dept_name.TabIndex = 0;
+            dept_name.TextAlignment = DevExpress.Utils.HorzAlignment.Near;
+            dept_name.Title = "UCTextBox";
+            dept_name.TitleAlignment = DevExpress.Utils.HorzAlignment.Near;
+            dept_name.TitleWidth = 1;
             // 
             // project
             // 
@@ -264,7 +264,7 @@
         private Ctrls.UCChkCodeBox section;
         private Ctrls.UCChkCodeBox position;
         private Ctrls.UCTextBox emp;
-        private Ctrls.UCTextBox ucTextBox2;
+        private Ctrls.UCTextBox dept_name;
         private Ctrls.UCTextBox project;
     }
 }

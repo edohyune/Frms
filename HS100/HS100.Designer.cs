@@ -62,7 +62,7 @@ namespace EpicV004.Frms
             // ucSplit1.Panel2
             // 
             ucSplit1.Panel2.Controls.Add(g10);
-            ucSplit1.Size = new Size(1193, 616);
+            ucSplit1.Size = new Size(1341, 616);
             ucSplit1.SplitterDistance = 78;
             ucSplit1.TabIndex = 0;
             ucSplit1.TitleWidth = 121;
@@ -80,7 +80,7 @@ namespace EpicV004.Frms
             ucPanel1.Dock = DockStyle.Fill;
             ucPanel1.Location = new Point(0, 0);
             ucPanel1.Name = "ucPanel1";
-            ucPanel1.Size = new Size(1193, 78);
+            ucPanel1.Size = new Size(1341, 78);
             ucPanel1.TabIndex = 0;
             ucPanel1.Text = "Search";
             // 
@@ -234,7 +234,7 @@ namespace EpicV004.Frms
             g10.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             g10.Location = new Point(0, 0);
             g10.Name = "g10";
-            g10.Size = new Size(1193, 534);
+            g10.Size = new Size(1341, 534);
             g10.TabIndex = 0;
             // 
             // HS100
@@ -243,7 +243,7 @@ namespace EpicV004.Frms
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(ucSplit1);
             Name = "HS100";
-            Size = new Size(1193, 616);
+            Size = new Size(1341, 616);
             ucSplit1.Panel1.ResumeLayout(false);
             ucSplit1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ucSplit1).EndInit();
