@@ -34,13 +34,13 @@
             ucSplit2 = new Ctrls.UCSplit();
             ucSplit3 = new Ctrls.UCSplit();
             ucPanel2 = new Ctrls.UCPanel();
+            btnNew = new Ctrls.UCButton();
             f_word = new Ctrls.UCTextBox();
             f_lang = new Ctrls.UCCodeBox();
             SId = new Ctrls.UCTextBox();
             ucSplit4 = new Ctrls.UCSplit();
             ucPanel3 = new Ctrls.UCPanel();
             g40 = new Ctrls.UCGridSet();
-            btnNew = new Ctrls.UCButton();
             btnAdd = new Ctrls.UCButton();
             ucPanel4 = new Ctrls.UCPanel();
             g30 = new Ctrls.UCGridSet();
@@ -85,7 +85,7 @@
             // 
             ucSplit1.Panel2.Controls.Add(ucSplit2);
             ucSplit1.Size = new Size(1434, 738);
-            ucSplit1.SplitterDistance = 562;
+            ucSplit1.SplitterDistance = 683;
             ucSplit1.TabIndex = 0;
             ucSplit1.TitleWidth = 121;
             // 
@@ -95,7 +95,7 @@
             ucPanel1.Dock = DockStyle.Fill;
             ucPanel1.Location = new Point(0, 0);
             ucPanel1.Name = "ucPanel1";
-            ucPanel1.Size = new Size(562, 738);
+            ucPanel1.Size = new Size(683, 738);
             ucPanel1.TabIndex = 0;
             ucPanel1.Text = "Panel1";
             // 
@@ -104,7 +104,7 @@
             g20.Dock = DockStyle.Fill;
             g20.Location = new Point(2, 23);
             g20.Name = "g20";
-            g20.Size = new Size(558, 713);
+            g20.Size = new Size(679, 713);
             g20.TabIndex = 0;
             // 
             // ucSplit2
@@ -122,7 +122,7 @@
             // ucSplit2.Panel2
             // 
             ucSplit2.Panel2.Controls.Add(ucPanel4);
-            ucSplit2.Size = new Size(868, 738);
+            ucSplit2.Size = new Size(747, 738);
             ucSplit2.SplitterDistance = 323;
             ucSplit2.TabIndex = 0;
             ucSplit2.TitleWidth = 121;
@@ -141,7 +141,7 @@
             // ucSplit3.Panel2
             // 
             ucSplit3.Panel2.Controls.Add(ucSplit4);
-            ucSplit3.Size = new Size(868, 323);
+            ucSplit3.Size = new Size(747, 323);
             ucSplit3.SplitterDistance = 295;
             ucSplit3.TabIndex = 0;
             ucSplit3.TitleWidth = 121;
@@ -158,6 +158,26 @@
             ucPanel2.Size = new Size(295, 323);
             ucPanel2.TabIndex = 0;
             ucPanel2.Text = "ucPanel2";
+            // 
+            // btnNew
+            // 
+            btnNew.Appearance.BackColor = Color.DarkGray;
+            btnNew.Appearance.Font = new Font("Tahoma", 9F);
+            btnNew.Appearance.Options.UseBackColor = true;
+            btnNew.Appearance.Options.UseFont = true;
+            btnNew.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            btnNew.ControlHeight = 30;
+            btnNew.ControlWidth = 100;
+            btnNew.FontBold = FontStyle.Regular;
+            btnNew.FontFace = "Tahoma";
+            btnNew.FontSize = 9F;
+            btnNew.Location = new Point(187, 118);
+            btnNew.Name = "btnNew";
+            btnNew.Size = new Size(100, 30);
+            btnNew.TabIndex = 1;
+            btnNew.Title = "New";
+            btnNew.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
+            btnNew.Click += btnNew_Click;
             // 
             // f_word
             // 
@@ -227,7 +247,7 @@
             // ucSplit4.Panel2
             // 
             ucSplit4.Panel2.Controls.Add(btnAdd);
-            ucSplit4.Size = new Size(569, 323);
+            ucSplit4.Size = new Size(448, 323);
             ucSplit4.SplitterDistance = 275;
             ucSplit4.TabIndex = 0;
             ucSplit4.TitleWidth = 121;
@@ -239,7 +259,7 @@
             ucPanel3.Dock = DockStyle.Fill;
             ucPanel3.Location = new Point(0, 0);
             ucPanel3.Name = "ucPanel3";
-            ucPanel3.Size = new Size(569, 275);
+            ucPanel3.Size = new Size(448, 275);
             ucPanel3.TabIndex = 0;
             ucPanel3.Text = "ucPanel3";
             // 
@@ -248,28 +268,8 @@
             g40.Dock = DockStyle.Fill;
             g40.Location = new Point(2, 23);
             g40.Name = "g40";
-            g40.Size = new Size(565, 250);
+            g40.Size = new Size(444, 250);
             g40.TabIndex = 0;
-            // 
-            // btnNew
-            // 
-            btnNew.Appearance.BackColor = Color.DarkGray;
-            btnNew.Appearance.Font = new Font("Tahoma", 9F);
-            btnNew.Appearance.Options.UseBackColor = true;
-            btnNew.Appearance.Options.UseFont = true;
-            btnNew.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            btnNew.ControlHeight = 30;
-            btnNew.ControlWidth = 100;
-            btnNew.FontBold = FontStyle.Regular;
-            btnNew.FontFace = "Tahoma";
-            btnNew.FontSize = 9F;
-            btnNew.Location = new Point(187, 118);
-            btnNew.Name = "btnNew";
-            btnNew.Size = new Size(100, 30);
-            btnNew.TabIndex = 1;
-            btnNew.Title = "New";
-            btnNew.TitleAlignment = DevExpress.Utils.HorzAlignment.Default;
-            btnNew.Click += btnNew_Click;
             // 
             // btnAdd
             // 
@@ -297,7 +297,7 @@
             ucPanel4.Dock = DockStyle.Fill;
             ucPanel4.Location = new Point(0, 0);
             ucPanel4.Name = "ucPanel4";
-            ucPanel4.Size = new Size(868, 411);
+            ucPanel4.Size = new Size(747, 411);
             ucPanel4.TabIndex = 0;
             ucPanel4.Text = "ucPanel4";
             // 
@@ -306,7 +306,7 @@
             g30.Dock = DockStyle.Fill;
             g30.Location = new Point(2, 23);
             g30.Name = "g30";
-            g30.Size = new Size(864, 386);
+            g30.Size = new Size(743, 386);
             g30.TabIndex = 0;
             // 
             // SP172
